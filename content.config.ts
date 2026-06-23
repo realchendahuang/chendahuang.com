@@ -41,8 +41,8 @@ export default defineContentConfig({
       source: 'index.yml',
       schema: z.object({
         hero: z.object({
-          links: z.array(createButtonSchema()),
-          images: z.array(createImageSchema())
+          links: z.array(createButtonSchema()).default([]),
+          images: z.array(createImageSchema()).default([])
         }),
         about: createBaseSchema(),
         experience: createBaseSchema().extend({
@@ -57,7 +57,7 @@ export default defineContentConfig({
             })
           }))
         }),
-        testimonials: z.array(createTestimonialSchema()),
+        testimonials: z.array(createTestimonialSchema()).default([]),
         blog: createBaseSchema(),
         faq: createBaseSchema().extend({
           categories: z.array(
@@ -73,52 +73,25 @@ export default defineContentConfig({
         })
       })
     }),
-    projects: defineCollection({
-      type: 'data',
-      source: 'projects/*.yml',
-      schema: z.object({
-        title: z.string().nonempty(),
-        description: z.string().nonempty(),
-        image: z.string().nonempty().editor({ input: 'media' }),
-        url: z.string().nonempty(),
-        tags: z.array(z.string()),
-        date: z.date()
-      })
-    }),
     blog: defineCollection({
       type: 'page',
       source: 'blog/*.md',
       schema: z.object({
         minRead: z.number(),
         date: z.date(),
-        image: z.string().nonempty().editor({ input: 'media' }),
+        image: z.string().editor({ input: 'media' }).optional(),
         author: createAuthorSchema()
       })
     }),
     pages: defineCollection({
       type: 'page',
       source: [
-        { include: 'projects.yml' },
         { include: 'blog.yml' },
         { include: 'playbooks.yml' },
         { include: 'skills.yml' }
       ],
       schema: z.object({
-        links: z.array(createButtonSchema())
-      })
-    }),
-    speaking: defineCollection({
-      type: 'page',
-      source: 'speaking.yml',
-      schema: z.object({
-        links: z.array(createButtonSchema()),
-        events: z.array(z.object({
-          category: z.enum(['Live talk', 'Podcast', 'Conference']),
-          title: z.string(),
-          date: z.date(),
-          location: z.string(),
-          url: z.string().optional()
-        }))
+        links: z.array(createButtonSchema()).default([])
       })
     }),
     about: defineCollection({
@@ -126,7 +99,7 @@ export default defineContentConfig({
       source: 'about.yml',
       schema: z.object({
         content: z.object({}),
-        images: z.array(createImageSchema())
+        images: z.array(createImageSchema()).default([])
       })
     }),
     playbooks: defineCollection({

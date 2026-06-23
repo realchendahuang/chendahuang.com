@@ -1,8 +1,8 @@
 seo:
   title: "陈大黄 - 独立开发者 · AI 效率折腾达人"
-  description: "陈大黄，洞察达人段子手，前 AI 产品经理，独立开发者，研究高效学语言专家，AI 效率提高折腾达人，产品/设计/开发/运营/销售全能达人。"
+  description: "陈大黄，前 AI 产品经理，独立开发者。折腾 AI 效率工具，研究高效学语言，产品/设计/开发/运营/销售都干过。"
 title: "嘿，我是陈大黄"
-description: "洞察达人段子手 ｜ 前 AI 产品经理 ｜ 独立开发者 ｜ 研究高效学语言专家 ｜ AI 效率提高折腾达人 ｜ 产品、设计、开发、运营、销售全能达人"
+description: "前 AI 产品经理，现在做独立开发者。折腾 AI 效率工具，研究高效学语言，产品/设计/开发/运营/销售都干过一遍。"
 hero:
   links:
     - label: "看看我的 Playbook"
@@ -12,30 +12,11 @@ hero:
       to: https://github.com/realchendahuang
       color: "neutral"
       target: "_blank"
-  images:
-    - src: /hero/random-1.avif
-      alt: Random Image 1
-    - src: /hero/random-2.avif
-      alt: Random Image 2
-    - src: /hero/random-3.avif
-      alt: Random Image 3
-    - src: /hero/random-4.avif
-      alt: Random Image 4
-    - src: /hero/random-5.avif
-      alt: Random Image 5
-    - src: /hero/random-6.avif
-      alt: Random Image 6
-    - src: /hero/random-7.avif
-      alt: Random Image 7
-    - src: /hero/random-8.avif
-      alt: Random Image 8
-    - src: /hero/random-9.avif
-      alt: Random Image 9
 about:
   title: "关于我"
   description: |
     我是陈大黄。前 AI 产品经理，现在做独立开发者。
-    喜欢折腾 AI 效率工具，研究怎么高效学语言，顺手把产品、设计、开发、运营、销售都干了一遍。
+    折腾 AI 效率工具，研究怎么高效学语言，顺手把产品、设计、开发、运营、销售都干了一遍。
     做的东西不讲虚的，能用、能跑、能帮你省时间就行。
 experience:
   title: 在做的事
@@ -62,10 +43,10 @@ experience:
         url: "/"
         color: "#00DC82"
 testimonials:
-  - quote: "大黄做的 Playbook 不是抄文档，是自己踩完坑整理出来的实操路径。照着走能少走很多弯路。"
+  - quote: "不是抄文档，是自己踩完坑整理出来的实操路径。照着走能少走很多弯路。"
     author:
       name: 'Cloudflare 实战手册'
-      description: '69 stars · 214 commits 的开源项目'
+      description: '69 stars 的开源项目'
       to: https://github.com/realchendahuang/cloudflare-playbook
       target: "_blank"
   - quote: "去 AI 味的 skill 真的管用，写出来的东西终于不像机器在表演了。"
@@ -74,10 +55,10 @@ testimonials:
       description: '去除中文文本 AI 味的 Agent Skill'
       to: https://github.com/realchendahuang/dahuang-human-tone
       target: "_blank"
-  - quote: "macOS Playbook 从零上手到用顺手，写给普通人的实战指南，不是抄官方文档那种。"
+  - quote: "从零上手到用顺手，写给普通人的 macOS 指南，不是抄官方文档那种。"
     author:
-      name: 'macOS Playbook'
-      description: '从零上手到用顺手的 macOS 实战指南'
+      name: 'macOS 实战指南'
+      description: 'macOS 实战指南'
       to: https://github.com/realchendahuang/macos-playbook
       target: "_blank"
 blog:
@@ -91,21 +72,32 @@ faq:
       questions:
         - label: 你是谁？
           content: |
-            我是陈大黄。前 AI 产品经理，现在做独立开发者。喜欢折腾 AI 效率工具，研究怎么高效学语言，也把产品、设计、开发、运营、销售都干了一遍。
+            我是陈大黄。前 AI 产品经理，现在做独立开发者。折腾 AI 效率工具，研究怎么高效学语言，产品、设计、开发、运营、销售都干过一遍。
         - label: 你在做什么？
           content: |
-            主要是开源项目和 Agent Skill。写了几本 Playbook（Cloudflare、macOS），做了去 AI 味和加 AI 味的 Skill。这些都放在 GitHub 上，在线阅读地址也在这个站。
+            两类东西：Playbook 和 Agent Skill。Playbook 是实战手册，Skill 是给 AI 编码助手装的能力包。分开做，分开用，都在 GitHub 上开源。
         - label: 怎么联系你？
           content: |
-            最快的方式是在 X 上找我 [@realchendahuang](https://x.com/realchendahuang)，代码相关去 [GitHub](https://github.com/realchendahuang)。
-    - title: Playbook 和 Skill
+            最快在 X 上找我 [@realchendahuang](https://x.com/realchendahuang)，代码相关去 [GitHub](https://github.com/realchendahuang)。
+    - title: Playbook
       questions:
         - label: Playbook 是什么？
           content: |
-            是我整理的实战手册。不是抄官方文档，是自己踩完坑之后整理出来的实操路径和避坑指南。现在有 Cloudflare 和 macOS 两本，都在持续更新。
-        - label: Skill 是什么？
-          content: |
-            是给 AI 编码助手（Claude Code、Cursor、Codex 等）装的能力包。我做了两个：dahuang-human-tone 去中文 AI 味，dahuang-ai-tone 给文本加模型风格的味。
+            我整理的实战手册。不是抄官方文档，是自己踩完坑之后整理出来的实操路径和避坑指南。现在有 Cloudflare 和 macOS 两本，都在持续更新。
         - label: 在哪里看？
           content: |
-            Playbook 在这个站的 [/playbooks](/playbooks) 页面有汇总，也可以直接在线读。Skill 在 [/skills](/skills) 页面有介绍，安装方式在对应 GitHub 仓库里。
+            去 [/playbooks](/playbooks) 页面看汇总，也可以直接在线读。每本都有对应的 GitHub 仓库。
+        - label: 现在有几本？
+          content: |
+            两本。Cloudflare 实战手册和 macOS 实战指南。还有更多在路上。
+    - title: Skill
+      questions:
+        - label: Skill 是什么？
+          content: |
+            给 AI 编码助手（Claude Code、Cursor、Codex 等）装的能力包。一行命令安装，装完助手就多了一项能力。
+        - label: 你做了哪些 Skill？
+          content: |
+            两个。dahuang-human-tone 去中文 AI 味，把文本从"像模型在表演"拉回"像人在说话"；dahuang-ai-tone 给文本加 GPT/Claude/Gemini/豆包的味，或者检测一段文本最像哪个模型写的。
+        - label: 怎么装？
+          content: |
+            去 [/skills](/skills) 页面看介绍，每张卡片上有安装命令，复制到终端跑一下就行。

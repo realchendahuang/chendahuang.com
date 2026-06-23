@@ -137,13 +137,13 @@ defineOgImage('Portfolio', { title, description })
         variant="subtle"
         class="mt-12"
         :ui="{ container: 'py-10' }"
-        title="两个 Skill 是一对姐妹"
+        title="一对配合着用的 Skill"
       >
         <template #description>
           <p class="text-muted">
-            <strong class="text-highlighted">dahuang-human-tone</strong> 负责去 AI 味——把中文从"像模型在表演"拉回"像具体人在说话"；
-            <strong class="text-highlighted">dahuang-ai-tone</strong> 负责加味——把文本改写成 GPT/Claude/Gemini/豆包的风格，或者检测一段文本最像哪个模型写的。
-            知道什么是 AI 味，才能在别处去掉 AI 味。两个配合着用，玩得更明白。
+            <strong class="text-highlighted">dahuang-human-tone</strong> 负责"去"——把中文从"像模型在表演"拉回"像人在说话"；
+            <strong class="text-highlighted">dahuang-ai-tone</strong> 负责"加"——把文本改写成 GPT/Claude/Gemini/豆包的风格，或者检测一段文本最像哪个模型写的。
+            先搞清楚什么是 AI 味，才能在别处去掉 AI 味。两个一起装，玩得更明白。
           </p>
         </template>
       </UPageCTA>

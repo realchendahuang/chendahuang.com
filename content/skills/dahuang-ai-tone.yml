@@ -1,9 +1,8 @@
 title: Dahuang AI Tone
-description: 把文本加成 GPT/Claude/Gemini/豆包的 AI 风格，或者检测一段文本最像哪个模型写的。改的是句子组织、语气、行为模式，不是堆口癖。姐妹 skill 是 dahuang-human-tone。
+description: 给文本加 GPT/Claude/Gemini/豆包的 AI 风味，或者检测一段文本最像哪个模型写的。改的是句子组织、语气、行为模式，不堆口癖。和 dahuang-human-tone 是一对。
 url: https://github.com/realchendahuang/dahuang-ai-tone
 install: npx skills add realchendahuang/dahuang-ai-tone -g
 icon: i-lucide-fingerprint
 color: "#a855f7"
 tags: ["Agent Skill", "AI 味", "模型风格", "风格检测", "中文写作"]
 date: 2025-05-01
-stars: 0

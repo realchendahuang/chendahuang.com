@@ -1,24 +1,22 @@
 title: 关于我
-description: 陈大黄，前 AI 产品经理，独立开发者，AI 效率折腾达人，研究高效学语言，产品/设计/开发/运营/销售全能。
+description: 陈大黄，前 AI 产品经理，独立开发者。折腾 AI 效率工具，研究高效学语言，产品/设计/开发/运营/销售都干过。
 content: |
   我是 **陈大黄**。前 AI 产品经理，现在做独立开发者。
 
-  喜欢折腾 AI 效率工具，研究怎么高效学语言，顺手把产品、设计、开发、运营、销售都干了一遍。做的东西不讲虚的，能用、能跑、能帮你省时间就行。
+  折腾 AI 效率工具，研究怎么高效学语言，顺手把产品、设计、开发、运营、销售都干了一遍。做的东西不讲虚的，能用、能跑、能帮你省时间就行。
 
   ### 我在做什么
 
-  开源项目和 Agent Skill 是主线。写了几本 **Playbook**——Cloudflare 实战手册、macOS 实战指南，都是自己踩完坑整理出来的实操路径。做了两个 **Agent Skill**：dahuang-human-tone 去中文 AI 味，dahuang-ai-tone 给文本加模型风格的味。
+  两类东西，分开做：
+
+  **Playbook** 是实战手册。Cloudflare 实战手册、macOS 实战指南，都是自己踩完坑整理出来的实操路径，不是抄官方文档。
+
+  **Agent Skill** 是给 AI 编码助手装的能力包。dahuang-human-tone 去中文 AI 味，dahuang-ai-tone 给文本加模型风格的味。
 
   ### 我的方法
 
-  我做东西的方式很简单：先自己用，用顺了再整理成手册或工具。Playbook 不是抄官方文档，是踩坑记；Skill 不是空架子，是实际写作里磨出来的规则。能用、能跑、能复用是底线。
+  先自己用，用顺了再整理成手册或工具。Playbook 是踩坑记，Skill 是实际写作里磨出来的规则。能用、能跑、能复用是底线。
 
   ### 找我
 
-  最快的方式是在 [X](https://x.com/realchendahuang) 上找我，代码相关去 [GitHub](https://github.com/realchendahuang)。想看我在做的项目，去 [Playbook](/playbooks) 和 [Skill](/skills) 页面。
-
-images:
-  - src: https://images.unsplash.com/photo-1744877478622-a78c7a3336f6?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-    alt: 我的咖啡工作台
-  - src: https://images.unsplash.com/photo-1744429523595-2c06b8611242?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-    alt: 一次旅行
+  最快在 [X](https://x.com/realchendahuang) 上找我，代码相关去 [GitHub](https://github.com/realchendahuang)。想看我在做的项目，去 [Playbook](/playbooks) 和 [Skill](/skills) 页面。

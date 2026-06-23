@@ -102,7 +102,7 @@ defineProps<{
         }"
       >
         <div
-          v-if="page.hero.links"
+          v-if="page.hero.links?.length"
           class="flex items-center gap-2"
         >
           <UButton v-bind="page.hero.links[0]" />
@@ -157,6 +157,7 @@ defineProps<{
     </template>
 
     <UMarquee
+      v-if="page.hero.images?.length"
       pause-on-hover
       class="py-2 -mx-8 sm:-mx-12 lg:-mx-16 [--duration:40s]"
     >

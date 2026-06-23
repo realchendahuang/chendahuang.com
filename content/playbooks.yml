@@ -1,8 +1,2 @@
 title: Playbook
-description: 我整理的实战手册。不是抄官方文档，是自己踩完坑之后整理出来的实操路径和避坑指南。当前有 Cloudflare 和 macOS 两本，持续更新中，还有更多在路上。
-links:
-  - label: "GitHub 主页"
-    to: https://github.com/realchendahuang
-    color: "neutral"
-    target: "_blank"
-    icon: "i-simple-icons-github"
+description: 我整理的实战手册。不是抄官方文档，是自己踩完坑之后整理出来的实操路径和避坑指南。当前有 Cloudflare 和 macOS 两本，持续更新中。
