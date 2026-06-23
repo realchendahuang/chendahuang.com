@@ -43,22 +43,22 @@ experience:
         url: "/"
         color: "#00DC82"
 testimonials:
-  - quote: "不是抄文档，是自己踩完坑整理出来的实操路径。照着走能少走很多弯路。"
+  - quote: "AI 编程时代的 Cloudflare 实战手册——用 AI 写代码，用 Cloudflare 部署到全球。涵盖功能模块、AI 编程工作流、计费对比、架构模式与避坑指南。"
     author:
       name: 'Cloudflare 实战手册'
-      description: '69 stars 的开源项目'
+      description: '69 stars · 10 forks'
       to: https://github.com/realchendahuang/cloudflare-playbook
       target: "_blank"
-  - quote: "去 AI 味的 skill 真的管用，写出来的东西终于不像机器在表演了。"
+  - quote: "去除中文文本的 AI 味。删模板壳、路标词、升华收尾、假互动，改结构不改词，保信息保风格。"
     author:
       name: 'Dahuang Human Tone'
-      description: '去除中文文本 AI 味的 Agent Skill'
+      description: '10 stars · Agent Skill'
       to: https://github.com/realchendahuang/dahuang-human-tone
       target: "_blank"
-  - quote: "从零上手到用顺手，写给普通人的 macOS 指南，不是抄官方文档那种。"
+  - quote: "从零上手到用顺手——一份写给普通人的 macOS 实战指南。"
     author:
       name: 'macOS 实战指南'
-      description: 'macOS 实战指南'
+      description: '3 stars · 实战指南'
       to: https://github.com/realchendahuang/macos-playbook
       target: "_blank"
 blog:
@@ -83,7 +83,7 @@ faq:
       questions:
         - label: Playbook 是什么？
           content: |
-            我整理的实战手册。不是抄官方文档，是自己踩完坑之后整理出来的实操路径和避坑指南。现在有 Cloudflare 和 macOS 两本，都在持续更新。
+            实战手册。涵盖功能模块、AI 编程工作流、计费对比、架构模式与避坑指南。现在有 Cloudflare 和 macOS 两本，都在持续更新。
         - label: 在哪里看？
           content: |
             去 [/playbooks](/playbooks) 页面看汇总，也可以直接在线读。每本都有对应的 GitHub 仓库。
@@ -97,7 +97,7 @@ faq:
             给 AI 编码助手（Claude Code、Cursor、Codex 等）装的能力包。一行命令安装，装完助手就多了一项能力。
         - label: 你做了哪些 Skill？
           content: |
-            两个。dahuang-human-tone 去中文 AI 味，把文本从"像模型在表演"拉回"像人在说话"；dahuang-ai-tone 给文本加 GPT/Claude/Gemini/豆包的味，或者检测一段文本最像哪个模型写的。
+            dahuang-human-tone 去中文 AI 味，把文本从"像模型在表演"拉回"像人在说话"；dahuang-ai-tone 把文本改写成 GPT/Claude/Gemini/豆包的风格，或检测一段文本最像哪个模型写的。还有更多在路上。
         - label: 怎么装？
           content: |
             去 [/skills](/skills) 页面看介绍，每张卡片上有安装命令，复制到终端跑一下就行。

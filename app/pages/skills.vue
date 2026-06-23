@@ -58,7 +58,7 @@ defineOgImage('Portfolio', { title, description })
             :description="skill.description"
             variant="subtle"
             class="group h-full"
-            :to="skill.url"
+            :to="skill.onlineUrl || skill.url"
             target="_blank"
           >
             <template #leading>
@@ -112,38 +112,52 @@ defineOgImage('Portfolio', { title, description })
             </template>
 
             <template #action>
-              <UButton
-                :to="skill.url"
-                target="_blank"
-                label="GitHub 仓库"
-                color="primary"
-                variant="link"
-                class="px-0"
-                icon="i-simple-icons-github"
-              >
-                <template #trailing>
-                  <UIcon
-                    name="i-lucide-arrow-right"
-                    class="size-4 transition-all opacity-0 group-hover:translate-x-1 group-hover:opacity-100"
-                  />
-                </template>
-              </UButton>
+              <div class="flex items-center gap-3">
+                <UButton
+                  v-if="skill.onlineUrl"
+                  :to="skill.onlineUrl"
+                  target="_blank"
+                  label="在线阅读"
+                  color="primary"
+                  variant="link"
+                  class="px-0"
+                >
+                  <template #trailing>
+                    <UIcon
+                      name="i-lucide-arrow-right"
+                      class="size-4 transition-all opacity-0 group-hover:translate-x-1 group-hover:opacity-100"
+                    />
+                  </template>
+                </UButton>
+                <UButton
+                  :to="skill.url"
+                  target="_blank"
+                  label="GitHub"
+                  color="neutral"
+                  variant="ghost"
+                  size="sm"
+                  icon="i-simple-icons-github"
+                />
+              </div>
             </template>
           </UPageCard>
         </Motion>
       </div>
 
       <UPageCTA
-        variant="subtle"
+        variant="naked"
         class="mt-12"
-        :ui="{ container: 'py-10' }"
-        title="一对配合着用的 Skill"
+        :ui="{ container: 'py-8' }"
       >
         <template #description>
           <p class="text-muted">
-            <strong class="text-highlighted">dahuang-human-tone</strong> 负责"去"——把中文从"像模型在表演"拉回"像人在说话"；
-            <strong class="text-highlighted">dahuang-ai-tone</strong> 负责"加"——把文本改写成 GPT/Claude/Gemini/豆包的风格，或者检测一段文本最像哪个模型写的。
-            先搞清楚什么是 AI 味，才能在别处去掉 AI 味。两个一起装，玩得更明白。
+            还有更多 Skill 在路上。想看我做哪方面的能力包？在
+            <ULink
+              to="https://x.com/realchendahuang"
+              target="_blank"
+              class="text-primary"
+            >X</ULink>
+            上告诉我。
           </p>
         </template>
       </UPageCTA>

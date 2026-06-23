@@ -9,7 +9,7 @@ content: |
 
   两类东西，分开做：
 
-  **Playbook** 是实战手册。Cloudflare 实战手册、macOS 实战指南，都是自己踩完坑整理出来的实操路径，不是抄官方文档。
+  **Playbook** 是实战手册。Cloudflare 实战手册涵盖功能模块、AI 编程工作流、计费对比、架构模式与避坑指南；macOS 实战指南从零上手到用顺手，写给普通人。
 
   **Agent Skill** 是给 AI 编码助手装的能力包。dahuang-human-tone 去中文 AI 味，dahuang-ai-tone 给文本加模型风格的味。
 

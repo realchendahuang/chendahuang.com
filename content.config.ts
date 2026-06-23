@@ -125,6 +125,7 @@ export default defineContentConfig({
         title: z.string().nonempty(),
         description: z.string().nonempty(),
         url: z.string().nonempty(),
+        onlineUrl: z.string().optional(),
         install: z.string().optional(),
         icon: z.string().editor({ input: 'icon' }).optional(),
         color: z.string().optional(),
