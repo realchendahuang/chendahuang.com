@@ -5,7 +5,7 @@ const { data: page } = await useAsyncData('index', () => {
 if (!page.value) {
   throw createError({
     statusCode: 404,
-    statusMessage: 'Page not found',
+    statusMessage: '页面未找到',
     fatal: true
   })
 }

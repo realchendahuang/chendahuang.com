@@ -57,7 +57,7 @@ defineProps<{
           />
         </svg>
         <div class="h-px flex-1 bg-border" />
-        <span class="text-xl text-dimmed">ui.nuxt.com</span>
+        <span class="text-xl text-dimmed">chendahuang.com</span>
       </div>
     </div>
   </div>

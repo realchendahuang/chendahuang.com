@@ -23,7 +23,7 @@ export default defineAppConfig({
     }
   },
   footer: {
-    credits: `Built with Nuxt UI • © ${new Date().getFullYear()} 陈大黄`,
+    credits: `© ${new Date().getFullYear()} 陈大黄`,
     colorMode: false,
     links: [{
       'icon': 'i-simple-icons-x',

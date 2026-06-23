@@ -5,7 +5,7 @@ const { data: page } = await useAsyncData('skills-page', () => {
 if (!page.value) {
   throw createError({
     statusCode: 404,
-    statusMessage: 'Page not found',
+    statusMessage: '页面未找到',
     fatal: true
   })
 }
@@ -87,7 +87,7 @@ defineOgImage('Portfolio', { title, description })
                 </div>
                 <div
                   v-if="skill.install"
-                  class="flex items-center gap-2 bg-elevated/60 rounded-lg px-3 py-2 text-xs font-mono text-muted"
+                  class="flex items-center gap-2 min-w-0 bg-elevated/60 rounded-lg px-3 py-2 text-xs font-mono text-muted"
                 >
                   <UIcon
                     name="i-lucide-terminal"

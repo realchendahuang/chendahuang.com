@@ -5,7 +5,7 @@ const { data: page } = await useAsyncData('blog-page', () => {
 if (!page.value) {
   throw createError({
     statusCode: 404,
-    statusMessage: 'Page not found',
+    statusMessage: '页面未找到',
     fatal: true
   })
 }
@@ -15,7 +15,7 @@ const { data: posts } = await useAsyncData('blogs', () =>
 if (!posts.value) {
   throw createError({
     statusCode: 404,
-    statusMessage: 'blogs posts not found',
+    statusMessage: '博客文章未找到',
     fatal: true
   })
 }
