@@ -1,0 +1,8 @@
+title: Agent Skill
+description: 给 AI 编码助手（Claude Code、Cursor、OpenAI Codex 等）装的能力包。我做了两个：一个去中文 AI 味，一个给文本加模型风格的味。都在 GitHub 开源，一行命令安装。
+links:
+  - label: "GitHub 主页"
+    to: https://github.com/realchendahuang
+    color: "neutral"
+    target: "_blank"
+    icon: "i-simple-icons-github"

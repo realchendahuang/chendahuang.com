@@ -99,7 +99,9 @@ export default defineContentConfig({
       type: 'page',
       source: [
         { include: 'projects.yml' },
-        { include: 'blog.yml' }
+        { include: 'blog.yml' },
+        { include: 'playbooks.yml' },
+        { include: 'skills.yml' }
       ],
       schema: z.object({
         links: z.array(createButtonSchema())
@@ -125,6 +127,37 @@ export default defineContentConfig({
       schema: z.object({
         content: z.object({}),
         images: z.array(createImageSchema())
+      })
+    }),
+    playbooks: defineCollection({
+      type: 'data',
+      source: 'playbooks/*.yml',
+      schema: z.object({
+        title: z.string().nonempty(),
+        description: z.string().nonempty(),
+        url: z.string().nonempty(),
+        onlineUrl: z.string().nonempty(),
+        icon: z.string().editor({ input: 'icon' }).optional(),
+        color: z.string().optional(),
+        tags: z.array(z.string()).default([]),
+        date: z.date(),
+        status: z.enum(['ongoing', 'stable', 'archived']).default('ongoing'),
+        stars: z.number().optional()
+      })
+    }),
+    skills: defineCollection({
+      type: 'data',
+      source: 'skills/*.yml',
+      schema: z.object({
+        title: z.string().nonempty(),
+        description: z.string().nonempty(),
+        url: z.string().nonempty(),
+        install: z.string().optional(),
+        icon: z.string().editor({ input: 'icon' }).optional(),
+        color: z.string().optional(),
+        tags: z.array(z.string()).default([]),
+        date: z.date(),
+        stars: z.number().optional()
       })
     })
   }

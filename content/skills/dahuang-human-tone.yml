@@ -1,0 +1,9 @@
+title: Dahuang Human Tone
+description: 去除中文文本里的 AI 味——删模板壳、删路标词、删升华收尾、删假互动，把文本从"像模型在表演写作"拉回"像具体人在说话"。不改事实、不改立场、不改术语，只改表达方式。
+url: https://github.com/realchendahuang/dahuang-human-tone
+install: npx skills add realchendahuang/dahuang-human-tone -g
+icon: i-lucide-wand-sparkles
+color: "#00DC82"
+tags: ["Agent Skill", "去 AI 味", "中文写作", "Claude Code", "Codex"]
+date: 2025-05-01
+stars: 10
