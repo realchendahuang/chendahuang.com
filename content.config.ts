@@ -34,6 +34,15 @@ const createTestimonialSchema = () => z.object({
   author: createAuthorSchema()
 })
 
+const createExternalItemSchema = () => z.object({
+  title: z.string().nonempty(),
+  description: z.string().nonempty(),
+  type: z.enum(['highlight', 'article']),
+  date: z.string().optional(),
+  href: z.string().url(),
+  source: z.string().optional()
+})
+
 export default defineContentConfig({
   collections: {
     index: defineCollection({
@@ -59,6 +68,10 @@ export default defineContentConfig({
         }),
         testimonials: z.array(createTestimonialSchema()).default([]),
         blog: createBaseSchema(),
+        xstream: createBaseSchema().extend({
+          links: z.array(createButtonSchema()).default([]),
+          items: z.array(createExternalItemSchema()).default([])
+        }),
         faq: createBaseSchema().extend({
           categories: z.array(
             z.object({

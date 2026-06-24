@@ -60,6 +60,13 @@ defineOgImage('Portfolio', { title, description })
             class="group h-full"
             :to="skill.onlineUrl || skill.url"
             target="_blank"
+            :ui="{
+              container: 'min-w-0 overflow-hidden',
+              wrapper: 'min-w-0 w-full',
+              body: 'min-w-0 w-full',
+              description: 'break-words',
+              footer: 'min-w-0 w-full'
+            }"
           >
             <template #leading>
               <span
@@ -87,13 +94,13 @@ defineOgImage('Portfolio', { title, description })
                 </div>
                 <div
                   v-if="skill.install"
-                  class="flex items-center gap-2 min-w-0 bg-elevated/60 rounded-lg px-3 py-2 text-xs font-mono text-muted"
+                  class="flex items-center gap-2 min-w-0 w-full max-w-full overflow-hidden bg-elevated/60 rounded-lg px-3 py-2 text-xs font-mono text-muted"
                 >
                   <UIcon
                     name="i-lucide-terminal"
                     class="size-3.5 shrink-0"
                   />
-                  <span class="truncate">{{ skill.install }}</span>
+                  <span class="min-w-0 truncate">{{ skill.install }}</span>
                 </div>
               </div>
             </template>

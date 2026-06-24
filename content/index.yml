@@ -64,6 +64,33 @@ testimonials:
 blog:
   title: "最新文章"
   description: "一些想法和折腾记录"
+xstream:
+  title: "X 精选"
+  description: "把我在 X 上值得回看的亮点推文和长文文章放在这里。"
+  links:
+    - label: "亮点推文"
+      icon: "i-lucide-sparkles"
+      to: "https://x.com/realchendahuang/highlights"
+      target: "_blank"
+      color: "neutral"
+      variant: "soft"
+    - label: "长文文章"
+      icon: "i-lucide-newspaper"
+      to: "https://x.com/realchendahuang/articles"
+      target: "_blank"
+      color: "neutral"
+      variant: "soft"
+  items:
+    - title: "X Highlights"
+      description: "我手动置顶/高亮过的推文，通常是 AI 编程、效率工具、独立开发和产品思考。"
+      type: "highlight"
+      source: "Highlights"
+      href: "https://x.com/realchendahuang/highlights"
+    - title: "X Articles"
+      description: "发布在 X Articles 的长文列表，适合按主题连续阅读。"
+      type: "article"
+      source: "Articles"
+      href: "https://x.com/realchendahuang/articles"
 faq:
   title: 常见问题
   description: 关于我和我在做的事，一些常见问题的回答。

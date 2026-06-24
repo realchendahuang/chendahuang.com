@@ -30,6 +30,7 @@ useSeoMeta({
       <LandingAbout :page />
       <LandingWorkExperience :page />
     </UPageSection>
+    <LandingXStream :page />
     <LandingBlog :page />
     <LandingTestimonials :page />
     <LandingFAQ :page />
