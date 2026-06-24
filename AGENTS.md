@@ -1,14 +1,14 @@
-# Agent Notes
+# 项目协作说明
 
-## Project
+## 项目概况
 
-- Nuxt site for `chendahuang.com`.
-- Package manager: `pnpm`.
-- Cloudflare Pages project: `chendahuang-portfolio`.
-- Production domain: `https://chendahuang.com`.
-- Build output: `dist`.
+- 这是 `chendahuang.com` 的 Nuxt 项目。
+- 包管理器使用 `pnpm`。
+- Cloudflare Pages 项目名是 `chendahuang-portfolio`。
+- 生产域名是 `https://chendahuang.com`。
+- 构建输出目录是 `dist`。
 
-## Common Commands
+## 常用命令
 
 ```bash
 pnpm dev
@@ -18,31 +18,35 @@ pnpm build
 pnpm deploy
 ```
 
-## Deploy
+## 部署
 
-This project uses Cloudflare Pages Direct Upload, not GitHub Actions.
+当前部署方式是 Cloudflare Pages Direct Upload，通过 Wrangler 上传本地构建产物。
 
-Deploy with:
+部署命令：
 
 ```bash
 pnpm deploy
 ```
 
-That runs:
+这个脚本会执行：
 
 ```bash
 pnpm build
 wrangler pages deploy dist --project-name chendahuang-portfolio --branch main
 ```
 
-Before deploying, make sure Wrangler is logged in:
+如果部署前需要确认 Wrangler 登录状态：
 
 ```bash
 pnpm exec wrangler whoami
 ```
 
-## Notes For Future Agents
+## 开发检查
 
-- Do not add `.github/workflows` for deployment; Cloudflare Pages is deployed directly with Wrangler.
-- Run `pnpm lint`, `pnpm typecheck`, and `pnpm build` before committing meaningful code changes when practical.
-- If the user asks to deploy, use `pnpm deploy` from the repo root.
+改动完成后，视情况运行：
+
+```bash
+pnpm lint
+pnpm typecheck
+pnpm build
+```
