@@ -1,16 +1,22 @@
 <script setup lang="ts">
-import type { IndexCollectionItem } from '@nuxt/content'
-
-defineProps<{
-  page: IndexCollectionItem
-}>()
-
 const [{ data: playbooks }, { data: skills }] = await Promise.all([
   useAsyncData('index-playbooks', () => queryCollection('playbooks').order('date', 'ASC').all()),
   useAsyncData('index-skills', () => queryCollection('skills').order('date', 'ASC').all())
 ])
 
 const works = computed(() => [
+  {
+    title: 'AI Chronicle',
+    description: '沿着关键事件回看 AI 如何走到今天。一条克制、可深入探索的行业时间轴。',
+    to: 'https://chendahuang.com/ai-chronicle/',
+    type: 'AI 编年史'
+  },
+  {
+    title: 'God-Museum',
+    description: '一界，多天，万神，共殿。为东西方神话建立一座共享展陈语言、保留各自原典边界的众神殿。',
+    to: 'https://chendahuang.com/god-museum/',
+    type: '跨文明神话世界观'
+  },
   ...(playbooks.value || []).map(item => ({
     title: item.title,
     description: item.description,
@@ -37,7 +43,7 @@ const works = computed(() => [
           Selected work
         </p>
         <h2 class="max-w-3xl text-balance text-4xl font-bold leading-[1.08] tracking-[-0.045em] text-highlighted sm:text-5xl">
-          {{ page.works.description }}
+          我做过，也仍在继续做的东西。
         </h2>
       </div>
 
