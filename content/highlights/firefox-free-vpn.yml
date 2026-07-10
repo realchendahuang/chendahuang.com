@@ -1,0 +1,19 @@
+title: "Firefox 每月免费 50G VPN"
+description: "厚礼蟹！我才知道 Firefox 浏览器为每个用户提供了每月免费 50G 的 VPN 流量。"
+date: 2026-06-30
+likes: 1639
+bookmarks: 2268
+reposts: 372
+views: 161249
+url: https://x.com/realchendahuang/status/2071963210689970673
+content: |
+  厚礼蟹！我才知道 Firefox 浏览器为每个用户提供了每月免费 50G 的 VPN 流量。
+
+  对于先有鸡、先有蛋的尴尬场景，非常有帮助。
+
+  使用方法：
+
+  1. 在地址栏输入 `about:config`
+  2. 进入高级首选项，点显示全部
+  3. 搜索输入 `browser.ipProtection.enabled`
+  4. 将该条目的值切换为 true

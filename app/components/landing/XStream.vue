@@ -5,36 +5,40 @@ defineProps<{
   page: IndexCollectionItem
 }>()
 
-const typeMeta = {
-  highlight: {
-    label: '亮点',
-    icon: 'i-lucide-sparkles'
-  },
-  article: {
-    label: '长文',
-    icon: 'i-lucide-newspaper'
+const { data: highlights } = await useAsyncData('index-highlights', () =>
+  queryCollection('highlights').order('likes', 'DESC').limit(4).all()
+)
+
+const formatCount = (n?: number) => {
+  const value = n ?? 0
+  if (value >= 10000) {
+    return `${(value / 10000).toFixed(value % 10000 === 0 ? 0 : 1)}w`
   }
+  if (value >= 1000) {
+    return `${(value / 1000).toFixed(value % 1000 === 0 ? 0 : 1)}k`
+  }
+  return String(value)
 }
 </script>
 
 <template>
   <UPageSection
-    v-if="page.xstream?.items?.length"
-    :title="page.xstream.title"
-    :description="page.xstream.description"
+    v-if="page.highlights && highlights?.length"
+    :title="page.highlights.title"
+    :description="page.highlights.description"
     :ui="{
       container: 'px-0 pt-0! sm:gap-6 lg:gap-8',
-      title: 'text-left text-xl sm:text-xl lg:text-2xl font-medium',
-      description: 'text-left mt-2 text-sm sm:text-md lg:text-sm text-muted'
+      title: 'text-left text-lg sm:text-xl font-medium',
+      description: 'text-left mt-2 text-sm text-muted'
     }"
   >
     <template #links>
       <div
-        v-if="page.xstream.links?.length"
+        v-if="page.highlights.links?.length"
         class="flex flex-wrap items-center gap-2"
       >
         <UButton
-          v-for="(link, index) in page.xstream.links"
+          v-for="(link, index) in page.highlights.links"
           :key="index"
           v-bind="link"
           size="sm"
@@ -43,53 +47,37 @@ const typeMeta = {
     </template>
 
     <div class="grid gap-3 sm:grid-cols-2">
-      <ULink
-        v-for="(item, index) in page.xstream.items"
-        :key="index"
-        :to="item.href"
-        target="_blank"
-        class="group rounded-lg border border-default bg-elevated/30 p-4 transition hover:border-primary/50 hover:bg-elevated"
+      <article
+        v-for="item in highlights"
+        :key="item.url"
+        class="rounded-lg border border-default bg-elevated/30 p-4 transition hover:border-primary/40"
       >
-        <div class="flex items-start justify-between gap-4">
-          <div class="min-w-0">
-            <div class="mb-3 flex flex-wrap items-center gap-2">
-              <UBadge
-                color="neutral"
-                variant="soft"
-                size="sm"
-                class="gap-1"
-              >
-                <UIcon :name="typeMeta[item.type].icon" />
-                {{ typeMeta[item.type].label }}
-              </UBadge>
-              <span
-                v-if="item.source"
-                class="text-xs text-dimmed"
-              >
-                {{ item.source }}
-              </span>
-              <span
-                v-if="item.date"
-                class="text-xs text-dimmed"
-              >
-                {{ item.date }}
-              </span>
-            </div>
+        <div class="mb-3 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-dimmed">
+          <time>{{ formatShortDate(item.date) }}</time>
+          <span>{{ formatCount(item.likes) }} 赞</span>
+          <span v-if="item.bookmarks">{{ formatCount(item.bookmarks) }} 收藏</span>
+        </div>
 
-            <h3 class="text-base font-medium text-highlighted">
-              {{ item.title }}
-            </h3>
-            <p class="mt-2 text-sm leading-6 text-muted">
-              {{ item.description }}
-            </p>
-          </div>
+        <h3 class="text-base font-medium leading-snug text-highlighted">
+          {{ item.title }}
+        </h3>
 
-          <UIcon
-            name="i-lucide-arrow-up-right"
-            class="mt-1 size-4 shrink-0 text-dimmed transition group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-primary"
+        <p class="mt-2 line-clamp-4 whitespace-pre-line text-sm leading-6 text-muted">
+          {{ item.content }}
+        </p>
+
+        <div class="mt-4 flex items-center gap-3">
+          <UButton
+            :to="item.url"
+            target="_blank"
+            size="xs"
+            color="neutral"
+            variant="soft"
+            label="原文"
+            trailing-icon="i-lucide-arrow-up-right"
           />
         </div>
-      </ULink>
+      </article>
     </div>
   </UPageSection>
 </template>

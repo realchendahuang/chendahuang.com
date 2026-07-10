@@ -28,24 +28,24 @@ defineOgImage('Portfolio', { title, description })
 
 <template>
   <div v-if="page">
-    <UContainer class="py-20 sm:py-28">
+    <UContainer class="py-14 sm:py-20">
       <p class="editorial-label">
-        Open source
+        项目
       </p>
-      <h1 class="mt-5 max-w-4xl text-5xl font-bold leading-[1.02] tracking-[-0.055em] text-highlighted sm:text-7xl">
+      <h1 class="mt-4 max-w-3xl text-3xl font-semibold tracking-[-0.03em] text-highlighted sm:text-4xl">
         {{ page.title }}
       </h1>
-      <p class="mt-6 max-w-3xl text-lg leading-8 text-muted">
+      <p class="mt-4 max-w-2xl text-base leading-7 text-muted">
         {{ page.description }}
       </p>
     </UContainer>
 
-    <section class="border-t border-default pb-24 sm:pb-32">
+    <section class="border-t border-default pb-20 sm:pb-28">
       <UContainer>
         <article
           v-for="(project, index) in projects"
           :key="project.title"
-          class="grid gap-7 border-b border-default py-10 sm:grid-cols-[4rem_minmax(0,1fr)_auto] sm:py-12"
+          class="grid gap-5 border-b border-default py-8 sm:grid-cols-[4rem_minmax(0,1fr)_auto] sm:py-10"
         >
           <div class="flex items-start gap-3 sm:block">
             <span class="text-xs text-dimmed">{{ String(index + 1).padStart(2, '0') }}</span>
@@ -65,7 +65,7 @@ defineOgImage('Portfolio', { title, description })
               {{ project.type }}
             </p>
             <div class="flex flex-wrap items-center gap-3">
-              <h2 class="text-3xl font-semibold tracking-[-0.04em] text-highlighted sm:text-4xl">
+              <h2 class="text-xl font-semibold tracking-[-0.02em] text-highlighted sm:text-2xl">
                 {{ project.title }}
               </h2>
               <span
@@ -75,10 +75,10 @@ defineOgImage('Portfolio', { title, description })
                 <UIcon name="i-lucide-star" /> {{ project.stars }}
               </span>
             </div>
-            <p class="mt-5 max-w-3xl leading-7 text-muted">
+            <p class="mt-3 max-w-2xl text-[15px] leading-7 text-muted">
               {{ project.description }}
             </p>
-            <div class="mt-6 flex flex-wrap gap-2">
+            <div class="mt-4 flex flex-wrap gap-2">
               <UBadge
                 v-for="tag in project.tags"
                 :key="tag"

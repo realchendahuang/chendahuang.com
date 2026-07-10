@@ -1,0 +1,21 @@
+title: "Cloudflare 上完成 Sub-Store 部署"
+description: "花了点时间在 Cloudflare 上完成了 Sub-Store 部署。"
+date: 2026-06-27
+likes: 209
+bookmarks: 244
+reposts: 29
+views: 67007
+url: https://x.com/realchendahuang/status/2070689769731019207
+content: |
+  花了点时间在 Cloudflare 上完成了 Sub-Store 部署。
+
+  把我的自建节点和机场备用节点全部融合在了一起，还搭配上了 ACL4SSR 分流规则自动订阅。
+
+  直接用一条订阅链接实现了：
+
+  - 多家供应商节点合并
+  - 节点过滤
+  - 分流规则配置
+  - 配置自动更新
+
+  丝滑的一批。

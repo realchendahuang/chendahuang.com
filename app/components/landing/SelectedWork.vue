@@ -14,33 +14,33 @@ const works = computed(() => (projects.value || []).map(project => ({
 <template>
   <section
     id="work"
-    class="scroll-mt-20 border-t border-default py-20 sm:py-28"
+    class="scroll-mt-20 border-t border-default py-14 sm:py-20"
   >
     <UContainer>
-      <div class="grid gap-5 sm:grid-cols-[13rem_1fr] sm:gap-12">
-        <p class="editorial-label pt-2">
-          Selected work
+      <div class="grid gap-4 sm:grid-cols-[10rem_1fr] sm:gap-10">
+        <p class="editorial-label pt-1">
+          作品
         </p>
-        <h2 class="max-w-3xl text-balance text-4xl font-bold leading-[1.08] tracking-[-0.045em] text-highlighted sm:text-5xl">
-          我做过，也仍在继续做的东西。
+        <h2 class="max-w-2xl text-balance text-2xl font-semibold leading-snug tracking-[-0.03em] text-highlighted sm:text-3xl">
+          做过，也还在继续做的东西。
         </h2>
       </div>
 
-      <div class="mt-14 border-t border-default sm:mt-16">
+      <div class="mt-10 border-t border-default sm:mt-12">
         <NuxtLink
           v-for="(work, index) in works"
           :key="work.title"
           :to="work.to"
           target="_blank"
-          class="group grid grid-cols-[2.5rem_minmax(0,1fr)_1.5rem] items-center gap-4 border-b border-default py-7 transition-colors hover:bg-elevated sm:grid-cols-[4rem_minmax(0,1fr)_17rem_2rem] sm:gap-7 sm:px-2 sm:py-8"
+          class="group grid grid-cols-[2.5rem_minmax(0,1fr)_1.5rem] items-center gap-4 border-b border-default py-5 transition-colors hover:bg-elevated sm:grid-cols-[4rem_minmax(0,1fr)_17rem_2rem] sm:gap-6 sm:px-2 sm:py-6"
         >
           <span class="text-xs text-muted">{{ String(index + 1).padStart(2, '0') }}</span>
 
           <div class="min-w-0">
-            <p class="mb-1 text-xs font-medium uppercase tracking-[0.12em] text-muted sm:hidden">
+            <p class="mb-1 text-xs font-medium text-muted sm:hidden">
               {{ work.type }}
             </p>
-            <h3 class="text-xl font-semibold tracking-[-0.025em] text-highlighted sm:text-2xl">
+            <h3 class="text-base font-semibold tracking-[-0.02em] text-highlighted sm:text-lg">
               {{ work.title }}
             </h3>
           </div>

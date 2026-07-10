@@ -34,15 +34,6 @@ const createTestimonialSchema = () => z.object({
   author: createAuthorSchema()
 })
 
-const createExternalItemSchema = () => z.object({
-  title: z.string().nonempty(),
-  description: z.string().nonempty(),
-  type: z.enum(['highlight', 'article']),
-  date: z.string().optional(),
-  href: z.string().url(),
-  source: z.string().optional()
-})
-
 export default defineContentConfig({
   collections: {
     index: defineCollection({
@@ -69,9 +60,8 @@ export default defineContentConfig({
         }),
         testimonials: z.array(createTestimonialSchema()).default([]),
         blog: createBaseSchema(),
-        xstream: createBaseSchema().extend({
-          links: z.array(createButtonSchema()).default([]),
-          items: z.array(createExternalItemSchema()).default([])
+        highlights: createBaseSchema().extend({
+          links: z.array(createButtonSchema()).default([])
         }),
         faq: createBaseSchema().extend({
           categories: z.array(
@@ -94,7 +84,9 @@ export default defineContentConfig({
         minRead: z.number(),
         date: z.date(),
         image: z.string().editor({ input: 'media' }).optional(),
-        author: createAuthorSchema()
+        author: createAuthorSchema(),
+        source: z.string().optional(),
+        sourceUrl: z.string().url().optional()
       })
     }),
     pages: defineCollection({
@@ -103,7 +95,8 @@ export default defineContentConfig({
         { include: 'blog.yml' },
         { include: 'projects.yml' },
         { include: 'playbooks.yml' },
-        { include: 'skills.yml' }
+        { include: 'skills.yml' },
+        { include: 'highlights.yml' }
       ],
       schema: z.object({
         links: z.array(createButtonSchema()).default([])
@@ -164,6 +157,21 @@ export default defineContentConfig({
         tags: z.array(z.string()).default([]),
         date: z.date(),
         stars: z.number().optional()
+      })
+    }),
+    highlights: defineCollection({
+      type: 'data',
+      source: 'highlights/*.yml',
+      schema: z.object({
+        title: z.string().nonempty(),
+        description: z.string().nonempty(),
+        date: z.date(),
+        likes: z.number().default(0),
+        bookmarks: z.number().default(0),
+        reposts: z.number().default(0),
+        views: z.number().default(0),
+        url: z.string().url(),
+        content: z.string().nonempty()
       })
     })
   }

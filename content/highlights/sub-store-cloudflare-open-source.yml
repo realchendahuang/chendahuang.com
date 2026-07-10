@@ -1,0 +1,20 @@
+title: "科学上网订阅聚合搬到 Cloudflare 上"
+description: "我把科学上网订阅聚合搬到了 Cloudflare 上。"
+date: 2026-06-28
+likes: 327
+bookmarks: 479
+reposts: 56
+views: 44611
+url: https://x.com/realchendahuang/status/2071247817109348796
+content: |
+  我把科学上网订阅聚合搬到了 Cloudflare 上。
+
+  开源了一个完全免费部署在 Cloudflare 上的科学上网订阅链接聚合项目。
+
+  帮你把所有的科学上网订阅链接、自建的网络节点，统一聚合在一条链接上，同时可以配上分流规则。
+
+  真正做到只需要一条链接，在所有客户端都可以使用，不需要一个客户端去单独配置了。
+
+  GitHub：https://github.com/realchendahuang/sub-store-cloudflare
+
+  博客原文：[我把机场订阅聚合搬到了 Cloudflare 上](/blog/sub-store-cloudflare)

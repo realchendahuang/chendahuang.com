@@ -30,8 +30,8 @@ const ui = {
     :description="page.faq.description"
     :ui="{
       container: 'px-0 pt-0! gap-4 sm:gap-4',
-      title: 'text-left text-xl sm:text-xl lg:text-2xl font-medium',
-      description: 'text-left mt-2 text-sm sm:text-md lg:text-sm text-muted'
+      title: 'text-left text-lg sm:text-xl font-medium',
+      description: 'text-left mt-2 text-sm text-muted'
     }"
   >
     <UTabs

@@ -23,3 +23,59 @@
     background-color: #474747;
   }
 }
+
+.editorial-label {
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  color: var(--ui-text-muted);
+}
+
+/* Blog body: keep Chinese reading comfortable, not oversized */
+.prose-blog {
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.prose-blog :where(h2) {
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+.prose-blog :where(h3) {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  line-height: 1.45;
+  font-weight: 600;
+}
+
+.prose-blog :where(p, ul, ol, blockquote) {
+  margin-top: 0.9rem;
+  margin-bottom: 0.9rem;
+}
+
+.prose-blog :where(li) {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.prose-blog :where(img) {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  border-radius: 0.75rem;
+}
+
+.prose-highlight :where(ul, ol) {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding-left: 1.25rem;
+}
+
+.prose-highlight :where(li) {
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+}

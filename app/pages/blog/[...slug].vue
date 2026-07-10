@@ -77,10 +77,10 @@ const articleLink = computed(() => canonicalUrl)
 </script>
 
 <template>
-  <div class="pb-24 pt-12 sm:pb-32 sm:pt-16">
+  <div class="pb-20 pt-10 sm:pb-28 sm:pt-14">
     <UContainer>
       <article v-if="page">
-        <header class="mx-auto max-w-4xl">
+        <header class="mx-auto max-w-3xl">
           <ULink
             to="/blog"
             class="inline-flex items-center gap-1.5 text-sm font-medium text-muted transition-colors hover:text-highlighted"
@@ -92,33 +92,43 @@ const articleLink = computed(() => canonicalUrl)
             全部文章
           </ULink>
 
-          <div class="mt-12 flex flex-wrap items-center gap-x-3 gap-y-2 text-xs font-medium text-dimmed">
+          <div class="mt-8 flex flex-wrap items-center gap-x-3 gap-y-2 text-xs font-medium text-dimmed">
             <time :datetime="publishedTime">
               {{ formatDisplayDate(page.date) }}
             </time>
             <span aria-hidden="true">·</span>
             <span>{{ page.minRead }} 分钟阅读</span>
+            <template v-if="page.sourceUrl">
+              <span aria-hidden="true">·</span>
+              <ULink
+                :to="page.sourceUrl"
+                target="_blank"
+                class="hover:text-highlighted"
+              >
+                原文来自 X
+              </ULink>
+            </template>
           </div>
 
-          <h1 class="mt-6 max-w-4xl text-balance text-[2.65rem] font-bold leading-[1.06] tracking-[-0.055em] text-highlighted sm:text-6xl lg:text-7xl">
+          <h1 class="mt-4 max-w-3xl text-balance text-3xl font-semibold leading-tight tracking-[-0.03em] text-highlighted sm:text-4xl">
             {{ page.title }}
           </h1>
 
-          <p class="mt-7 max-w-3xl text-lg leading-8 text-muted sm:text-xl">
+          <p class="mt-4 max-w-2xl text-base leading-7 text-muted">
             {{ page.description }}
           </p>
 
-          <div class="mt-8 flex items-center gap-3">
+          <div class="mt-6 flex items-center gap-3">
             <NuxtImg
               v-if="page.author.avatar"
               :src="page.author.avatar.src"
               :alt="page.author.avatar.alt"
-              width="40"
-              height="40"
-              class="size-10 rounded-full object-cover"
+              width="36"
+              height="36"
+              class="size-9 rounded-full object-cover"
             />
             <div>
-              <p class="text-sm font-semibold text-highlighted">
+              <p class="text-sm font-medium text-highlighted">
                 {{ page.author.name }}
               </p>
               <p class="text-xs text-dimmed">
@@ -132,30 +142,42 @@ const articleLink = computed(() => canonicalUrl)
           v-if="page.image"
           :src="page.image"
           :alt="page.title"
-          class="mx-auto mt-12 aspect-[16/8] w-full max-w-5xl rounded-2xl object-cover object-center"
+          class="mx-auto mt-10 aspect-[16/8] w-full max-w-4xl rounded-xl object-cover object-center"
         />
 
-        <UPageBody class="mx-auto mt-14 max-w-3xl sm:mt-16">
+        <UPageBody class="prose-blog mx-auto mt-10 max-w-3xl sm:mt-12">
           <ContentRenderer
             v-if="page.body"
             :value="page"
           />
 
-          <div class="mt-14 flex items-center justify-between border-t border-default pt-6 text-sm text-muted">
-            <span>读完了，感谢你的时间。</span>
-            <UButton
-              size="sm"
-              variant="soft"
-              color="neutral"
-              icon="i-lucide-link"
-              label="复制链接"
-              @click="copyToClipboard(articleLink, '文章链接已复制到剪贴板')"
-            />
+          <div class="mt-12 flex flex-wrap items-center justify-between gap-3 border-t border-default pt-6 text-sm text-muted">
+            <span>如果你觉得有用，欢迎转发给朋友。</span>
+            <div class="flex items-center gap-2">
+              <UButton
+                v-if="page.sourceUrl"
+                size="sm"
+                variant="soft"
+                color="neutral"
+                icon="i-simple-icons-x"
+                label="X 原文"
+                :to="page.sourceUrl"
+                target="_blank"
+              />
+              <UButton
+                size="sm"
+                variant="soft"
+                color="neutral"
+                icon="i-lucide-link"
+                label="复制链接"
+                @click="copyToClipboard(articleLink, '文章链接已复制到剪贴板')"
+              />
+            </div>
           </div>
 
           <UContentSurround
             :surround
-            class="mt-10"
+            class="mt-8"
           />
         </UPageBody>
       </article>

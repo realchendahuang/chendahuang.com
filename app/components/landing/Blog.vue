@@ -19,8 +19,8 @@ if (!posts.value) {
     :description="page.blog.description"
     :ui="{
       container: 'px-0 pt-0! sm:gap-6 lg:gap-8',
-      title: 'text-left text-xl sm:text-xl lg:text-2xl font-medium',
-      description: 'text-left mt-2 text-sm sm:text-md lg:text-sm text-muted'
+      title: 'text-left text-lg sm:text-xl font-medium',
+      description: 'text-left mt-2 text-sm text-muted'
     }"
   >
     <UBlogPosts

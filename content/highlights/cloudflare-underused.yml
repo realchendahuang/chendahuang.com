@@ -1,0 +1,24 @@
+title: "大家对 Cloudflare 的开发程度依然不足 1%"
+description: "我感觉大家对 Cloudflare 的开发程度依然不足 1%。"
+date: 2026-06-15
+likes: 377
+bookmarks: 470
+reposts: 32
+views: 88959
+url: https://x.com/realchendahuang/status/2066446337936110030
+content: |
+  我感觉大家对 Cloudflare 的开发程度依然不足 1%。
+
+  它现在出了太多的功能。
+
+  - 对象存储用 R2
+  - 后端 API 用 Worker
+  - AI 网关用 AI Gateway
+  - 重计算用 Container
+  - 缓存用 KV
+  - 数据库用 D1
+  - 如果用 PostgreSQL，可以用 HyperDrive 连一下
+
+  等等，还有很多很多，只有你想不到，没有它做不到。
+
+  关键是真他妈便宜。免费额度就能用很久。什么叫免费额度？就是一分钱不掏啊，赛博菩萨。

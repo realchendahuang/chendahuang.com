@@ -54,7 +54,10 @@ useHead({
       <LandingWorkExperience :page />
     </UPageSection>
     <LandingSelectedWork />
-    <LandingXStream :page />
+    <LandingXStream
+      v-if="page.highlights"
+      :page
+    />
     <LandingBlog :page />
     <LandingTestimonials :page />
     <LandingFAQ :page />

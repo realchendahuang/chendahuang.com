@@ -32,16 +32,16 @@ defineOgImage('Portfolio', { title, description })
 
 <template>
   <div v-if="page">
-    <UContainer class="py-20 sm:py-28">
-      <div class="grid gap-8 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-end">
+    <UContainer class="py-14 sm:py-20">
+      <div class="grid gap-6 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-end">
         <div>
           <p class="editorial-label">
-            Writing
+            博客
           </p>
-          <h1 class="mt-5 max-w-4xl text-5xl font-bold leading-[1.02] tracking-[-0.055em] text-highlighted sm:text-7xl">
+          <h1 class="mt-4 max-w-3xl text-3xl font-semibold tracking-[-0.03em] text-highlighted sm:text-4xl">
             {{ page.title }}
           </h1>
-          <p class="mt-6 max-w-2xl text-lg leading-8 text-muted">
+          <p class="mt-4 max-w-2xl text-base leading-7 text-muted">
             {{ page.description }}
           </p>
         </div>
@@ -56,30 +56,30 @@ defineOgImage('Portfolio', { title, description })
       </div>
     </UContainer>
 
-    <section class="border-t border-default pb-24 sm:pb-32">
+    <section class="border-t border-default pb-20 sm:pb-28">
       <UContainer>
         <NuxtLink
           v-for="post in posts"
           :key="post.path"
           :to="post.path"
-          class="group grid grid-cols-[minmax(0,1fr)_1.5rem] gap-5 border-b border-default py-9 transition-colors hover:bg-elevated sm:grid-cols-[10rem_minmax(0,1fr)_2rem] sm:gap-8 sm:px-2 sm:py-11"
+          class="group grid grid-cols-[minmax(0,1fr)_1.5rem] gap-4 border-b border-default py-7 transition-colors hover:bg-elevated sm:grid-cols-[9rem_minmax(0,1fr)_1.5rem] sm:gap-6 sm:px-2 sm:py-8"
         >
           <p class="col-span-2 text-xs font-medium text-dimmed sm:col-span-1">
             {{ formatShortDate(post.date) }} · {{ post.minRead }} 分钟
           </p>
 
           <div>
-            <h2 class="max-w-4xl text-balance text-2xl font-semibold leading-tight tracking-[-0.035em] text-highlighted sm:text-4xl">
+            <h2 class="max-w-3xl text-balance text-lg font-semibold leading-snug tracking-[-0.02em] text-highlighted sm:text-xl">
               {{ post.title }}
             </h2>
-            <p class="mt-4 max-w-3xl leading-7 text-muted">
+            <p class="mt-2 max-w-2xl text-sm leading-6 text-muted sm:text-[15px] sm:leading-7">
               {{ post.description }}
             </p>
           </div>
 
           <UIcon
             name="i-lucide-arrow-right"
-            class="mt-1 size-5 text-dimmed transition-transform group-hover:translate-x-1.5 group-hover:text-primary"
+            class="mt-1 size-4 text-dimmed transition-transform group-hover:translate-x-1 group-hover:text-primary"
           />
         </NuxtLink>
       </UContainer>

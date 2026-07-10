@@ -1,0 +1,20 @@
+title: "FlareMo：基于 Cloudflare 原生栈的笔记软件"
+description: "基于 Cloudflare 技术栈原生开发的笔记软件——FlareMo。"
+date: 2026-06-28
+likes: 140
+bookmarks: 175
+reposts: 19
+views: 16452
+url: https://x.com/realchendahuang/status/2071232962520285429
+content: |
+  基于 Cloudflare 技术栈原生开发的笔记软件——FlareMo。
+
+  注册一个免费的 Cloudflare 账号，部署完以后就可以拥有 10G 文件存储、5G 数据存储。
+
+  永久免费，装备不花一分钱，流量不花一分钱，数据多地备份，天生自带高可用机制。
+
+  24 小时随时随地在云端服务，完全兼容 Memos 生态。
+
+  当时开发进度：花了一天完成整体基本功能搭建，已经完全可用。
+
+  后续会补充更多使用部署教程、工程化测试用例、AI Agent 相关技术，以及多端支持。Build in public。
