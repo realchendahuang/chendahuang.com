@@ -9,53 +9,17 @@
 }
 
 :root {
-  --ui-container: 72rem;
+  --ui-container: var(--container-4xl);
 
   ::selection {
-    color: #ffffff;
-    background-color: #2563eb;
+    color: #282a30;
+    background-color: #c8c8c8;
   }
 }
 
 .dark {
   ::selection {
     color: #ffffff;
-    background-color: #2563eb;
-  }
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  min-width: 320px;
-  background: var(--ui-bg);
-  color: var(--ui-text);
-  font-feature-settings: 'ss01', 'cv02', 'cv03';
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-}
-
-.editorial-label {
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--ui-text-muted);
-}
-
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
-
-  *,
-  *::before,
-  *::after {
-    scroll-behavior: auto !important;
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
+    background-color: #474747;
   }
 }

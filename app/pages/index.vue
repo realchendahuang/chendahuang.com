@@ -43,9 +43,19 @@ useHead({
 </script>
 
 <template>
-  <div v-if="page">
+  <UPage v-if="page">
     <LandingHero :page />
-    <LandingSelectedWork :page />
+    <UPageSection
+      :ui="{
+        container: 'pt-0! lg:grid lg:grid-cols-2 lg:gap-8'
+      }"
+    >
+      <LandingAbout :page />
+      <LandingWorkExperience :page />
+    </UPageSection>
+    <LandingXStream :page />
     <LandingBlog :page />
-  </div>
+    <LandingTestimonials :page />
+    <LandingFAQ :page />
+  </UPage>
 </template>

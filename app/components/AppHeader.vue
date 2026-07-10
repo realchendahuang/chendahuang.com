@@ -1,56 +1,26 @@
 <script setup lang="ts">
 import type { NavigationMenuItem } from '@nuxt/ui'
 
-const props = defineProps<{
+defineProps<{
   links: NavigationMenuItem[]
 }>()
-
-const mobileLinks = computed(() => props.links.slice(0, 2))
 </script>
 
 <template>
-  <header class="sticky top-0 z-50 border-b border-default bg-default/90 backdrop-blur-xl">
-    <UContainer class="flex h-16 items-center justify-between gap-4">
-      <NuxtLink
-        to="/"
-        class="text-base font-bold tracking-tight text-highlighted transition-colors hover:text-primary"
-      >
-        陈大黄
-      </NuxtLink>
-
-      <div class="flex items-center gap-1">
-        <nav
-          aria-label="主导航"
-          class="hidden items-center gap-1 sm:flex"
-        >
-          <NuxtLink
-            v-for="link in links"
-            :key="String(link.to)"
-            :to="link.to"
-            class="rounded-md px-3 py-2 text-sm font-medium text-muted transition-colors hover:bg-elevated hover:text-highlighted"
-            active-class="bg-elevated text-highlighted"
-          >
-            {{ link.label }}
-          </NuxtLink>
-        </nav>
-
-        <nav
-          aria-label="移动端导航"
-          class="flex items-center sm:hidden"
-        >
-          <NuxtLink
-            v-for="link in mobileLinks"
-            :key="String(link.to)"
-            :to="link.to"
-            class="rounded-md px-2.5 py-2 text-sm font-medium text-muted transition-colors hover:text-highlighted"
-            active-class="text-highlighted"
-          >
-            {{ link.label }}
-          </NuxtLink>
-        </nav>
-
+  <div class="fixed top-2 sm:top-4 mx-auto left-1/2 transform -translate-x-1/2 z-10">
+    <UNavigationMenu
+      :items="links"
+      variant="link"
+      color="neutral"
+      class="bg-muted/80 backdrop-blur-sm rounded-full px-2 sm:px-4 border border-muted/50 shadow-lg shadow-neutral-950/5"
+      :ui="{
+        link: 'px-2 py-1',
+        linkLeadingIcon: 'hidden'
+      }"
+    >
+      <template #list-trailing>
         <ColorModeButton />
-      </div>
-    </UContainer>
-  </header>
+      </template>
+    </UNavigationMenu>
+  </div>
 </template>

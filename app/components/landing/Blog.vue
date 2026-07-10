@@ -8,58 +8,54 @@ defineProps<{
 const { data: posts } = await useAsyncData('index-blogs', () =>
   queryCollection('blog').order('date', 'DESC').limit(3).all()
 )
+if (!posts.value) {
+  throw createError({ statusCode: 404, statusMessage: '博客文章未找到', fatal: true })
+}
 </script>
 
 <template>
-  <section
-    id="writing"
-    class="scroll-mt-16 bg-neutral-950 py-20 text-white sm:py-28"
+  <UPageSection
+    :title="page.blog.title"
+    :description="page.blog.description"
+    :ui="{
+      container: 'px-0 pt-0! sm:gap-6 lg:gap-8',
+      title: 'text-left text-xl sm:text-xl lg:text-2xl font-medium',
+      description: 'text-left mt-2 text-sm sm:text-md lg:text-sm text-muted'
+    }"
   >
-    <UContainer>
-      <div class="grid gap-5 sm:grid-cols-[13rem_1fr] sm:gap-12">
-        <p class="text-xs font-semibold uppercase tracking-[0.16em] text-neutral-400">
-          Latest writing
-        </p>
-        <h2 class="max-w-3xl text-balance text-4xl font-bold leading-[1.08] tracking-[-0.045em] sm:text-5xl">
-          {{ page.blog.description }}
-        </h2>
-      </div>
-
-      <div class="mt-14 sm:mt-16">
-        <NuxtLink
-          v-for="post in posts"
-          :key="post.path"
-          :to="post.path"
-          class="group grid grid-cols-[minmax(0,1fr)_1.5rem] gap-5 border-t border-neutral-800 py-8 last:border-b sm:grid-cols-[10rem_minmax(0,1fr)_2rem] sm:gap-8 sm:py-9"
-        >
-          <p class="col-span-2 text-xs font-medium text-neutral-400 sm:col-span-1">
-            {{ formatShortDate(post.date) }} · {{ post.minRead }} 分钟
-          </p>
-
-          <div>
-            <h3 class="text-balance text-2xl font-semibold leading-tight tracking-[-0.035em] sm:text-3xl">
-              {{ post.title }}
-            </h3>
-            <p class="mt-3 max-w-3xl leading-7 text-neutral-400">
-              {{ post.description }}
-            </p>
-          </div>
-
-          <UIcon
-            name="i-lucide-arrow-right"
-            class="mt-1 size-5 text-neutral-400 transition-transform group-hover:translate-x-1.5 group-hover:text-blue-400"
-          />
-        </NuxtLink>
-      </div>
-
-      <UButton
-        to="/blog"
-        label="查看全部文章"
-        trailing-icon="i-lucide-arrow-right"
-        color="neutral"
-        variant="soft"
-        class="mt-8 bg-white/10 text-white hover:bg-white/15"
-      />
-    </UContainer>
-  </section>
+    <UBlogPosts
+      orientation="vertical"
+      class="gap-4 lg:gap-y-4"
+    >
+      <UBlogPost
+        v-for="(post, index) in posts"
+        :key="index"
+        orientation="horizontal"
+        variant="naked"
+        v-bind="post"
+        :to="post.path"
+        :ui="{
+          root: 'group relative lg:items-start lg:flex ring-0 hover:ring-0',
+          body: 'px-0!',
+          header: 'hidden'
+        }"
+      >
+        <template #footer>
+          <UButton
+            size="xs"
+            variant="link"
+            class="px-0 gap-0"
+            label="读全文"
+          >
+            <template #trailing>
+              <UIcon
+                name="i-lucide-arrow-right"
+                class="size-4 text-primary transition-all opacity-0 group-hover:translate-x-1 group-hover:opacity-100"
+              />
+            </template>
+          </UButton>
+        </template>
+      </UBlogPost>
+    </UBlogPosts>
+  </UPageSection>
 </template>
