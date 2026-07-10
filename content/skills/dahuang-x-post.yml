@@ -1,0 +1,9 @@
+title: Dahuang X Post
+description: 面向 X 内容运营的中文打磨 Skill。让观点更锋利，开头更抓人，结构更清楚，表达更适合信息流传播。
+url: https://github.com/realchendahuang/dahuang-x-post
+install: npx skills add realchendahuang/dahuang-x-post -g
+icon: i-simple-icons-x
+color: "#111111"
+tags: ["Agent Skill", "X", "中文写作", "Hook", "Thread"]
+date: 2026-07-10
+stars: 0

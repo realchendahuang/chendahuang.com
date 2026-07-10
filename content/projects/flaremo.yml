@@ -1,0 +1,10 @@
+title: FlareMo
+description: Cloudflare 原生的个人知识管理系统，提供 Memos 兼容 API。轻量、自托管，并把数据掌握在自己手里。
+type: 个人知识管理
+url: https://github.com/realchendahuang/FlareMo
+icon: i-lucide-sticky-note
+color: "#f59e0b"
+tags: ["Cloudflare", "Memos", "D1", "R2", "知识管理"]
+date: 2026-07-10
+status: ongoing
+stars: 150

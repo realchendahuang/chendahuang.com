@@ -30,6 +30,7 @@ export default defineNuxtConfig({
 
   routeRules: {
     '/blog/**': { prerender: true },
+    '/projects': { prerender: true },
     '/rss.xml': { prerender: true },
     '/sitemap.xml': { prerender: true }
   },
@@ -41,6 +42,7 @@ export default defineNuxtConfig({
     prerender: {
       routes: [
         '/',
+        '/projects',
         '/playbooks',
         '/skills',
         '/blog',

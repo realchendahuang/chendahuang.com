@@ -101,6 +101,7 @@ export default defineContentConfig({
       type: 'page',
       source: [
         { include: 'blog.yml' },
+        { include: 'projects.yml' },
         { include: 'playbooks.yml' },
         { include: 'skills.yml' }
       ],
@@ -114,6 +115,23 @@ export default defineContentConfig({
       schema: z.object({
         content: z.object({}),
         images: z.array(createImageSchema()).default([])
+      })
+    }),
+    projects: defineCollection({
+      type: 'data',
+      source: 'projects/*.yml',
+      schema: z.object({
+        title: z.string().nonempty(),
+        description: z.string().nonempty(),
+        type: z.string().nonempty(),
+        url: z.string().nonempty(),
+        onlineUrl: z.string().optional(),
+        icon: z.string().editor({ input: 'icon' }).optional(),
+        color: z.string().optional(),
+        tags: z.array(z.string()).default([]),
+        date: z.date(),
+        status: z.enum(['ongoing', 'stable', 'archived']).default('ongoing'),
+        stars: z.number().optional()
       })
     }),
     playbooks: defineCollection({

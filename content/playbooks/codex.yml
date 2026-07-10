@@ -1,0 +1,10 @@
+title: Codex Playbook
+description: 把 Codex 当成长期协作系统的中文实战手册。从表面选择、提示词契约和上下文工程，到 Skills、MCP、Review、CI 与发布。
+url: https://github.com/realchendahuang/codex-playbook
+onlineUrl: https://chendahuang.com/playbook/codex/
+icon: i-lucide-bot
+color: "#10a37f"
+tags: ["Codex", "Agent", "上下文工程", "Skills", "MCP"]
+date: 2026-07-10
+status: ongoing
+stars: 1
