@@ -16,9 +16,10 @@ useHead(() => ({
     { key: 'theme-color', name: 'theme-color', content: color }
   ],
   link: [
-    { rel: 'icon', type: 'image/png', sizes: '64x64', href: '/favicon.png?v=logo-20260710' },
-    { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico?v=logo-20260710' },
-    { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png?v=logo-20260710' },
+    { rel: 'icon', type: 'image/svg+xml', href: '/site-icon.svg?v=mark-20260711' },
+    { rel: 'icon', type: 'image/png', sizes: '64x64', href: '/favicon.png?v=mark-20260711' },
+    { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico?v=mark-20260711' },
+    { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png?v=mark-20260711' },
     { rel: 'canonical', href: canonicalUrl },
     { rel: 'alternate', type: 'application/rss+xml', title: `${SITE_NAME} 的博客`, href: toAbsoluteUrl('/rss.xml') }
   ],

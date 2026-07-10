@@ -121,7 +121,7 @@ defineOgImage('Portfolio', { title, description })
               loading="lazy"
               decoding="async"
               class="aspect-video w-full object-cover transition duration-500 group-hover:scale-[1.015]"
-            />
+            >
           </NuxtLink>
         </article>
       </UContainer>
