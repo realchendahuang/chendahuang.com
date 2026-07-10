@@ -53,6 +53,7 @@ useHead({
       <LandingAbout :page />
       <LandingWorkExperience :page />
     </UPageSection>
+    <LandingSelectedWork />
     <LandingXStream :page />
     <LandingBlog :page />
     <LandingTestimonials :page />
