@@ -8,7 +8,9 @@ const switchTheme = () => {
 }
 
 const startViewTransition = (event: MouseEvent) => {
-  if (!document.startViewTransition) {
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+
+  if (!document.startViewTransition || reducedMotion) {
     switchTheme()
     return
   }
@@ -25,7 +27,6 @@ const startViewTransition = (event: MouseEvent) => {
   })
 
   transition.ready.then(() => {
-    const duration = 600
     document.documentElement.animate(
       {
         clipPath: [
@@ -34,19 +35,19 @@ const startViewTransition = (event: MouseEvent) => {
         ]
       },
       {
-        duration: duration,
+        duration: 500,
         easing: 'cubic-bezier(.76,.32,.29,.99)',
         pseudoElement: '::view-transition-new(root)'
       }
     )
-  })
+  }).catch(() => undefined)
 }
 </script>
 
 <template>
   <ClientOnly>
     <UButton
-      :aria-label="`Switch to ${nextTheme} mode`"
+      :aria-label="nextTheme === 'dark' ? '切换到深色模式' : '切换到浅色模式'"
       :icon="`i-lucide-${nextTheme === 'dark' ? 'sun' : 'moon'}`"
       color="neutral"
       variant="ghost"
@@ -55,7 +56,7 @@ const startViewTransition = (event: MouseEvent) => {
       @click="startViewTransition"
     />
     <template #fallback>
-      <div class="size-4" />
+      <div class="size-8" />
     </template>
   </ClientOnly>
 </template>
@@ -72,5 +73,12 @@ const startViewTransition = (event: MouseEvent) => {
 }
 ::view-transition-old(root) {
   z-index: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation-duration: 0.01ms;
+  }
 }
 </style>

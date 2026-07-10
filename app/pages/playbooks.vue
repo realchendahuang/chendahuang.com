@@ -3,11 +3,7 @@ const { data: page } = await useAsyncData('playbooks-page', () => {
   return queryCollection('pages').path('/playbooks').first()
 })
 if (!page.value) {
-  throw createError({
-    statusCode: 404,
-    statusMessage: '页面未找到',
-    fatal: true
-  })
+  throw createError({ statusCode: 404, statusMessage: '页面未找到', fatal: true })
 }
 
 const { data: playbooks } = await useAsyncData('playbooks', () => {
@@ -21,135 +17,94 @@ useSeoMeta({
   title,
   ogTitle: title,
   description,
-  ogDescription: description
+  ogDescription: description,
+  ogUrl: toCanonicalUrl('/playbooks'),
+  twitterTitle: title,
+  twitterDescription: description
 })
 
 defineOgImage('Portfolio', { title, description })
 </script>
 
 <template>
-  <UPage v-if="page">
-    <UPageHero
-      :title="page.title"
-      :description="page.description"
-      :links="page.links"
-      :ui="{
-        title: 'mx-0! text-left',
-        description: 'mx-0! text-left',
-        links: 'justify-start'
-      }"
-    />
-    <UPageSection
-      :ui="{
-        container: 'pt-0!'
-      }"
-    >
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <Motion
+  <div v-if="page">
+    <UContainer class="py-20 sm:py-28">
+      <p class="editorial-label">
+        Practical guides
+      </p>
+      <h1 class="mt-5 max-w-4xl text-5xl font-bold leading-[1.02] tracking-[-0.055em] text-highlighted sm:text-7xl">
+        {{ page.title }}
+      </h1>
+      <p class="mt-6 max-w-3xl text-lg leading-8 text-muted">
+        {{ page.description }}
+      </p>
+    </UContainer>
+
+    <section class="border-t border-default pb-24 sm:pb-32">
+      <UContainer>
+        <article
           v-for="(playbook, index) in playbooks"
           :key="playbook.title"
-          :initial="{ opacity: 0, transform: 'translateY(10px)' }"
-          :while-in-view="{ opacity: 1, transform: 'translateY(0)' }"
-          :transition="{ delay: 0.15 * index }"
-          :in-view-options="{ once: true }"
+          class="grid gap-7 border-b border-default py-10 sm:grid-cols-[4rem_minmax(0,1fr)_auto] sm:py-12"
         >
-          <UPageCard
-            :title="playbook.title"
-            :description="playbook.description"
-            variant="subtle"
-            class="group h-full"
-            :to="playbook.onlineUrl"
-            target="_blank"
-          >
-            <template #leading>
+          <div class="flex items-start gap-3 sm:block">
+            <span class="text-xs text-dimmed">{{ String(index + 1).padStart(2, '0') }}</span>
+            <span
+              class="ml-auto inline-flex size-10 items-center justify-center rounded-lg sm:mt-8"
+              :style="{ backgroundColor: (playbook.color || '#888') + '18', color: playbook.color || '#888' }"
+            >
+              <UIcon
+                :name="playbook.icon || 'i-lucide-book'"
+                class="size-5"
+              />
+            </span>
+          </div>
+
+          <div>
+            <div class="flex flex-wrap items-center gap-3">
+              <h2 class="text-3xl font-semibold tracking-[-0.04em] text-highlighted sm:text-4xl">
+                {{ playbook.title }}
+              </h2>
               <span
-                class="inline-flex items-center justify-center size-10 rounded-lg"
-                :style="{ backgroundColor: (playbook.color || '#888') + '22', color: playbook.color || '#888' }"
+                v-if="playbook.stars !== undefined"
+                class="inline-flex items-center gap-1 text-xs text-dimmed"
               >
-                <UIcon
-                  :name="playbook.icon || 'i-lucide-book'"
-                  class="size-5"
-                />
+                <UIcon name="i-lucide-star" /> {{ playbook.stars }}
               </span>
-            </template>
+            </div>
+            <p class="mt-5 max-w-3xl leading-7 text-muted">
+              {{ playbook.description }}
+            </p>
+            <div class="mt-6 flex flex-wrap gap-2">
+              <UBadge
+                v-for="tag in playbook.tags"
+                :key="tag"
+                :label="tag"
+                color="neutral"
+                variant="soft"
+              />
+            </div>
+          </div>
 
-            <template #footer>
-              <div class="flex flex-wrap items-center gap-2">
-                <UBadge
-                  v-for="tag in playbook.tags"
-                  :key="tag"
-                  :label="tag"
-                  color="neutral"
-                  variant="soft"
-                  size="sm"
-                />
-              </div>
-            </template>
-
-            <template #trailing>
-              <div class="flex flex-col items-end gap-2">
-                <div
-                  v-if="playbook.stars !== undefined"
-                  class="inline-flex items-center gap-1 text-xs text-muted"
-                >
-                  <UIcon
-                    name="i-lucide-star"
-                    class="size-3.5"
-                  />
-                  {{ playbook.stars }}
-                </div>
-              </div>
-            </template>
-
-            <template #action>
-              <div class="flex items-center gap-3">
-                <UButton
-                  :to="playbook.onlineUrl"
-                  target="_blank"
-                  label="在线阅读"
-                  color="primary"
-                  variant="link"
-                  class="px-0"
-                >
-                  <template #trailing>
-                    <UIcon
-                      name="i-lucide-arrow-right"
-                      class="size-4 transition-all opacity-0 group-hover:translate-x-1 group-hover:opacity-100"
-                    />
-                  </template>
-                </UButton>
-                <UButton
-                  :to="playbook.url"
-                  target="_blank"
-                  label="GitHub"
-                  color="neutral"
-                  variant="ghost"
-                  size="sm"
-                  icon="i-simple-icons-github"
-                />
-              </div>
-            </template>
-          </UPageCard>
-        </Motion>
-      </div>
-
-      <UPageCTA
-        variant="naked"
-        class="mt-12"
-        :ui="{ container: 'py-8' }"
-      >
-        <template #description>
-          <p class="text-muted">
-            还有更多 Playbook 在路上。想看我写哪方面的实战手册？在
-            <ULink
-              to="https://x.com/realchendahuang"
+          <div class="flex items-start gap-2 sm:justify-end">
+            <UButton
+              :to="playbook.onlineUrl"
               target="_blank"
-              class="text-primary"
-            >X</ULink>
-            上告诉我。
-          </p>
-        </template>
-      </UPageCTA>
-    </UPageSection>
-  </UPage>
+              label="在线阅读"
+              trailing-icon="i-lucide-arrow-up-right"
+              color="neutral"
+            />
+            <UButton
+              :to="playbook.url"
+              target="_blank"
+              aria-label="在 GitHub 查看"
+              icon="i-simple-icons-github"
+              color="neutral"
+              variant="soft"
+            />
+          </div>
+        </article>
+      </UContainer>
+    </section>
+  </div>
 </template>

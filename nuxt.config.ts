@@ -6,8 +6,7 @@ export default defineNuxtConfig({
     '@nuxt/ui',
     '@nuxt/content',
     '@vueuse/nuxt',
-    'nuxt-og-image',
-    'motion-v/nuxt'
+    'nuxt-og-image'
   ],
 
   devtools: {
@@ -16,13 +15,25 @@ export default defineNuxtConfig({
 
   css: ['~/assets/css/main.css'],
 
+  site: {
+    url: 'https://chendahuang.com',
+    name: '陈大黄',
+    description: '前 AI 产品经理，现在做独立开发。折腾 AI 效率工具、Cloudflare 和高效语言学习。'
+  },
+
   content: {
     experimental: {
       sqliteConnector: 'native'
     }
   },
 
-  compatibilityDate: '2024-11-01',
+  routeRules: {
+    '/blog/**': { prerender: true },
+    '/rss.xml': { prerender: true },
+    '/sitemap.xml': { prerender: true }
+  },
+
+  compatibilityDate: '2026-07-10',
 
   nitro: {
     preset: 'cloudflare-pages',
@@ -32,7 +43,9 @@ export default defineNuxtConfig({
         '/playbooks',
         '/skills',
         '/blog',
-        '/about'
+        '/about',
+        '/rss.xml',
+        '/sitemap.xml'
       ],
       crawlLinks: true
     }

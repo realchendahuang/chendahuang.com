@@ -29,20 +29,6 @@ const createAuthorSchema = () => z.object({
   avatar: createImageSchema().optional()
 })
 
-const createTestimonialSchema = () => z.object({
-  quote: z.string(),
-  author: createAuthorSchema()
-})
-
-const createExternalItemSchema = () => z.object({
-  title: z.string().nonempty(),
-  description: z.string().nonempty(),
-  type: z.enum(['highlight', 'article']),
-  date: z.string().optional(),
-  href: z.string().url(),
-  source: z.string().optional()
-})
-
 export default defineContentConfig({
   collections: {
     index: defineCollection({
@@ -50,40 +36,14 @@ export default defineContentConfig({
       source: 'index.yml',
       schema: z.object({
         hero: z.object({
-          links: z.array(createButtonSchema()).default([]),
-          images: z.array(createImageSchema()).default([])
+          titleStart: z.string(),
+          titleAccent: z.string(),
+          titleEnd: z.string(),
+          description: z.string(),
+          links: z.array(createButtonSchema()).default([])
         }),
-        about: createBaseSchema(),
-        experience: createBaseSchema().extend({
-          items: z.array(z.object({
-            date: z.date(),
-            position: z.string(),
-            company: z.object({
-              name: z.string(),
-              url: z.string(),
-              logo: z.string().editor({ input: 'icon' }),
-              color: z.string()
-            })
-          }))
-        }),
-        testimonials: z.array(createTestimonialSchema()).default([]),
-        blog: createBaseSchema(),
-        xstream: createBaseSchema().extend({
-          links: z.array(createButtonSchema()).default([]),
-          items: z.array(createExternalItemSchema()).default([])
-        }),
-        faq: createBaseSchema().extend({
-          categories: z.array(
-            z.object({
-              title: z.string().nonempty(),
-              questions: z.array(
-                z.object({
-                  label: z.string().nonempty(),
-                  content: z.string().nonempty()
-                })
-              )
-            }))
-        })
+        works: createBaseSchema(),
+        blog: createBaseSchema()
       })
     }),
     blog: defineCollection({

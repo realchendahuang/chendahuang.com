@@ -4,7 +4,10 @@ const route = useRoute()
 const { data: page } = await useAsyncData(route.path, () =>
   queryCollection('blog').path(route.path).first()
 )
-if (!page.value) throw createError({ statusCode: 404, statusMessage: '页面未找到', fatal: true })
+if (!page.value) {
+  throw createError({ statusCode: 404, statusMessage: '页面未找到', fatal: true })
+}
+
 const { data: surround } = await useAsyncData(`${route.path}-surround`, () =>
   queryCollectionItemSurroundings('blog', route.path, {
     fields: ['description']
@@ -13,16 +16,28 @@ const { data: surround } = await useAsyncData(`${route.path}-surround`, () =>
 
 const title = page.value?.seo?.title || page.value?.title
 const description = page.value?.seo?.description || page.value?.description
+const canonicalUrl = toCanonicalUrl(route.path)
+const publishedTime = toIsoDate(page.value.date)
+const schemaImage = toAbsoluteUrl(page.value.image || '/avatar.jpg')
 
 useSeoMeta({
   title,
   description,
   ogDescription: description,
-  ogTitle: title
+  ogTitle: title,
+  ogType: 'article',
+  ogUrl: canonicalUrl,
+  articlePublishedTime: publishedTime,
+  articleAuthor: [page.value.author.name],
+  twitterTitle: title,
+  twitterDescription: description
 })
 
 if (page.value.image) {
-  useSeoMeta({ ogImage: page.value.image })
+  useSeoMeta({
+    ogImage: schemaImage,
+    twitterImage: schemaImage
+  })
 } else {
   defineOgImage('Portfolio', {
     title,
@@ -31,80 +46,119 @@ if (page.value.image) {
   })
 }
 
-const articleLink = computed(() => `${window?.location}`)
+useHead({
+  script: [{
+    type: 'application/ld+json',
+    innerHTML: JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'BlogPosting',
+      'headline': title,
+      'description': description,
+      'image': schemaImage,
+      'datePublished': publishedTime,
+      'dateModified': publishedTime,
+      'inLanguage': 'zh-CN',
+      'mainEntityOfPage': canonicalUrl,
+      'author': {
+        '@type': 'Person',
+        'name': page.value.author.name,
+        'url': SITE_URL
+      },
+      'publisher': {
+        '@type': 'Person',
+        'name': SITE_NAME,
+        'url': SITE_URL
+      }
+    }).replaceAll('<', '\\u003c')
+  }]
+})
 
-const formatDate = (dateString: string) => {
-  return new Date(dateString).toLocaleDateString('zh-CN', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric'
-  })
-}
+const articleLink = computed(() => canonicalUrl)
 </script>
 
 <template>
-  <UMain class="mt-20 px-2">
-    <UContainer class="relative min-h-screen">
-      <UPage v-if="page">
-        <ULink
-          to="/blog"
-          class="text-sm flex items-center gap-1"
-        >
-          <UIcon name="lucide:chevron-left" />
-          博客
-        </ULink>
-        <div class="flex flex-col gap-3 mt-8">
-          <div class="flex text-xs text-muted items-center justify-center gap-2">
-            <span v-if="page.date">
-              {{ formatDate(page.date) }}
-            </span>
-            <span v-if="page.date && page.minRead">
-              -
-            </span>
-            <span v-if="page.minRead">
-              {{ page.minRead }} 分钟阅读
-            </span>
+  <div class="pb-24 pt-12 sm:pb-32 sm:pt-16">
+    <UContainer>
+      <article v-if="page">
+        <header class="mx-auto max-w-4xl">
+          <ULink
+            to="/blog"
+            class="inline-flex items-center gap-1.5 text-sm font-medium text-muted transition-colors hover:text-highlighted"
+          >
+            <UIcon
+              name="i-lucide-arrow-left"
+              class="size-4"
+            />
+            全部文章
+          </ULink>
+
+          <div class="mt-12 flex flex-wrap items-center gap-x-3 gap-y-2 text-xs font-medium text-dimmed">
+            <time :datetime="publishedTime">
+              {{ formatDisplayDate(page.date) }}
+            </time>
+            <span aria-hidden="true">·</span>
+            <span>{{ page.minRead }} 分钟阅读</span>
           </div>
-          <NuxtImg
-            v-if="page.image"
-            :src="page.image"
-            :alt="page.title"
-            class="rounded-lg w-full h-[300px] object-cover object-center"
-          />
-          <h1 class="text-4xl text-center font-medium max-w-3xl mx-auto mt-4">
+
+          <h1 class="mt-6 max-w-4xl text-balance text-[2.65rem] font-bold leading-[1.06] tracking-[-0.055em] text-highlighted sm:text-6xl lg:text-7xl">
             {{ page.title }}
           </h1>
-          <p class="text-muted text-center max-w-2xl mx-auto">
+
+          <p class="mt-7 max-w-3xl text-lg leading-8 text-muted sm:text-xl">
             {{ page.description }}
           </p>
-          <div class="flex items-center justify-center gap-2 mt-2">
-            <UUser
-              orientation="vertical"
-              color="neutral"
-              variant="outline"
-              class="justify-center items-center text-center"
-              v-bind="page.author"
+
+          <div class="mt-8 flex items-center gap-3">
+            <NuxtImg
+              v-if="page.author.avatar"
+              :src="page.author.avatar.src"
+              :alt="page.author.avatar.alt"
+              width="40"
+              height="40"
+              class="size-10 rounded-full object-cover"
             />
+            <div>
+              <p class="text-sm font-semibold text-highlighted">
+                {{ page.author.name }}
+              </p>
+              <p class="text-xs text-dimmed">
+                独立开发者
+              </p>
+            </div>
           </div>
-        </div>
-        <UPageBody class="max-w-3xl mx-auto">
+        </header>
+
+        <NuxtImg
+          v-if="page.image"
+          :src="page.image"
+          :alt="page.title"
+          class="mx-auto mt-12 aspect-[16/8] w-full max-w-5xl rounded-2xl object-cover object-center"
+        />
+
+        <UPageBody class="mx-auto mt-14 max-w-3xl sm:mt-16">
           <ContentRenderer
             v-if="page.body"
             :value="page"
           />
 
-          <div class="flex items-center justify-end gap-2 text-sm text-muted">
+          <div class="mt-14 flex items-center justify-between border-t border-default pt-6 text-sm text-muted">
+            <span>读完了，感谢你的时间。</span>
             <UButton
               size="sm"
-              variant="link"
+              variant="soft"
               color="neutral"
+              icon="i-lucide-link"
               label="复制链接"
               @click="copyToClipboard(articleLink, '文章链接已复制到剪贴板')"
             />
           </div>
-          <UContentSurround :surround />
+
+          <UContentSurround
+            :surround
+            class="mt-10"
+          />
         </UPageBody>
-      </UPage>
+      </article>
     </UContainer>
-  </UMain>
+  </div>
 </template>

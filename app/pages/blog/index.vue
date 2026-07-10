@@ -9,16 +9,10 @@ if (!page.value) {
     fatal: true
   })
 }
+
 const { data: posts } = await useAsyncData('blogs', () =>
   queryCollection('blog').order('date', 'DESC').all()
 )
-if (!posts.value) {
-  throw createError({
-    statusCode: 404,
-    statusMessage: '博客文章未找到',
-    fatal: true
-  })
-}
 
 const title = page.value?.seo?.title || page.value?.title
 const description = page.value?.seo?.description || page.value?.description
@@ -27,55 +21,68 @@ useSeoMeta({
   title,
   ogTitle: title,
   description,
-  ogDescription: description
+  ogDescription: description,
+  ogUrl: toCanonicalUrl('/blog'),
+  twitterTitle: title,
+  twitterDescription: description
 })
 
 defineOgImage('Portfolio', { title, description })
 </script>
 
 <template>
-  <UPage v-if="page">
-    <UPageHero
-      :title="page.title"
-      :description="page.description"
-      :links="page.links"
-      :ui="{
-        title: 'mx-0! text-left',
-        description: 'mx-0! text-left',
-        links: 'justify-start'
-      }"
-    />
-    <UPageSection
-      :ui="{
-        container: 'pt-0!'
-      }"
-    >
-      <UBlogPosts orientation="vertical">
-        <Motion
-          v-for="(post, index) in posts"
-          :key="index"
-          :initial="{ opacity: 0, transform: 'translateY(10px)' }"
-          :while-in-view="{ opacity: 1, transform: 'translateY(0)' }"
-          :transition="{ delay: 0.2 * index }"
-          :in-view-options="{ once: true }"
+  <div v-if="page">
+    <UContainer class="py-20 sm:py-28">
+      <div class="grid gap-8 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-end">
+        <div>
+          <p class="editorial-label">
+            Writing
+          </p>
+          <h1 class="mt-5 max-w-4xl text-5xl font-bold leading-[1.02] tracking-[-0.055em] text-highlighted sm:text-7xl">
+            {{ page.title }}
+          </h1>
+          <p class="mt-6 max-w-2xl text-lg leading-8 text-muted">
+            {{ page.description }}
+          </p>
+        </div>
+
+        <UButton
+          to="/rss.xml"
+          label="RSS 订阅"
+          icon="i-lucide-rss"
+          color="neutral"
+          variant="soft"
+        />
+      </div>
+    </UContainer>
+
+    <section class="border-t border-default pb-24 sm:pb-32">
+      <UContainer>
+        <NuxtLink
+          v-for="post in posts"
+          :key="post.path"
+          :to="post.path"
+          class="group grid grid-cols-[minmax(0,1fr)_1.5rem] gap-5 border-b border-default py-9 transition-colors hover:bg-elevated sm:grid-cols-[10rem_minmax(0,1fr)_2rem] sm:gap-8 sm:px-2 sm:py-11"
         >
-          <UBlogPost
-            variant="naked"
-            orientation="horizontal"
-            :to="post.path"
-            v-bind="post"
-            :ui="{
-              root: 'md:grid md:grid-cols-2 group overflow-visible transition-all duration-300',
-              image:
-                'group-hover/blog-post:scale-105 rounded-lg shadow-lg border-4 border-muted ring-2 ring-default',
-              header:
-                index % 2 === 0
-                  ? 'sm:-rotate-1 overflow-visible'
-                  : 'sm:rotate-1 overflow-visible'
-            }"
+          <p class="col-span-2 text-xs font-medium text-dimmed sm:col-span-1">
+            {{ formatShortDate(post.date) }} · {{ post.minRead }} 分钟
+          </p>
+
+          <div>
+            <h2 class="max-w-4xl text-balance text-2xl font-semibold leading-tight tracking-[-0.035em] text-highlighted sm:text-4xl">
+              {{ post.title }}
+            </h2>
+            <p class="mt-4 max-w-3xl leading-7 text-muted">
+              {{ post.description }}
+            </p>
+          </div>
+
+          <UIcon
+            name="i-lucide-arrow-right"
+            class="mt-1 size-5 text-dimmed transition-transform group-hover:translate-x-1.5 group-hover:text-primary"
           />
-        </Motion>
-      </UBlogPosts>
-    </UPageSection>
-  </UPage>
+        </NuxtLink>
+      </UContainer>
+    </section>
+  </div>
 </template>

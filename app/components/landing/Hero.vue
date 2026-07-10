@@ -1,177 +1,56 @@
 <script setup lang="ts">
 import type { IndexCollectionItem } from '@nuxt/content'
 
-const { footer, global } = useAppConfig()
-
 defineProps<{
   page: IndexCollectionItem
 }>()
 </script>
 
 <template>
-  <UPageHero
-    :ui="{
-      headline: 'flex items-center justify-center',
-      title: 'text-shadow-md max-w-lg mx-auto',
-      links: 'mt-4 flex-col justify-center items-center'
-    }"
-  >
-    <template #headline>
-      <Motion
-        :initial="{
-          scale: 1.1,
-          opacity: 0,
-          filter: 'blur(20px)'
-        }"
-        :animate="{
-          scale: 1,
-          opacity: 1,
-          filter: 'blur(0px)'
-        }"
-        :transition="{
-          duration: 0.6,
-          delay: 0.1
-        }"
-      >
-        <UColorModeAvatar
-          class="size-18 ring ring-default ring-offset-3 ring-offset-bg"
-          :light="global.picture?.light!"
-          :dark="global.picture?.dark!"
-          :alt="global.picture?.alt!"
-        />
-      </Motion>
-    </template>
+  <section class="overflow-hidden">
+    <UContainer class="grid min-h-[calc(100svh-4rem)] items-end gap-14 py-20 sm:py-24 lg:grid-cols-[minmax(0,1.45fr)_minmax(18rem,0.55fr)] lg:gap-20 lg:py-28">
+      <div class="pb-2 lg:pb-4">
+        <h1 class="max-w-4xl text-balance text-[2.75rem] font-bold leading-[1.02] tracking-[-0.055em] text-highlighted sm:text-7xl sm:leading-[0.98] sm:tracking-[-0.065em] lg:text-[5.5rem]">
+          {{ page.hero.titleStart }}<span class="whitespace-nowrap text-primary">{{ page.hero.titleAccent }}</span>{{ page.hero.titleEnd }}
+        </h1>
 
-    <template #title>
-      <Motion
-        :initial="{
-          scale: 1.1,
-          opacity: 0,
-          filter: 'blur(20px)'
-        }"
-        :animate="{
-          scale: 1,
-          opacity: 1,
-          filter: 'blur(0px)'
-        }"
-        :transition="{
-          duration: 0.6,
-          delay: 0.1
-        }"
-      >
-        {{ page.title }}
-      </Motion>
-    </template>
+        <div class="mt-10 flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
+          <p class="max-w-2xl text-base leading-8 text-muted sm:text-lg">
+            {{ page.hero.description }}
+          </p>
 
-    <template #description>
-      <Motion
-        :initial="{
-          scale: 1.1,
-          opacity: 0,
-          filter: 'blur(20px)'
-        }"
-        :animate="{
-          scale: 1,
-          opacity: 1,
-          filter: 'blur(0px)'
-        }"
-        :transition="{
-          duration: 0.6,
-          delay: 0.3
-        }"
-      >
-        {{ page.description }}
-      </Motion>
-    </template>
-
-    <template #links>
-      <Motion
-        :initial="{
-          scale: 1.1,
-          opacity: 0,
-          filter: 'blur(20px)'
-        }"
-        :animate="{
-          scale: 1,
-          opacity: 1,
-          filter: 'blur(0px)'
-        }"
-        :transition="{
-          duration: 0.6,
-          delay: 0.5
-        }"
-      >
-        <div
-          v-if="page.hero.links?.length"
-          class="flex items-center gap-2"
-        >
-          <UButton v-bind="page.hero.links[0]" />
-          <UButton
-            v-for="(link, index) in page.hero.links.slice(1)"
-            :key="index"
-            v-bind="link"
-          />
+          <div class="flex shrink-0 flex-wrap items-center gap-2">
+            <UButton
+              v-for="link in page.hero.links"
+              :key="link.label"
+              v-bind="link"
+              size="lg"
+            />
+          </div>
         </div>
-      </Motion>
-
-      <div class="gap-x-4 inline-flex mt-4">
-        <Motion
-          v-for="(link, index) of footer?.links"
-          :key="index"
-
-          :initial="{
-            scale: 1.1,
-            opacity: 0,
-            filter: 'blur(20px)'
-          }"
-          :animate="{
-            scale: 1,
-            opacity: 1,
-            filter: 'blur(0px)'
-          }"
-          :transition="{
-            duration: 0.6,
-            delay: 0.5 + index * 0.1
-          }"
-        >
-          <UButton
-            v-bind="{ size: 'md', color: 'neutral', variant: 'ghost', ...link }"
-          />
-        </Motion>
       </div>
-    </template>
 
-    <UMarquee
-      v-if="page.hero.images?.length"
-      pause-on-hover
-      class="py-2 -mx-8 sm:-mx-12 lg:-mx-16 [--duration:40s]"
-    >
-      <Motion
-        v-for="(img, index) in page.hero.images"
-        :key="index"
-        :initial="{
-          scale: 1.1,
-          opacity: 0,
-          filter: 'blur(20px)'
-        }"
-        :animate="{
-          scale: 1,
-          opacity: 1,
-          filter: 'blur(0px)'
-        }"
-        :transition="{
-          duration: 0.6,
-          delay: index * 0.1
-        }"
-      >
+      <aside class="relative flex min-h-[22rem] flex-col justify-between overflow-hidden rounded-[1.75rem] bg-neutral-950 p-8 text-white sm:min-h-[27rem] sm:p-9">
+        <div class="absolute -right-24 -top-24 size-64 rounded-full bg-blue-600" />
+
         <NuxtImg
-          width="234"
-          height="234"
-          class="rounded-lg aspect-square object-cover"
-          :class="index % 2 === 0 ? '-rotate-2' : 'rotate-2'"
-          v-bind="img"
+          src="/avatar.jpg"
+          alt="陈大黄"
+          width="112"
+          height="112"
+          class="relative z-10 size-24 rounded-full border-4 border-white/15 object-cover sm:size-28"
         />
-      </Motion>
-    </UMarquee>
-  </UPageHero>
+
+        <div class="relative z-10">
+          <p class="text-4xl font-bold leading-[1.05] tracking-[-0.05em] sm:text-[2.6rem]">
+            陈大黄<br>独立开发者
+          </p>
+          <p class="mt-5 leading-7 text-neutral-400">
+            产品 · 设计 · 开发 · 运营<br>
+            开源项目持续进行中
+          </p>
+        </div>
+      </aside>
+    </UContainer>
+  </section>
 </template>

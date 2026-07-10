@@ -19,7 +19,10 @@ useSeoMeta({
   title,
   ogTitle: title,
   description,
-  ogDescription: description
+  ogDescription: description,
+  ogUrl: toCanonicalUrl('/about'),
+  twitterTitle: title,
+  twitterDescription: description
 })
 
 defineOgImage('Portfolio', { title, description })
