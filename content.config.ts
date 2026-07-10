@@ -119,6 +119,8 @@ export default defineContentConfig({
         type: z.string().nonempty(),
         url: z.string().nonempty(),
         onlineUrl: z.string().optional(),
+        image: z.string().nonempty().optional(),
+        imageAlt: z.string().nonempty().optional(),
         icon: z.string().editor({ input: 'icon' }).optional(),
         color: z.string().optional(),
         tags: z.array(z.string()).default([]),

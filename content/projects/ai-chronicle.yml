@@ -3,6 +3,8 @@ description: 沿着关键事件回看 AI 如何走到今天。一条克制、可
 type: AI 编年史
 url: https://github.com/realchendahuang/ai-chronicle
 onlineUrl: https://chendahuang.com/ai-chronicle/
+image: /projects/ai-chronicle.webp
+imageAlt: AI Chronicle 的 AI 行业时间轴界面
 icon: i-lucide-history
 color: "#6366f1"
 tags: ["AI", "时间轴", "行业历史", "交互叙事"]

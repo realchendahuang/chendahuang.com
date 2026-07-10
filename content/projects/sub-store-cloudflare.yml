@@ -2,6 +2,8 @@ title: Sub-Store Cloudflare
 description: 部署在 Cloudflare Workers 上的订阅聚合与规则配置工具，把订阅源、节点处理、组合订阅和分流规则模板放在云端。
 type: Cloudflare 工具
 url: https://github.com/realchendahuang/sub-store-cloudflare
+image: /projects/sub-store-cloudflare.webp
+imageAlt: Sub-Store Cloudflare 的订阅源与组合订阅管理界面
 icon: i-simple-icons-cloudflare
 color: "#f38020"
 tags: ["Cloudflare Workers", "D1", "Mihomo", "sing-box", "订阅管理"]

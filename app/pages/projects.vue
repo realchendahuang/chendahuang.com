@@ -45,22 +45,21 @@ defineOgImage('Portfolio', { title, description })
         <article
           v-for="(project, index) in projects"
           :key="project.title"
-          class="grid gap-5 border-b border-default py-8 sm:grid-cols-[4rem_minmax(0,1fr)_auto] sm:py-10"
+          class="grid gap-7 border-b border-default py-10 lg:grid-cols-[minmax(0,0.85fr)_minmax(26rem,1.15fr)] lg:items-center lg:gap-12 lg:py-14"
         >
-          <div class="flex items-start gap-3 sm:block">
-            <span class="text-xs text-dimmed">{{ String(index + 1).padStart(2, '0') }}</span>
-            <span
-              class="ml-auto inline-flex size-10 items-center justify-center rounded-lg sm:mt-8"
-              :style="{ backgroundColor: (project.color || '#888') + '18', color: project.color || '#888' }"
-            >
-              <UIcon
-                :name="project.icon || 'i-lucide-box'"
-                class="size-5"
-              />
-            </span>
-          </div>
-
-          <div class="min-w-0">
+          <div class="order-2 min-w-0 lg:order-1">
+            <div class="mb-5 flex items-center gap-3">
+              <span class="text-xs text-dimmed">{{ String(index + 1).padStart(2, '0') }}</span>
+              <span
+                class="inline-flex size-9 items-center justify-center rounded-lg"
+                :style="{ backgroundColor: (project.color || '#888') + '18', color: project.color || '#888' }"
+              >
+                <UIcon
+                  :name="project.icon || 'i-lucide-box'"
+                  class="size-4.5"
+                />
+              </span>
+            </div>
             <p class="mb-2 text-xs font-medium uppercase tracking-[0.12em] text-muted">
               {{ project.type }}
             </p>
@@ -87,26 +86,43 @@ defineOgImage('Portfolio', { title, description })
                 variant="soft"
               />
             </div>
+            <div class="mt-6 flex items-center gap-2">
+              <UButton
+                v-if="project.onlineUrl"
+                :to="project.onlineUrl"
+                target="_blank"
+                label="在线体验"
+                trailing-icon="i-lucide-arrow-up-right"
+                color="neutral"
+              />
+              <UButton
+                :to="project.url"
+                target="_blank"
+                label="GitHub"
+                icon="i-simple-icons-github"
+                color="neutral"
+                variant="soft"
+              />
+            </div>
           </div>
 
-          <div class="flex items-start gap-2 sm:justify-end">
-            <UButton
-              v-if="project.onlineUrl"
-              :to="project.onlineUrl"
-              target="_blank"
-              label="在线体验"
-              trailing-icon="i-lucide-arrow-up-right"
-              color="neutral"
+          <NuxtLink
+            v-if="project.image"
+            :to="project.onlineUrl || project.url"
+            target="_blank"
+            class="group order-1 block overflow-hidden rounded-xl border border-default bg-elevated shadow-sm lg:order-2"
+            :aria-label="`查看 ${project.title}`"
+          >
+            <img
+              :src="project.image"
+              :alt="project.imageAlt || `${project.title} 项目预览`"
+              width="1280"
+              height="720"
+              loading="lazy"
+              decoding="async"
+              class="aspect-video w-full object-cover transition duration-500 group-hover:scale-[1.015]"
             />
-            <UButton
-              :to="project.url"
-              target="_blank"
-              aria-label="在 GitHub 查看"
-              icon="i-simple-icons-github"
-              color="neutral"
-              variant="soft"
-            />
-          </div>
+          </NuxtLink>
         </article>
       </UContainer>
     </section>
