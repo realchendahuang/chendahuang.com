@@ -16,7 +16,7 @@ useHead(() => ({
     { key: 'theme-color', name: 'theme-color', content: color }
   ],
   link: [
-    { rel: 'icon', href: '/favicon.ico' },
+    { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico?v=avatar-20260710' },
     { rel: 'canonical', href: canonicalUrl },
     { rel: 'alternate', type: 'application/rss+xml', title: `${SITE_NAME} 的博客`, href: toAbsoluteUrl('/rss.xml') }
   ],
