@@ -19,7 +19,7 @@ export default defineNuxtConfig({
   site: {
     url: 'https://chendahuang.com',
     name: '陈大黄',
-    description: '陈大黄的个人作品与内容陈列站。前 AI 产品经理，独立开发者，长期折腾 AI 效率和高效语言学习。'
+    description: '陈大黄的个人作品与内容陈列站。收录项目、Playbook、Agent Skill、文章和帖子。'
   },
 
   content: {

@@ -1,20 +1,8 @@
 title: 关于我
-description: 我的作品、写作和最近在做的事。
+description: 关于这个站。
 content: |
-  我是 **陈大黄**。前 AI 产品经理，现在做独立开发。
+  这个站用来放我的作品和内容。
 
-  这个站主要陈列两类东西：我的作品，以及我写下来的内容。
-
-  ### 作品
-
-  我做开源工具，也写 Playbook 和 Agent Skill。Playbook 记录完整的实操路径，Agent Skill 把反复使用的方法整理成 AI 编码助手可以直接调用的能力包。
-
-  具体项目都放在[项目](/projects)、[Playbook](/playbooks) 和 [Skill](/skills) 页面。
-
-  ### 内容
-
-  [博客](/blog)放长文和折腾记录，[精华帖子](/highlights)收录我在 X 上值得留下来的内容。写 AI、独立开发、Cloudflare、工具和高效语言学习，也写我当下真实关心的东西。
-
-  ### 找我
+  做过的项目放在[项目](/projects)、[Playbook](/playbooks) 和 [Skill](/skills)；写过的文章和帖子放在[博客](/blog)与[精华帖子](/highlights)。
 
   最快在 [X](https://x.com/realchendahuang) 上找我，代码都在 [GitHub](https://github.com/realchendahuang)。
