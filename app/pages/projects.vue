@@ -29,15 +29,9 @@ defineOgImage('Portfolio', { title, description })
 <template>
   <div v-if="page">
     <UContainer class="py-14 sm:py-20">
-      <p class="editorial-label">
-        项目
-      </p>
-      <h1 class="mt-4 max-w-3xl text-3xl font-semibold tracking-[-0.03em] text-highlighted sm:text-4xl">
+      <h1 class="max-w-3xl text-3xl font-semibold tracking-[-0.03em] text-highlighted sm:text-4xl">
         {{ page.title }}
       </h1>
-      <p class="mt-4 max-w-2xl text-base leading-7 text-muted">
-        {{ page.description }}
-      </p>
     </UContainer>
 
     <section class="border-t border-default pb-20 sm:pb-28">

@@ -24,8 +24,4 @@ export const navLinks: NavigationMenuItem[] = [{
   label: '精华帖子',
   icon: 'i-lucide-bookmark',
   to: '/highlights'
-}, {
-  label: '关于',
-  icon: 'i-lucide-user',
-  to: '/about'
 }]

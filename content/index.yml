@@ -12,15 +12,10 @@ hero:
       to: https://github.com/realchendahuang
       color: "neutral"
       target: "_blank"
-about:
-  title: "关于我"
-  description: "这个站用来放我的作品和内容。做过的项目、写过的文章，以及值得留下来的帖子，都整理在这里。"
 blog:
   title: "最新文章"
-  description: "长文和折腾记录。"
 highlights:
   title: "精华帖子"
-  description: "从 X 留下来的帖子，正文直接放在这里。"
   links:
     - label: "查看全部"
       icon: "i-lucide-arrow-right"

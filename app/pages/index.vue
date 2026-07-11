@@ -45,13 +45,6 @@ useHead({
 <template>
   <UPage v-if="page">
     <LandingHero :page />
-    <UPageSection
-      :ui="{
-        container: 'pt-0!'
-      }"
-    >
-      <LandingAbout :page />
-    </UPageSection>
     <LandingSelectedWork />
     <LandingXStream
       v-if="page.highlights"

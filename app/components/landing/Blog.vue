@@ -16,11 +16,9 @@ if (!posts.value) {
 <template>
   <UPageSection
     :title="page.blog.title"
-    :description="page.blog.description"
     :ui="{
       container: 'px-0 pt-0! sm:gap-6 lg:gap-8',
-      title: () => 'text-left text-lg font-medium sm:text-xl',
-      description: () => 'mt-2 text-left text-sm leading-6 text-muted'
+      title: () => 'text-left text-lg font-medium sm:text-xl'
     }"
   >
     <UBlogPosts

@@ -1,10 +1,5 @@
 import { defineCollection, defineContentConfig, z } from '@nuxt/content'
 
-const createBaseSchema = () => z.object({
-  title: z.string(),
-  description: z.string()
-})
-
 const createButtonSchema = () => z.object({
   label: z.string(),
   icon: z.string().optional(),
@@ -39,9 +34,9 @@ export default defineContentConfig({
           links: z.array(createButtonSchema()).default([]),
           images: z.array(createImageSchema()).default([])
         }),
-        about: createBaseSchema(),
-        blog: createBaseSchema(),
-        highlights: createBaseSchema().extend({
+        blog: z.object({ title: z.string() }),
+        highlights: z.object({
+          title: z.string(),
           links: z.array(createButtonSchema()).default([])
         })
       })
@@ -69,14 +64,6 @@ export default defineContentConfig({
       ],
       schema: z.object({
         links: z.array(createButtonSchema()).default([])
-      })
-    }),
-    about: defineCollection({
-      type: 'page',
-      source: 'about.yml',
-      schema: z.object({
-        content: z.object({}),
-        images: z.array(createImageSchema()).default([])
       })
     }),
     projects: defineCollection({

@@ -46,7 +46,6 @@ export default defineNuxtConfig({
         '/playbooks',
         '/skills',
         '/blog',
-        '/about',
         '/rss.xml',
         '/sitemap.xml'
       ],
