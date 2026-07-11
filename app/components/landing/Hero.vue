@@ -13,6 +13,7 @@ defineProps<{
     :ui="{
       headline: 'flex items-center justify-center',
       title: 'text-shadow-md max-w-lg mx-auto',
+      description: () => 'mt-3 mx-auto max-w-3xl break-keep text-pretty text-base leading-7 text-muted',
       links: 'mt-4 flex-col justify-center items-center'
     }"
   >

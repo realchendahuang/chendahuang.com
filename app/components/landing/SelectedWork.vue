@@ -22,7 +22,7 @@ const works = computed(() => (projects.value || []).map(project => ({
           作品
         </p>
         <h2 class="max-w-2xl text-balance text-2xl font-semibold leading-snug tracking-[-0.03em] text-highlighted sm:text-3xl">
-          做过，也还在继续做的东西。
+          最近在做的项目
         </h2>
       </div>
 

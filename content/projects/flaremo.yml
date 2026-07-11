@@ -1,5 +1,5 @@
 title: FlareMo
-description: Cloudflare 原生的个人知识管理系统，提供 Memos 兼容 API。轻量、自托管，并把数据掌握在自己手里。
+description: Cloudflare 原生的个人知识管理系统，提供 Memos 兼容 API，数据由自己托管。
 type: 个人知识管理
 url: https://github.com/realchendahuang/FlareMo
 image: /projects/flaremo.webp

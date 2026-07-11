@@ -1,5 +1,5 @@
 title: Dahuang Human Tone
-description: 去除中文文本的 AI 味。删模板壳、路标词、升华收尾、假互动，改结构不改词，保信息保风格。
+description: 去掉中文文本里的模板壳、路标词、升华收尾和假互动。改结构，不改事实，保留信息和作者风格。
 url: https://github.com/realchendahuang/dahuang-human-tone
 install: npx skills add realchendahuang/dahuang-human-tone -g
 icon: i-lucide-wand-sparkles

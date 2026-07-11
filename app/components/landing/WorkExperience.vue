@@ -11,8 +11,8 @@ defineProps<{
     :title="page.experience.title"
     :ui="{
       container: 'p-0! gap-4 sm:gap-4',
-      title: 'text-left text-lg sm:text-xl font-medium',
-      description: 'mt-2'
+      title: () => 'text-left text-lg font-medium sm:text-xl',
+      description: () => 'mt-2'
     }"
   >
     <template #description>

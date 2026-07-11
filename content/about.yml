@@ -1,20 +1,20 @@
 title: 关于我
-description: 前 AI 产品经理，现在做独立开发。写 Playbook，做 Agent Skill，在 X 上分享 AI 效率和工具折腾。
+description: 我的作品、写作和最近在做的事。
 content: |
   我是 **陈大黄**。前 AI 产品经理，现在做独立开发。
 
-  主要做两件事：把踩过的坑写成 Playbook，把写作和运营经验收成 Agent Skill。能用、能跑、能省时间，比口号重要。
+  这个站主要陈列两类东西：我的作品，以及我写下来的内容。
 
-  ### 我在做什么
+  ### 作品
 
-  **Playbook** 是实战手册。Cloudflare 那本按功能模块、工作流、计费、架构和避坑来写；macOS 那本从零上手到用顺手，写给普通人。
+  我做开源工具，也写 Playbook 和 Agent Skill。Playbook 记录完整的实操路径，Agent Skill 把反复使用的方法整理成 AI 编码助手可以直接调用的能力包。
 
-  **Agent Skill** 是给 AI 编码助手装的能力包。dahuang-human-tone 去中文 AI 味，dahuang-ai-tone 给文本加模型风格。
+  具体项目都放在[项目](/projects)、[Playbook](/playbooks) 和 [Skill](/skills) 页面。
 
-  ### 方法
+  ### 内容
 
-  先自己用，用顺了再整理。Playbook 是踩坑记，Skill 是实际写作里磨出来的规则。
+  [博客](/blog)放长文和折腾记录，[精华帖子](/highlights)收录我在 X 上值得留下来的内容。写 AI、独立开发、Cloudflare、工具和高效语言学习，也写我当下真实关心的东西。
 
   ### 找我
 
-  最快在 [X](https://x.com/realchendahuang) 上找我，代码去 [GitHub](https://github.com/realchendahuang)。项目汇总在 [Playbook](/playbooks) 和 [Skill](/skills)。
+  最快在 [X](https://x.com/realchendahuang) 上找我，代码都在 [GitHub](https://github.com/realchendahuang)。

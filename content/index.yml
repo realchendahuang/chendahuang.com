@@ -1,8 +1,8 @@
 seo:
-  title: "陈大黄 - 独立开发者"
-  description: "前 AI 产品经理，现在做独立开发。折腾 AI 效率工具、Cloudflare 和语言学习，把踩过的坑整理成工具和实战手册。"
+  title: "陈大黄 - 作品与内容"
+  description: "陈大黄的个人作品与内容陈列站。前 AI 产品经理，独立开发者，长期折腾 AI 效率和高效语言学习。"
 title: "陈大黄"
-description: "前 AI 产品经理，现在做独立开发。折腾 AI 效率、Cloudflare 和语言学习，顺便把产品、设计、开发、运营都摸了一遍。"
+description: "洞察达人、段子手｜前 AI 产品经理｜独立开发者｜研究高效语言学习｜AI 效率折腾达人｜产品、设计、开发、运营、销售全能达人"
 hero:
   links:
     - label: "看 Playbook"
@@ -14,13 +14,12 @@ hero:
       target: "_blank"
 works:
   title: "代表作品"
-  description: "真正在维护、自己也在用的东西。"
+  description: "我正在维护的项目。"
 about:
   title: "关于我"
   description: |
-    我是陈大黄。前 AI 产品经理，现在做独立开发。
-    主要做两件事：把踩过的坑写成 Playbook，把写作和运营经验收成 Agent Skill。
-    能用、能跑、能省时间，比口号重要。
+    这里主要放两类东西：我做的项目，以及我写下来的内容。
+    项目包括开源工具、Playbook 和 Agent Skill；内容包括博客文章和 X 上值得留下来的帖子。
 experience:
   title: 在做的事
   items:
@@ -46,7 +45,7 @@ experience:
         url: "/"
         color: "#00DC82"
 testimonials:
-  - quote: "AI 编程时代的 Cloudflare 实战手册。功能模块、工作流、计费、架构和避坑，按真正会用到的顺序写。"
+  - quote: "从功能模块、AI 编程工作流和计费，到常用架构与实际踩坑，一本讲清 Cloudflare 的中文手册。"
     author:
       name: 'Cloudflare 实战手册'
       description: '69 stars · 10 forks'
@@ -58,7 +57,7 @@ testimonials:
       description: '10 stars · Agent Skill'
       to: https://github.com/realchendahuang/dahuang-human-tone
       target: "_blank"
-  - quote: "从零上手到用顺手，一份写给普通人的 macOS 实战指南。"
+  - quote: "写给普通人的 macOS 实战指南：软件推荐、效率工具、开发与 AI、系统维护、备份和换机。"
     author:
       name: 'macOS 实战指南'
       description: '3 stars · 实战指南'
@@ -66,10 +65,10 @@ testimonials:
       target: "_blank"
 blog:
   title: "最新文章"
-  description: "折腾记录和长文"
+  description: "写过的长文和折腾记录。"
 highlights:
   title: "精华帖子"
-  description: "在 X 上讨论度比较高的帖子，正文直接放在站里。"
+  description: "从 X 留下来的帖子，正文直接放在这里。"
   links:
     - label: "查看全部"
       icon: "i-lucide-sparkles"
@@ -84,16 +83,16 @@ highlights:
       variant: "soft"
 faq:
   title: 常见问题
-  description: 关于我和我在做的事。
+  description: 这个站放什么，以及怎么找到我。
   categories:
     - title: 关于我
       questions:
         - label: 你是谁？
           content: |
-            陈大黄。前 AI 产品经理，现在做独立开发。主要写 Playbook、做 Agent Skill，也在 X 上分享 AI 效率和工具折腾。
+            陈大黄。前 AI 产品经理，现在做独立开发。这个站主要陈列我的作品和内容。
         - label: 你在做什么？
           content: |
-            两类东西：Playbook 和 Agent Skill。Playbook 是实战手册，Skill 是给 AI 编码助手装的能力包。都在 GitHub 开源。
+            做开源项目，写 Playbook 和 Agent Skill，也把长文和 X 上值得留下来的内容放在这个站里。
         - label: 怎么联系你？
           content: |
             最快在 X 上找我 [@realchendahuang](https://x.com/realchendahuang)，代码相关去 [GitHub](https://github.com/realchendahuang)。
@@ -101,21 +100,21 @@ faq:
       questions:
         - label: Playbook 是什么？
           content: |
-            实战手册。按真正会用到的顺序写：功能模块、AI 编程工作流、计费对比、架构模式和避坑。现在有 Cloudflare 和 macOS 两本。
+            我写的实战手册，把功能、工作流、计费、架构和实际踩过的坑放在一起。目前有 Cloudflare、Codex 和 macOS 三本。
         - label: 在哪里看？
           content: |
             去 [/playbooks](/playbooks) 看汇总，也可以直接在线读。每本都有对应的 GitHub 仓库。
         - label: 现在有几本？
           content: |
-            两本：Cloudflare 实战手册和 macOS 实战指南。还有更多在路上。
+            三本：Cloudflare 实战手册、Codex Playbook 和 macOS 实战指南。
     - title: Skill
       questions:
         - label: Skill 是什么？
           content: |
-            给 AI 编码助手（Claude Code、Cursor、Codex 等）装的能力包。一行命令安装，装完助手就多一项本事。
+            给 AI 编码助手（Claude Code、Cursor、Codex 等）安装的能力包。每个 Skill 解决一类具体任务。
         - label: 你做了哪些 Skill？
           content: |
-            dahuang-human-tone 去中文 AI 味；dahuang-ai-tone 把文本改写成 GPT / Claude / Gemini / 豆包的风格，或判断一段文本更像哪个模型。
+            dahuang-human-tone 去中文 AI 味；dahuang-ai-tone 分析和模仿不同模型的写作风格；dahuang-x-post 打磨中文 X 短帖和 Thread。
         - label: 怎么装？
           content: |
             去 [/skills](/skills) 看介绍，每张卡片上有安装命令，复制到终端跑一下就行。

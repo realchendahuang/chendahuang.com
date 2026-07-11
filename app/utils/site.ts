@@ -2,7 +2,7 @@ export const SITE_URL = 'https://chendahuang.com'
 
 export const SITE_NAME = '陈大黄'
 
-export const SITE_DESCRIPTION = '前 AI 产品经理，现在做独立开发。折腾 AI 效率工具、Cloudflare 和语言学习，把踩过的坑整理成工具和实战手册。'
+export const SITE_DESCRIPTION = '陈大黄的个人作品与内容陈列站。前 AI 产品经理，独立开发者，长期折腾 AI 效率和高效语言学习。'
 
 export const toCanonicalUrl = (path = '/') => {
   const cleanPath = path.split('?')[0]?.split('#')[0] || '/'

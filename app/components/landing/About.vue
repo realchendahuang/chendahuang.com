@@ -12,8 +12,8 @@ defineProps<{
     :description="page.about.description"
     :ui="{
       container: 'p-0!',
-      title: 'text-left text-lg sm:text-xl font-medium',
-      description: 'text-left mt-3 text-sm text-muted'
+      title: () => 'text-left text-lg font-medium sm:text-xl',
+      description: () => 'mt-3 text-left text-sm leading-6 text-muted'
     }"
   />
 </template>

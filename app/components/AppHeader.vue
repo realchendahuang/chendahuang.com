@@ -1,13 +1,50 @@
 <script setup lang="ts">
-import type { NavigationMenuItem } from '@nuxt/ui'
+import type { DropdownMenuItem, NavigationMenuItem } from '@nuxt/ui'
 
-defineProps<{
+const props = defineProps<{
   links: NavigationMenuItem[]
 }>()
+
+const mobileLinks = computed<DropdownMenuItem[]>(() => props.links.map(link => ({
+  label: link.label,
+  icon: link.icon,
+  to: link.to,
+  target: link.target,
+  type: 'link'
+})))
 </script>
 
 <template>
-  <div class="fixed top-2 sm:top-4 mx-auto left-1/2 transform -translate-x-1/2 z-10">
+  <div class="fixed inset-x-3 top-2 z-50 sm:hidden">
+    <div class="flex items-center justify-between rounded-full border border-muted/50 bg-muted/90 px-3 py-1.5 shadow-lg shadow-neutral-950/5 backdrop-blur-sm">
+      <NuxtLink
+        to="/"
+        class="px-2 py-2 text-sm font-semibold text-highlighted"
+      >
+        陈大黄
+      </NuxtLink>
+
+      <div class="flex items-center gap-1">
+        <ColorModeButton />
+        <UDropdownMenu
+          :items="mobileLinks"
+          :content="{ align: 'end', sideOffset: 8 }"
+        >
+          <UButton
+            label="菜单"
+            icon="i-lucide-menu"
+            color="neutral"
+            variant="ghost"
+            size="md"
+            class="rounded-full"
+            aria-label="打开导航菜单"
+          />
+        </UDropdownMenu>
+      </div>
+    </div>
+  </div>
+
+  <div class="fixed left-1/2 top-4 z-50 hidden -translate-x-1/2 sm:block">
     <UNavigationMenu
       :items="links"
       variant="link"
