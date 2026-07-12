@@ -1,0 +1,16 @@
+category: tools
+title: "Mac 上 Docker 技术选型：Colima / OrbStack / Docker Desktop"
+description: "Mac 上 Docker 方案，简单做个技术选型。"
+date: 2026-06-20
+likes: 0
+bookmarks: 0
+reposts: 0
+views: 211
+url: https://x.com/realchendahuang/status/2068238972728533154
+content: |
+  Mac 上 Docker 方案，简单做个技术选型。
+
+  - **Colima**：免费开源，很轻量，但是基本只有命令行。适合能接受折腾、习惯命令行的人。
+  - **Apple Container**：苹果新出的容器方向，未来值得关注，但是目前生态不行，还处于很早期的阶段。比如 Docker Compose 都不支持。
+  - **OrbStack**：既有 GUI，又轻又快，生态支持也很完善。缺点是不开源，商业版需要授权，但个人版免费。
+  - **Docker Desktop**：官方出的东西，结果又重又臃肿，体验一坨。Mac 上能不用就别用。

@@ -1,0 +1,25 @@
+category: ai
+title: "为什么说 Responses API 比 Chat Completions 更适合 Agent"
+description: "很多人平时用 AI 工具，都需要配置 API Key，有时候还会让你选择接口格式。"
+date: 2026-07-09
+likes: 1
+bookmarks: 0
+reposts: 0
+views: 96
+url: https://x.com/realchendahuang/status/2075074946301317487
+content: |
+  很多人平时用 AI 工具，都需要配置 API Key，有时候还会让你选择接口格式。
+
+  这个接口格式可以简单理解成：
+
+  你和模型服务之间约定好的沟通方式。
+
+  比如以前大家最熟的 OpenAI 兼容接口，很多时候指的是 Chat Completions。这套格式很适合聊天，也很适合简单文本生成。所以国内外很多模型厂商，都会优先兼容它。
+
+  但现在做 AI 应用，场景已经复杂很多了。模型经常要读文件、查网页、调用函数、跑代码、连接 MCP、保留上下文，再继续完成后面的任务。
+
+  这时候，OpenAI 推出的 Responses API 的价值就出来了。
+
+  - 它的推理模型效果更好。同一个模型，放在更合适的接口结构里，任务完成效果会更好。
+  - 它原生适合 Agent。模型可以在一次 API 请求里调用多个工具。
+  - 它更省钱。Responses API 的缓存利用率相比 Chat Completions 有 40% 到 80% 的提升。缓存利用率越高，重复调用的成本就越低，响应速度也更容易优化。

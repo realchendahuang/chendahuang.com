@@ -1,0 +1,23 @@
+category: cloudflare
+title: "为什么做 FlareMo：随手记下，慢慢长成知识"
+description: "想找一个「随手记下、慢慢长成知识」的工具。"
+date: 2026-06-27
+likes: 1
+bookmarks: 2
+reposts: 1
+views: 258
+url: https://x.com/realchendahuang/status/2070807195332297205
+content: |
+  想找一个「随手记下、慢慢长成知识」的工具。
+
+  想要 Flomo 那种开箱即记、不打扰的灵感收集；
+
+  想要 Memos 那种成熟开源生态、数据可迁、API 能玩；
+
+  又不想再开一台 VPS、维护 Docker、Postgres、Node 常驻进程。
+
+  那怎么办。FlareMo 的做法是把 Memos 的数据模型和 API 当成「规范」，运行时整个重搭到 Cloudflare 上：
+
+  Workers 跑 API、D1 存笔记、R2 放附件、Queues/Cron 跑后台、Vectorize + Workers AI 留给以后的语义检索和 AI 工作流。
+
+  站在 Memos 的肩膀上，做一份长在边缘云上的个人知识库。

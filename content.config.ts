@@ -123,6 +123,15 @@ export default defineContentConfig({
       schema: z.object({
         title: z.string().nonempty(),
         description: z.string().nonempty(),
+        category: z.enum([
+          'cloudflare',
+          'tools',
+          'ai',
+          'product',
+          'opc',
+          'growth',
+          'essay'
+        ]),
         date: z.date(),
         likes: z.number().default(0),
         bookmarks: z.number().default(0),
