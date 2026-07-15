@@ -20,17 +20,16 @@ defineProps<{
     <template #headline>
       <Motion
         :initial="{
-          scale: 1.1,
           opacity: 0,
-          filter: 'blur(20px)'
+          y: 12
         }"
         :animate="{
-          scale: 1,
           opacity: 1,
-          filter: 'blur(0px)'
+          y: 0
         }"
         :transition="{
-          duration: 0.6,
+          duration: 0.7,
+          ease: [0.22, 1, 0.36, 1],
           delay: 0.1
         }"
       >
@@ -46,18 +45,17 @@ defineProps<{
     <template #title>
       <Motion
         :initial="{
-          scale: 1.1,
           opacity: 0,
-          filter: 'blur(20px)'
+          y: 12
         }"
         :animate="{
-          scale: 1,
           opacity: 1,
-          filter: 'blur(0px)'
+          y: 0
         }"
         :transition="{
-          duration: 0.6,
-          delay: 0.1
+          duration: 0.7,
+          ease: [0.22, 1, 0.36, 1],
+          delay: 0.16
         }"
       >
         {{ page.title }}
@@ -67,17 +65,16 @@ defineProps<{
     <template #description>
       <Motion
         :initial="{
-          scale: 1.1,
           opacity: 0,
-          filter: 'blur(20px)'
+          y: 12
         }"
         :animate="{
-          scale: 1,
           opacity: 1,
-          filter: 'blur(0px)'
+          y: 0
         }"
         :transition="{
-          duration: 0.6,
+          duration: 0.7,
+          ease: [0.22, 1, 0.36, 1],
           delay: 0.3
         }"
       >
@@ -88,17 +85,16 @@ defineProps<{
     <template #links>
       <Motion
         :initial="{
-          scale: 1.1,
           opacity: 0,
-          filter: 'blur(20px)'
+          y: 12
         }"
         :animate="{
-          scale: 1,
           opacity: 1,
-          filter: 'blur(0px)'
+          y: 0
         }"
         :transition="{
-          duration: 0.6,
+          duration: 0.7,
+          ease: [0.22, 1, 0.36, 1],
           delay: 0.5
         }"
       >
@@ -121,17 +117,16 @@ defineProps<{
           :key="index"
 
           :initial="{
-            scale: 1.1,
             opacity: 0,
-            filter: 'blur(20px)'
+            y: 8
           }"
           :animate="{
-            scale: 1,
             opacity: 1,
-            filter: 'blur(0px)'
+            y: 0
           }"
           :transition="{
-            duration: 0.6,
+            duration: 0.55,
+            ease: [0.22, 1, 0.36, 1],
             delay: 0.5 + index * 0.1
           }"
         >
@@ -151,17 +146,16 @@ defineProps<{
         v-for="(img, index) in page.hero.images"
         :key="index"
         :initial="{
-          scale: 1.1,
           opacity: 0,
-          filter: 'blur(20px)'
+          y: 16
         }"
         :animate="{
-          scale: 1,
           opacity: 1,
-          filter: 'blur(0px)'
+          y: 0
         }"
         :transition="{
-          duration: 0.6,
+          duration: 0.7,
+          ease: [0.22, 1, 0.36, 1],
           delay: index * 0.1
         }"
       >

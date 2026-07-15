@@ -36,20 +36,22 @@ useSeoMeta({
 </script>
 
 <template>
-  <UApp>
-    <a
-      href="#main-content"
-      class="fixed left-4 top-4 z-[100] -translate-y-24 rounded-md bg-default px-4 py-2 text-sm font-medium text-highlighted shadow-lg transition-transform focus:translate-y-0"
-    >
-      跳到主要内容
-    </a>
-    <NuxtLayout>
-      <UMain
-        id="main-content"
-        class="relative"
+  <MotionConfig reduced-motion="user">
+    <UApp>
+      <a
+        href="#main-content"
+        class="fixed left-4 top-4 z-[100] -translate-y-24 rounded-md bg-default px-4 py-2 text-sm font-medium text-highlighted shadow-lg transition-transform focus:translate-y-0"
       >
-        <NuxtPage />
-      </UMain>
-    </NuxtLayout>
-  </UApp>
+        跳到主要内容
+      </a>
+      <NuxtLayout>
+        <UMain
+          id="main-content"
+          class="relative"
+        >
+          <NuxtPage />
+        </UMain>
+      </NuxtLayout>
+    </UApp>
+  </MotionConfig>
 </template>

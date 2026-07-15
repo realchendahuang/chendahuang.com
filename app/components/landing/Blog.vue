@@ -21,39 +21,46 @@ if (!posts.value) {
       title: () => 'text-left text-lg font-medium sm:text-xl'
     }"
   >
-    <UBlogPosts
-      orientation="vertical"
-      class="gap-4 lg:gap-y-4"
+    <Motion
+      :initial="{ opacity: 0, y: 24 }"
+      :while-in-view="{ opacity: 1, y: 0 }"
+      :viewport="{ once: true, amount: 0.2 }"
+      :transition="{ duration: 0.78, ease: [0.22, 1, 0.36, 1] }"
     >
-      <UBlogPost
-        v-for="(post, index) in posts"
-        :key="index"
-        orientation="horizontal"
-        variant="naked"
-        v-bind="post"
-        :to="post.path"
-        :ui="{
-          root: 'group relative lg:items-start lg:flex ring-0 hover:ring-0',
-          body: 'px-0!',
-          header: 'hidden'
-        }"
+      <UBlogPosts
+        orientation="vertical"
+        class="gap-4 lg:gap-y-4"
       >
-        <template #footer>
-          <UButton
-            size="xs"
-            variant="link"
-            class="px-0 gap-0"
-            label="读全文"
-          >
-            <template #trailing>
-              <UIcon
-                name="i-lucide-arrow-right"
-                class="size-4 text-primary transition-all opacity-0 group-hover:translate-x-1 group-hover:opacity-100"
-              />
-            </template>
-          </UButton>
-        </template>
-      </UBlogPost>
-    </UBlogPosts>
+        <UBlogPost
+          v-for="(post, index) in posts"
+          :key="index"
+          orientation="horizontal"
+          variant="naked"
+          v-bind="post"
+          :to="post.path"
+          :ui="{
+            root: 'group relative lg:items-start lg:flex ring-0 hover:ring-0',
+            body: 'px-0!',
+            header: 'hidden'
+          }"
+        >
+          <template #footer>
+            <UButton
+              size="xs"
+              variant="link"
+              class="px-0 gap-0"
+              label="读全文"
+            >
+              <template #trailing>
+                <UIcon
+                  name="i-lucide-arrow-right"
+                  class="size-4 text-primary transition-all opacity-0 group-hover:translate-x-1 group-hover:opacity-100"
+                />
+              </template>
+            </UButton>
+          </template>
+        </UBlogPost>
+      </UBlogPosts>
+    </Motion>
   </UPageSection>
 </template>

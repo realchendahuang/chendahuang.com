@@ -214,7 +214,13 @@ const setCategory = (category: HighlightCategoryId | 'all') => {
         />
       </div>
 
-      <div class="mt-8 space-y-5">
+      <Motion
+        class="mt-8 space-y-5"
+        :initial="{ opacity: 0, y: 24 }"
+        :while-in-view="{ opacity: 1, y: 0 }"
+        :viewport="{ once: true, amount: 0.12 }"
+        :transition="{ duration: 0.78, ease: [0.22, 1, 0.36, 1] }"
+      >
         <div>
           <p class="mb-2 text-xs text-dimmed">
             展示方式
@@ -257,7 +263,7 @@ const setCategory = (category: HighlightCategoryId | 'all') => {
             />
           </div>
         </div>
-      </div>
+      </Motion>
     </UContainer>
 
     <section class="border-t border-default pb-20 sm:pb-28">

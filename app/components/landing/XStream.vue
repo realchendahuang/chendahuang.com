@@ -44,11 +44,17 @@ const formatCount = (n?: number) => {
       </div>
     </template>
 
-    <div class="grid gap-3 sm:grid-cols-2">
+    <Motion
+      class="grid gap-3 sm:grid-cols-2"
+      :initial="{ opacity: 0, y: 24 }"
+      :while-in-view="{ opacity: 1, y: 0 }"
+      :viewport="{ once: true, amount: 0.2 }"
+      :transition="{ duration: 0.78, ease: [0.22, 1, 0.36, 1] }"
+    >
       <article
         v-for="item in highlights"
         :key="item.url"
-        class="rounded-lg border border-default bg-elevated/30 p-4 transition hover:border-primary/40"
+        class="rounded-lg border border-default bg-elevated/30 p-4 transition-[border-color,transform] duration-300 hover:-translate-y-0.5 hover:border-primary/40"
       >
         <div class="mb-3 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-dimmed">
           <time>{{ formatShortDate(item.date) }}</time>
@@ -76,6 +82,6 @@ const formatCount = (n?: number) => {
           />
         </div>
       </article>
-    </div>
+    </Motion>
   </UPageSection>
 </template>
