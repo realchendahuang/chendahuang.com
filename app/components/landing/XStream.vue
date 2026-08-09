@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { IndexCollectionItem } from '@nuxt/content'
+import { formatCount } from '~/utils/highlights'
 
 defineProps<{
   page: IndexCollectionItem
@@ -8,17 +9,6 @@ defineProps<{
 const { data: highlights } = await useAsyncData('index-highlights', () =>
   queryCollection('highlights').order('likes', 'DESC').limit(4).all()
 )
-
-const formatCount = (n?: number) => {
-  const value = n ?? 0
-  if (value >= 10000) {
-    return `${(value / 10000).toFixed(value % 10000 === 0 ? 0 : 1)}w`
-  }
-  if (value >= 1000) {
-    return `${(value / 1000).toFixed(value % 1000 === 0 ? 0 : 1)}k`
-  }
-  return String(value)
-}
 </script>
 
 <template>

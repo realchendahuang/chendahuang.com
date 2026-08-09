@@ -16,10 +16,14 @@ useSeoMeta({
   description: page.value?.seo.description || page.value?.description,
   ogDescription: page.value?.seo.description || page.value?.description,
   ogUrl: toCanonicalUrl('/'),
-  ogImage: toAbsoluteUrl('/avatar.jpg'),
   twitterTitle: page.value?.seo.title || page.value?.title,
-  twitterDescription: page.value?.seo.description || page.value?.description,
-  twitterImage: toAbsoluteUrl('/avatar.jpg')
+  twitterDescription: page.value?.seo.description || page.value?.description
+})
+
+defineOgImage('Portfolio', {
+  headline: '独立开发者',
+  title: '陈大黄',
+  description: page.value?.seo?.description || page.value?.description
 })
 
 useHead({

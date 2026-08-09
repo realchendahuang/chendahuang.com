@@ -69,3 +69,14 @@ export function formatMonthLabel(date: Date | string | number) {
   }
   return `${value.getFullYear()} 年 ${value.getMonth() + 1} 月`
 }
+
+export function formatCount(n?: number) {
+  const value = n ?? 0
+  if (value >= 10000) {
+    return `${(value / 10000).toFixed(value % 10000 === 0 ? 0 : 1)}w`
+  }
+  if (value >= 1000) {
+    return `${(value / 1000).toFixed(value % 1000 === 0 ? 0 : 1)}k`
+  }
+  return String(value)
+}

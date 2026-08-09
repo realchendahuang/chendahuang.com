@@ -6,6 +6,21 @@ const { footer, global } = useAppConfig()
 defineProps<{
   page: IndexCollectionItem
 }>()
+
+const { data: stats } = await useAsyncData('hero-stats', async () => {
+  const [highlights, posts, projects] = await Promise.all([
+    queryCollection('highlights').all(),
+    queryCollection('blog').all(),
+    queryCollection('projects').all()
+  ])
+  const stars = projects.reduce((sum, project) => sum + (project.stars ?? 0), 0)
+  return [
+    { label: '精华帖子', value: highlights.length },
+    { label: '博客文章', value: posts.length },
+    { label: '开源项目', value: projects.length },
+    { label: 'GitHub Stars', value: stars }
+  ]
+})
 </script>
 
 <template>
@@ -34,7 +49,7 @@ defineProps<{
         }"
       >
         <UColorModeAvatar
-          class="size-18 ring ring-default ring-offset-3 ring-offset-bg"
+          class="size-24 ring ring-default ring-offset-4 ring-offset-bg"
           :light="global.picture?.light!"
           :dark="global.picture?.dark!"
           :alt="global.picture?.alt!"
@@ -78,7 +93,27 @@ defineProps<{
           delay: 0.3
         }"
       >
-        {{ page.description }}
+        <p class="mx-auto max-w-3xl break-keep text-pretty text-base leading-7 text-muted">
+          {{ page.description }}
+        </p>
+
+        <div
+          v-if="stats?.length"
+          class="mx-auto mt-6 flex max-w-3xl flex-wrap items-center justify-center gap-x-6 gap-y-2"
+        >
+          <div
+            v-for="item in stats"
+            :key="item.label"
+            class="flex items-baseline gap-1.5"
+          >
+            <span class="font-serif text-xl font-medium text-highlighted">
+              {{ item.value }}
+            </span>
+            <span class="text-xs text-dimmed">
+              {{ item.label }}
+            </span>
+          </div>
+        </div>
       </Motion>
     </template>
 
@@ -159,13 +194,18 @@ defineProps<{
           delay: index * 0.1
         }"
       >
-        <NuxtImg
-          width="234"
-          height="234"
-          class="rounded-lg aspect-square object-cover"
-          :class="index % 2 === 0 ? '-rotate-2' : 'rotate-2'"
-          v-bind="img"
-        />
+        <NuxtLink
+          to="/projects"
+          class="shrink-0"
+        >
+          <NuxtImg
+            width="234"
+            height="234"
+            class="rounded-lg aspect-square object-cover"
+            :class="index % 2 === 0 ? '-rotate-2' : 'rotate-2'"
+            v-bind="img"
+          />
+        </NuxtLink>
       </Motion>
     </UMarquee>
   </UPageHero>

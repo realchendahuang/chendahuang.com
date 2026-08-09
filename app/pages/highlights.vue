@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import type { HighlightsCollectionItem } from '@nuxt/content'
 import {
+  formatCount,
   formatMonthLabel,
   getHighlightCategory,
   HIGHLIGHT_CATEGORIES,
@@ -82,6 +83,43 @@ const activeCategory = computed<HighlightCategoryId | 'all'>({
 
 const allHighlights = computed(() => highlights.value ?? [])
 
+const searchQuery = ref('')
+
+const expanded = ref<Set<string>>(new Set())
+
+const toggleExpanded = (url: string) => {
+  const next = new Set(expanded.value)
+  if (next.has(url)) {
+    next.delete(url)
+  } else {
+    next.add(url)
+  }
+  expanded.value = next
+}
+
+const expandAll = () => {
+  expanded.value = new Set(allHighlights.value.map(item => item.url))
+}
+
+const collapseAll = () => {
+  expanded.value = new Set()
+}
+
+const keywordMatched = (item: HighlightsCollectionItem, keyword: string) => {
+  const haystack = `${item.title} ${item.description ?? ''} ${item.content ?? ''}`.toLowerCase()
+  return keyword.split(/\s+/).filter(Boolean).every(part => haystack.includes(part))
+}
+
+const keywordFiltered = computed(() => {
+  const keyword = searchQuery.value.trim().toLowerCase()
+  if (!keyword) {
+    return allHighlights.value
+  }
+  return allHighlights.value.filter(item => keywordMatched(item, keyword))
+})
+
+const isSearching = computed(() => searchQuery.value.trim().length > 0)
+
 const categoryCounts = computed(() => {
   const counts = Object.fromEntries(
     HIGHLIGHT_CATEGORIES.map(item => [item.id, 0])
@@ -99,9 +137,9 @@ const categoryCounts = computed(() => {
 
 const filteredHighlights = computed(() => {
   if (activeCategory.value === 'all') {
-    return allHighlights.value
+    return keywordFiltered.value
   }
-  return allHighlights.value.filter(item => item.category === activeCategory.value)
+  return keywordFiltered.value.filter(item => item.category === activeCategory.value)
 })
 
 const sortedByHeat = (items: HighlightsCollectionItem[]) =>
@@ -171,17 +209,6 @@ const displaySections = computed<DisplaySection[]>(() => {
   }]
 })
 
-const formatCount = (n?: number) => {
-  const value = n ?? 0
-  if (value >= 10000) {
-    return `${(value / 10000).toFixed(value % 10000 === 0 ? 0 : 1)}w`
-  }
-  if (value >= 1000) {
-    return `${(value / 1000).toFixed(value % 1000 === 0 ? 0 : 1)}k`
-  }
-  return String(value)
-}
-
 const setViewMode = (mode: HighlightViewMode) => {
   viewMode.value = mode
 }
@@ -200,7 +227,7 @@ const setCategory = (category: HighlightCategoryId | 'all') => {
             {{ page.title }}
           </h1>
           <p class="mt-3 max-w-2xl text-sm leading-6 text-muted sm:text-base">
-            共 {{ allHighlights.length }} 条。可按主题分组、时间线或热度浏览，也可先筛分类再切换视图。
+            共 {{ allHighlights.length }} 条。可按主题分组、时间线或热度浏览，也可搜索关键词、筛分类、点击标题展开正文。
           </p>
         </div>
 
@@ -221,6 +248,43 @@ const setCategory = (category: HighlightCategoryId | 'all') => {
         :viewport="{ once: true, amount: 0.12 }"
         :transition="{ duration: 0.78, ease: [0.22, 1, 0.36, 1] }"
       >
+        <div class="grid gap-4 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-end">
+          <div>
+            <p class="mb-2 text-xs text-dimmed">
+              搜索帖子
+            </p>
+            <UInput
+              v-model="searchQuery"
+              size="md"
+              icon="i-lucide-search"
+              placeholder="搜标题或内容关键词…"
+              class="w-full max-w-md"
+              :ui="{ trailing: 'pe-0' }"
+            />
+          </div>
+
+          <div class="flex items-center gap-2">
+            <UButton
+              size="sm"
+              color="neutral"
+              variant="ghost"
+              label="全部展开"
+              icon="i-lucide-chevrons-down-up"
+              :disabled="!filteredHighlights.length"
+              @click="expandAll"
+            />
+            <UButton
+              size="sm"
+              color="neutral"
+              variant="ghost"
+              label="全部收起"
+              icon="i-lucide-chevrons-up-down"
+              :disabled="!filteredHighlights.length"
+              @click="collapseAll"
+            />
+          </div>
+        </div>
+
         <div>
           <p class="mb-2 text-xs text-dimmed">
             展示方式
@@ -305,34 +369,54 @@ const setCategory = (category: HighlightCategoryId | 'all') => {
               :key="item.url"
               class="border-b border-default py-8 sm:py-10"
             >
-              <div class="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-dimmed">
-                <time :datetime="toIsoDate(item.date)">
-                  {{ formatDisplayDate(item.date) }}
-                </time>
-                <span
-                  v-if="section.showCategoryBadge && getHighlightCategory(item.category)"
-                  class="rounded-full bg-elevated px-2 py-0.5 text-muted"
-                >
-                  {{ getHighlightCategory(item.category)?.label }}
-                </span>
-                <span>{{ formatCount(item.likes) }} 赞</span>
-                <span v-if="item.bookmarks">{{ formatCount(item.bookmarks) }} 收藏</span>
-                <span v-if="item.reposts">{{ formatCount(item.reposts) }} 转发</span>
-                <span v-if="item.views">{{ formatCount(item.views) }} 浏览</span>
-              </div>
+              <button
+                type="button"
+                class="group flex w-full items-start justify-between gap-4 text-left"
+                :aria-expanded="expanded.has(item.url)"
+                @click="toggleExpanded(item.url)"
+              >
+                <div class="min-w-0">
+                  <div class="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-dimmed">
+                    <time :datetime="toIsoDate(item.date)">
+                      {{ formatDisplayDate(item.date) }}
+                    </time>
+                    <span
+                      v-if="section.showCategoryBadge && getHighlightCategory(item.category)"
+                      class="rounded-full bg-elevated px-2 py-0.5 text-muted"
+                    >
+                      {{ getHighlightCategory(item.category)?.label }}
+                    </span>
+                    <span>{{ formatCount(item.likes) }} 赞</span>
+                    <span v-if="item.bookmarks">{{ formatCount(item.bookmarks) }} 收藏</span>
+                    <span v-if="item.reposts">{{ formatCount(item.reposts) }} 转发</span>
+                    <span v-if="item.views">{{ formatCount(item.views) }} 浏览</span>
+                  </div>
 
-              <h3 class="mt-3 max-w-3xl text-xl font-semibold tracking-[-0.02em] text-highlighted sm:text-2xl">
-                {{ item.title }}
-              </h3>
+                  <h3 class="mt-3 max-w-3xl text-xl font-semibold tracking-[-0.02em] text-highlighted transition-colors group-hover:text-primary sm:text-2xl">
+                    {{ item.title }}
+                  </h3>
+                </div>
 
-              <div class="prose-highlight mt-5 max-w-3xl text-[15px] leading-7 text-toned whitespace-pre-line sm:text-base sm:leading-8">
+                <UIcon
+                  :name="expanded.has(item.url) ? 'i-lucide-chevron-up' : 'i-lucide-chevron-down'"
+                  class="mt-1 size-5 shrink-0 text-dimmed transition-transform group-hover:text-primary"
+                />
+              </button>
+
+              <div
+                v-show="expanded.has(item.url)"
+                class="prose-highlight mt-5 max-w-3xl text-[15px] leading-7 text-toned whitespace-pre-line sm:text-base sm:leading-8"
+              >
                 <MDC
                   :value="item.content"
                   unwrap="p"
                 />
               </div>
 
-              <div class="mt-5">
+              <div
+                v-show="expanded.has(item.url)"
+                class="mt-5"
+              >
                 <UButton
                   :to="item.url"
                   target="_blank"
@@ -351,7 +435,7 @@ const setCategory = (category: HighlightCategoryId | 'all') => {
           v-else
           class="py-16 text-center text-sm text-muted"
         >
-          这个筛选下暂时没有帖子。
+          {{ isSearching ? '没有匹配的帖子，换个关键词试试。' : '这个筛选下暂时没有帖子。' }}
         </p>
       </UContainer>
     </section>
