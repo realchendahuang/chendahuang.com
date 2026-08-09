@@ -2,7 +2,7 @@ seo:
   title: "陈大黄 - 作品与内容"
   description: "陈大黄的个人作品与内容陈列站。收录项目、Playbook、Agent Skill、文章和帖子。"
 title: "陈大黄"
-description: "洞察达人、段子手｜前 AI 产品经理｜独立开发者｜研究高效语言学习｜AI 效率折腾达人｜产品、设计、开发、运营、销售全能达人"
+description: "洞察达人段子手｜前 AI 产品经理｜独立开发者｜研究高效学语言专家｜AI 效率提高折腾达人｜产品、设计、开发、运营、销售全能达人"
 hero:
   links:
     - label: "看项目"
@@ -12,6 +12,19 @@ hero:
       to: https://github.com/realchendahuang
       color: "neutral"
       target: "_blank"
+  images:
+    - src: /projects/flaremo.webp
+      alt: FlareMo 个人知识管理
+    - src: /projects/sub-store-cloudflare.webp
+      alt: Sub-Store Cloudflare 订阅聚合工具
+    - src: /projects/god-museum.webp
+      alt: God-Museum 跨文明神话展馆
+    - src: /projects/ai-chronicle.webp
+      alt: AI Chronicle 行业编年史
+    - src: /projects/flaremo.webp
+      alt: FlareMo 个人知识管理
+    - src: /projects/sub-store-cloudflare.webp
+      alt: Sub-Store Cloudflare 订阅聚合工具
 blog:
   title: "最新文章"
 highlights:

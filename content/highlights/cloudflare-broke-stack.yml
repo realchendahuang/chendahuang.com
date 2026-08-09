@@ -1,0 +1,21 @@
+category: cloudflare
+title: "2026 独立开发最佳实践：Cloudflare 穷鬼全家桶"
+description: "2026 年独立开发最佳实践之 Cloudflare 穷鬼全家桶。"
+date: 2026-06-15
+likes: 225
+bookmarks: 335
+reposts: 34
+views: 40629
+url: https://x.com/realchendahuang/status/2066586160902881542
+content: |
+  2026年独立开发最佳实践 之
+  Cloudflare穷鬼全家桶
+  Codex：写代码，搞定全栈开发
+  GitHub：版本控制
+  Stripe：支付系统
+  前端：TanStack Start
+  后端：Hono + Cloudflare Workers
+  部署：Cloudflare Pages
+  数据库：Cloudflare D1
+  文件存储：Cloudflare R2
+  缓存 / 配置：Cloudflare KV

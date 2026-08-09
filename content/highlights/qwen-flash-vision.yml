@@ -1,0 +1,16 @@
+category: ai
+title: "DeepSeek V4 Flash 缺多模态？用 Qwen-3.7-Flash 补"
+description: "调研了性价比最高的识图模型 Qwen-3.7-Flash。"
+date: 2026-08-06
+likes: 659
+bookmarks: 675
+reposts: 78
+views: 89530
+url: https://x.com/realchendahuang/status/2085265465564336327
+content: |
+  很多人吐槽Deepseek V4 Flash没有多模态的功能
+  我调研一下目前性价比最高的识图模型是Qwen-3.7-Flash。
+  识别一张图片，成本在 0.0004～0.001 元，识别 1,000 张 普通图片≈ 0.6～0.8 元
+  基于以上信息，我们得出了真正的AI穷鬼全家桶方案：
+  1. OpenCodeGo 5美元套餐使用Deepseek V4 Flash写代码
+  2. https://t.co/mlvdSTaD6M

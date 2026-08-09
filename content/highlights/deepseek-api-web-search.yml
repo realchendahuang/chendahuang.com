@@ -1,0 +1,15 @@
+category: ai
+title: "DeepSeek API 内置联网搜索，白嫖官方搜索能力"
+description: "DeepSeek 官方 API 居然内置了联网搜索。"
+date: 2026-08-05
+likes: 1037
+bookmarks: 885
+reposts: 89
+views: 230537
+url: https://x.com/realchendahuang/status/2084826975102030013
+content: |
+  发现个好东西，DeepSeek官方居然在API里内置了联网搜索。
+  用Responses格式的接口调用deepseek-v4-flash模型，只要在请求参数里声明web_search工具，就能直接用他们服务端执行的搜索能力。
+  不用自己对接第三方搜索引擎，也不用额外申请搜索接口密钥.
+  整套搜索流程官方直接托管了。
+  原文: https://t.co/D4AXo7crHw

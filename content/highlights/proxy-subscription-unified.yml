@@ -1,0 +1,13 @@
+category: tools
+title: "科学上网订阅统一管理方案"
+description: "机场 + 自建 VPS 节点统一管理、统一分流、统一输出订阅链接。"
+date: 2026-06-29
+likes: 92
+bookmarks: 137
+reposts: 14
+views: 10207
+url: https://x.com/realchendahuang/status/2071465309085790305
+content: |
+  关于科学上网，如果买了机场，又搭建了自己的VPS节点，希望把它们统一管理，统一分流，统一输出一个订阅链接。
+  希望把分流规则、节点筛选和组合逻辑放在服务端维护，而不是在每个客户端重复配置。
+  希望用 Cloudflare 的轻量部署方式运行，不想维护服务器、数据库服务和复杂后台任务。
