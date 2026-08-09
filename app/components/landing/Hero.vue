@@ -15,10 +15,10 @@ const { data: stats } = await useAsyncData('hero-stats', async () => {
   ])
   const stars = projects.reduce((sum, project) => sum + (project.stars ?? 0), 0)
   return [
-    { label: '精华帖子', value: highlights.length },
-    { label: '博客文章', value: posts.length },
-    { label: '开源项目', value: projects.length },
-    { label: 'GitHub Stars', value: stars }
+    { label: '精华帖子', value: highlights.length, to: '/highlights' },
+    { label: '博客文章', value: posts.length, to: '/blog' },
+    { label: '开源项目', value: projects.length, to: '/projects' },
+    { label: 'GitHub Stars', value: stars, to: 'https://github.com/realchendahuang' }
   ]
 })
 </script>
@@ -101,10 +101,12 @@ const { data: stats } = await useAsyncData('hero-stats', async () => {
           v-if="stats?.length"
           class="mx-auto mt-6 flex max-w-3xl flex-wrap items-center justify-center gap-x-6 gap-y-2"
         >
-          <div
+          <NuxtLink
             v-for="item in stats"
             :key="item.label"
-            class="flex items-baseline gap-1.5"
+            :to="item.to"
+            :target="item.to?.startsWith('http') ? '_blank' : undefined"
+            class="flex items-baseline gap-1.5 rounded-md px-1 py-0.5 transition-colors hover:bg-elevated hover:text-highlighted"
           >
             <span class="font-serif text-xl font-medium text-highlighted">
               {{ item.value }}
@@ -112,7 +114,7 @@ const { data: stats } = await useAsyncData('hero-stats', async () => {
             <span class="text-xs text-dimmed">
               {{ item.label }}
             </span>
-          </div>
+          </NuxtLink>
         </div>
       </Motion>
     </template>

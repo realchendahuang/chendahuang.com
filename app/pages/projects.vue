@@ -32,10 +32,42 @@ defineOgImage('Portfolio', { title, description })
       <h1 class="max-w-3xl text-3xl font-semibold tracking-[-0.03em] text-highlighted sm:text-4xl">
         {{ page.title }}
       </h1>
+      <p class="mt-3 max-w-2xl text-sm leading-6 text-muted sm:text-base">
+        {{ page.description }}
+      </p>
     </UContainer>
 
+    <div
+      v-if="projects?.length"
+      class="overflow-hidden py-2"
+    >
+      <UMarquee
+        pause-on-hover
+        class="py-2 -mx-8 sm:-mx-12 lg:-mx-16 [--duration:32s]"
+      >
+        <NuxtLink
+          v-for="project in projects"
+          :key="project.title"
+          :to="project.onlineUrl || project.url"
+          target="_blank"
+          class="shrink-0"
+        >
+          <img
+            v-if="project.image"
+            :src="project.image"
+            :alt="project.imageAlt || `${project.title} 项目预览`"
+            width="234"
+            height="234"
+            loading="lazy"
+            decoding="async"
+            class="size-36 rounded-lg object-cover sm:size-44"
+          >
+        </NuxtLink>
+      </UMarquee>
+    </div>
+
     <section
-      class="border-t border-default pb-20 sm:pb-28"
+      class="mt-8 border-t border-default pb-20 sm:pb-28"
     >
       <Motion
         :initial="{ opacity: 0, y: 24 }"

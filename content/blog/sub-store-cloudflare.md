@@ -2,6 +2,7 @@
 title: 我把机场订阅聚合搬到了 Cloudflare 上
 description: 多个机场加自建节点揉成一条订阅，分流规则在服务端配好，客户端只管订阅。
 date: 2026-06-28
+original: true
 tags:
   - Cloudflare
   - 科学上网

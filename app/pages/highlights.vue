@@ -344,7 +344,14 @@ const setCategory = (category: HighlightCategoryId | 'all') => {
               :label="`${category.label} ${categoryCounts[category.id] || 0}`"
               :title="category.description"
               @click="setCategory(category.id)"
-            />
+            >
+              <template #leading>
+                <span
+                  class="size-1.5 rounded-full"
+                  :style="{ backgroundColor: category.color }"
+                />
+              </template>
+            </UButton>
           </div>
         </div>
       </Motion>
@@ -397,9 +404,26 @@ const setCategory = (category: HighlightCategoryId | 'all') => {
               >
                 <div class="min-w-0">
                   <div class="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-dimmed">
+                    <span
+                      v-if="getHighlightCategory(item.category)"
+                      class="size-1.5 shrink-0 rounded-full"
+                      :style="{ backgroundColor: getHighlightCategory(item.category)?.color }"
+                      :title="getHighlightCategory(item.category)?.label"
+                    />
                     <time :datetime="toIsoDate(item.date)">
                       {{ formatDisplayDate(item.date) }}
                     </time>
+                    <span
+                      v-if="(item.likes ?? 0) >= 1000"
+                      class="inline-flex items-center gap-1 rounded-full bg-amber-500/10 px-2 py-0.5 font-medium text-amber-600 dark:text-amber-400"
+                      title="热门帖子"
+                    >
+                      <UIcon
+                        name="i-lucide-flame"
+                        class="size-3"
+                      />
+                      热门
+                    </span>
                     <span
                       v-if="section.showCategoryBadge && getHighlightCategory(item.category)"
                       class="rounded-full bg-elevated px-2 py-0.5 text-muted"

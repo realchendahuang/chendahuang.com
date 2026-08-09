@@ -114,6 +114,7 @@ const toc = computed<TocItem[]>(() => {
 
 // 阅读进度
 const readingProgress = ref(0)
+const mobileTocOpen = ref(false)
 const onScroll = () => {
   const doc = document.documentElement
   const total = doc.scrollHeight - window.innerHeight
@@ -141,6 +142,21 @@ onBeforeUnmount(() => {
 })
 const scrollToTop = () => {
   window.scrollTo({ top: 0, behavior: 'smooth' })
+}
+
+// 原生分享（移动端）
+const shareArticle = async () => {
+  const url = canonicalUrl
+  const text = shareText.value
+  if (navigator.share) {
+    try {
+      await navigator.share({ title, text, url })
+      return
+    } catch {
+      // 用户取消或失败，回退到复制链接
+    }
+  }
+  copyToClipboard(url, '链接已复制，快去分享吧')
 }
 
 // 相关文章：按标签重叠度推荐
@@ -194,6 +210,16 @@ const relatedPosts = computed(() => {
             </time>
             <span aria-hidden="true">·</span>
             <span>{{ page.minRead }} 分钟阅读</span>
+            <template v-if="page.original">
+              <span aria-hidden="true">·</span>
+              <span class="inline-flex items-center gap-1 rounded-full bg-primary/10 px-2 py-0.5 font-medium text-primary">
+                <UIcon
+                  name="i-lucide-pen-line"
+                  class="size-3"
+                />
+                原创
+              </span>
+            </template>
             <template v-if="page.sourceUrl">
               <span aria-hidden="true">·</span>
               <ULink
@@ -254,6 +280,42 @@ const relatedPosts = computed(() => {
           :alt="page.title"
           class="mx-auto mt-10 aspect-[16/8] w-full max-w-4xl rounded-xl object-cover object-center"
         />
+
+        <div
+          v-if="toc.length"
+          class="mx-auto mt-6 max-w-3xl lg:hidden"
+        >
+          <UButton
+            size="sm"
+            variant="soft"
+            color="neutral"
+            block
+            :label="mobileTocOpen ? '收起目录' : '查看目录'"
+            :icon="mobileTocOpen ? 'i-lucide-chevron-up' : 'i-lucide-chevron-down'"
+            :trailing="false"
+            @click="mobileTocOpen = !mobileTocOpen"
+          />
+          <div
+            v-show="mobileTocOpen"
+            class="mt-3 rounded-lg border border-default bg-elevated/50 p-4"
+          >
+            <ul class="space-y-2 border-l border-default">
+              <li
+                v-for="item in toc"
+                :key="item.id"
+              >
+                <a
+                  :href="`#${item.id}`"
+                  class="block border-l-2 border-transparent py-0.5 pl-3 text-sm leading-5 text-muted transition-colors hover:border-primary hover:text-highlighted"
+                  :class="item.depth === 3 ? 'pl-6' : ''"
+                  @click="mobileTocOpen = false"
+                >
+                  {{ item.text }}
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
 
         <div class="mx-auto mt-10 max-w-5xl sm:mt-12 lg:grid lg:grid-cols-[13rem_minmax(0,1fr)] lg:gap-12">
           <aside
@@ -317,6 +379,14 @@ const relatedPosts = computed(() => {
                   label="复制链接"
                   @click="copyToClipboard(articleLink, '文章链接已复制到剪贴板')"
                 />
+                <UButton
+                  size="sm"
+                  variant="soft"
+                  color="neutral"
+                  icon="i-lucide-share-2"
+                  label="分享"
+                  @click="shareArticle"
+                />
               </div>
             </div>
 
@@ -351,6 +421,38 @@ const relatedPosts = computed(() => {
                 </NuxtLink>
               </div>
             </section>
+
+            <aside class="mt-12 rounded-xl border border-default bg-elevated/50 p-6">
+              <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+                <div>
+                  <h3 class="text-base font-semibold text-highlighted">
+                    订阅更新
+                  </h3>
+                  <p class="mt-1 text-sm leading-6 text-muted">
+                    新文章会同步到 RSS，也可以在 X 上关注我。
+                  </p>
+                </div>
+                <div class="flex flex-wrap items-center gap-2">
+                  <UButton
+                    to="/rss.xml"
+                    target="_blank"
+                    size="sm"
+                    color="neutral"
+                    icon="i-lucide-rss"
+                    label="RSS 订阅"
+                  />
+                  <UButton
+                    to="https://x.com/realchendahuang"
+                    target="_blank"
+                    size="sm"
+                    color="neutral"
+                    variant="soft"
+                    icon="i-simple-icons-x"
+                    label="关注 X"
+                  />
+                </div>
+              </div>
+            </aside>
           </UPageBody>
         </div>
       </article>

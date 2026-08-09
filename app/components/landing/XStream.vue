@@ -9,6 +9,19 @@ defineProps<{
 const { data: highlights } = await useAsyncData('index-highlights', () =>
   queryCollection('highlights').order('likes', 'DESC').limit(4).all()
 )
+
+const shareHighlight = async (item: { title: string, url: string }) => {
+  const text = `来自陈大黄的精华帖：${item.title}`
+  if (navigator.share) {
+    try {
+      await navigator.share({ title: item.title, text, url: item.url })
+      return
+    } catch {
+      // 用户取消
+    }
+  }
+  copyToClipboard(item.url, '链接已复制，快去分享吧')
+}
 </script>
 
 <template>
@@ -69,6 +82,14 @@ const { data: highlights } = await useAsyncData('index-highlights', () =>
             variant="soft"
             label="原文"
             trailing-icon="i-lucide-arrow-up-right"
+          />
+          <UButton
+            size="xs"
+            color="neutral"
+            variant="ghost"
+            icon="i-lucide-share-2"
+            :aria-label="`分享：${item.title}`"
+            @click="shareHighlight(item)"
           />
         </div>
       </article>

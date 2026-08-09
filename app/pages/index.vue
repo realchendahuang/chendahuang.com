@@ -55,5 +55,6 @@ useHead({
       :page
     />
     <LandingBlog :page />
+    <LandingAboutSection />
   </UPage>
 </template>

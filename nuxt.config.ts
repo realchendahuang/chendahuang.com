@@ -7,6 +7,7 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@vueuse/nuxt',
     'nuxt-og-image',
+    'nuxt-llms',
     'motion-v/nuxt'
   ],
 
@@ -60,6 +61,16 @@ export default defineNuxtConfig({
         commaDangle: 'never',
         braceStyle: '1tbs'
       }
+    }
+  },
+
+  llms: {
+    domain: 'https://chendahuang.com',
+    title: '陈大黄',
+    description: '陈大黄的个人作品与内容陈列站。收录开源项目、Playbook、Agent Skill、博客文章和 X 精华帖。',
+    full: {
+      title: '陈大黄完整内容索引',
+      description: '全站博客文章与内容摘要的纯文本索引，适合 AI 与开发者直接抓取。'
     }
   },
 

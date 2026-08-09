@@ -169,9 +169,22 @@ const isFiltering = computed(() => activeTag.value !== 'all' || searchQuery.valu
             </p>
 
             <div>
-              <h2 class="max-w-3xl text-balance text-lg font-semibold leading-snug tracking-[-0.02em] text-highlighted sm:text-xl">
-                {{ post.title }}
-              </h2>
+              <div class="flex flex-wrap items-center gap-2">
+                <h2 class="max-w-3xl text-balance text-lg font-semibold leading-snug tracking-[-0.02em] text-highlighted sm:text-xl">
+                  {{ post.title }}
+                </h2>
+                <span
+                  v-if="post.original"
+                  class="inline-flex shrink-0 items-center gap-1 rounded-full bg-primary/10 px-2 py-0.5 text-xs font-medium text-primary"
+                  title="本站原创文章"
+                >
+                  <UIcon
+                    name="i-lucide-pen-line"
+                    class="size-3"
+                  />
+                  原创
+                </span>
+              </div>
               <p class="mt-2 max-w-2xl text-sm leading-6 text-muted sm:text-[15px] sm:leading-7">
                 {{ post.description }}
               </p>

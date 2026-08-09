@@ -25,6 +25,7 @@ const mobileLinks = computed<DropdownMenuItem[]>(() => props.links.map(link => (
       </NuxtLink>
 
       <div class="flex items-center gap-1">
+        <GlobalSearch />
         <ColorModeButton />
         <UDropdownMenu
           :items="mobileLinks"
@@ -56,6 +57,7 @@ const mobileLinks = computed<DropdownMenuItem[]>(() => props.links.map(link => (
       }"
     >
       <template #list-trailing>
+        <GlobalSearch />
         <ColorModeButton />
       </template>
     </UNavigationMenu>

@@ -2,37 +2,44 @@ export const HIGHLIGHT_CATEGORIES = [
   {
     id: 'cloudflare',
     label: 'Cloudflare',
-    description: '边缘云、Workers、免费基建与部署经验'
+    description: '边缘云、Workers、免费基建与部署经验',
+    color: '#f6821f'
   },
   {
     id: 'tools',
     label: '工具清单',
-    description: '软件、插件、硬件与效率工具推荐'
+    description: '软件、插件、硬件与效率工具推荐',
+    color: '#8b5cf6'
   },
   {
     id: 'ai',
     label: 'AI 思考',
-    description: '模型、Agent、知识管理与协作方法'
+    description: '模型、Agent、知识管理与协作方法',
+    color: '#00dc82'
   },
   {
     id: 'product',
     label: '产品开发',
-    description: '独立开发、技术栈与产品判断'
+    description: '独立开发、技术栈与产品判断',
+    color: '#3b82f6'
   },
   {
     id: 'opc',
     label: 'OPC 创业',
-    description: '一人公司、注册园区与经营实操'
+    description: '一人公司、注册园区与经营实操',
+    color: '#f59e0b'
   },
   {
     id: 'growth',
     label: '内容增长',
-    description: 'X 运营、发帖方法与涨粉复盘'
+    description: 'X 运营、发帖方法与涨粉复盘',
+    color: '#ec4899'
   },
   {
     id: 'essay',
     label: '人文随笔',
-    description: '价值、幽默与非工具视角的观察'
+    description: '价值、幽默与非工具视角的观察',
+    color: '#64748b'
   }
 ] as const
 

@@ -26,6 +26,11 @@ export default defineAppConfig({
     credits: `© ${new Date().getFullYear()} 陈大黄`,
     colorMode: false,
     links: [{
+      'icon': 'i-lucide-rss',
+      'to': '/rss.xml',
+      'target': '_blank',
+      'aria-label': 'RSS 订阅'
+    }, {
       'icon': 'i-simple-icons-x',
       'to': 'https://x.com/realchendahuang',
       'target': '_blank',
