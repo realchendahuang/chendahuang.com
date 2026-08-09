@@ -5,6 +5,9 @@ date: 2026-06-20
 minRead: 8
 source: x-article
 sourceUrl: https://x.com/realchendahuang/article/2068312581912379392
+tags:
+  - 产品思维
+  - 需求判断
 author:
   name: 陈大黄
   avatar:

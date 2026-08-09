@@ -50,7 +50,8 @@ export default defineContentConfig({
         image: z.string().editor({ input: 'media' }).optional(),
         author: createAuthorSchema(),
         source: z.string().optional(),
-        sourceUrl: z.string().url().optional()
+        sourceUrl: z.string().url().optional(),
+        tags: z.array(z.string()).default([])
       })
     }),
     pages: defineCollection({

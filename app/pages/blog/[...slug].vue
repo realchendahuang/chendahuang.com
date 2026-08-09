@@ -46,6 +46,17 @@ if (page.value.image) {
   })
 }
 
+// 封面图：优先用文章自定义图，否则用自动生成的 OG 图
+const coverImage = useState<string>('blog-cover-image', () => '')
+if (import.meta.server && !page.value.image) {
+  const ogPaths = defineOgImage('Portfolio', {
+    title,
+    description,
+    headline: '博客'
+  })
+  coverImage.value = ogPaths[0] ?? ''
+}
+
 useHead({
   script: [{
     type: 'application/ld+json',
@@ -100,10 +111,69 @@ const toc = computed<TocItem[]>(() => {
     }))
     .filter((item: TocItem) => item.id && item.text)
 })
+
+// 阅读进度
+const readingProgress = ref(0)
+const onScroll = () => {
+  const doc = document.documentElement
+  const total = doc.scrollHeight - window.innerHeight
+  readingProgress.value = total > 0 ? Math.min(1, window.scrollY / total) : 0
+}
+onMounted(() => {
+  window.addEventListener('scroll', onScroll, { passive: true })
+  onScroll()
+})
+onBeforeUnmount(() => {
+  window.removeEventListener('scroll', onScroll)
+})
+
+// 回到顶部
+const showBackToTop = ref(false)
+const onScrollTop = () => {
+  showBackToTop.value = window.scrollY > 600
+}
+onMounted(() => {
+  window.addEventListener('scroll', onScrollTop, { passive: true })
+  onScrollTop()
+})
+onBeforeUnmount(() => {
+  window.removeEventListener('scroll', onScrollTop)
+})
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' })
+}
+
+// 相关文章：按标签重叠度推荐
+const { data: allPosts } = await useAsyncData('blog-all-posts', () =>
+  queryCollection('blog').select('path', 'title', 'description', 'date', 'minRead', 'tags').all()
+)
+
+const relatedPosts = computed(() => {
+  const current = page.value
+  if (!current) {
+    return []
+  }
+  const currentTags = new Set(current.tags ?? [])
+  const scored = (allPosts.value ?? [])
+    .filter(post => post.path !== current.path)
+    .map((post) => {
+      const overlap = (post.tags ?? []).filter(tag => currentTags.has(tag)).length
+      return { post, overlap }
+    })
+    .filter(item => item.overlap > 0)
+    .sort((a, b) => b.overlap - a.overlap)
+  return scored.slice(0, 3).map(item => item.post)
+})
 </script>
 
 <template>
   <div class="pb-20 pt-10 sm:pb-28 sm:pt-14">
+    <div
+      class="fixed inset-x-0 top-0 z-50 h-0.5 bg-primary transition-[width] duration-150 ease-out"
+      :style="{ width: `${readingProgress * 100}%` }"
+      aria-hidden="true"
+    />
+
     <UContainer>
       <article v-if="page">
         <header class="mx-auto max-w-3xl">
@@ -162,11 +232,25 @@ const toc = computed<TocItem[]>(() => {
               </p>
             </div>
           </div>
+
+          <div
+            v-if="page.tags?.length"
+            class="mt-6 flex flex-wrap gap-1.5"
+          >
+            <NuxtLink
+              v-for="tag in page.tags"
+              :key="tag"
+              :to="`/blog?tag=${encodeURIComponent(tag)}`"
+              class="rounded-full border border-default px-2.5 py-1 text-xs text-muted transition-colors hover:border-primary/40 hover:text-highlighted"
+            >
+              {{ tag }}
+            </NuxtLink>
+          </div>
         </header>
 
         <NuxtImg
-          v-if="page.image"
-          :src="page.image"
+          v-if="page.image || coverImage"
+          :src="page.image || coverImage"
           :alt="page.title"
           class="mx-auto mt-10 aspect-[16/8] w-full max-w-4xl rounded-xl object-cover object-center"
         />
@@ -240,9 +324,55 @@ const toc = computed<TocItem[]>(() => {
               :surround
               class="mt-8"
             />
+
+            <section
+              v-if="relatedPosts.length"
+              class="mt-12 border-t border-default pt-8"
+            >
+              <p class="editorial-label">
+                相关阅读
+              </p>
+              <div class="mt-4 grid gap-4 sm:grid-cols-3">
+                <NuxtLink
+                  v-for="post in relatedPosts"
+                  :key="post.path"
+                  :to="post.path"
+                  class="group flex flex-col gap-2 rounded-lg border border-default p-4 transition-colors hover:border-primary/40 hover:bg-elevated"
+                >
+                  <p class="text-xs text-dimmed">
+                    {{ formatShortDate(post.date) }} · {{ post.minRead }} 分钟
+                  </p>
+                  <h3 class="line-clamp-2 text-sm font-medium leading-snug text-highlighted group-hover:text-primary">
+                    {{ post.title }}
+                  </h3>
+                  <p class="line-clamp-2 text-xs leading-5 text-muted">
+                    {{ post.description }}
+                  </p>
+                </NuxtLink>
+              </div>
+            </section>
           </UPageBody>
         </div>
       </article>
     </UContainer>
+
+    <Transition
+      enter-active-class="transition duration-200 ease-out"
+      enter-from-class="opacity-0 translate-y-2"
+      leave-active-class="transition duration-150 ease-in"
+      leave-to-class="opacity-0 translate-y-2"
+    >
+      <UButton
+        v-if="showBackToTop"
+        icon="i-lucide-arrow-up"
+        size="sm"
+        square
+        color="neutral"
+        variant="soft"
+        class="fixed bottom-6 right-6 z-50 shadow-lg"
+        aria-label="回到顶部"
+        @click="scrollToTop"
+      />
+    </Transition>
   </div>
 </template>

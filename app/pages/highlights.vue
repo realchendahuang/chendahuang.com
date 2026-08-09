@@ -40,6 +40,26 @@ useSeoMeta({
 
 defineOgImage('Portfolio', { title, description })
 
+useHead({
+  script: [{
+    type: 'application/ld+json',
+    innerHTML: JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'ItemList',
+      'name': title,
+      'description': description,
+      'numberOfItems': highlights.value?.length ?? 0,
+      'itemListElement': (highlights.value ?? []).map((item, index) => ({
+        '@type': 'ListItem',
+        'position': index + 1,
+        'name': item.title,
+        'description': item.description,
+        'url': item.url
+      }))
+    }).replaceAll('<', '\\u003c')
+  }]
+})
+
 const route = useRoute()
 const router = useRouter()
 

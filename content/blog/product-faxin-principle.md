@@ -5,6 +5,9 @@ date: 2026-06-20
 minRead: 10
 source: x-article
 sourceUrl: https://x.com/realchendahuang/article/2068296188340895744
+tags:
+  - 产品思维
+  - 独立开发
 author:
   name: 陈大黄
   avatar:

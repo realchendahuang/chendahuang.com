@@ -1,14 +1,19 @@
 import { queryCollection } from '@nuxt/content/server'
+import { minimarkToHtml } from '../../app/utils/markdown'
 import { escapeXml, SITE_DESCRIPTION, SITE_NAME, SITE_URL, toCanonicalUrl, toIsoDate } from '../../app/utils/site'
 
 export default defineEventHandler(async (event) => {
   const posts = await queryCollection(event, 'blog')
-    .select('path', 'title', 'description', 'date')
+    .select('path', 'title', 'description', 'date', 'body')
     .order('date', 'DESC')
     .all()
 
   const items = posts.map((post) => {
     const url = toCanonicalUrl(post.path)
+    const contentHtml = minimarkToHtml(post.body)
+    const contentEncoded = contentHtml
+      ? `<content:encoded><![CDATA[${contentHtml}]]></content:encoded>`
+      : ''
 
     return [
       '<item>',
@@ -16,6 +21,7 @@ export default defineEventHandler(async (event) => {
       `<link>${escapeXml(url)}</link>`,
       `<guid isPermaLink="true">${escapeXml(url)}</guid>`,
       `<description>${escapeXml(post.description)}</description>`,
+      contentEncoded,
       `<pubDate>${new Date(post.date).toUTCString()}</pubDate>`,
       '</item>'
     ].join('')
@@ -28,7 +34,7 @@ export default defineEventHandler(async (event) => {
 
   return [
     '<?xml version="1.0" encoding="UTF-8"?>',
-    '<rss version="2.0">',
+    '<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/">',
     '<channel>',
     `<title>${escapeXml(`${SITE_NAME} 的博客`)}</title>`,
     `<link>${escapeXml(SITE_URL)}</link>`,

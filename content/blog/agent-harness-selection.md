@@ -5,6 +5,9 @@ date: 2026-08-06
 minRead: 6
 source: x
 sourceUrl: https://x.com/realchendahuang/status/2085410520459604026
+tags:
+  - AI Agent
+  - 工具选型
 author:
   name: 陈大黄
   avatar:

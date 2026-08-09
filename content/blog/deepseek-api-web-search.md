@@ -5,6 +5,10 @@ date: 2026-08-05
 minRead: 6
 source: x
 sourceUrl: https://x.com/realchendahuang/status/2084826975102030013
+tags:
+  - DeepSeek
+  - API
+  - AI 工具
 author:
   name: 陈大黄
   avatar:

@@ -28,3 +28,6 @@ logs
 
 # Local opencode config
 .opencode
+
+# Wrangler local state
+.wrangler

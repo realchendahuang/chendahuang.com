@@ -5,6 +5,9 @@ date: 2026-06-18
 minRead: 6
 source: x
 sourceUrl: https://x.com/realchendahuang/status/2067475762115174439
+tags:
+  - AI 思考
+  - 人文随笔
 author:
   name: 陈大黄
   avatar:

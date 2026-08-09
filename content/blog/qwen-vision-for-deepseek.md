@@ -5,6 +5,10 @@ date: 2026-08-06
 minRead: 5
 source: x
 sourceUrl: https://x.com/realchendahuang/status/2085265465564336327
+tags:
+  - DeepSeek
+  - 多模态
+  - 模型评测
 author:
   name: 陈大黄
   avatar:

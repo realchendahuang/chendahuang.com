@@ -5,6 +5,10 @@ date: 2026-06-15
 minRead: 8
 source: x-article
 sourceUrl: https://x.com/realchendahuang/article/2066528625378443300
+tags:
+  - Cloudflare
+  - 免费额度
+  - 部署
 author:
   name: 陈大黄
   avatar:

@@ -5,6 +5,10 @@ date: 2026-06-15
 minRead: 6
 source: x
 sourceUrl: https://x.com/realchendahuang/status/2066586160902881542
+tags:
+  - Cloudflare
+  - 独立开发
+  - 技术栈
 author:
   name: 陈大黄
   avatar:
