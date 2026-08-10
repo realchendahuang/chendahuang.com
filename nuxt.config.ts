@@ -48,8 +48,14 @@ export default defineNuxtConfig({
         '/playbooks',
         '/skills',
         '/blog',
+        '/archive',
+        '/tags',
+        '/search',
+        '/friends',
         '/rss.xml',
-        '/sitemap.xml'
+        '/sitemap.xml',
+        '/llms.txt',
+        '/llms-full.txt'
       ],
       crawlLinks: true
     }

@@ -128,6 +128,66 @@ onBeforeUnmount(() => {
   window.removeEventListener('scroll', onScroll)
 })
 
+// TOC 滚动高亮（scrollspy）
+const activeTocId = ref<string>('')
+let tocObserver: IntersectionObserver | null = null
+const setupTocSpy = () => {
+  tocObserver?.disconnect()
+  const ids = toc.value.map(item => item.id)
+  if (!ids.length || typeof IntersectionObserver === 'undefined') {
+    return
+  }
+  const visible = new Map<string, number>()
+  tocObserver = new IntersectionObserver((entries) => {
+    for (const entry of entries) {
+      if (entry.isIntersecting) {
+        visible.set(entry.target.id, entry.boundingClientRect.top)
+      } else {
+        visible.delete(entry.target.id)
+      }
+    }
+    // 取当前视口内最靠上的标题
+    let best: string | null = null
+    let bestTop = Infinity
+    for (const [id, top] of visible) {
+      if (top < bestTop) {
+        bestTop = top
+        best = id
+      }
+    }
+    activeTocId.value = best ?? ''
+  }, {
+    rootMargin: '-64px 0px -70% 0px',
+    threshold: [0, 1]
+  })
+  for (const id of ids) {
+    const el = document.getElementById(id)
+    if (el) {
+      tocObserver.observe(el)
+    }
+  }
+}
+onMounted(setupTocSpy)
+
+// 正文图片灯箱
+let zoom: ReturnType<typeof import('medium-zoom').default> | null = null
+const setupImageZoom = () => {
+  if (zoom || typeof window === 'undefined') {
+    return
+  }
+  import('medium-zoom').then(({ default: mediumZoom }) => {
+    zoom = mediumZoom('.prose-blog img', {
+      background: 'rgba(0, 0, 0, 0.85)',
+      margin: 24
+    })
+  })
+}
+onMounted(setupImageZoom)
+onBeforeUnmount(() => {
+  zoom?.detach()
+  zoom = null
+})
+
 // 回到顶部
 const showBackToTop = ref(false)
 const onScrollTop = () => {
@@ -208,6 +268,12 @@ const relatedPosts = computed(() => {
             <time :datetime="publishedTime">
               {{ formatDisplayDate(page.date) }}
             </time>
+            <template v-if="page.updated">
+              <span aria-hidden="true">·</span>
+              <time :datetime="toIsoDate(page.updated)">
+                更新于 {{ formatDisplayDate(page.updated) }}
+              </time>
+            </template>
             <span aria-hidden="true">·</span>
             <span>{{ page.minRead }} 分钟阅读</span>
             <template v-if="page.original">
@@ -307,7 +373,10 @@ const relatedPosts = computed(() => {
                 <a
                   :href="`#${item.id}`"
                   class="block border-l-2 border-transparent py-0.5 pl-3 text-sm leading-5 text-muted transition-colors hover:border-primary hover:text-highlighted"
-                  :class="item.depth === 3 ? 'pl-6' : ''"
+                  :class="[
+                    item.depth === 3 ? 'pl-6' : '',
+                    activeTocId === item.id ? 'border-primary font-medium text-highlighted' : ''
+                  ]"
                   @click="mobileTocOpen = false"
                 >
                   {{ item.text }}
@@ -334,7 +403,10 @@ const relatedPosts = computed(() => {
                   <a
                     :href="`#${item.id}`"
                     class="block border-l-2 border-transparent py-0.5 pl-4 text-sm leading-5 text-muted transition-colors hover:border-primary hover:text-highlighted"
-                    :class="item.depth === 3 ? 'pl-8' : ''"
+                    :class="[
+                      item.depth === 3 ? 'pl-8' : '',
+                      activeTocId === item.id ? 'border-primary font-medium text-highlighted' : ''
+                    ]"
                   >
                     {{ item.text }}
                   </a>

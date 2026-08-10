@@ -76,7 +76,8 @@ const filteredPosts = computed(() => {
   if (keyword) {
     result = result.filter(post => keywordMatched(post, keyword))
   }
-  return result
+  // 置顶文章排最前
+  return [...result].sort((a, b) => Number(b.pinned) - Number(a.pinned))
 })
 
 const isFiltering = computed(() => activeTag.value !== 'all' || searchQuery.value.trim().length > 0)
@@ -95,13 +96,29 @@ const isFiltering = computed(() => activeTag.value !== 'all' || searchQuery.valu
           </p>
         </div>
 
-        <UButton
-          to="/rss.xml"
-          label="RSS 订阅"
-          icon="i-lucide-rss"
-          color="neutral"
-          variant="soft"
-        />
+        <div class="flex flex-wrap items-center gap-2">
+          <UButton
+            to="/archive"
+            label="归档"
+            icon="i-lucide-archive"
+            color="neutral"
+            variant="ghost"
+          />
+          <UButton
+            to="/tags"
+            label="标签"
+            icon="i-lucide-tags"
+            color="neutral"
+            variant="ghost"
+          />
+          <UButton
+            to="/rss.xml"
+            label="RSS 订阅"
+            icon="i-lucide-rss"
+            color="neutral"
+            variant="soft"
+          />
+        </div>
       </div>
     </UContainer>
 
@@ -173,6 +190,17 @@ const isFiltering = computed(() => activeTag.value !== 'all' || searchQuery.valu
                 <h2 class="max-w-3xl text-balance text-lg font-semibold leading-snug tracking-[-0.02em] text-highlighted sm:text-xl">
                   {{ post.title }}
                 </h2>
+                <span
+                  v-if="post.pinned"
+                  class="inline-flex shrink-0 items-center gap-1 rounded-full bg-amber-500/10 px-2 py-0.5 text-xs font-medium text-amber-600 dark:text-amber-400"
+                  title="置顶文章"
+                >
+                  <UIcon
+                    name="i-lucide-pin"
+                    class="size-3"
+                  />
+                  置顶
+                </span>
                 <span
                   v-if="post.original"
                   class="inline-flex shrink-0 items-center gap-1 rounded-full bg-primary/10 px-2 py-0.5 text-xs font-medium text-primary"

@@ -7,7 +7,7 @@ export default defineEventHandler(async (event) => {
     .order('date', 'DESC')
     .all()
 
-  const staticPaths = ['/', '/projects', '/playbooks', '/skills', '/blog', '/highlights']
+  const staticPaths = ['/', '/projects', '/playbooks', '/skills', '/blog', '/archive', '/tags', '/search', '/friends', '/highlights']
   const staticEntries = staticPaths.map(path => `<url><loc>${escapeXml(toCanonicalUrl(path))}</loc></url>`)
   const postEntries = posts.map(post => [
     '<url>',

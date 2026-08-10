@@ -79,3 +79,39 @@
   margin-top: 0.2rem;
   margin-bottom: 0.2rem;
 }
+
+/* Print styles */
+@media print {
+  header,
+  footer,
+  .AppHeader,
+  aside,
+  .sticky,
+  .fixed {
+    display: none !important;
+  }
+
+  body {
+    background: #fff !important;
+    color: #000 !important;
+  }
+
+  article {
+    max-width: 100% !important;
+  }
+
+  pre,
+  code,
+  blockquote {
+    break-inside: avoid;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.75em;
+  }
+}

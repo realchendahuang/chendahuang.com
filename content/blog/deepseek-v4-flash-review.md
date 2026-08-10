@@ -2,6 +2,7 @@
 title: DeepSeek V4 Flash 正式版深度体验：便宜、快、1M 上下文、内置搜索
 description: 深度体验几天 DeepSeek V4 Flash 正式版：极致的便宜、快如闪电、1M 上下文、官方内置联网搜索、完全开源。唯一的短板是多模态，但可以组合其他模型补上。
 date: 2026-08-05
+pinned: true
 minRead: 7
 source: x
 sourceUrl: https://x.com/realchendahuang/status/2084817432750047595
