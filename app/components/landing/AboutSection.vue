@@ -1,6 +1,8 @@
 <script setup lang="ts">
 const { global } = useAppConfig()
 
+const sponsorLink = computed(() => global.sponsorLink)
+
 const links = computed(() => [
   { label: 'X（原 Twitter）', icon: 'i-simple-icons-x', to: 'https://x.com/realchendahuang', description: '日常更新、碎碎念与干货分享' },
   { label: 'GitHub', icon: 'i-simple-icons-github', to: 'https://github.com/realchendahuang', description: '开源项目与 Playbook 源码' },
@@ -36,6 +38,19 @@ const links = computed(() => [
               color="neutral"
               variant="soft"
               :label="global.email"
+            />
+          </p>
+          <p
+            v-if="sponsorLink"
+            class="mt-4"
+          >
+            <UButton
+              :to="sponsorLink"
+              target="_blank"
+              icon="i-lucide-heart"
+              color="primary"
+              variant="soft"
+              label="爱发电 · 支持我"
             />
           </p>
         </div>

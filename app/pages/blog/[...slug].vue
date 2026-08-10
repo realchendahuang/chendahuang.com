@@ -19,6 +19,8 @@ const description = page.value?.seo?.description || page.value?.description
 const canonicalUrl = toCanonicalUrl(route.path)
 const publishedTime = toIsoDate(page.value.date)
 const schemaImage = toAbsoluteUrl(page.value.image || '/avatar.jpg')
+const { global } = useAppConfig()
+const sponsorLink = computed(() => global.sponsorLink)
 
 useSeoMeta({
   title,
@@ -521,6 +523,16 @@ const relatedPosts = computed(() => {
                     variant="soft"
                     icon="i-simple-icons-x"
                     label="关注 X"
+                  />
+                  <UButton
+                    v-if="sponsorLink"
+                    :to="sponsorLink"
+                    target="_blank"
+                    size="sm"
+                    color="primary"
+                    variant="soft"
+                    icon="i-lucide-heart"
+                    label="支持我"
                   />
                 </div>
               </div>
