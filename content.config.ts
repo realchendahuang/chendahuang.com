@@ -47,11 +47,14 @@ export default defineContentConfig({
       schema: z.object({
         minRead: z.number(),
         date: z.date(),
+        updated: z.date().optional(),
         image: z.string().editor({ input: 'media' }).optional(),
         author: createAuthorSchema(),
         source: z.string().optional(),
         sourceUrl: z.string().url().optional(),
-        tags: z.array(z.string()).default([])
+        tags: z.array(z.string()).default([]),
+        original: z.boolean().default(false),
+        pinned: z.boolean().default(false)
       })
     }),
     pages: defineCollection({
@@ -61,7 +64,8 @@ export default defineContentConfig({
         { include: 'projects.yml' },
         { include: 'playbooks.yml' },
         { include: 'skills.yml' },
-        { include: 'highlights.yml' }
+        { include: 'highlights.yml' },
+        { include: 'friends.yml' }
       ],
       schema: z.object({
         links: z.array(createButtonSchema()).default([])
@@ -140,6 +144,16 @@ export default defineContentConfig({
         views: z.number().default(0),
         url: z.string().url(),
         content: z.string().nonempty()
+      })
+    }),
+    friends: defineCollection({
+      type: 'data',
+      source: 'friends/*.yml',
+      schema: z.object({
+        name: z.string().nonempty(),
+        description: z.string().nonempty(),
+        url: z.string().url(),
+        avatar: z.string().optional()
       })
     })
   }
