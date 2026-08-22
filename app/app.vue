@@ -30,7 +30,10 @@ useHead(() => ({
 
 useSeoMeta({
   ogSiteName: SITE_NAME,
+  ogLocale: 'zh_CN',
+  ogType: 'website',
   twitterCard: 'summary_large_image',
+  twitterSite: '@realchendahuang',
   twitterCreator: '@realchendahuang'
 })
 </script>

@@ -8,7 +8,6 @@ export default defineAppConfig({
     meetingLink: 'https://x.com/realchendahuang',
     email: 'chendanhuang31016@gmail.com',
     available: true,
-    // TODO: 替换为你的爱发电主页链接，例如 https://afdian.com/a/chendahuang
     sponsorLink: 'https://afdian.com/'
   },
   ui: {

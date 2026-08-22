@@ -18,6 +18,7 @@ const title = page.value?.seo?.title || page.value?.title
 const description = page.value?.seo?.description || page.value?.description
 const canonicalUrl = toCanonicalUrl(route.path)
 const publishedTime = toIsoDate(page.value.date)
+const modifiedTime = page.value.updated ? toIsoDate(page.value.updated) : publishedTime
 const schemaImage = toAbsoluteUrl(page.value.image || '/avatar.jpg')
 const { global } = useAppConfig()
 const sponsorLink = computed(() => global.sponsorLink)
@@ -30,33 +31,28 @@ useSeoMeta({
   ogType: 'article',
   ogUrl: canonicalUrl,
   articlePublishedTime: publishedTime,
+  articleModifiedTime: modifiedTime,
   articleAuthor: [page.value.author.name],
   twitterTitle: title,
   twitterDescription: description
 })
 
-if (page.value.image) {
-  useSeoMeta({
-    ogImage: schemaImage,
-    twitterImage: schemaImage
-  })
-} else {
-  defineOgImage('Portfolio', {
-    title,
-    description,
-    headline: '博客'
-  })
-}
-
 // 封面图：优先用文章自定义图，否则用自动生成的 OG 图
-const coverImage = useState<string>('blog-cover-image', () => '')
-if (import.meta.server && !page.value.image) {
+const coverImage = ref('')
+if (!page.value.image) {
   const ogPaths = defineOgImage('Portfolio', {
     title,
     description,
     headline: '博客'
   })
-  coverImage.value = ogPaths[0] ?? ''
+  if (import.meta.server) {
+    coverImage.value = ogPaths[0] ?? ''
+  }
+} else {
+  useSeoMeta({
+    ogImage: schemaImage,
+    twitterImage: schemaImage
+  })
 }
 
 useHead({
@@ -69,9 +65,13 @@ useHead({
       'description': description,
       'image': schemaImage,
       'datePublished': publishedTime,
-      'dateModified': publishedTime,
+      'dateModified': modifiedTime,
       'inLanguage': 'zh-CN',
-      'mainEntityOfPage': canonicalUrl,
+      'mainEntityOfPage': {
+        '@type': 'WebPage',
+        '@id': canonicalUrl
+      },
+      'keywords': (page.value.tags ?? []).join(', '),
       'author': {
         '@type': 'Person',
         'name': page.value.author.name,
@@ -80,7 +80,11 @@ useHead({
       'publisher': {
         '@type': 'Person',
         'name': SITE_NAME,
-        'url': SITE_URL
+        'url': SITE_URL,
+        'logo': {
+          '@type': 'ImageObject',
+          'url': toAbsoluteUrl('/avatar-logo.png')
+        }
       }
     }).replaceAll('<', '\\u003c')
   }]
@@ -104,12 +108,12 @@ type TocItem = {
 }
 
 const toc = computed<TocItem[]>(() => {
-  const links = (page.value?.body as any)?.toc?.links ?? []
+  const links = (page.value?.body as { toc?: { links?: Array<{ id?: string, depth?: number, text?: string }> } })?.toc?.links ?? []
   return links
-    .map((link: any) => ({
+    .map(link => ({
       id: link.id as string,
-      depth: link.depth as number,
-      text: (link.text as string).trim()
+      depth: (link.depth ?? 2) as number,
+      text: (link.text ?? '').trim()
     }))
     .filter((item: TocItem) => item.id && item.text)
 })

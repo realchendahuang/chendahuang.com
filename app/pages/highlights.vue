@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { HighlightsCollectionItem } from '@nuxt/content'
+import type { HighlightsCollectionItem, PagesCollectionItem } from '@nuxt/content'
 import {
   formatCount,
   formatMonthLabel,
@@ -10,23 +10,29 @@ import {
   type HighlightViewMode
 } from '~/utils/highlights'
 
-const { data: page } = await useAsyncData('highlights-page', () => {
-  return queryCollection('pages').path('/highlights').first()
+const { data } = await useAsyncData('highlights-page-with-data', async () => {
+  const [pageResult, highlightsResult] = await Promise.all([
+    queryCollection('pages').path('/highlights').first(),
+    queryCollection('highlights').all()
+  ])
+  if (!pageResult) {
+    throw createError({ statusCode: 404, statusMessage: '页面未找到', fatal: true })
+  }
+  return {
+    page: pageResult as PagesCollectionItem,
+    highlights: highlightsResult as HighlightsCollectionItem[]
+  }
 })
+
+const page = computed(() => data.value?.page)
+const highlights = computed<HighlightsCollectionItem[]>(() => data.value?.highlights ?? [])
+
 if (!page.value) {
-  throw createError({
-    statusCode: 404,
-    statusMessage: '页面未找到',
-    fatal: true
-  })
+  throw createError({ statusCode: 404, statusMessage: '页面未找到', fatal: true })
 }
 
-const { data: highlights } = await useAsyncData('highlights', () =>
-  queryCollection('highlights').all()
-)
-
-const title = page.value?.seo?.title || page.value?.title
-const description = page.value?.seo?.description || page.value?.description
+const title = page.value.seo?.title || page.value.title
+const description = page.value.seo?.description || page.value.description
 
 useSeoMeta({
   title,
@@ -48,13 +54,14 @@ useHead({
       '@type': 'ItemList',
       'name': title,
       'description': description,
-      'numberOfItems': highlights.value?.length ?? 0,
-      'itemListElement': (highlights.value ?? []).map((item, index) => ({
+      'numberOfItems': highlights.value.length,
+      'itemListElement': highlights.value.map((item: HighlightsCollectionItem, index: number) => ({
         '@type': 'ListItem',
         'position': index + 1,
         'name': item.title,
         'description': item.description,
-        'url': item.url
+        'url': item.url,
+        'datePublished': toIsoDate(item.date)
       }))
     }).replaceAll('<', '\\u003c')
   }]
@@ -127,11 +134,11 @@ const collapseAll = () => {
 
 const keywordMatched = (item: HighlightsCollectionItem, keyword: string) => {
   const haystack = `${item.title} ${item.description ?? ''} ${item.content ?? ''}`.toLowerCase()
-  return keyword.split(/\s+/).filter(Boolean).every(part => haystack.includes(part))
+  return matchKeyword(haystack, keyword)
 }
 
 const keywordFiltered = computed(() => {
-  const keyword = searchQuery.value.trim().toLowerCase()
+  const keyword = searchQuery.value.trim()
   if (!keyword) {
     return allHighlights.value
   }
@@ -182,6 +189,7 @@ type DisplaySection = {
   sticky?: boolean
   showCategoryBadge?: boolean
   items: HighlightsCollectionItem[]
+  panelId: string
 }
 
 const displaySections = computed<DisplaySection[]>(() => {
@@ -195,7 +203,8 @@ const displaySections = computed<DisplaySection[]>(() => {
         label: category.label,
         description: `${category.description} · ${source.filter(item => item.category === category.id).length} 条`,
         showCategoryBadge: false,
-        items: source.filter(item => item.category === category.id)
+        items: source.filter(item => item.category === category.id),
+        panelId: `theme-${category.id}`
       }))
       .filter(section => section.items.length > 0)
   }
@@ -218,14 +227,16 @@ const displaySections = computed<DisplaySection[]>(() => {
       description: `${items.length} 条`,
       sticky: true,
       showCategoryBadge: true,
-      items
+      items,
+      panelId: `timeline-${label}`
     }))
   }
 
   return [{
     id: 'heat',
     showCategoryBadge: true,
-    items: sortedByHeat(filtered)
+    items: sortedByHeat(filtered),
+    panelId: 'heat'
   }]
 })
 
@@ -393,6 +404,7 @@ const setCategory = (category: HighlightCategoryId | 'all') => {
 
             <article
               v-for="item in section.items"
+              :id="`post-${item.url}`"
               :key="item.url"
               class="border-b border-default py-8 sm:py-10"
             >
@@ -400,6 +412,7 @@ const setCategory = (category: HighlightCategoryId | 'all') => {
                 type="button"
                 class="group flex w-full items-start justify-between gap-4 text-left"
                 :aria-expanded="expanded.has(item.url)"
+                :aria-controls="`post-${item.url}-panel`"
                 @click="toggleExpanded(item.url)"
               >
                 <div class="min-w-0">
@@ -449,6 +462,7 @@ const setCategory = (category: HighlightCategoryId | 'all') => {
 
               <div
                 v-show="expanded.has(item.url)"
+                :id="`post-${item.url}-panel`"
                 class="prose-highlight mt-5 max-w-3xl text-[15px] leading-7 text-toned whitespace-pre-line sm:text-base sm:leading-8"
               >
                 <MDC

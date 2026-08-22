@@ -21,10 +21,6 @@ hero:
       alt: God-Museum 跨文明神话展馆
     - src: /projects/ai-chronicle.webp
       alt: AI Chronicle 行业编年史
-    - src: /projects/flaremo.webp
-      alt: FlareMo 个人知识管理
-    - src: /projects/sub-store-cloudflare.webp
-      alt: Sub-Store Cloudflare 订阅聚合工具
 blog:
   title: "最新文章"
 highlights:

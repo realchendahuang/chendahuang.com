@@ -1,29 +1,13 @@
 <script setup lang="ts">
-const { data: page } = await useAsyncData('playbooks-page', () => {
-  return queryCollection('pages').path('/playbooks').first()
-})
-if (!page.value) {
-  throw createError({ statusCode: 404, statusMessage: '页面未找到', fatal: true })
-}
+const { page } = useCollectionPageSeo('/playbooks')
 
 const { data: playbooks } = await useAsyncData('playbooks', () => {
   return queryCollection('playbooks').order('date', 'DESC').all()
 })
 
-const title = page.value?.seo?.title || page.value?.title
-const description = page.value?.seo?.description || page.value?.description
-
-useSeoMeta({
-  title,
-  ogTitle: title,
-  description,
-  ogDescription: description,
-  ogUrl: toCanonicalUrl('/playbooks'),
-  twitterTitle: title,
-  twitterDescription: description
-})
-
-defineOgImage('Portfolio', { title, description })
+if (page.value === null) {
+  throw createError({ statusCode: 404, statusMessage: '页面未找到', fatal: true })
+}
 </script>
 
 <template>

@@ -1,36 +1,24 @@
 <script setup lang="ts">
-const { data: page } = await useAsyncData('friends-page', () => {
-  return queryCollection('pages').path('/friends').first()
-})
+const { page } = useCollectionPageSeo('/friends')
+
 const { data: friends } = await useAsyncData('friends', () =>
   queryCollection('friends').all()
 )
 
-const title = page.value?.seo?.title || page.value?.title || '友情链接'
-const description = page.value?.seo?.description || page.value?.description
-
-useSeoMeta({
-  title,
-  ogTitle: title,
-  description,
-  ogDescription: description,
-  ogUrl: toCanonicalUrl('/friends'),
-  twitterTitle: title,
-  twitterDescription: description
-})
-
-defineOgImage('Portfolio', { title, description })
+if (page.value === null) {
+  throw createError({ statusCode: 404, statusMessage: '页面未找到', fatal: true })
+}
 </script>
 
 <template>
-  <div>
+  <div v-if="page">
     <UContainer class="py-14 sm:py-20">
       <div>
         <h1 class="max-w-3xl text-3xl font-semibold tracking-[-0.03em] text-highlighted sm:text-4xl">
-          {{ page?.title || '友情链接' }}
+          {{ page.title }}
         </h1>
         <p class="mt-3 max-w-2xl text-sm leading-6 text-muted">
-          {{ page?.description || '一些值得关注的独立开发者与博客。' }}
+          {{ page.description }}
         </p>
       </div>
     </UContainer>
@@ -45,7 +33,7 @@ defineOgImage('Portfolio', { title, description })
             target="_blank"
             class="group flex items-start gap-4 rounded-lg border border-default p-5 transition-colors hover:border-primary/40 hover:bg-elevated"
           >
-            <img
+            <NuxtImg
               v-if="friend.avatar"
               :src="friend.avatar"
               :alt="`${friend.name} 的头像`"
@@ -53,7 +41,7 @@ defineOgImage('Portfolio', { title, description })
               height="48"
               loading="lazy"
               class="size-12 shrink-0 rounded-full object-cover"
-            >
+            />
             <div
               v-else
               class="flex size-12 shrink-0 items-center justify-center rounded-full bg-elevated text-lg font-semibold text-muted"

@@ -1,80 +1,17 @@
 <script setup lang="ts">
-type SearchResult = {
-  title: string
-  description?: string
-  to: string
-  section: string
-  category?: string
-}
+import type { SearchHit } from '~/composables/useSearchIndex'
 
 const searchOpen = useState('global-search-open', () => false)
 const searchQuery = ref('')
 const inputRef = useTemplateRef('inputRef')
 
-// 收集全站内容
-const { data: blogs } = await useAsyncData('search-blogs', () =>
-  queryCollection('blog').select('path', 'title', 'description').all()
-)
-const { data: projects } = await useAsyncData('search-projects', () =>
-  queryCollection('projects').select('title', 'description', 'onlineUrl', 'url').all()
-)
-const { data: playbooks } = await useAsyncData('search-playbooks', () =>
-  queryCollection('playbooks').select('title', 'description', 'onlineUrl', 'url').all()
-)
-const { data: skills } = await useAsyncData('search-skills', () =>
-  queryCollection('skills').select('title', 'description', 'onlineUrl', 'url').all()
-)
-const { data: highlights } = await useAsyncData('search-highlights', () =>
-  queryCollection('highlights').select('title', 'description', 'category', 'url').all()
-)
+const { items: allItems } = await useSearchIndex()
 
-const allResults = computed<SearchResult[]>(() => [
-  ...(blogs.value ?? []).map(item => ({
-    title: item.title,
-    description: item.description,
-    to: item.path,
-    section: '博客'
-  })),
-  ...(projects.value ?? []).map(item => ({
-    title: item.title,
-    description: item.description,
-    to: item.onlineUrl || item.url,
-    section: '项目'
-  })),
-  ...(playbooks.value ?? []).map(item => ({
-    title: item.title,
-    description: item.description,
-    to: item.onlineUrl || item.url,
-    section: 'Playbook'
-  })),
-  ...(skills.value ?? []).map(item => ({
-    title: item.title,
-    description: item.description,
-    to: item.onlineUrl || item.url,
-    section: 'Skill'
-  })),
-  ...(highlights.value ?? []).map(item => ({
-    title: item.title,
-    description: item.description,
-    to: item.url,
-    section: '精华帖',
-    category: item.category
-  }))
-])
-
-const results = computed(() => {
-  const keyword = searchQuery.value.trim().toLowerCase()
-  if (!keyword) {
-    return allResults.value.slice(0, 8)
-  }
-  const parts = keyword.split(/\s+/).filter(Boolean)
-  return allResults.value
-    .filter((item) => {
-      const haystack = `${item.title} ${item.description ?? ''} ${item.section}`.toLowerCase()
-      return parts.every(part => haystack.includes(part))
-    })
-    .slice(0, 12)
-})
+const results = computed<SearchHit[]>(() =>
+  searchQuery.value.trim()
+    ? filterHits(allItems.value, searchQuery.value, 12)
+    : allItems.value.slice(0, 8)
+)
 
 const close = () => {
   searchOpen.value = false
@@ -95,7 +32,7 @@ watch(results, () => {
   activeIndex.value = -1
 })
 
-const goTo = (item: SearchResult) => {
+const goTo = (item: SearchHit) => {
   close()
   if (item.to.startsWith('http')) {
     window.open(item.to, '_blank', 'noopener')

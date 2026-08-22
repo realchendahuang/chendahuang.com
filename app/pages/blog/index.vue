@@ -1,21 +1,29 @@
 <script setup lang="ts">
-const { data: page } = await useAsyncData('blog-page', () => {
-  return queryCollection('pages').path('/blog').first()
+import type { BlogCollectionItem, PagesCollectionItem } from '@nuxt/content'
+
+const { data } = await useAsyncData('blog-page-with-posts', async () => {
+  const [pageResult, postsResult] = await Promise.all([
+    queryCollection('pages').path('/blog').first(),
+    queryCollection('blog').order('date', 'DESC').all()
+  ])
+  if (!pageResult) {
+    throw createError({ statusCode: 404, statusMessage: '页面未找到', fatal: true })
+  }
+  return {
+    page: pageResult as PagesCollectionItem,
+    posts: postsResult as BlogCollectionItem[]
+  }
 })
+
+const page = computed(() => data.value?.page)
+const posts = computed<BlogCollectionItem[]>(() => data.value?.posts ?? [])
+
 if (!page.value) {
-  throw createError({
-    statusCode: 404,
-    statusMessage: '页面未找到',
-    fatal: true
-  })
+  throw createError({ statusCode: 404, statusMessage: '页面未找到', fatal: true })
 }
 
-const { data: posts } = await useAsyncData('blogs', () =>
-  queryCollection('blog').order('date', 'DESC').all()
-)
-
-const title = page.value?.seo?.title || page.value?.title
-const description = page.value?.seo?.description || page.value?.description
+const title = page.value.seo?.title || page.value.title
+const description = page.value.seo?.description || page.value.description
 
 useSeoMeta({
   title,
@@ -52,7 +60,7 @@ const activeTag = computed<string | 'all'>({
 
 const allTags = computed(() => {
   const counts = new Map<string, number>()
-  for (const post of posts.value ?? []) {
+  for (const post of posts.value) {
     for (const tag of post.tags ?? []) {
       counts.set(tag, (counts.get(tag) ?? 0) + 1)
     }
@@ -62,17 +70,17 @@ const allTags = computed(() => {
     .map(([name, count]) => ({ name, count }))
 })
 
-const keywordMatched = (post: { title: string, description?: string, tags?: string[] }, keyword: string) => {
+const keywordMatched = (post: BlogCollectionItem, keyword: string) => {
   const haystack = `${post.title} ${post.description ?? ''} ${(post.tags ?? []).join(' ')}`.toLowerCase()
-  return keyword.split(/\s+/).filter(Boolean).every(part => haystack.includes(part))
+  return matchKeyword(haystack, keyword)
 }
 
 const filteredPosts = computed(() => {
-  let result = posts.value ?? []
+  let result: BlogCollectionItem[] = posts.value
   if (activeTag.value !== 'all') {
     result = result.filter(post => (post.tags ?? []).includes(activeTag.value))
   }
-  const keyword = searchQuery.value.trim().toLowerCase()
+  const keyword = searchQuery.value.trim()
   if (keyword) {
     result = result.filter(post => keywordMatched(post, keyword))
   }

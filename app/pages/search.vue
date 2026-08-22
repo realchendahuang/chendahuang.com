@@ -1,79 +1,14 @@
 <script setup lang="ts">
+import type { SearchHit } from '~/composables/useSearchIndex'
+
 const route = useRoute()
 const router = useRouter()
 
 const searchQuery = ref(typeof route.query.q === 'string' ? route.query.q : '')
 
-const { data: blogs } = await useAsyncData('search-page-blogs', () =>
-  queryCollection('blog').select('path', 'title', 'description', 'date').order('date', 'DESC').all()
-)
-const { data: projects } = await useAsyncData('search-page-projects', () =>
-  queryCollection('projects').select('title', 'description', 'onlineUrl', 'url').all()
-)
-const { data: playbooks } = await useAsyncData('search-page-playbooks', () =>
-  queryCollection('playbooks').select('title', 'description', 'onlineUrl', 'url').all()
-)
-const { data: skills } = await useAsyncData('search-page-skills', () =>
-  queryCollection('skills').select('title', 'description', 'onlineUrl', 'url').all()
-)
-const { data: highlights } = await useAsyncData('search-page-highlights', () =>
-  queryCollection('highlights').select('title', 'description', 'category', 'url').all()
-)
+const { items: allItems } = await useSearchIndex()
 
-type SearchHit = {
-  title: string
-  description?: string
-  to: string
-  section: string
-  date?: string
-}
-
-const allItems = computed<SearchHit[]>(() => [
-  ...(blogs.value ?? []).map(item => ({
-    title: item.title,
-    description: item.description,
-    to: item.path,
-    section: '博客',
-    date: item.date
-  })),
-  ...(projects.value ?? []).map(item => ({
-    title: item.title,
-    description: item.description,
-    to: item.onlineUrl || item.url,
-    section: '项目'
-  })),
-  ...(playbooks.value ?? []).map(item => ({
-    title: item.title,
-    description: item.description,
-    to: item.onlineUrl || item.url,
-    section: 'Playbook'
-  })),
-  ...(skills.value ?? []).map(item => ({
-    title: item.title,
-    description: item.description,
-    to: item.onlineUrl || item.url,
-    section: 'Skill'
-  })),
-  ...(highlights.value ?? []).map(item => ({
-    title: item.title,
-    description: item.description,
-    to: item.url,
-    section: '精华帖'
-  }))
-])
-
-const results = computed(() => {
-  const keyword = searchQuery.value.trim().toLowerCase()
-  if (!keyword) {
-    return []
-  }
-  const parts = keyword.split(/\s+/).filter(Boolean)
-  return allItems.value
-    .filter((item) => {
-      const haystack = `${item.title} ${item.description ?? ''} ${item.section}`.toLowerCase()
-      return parts.every(part => haystack.includes(part))
-    })
-})
+const results = computed<SearchHit[]>(() => filterHits(allItems.value, searchQuery.value))
 
 const updateQuery = () => {
   const query = { ...route.query }
@@ -85,12 +20,24 @@ const updateQuery = () => {
   router.replace({ query })
 }
 
+const title = computed(() =>
+  searchQuery.value.trim()
+    ? `搜索「${searchQuery.value.trim()}」 - 陈大黄`
+    : '搜索 - 陈大黄'
+)
+const description = '搜索陈大黄的全站内容：博客、项目、Playbook、Skill 与 X 精华帖。'
+
 useSeoMeta({
-  title: `搜索${searchQuery.value.trim() ? `「${searchQuery.value.trim()}」` : ''} - 陈大黄`,
-  description: '搜索陈大黄的全站内容：博客、项目、Playbook、Skill 与 X 精华帖。'
+  title,
+  ogTitle: title,
+  description,
+  ogDescription: description,
+  ogUrl: toCanonicalUrl('/search'),
+  twitterTitle: title,
+  twitterDescription: description
 })
 
-defineOgImage('Portfolio', { title: '搜索', headline: '搜索', description: '搜索全站内容' })
+defineOgImage('Portfolio', { title: '搜索', headline: '搜索', description })
 </script>
 
 <template>

@@ -1,29 +1,13 @@
 <script setup lang="ts">
-const { data: page } = await useAsyncData('projects-page', () => {
-  return queryCollection('pages').path('/projects').first()
-})
-if (!page.value) {
-  throw createError({ statusCode: 404, statusMessage: '页面未找到', fatal: true })
-}
+const { page } = useCollectionPageSeo('/projects')
 
 const { data: projects } = await useAsyncData('projects', () => {
   return queryCollection('projects').order('date', 'DESC').all()
 })
 
-const title = page.value?.seo?.title || page.value?.title
-const description = page.value?.seo?.description || page.value?.description
-
-useSeoMeta({
-  title,
-  ogTitle: title,
-  description,
-  ogDescription: description,
-  ogUrl: toCanonicalUrl('/projects'),
-  twitterTitle: title,
-  twitterDescription: description
-})
-
-defineOgImage('Portfolio', { title, description })
+if (page.value === null) {
+  throw createError({ statusCode: 404, statusMessage: '页面未找到', fatal: true })
+}
 </script>
 
 <template>
@@ -52,16 +36,15 @@ defineOgImage('Portfolio', { title, description })
           target="_blank"
           class="shrink-0"
         >
-          <img
+          <NuxtImg
             v-if="project.image"
             :src="project.image"
             :alt="project.imageAlt || `${project.title} 项目预览`"
             width="234"
             height="234"
             loading="lazy"
-            decoding="async"
             class="size-36 rounded-lg object-cover sm:size-44"
-          >
+          />
         </NuxtLink>
       </UMarquee>
     </div>
@@ -147,15 +130,14 @@ defineOgImage('Portfolio', { title, description })
               class="group order-1 block overflow-hidden rounded-xl border border-default bg-elevated shadow-sm lg:order-2"
               :aria-label="`查看 ${project.title}`"
             >
-              <img
+              <NuxtImg
                 :src="project.image"
                 :alt="project.imageAlt || `${project.title} 项目预览`"
                 width="1280"
                 height="720"
                 loading="lazy"
-                decoding="async"
                 class="aspect-video w-full object-cover transition duration-500 group-hover:scale-[1.015]"
-              >
+              />
             </NuxtLink>
           </article>
         </UContainer>
