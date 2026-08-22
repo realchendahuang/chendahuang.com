@@ -1,0 +1,27 @@
+category: ai
+title: "DeepSeek Harness 的 Preset 概念：Agent 的分发单位"
+description: "同一个模型加载不同的 Preset，就能变成完全不同的 Agent。"
+date: 2026-08-17
+likes: 161
+bookmarks: 0
+reposts: 23
+views: 38000
+url: https://x.com/realchendahuang/status/2089206966015176725
+content: |
+  最近研究 DeepSeek Harness。有一个叫做 Preset 的概念值得关注。
+
+  Preset 可以理解为 Agent 的分发单位。同一个模型加载不同的 Preset，最后可以变成完全不同的 Agent。
+
+  Preset 和 Skill 最大的区别是什么？
+
+  - 一个财报分析 Skill：教 Agent 怎么分析财报。
+  - 一个财报分析 Preset：直接把财报分析 Skill、网页搜索、Browser、PDF、Python、Subagents、研究 Prompt 和上下文策略全部组合好，直接给你一个开箱可用的 Agent。
+
+  未来很可能会同时出现两层市场。
+
+  - 一层是 Plugin / Skill Marketplace，主要给开发者和高级用户搭 Agent；
+  - 一层是 Preset / Agent Marketplace，真正面向普通用户。
+
+  这其实已经很接近 App Store 的逻辑。App Store 展示的是一个完整的 App。Preset 展示的是完整的 Agent 应用。
+
+  过去大家会分享 Prompt。后来开始分享 Skill。后面很可能就是要分享 Preset 了。

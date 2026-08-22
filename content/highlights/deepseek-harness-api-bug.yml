@@ -1,0 +1,22 @@
+category: ai
+title: "DeepSeek Harness 调第三方 API 报 unknown tool：网关数据格式问题"
+description: "工具名不是真的丢，是网关把数据格式弄丢了。"
+date: 2026-08-18
+likes: 2
+bookmarks: 0
+reposts: 2
+views: 2313
+url: https://x.com/realchendahuang/status/2089636108271550484
+content: |
+  DeepSeek Harness + 第三方 API 兼容问题：
+
+  Agent 调用 Bash 等工具时报 `ToolNotFoundError: unknown tool ""`，看上去像是工具没注册。
+
+  实际是网关返回的数据格式跟 DeepSeek 官方不一样，工具名在中间被弄丢了。
+
+  几个相关 GitHub Discussions 链接：
+
+  - deepseek-ai/dsh#issues 里搜 "unknown tool"
+  - 自建网关（OpenRouter / OneAPI / new-api）的人最容易踩这个坑
+
+  排查思路：抓一次完整的 tool_call 请求和响应，对比网关日志里的工具名是不是空字符串。
