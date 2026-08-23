@@ -1,10 +1,11 @@
 /**
- * 列表型页面(博客、项目、Playbook、Skill、精华帖、友链)共享的 SEO/OG 装配逻辑。
+ * 列表型页面共享 SEO/OG/404 装配。
  *
- * SSR 同步设置 SEO;客户端通过 onMounted + watch 在 page 数据到达后更新。
+ * - SEO 副作用在 setup 同步上下文里设置,client 端用 watch 兜底
+ * - 404 判断在内部完成:调用方拿到永远是非空的 page ref
  */
 export function useCollectionPageSeo(path: string) {
-  const { data: page, error } = useAsyncData(
+  const { data: page, status } = useAsyncData(
     `page:${path}`,
     () => queryCollection('pages').path(path).first(),
     {
@@ -12,10 +13,10 @@ export function useCollectionPageSeo(path: string) {
     }
   )
 
-  if (error.value) {
+  if (status.value === 'error' || page.value === null) {
     throw createError({
-      statusCode: 500,
-      statusMessage: '页面加载失败',
+      statusCode: 404,
+      statusMessage: '页面未找到',
       fatal: true
     })
   }
@@ -45,5 +46,5 @@ export function useCollectionPageSeo(path: string) {
     })
   }
 
-  return { page }
+  return { page: computed(() => page.value!) }
 }

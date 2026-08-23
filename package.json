@@ -10,7 +10,9 @@
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "typecheck": "nuxt typecheck"
+    "typecheck": "nuxt typecheck",
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "dependencies": {
     "@iconify-json/lucide": "^1.2.114",
@@ -29,8 +31,11 @@
   },
   "devDependencies": {
     "@nuxt/eslint": "^1.16.0",
+    "@vitest/ui": "^4.1.11",
     "eslint": "^10.5.0",
+    "happy-dom": "^20.11.6",
     "typescript": "^6.0.3",
+    "vitest": "^4.1.11",
     "vue-tsc": "^3.3.5"
   },
   "packageManager": "pnpm@11.8.0"

@@ -96,7 +96,7 @@ const isFiltering = computed(() => activeTag.value !== 'all' || searchQuery.valu
     <UContainer class="py-14 sm:py-20">
       <div class="grid gap-6 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-end">
         <div>
-          <h1 class="max-w-3xl text-3xl font-semibold tracking-[-0.03em] text-highlighted sm:text-4xl">
+          <h1 class="t-h1">
             {{ page.title }}
           </h1>
           <p class="mt-3 max-w-2xl text-sm leading-6 text-muted">

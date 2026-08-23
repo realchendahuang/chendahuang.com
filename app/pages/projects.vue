@@ -4,16 +4,12 @@ const { page } = useCollectionPageSeo('/projects')
 const { data: projects } = await useAsyncData('projects', () => {
   return queryCollection('projects').order('date', 'DESC').all()
 })
-
-if (page.value === null) {
-  throw createError({ statusCode: 404, statusMessage: '页面未找到', fatal: true })
-}
 </script>
 
 <template>
-  <div v-if="page">
+  <div>
     <UContainer class="py-14 sm:py-20">
-      <h1 class="max-w-3xl text-3xl font-semibold tracking-[-0.03em] text-highlighted sm:text-4xl">
+      <h1 class="t-h1">
         {{ page.title }}
       </h1>
       <p class="mt-3 max-w-2xl text-sm leading-6 text-muted sm:text-base">
@@ -81,7 +77,7 @@ if (page.value === null) {
                 {{ project.type }}
               </p>
               <div class="flex flex-wrap items-center gap-3">
-                <h2 class="text-xl font-semibold tracking-[-0.02em] text-highlighted sm:text-2xl">
+                <h2 class="t-h3">
                   {{ project.title }}
                 </h2>
                 <span

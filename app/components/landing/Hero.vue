@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { IndexCollectionItem } from '@nuxt/content'
+import type { ProjectSummary } from '~/types/content'
 
 const { footer, global } = useAppConfig()
 
@@ -8,15 +9,15 @@ defineProps<{
 }>()
 
 const { data: stats } = await useAsyncData('hero-stats', async () => {
-  const [highlights, posts, projects] = await Promise.all([
-    queryCollection('highlights').all(),
-    queryCollection('blog').all(),
-    queryCollection('projects').all()
+  const [highlightsCount, postsCount, projects] = await Promise.all([
+    queryCollection('highlights').count() as unknown as Promise<number>,
+    queryCollection('blog').count() as unknown as Promise<number>,
+    queryCollection('projects').all() as Promise<ProjectSummary[]>
   ])
   const stars = projects.reduce((sum, project) => sum + (project.stars ?? 0), 0)
   return [
-    { label: '精华帖子', value: highlights.length, to: '/highlights' },
-    { label: '博客文章', value: posts.length, to: '/blog' },
+    { label: '精华帖子', value: highlightsCount, to: '/highlights' },
+    { label: '博客文章', value: postsCount, to: '/blog' },
     { label: '开源项目', value: projects.length, to: '/projects' },
     { label: 'GitHub Stars', value: stars, to: 'https://github.com/realchendahuang' }
   ]

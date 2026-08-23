@@ -29,7 +29,7 @@ defineOgImage('Portfolio', { title: '归档', description: '按年份归档的�
   <div>
     <UContainer class="py-14 sm:py-20">
       <div>
-        <h1 class="max-w-3xl text-3xl font-semibold tracking-[-0.03em] text-highlighted sm:text-4xl">
+        <h1 class="t-h1">
           归档
         </h1>
         <p class="mt-3 max-w-2xl text-sm leading-6 text-muted">

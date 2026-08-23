@@ -1,9 +1,14 @@
 <script setup lang="ts">
-const { data: projects } = await useAsyncData('index-projects', () => {
-  return queryCollection('projects').order('date', 'DESC').all()
+import type { ProjectSummary } from '~/types/content'
+import { sortProjectsByDate, useContentSection } from '~/composables/useContentSection'
+
+const { data: projects } = await useContentSection<ProjectSummary>('home-projects', {
+  collection: 'projects',
+  select: ['title', 'description', 'url', 'onlineUrl', 'type', 'date'],
+  sort: sortProjectsByDate
 })
 
-const works = computed(() => (projects.value || []).map(project => ({
+const works = computed(() => (projects.value ?? []).map(project => ({
   title: project.title,
   description: project.description,
   to: project.onlineUrl || project.url,

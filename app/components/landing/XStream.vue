@@ -1,14 +1,19 @@
 <script setup lang="ts">
 import type { IndexCollectionItem } from '@nuxt/content'
-import { formatCount } from '~/utils/highlights'
+import type { HighlightSummary } from '~/types/content'
+import { sortHighlightsByHeat, useContentSection } from '~/composables/useContentSection'
+import { formatCount } from '~/utils/content/highlights'
 
 defineProps<{
   page: IndexCollectionItem
 }>()
 
-const { data: highlights } = await useAsyncData('index-highlights', () =>
-  queryCollection('highlights').order('likes', 'DESC').limit(4).all()
-)
+const { data: highlights } = await useContentSection<HighlightSummary>('home-highlights', {
+  collection: 'highlights',
+  select: ['title', 'description', 'category', 'date', 'likes', 'bookmarks', 'url', 'content'],
+  sort: sortHighlightsByHeat,
+  limit: 4
+})
 
 const shareHighlight = async (item: { title: string, url: string }) => {
   const text = `来自陈大黄的精华帖：${item.title}`

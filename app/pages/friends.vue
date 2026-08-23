@@ -4,17 +4,13 @@ const { page } = useCollectionPageSeo('/friends')
 const { data: friends } = await useAsyncData('friends', () =>
   queryCollection('friends').all()
 )
-
-if (page.value === null) {
-  throw createError({ statusCode: 404, statusMessage: '页面未找到', fatal: true })
-}
 </script>
 
 <template>
-  <div v-if="page">
+  <div>
     <UContainer class="py-14 sm:py-20">
       <div>
-        <h1 class="max-w-3xl text-3xl font-semibold tracking-[-0.03em] text-highlighted sm:text-4xl">
+        <h1 class="t-h1">
           {{ page.title }}
         </h1>
         <p class="mt-3 max-w-2xl text-sm leading-6 text-muted">

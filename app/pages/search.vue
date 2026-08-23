@@ -44,7 +44,7 @@ defineOgImage('Portfolio', { title: '搜索', headline: '搜索', description })
   <div>
     <UContainer class="py-14 sm:py-20">
       <div>
-        <h1 class="max-w-3xl text-3xl font-semibold tracking-[-0.03em] text-highlighted sm:text-4xl">
+        <h1 class="t-h1">
           搜索
         </h1>
         <p class="mt-3 max-w-2xl text-sm leading-6 text-muted">

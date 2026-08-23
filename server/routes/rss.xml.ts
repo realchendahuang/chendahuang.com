@@ -1,5 +1,5 @@
 import { queryCollection } from '@nuxt/content/server'
-import { minimarkToHtml } from '../../app/utils/markdown'
+import { minimarkToHtml } from '../../app/utils/content/markdown'
 import { escapeXml, SITE_DESCRIPTION, SITE_NAME, SITE_URL, toCanonicalUrl, toIsoDate } from '../../app/utils/site'
 
 export default defineEventHandler(async (event) => {

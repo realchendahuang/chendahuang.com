@@ -1,16 +1,18 @@
 <script setup lang="ts">
 import type { IndexCollectionItem } from '@nuxt/content'
+import type { BlogSummary } from '~/types/content'
+import { sortBlogsByDatePinnedFirst, useContentSection } from '~/composables/useContentSection'
 
 defineProps<{
   page: IndexCollectionItem
 }>()
 
-const { data: posts } = await useAsyncData('index-blogs', () =>
-  queryCollection('blog').order('date', 'DESC').limit(3).all()
-)
-if (!posts.value) {
-  throw createError({ statusCode: 404, statusMessage: '博客文章未找到', fatal: true })
-}
+const { data: posts } = await useContentSection<BlogSummary>('home-blog', {
+  collection: 'blog',
+  select: ['path', 'title', 'description', 'date', 'minRead'],
+  sort: sortBlogsByDatePinnedFirst,
+  limit: 3
+})
 </script>
 
 <template>

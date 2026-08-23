@@ -45,19 +45,30 @@ export default defineNuxtConfig({
       routes: [
         '/',
         '/projects',
+        '/projects/',
         '/playbooks',
+        '/playbooks/',
         '/skills',
+        '/skills/',
         '/blog',
+        '/blog/',
         '/archive',
+        '/archive/',
         '/tags',
+        '/tags/',
         '/search',
+        '/search/',
         '/friends',
+        '/friends/',
+        '/highlights',
+        '/highlights/',
         '/rss.xml',
         '/sitemap.xml',
         '/llms.txt',
         '/llms-full.txt'
       ],
-      crawlLinks: true
+      crawlLinks: false,
+      ignore: ['/blog?']
     }
   },
 
