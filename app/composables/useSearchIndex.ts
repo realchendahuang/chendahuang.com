@@ -1,8 +1,11 @@
 /**
  * 全站搜索索引。
  *
- * 默认 lazy,只有真正进入搜索页面或 modal 打开时才取数据。
- * SSR 路径在 /search 页用 useAsyncData;其余地方不预取。
+ * SSR: 直接读 Nuxt Content 集合(在 prerender/build 时段执行,Node 环境)
+ * Client: 用同一个 Nuxt Content client API 直读(避免 server runtime API,
+ *         因为 Cloudflare Pages worker runtime 不支持 better-sqlite3)
+ *
+ * 通过 useState 共享数据,避免每个页面重复 fetch。
  */
 
 export type SearchSection = '博客' | '项目' | 'Playbook' | 'Skill' | '精华帖'
@@ -35,10 +38,6 @@ export function filterHits<T extends SearchHit>(hits: T[], keyword: string, limi
   return typeof limit === 'number' ? filtered.slice(0, limit) : filtered
 }
 
-/**
- * SSR 直接读 Nuxt Content 集合。
- * 单独抽出来好让 /search 页和 /api/search-index 共用同一份数据。
- */
 export async function fetchSearchIndexItems(): Promise<SearchHit[]> {
   const [blogs, projects, playbooks, skills, highlights] = await Promise.all([
     queryCollection('blog').select('path', 'title', 'description', 'date').all() as unknown as Promise<Array<{ path: string, title: string, description?: string, date: string }>>,
@@ -85,9 +84,8 @@ export async function fetchSearchIndexItems(): Promise<SearchHit[]> {
 }
 
 /**
- * SSR-safe lazy 搜索索引。
- * - 在 setup 里调用:返回空数组,index 仍然有正确类型
- * - 调用 ensureLoaded() 后立即取数据(SSR 直查 / client 走 fetch)
+ * SSR-safe lazy 搜索索引。Nuxt Content 在 SSR 与 client 用同一套 client API
+ * (client 在浏览器直接请求 Nuxt Content 的静态 JSON),无需 server runtime。
  */
 export function useSearchIndex() {
   const items = useState<SearchHit[]>('search-index', () => [])
@@ -100,12 +98,7 @@ export function useSearchIndex() {
     inflight = (async () => {
       pending.value = true
       try {
-        if (import.meta.server) {
-          items.value = await fetchSearchIndexItems()
-        } else {
-          const data = await $fetch<{ items: SearchHit[] }>('/api/search-index')
-          items.value = data.items
-        }
+        items.value = await fetchSearchIndexItems()
       } catch (e) {
         error.value = e
       } finally {
