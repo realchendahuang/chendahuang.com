@@ -36,16 +36,19 @@ export function useContentSection<T>(key: string, options: ContentSectionOptions
   const { collection, select, order, limit, filter, sort } = options
 
   return useAsyncData(`section:${key}`, async () => {
-    const chain = queryCollection(collection).select(...select as never[]) as unknown as Promise<T[]>
-    let items = await chain
+    const items = await queryCollection(collection)
+      .select(...select as never[])
+      .all() as unknown as T[]
 
-    if (filter) items = items.filter(filter)
+    let result = items
+
+    if (filter) result = result.filter(filter)
 
     if (sort) {
-      items = sort(items)
+      result = sort(result)
     } else if (order) {
       const dir = order.direction === 'ASC' ? 1 : -1
-      items = [...items].sort((a: unknown, b: unknown) => {
+      result = [...result].sort((a: unknown, b: unknown) => {
         const av = (a as Record<string, unknown>)[order.field]
         const bv = (b as Record<string, unknown>)[order.field]
         const at = av ? new Date(String(av)).getTime() : 0
@@ -54,7 +57,7 @@ export function useContentSection<T>(key: string, options: ContentSectionOptions
       })
     }
 
-    return typeof limit === 'number' ? items.slice(0, limit) : items
+    return typeof limit === 'number' ? result.slice(0, limit) : result
   })
 }
 

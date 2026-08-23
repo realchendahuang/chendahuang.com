@@ -10,7 +10,7 @@ defineProps<{
 
 const { data: highlights } = await useContentSection<HighlightSummary>('home-highlights', {
   collection: 'highlights',
-  select: ['title', 'description', 'category', 'date', 'likes', 'bookmarks', 'url', 'content'],
+  select: ['title', 'description', 'category', 'date', 'likes', 'bookmarks', 'reposts', 'url', 'content'],
   sort: sortHighlightsByHeat,
   limit: 4
 })

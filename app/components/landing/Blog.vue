@@ -9,7 +9,7 @@ defineProps<{
 
 const { data: posts } = await useContentSection<BlogSummary>('home-blog', {
   collection: 'blog',
-  select: ['path', 'title', 'description', 'date', 'minRead'],
+  select: ['path', 'title', 'description', 'date', 'minRead', 'pinned'],
   sort: sortBlogsByDatePinnedFirst,
   limit: 3
 })
