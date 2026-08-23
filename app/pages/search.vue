@@ -6,7 +6,8 @@ const router = useRouter()
 
 const searchQuery = ref(typeof route.query.q === 'string' ? route.query.q : '')
 
-const { items: allItems } = await useSearchIndex()
+const { items: allItems, ensureLoaded } = useSearchIndex()
+await ensureLoaded()
 
 const results = computed<SearchHit[]>(() => filterHits(allItems.value, searchQuery.value))
 

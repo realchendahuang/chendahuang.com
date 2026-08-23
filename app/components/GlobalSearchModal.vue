@@ -5,7 +5,12 @@ const searchOpen = useState('global-search-open', () => false)
 const searchQuery = ref('')
 const inputRef = useTemplateRef('inputRef')
 
-const { items: allItems } = await useSearchIndex()
+const { items: allItems, ensureLoaded } = useSearchIndex()
+
+// modal 默认空,首次打开时按需加载
+watch(searchOpen, async (open) => {
+  if (open) await ensureLoaded()
+}, { immediate: true })
 
 const results = computed<SearchHit[]>(() =>
   searchQuery.value.trim()
