@@ -1,0 +1,12 @@
+title: Cherina Pod
+description: 双语播客精听应用。点一句英文，弹中文翻译；按句循环、变速、跟读，听懂比听懂更多更重要。
+type: 闭源 · 独立产品
+url: https://github.com/realchendahuang/chendahuang.com
+onlineUrl: https://pod.cherina.app/
+image: /projects/cherina-pod.webp
+imageAlt: Cherina Pod 首页：继续听、英语学习、双语封面卡片
+icon: i-lucide-headphones
+color: "#e25822"
+tags: ["播客", "精听", "英语学习", "双语", "独立产品"]
+date: 2026-08-26
+status: ongoing

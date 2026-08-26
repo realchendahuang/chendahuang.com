@@ -1,0 +1,12 @@
+title: DeepMate
+description: DeepSeek Harness 的轻量级 companion 与控制面板——统一管理运行时、模型、Provider、Profile、插件和 Doctor 自检。
+type: Rust · Tauri 桌面应用
+url: https://github.com/realchendahuang/DeepMate
+image: /projects/deepmate.webp
+imageAlt: DeepMate 黑红配色产品卡
+icon: i-lucide-cpu
+color: "#f87171"
+tags: ["Rust", "Tauri", "DeepSeek", "Control Plane", "Doctor", "MIT"]
+date: 2026-08-17
+status: ongoing
+stars: 2

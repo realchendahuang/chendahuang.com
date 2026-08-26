@@ -13,10 +13,20 @@ hero:
       color: "neutral"
       target: "_blank"
   images:
+    - src: /projects/cherina-pod.webp
+      alt: Cherina Pod 双语播客精听
+    - src: /projects/feedsieve.webp
+      alt: FeedSieve X 信息流清理工具
     - src: /projects/flaremo.webp
       alt: FlareMo 个人知识管理
     - src: /projects/sub-store-cloudflare.webp
       alt: Sub-Store Cloudflare 订阅聚合工具
+    - src: /projects/pi-config.webp
+      alt: pi-config Pi Coding Agent 配置
+    - src: /projects/deepmate.webp
+      alt: DeepMate AI Harness 控制面板
+    - src: /projects/hermes-memory.webp
+      alt: Hermes Memory OpenCode 持久记忆插件
     - src: /projects/god-museum.webp
       alt: God-Museum 跨文明神话展馆
     - src: /projects/ai-chronicle.webp
