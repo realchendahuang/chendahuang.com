@@ -1,11 +1,14 @@
 <script setup lang="ts">
-import type { SearchHit } from '~/composables/useSearchIndex'
+import type { SearchHit, SearchSectionKey } from '~/composables/useSearchIndex'
 
 const searchOpen = useState('global-search-open', () => false)
 const searchQuery = ref('')
 const inputRef = useTemplateRef('inputRef')
+const { t } = useI18n()
 
 const { items: allItems, ensureLoaded } = useSearchIndex()
+
+const sectionLabel = (key: SearchSectionKey) => t(`sections.${key}`)
 
 // modal 默认空,首次打开时按需加载
 watch(searchOpen, async (open) => {
@@ -109,7 +112,7 @@ onBeforeUnmount(() => {
             ref="inputRef"
             v-model="searchQuery"
             variant="none"
-            placeholder="搜索博客、项目、Playbook、Skill、精华帖…"
+            :placeholder="t('search.placeholder')"
             class="flex-1"
             :ui="{ root: 'w-full', base: 'text-base' }"
           />
@@ -123,14 +126,14 @@ onBeforeUnmount(() => {
             v-if="!searchQuery && !results.length"
             class="px-3 py-8 text-center text-sm text-dimmed"
           >
-            输入关键词开始搜索全站内容
+            {{ t('search.empty') }}
           </p>
 
           <p
             v-else-if="!results.length"
             class="px-3 py-8 text-center text-sm text-dimmed"
           >
-            没有找到「{{ searchQuery }}」相关内容
+            {{ t('search.noResults', { query: searchQuery }) }}
           </p>
 
           <ul
@@ -154,7 +157,7 @@ onBeforeUnmount(() => {
                       v-if="item.section"
                       class="shrink-0 rounded bg-muted/60 px-1.5 py-0.5 text-[10px] text-muted"
                     >
-                      {{ item.section }}
+                      {{ sectionLabel(item.section) }}
                     </span>
                     <h3 class="truncate text-sm font-medium text-highlighted">
                       {{ item.title }}

@@ -1,0 +1,22 @@
+category: cloudflare
+title: "Completed Sub-Store deployment on Cloudflare"
+description: "Spent some time completing the Sub-Store deployment on Cloudflare."
+date: 2026-06-27
+likes: 209
+bookmarks: 244
+reposts: 29
+views: 67007
+url: https://x.com/realchendahuang/status/2070689769731019207
+content: |
+  Spent some time completing the Sub-Store deployment on Cloudflare.
+
+  Merged all my self-hosted nodes and airport backup nodes together, and paired them with ACL4SSR routing rules for automatic subscription.
+
+  Achieved with a single subscription link:
+
+  - Merging nodes from multiple providers
+  - Node filtering
+  - Routing rule configuration
+  - Automatic config updates
+
+  Smooth as hell.

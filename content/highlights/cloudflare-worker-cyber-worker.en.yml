@@ -1,0 +1,38 @@
+category: cloudflare
+title: "Workers are cyber laborers"
+description: "I feel many people still understand less than 1% of Cloudflare Workers."
+date: 2026-06-16
+likes: 1
+bookmarks: 2
+reposts: 1
+views: 1743
+url: https://x.com/realchendahuang/status/2066895041910763934
+content: |
+  I feel many people still understand less than 1% of Cloudflare Workers.
+
+  Workers are cyber laborers.
+
+  They handle the dirty work behind your website.
+
+  Like submitting forms, uploading files, calling AI, login verification, processing payment notifications, and building a small product's API. Workers can do it all.
+
+  The most absurd thing about Workers: free users get 100,000 requests per day, not spending a dime.
+
+  What does 100,000 mean?
+
+  If your website has 1,000 users a day, even if it runs 24 hours nonstop with someone visiting every second, that's only 86,400 visits a day — you can't even use it all up.
+
+  If you can actually use up all that free quota,
+
+  what are you even thinking? You'd be rich.
+
+  Now you can write the logic first and hand it directly to Workers to run.
+  Paired with the Hono API framework, that's the best practice.
+
+  This is the most delightful thing about Cloudflare Workers.
+
+  Pay? Pay my ass.
+
+  Cloudflare is kind-hearted.
+
+  It can't bear to let you spend money.

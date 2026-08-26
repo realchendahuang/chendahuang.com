@@ -1,0 +1,27 @@
+category: ai
+title: "The Preset concept in DeepSeek Harness: the distribution unit of Agents"
+description: "The same model loading different Presets can become completely different Agents."
+date: 2026-08-17
+likes: 161
+bookmarks: 0
+reposts: 23
+views: 38000
+url: https://x.com/realchendahuang/status/2089206966015176725
+content: |
+  I've been studying DeepSeek Harness lately. There's a concept called Preset worth paying attention to.
+
+  Preset can be understood as the distribution unit of Agents. The same model loading different Presets can ultimately become completely different Agents.
+
+  What's the biggest difference between Preset and Skill?
+
+  - A financial-report-analysis Skill: teaches the Agent how to analyze financial reports.
+  - A financial-report-analysis Preset: directly combines the financial-report-analysis Skill, web search, Browser, PDF, Python, Subagents, research Prompts, and context strategy all together, giving you an out-of-the-box Agent.
+
+  In the future, two layers of market will likely emerge simultaneously.
+
+  - One layer is the Plugin / Skill Marketplace, mainly for developers and advanced users to build Agents;
+  - One layer is the Preset / Agent Marketplace, truly aimed at ordinary users.
+
+  This is actually very close to the App Store logic. The App Store showcases a complete App. Preset showcases a complete Agent application.
+
+  In the past, people shared Prompts. Later they started sharing Skills. Next, they'll likely share Presets.

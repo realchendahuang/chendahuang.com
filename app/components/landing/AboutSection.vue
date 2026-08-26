@@ -1,12 +1,13 @@
 <script setup lang="ts">
 const { global } = useAppConfig()
+const { t } = useI18n()
 
 const sponsorLink = computed(() => global.sponsorLink)
 
 const links = computed(() => [
-  { label: 'X（原 Twitter）', icon: 'i-simple-icons-x', to: 'https://x.com/realchendahuang', description: '日常更新、碎碎念与干货分享' },
-  { label: 'GitHub', icon: 'i-simple-icons-github', to: 'https://github.com/realchendahuang', description: '项目源码与 Playbook 仓库' },
-  { label: 'RSS 订阅', icon: 'i-lucide-rss', to: '/rss.xml', description: '博客更新第一时间推送到阅读器' }
+  { label: t('landing.xLink'), icon: 'i-simple-icons-x', to: 'https://x.com/realchendahuang', description: t('landing.xDesc') },
+  { label: t('landing.githubLink'), icon: 'i-simple-icons-github', to: 'https://github.com/realchendahuang', description: t('landing.githubDesc') },
+  { label: t('landing.rssLink'), icon: 'i-lucide-rss', to: '/rss.xml', description: t('landing.rssDesc') }
 ])
 </script>
 
@@ -19,14 +20,13 @@ const links = computed(() => [
       <div class="grid gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:gap-16">
         <div>
           <p class="editorial-label">
-            关于我
+            {{ t('landing.about') }}
           </p>
           <h2 class="mt-4 max-w-2xl text-balance text-2xl font-semibold leading-snug tracking-[-0.03em] text-highlighted sm:text-3xl">
-            独立开发者，折腾 Cloudflare 与 AI 效率工具
+            {{ t('landing.aboutTitle') }}
           </h2>
           <p class="mt-4 max-w-2xl text-[15px] leading-7 text-muted">
-            前 AI 产品经理，现在专注于独立开发：把 AI、Cloudflare 和内容创作组合成自己的产品与工作流。
-            项目、Playbook 和博客都是我探索过程的公开记录——如果你也在做类似的事，欢迎交流。
+            {{ t('landing.aboutBody') }}
           </p>
           <p
             v-if="global.email"
@@ -50,7 +50,7 @@ const links = computed(() => [
               icon="i-lucide-heart"
               color="primary"
               variant="soft"
-              label="爱发电 · 支持我"
+              :label="t('landing.support')"
             />
           </p>
         </div>

@@ -5,6 +5,8 @@ const props = defineProps<{
   links: NavigationMenuItem[]
 }>()
 
+const { t } = useI18n()
+
 const mobileLinks = computed<DropdownMenuItem[]>(() => props.links.map(link => ({
   label: link.label,
   icon: link.icon,
@@ -26,19 +28,20 @@ const mobileLinks = computed<DropdownMenuItem[]>(() => props.links.map(link => (
 
       <div class="flex items-center gap-1">
         <GlobalSearch />
+        <LanguageSwitcher />
         <ColorModeButton />
         <UDropdownMenu
           :items="mobileLinks"
           :content="{ align: 'end', sideOffset: 8 }"
         >
           <UButton
-            label="菜单"
+            :label="t('nav.menu')"
             icon="i-lucide-menu"
             color="neutral"
             variant="ghost"
             size="md"
             class="rounded-full"
-            aria-label="打开导航菜单"
+            :aria-label="t('nav.openMenu')"
           />
         </UDropdownMenu>
       </div>
@@ -58,6 +61,7 @@ const mobileLinks = computed<DropdownMenuItem[]>(() => props.links.map(link => (
     >
       <template #list-trailing>
         <GlobalSearch />
+        <LanguageSwitcher />
         <ColorModeButton />
       </template>
     </UNavigationMenu>

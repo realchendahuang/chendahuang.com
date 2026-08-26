@@ -8,13 +8,13 @@
  * 通过 useState 共享数据,避免每个页面重复 fetch。
  */
 
-export type SearchSection = '博客' | '项目' | 'Playbook' | 'Skill' | '精华帖'
+export type SearchSectionKey = 'blog' | 'project' | 'playbook' | 'skill' | 'highlight'
 
 export type SearchHit = {
   title: string
   description?: string
   to: string
-  section: SearchSection
+  section: SearchSectionKey
   category?: string
   date?: string
 }
@@ -38,13 +38,13 @@ export function filterHits<T extends SearchHit>(hits: T[], keyword: string, limi
   return typeof limit === 'number' ? filtered.slice(0, limit) : filtered
 }
 
-export async function fetchSearchIndexItems(): Promise<SearchHit[]> {
+export async function fetchSearchIndexItems(locale: string): Promise<SearchHit[]> {
   const [blogs, projects, playbooks, skills, highlights] = await Promise.all([
-    queryCollection('blog').select('path', 'title', 'description', 'date').all() as unknown as Promise<Array<{ path: string, title: string, description?: string, date: string }>>,
-    queryCollection('projects').select('title', 'description', 'onlineUrl', 'url').all() as unknown as Promise<Array<{ title: string, description?: string, onlineUrl?: string, url: string }>>,
-    queryCollection('playbooks').select('title', 'description', 'onlineUrl', 'url').all() as unknown as Promise<Array<{ title: string, description?: string, onlineUrl?: string, url: string }>>,
-    queryCollection('skills').select('title', 'description', 'onlineUrl', 'url').all() as unknown as Promise<Array<{ title: string, description?: string, onlineUrl?: string, url: string }>>,
-    queryCollection('highlights').select('title', 'description', 'category', 'url').all() as unknown as Promise<Array<{ title: string, description?: string, category: string, url: string }>>
+    queryCollection('blog').where('locale', '=', locale).select('path', 'title', 'description', 'date').all() as unknown as Promise<Array<{ path: string, title: string, description?: string, date: string }>>,
+    queryCollection('projects').where('locale', '=', locale).select('title', 'description', 'onlineUrl', 'url').all() as unknown as Promise<Array<{ title: string, description?: string, onlineUrl?: string, url: string }>>,
+    queryCollection('playbooks').where('locale', '=', locale).select('title', 'description', 'onlineUrl', 'url').all() as unknown as Promise<Array<{ title: string, description?: string, onlineUrl?: string, url: string }>>,
+    queryCollection('skills').where('locale', '=', locale).select('title', 'description', 'onlineUrl', 'url').all() as unknown as Promise<Array<{ title: string, description?: string, onlineUrl?: string, url: string }>>,
+    queryCollection('highlights').where('locale', '=', locale).select('title', 'description', 'category', 'url').all() as unknown as Promise<Array<{ title: string, description?: string, category: string, url: string }>>
   ])
 
   return [
@@ -52,32 +52,32 @@ export async function fetchSearchIndexItems(): Promise<SearchHit[]> {
       title: item.title,
       description: item.description,
       to: item.path,
-      section: '博客' as const,
+      section: 'blog' as const,
       date: item.date
     })),
     ...projects.map(item => ({
       title: item.title,
       description: item.description,
       to: item.onlineUrl || item.url,
-      section: '项目' as const
+      section: 'project' as const
     })),
     ...playbooks.map(item => ({
       title: item.title,
       description: item.description,
       to: item.onlineUrl || item.url,
-      section: 'Playbook' as const
+      section: 'playbook' as const
     })),
     ...skills.map(item => ({
       title: item.title,
       description: item.description,
       to: item.onlineUrl || item.url,
-      section: 'Skill' as const
+      section: 'skill' as const
     })),
     ...highlights.map(item => ({
       title: item.title,
       description: item.description,
       to: item.url,
-      section: '精华帖' as const,
+      section: 'highlight' as const,
       category: item.category
     }))
   ]
@@ -88,6 +88,7 @@ export async function fetchSearchIndexItems(): Promise<SearchHit[]> {
  * (client 在浏览器直接请求 Nuxt Content 的静态 JSON),无需 server runtime。
  */
 export function useSearchIndex() {
+  const { locale } = useI18n()
   const items = useState<SearchHit[]>('search-index', () => [])
   const pending = ref(false)
   const error = ref<unknown>(null)
@@ -98,7 +99,7 @@ export function useSearchIndex() {
     inflight = (async () => {
       pending.value = true
       try {
-        items.value = await fetchSearchIndexItems()
+        items.value = await fetchSearchIndexItems(locale.value)
       } catch (e) {
         error.value = e
       } finally {

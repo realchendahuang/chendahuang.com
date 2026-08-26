@@ -1,0 +1,197 @@
+{
+  "site": {
+    "name": "Chen Dahuang",
+    "description": "Chen Dahuang's personal portfolio and content showcase. Projects, guides, skills, articles and posts."
+  },
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "playbooks": "Guides",
+    "skills": "Skills",
+    "blog": "Blog",
+    "highlights": "Posts",
+    "menu": "Menu",
+    "openMenu": "Open navigation menu"
+  },
+  "sections": {
+    "blog": "Blog",
+    "project": "Projects",
+    "playbook": "Guides",
+    "skill": "Skills",
+    "highlight": "Posts"
+  },
+  "search": {
+    "label": "Search",
+    "shortcut": "Search (Cmd+K)",
+    "placeholder": "Search blog, projects, guides, skills, posts…",
+    "empty": "Type a keyword to search the whole site",
+    "noResults": "No results for \"{query}\""
+  },
+  "theme": {
+    "toDark": "Switch to dark mode",
+    "toLight": "Switch to light mode"
+  },
+  "footer": {
+    "rss": "RSS feed",
+    "onX": "Chen Dahuang on X",
+    "onGithub": "Chen Dahuang on GitHub"
+  },
+  "a11y": {
+    "skipToContent": "Skip to main content"
+  },
+  "hero": {
+    "highlights": "Highlights",
+    "blogPosts": "Blog posts",
+    "projects": "Projects",
+    "githubStars": "GitHub Stars"
+  },
+  "landing": {
+    "shareHighlight": "From Chen Dahuang's highlights: {title}",
+    "linkCopied": "Link copied, go share it",
+    "likes": "likes",
+    "bookmarks": "bookmarks",
+    "original": "Original",
+    "about": "About",
+    "aboutTitle": "Indie developer, tinkering with Cloudflare and AI productivity tools",
+    "aboutBody": "Former AI product manager, now focused on indie development: combining AI, Cloudflare and content creation into my own products and workflows. Projects, guides and blog posts are the public record of my exploration — if you're doing something similar, let's connect.",
+    "support": "Support me on Afdian",
+    "xLink": "X (formerly Twitter)",
+    "xDesc": "Daily updates, musings and practical tips",
+    "githubLink": "GitHub",
+    "githubDesc": "Project source code and guide repositories",
+    "rssLink": "RSS feed",
+    "rssDesc": "Blog updates delivered to your reader",
+    "work": "Work",
+    "recentProjects": "Recent projects",
+    "viewAllProjects": "View all projects",
+    "readMore": "Read more"
+  },
+  "projects": {
+    "tryOnline": "Try online",
+    "github": "GitHub",
+    "view": "View {title}",
+    "preview": "{title} project preview"
+  },
+  "playbooks": {
+    "readOnline": "Read online",
+    "viewOnGithub": "View on GitHub"
+  },
+  "skills": {
+    "readOnline": "Read online",
+    "viewOnGithub": "View on GitHub"
+  },
+  "highlights": {
+    "count": "{count} posts in total. Browse by theme, timeline or heat, search keywords, filter categories, or click a title to expand.",
+    "xHome": "X profile",
+    "searchPosts": "Search posts",
+    "searchPlaceholder": "Search title or content keywords…",
+    "expandAll": "Expand all",
+    "collapseAll": "Collapse all",
+    "viewMode": "View mode",
+    "filterTheme": "Filter by theme",
+    "all": "All",
+    "hot": "Hot",
+    "hotTitle": "Popular post",
+    "likes": "likes",
+    "bookmarks": "bookmarks",
+    "reposts": "reposts",
+    "views": "views",
+    "viewOnX": "View original on X",
+    "noMatch": "No matching posts, try another keyword.",
+    "noPosts": "No posts under this filter.",
+    "countSuffix": "posts"
+  },
+  "blog": {
+    "count": "{count} articles in total. Search by keyword or filter by tag.",
+    "archive": "Archive",
+    "tags": "Tags",
+    "rss": "RSS feed",
+    "searchPlaceholder": "Search title, description or tags…",
+    "all": "All",
+    "found": "{count} found",
+    "tagFilter": "tag \"{tag}\"",
+    "keywordFilter": "keyword \"{keyword}\"",
+    "pinned": "Pinned",
+    "pinnedTitle": "Pinned post",
+    "original": "Original",
+    "originalTitle": "Original post on this site",
+    "noMatch": "No matching articles, try another keyword or tag.",
+    "minutes": "min"
+  },
+  "archive": {
+    "title": "Archive",
+    "description": "All blog posts archived by year.",
+    "count": "{count} articles, organized by year.",
+    "posts": "posts"
+  },
+  "tags": {
+    "title": "Tags",
+    "description": "Browse all blog posts by tag.",
+    "count": "{count} tags in total, click to view related posts.",
+    "all": "All",
+    "allPosts": "All posts",
+    "underTag": "Posts under tag \"{tag}\"",
+    "empty": "No posts under this tag."
+  },
+  "friends": {
+    "empty": "No friend links yet. Add a content/friends/*.yml file.",
+    "avatar": "{name}'s avatar"
+  },
+  "post": {
+    "allPosts": "All posts",
+    "updated": "Updated {date}",
+    "minRead": "{count} min read",
+    "original": "Original",
+    "sourceX": "Originally from X",
+    "indieDev": "Indie developer",
+    "collapseToc": "Collapse TOC",
+    "viewToc": "View TOC",
+    "toc": "Table of contents",
+    "shareHint": "If you found this useful, feel free to share it with a friend.",
+    "shareToX": "Share on X",
+    "xOriginal": "X original",
+    "copyLink": "Copy link",
+    "share": "Share",
+    "related": "Related reading",
+    "subscribe": "Subscribe for updates",
+    "subscribeDesc": "New posts sync to RSS, or follow me on X.",
+    "rss": "RSS feed",
+    "followX": "Follow on X",
+    "support": "Support me",
+    "backToTop": "Back to top",
+    "linkCopied": "Article link copied to clipboard",
+    "shareText": "From Chen Dahuang's blog: {title}"
+  },
+  "error": {
+    "title": "Page not found",
+    "description": "This page does not exist or has been moved."
+  },
+  "seo": {
+    "notFound": "Page not found"
+  },
+  "highlightsCategories": {
+    "cloudflare": "Cloudflare",
+    "cloudflareDesc": "Edge cloud, Workers, free infrastructure and deployment experience",
+    "tools": "Tool list",
+    "toolsDesc": "Software, plugins, hardware and productivity tool recommendations",
+    "ai": "AI thoughts",
+    "aiDesc": "Models, agents, knowledge management and collaboration methods",
+    "product": "Product development",
+    "productDesc": "Indie development, tech stack and product judgment",
+    "opc": "OPC startup",
+    "opcDesc": "One-person company, registration and operations",
+    "growth": "Content growth",
+    "growthDesc": "X operations, posting methods and follower growth reviews",
+    "essay": "Essays",
+    "essayDesc": "Observations on value, humor and non-tool perspectives"
+  },
+  "highlightViewModes": {
+    "theme": "By theme",
+    "themeDesc": "Browse grouped by category",
+    "timeline": "Timeline",
+    "timelineDesc": "Sorted by publish date",
+    "heat": "By heat",
+    "heatDesc": "Sorted by likes and engagement"
+  },
+  "monthLabel": "{month} {year}"
+}

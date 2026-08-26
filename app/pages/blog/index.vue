@@ -1,13 +1,15 @@
 <script setup lang="ts">
 import type { BlogCollectionItem, PagesCollectionItem } from '@nuxt/content'
 
-const { data } = await useAsyncData('blog-page-with-posts', async () => {
+const { t, locale } = useI18n()
+
+const { data } = await useAsyncData(`blog-page-with-posts:${locale.value}`, async () => {
   const [pageResult, postsResult] = await Promise.all([
-    queryCollection('pages').path('/blog').first(),
-    queryCollection('blog').order('date', 'DESC').all()
+    queryCollection('pages').where('locale', '=', locale.value).path('/blog').first(),
+    queryCollection('blog').where('locale', '=', locale.value).order('date', 'DESC').all()
   ])
   if (!pageResult) {
-    throw createError({ statusCode: 404, statusMessage: '页面未找到', fatal: true })
+    throw createError({ statusCode: 404, statusMessage: t('seo.notFound'), fatal: true })
   }
   return {
     page: pageResult as PagesCollectionItem,
@@ -100,28 +102,28 @@ const isFiltering = computed(() => activeTag.value !== 'all' || searchQuery.valu
             {{ page.title }}
           </h1>
           <p class="mt-3 max-w-2xl text-sm leading-6 text-muted">
-            共 {{ posts?.length ?? 0 }} 篇文章。可按关键词搜索或按标签筛选。
+            {{ t('blog.count', { count: posts?.length ?? 0 }) }}
           </p>
         </div>
 
         <div class="flex flex-wrap items-center gap-2">
           <UButton
             to="/archive"
-            label="归档"
+            :label="t('blog.archive')"
             icon="i-lucide-archive"
             color="neutral"
             variant="ghost"
           />
           <UButton
             to="/tags"
-            label="标签"
+            :label="t('blog.tags')"
             icon="i-lucide-tags"
             color="neutral"
             variant="ghost"
           />
           <UButton
             to="/rss.xml"
-            label="RSS 订阅"
+            :label="t('blog.rss')"
             icon="i-lucide-rss"
             color="neutral"
             variant="soft"
@@ -136,7 +138,7 @@ const isFiltering = computed(() => activeTag.value !== 'all' || searchQuery.valu
           <UInput
             v-model="searchQuery"
             name="blog-search"
-            placeholder="搜索文章标题、描述或标签…"
+            :placeholder="t('blog.searchPlaceholder')"
             icon="i-lucide-search"
             class="w-full sm:max-w-xs"
             size="sm"
@@ -150,7 +152,7 @@ const isFiltering = computed(() => activeTag.value !== 'all' || searchQuery.valu
               :class="activeTag === 'all' ? 'bg-elevated text-highlighted' : ''"
               @click="activeTag = 'all'"
             >
-              全部
+              {{ t('blog.all') }}
             </UButton>
             <UButton
               v-for="tag in allTags"
@@ -173,12 +175,12 @@ const isFiltering = computed(() => activeTag.value !== 'all' || searchQuery.valu
           v-if="isFiltering"
           class="pt-5 text-sm text-dimmed"
         >
-          找到 {{ filteredPosts.length }} 篇
+          {{ t('blog.found', { count: filteredPosts.length }) }}
           <template v-if="activeTag !== 'all'">
-            · 标签「{{ activeTag }}」
+            · {{ t('blog.tagFilter', { tag: activeTag }) }}
           </template>
           <template v-if="searchQuery.trim()">
-            · 关键词「{{ searchQuery.trim() }}」
+            · {{ t('blog.keywordFilter', { keyword: searchQuery.trim() }) }}
           </template>
         </p>
 
@@ -190,7 +192,7 @@ const isFiltering = computed(() => activeTag.value !== 'all' || searchQuery.valu
             class="group grid grid-cols-[minmax(0,1fr)_1.5rem] gap-4 border-b border-default py-7 transition-colors hover:bg-elevated sm:grid-cols-[9rem_minmax(0,1fr)_1.5rem] sm:gap-6 sm:px-2 sm:py-8"
           >
             <p class="col-span-2 text-xs font-medium text-dimmed sm:col-span-1">
-              {{ formatShortDate(post.date) }} · {{ post.minRead }} 分钟
+              {{ formatShortDate(post.date) }} · {{ post.minRead }} {{ t('blog.minutes') }}
             </p>
 
             <div>
@@ -201,24 +203,24 @@ const isFiltering = computed(() => activeTag.value !== 'all' || searchQuery.valu
                 <span
                   v-if="post.pinned"
                   class="inline-flex shrink-0 items-center gap-1 rounded-full bg-amber-500/10 px-2 py-0.5 text-xs font-medium text-amber-600 dark:text-amber-400"
-                  title="置顶文章"
+                  :title="t('blog.pinnedTitle')"
                 >
                   <UIcon
                     name="i-lucide-pin"
                     class="size-3"
                   />
-                  置顶
+                  {{ t('blog.pinned') }}
                 </span>
                 <span
                   v-if="post.original"
                   class="inline-flex shrink-0 items-center gap-1 rounded-full bg-primary/10 px-2 py-0.5 text-xs font-medium text-primary"
-                  title="本站原创文章"
+                  :title="t('blog.originalTitle')"
                 >
                   <UIcon
                     name="i-lucide-pen-line"
                     class="size-3"
                   />
-                  原创
+                  {{ t('blog.original') }}
                 </span>
               </div>
               <p class="mt-2 max-w-2xl text-sm leading-6 text-muted sm:text-[15px] sm:leading-7">
@@ -249,7 +251,7 @@ const isFiltering = computed(() => activeTag.value !== 'all' || searchQuery.valu
           v-else
           class="py-16 text-center text-sm text-dimmed"
         >
-          没有找到匹配的文章，换个关键词或标签试试。
+          {{ t('blog.noMatch') }}
         </p>
       </UContainer>
     </section>

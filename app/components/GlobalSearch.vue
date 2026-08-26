@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const open = useState('global-search-open', () => false)
+const { t } = useI18n()
 </script>
 
 <template>
@@ -8,8 +9,8 @@ const open = useState('global-search-open', () => false)
     variant="ghost"
     color="neutral"
     square
-    aria-label="搜索 (Cmd+K)"
-    :title="'搜索'"
+    :aria-label="t('search.shortcut')"
+    :title="t('search.label')"
     @click="open = true"
   />
 </template>

@@ -1,15 +1,20 @@
 <script setup lang="ts">
 const route = useRoute()
+const { t, locale } = useI18n()
 
-const { data: page } = await useAsyncData(route.path, () =>
-  queryCollection('blog').path(route.path).first()
+// 内容 path 不含 /en 前缀,用 slug 参数拼出 /blog/... 路径
+const slug = computed(() => (route.params.slug as string[]).join('/'))
+const contentPath = computed(() => `/blog/${slug.value}`)
+
+const { data: page } = await useAsyncData(`${contentPath.value}:${locale.value}`, () =>
+  queryCollection('blog').where('locale', '=', locale.value).path(contentPath.value).first()
 )
 if (!page.value) {
-  throw createError({ statusCode: 404, statusMessage: '页面未找到', fatal: true })
+  throw createError({ statusCode: 404, statusMessage: t('seo.notFound'), fatal: true })
 }
 
-const { data: surround } = await useAsyncData(`${route.path}-surround`, () =>
-  queryCollectionItemSurroundings('blog', route.path, {
+const { data: surround } = await useAsyncData(`${contentPath.value}-surround:${locale.value}`, () =>
+  queryCollectionItemSurroundings('blog', contentPath.value, {
     fields: ['description']
   })
 )
@@ -92,7 +97,7 @@ useHead({
 
 const articleLink = computed(() => canonicalUrl)
 
-const shareText = computed(() => `来自陈大黄的博客：${page.value?.title ?? ''}`)
+const shareText = computed(() => t('post.shareText', { title: page.value?.title ?? '' }))
 
 const shareUrl = computed(() => {
   const url = new URL('https://x.com/intent/post')
@@ -222,12 +227,12 @@ const shareArticle = async () => {
       // 用户取消或失败，回退到复制链接
     }
   }
-  copyToClipboard(url, '链接已复制，快去分享吧')
+  copyToClipboard(url, t('post.linkCopied'))
 }
 
 // 相关文章：按标签重叠度推荐
-const { data: allPosts } = await useAsyncData('blog-all-posts', () =>
-  queryCollection('blog').select('path', 'title', 'description', 'date', 'minRead', 'tags').all()
+const { data: allPosts } = await useAsyncData(`blog-all-posts:${locale.value}`, () =>
+  queryCollection('blog').where('locale', '=', locale.value).select('path', 'title', 'description', 'date', 'minRead', 'tags').all()
 )
 
 const relatedPosts = computed(() => {
@@ -267,7 +272,7 @@ const relatedPosts = computed(() => {
               name="i-lucide-arrow-left"
               class="size-4"
             />
-            全部文章
+            {{ t('post.allPosts') }}
           </ULink>
 
           <div class="mt-8 flex flex-wrap items-center gap-x-3 gap-y-2 text-xs font-medium text-dimmed">
@@ -277,11 +282,11 @@ const relatedPosts = computed(() => {
             <template v-if="page.updated">
               <span aria-hidden="true">·</span>
               <time :datetime="toIsoDate(page.updated)">
-                更新于 {{ formatDisplayDate(page.updated) }}
+                {{ t('post.updated', { date: formatDisplayDate(page.updated) }) }}
               </time>
             </template>
             <span aria-hidden="true">·</span>
-            <span>{{ page.minRead }} 分钟阅读</span>
+            <span>{{ t('post.minRead', { count: page.minRead }) }}</span>
             <template v-if="page.original">
               <span aria-hidden="true">·</span>
               <span class="inline-flex items-center gap-1 rounded-full bg-primary/10 px-2 py-0.5 font-medium text-primary">
@@ -289,7 +294,7 @@ const relatedPosts = computed(() => {
                   name="i-lucide-pen-line"
                   class="size-3"
                 />
-                原创
+                {{ t('post.original') }}
               </span>
             </template>
             <template v-if="page.sourceUrl">
@@ -299,7 +304,7 @@ const relatedPosts = computed(() => {
                 target="_blank"
                 class="hover:text-highlighted"
               >
-                原文来自 X
+                {{ t('post.sourceX') }}
               </ULink>
             </template>
           </div>
@@ -326,7 +331,7 @@ const relatedPosts = computed(() => {
                 {{ page.author.name }}
               </p>
               <p class="text-xs text-dimmed">
-                独立开发者
+                {{ t('post.indieDev') }}
               </p>
             </div>
           </div>
@@ -362,7 +367,7 @@ const relatedPosts = computed(() => {
             variant="soft"
             color="neutral"
             block
-            :label="mobileTocOpen ? '收起目录' : '查看目录'"
+            :label="mobileTocOpen ? t('post.collapseToc') : t('post.viewToc')"
             :icon="mobileTocOpen ? 'i-lucide-chevron-up' : 'i-lucide-chevron-down'"
             :trailing="false"
             @click="mobileTocOpen = !mobileTocOpen"
@@ -399,7 +404,7 @@ const relatedPosts = computed(() => {
           >
             <nav class="sticky top-24 max-h-[calc(100vh-8rem)] overflow-y-auto">
               <p class="editorial-label">
-                目录
+                {{ t('post.toc') }}
               </p>
               <ul class="mt-3 space-y-2.5 border-l border-default">
                 <li
@@ -428,14 +433,14 @@ const relatedPosts = computed(() => {
             />
 
             <div class="mt-12 flex flex-wrap items-center justify-between gap-3 border-t border-default pt-6 text-sm text-muted">
-              <span>如果你觉得有用，欢迎转发给朋友。</span>
+              <span>{{ t('post.shareHint') }}</span>
               <div class="flex flex-wrap items-center gap-2">
                 <UButton
                   size="sm"
                   variant="soft"
                   color="neutral"
                   icon="i-simple-icons-x"
-                  label="转发到 X"
+                  :label="t('post.shareToX')"
                   :to="shareUrl"
                   target="_blank"
                 />
@@ -445,7 +450,7 @@ const relatedPosts = computed(() => {
                   variant="soft"
                   color="neutral"
                   icon="i-lucide-arrow-up-right"
-                  label="X 原文"
+                  :label="t('post.xOriginal')"
                   :to="page.sourceUrl"
                   target="_blank"
                 />
@@ -454,15 +459,15 @@ const relatedPosts = computed(() => {
                   variant="soft"
                   color="neutral"
                   icon="i-lucide-link"
-                  label="复制链接"
-                  @click="copyToClipboard(articleLink, '文章链接已复制到剪贴板')"
+                  :label="t('post.copyLink')"
+                  @click="copyToClipboard(articleLink, t('post.linkCopied'))"
                 />
                 <UButton
                   size="sm"
                   variant="soft"
                   color="neutral"
                   icon="i-lucide-share-2"
-                  label="分享"
+                  :label="t('post.share')"
                   @click="shareArticle"
                 />
               </div>
@@ -478,7 +483,7 @@ const relatedPosts = computed(() => {
               class="mt-12 border-t border-default pt-8"
             >
               <p class="editorial-label">
-                相关阅读
+                {{ t('post.related') }}
               </p>
               <div class="mt-4 grid gap-4 sm:grid-cols-3">
                 <NuxtLink
@@ -488,7 +493,7 @@ const relatedPosts = computed(() => {
                   class="group flex flex-col gap-2 rounded-lg border border-default p-4 transition-colors hover:border-primary/40 hover:bg-elevated"
                 >
                   <p class="text-xs text-dimmed">
-                    {{ formatShortDate(post.date) }} · {{ post.minRead }} 分钟
+                    {{ formatShortDate(post.date) }} · {{ post.minRead }} {{ t('blog.minutes') }}
                   </p>
                   <h3 class="line-clamp-2 text-sm font-medium leading-snug text-highlighted group-hover:text-primary">
                     {{ post.title }}
@@ -504,10 +509,10 @@ const relatedPosts = computed(() => {
               <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
                 <div>
                   <h3 class="text-base font-semibold text-highlighted">
-                    订阅更新
+                    {{ t('post.subscribe') }}
                   </h3>
                   <p class="mt-1 text-sm leading-6 text-muted">
-                    新文章会同步到 RSS，也可以在 X 上关注我。
+                    {{ t('post.subscribeDesc') }}
                   </p>
                 </div>
                 <div class="flex flex-wrap items-center gap-2">
@@ -517,7 +522,7 @@ const relatedPosts = computed(() => {
                     size="sm"
                     color="neutral"
                     icon="i-lucide-rss"
-                    label="RSS 订阅"
+                    :label="t('post.rss')"
                   />
                   <UButton
                     to="https://x.com/realchendahuang"
@@ -526,7 +531,7 @@ const relatedPosts = computed(() => {
                     color="neutral"
                     variant="soft"
                     icon="i-simple-icons-x"
-                    label="关注 X"
+                    :label="t('post.followX')"
                   />
                   <UButton
                     v-if="sponsorLink"
@@ -536,7 +541,7 @@ const relatedPosts = computed(() => {
                     color="primary"
                     variant="soft"
                     icon="i-lucide-heart"
-                    label="支持我"
+                    :label="t('post.support')"
                   />
                 </div>
               </div>
@@ -560,7 +565,7 @@ const relatedPosts = computed(() => {
         color="neutral"
         variant="soft"
         class="fixed bottom-6 right-6 z-50 shadow-lg"
-        aria-label="回到顶部"
+        :aria-label="t('post.backToTop')"
         @click="scrollToTop"
       />
     </Transition>

@@ -69,6 +69,26 @@ export function getHighlightCategory(id?: string | null) {
   return HIGHLIGHT_CATEGORIES.find(item => item.id === id)
 }
 
+/** 分类显示名(走 i18n)。 */
+export function getHighlightCategoryLabel(id: string, t: (key: string) => string) {
+  return t(`highlightsCategories.${id}`)
+}
+
+/** 分类描述(走 i18n)。 */
+export function getHighlightCategoryDescription(id: string, t: (key: string) => string) {
+  return t(`highlightsCategories.${id}Desc`)
+}
+
+/** 视图模式显示名(走 i18n)。 */
+export function getHighlightViewModeLabel(id: string, t: (key: string) => string) {
+  return t(`highlightViewModes.${id}`)
+}
+
+/** 视图模式描述(走 i18n)。 */
+export function getHighlightViewModeDescription(id: string, t: (key: string) => string) {
+  return t(`highlightViewModes.${id}Desc`)
+}
+
 export function formatMonthLabel(date: Date | string | number) {
   const value = new Date(date)
   if (Number.isNaN(value.getTime())) {

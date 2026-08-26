@@ -1,0 +1,22 @@
+category: ai
+title: "A common flaw of the GPT-5 generation: writing internal needs into the UI copy"
+description: "The root of redundant UI copy is that it never separates user-facing text from developer-facing feedback."
+date: 2026-08-12
+likes: 2
+bookmarks: 0
+reposts: 1
+views: 1500
+url: https://x.com/realchendahuang/status/2087349882101370909
+content: |
+  That's so well said — this is the common flaw of the GPT-5 generation:
+
+  It always writes internal needs into the UI copy to prove its workload. To prove itself — oh, I really did it, see how awesome I am, I didn't slack off, I put all your requirements on the table.
+
+  And the UI copy is extremely redundant. From 5.0 iterating to 5.6, after so many generations, this problem still hasn't changed — it's in the bones.
+
+  Anyone who has actually built frontend products understands:
+
+  - Whether small or large, all text on the interface is user-facing copy
+  - Text that should be fed back to developers in chat should never be written into the product
+
+  But it not only writes bad copy, it also often writes internal feedback into the product to "show" that it actually did something.

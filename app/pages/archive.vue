@@ -1,6 +1,8 @@
 <script setup lang="ts">
-const { data: posts } = await useAsyncData('archive-posts', () =>
-  queryCollection('blog').select('path', 'title', 'date', 'minRead', 'tags').order('date', 'DESC').all()
+const { t, locale } = useI18n()
+
+const { data: posts } = await useAsyncData(`archive-posts:${locale.value}`, () =>
+  queryCollection('blog').where('locale', '=', locale.value).select('path', 'title', 'date', 'minRead', 'tags').order('date', 'DESC').all()
 )
 
 const years = computed(() => {
@@ -18,11 +20,11 @@ const years = computed(() => {
 const totalCount = computed(() => posts.value?.length ?? 0)
 
 useSeoMeta({
-  title: '归档 - 陈大黄',
-  description: '按年份归档的全部博客文章。'
+  title: () => `${t('archive.title')} - 陈大黄`,
+  description: () => t('archive.description')
 })
 
-defineOgImage('Portfolio', { title: '归档', description: '按年份归档的全部博客文章。' })
+defineOgImage('Portfolio', { title: () => t('archive.title'), description: () => t('archive.description') })
 </script>
 
 <template>
@@ -30,10 +32,10 @@ defineOgImage('Portfolio', { title: '归档', description: '按年份归档的�
     <UContainer class="py-14 sm:py-20">
       <div>
         <h1 class="t-h1">
-          归档
+          {{ t('archive.title') }}
         </h1>
         <p class="mt-3 max-w-2xl text-sm leading-6 text-muted">
-          共 {{ totalCount }} 篇文章，按年份整理。
+          {{ t('archive.count', { count: totalCount }) }}
         </p>
       </div>
     </UContainer>
@@ -50,7 +52,7 @@ defineOgImage('Portfolio', { title: '归档', description: '按年份归档的�
                 {{ group.year }}
               </h2>
               <span class="text-xs text-dimmed">
-                {{ group.items.length }} 篇
+                {{ group.items.length }} {{ t('archive.posts') }}
               </span>
             </div>
 
@@ -84,7 +86,7 @@ defineOgImage('Portfolio', { title: '归档', description: '按年份归档的�
                     {{ formatShortDate(post.date) }}
                   </span>
                   <span class="text-xs text-dimmed">
-                    {{ post.minRead }} 分钟
+                    {{ post.minRead }} {{ t('blog.minutes') }}
                   </span>
                 </div>
               </NuxtLink>

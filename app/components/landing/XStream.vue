@@ -8,6 +8,8 @@ defineProps<{
   page: IndexCollectionItem
 }>()
 
+const { t } = useI18n()
+
 const { data: highlights } = await useContentSection<HighlightSummary>('home-highlights', {
   collection: 'highlights',
   select: ['title', 'description', 'category', 'date', 'likes', 'bookmarks', 'reposts', 'url', 'content'],
@@ -16,7 +18,7 @@ const { data: highlights } = await useContentSection<HighlightSummary>('home-hig
 })
 
 const shareHighlight = async (item: { title: string, url: string }) => {
-  const text = `来自陈大黄的精华帖：${item.title}`
+  const text = t('landing.shareHighlight', { title: item.title })
   if (navigator.share) {
     try {
       await navigator.share({ title: item.title, text, url: item.url })
@@ -25,7 +27,7 @@ const shareHighlight = async (item: { title: string, url: string }) => {
       // 用户取消
     }
   }
-  copyToClipboard(item.url, '链接已复制，快去分享吧')
+  copyToClipboard(item.url, t('landing.linkCopied'))
 }
 </script>
 
@@ -66,8 +68,8 @@ const shareHighlight = async (item: { title: string, url: string }) => {
       >
         <div class="mb-3 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-dimmed">
           <time>{{ formatShortDate(item.date) }}</time>
-          <span>{{ formatCount(item.likes) }} 赞</span>
-          <span v-if="item.bookmarks">{{ formatCount(item.bookmarks) }} 收藏</span>
+          <span>{{ formatCount(item.likes) }} {{ t('landing.likes') }}</span>
+          <span v-if="item.bookmarks">{{ formatCount(item.bookmarks) }} {{ t('landing.bookmarks') }}</span>
         </div>
 
         <h3 class="text-base font-medium leading-snug text-highlighted">
@@ -85,7 +87,7 @@ const shareHighlight = async (item: { title: string, url: string }) => {
             size="xs"
             color="neutral"
             variant="soft"
-            label="原文"
+            :label="t('landing.original')"
             trailing-icon="i-lucide-arrow-up-right"
           />
           <UButton
@@ -93,7 +95,7 @@ const shareHighlight = async (item: { title: string, url: string }) => {
             color="neutral"
             variant="ghost"
             icon="i-lucide-share-2"
-            :aria-label="`分享：${item.title}`"
+            :aria-label="`${t('landing.shareHighlight', { title: item.title })}`"
             @click="shareHighlight(item)"
           />
         </div>

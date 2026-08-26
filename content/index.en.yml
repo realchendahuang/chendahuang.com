@@ -1,0 +1,49 @@
+seo:
+  title: "Chen Dahuang - Works & Content"
+  description: "Chen Dahuang's personal showcase of works and content. Featuring projects, Playbooks, Agent Skills, articles, and posts."
+title: "Chen Dahuang"
+description: "Insight expert, jokester | Former AI product manager | Indie developer | Efficient language learning researcher | AI productivity tool tinkerer | All-rounder in product, design, development, operations, and sales"
+hero:
+  links:
+    - label: "View Projects"
+      to: /projects
+      color: "primary"
+    - label: "GitHub"
+      to: https://github.com/realchendahuang
+      color: "neutral"
+      target: "_blank"
+  images:
+    - src: /projects/cherina-pod.webp
+      alt: Cherina Pod bilingual podcast intensive listening
+    - src: /projects/feedsieve.webp
+      alt: FeedSieve X feed cleanup tool
+    - src: /projects/flaremo.webp
+      alt: FlareMo personal knowledge management
+    - src: /projects/sub-store-cloudflare.webp
+      alt: Sub-Store Cloudflare subscription aggregation tool
+    - src: /projects/pi-config.webp
+      alt: pi-config Pi Coding Agent configuration
+    - src: /projects/deepmate.webp
+      alt: DeepMate AI Harness control panel
+    - src: /projects/hermes-memory.webp
+      alt: Hermes Memory OpenCode persistent memory plugin
+    - src: /projects/god-museum.webp
+      alt: God-Museum cross-civilization mythology gallery
+    - src: /projects/ai-chronicle.webp
+      alt: AI Chronicle industry chronicle
+blog:
+  title: "Latest Articles"
+highlights:
+  title: "Featured Posts"
+  links:
+    - label: "View All"
+      icon: "i-lucide-arrow-right"
+      to: "/highlights"
+      color: "neutral"
+      variant: "soft"
+    - label: "X Homepage"
+      icon: "i-simple-icons-x"
+      to: "https://x.com/realchendahuang"
+      target: "_blank"
+      color: "neutral"
+      variant: "soft"

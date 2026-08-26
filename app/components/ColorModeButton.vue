@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const colorMode = useColorMode()
+const { t } = useI18n()
 
 const nextTheme = computed(() => (colorMode.value === 'dark' ? 'light' : 'dark'))
 
@@ -47,7 +48,7 @@ const startViewTransition = (event: MouseEvent) => {
 <template>
   <ClientOnly>
     <UButton
-      :aria-label="nextTheme === 'dark' ? '切换到深色模式' : '切换到浅色模式'"
+      :aria-label="nextTheme === 'dark' ? t('theme.toDark') : t('theme.toLight')"
       :icon="`i-lucide-${nextTheme === 'dark' ? 'sun' : 'moon'}`"
       color="neutral"
       variant="ghost"

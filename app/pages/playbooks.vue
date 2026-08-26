@@ -1,8 +1,9 @@
 <script setup lang="ts">
 const { page } = useCollectionPageSeo('/playbooks')
+const { t, locale } = useI18n()
 
-const { data: playbooks } = await useAsyncData('playbooks', () => {
-  return queryCollection('playbooks').order('date', 'DESC').all()
+const { data: playbooks } = await useAsyncData(`playbooks:${locale.value}`, () => {
+  return queryCollection('playbooks').where('locale', '=', locale.value).order('date', 'DESC').all()
 })
 </script>
 
@@ -72,14 +73,14 @@ const { data: playbooks } = await useAsyncData('playbooks', () => {
               <UButton
                 :to="playbook.onlineUrl"
                 target="_blank"
-                label="在线阅读"
+                :label="t('playbooks.readOnline')"
                 trailing-icon="i-lucide-arrow-up-right"
                 color="neutral"
               />
               <UButton
                 :to="playbook.url"
                 target="_blank"
-                aria-label="在 GitHub 查看"
+                :aria-label="t('playbooks.viewOnGithub')"
                 icon="i-simple-icons-github"
                 color="neutral"
                 variant="soft"

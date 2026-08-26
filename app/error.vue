@@ -8,15 +8,18 @@ defineProps({
   }
 })
 
-useHead({
+const navLinks = useNavLinks()
+const { t, locale } = useI18n()
+
+useHead(() => ({
   htmlAttrs: {
-    lang: 'zh-CN'
+    lang: locale.value === 'en' ? 'en' : 'zh-CN'
   }
-})
+}))
 
 useSeoMeta({
-  title: '页面没找到',
-  description: '这个页面不存在或已移走。'
+  title: () => t('error.title'),
+  description: () => t('error.description')
 })
 </script>
 

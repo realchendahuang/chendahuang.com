@@ -1,0 +1,13 @@
+category: tools
+title: "A unified management solution for circumvention subscriptions"
+description: "Unified management, unified routing, and unified subscription link output for airports + self-hosted VPS nodes."
+date: 2026-06-29
+likes: 92
+bookmarks: 137
+reposts: 14
+views: 10207
+url: https://x.com/realchendahuang/status/2071465309085790305
+content: |
+  About circumvention, if you've bought an airport and also set up your own VPS nodes, you want to manage them uniformly, route them uniformly, and output a single subscription link.
+  You want to maintain routing rules, node filtering, and combination logic on the server side, rather than reconfiguring them in every client.
+  You want to run it with Cloudflare's lightweight deployment, without maintaining servers, database services, and complex background tasks.

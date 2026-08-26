@@ -1,0 +1,21 @@
+category: cloudflare
+title: "2026 indie development best practices: the Cloudflare broke-ass full stack"
+description: "2026 indie development best practices: the Cloudflare broke-ass full stack."
+date: 2026-06-15
+likes: 225
+bookmarks: 335
+reposts: 34
+views: 40629
+url: https://x.com/realchendahuang/status/2066586160902881542
+content: |
+  2026 indie development best practices:
+  the Cloudflare broke-ass full stack
+  Codex: write code, handle full-stack development
+  GitHub: version control
+  Stripe: payments
+  Frontend: TanStack Start
+  Backend: Hono + Cloudflare Workers
+  Deployment: Cloudflare Pages
+  Database: Cloudflare D1
+  File storage: Cloudflare R2
+  Cache / config: Cloudflare KV

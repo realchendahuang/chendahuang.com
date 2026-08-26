@@ -1,8 +1,9 @@
 <script setup lang="ts">
 const { page } = useCollectionPageSeo('/friends')
+const { t, locale } = useI18n()
 
-const { data: friends } = await useAsyncData('friends', () =>
-  queryCollection('friends').all()
+const { data: friends } = await useAsyncData(`friends:${locale.value}`, () =>
+  queryCollection('friends').where('locale', '=', locale.value).all()
 )
 </script>
 
@@ -32,7 +33,7 @@ const { data: friends } = await useAsyncData('friends', () =>
             <NuxtImg
               v-if="friend.avatar"
               :src="friend.avatar"
-              :alt="`${friend.name} 的头像`"
+              :alt="t('friends.avatar', { name: friend.name })"
               width="48"
               height="48"
               loading="lazy"
@@ -67,7 +68,7 @@ const { data: friends } = await useAsyncData('friends', () =>
           class="py-16 text-center"
         >
           <p class="text-sm text-muted">
-            暂无友链，可添加 <code class="rounded bg-elevated px-1.5 py-0.5 font-mono text-xs">content/friends/*.yml</code> 文件。
+            {{ t('friends.empty') }}
           </p>
         </div>
       </UContainer>

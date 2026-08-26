@@ -1,0 +1,197 @@
+{
+  "site": {
+    "name": "陈大黄",
+    "description": "陈大黄的个人作品与内容陈列站。收录项目、教程、技能、文章和帖子。"
+  },
+  "nav": {
+    "home": "首页",
+    "projects": "项目",
+    "playbooks": "教程",
+    "skills": "技能",
+    "blog": "博客",
+    "highlights": "帖子",
+    "menu": "菜单",
+    "openMenu": "打开导航菜单"
+  },
+  "sections": {
+    "blog": "博客",
+    "project": "项目",
+    "playbook": "教程",
+    "skill": "技能",
+    "highlight": "帖子"
+  },
+  "search": {
+    "label": "搜索",
+    "shortcut": "搜索 (Cmd+K)",
+    "placeholder": "搜索博客、项目、教程、技能、帖子…",
+    "empty": "输入关键词开始搜索全站内容",
+    "noResults": "没有找到「{query}」相关内容"
+  },
+  "theme": {
+    "toDark": "切换到深色模式",
+    "toLight": "切换到浅色模式"
+  },
+  "footer": {
+    "rss": "RSS 订阅",
+    "onX": "陈大黄 on X",
+    "onGithub": "陈大黄 on GitHub"
+  },
+  "a11y": {
+    "skipToContent": "跳到主要内容"
+  },
+  "hero": {
+    "highlights": "精华帖子",
+    "blogPosts": "博客文章",
+    "projects": "项目",
+    "githubStars": "GitHub Stars"
+  },
+  "landing": {
+    "shareHighlight": "来自陈大黄的精华帖：{title}",
+    "linkCopied": "链接已复制，快去分享吧",
+    "likes": "赞",
+    "bookmarks": "收藏",
+    "original": "原文",
+    "about": "关于我",
+    "aboutTitle": "独立开发者，折腾 Cloudflare 与 AI 效率工具",
+    "aboutBody": "前 AI 产品经理，现在专注于独立开发：把 AI、Cloudflare 和内容创作组合成自己的产品与工作流。项目、教程和博客都是我探索过程的公开记录——如果你也在做类似的事，欢迎交流。",
+    "support": "爱发电 · 支持我",
+    "xLink": "X（原 Twitter）",
+    "xDesc": "日常更新、碎碎念与干货分享",
+    "githubLink": "GitHub",
+    "githubDesc": "项目源码与教程仓库",
+    "rssLink": "RSS 订阅",
+    "rssDesc": "博客更新第一时间推送到阅读器",
+    "work": "作品",
+    "recentProjects": "最近在做的项目",
+    "viewAllProjects": "查看全部项目",
+    "readMore": "读全文"
+  },
+  "projects": {
+    "tryOnline": "在线体验",
+    "github": "GitHub",
+    "view": "查看 {title}",
+    "preview": "{title} 项目预览"
+  },
+  "playbooks": {
+    "readOnline": "在线阅读",
+    "viewOnGithub": "在 GitHub 查看"
+  },
+  "skills": {
+    "readOnline": "在线阅读",
+    "viewOnGithub": "在 GitHub 查看"
+  },
+  "highlights": {
+    "count": "共 {count} 条。可按主题分组、时间线或热度浏览，也可搜索关键词、筛分类、点击标题展开正文。",
+    "xHome": "X 主页",
+    "searchPosts": "搜索帖子",
+    "searchPlaceholder": "搜标题或内容关键词…",
+    "expandAll": "全部展开",
+    "collapseAll": "全部收起",
+    "viewMode": "展示方式",
+    "filterTheme": "主题筛选",
+    "all": "全部",
+    "hot": "热门",
+    "hotTitle": "热门帖子",
+    "likes": "赞",
+    "bookmarks": "收藏",
+    "reposts": "转发",
+    "views": "浏览",
+    "viewOnX": "在 X 查看原文",
+    "noMatch": "没有匹配的帖子，换个关键词试试。",
+    "noPosts": "这个筛选下暂时没有帖子。",
+    "countSuffix": "条"
+  },
+  "blog": {
+    "count": "共 {count} 篇文章。可按关键词搜索或按标签筛选。",
+    "archive": "归档",
+    "tags": "标签",
+    "rss": "RSS 订阅",
+    "searchPlaceholder": "搜索文章标题、描述或标签…",
+    "all": "全部",
+    "found": "找到 {count} 篇",
+    "tagFilter": "标签「{tag}」",
+    "keywordFilter": "关键词「{keyword}」",
+    "pinned": "置顶",
+    "pinnedTitle": "置顶文章",
+    "original": "原创",
+    "originalTitle": "本站原创文章",
+    "noMatch": "没有找到匹配的文章，换个关键词或标签试试。",
+    "minutes": "分钟"
+  },
+  "archive": {
+    "title": "归档",
+    "description": "按年份归档的全部博客文章。",
+    "count": "共 {count} 篇文章，按年份整理。",
+    "posts": "篇"
+  },
+  "tags": {
+    "title": "标签",
+    "description": "按标签浏览全部博客文章。",
+    "count": "共 {count} 个标签，点击查看对应文章。",
+    "all": "全部",
+    "allPosts": "全部文章",
+    "underTag": "标签「{tag}」下的文章",
+    "empty": "该标签下暂无文章。"
+  },
+  "friends": {
+    "empty": "暂无友链，可添加 content/friends/*.yml 文件。",
+    "avatar": "{name} 的头像"
+  },
+  "post": {
+    "allPosts": "全部文章",
+    "updated": "更新于 {date}",
+    "minRead": "{count} 分钟阅读",
+    "original": "原创",
+    "sourceX": "原文来自 X",
+    "indieDev": "独立开发者",
+    "collapseToc": "收起目录",
+    "viewToc": "查看目录",
+    "toc": "目录",
+    "shareHint": "如果你觉得有用，欢迎转发给朋友。",
+    "shareToX": "转发到 X",
+    "xOriginal": "X 原文",
+    "copyLink": "复制链接",
+    "share": "分享",
+    "related": "相关阅读",
+    "subscribe": "订阅更新",
+    "subscribeDesc": "新文章会同步到 RSS，也可以在 X 上关注我。",
+    "rss": "RSS 订阅",
+    "followX": "关注 X",
+    "support": "支持我",
+    "backToTop": "回到顶部",
+    "linkCopied": "文章链接已复制到剪贴板",
+    "shareText": "来自陈大黄的博客：{title}"
+  },
+  "error": {
+    "title": "页面没找到",
+    "description": "这个页面不存在或已移走。"
+  },
+  "seo": {
+    "notFound": "页面未找到"
+  },
+  "highlightsCategories": {
+    "cloudflare": "Cloudflare",
+    "cloudflareDesc": "边缘云、Workers、免费基建与部署经验",
+    "tools": "工具清单",
+    "toolsDesc": "软件、插件、硬件与效率工具推荐",
+    "ai": "AI 思考",
+    "aiDesc": "模型、Agent、知识管理与协作方法",
+    "product": "产品开发",
+    "productDesc": "独立开发、技术栈与产品判断",
+    "opc": "OPC 创业",
+    "opcDesc": "一人公司、注册园区与经营实操",
+    "growth": "内容增长",
+    "growthDesc": "X 运营、发帖方法与涨粉复盘",
+    "essay": "人文随笔",
+    "essayDesc": "价值、幽默与非工具视角的观察"
+  },
+  "highlightViewModes": {
+    "theme": "按主题",
+    "themeDesc": "按分类分组浏览",
+    "timeline": "时间线",
+    "timelineDesc": "按发布时间倒序",
+    "heat": "按热度",
+    "heatDesc": "按点赞与互动排序"
+  },
+  "monthLabel": "{year} 年 {month} 月"
+}

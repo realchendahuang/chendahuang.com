@@ -7,6 +7,8 @@ defineProps<{
   page: IndexCollectionItem
 }>()
 
+const { t } = useI18n()
+
 const { data: posts } = await useContentSection<BlogSummary>('home-blog', {
   collection: 'blog',
   select: ['path', 'title', 'description', 'date', 'minRead', 'pinned'],
@@ -51,7 +53,7 @@ const { data: posts } = await useContentSection<BlogSummary>('home-blog', {
               size="xs"
               variant="link"
               class="px-0 gap-0"
-              label="读全文"
+              :label="t('landing.readMore')"
             >
               <template #trailing>
                 <UIcon

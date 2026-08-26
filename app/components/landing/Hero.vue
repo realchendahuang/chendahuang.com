@@ -3,23 +3,24 @@ import type { IndexCollectionItem } from '@nuxt/content'
 import type { ProjectSummary } from '~/types/content'
 
 const { footer, global } = useAppConfig()
+const { t, locale } = useI18n()
 
 defineProps<{
   page: IndexCollectionItem
 }>()
 
-const { data: stats } = await useAsyncData('hero-stats', async () => {
+const { data: stats } = await useAsyncData(`hero-stats:${locale.value}`, async () => {
   const [highlightsCount, postsCount, projects] = await Promise.all([
-    queryCollection('highlights').count() as unknown as Promise<number>,
-    queryCollection('blog').count() as unknown as Promise<number>,
-    queryCollection('projects').all() as Promise<ProjectSummary[]>
+    queryCollection('highlights').where('locale', '=', locale.value).count() as unknown as Promise<number>,
+    queryCollection('blog').where('locale', '=', locale.value).count() as unknown as Promise<number>,
+    queryCollection('projects').where('locale', '=', locale.value).all() as Promise<ProjectSummary[]>
   ])
   const stars = projects.reduce((sum, project) => sum + (project.stars ?? 0), 0)
   return [
-    { label: '精华帖子', value: highlightsCount, to: '/highlights' },
-    { label: '博客文章', value: postsCount, to: '/blog' },
-    { label: '项目', value: projects.length, to: '/projects' },
-    { label: 'GitHub Stars', value: stars, to: 'https://github.com/realchendahuang' }
+    { label: t('hero.highlights'), value: highlightsCount, to: '/highlights' },
+    { label: t('hero.blogPosts'), value: postsCount, to: '/blog' },
+    { label: t('hero.projects'), value: projects.length, to: '/projects' },
+    { label: t('hero.githubStars'), value: stars, to: 'https://github.com/realchendahuang' }
   ]
 })
 </script>

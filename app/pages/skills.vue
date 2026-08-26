@@ -1,8 +1,9 @@
 <script setup lang="ts">
 const { page } = useCollectionPageSeo('/skills')
+const { t, locale } = useI18n()
 
-const { data: skills } = await useAsyncData('skills', () => {
-  return queryCollection('skills').order('date', 'DESC').all()
+const { data: skills } = await useAsyncData(`skills:${locale.value}`, () => {
+  return queryCollection('skills').where('locale', '=', locale.value).order('date', 'DESC').all()
 })
 </script>
 
@@ -83,14 +84,14 @@ const { data: skills } = await useAsyncData('skills', () => {
                 v-if="skill.onlineUrl"
                 :to="skill.onlineUrl"
                 target="_blank"
-                label="在线阅读"
+                :label="t('skills.readOnline')"
                 trailing-icon="i-lucide-arrow-up-right"
                 color="neutral"
               />
               <UButton
                 :to="skill.url"
                 target="_blank"
-                aria-label="在 GitHub 查看"
+                :aria-label="t('skills.viewOnGithub')"
                 icon="i-simple-icons-github"
                 color="neutral"
                 variant="soft"

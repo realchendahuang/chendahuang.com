@@ -2,9 +2,9 @@ import { describe, it, expect } from 'vitest'
 import { matchKeyword, buildHaystack, filterHits, type SearchHit } from './useSearchIndex'
 
 const sample: SearchHit[] = [
-  { title: 'Cloudflare 穷鬼全家桶', description: '独立开发者的零成本技术栈', to: '/blog/cf', section: '博客' },
-  { title: 'AI Chronicle', description: 'AI 行业编年史', to: '/projects/ai-chronicle', section: '项目' },
-  { title: 'DeepSeek V4 Flash', description: '便宜好用', to: '/blog/deepseek', section: '博客' }
+  { title: 'Cloudflare 穷鬼全家桶', description: '独立开发者的零成本技术栈', to: '/blog/cf', section: 'blog' },
+  { title: 'AI Chronicle', description: 'AI 行业编年史', to: '/projects/ai-chronicle', section: 'project' },
+  { title: 'DeepSeek V4 Flash', description: '便宜好用', to: '/blog/deepseek', section: 'blog' }
 ]
 
 describe('matchKeyword', () => {
@@ -30,10 +30,10 @@ describe('buildHaystack', () => {
     const haystack = buildHaystack({
       title: 'A',
       description: 'B',
-      section: '博客',
+      section: 'blog',
       category: 'AI'
     })
-    expect(haystack).toBe('a b ai 博客')
+    expect(haystack).toBe('a b ai blog')
   })
 })
 
@@ -52,6 +52,6 @@ describe('filterHits', () => {
   })
 
   it('limit applied after filter', () => {
-    expect(filterHits(sample, '博客', 1)).toHaveLength(1)
+    expect(filterHits(sample, 'blog', 1)).toHaveLength(1)
   })
 })

@@ -4,19 +4,25 @@ import {
   formatCount,
   formatMonthLabel,
   getHighlightCategory,
+  getHighlightCategoryLabel,
+  getHighlightCategoryDescription,
+  getHighlightViewModeLabel,
+  getHighlightViewModeDescription,
   HIGHLIGHT_CATEGORIES,
   HIGHLIGHT_VIEW_MODES,
   type HighlightCategoryId,
   type HighlightViewMode
 } from '~/utils/content/highlights'
 
-const { data } = await useAsyncData('highlights-page-with-data', async () => {
+const { t, locale } = useI18n()
+
+const { data } = await useAsyncData(`highlights-page-with-data:${locale.value}`, async () => {
   const [pageResult, highlightsResult] = await Promise.all([
-    queryCollection('pages').path('/highlights').first(),
-    queryCollection('highlights').all()
+    queryCollection('pages').where('locale', '=', locale.value).path('/highlights').first(),
+    queryCollection('highlights').where('locale', '=', locale.value).all()
   ])
   if (!pageResult) {
-    throw createError({ statusCode: 404, statusMessage: '页面未找到', fatal: true })
+    throw createError({ statusCode: 404, statusMessage: t('seo.notFound'), fatal: true })
   }
   return {
     page: pageResult as PagesCollectionItem,
@@ -200,8 +206,8 @@ const displaySections = computed<DisplaySection[]>(() => {
     return HIGHLIGHT_CATEGORIES
       .map(category => ({
         id: category.id,
-        label: category.label,
-        description: `${category.description} · ${source.filter(item => item.category === category.id).length} 条`,
+        label: getHighlightCategoryLabel(category.id, t),
+        description: `${getHighlightCategoryDescription(category.id, t)} · ${source.filter(item => item.category === category.id).length} ${t('highlights.countSuffix')}`,
         showCategoryBadge: false,
         items: source.filter(item => item.category === category.id),
         panelId: `theme-${category.id}`
@@ -224,7 +230,7 @@ const displaySections = computed<DisplaySection[]>(() => {
     return [...groups.entries()].map(([label, items]) => ({
       id: label,
       label,
-      description: `${items.length} 条`,
+      description: `${items.length} ${t('highlights.countSuffix')}`,
       sticky: true,
       showCategoryBadge: true,
       items,
@@ -258,14 +264,14 @@ const setCategory = (category: HighlightCategoryId | 'all') => {
             {{ page.title }}
           </h1>
           <p class="mt-3 max-w-2xl text-sm leading-6 text-muted sm:text-base">
-            共 {{ allHighlights.length }} 条。可按主题分组、时间线或热度浏览，也可搜索关键词、筛分类、点击标题展开正文。
+            {{ t('highlights.count', { count: allHighlights.length }) }}
           </p>
         </div>
 
         <UButton
           to="https://x.com/realchendahuang"
           target="_blank"
-          label="X 主页"
+          :label="t('highlights.xHome')"
           icon="i-simple-icons-x"
           color="neutral"
           variant="soft"
@@ -282,13 +288,13 @@ const setCategory = (category: HighlightCategoryId | 'all') => {
         <div class="grid gap-4 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-end">
           <div>
             <p class="mb-2 text-xs text-dimmed">
-              搜索帖子
+              {{ t('highlights.searchPosts') }}
             </p>
             <UInput
               v-model="searchQuery"
               size="md"
               icon="i-lucide-search"
-              placeholder="搜标题或内容关键词…"
+              :placeholder="t('highlights.searchPlaceholder')"
               class="w-full max-w-md"
               :ui="{ trailing: 'pe-0' }"
             />
@@ -299,7 +305,7 @@ const setCategory = (category: HighlightCategoryId | 'all') => {
               size="sm"
               color="neutral"
               variant="ghost"
-              label="全部展开"
+              :label="t('highlights.expandAll')"
               icon="i-lucide-chevrons-down-up"
               :disabled="!filteredHighlights.length"
               @click="expandAll"
@@ -308,7 +314,7 @@ const setCategory = (category: HighlightCategoryId | 'all') => {
               size="sm"
               color="neutral"
               variant="ghost"
-              label="全部收起"
+              :label="t('highlights.collapseAll')"
               icon="i-lucide-chevrons-up-down"
               :disabled="!filteredHighlights.length"
               @click="collapseAll"
@@ -318,7 +324,7 @@ const setCategory = (category: HighlightCategoryId | 'all') => {
 
         <div>
           <p class="mb-2 text-xs text-dimmed">
-            展示方式
+            {{ t('highlights.viewMode') }}
           </p>
           <div class="flex flex-wrap gap-2">
             <UButton
@@ -327,8 +333,8 @@ const setCategory = (category: HighlightCategoryId | 'all') => {
               size="sm"
               color="neutral"
               :variant="viewMode === mode.id ? 'solid' : 'soft'"
-              :label="mode.label"
-              :title="mode.description"
+              :label="getHighlightViewModeLabel(mode.id, t)"
+              :title="getHighlightViewModeDescription(mode.id, t)"
               @click="setViewMode(mode.id)"
             />
           </div>
@@ -336,14 +342,14 @@ const setCategory = (category: HighlightCategoryId | 'all') => {
 
         <div>
           <p class="mb-2 text-xs text-dimmed">
-            主题筛选
+            {{ t('highlights.filterTheme') }}
           </p>
           <div class="flex flex-wrap gap-2">
             <UButton
               size="sm"
               color="neutral"
               :variant="activeCategory === 'all' ? 'solid' : 'soft'"
-              :label="`全部 ${allHighlights.length}`"
+              :label="`${t('highlights.all')} ${allHighlights.length}`"
               @click="setCategory('all')"
             />
             <UButton
@@ -352,8 +358,8 @@ const setCategory = (category: HighlightCategoryId | 'all') => {
               size="sm"
               color="neutral"
               :variant="activeCategory === category.id ? 'solid' : 'soft'"
-              :label="`${category.label} ${categoryCounts[category.id] || 0}`"
-              :title="category.description"
+              :label="`${getHighlightCategoryLabel(category.id, t)} ${categoryCounts[category.id] || 0}`"
+              :title="getHighlightCategoryDescription(category.id, t)"
               @click="setCategory(category.id)"
             >
               <template #leading>
@@ -421,7 +427,7 @@ const setCategory = (category: HighlightCategoryId | 'all') => {
                       v-if="getHighlightCategory(item.category)"
                       class="size-1.5 shrink-0 rounded-full"
                       :style="{ backgroundColor: getHighlightCategory(item.category)?.color }"
-                      :title="getHighlightCategory(item.category)?.label"
+                      :title="getHighlightCategoryLabel(item.category, t)"
                     />
                     <time :datetime="toIsoDate(item.date)">
                       {{ formatDisplayDate(item.date) }}
@@ -429,24 +435,24 @@ const setCategory = (category: HighlightCategoryId | 'all') => {
                     <span
                       v-if="(item.likes ?? 0) >= 1000"
                       class="inline-flex items-center gap-1 rounded-full bg-amber-500/10 px-2 py-0.5 font-medium text-amber-600 dark:text-amber-400"
-                      title="热门帖子"
+                      :title="t('highlights.hotTitle')"
                     >
                       <UIcon
                         name="i-lucide-flame"
                         class="size-3"
                       />
-                      热门
+                      {{ t('highlights.hot') }}
                     </span>
                     <span
                       v-if="section.showCategoryBadge && getHighlightCategory(item.category)"
                       class="rounded-full bg-elevated px-2 py-0.5 text-muted"
                     >
-                      {{ getHighlightCategory(item.category)?.label }}
+                      {{ getHighlightCategoryLabel(item.category, t) }}
                     </span>
-                    <span>{{ formatCount(item.likes) }} 赞</span>
-                    <span v-if="item.bookmarks">{{ formatCount(item.bookmarks) }} 收藏</span>
-                    <span v-if="item.reposts">{{ formatCount(item.reposts) }} 转发</span>
-                    <span v-if="item.views">{{ formatCount(item.views) }} 浏览</span>
+                    <span>{{ formatCount(item.likes) }} {{ t('highlights.likes') }}</span>
+                    <span v-if="item.bookmarks">{{ formatCount(item.bookmarks) }} {{ t('highlights.bookmarks') }}</span>
+                    <span v-if="item.reposts">{{ formatCount(item.reposts) }} {{ t('highlights.reposts') }}</span>
+                    <span v-if="item.views">{{ formatCount(item.views) }} {{ t('highlights.views') }}</span>
                   </div>
 
                   <h3 class="mt-3 max-w-3xl text-xl font-semibold tracking-[-0.02em] text-highlighted transition-colors group-hover:text-primary sm:text-2xl">
@@ -481,7 +487,7 @@ const setCategory = (category: HighlightCategoryId | 'all') => {
                   size="sm"
                   color="neutral"
                   variant="soft"
-                  label="在 X 查看原文"
+                  :label="t('highlights.viewOnX')"
                   trailing-icon="i-lucide-arrow-up-right"
                 />
               </div>
@@ -493,7 +499,7 @@ const setCategory = (category: HighlightCategoryId | 'all') => {
           v-else
           class="py-16 text-center text-sm text-muted"
         >
-          {{ isSearching ? '没有匹配的帖子，换个关键词试试。' : '这个筛选下暂时没有帖子。' }}
+          {{ isSearching ? t('highlights.noMatch') : t('highlights.noPosts') }}
         </p>
       </UContainer>
     </section>

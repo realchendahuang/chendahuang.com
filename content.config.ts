@@ -28,8 +28,12 @@ export default defineContentConfig({
   collections: {
     index: defineCollection({
       type: 'page',
-      source: 'index.yml',
+      source: [
+        { include: 'index.yml' },
+        { include: 'index.en.yml' }
+      ],
       schema: z.object({
+        locale: z.string().default('zh'),
         hero: z.object({
           links: z.array(createButtonSchema()).default([]),
           images: z.array(createImageSchema()).default([])
@@ -45,6 +49,7 @@ export default defineContentConfig({
       type: 'page',
       source: 'blog/*.md',
       schema: z.object({
+        locale: z.string().default('zh'),
         minRead: z.number(),
         date: z.date(),
         updated: z.date().optional(),
@@ -61,13 +66,20 @@ export default defineContentConfig({
       type: 'page',
       source: [
         { include: 'blog.yml' },
+        { include: 'blog.en.yml' },
         { include: 'projects.yml' },
+        { include: 'projects.en.yml' },
         { include: 'playbooks.yml' },
+        { include: 'playbooks.en.yml' },
         { include: 'skills.yml' },
+        { include: 'skills.en.yml' },
         { include: 'highlights.yml' },
-        { include: 'friends.yml' }
+        { include: 'highlights.en.yml' },
+        { include: 'friends.yml' },
+        { include: 'friends.en.yml' }
       ],
       schema: z.object({
+        locale: z.string().default('zh'),
         links: z.array(createButtonSchema()).default([])
       })
     }),
@@ -75,6 +87,7 @@ export default defineContentConfig({
       type: 'data',
       source: 'projects/*.yml',
       schema: z.object({
+        locale: z.string().default('zh'),
         title: z.string().nonempty(),
         description: z.string().nonempty(),
         type: z.string().nonempty(),
@@ -94,6 +107,7 @@ export default defineContentConfig({
       type: 'data',
       source: 'playbooks/*.yml',
       schema: z.object({
+        locale: z.string().default('zh'),
         title: z.string().nonempty(),
         description: z.string().nonempty(),
         url: z.string().nonempty(),
@@ -110,6 +124,7 @@ export default defineContentConfig({
       type: 'data',
       source: 'skills/*.yml',
       schema: z.object({
+        locale: z.string().default('zh'),
         title: z.string().nonempty(),
         description: z.string().nonempty(),
         url: z.string().nonempty(),
@@ -126,6 +141,7 @@ export default defineContentConfig({
       type: 'data',
       source: 'highlights/*.yml',
       schema: z.object({
+        locale: z.string().default('zh'),
         title: z.string().nonempty(),
         description: z.string().nonempty(),
         category: z.enum([
@@ -150,6 +166,7 @@ export default defineContentConfig({
       type: 'data',
       source: 'friends/*.yml',
       schema: z.object({
+        locale: z.string().default('zh'),
         name: z.string().nonempty(),
         description: z.string().nonempty(),
         url: z.string().url(),

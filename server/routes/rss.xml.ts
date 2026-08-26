@@ -4,6 +4,7 @@ import { escapeXml, SITE_DESCRIPTION, SITE_NAME, SITE_URL, toCanonicalUrl, toIso
 
 export default defineEventHandler(async (event) => {
   const posts = await queryCollection(event, 'blog')
+    .where('locale', '=', 'zh')
     .select('path', 'title', 'description', 'date', 'body')
     .order('date', 'DESC')
     .all()

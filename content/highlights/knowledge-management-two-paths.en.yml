@@ -1,0 +1,56 @@
+category: ai
+title: "Two paths of knowledge management: Feishu workflow vs. Cloudflare productization"
+description: "Recently rethinking knowledge management."
+date: 2026-07-08
+likes: 3
+bookmarks: 2
+reposts: 0
+views: 439
+url: https://x.com/realchendahuang/status/2074900341456503169
+content: |
+  Recently rethinking knowledge management.
+
+  I found there are actually two paths here.
+
+  **One is building on Feishu.**
+
+  Its advantages are very direct:
+
+  Free, multi-device sync, shareable, convenient collaboration, and rich enough in form.
+
+  Documents, multi-dimensional tables, spreadsheets, slides, canvas, Todo, and knowledge bases — these modules combined already cover many personal and team knowledge management scenarios.
+
+  I especially favor multi-dimensional tables.
+
+  They're well suited as a knowledge hub.
+
+  Information collection, material archiving, status management, structured organization, and content reproduction can all revolve around them.
+
+  Add Feishu CLI and AI Agents, and Feishu is no longer just an office tool.
+
+  It's more like a knowledge workflow system that can be operated by Agents.
+
+  **The other path is self-building on Cloudflare.**
+
+  This path is freer and more suited to productization.
+
+  For example, the FlareMo I'm building now is an attempt to build a knowledge management product on Cloudflare.
+
+  Cloudflare's advantage is that its underlying capabilities are very complete:
+
+  Frontend, backend, database, object storage, vector search, and AI capabilities can all be combined.
+
+  But it requires development.
+
+  And you need to design the data structure, search experience, permission system, and product logic yourself.
+
+  So my current judgment is:
+
+  - Feishu is good for quickly setting up a knowledge management system you can use right away.
+  - Cloudflare is good for turning knowledge management into a truly controllable, iterable product.
+
+  Both paths are worth studying.
+
+  One leans toward workflow.
+
+  One leans toward productization.

@@ -1,0 +1,10 @@
+title: Cloudflare Playbook
+description: From feature modules, AI coding workflows, and billing, to common architectures and real-world pitfalls — a Chinese handbook that explains Cloudflare clearly.
+url: https://github.com/realchendahuang/cloudflare-playbook
+onlineUrl: https://chendahuang.com/playbook/cloudflare/
+icon: i-simple-icons-cloudflare
+color: "#F38020"
+tags: ["Cloudflare", "AI coding", "Workers", "Deployment", "Architecture"]
+date: 2025-01-01
+status: ongoing
+stars: 69

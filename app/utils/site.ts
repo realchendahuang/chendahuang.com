@@ -19,8 +19,8 @@ export const toAbsoluteUrl = (url: string) => new URL(url, SITE_URL).toString()
 
 export const toIsoDate = (date: string | Date) => new Date(date).toISOString()
 
-export const formatDisplayDate = (date: string | Date) => {
-  return new Intl.DateTimeFormat('zh-CN', {
+export const formatDisplayDate = (date: string | Date, locale: string = 'zh-CN') => {
+  return new Intl.DateTimeFormat(locale, {
     year: 'numeric',
     month: 'long',
     day: 'numeric',
@@ -28,8 +28,8 @@ export const formatDisplayDate = (date: string | Date) => {
   }).format(new Date(date))
 }
 
-export const formatShortDate = (date: string | Date) => {
-  return new Intl.DateTimeFormat('zh-CN', {
+export const formatShortDate = (date: string | Date, locale: string = 'zh-CN') => {
+  return new Intl.DateTimeFormat(locale, {
     year: 'numeric',
     month: '2-digit',
     day: '2-digit',

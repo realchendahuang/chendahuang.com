@@ -31,3 +31,6 @@ logs
 
 # Wrangler local state
 .wrangler
+
+# ZCode agent artifacts
+.zcode

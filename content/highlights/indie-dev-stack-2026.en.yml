@@ -1,0 +1,39 @@
+category: product
+title: "2026 indie app best practices: Web + PWA first"
+description: "Sharing my hard-won indie development lessons from over a year of blood and tears."
+date: 2026-06-22
+likes: 263
+bookmarks: 422
+reposts: 46
+views: 37055
+url: https://x.com/realchendahuang/status/2069042963280503182
+content: |
+  Sharing my hard-won indie development lessons from over a year of blood and tears.
+
+  In 2026, for indie developers wanting to build an app, the best practice is:
+
+  **Do Web + PWA first in the MVP stage.** Fast to develop, fast to debug, fast to iterate.
+
+  Web tech stack:
+
+  React + TanStack Start + Vite + TypeScript + shadcn/ui + Base UI + Tailwind CSS + better-auth + Vercel AI SDK + oxfmt / oxlint
+
+  Unified backend:
+
+  Hono + Cloudflare Workers
+
+  Web debugging:
+
+  Chrome DevTools MCP + Codex Chrome extension
+
+  Once the product is actually running, then build the mobile side.
+
+  Mobile tech stack:
+
+  React Native + Expo + Expo Router + NativeWind + React Native Reusables + Reanimated + Gesture Handler + EAS Build / Submit / Update
+
+  The core idea is simple:
+
+  First validate the demand with Web + PWA.
+
+  Once you really have users, then build the app with React Native + Expo.

@@ -1,0 +1,20 @@
+category: cloudflare
+title: "AI writing Cloudflare projects fails, and it's not about syntax"
+description: "AI often writes Workers like Node.js and treats Bindings like environment variables."
+date: 2026-06-22
+likes: 23
+bookmarks: 42
+reposts: 4
+views: 1462
+url: https://x.com/realchendahuang/status/2068853978004365739
+content: |
+  Many people use AI to write Cloudflare projects, and the failure isn't about syntax.
+  The real problems are:
+  AI often writes Workers like Node.js
+  treats Bindings like process.env
+  forgets await
+  randomly uses global variables to store request state
+  doesn't know static asset requests are free
+  calls its own R2 from a Worker via the REST API
+  I've organized all these pitfalls into the Cloudflare Playbook.
+  Also wrote

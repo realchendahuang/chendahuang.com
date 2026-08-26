@@ -34,9 +34,11 @@ export type ContentSectionOptions<T> = {
 
 export function useContentSection<T>(key: string, options: ContentSectionOptions<T>) {
   const { collection, select, order, limit, filter, sort } = options
+  const { locale } = useI18n()
 
-  return useAsyncData(`section:${key}`, async () => {
+  return useAsyncData(`section:${key}:${locale.value}`, async () => {
     const items = await queryCollection(collection)
+      .where('locale', '=', locale.value)
       .select(...select as never[])
       .all() as unknown as T[]
 

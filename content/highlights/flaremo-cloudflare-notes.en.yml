@@ -1,0 +1,21 @@
+category: cloudflare
+title: "FlareMo: a note app built on the Cloudflare-native stack"
+description: "A note app natively developed on the Cloudflare tech stack — FlareMo."
+date: 2026-06-28
+likes: 140
+bookmarks: 175
+reposts: 19
+views: 16452
+url: https://x.com/realchendahuang/status/2071232962520285429
+content: |
+  A note app natively developed on the Cloudflare tech stack — FlareMo.
+
+  Register a free Cloudflare account, and after deployment you get 10G of file storage and 5G of data storage.
+
+  Free forever, no cost for equipment, no cost for traffic, data backed up in multiple locations, with built-in high availability.
+
+  Served in the cloud 24/7, fully compatible with the Memos ecosystem.
+
+  Development progress at the time: spent a day completing the overall basic functionality, already fully usable.
+
+  Later I'll add more usage and deployment tutorials, engineering test cases, AI Agent-related tech, and multi-platform support. Build in public.

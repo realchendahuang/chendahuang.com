@@ -6,6 +6,7 @@ export default defineNuxtConfig({
     '@nuxt/ui',
     '@nuxt/content',
     '@vueuse/nuxt',
+    '@nuxtjs/i18n',
     'nuxt-og-image',
     'nuxt-llms',
     'motion-v/nuxt'
@@ -31,6 +32,7 @@ export default defineNuxtConfig({
 
   routeRules: {
     '/blog/**': { prerender: true },
+    '/en/blog/**': { prerender: true },
     '/projects': { prerender: true },
     '/rss.xml': { prerender: true },
     '/sitemap.xml': { prerender: true }
@@ -56,12 +58,28 @@ export default defineNuxtConfig({
         '/archive/',
         '/tags',
         '/tags/',
-        '/search',
-        '/search/',
         '/friends',
         '/friends/',
         '/highlights',
         '/highlights/',
+        '/en',
+        '/en/',
+        '/en/projects',
+        '/en/projects/',
+        '/en/playbooks',
+        '/en/playbooks/',
+        '/en/skills',
+        '/en/skills/',
+        '/en/blog',
+        '/en/blog/',
+        '/en/archive',
+        '/en/archive/',
+        '/en/tags',
+        '/en/tags/',
+        '/en/friends',
+        '/en/friends/',
+        '/en/highlights',
+        '/en/highlights/',
         '/rss.xml',
         '/sitemap.xml',
         '/llms.txt',
@@ -72,6 +90,17 @@ export default defineNuxtConfig({
     }
   },
 
+  hooks: {
+    'content:file:afterParse': (ctx) => {
+      const id = String(ctx.content.id ?? '')
+      const isEn = /\.en(\.|$)/.test(id)
+      ctx.content.locale = isEn ? 'en' : 'zh'
+      if (isEn && typeof ctx.content.path === 'string') {
+        ctx.content.path = ctx.content.path.replace(/\.en$/, '')
+      }
+    }
+  },
+
   eslint: {
     config: {
       stylistic: {
@@ -79,6 +108,17 @@ export default defineNuxtConfig({
         braceStyle: '1tbs'
       }
     }
+  },
+
+  i18n: {
+    locales: [
+      { code: 'zh', language: 'zh-CN', name: '中文', file: 'zh.json' },
+      { code: 'en', language: 'en', name: 'English', file: 'en.json' }
+    ],
+    defaultLocale: 'zh',
+    strategy: 'prefix_except_default',
+    langDir: 'locales',
+    detectBrowserLanguage: false
   },
 
   llms: {

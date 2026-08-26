@@ -1,8 +1,9 @@
 <script setup lang="ts">
 const { page } = useCollectionPageSeo('/projects')
+const { t, locale } = useI18n()
 
-const { data: projects } = await useAsyncData('projects', () => {
-  return queryCollection('projects').order('date', 'DESC').all()
+const { data: projects } = await useAsyncData(`projects:${locale.value}`, () => {
+  return queryCollection('projects').where('locale', '=', locale.value).order('date', 'DESC').all()
 })
 </script>
 
@@ -35,7 +36,7 @@ const { data: projects } = await useAsyncData('projects', () => {
           <NuxtImg
             v-if="project.image"
             :src="project.image"
-            :alt="project.imageAlt || `${project.title} 项目预览`"
+            :alt="project.imageAlt || t('projects.preview', { title: project.title })"
             width="234"
             height="234"
             loading="lazy"
@@ -104,14 +105,14 @@ const { data: projects } = await useAsyncData('projects', () => {
                   v-if="project.onlineUrl"
                   :to="project.onlineUrl"
                   target="_blank"
-                  label="在线体验"
+                  :label="t('projects.tryOnline')"
                   trailing-icon="i-lucide-arrow-up-right"
                   color="neutral"
                 />
                 <UButton
                   :to="project.url"
                   target="_blank"
-                  label="GitHub"
+                  :label="t('projects.github')"
                   icon="i-simple-icons-github"
                   color="neutral"
                   variant="soft"
@@ -124,11 +125,11 @@ const { data: projects } = await useAsyncData('projects', () => {
               :to="project.onlineUrl || project.url"
               target="_blank"
               class="group order-1 block overflow-hidden rounded-xl border border-default bg-elevated shadow-sm lg:order-2"
-              :aria-label="`查看 ${project.title}`"
+              :aria-label="t('projects.view', { title: project.title })"
             >
               <NuxtImg
                 :src="project.image"
-                :alt="project.imageAlt || `${project.title} 项目预览`"
+                :alt="project.imageAlt || t('projects.preview', { title: project.title })"
                 width="1280"
                 height="720"
                 loading="lazy"

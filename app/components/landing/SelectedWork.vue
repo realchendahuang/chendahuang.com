@@ -2,6 +2,8 @@
 import type { ProjectSummary } from '~/types/content'
 import { sortProjectsByDate, useContentSection } from '~/composables/useContentSection'
 
+const { t } = useI18n()
+
 const { data: projects } = await useContentSection<ProjectSummary>('home-projects', {
   collection: 'projects',
   select: ['title', 'description', 'url', 'onlineUrl', 'type', 'date'],
@@ -30,10 +32,10 @@ const works = computed(() => (projects.value ?? []).map(project => ({
       <UContainer>
         <div class="grid gap-4 sm:grid-cols-[10rem_1fr] sm:gap-10">
           <p class="editorial-label pt-1">
-            作品
+            {{ t('landing.work') }}
           </p>
           <h2 class="max-w-2xl text-balance text-2xl font-semibold leading-snug tracking-[-0.03em] text-highlighted sm:text-3xl">
-            最近在做的项目
+            {{ t('landing.recentProjects') }}
           </h2>
         </div>
 
@@ -70,7 +72,7 @@ const works = computed(() => (projects.value ?? []).map(project => ({
         <div class="mt-8 flex justify-end">
           <UButton
             to="/projects"
-            label="查看全部项目"
+            :label="t('landing.viewAllProjects')"
             trailing-icon="i-lucide-arrow-right"
             color="neutral"
             variant="soft"

@@ -5,9 +5,10 @@
  * - 404 判断在内部完成:调用方拿到永远是非空的 page ref
  */
 export function useCollectionPageSeo(path: string) {
+  const { locale } = useI18n()
   const { data: page, status } = useAsyncData(
-    `page:${path}`,
-    () => queryCollection('pages').path(path).first(),
+    `page:${path}:${locale.value}`,
+    () => queryCollection('pages').where('locale', '=', locale.value).path(path).first(),
     {
       watch: [() => useRoute().path]
     }
