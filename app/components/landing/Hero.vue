@@ -18,7 +18,7 @@ const { data: stats } = await useAsyncData('hero-stats', async () => {
   return [
     { label: '精华帖子', value: highlightsCount, to: '/highlights' },
     { label: '博客文章', value: postsCount, to: '/blog' },
-    { label: '开源项目', value: projects.length, to: '/projects' },
+    { label: '项目', value: projects.length, to: '/projects' },
     { label: 'GitHub Stars', value: stars, to: 'https://github.com/realchendahuang' }
   ]
 })

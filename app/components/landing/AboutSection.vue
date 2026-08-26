@@ -5,7 +5,7 @@ const sponsorLink = computed(() => global.sponsorLink)
 
 const links = computed(() => [
   { label: 'X（原 Twitter）', icon: 'i-simple-icons-x', to: 'https://x.com/realchendahuang', description: '日常更新、碎碎念与干货分享' },
-  { label: 'GitHub', icon: 'i-simple-icons-github', to: 'https://github.com/realchendahuang', description: '开源项目与 Playbook 源码' },
+  { label: 'GitHub', icon: 'i-simple-icons-github', to: 'https://github.com/realchendahuang', description: '项目源码与 Playbook 仓库' },
   { label: 'RSS 订阅', icon: 'i-lucide-rss', to: '/rss.xml', description: '博客更新第一时间推送到阅读器' }
 ])
 </script>
