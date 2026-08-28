@@ -1,6 +1,6 @@
 category: ai
-title: "A common flaw of the GPT-5 generation: writing internal needs into the UI copy"
-description: "The root of redundant UI copy is that it never separates user-facing text from developer-facing feedback."
+title: "The GPT-5 generation's endemic flaw: writing internal requirements into UI copy"
+description: "The root of the bloated UI copy is that it never separates user-facing text from dev-facing feedback."
 date: 2026-08-12
 likes: 2
 bookmarks: 0
@@ -8,15 +8,15 @@ reposts: 1
 views: 1500
 url: https://x.com/realchendahuang/status/2087349882101370909
 content: |
-  That's so well said — this is the common flaw of the GPT-5 generation:
+  So well put — this is the GPT-5 generation's endemic flaw:
 
-  It always writes internal needs into the UI copy to prove its workload. To prove itself — oh, I really did it, see how awesome I am, I didn't slack off, I put all your requirements on the table.
+  It keeps writing internal requirements into the UI copy to prove its workload. To prove itself — oh look, I really did it, aren't I great, I didn't slack off, I've laid every one of your requirements out on the table.
 
-  And the UI copy is extremely redundant. From 5.0 iterating to 5.6, after so many generations, this problem still hasn't changed — it's in the bones.
+  And the UI copy is bloated beyond belief. From 5.0 all the way to 5.6 — generation after generation — this still hasn't been fixed. It's in the marrow.
 
-  Anyone who has actually built frontend products understands:
+  Anyone who's actually shipped frontend products knows:
 
-  - Whether small or large, all text on the interface is user-facing copy
-  - Text that should be fed back to developers in chat should never be written into the product
+  - Every bit of text on the interface, big or small, is user-facing copy
+  - Text that belongs in chat feedback to developers should never be written into the product
 
-  But it not only writes bad copy, it also often writes internal feedback into the product to "show" that it actually did something.
+  But it doesn't just write crappy copy — it often writes internal feedback into the product to "show" that it did something.

@@ -1,6 +1,6 @@
 category: ai
-title: "DeepSeek API has built-in web search — freeload the official search"
-description: "DeepSeek's official API actually has web search built in."
+title: "DeepSeek's API has built-in web search — freeloading the official search"
+description: "DeepSeek's official API actually ships with web search built in."
 date: 2026-08-05
 likes: 1037
 bookmarks: 885
@@ -8,8 +8,8 @@ reposts: 89
 views: 230537
 url: https://x.com/realchendahuang/status/2084826975102030013
 content: |
-  Found something great — DeepSeek actually built web search into its API.
-  Call the deepseek-v4-flash model via the Responses format interface, and just declare the web_search tool in the request parameters to directly use their server-side search.
-  No need to integrate a third-party search engine, no need to apply for a separate search API key.
-  The entire search flow is officially hosted.
+  Found something great — DeepSeek actually built web search straight into its API.
+  Call the deepseek-v4-flash model through the Responses interface, and just declare a web_search tool in the request parameters to use their server-side search directly.
+  No integrating a third-party search engine, no applying for a separate search API key.
+  The whole search pipeline is hosted by the official team.
   Original: https://t.co/D4AXo7crHw

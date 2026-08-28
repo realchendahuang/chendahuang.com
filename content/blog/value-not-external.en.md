@@ -19,105 +19,105 @@ author:
 
 I did something wrong.
 
-I want to reflect thoroughly and apologize thoroughly.
+I need to reflect thoroughly and apologize thoroughly.
 
-I'm always agonizing over whether something is useful, whether it has value.
+I keep agonizing over whether something is useful, whether it has value.
 
 I'm too restless.
 
 I really am a restless person.
 
-I want to completely correct this mistake, correct this mindset:
+I need to correct this mistake completely, correct this mindset:
 
 **Debating whether something has value is itself worthless.**
 
 Our value is not defined by anyone.
 
-Every day we eat, drink, sleep, zone out, and make love.
+We eat, drink, sleep, daydream, make love every day.
 
 That is our value.
 
-I think, therefore I am; I make love, therefore I feel good.
+I think, therefore I am. I make love, therefore I'm pleased.
 
-AI is called AI, but if it can't make love for me, then it has no value.
+AI is called AI, but it can't make love for me, so it has no value.
 
-People don't live to prove every day that they're useful.
+People don't live to prove themselves useful every single day.
 
-A couple of years ago I watched the TV drama *My Altay*, and one thing left a deep impression:
+A couple of years ago I watched the TV series *My Altay* (*我的阿勒泰*), and one scene stayed with me:
 
-Li Wenxiu's daughter asked her mother:
+The daughter Li Wenxiu asks her mother:
 
-"I may be clumsy, but I'm still a useful person, right?"
+"I'm clumsy, but I'm still a useful person, right?"
 
-Zhang Fengxia, the mother, replied:
+Her mother Zhang Fengxia replies:
 
-"What do you mean by useful? I didn't give birth to you so you could serve others. The trees and grass on the steppe — if someone eats them or uses them, they're called useful; if no one uses them, it's fine for them to just stay on the steppe, free and at ease."
+"What does useful even mean? We didn't give birth to you so you could serve others. The trees and grass on the prairie — useful when someone eats them or uses them; if nobody uses them, they're just fine standing there on the grassland, free and easy."
 
-My soul was deeply struck.
+My soul was struck right through.
 
-We've been trained from childhood into a tool-person mindset.
+Since childhood, we've all been trained into a tool-person mindset.
 
 - Is this thing useful?
 - Does this skill have value?
 - Can this thing be monetized?
-- Can this project improve productivity?
+- Can this project raise productivity?
 
-By the end of all this questioning, people are numb. Anxious every day, and FOMO — afraid of losing out.
+Question after question, until the person asking is worn out. Anxious all day, in FOMO, terrified of losing something.
 
-So now I think that value should never be defined externally.
+So now I believe: value is something that shouldn't be defined externally at all.
 
-You exist, you feel, you suffer, you rejoice, you love, you hate, you feel good, you laugh.
+You exist. You feel. You suffer. You rejoice. You love. You hate. You enjoy yourself. You laugh.
 
 That is value.
 
-## Back to AI
+## Then about AI
 
-What is AI's true value?
+What is AI's real value?
 
-It's people.
+People.
 
-Because AI was invented by people.
+Because AI is invented by people.
 
-When we discuss AI, we shouldn't only discuss technology, efficiency, empowerment, automation, and cost reduction.
+When we talk about AI, we shouldn't only talk about technology, efficiency, enablement, automation, cost-cutting and productivity gains.
 
-These things are of course important.
+Those things matter, of course.
 
-But AI is not just technology.
+But AI isn't merely technology.
 
-There is humanism inside it.
+There's humanism inside it.
 
-We can let it depict romance, depict love, depict friendship, depict loneliness, depict desire, even write erotica.
+We can have it depict romance, love, friendship, loneliness, desire — even write dirty books.
 
-These things are all saturated with humanism itself.
+These all carry a person's own humanism.
 
-It is romantic.
+It's romantic.
 
-It should not die out with the development of AI.
+It shouldn't die out as AI develops.
 
-So when we discuss AI, what are we actually discussing?
+So when we talk about AI, what are we actually talking about?
 
-Are we discussing AI empowering technology?
+Are we talking about AI empowering technology?
 
-Or are we discussing how AI participates in human romance?
+Or about how AI takes part in human romance?
 
-And AI can never learn human humor.
+And AI will never learn human humor.
 
-It fundamentally doesn't understand what a joke is — it can only be awkward. If it writes, it writes lame jokes.
+It has no idea what a joke is — it can only play cringe. If you ask it to write jokes, you get dad jokes.
 
-Asking AI to write jokes is itself a joke.
+Asking AI to write a joke is, in itself, the joke.
 
-## What I want to say
+## What I want to talk about
 
-I want to start by discussing AI and the human being itself.
+I want to start with AI and the human being itself.
 
 From the angle of value.
 
 From the angle of humanism.
 
-From the angle of how we specifically get along with AI.
+From the angle of how we actually live with AI.
 
-Then go deeper into the whole set of meta-skills for working with AI to improve efficiency.
+Then go deeper into the whole meta-skill set of working with AI to become more efficient.
 
 What I want to say is:
 
-**In the age of AI, how should we understand ourselves?**
+**In the age of AI, how should people understand themselves?**

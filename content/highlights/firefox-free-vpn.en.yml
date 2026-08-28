@@ -1,6 +1,6 @@
 category: tools
-title: "Firefox gives 50G of free VPN every month"
-description: "Holy crab! I just learned that the Firefox browser provides every user with 50G of free VPN traffic per month."
+title: "Firefox: 50G of free VPN every month"
+description: "What the crab! I only just found out Firefox gives every user 50G of free VPN traffic per month."
 date: 2026-06-30
 likes: 1639
 bookmarks: 2268
@@ -8,13 +8,13 @@ reposts: 372
 views: 161249
 url: https://x.com/realchendahuang/status/2071963210689970673
 content: |
-  Holy crab! I just learned that the Firefox browser provides every user with 50G of free VPN traffic per month.
+  What the crab! I only just found out the Firefox browser gives every user 50G of free VPN traffic per month.
 
-  Very helpful for the awkward chicken-and-egg scenario.
+  Extremely handy for that awkward chicken-and-egg situation.
 
   How to use:
 
   1. Type `about:config` in the address bar
-  2. Enter advanced preferences, click "Show All"
+  2. Go to advanced preferences and click "Show all"
   3. Search for `browser.ipProtection.enabled`
-  4. Toggle the entry's value to true
+  4. Flip that entry's value to true

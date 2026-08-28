@@ -1,6 +1,6 @@
 title: pi-config
-description: My out-of-the-box Pi Coding Agent configuration: 17 plugins + 18 global Skills + 2 MCP Servers, installed with a single command.
-type: AI coding assistant configuration
+description: My turnkey Pi Coding Agent setup: 17 plugins + 18 global Skills + 2 MCP servers, installed with a single command.
+type: AI coding assistant config
 url: https://github.com/realchendahuang/pi-config
 image: /projects/pi-config.webp
 imageAlt: pi-config dark-purple product card: Pi config / My Pi Coding Agent Setup

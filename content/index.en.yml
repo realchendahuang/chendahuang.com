@@ -1,8 +1,8 @@
 seo:
   title: "Chen Dahuang - Works & Content"
-  description: "Chen Dahuang's personal showcase of works and content. Featuring projects, Playbooks, Agent Skills, articles, and posts."
+  description: "Chen Dahuang's personal showcase of works and content. Featuring projects, guides, agent skills, articles, and posts."
 title: "Chen Dahuang"
-description: "Insight expert, jokester | Former AI product manager | Indie developer | Efficient language learning researcher | AI productivity tool tinkerer | All-rounder in product, design, development, operations, and sales"
+description: "Insight nerd, joke teller | Former AI product manager | Indie developer | Language-learning efficiency researcher | AI productivity tool tinkerer | All-rounder in product, design, development, operations, and sales"
 hero:
   links:
     - label: "View Projects"
@@ -14,21 +14,21 @@ hero:
       target: "_blank"
   images:
     - src: /projects/cherina-pod.webp
-      alt: Cherina Pod bilingual podcast intensive listening
+      alt: Cherina Pod bilingual podcast listening app
     - src: /projects/feedsieve.webp
-      alt: FeedSieve X feed cleanup tool
+      alt: FeedSieve, an X feed cleanup tool
     - src: /projects/flaremo.webp
       alt: FlareMo personal knowledge management
     - src: /projects/sub-store-cloudflare.webp
       alt: Sub-Store Cloudflare subscription aggregation tool
     - src: /projects/pi-config.webp
-      alt: pi-config Pi Coding Agent configuration
+      alt: pi-config, Pi Coding Agent configuration
     - src: /projects/deepmate.webp
-      alt: DeepMate AI Harness control panel
+      alt: DeepMate AI harness control panel
     - src: /projects/hermes-memory.webp
-      alt: Hermes Memory OpenCode persistent memory plugin
+      alt: Hermes Memory, persistent memory plugin for OpenCode
     - src: /projects/god-museum.webp
-      alt: God-Museum cross-civilization mythology gallery
+      alt: God-Museum, a mythology gallery across civilizations
     - src: /projects/ai-chronicle.webp
       alt: AI Chronicle industry chronicle
 blog:

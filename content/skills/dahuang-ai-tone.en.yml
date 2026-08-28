@@ -1,5 +1,5 @@
 title: Dahuang AI Tone
-description: Rewrite text into the AI style of GPT/Claude/Gemini/Doubao, or detect which model a piece of text most resembles.
+description: Rewrite text to sound like the AI style of GPT, Claude, Gemini, or Doubao — or detect which model a piece of text most resembles.
 url: https://github.com/realchendahuang/dahuang-ai-tone
 install: npx skills add realchendahuang/dahuang-ai-tone -g
 icon: i-lucide-fingerprint

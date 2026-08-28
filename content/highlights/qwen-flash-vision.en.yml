@@ -1,6 +1,6 @@
 category: ai
-title: "DeepSeek V4 Flash lacks multimodality? Patch it with Qwen-3.7-Flash"
-description: "Researched the most cost-effective image recognition model, Qwen-3.7-Flash."
+title: "DeepSeek V4 Flash missing multimodality? Patch it with Qwen-3.7-Flash"
+description: "Found the most cost-effective vision model after research: Qwen-3.7-Flash."
 date: 2026-08-06
 likes: 659
 bookmarks: 675
@@ -8,9 +8,9 @@ reposts: 78
 views: 89530
 url: https://x.com/realchendahuang/status/2085265465564336327
 content: |
-  Many people complain that Deepseek V4 Flash has no multimodality.
-  I researched and found the most cost-effective image recognition model is Qwen-3.7-Flash.
-  Recognizing one image costs 0.0004–0.001 yuan, and recognizing 1,000 ordinary images ≈ 0.6–0.8 yuan.
-  Based on the above, we've arrived at the true AI broke-ass full stack:
-  1. OpenCodeGo $5 plan using Deepseek V4 Flash to write code
+  Lots of people complain that DeepSeek V4 Flash has no multimodality.
+  I did the research: the most cost-effective vision model right now is Qwen-3.7-Flash.
+  Recognizing one image costs 0.0004–0.001 yuan; recognizing 1,000 ordinary images ≈ 0.6–0.8 yuan.
+  Based on that, we've arrived at the true broke-ass all-in-one AI stack:
+  1. The OpenCode Go $5 plan, using DeepSeek V4 Flash to write code
   2. https://t.co/mlvdSTaD6M

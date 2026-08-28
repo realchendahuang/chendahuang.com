@@ -1,6 +1,6 @@
 category: ai
-title: "DeepSeek Harness status: 150k stars and still a Developer Preview"
-description: "Influence is running ahead of engineering capability, and the peripheral ecosystem is expanding very fast."
+title: "DeepSeek Harness today: 150k stars and still a Developer Preview"
+description: "Influence is running ahead of engineering maturity, and the peripheral ecosystem is expanding fast."
 date: 2026-08-18
 likes: 7
 bookmarks: 0
@@ -8,22 +8,22 @@ reposts: 10
 views: 6200
 url: https://x.com/realchendahuang/status/2089642236413985278
 content: |
-  I recently went through the DeepSeek Harness repo and Discussions again, and I feel this project is now at a very interesting stage:
+  I went back through the DeepSeek Harness repo and Discussions recently, and this project is at a very interesting stage:
 
   DeepSeek Harness already has 150k+ stars and over 12,000 commits in the repo.
 
-  But the official README still very clearly states: it's only a Developer Preview now, and breaking changes will still happen.
+  Yet the official README still states very clearly: it's only a Developer Preview right now, and breaking changes are still coming.
 
-  rc.7 was released on August 17. Issue and PR creation is restricted, and feedback goes through Discussions.
+  rc.7 was released on August 17. Issue and PR creation is restricted; feedback goes through Discussions.
 
-  The community is large but core development is concentrated. Bugs are frequent, like the unknown tool "" issue.
+  The community is huge, but core development is concentrated in few hands. Bugs keep popping up — like the unknown tool "" issue.
 
-  What's most lacking is test coverage, Provider compatibility, and session reliability.
+  What's most missing: test coverage, provider compatibility, and session reliability.
 
-  Architecturally it's still attractive, like an Agent operating system foundation:
+  Architecturally it's still attractive, like the foundation of an agent operating system:
 
   - Everything is a Plugin
   - Cordis composition architecture
   - Preset / Skill / MCP / Agent / Provider all pluginized
 
-  The project is now in a stage where "influence runs ahead of engineering capability."
+  The project is at the "influence runs ahead of engineering" stage.

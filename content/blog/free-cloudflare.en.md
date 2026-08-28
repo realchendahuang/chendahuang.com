@@ -1,6 +1,6 @@
 ---
-title: How free users can squeeze Cloudflare dry — how much can the free tier actually freeload?
-description: Cloudflare's free tier can support an entire personal internet infrastructure: DNS, CDN, Pages, Workers, KV, D1, R2, email, Tunnel, AI Gateway, and more.
+title: How free users can squeeze Cloudflare dry — how far does the free tier actually get you?
+description: Cloudflare's free tier can carry an entire personal internet infrastructure: DNS, CDN, Pages, Workers, KV, D1, R2, email, Tunnel, AI Gateway and more.
 date: 2026-06-15
 minRead: 8
 source: x-article
@@ -18,19 +18,19 @@ author:
 
 > Originally published on [X Articles](https://x.com/realchendahuang/article/2066528625378443300).
 
-Cloudflare can support almost an entire personal internet infrastructure: domains, websites, CDN, object storage, databases, edge functions, intranet tunneling, email forwarding, captchas, and AI gateways — all startable from the free tier.
+Cloudflare can carry almost an entire personal internet infrastructure: domains, websites, CDN, object storage, databases, edge functions, tunneling, email forwarding, CAPTCHA, and an AI gateway — all of it can start on the free tier.
 
 ## Free DNS
 
-Cloudflare is itself a domain registrar, with fairly transparent registration and renewal pricing. You can also buy a domain on a platform like Spaceship and then host the DNS on Cloudflare.
+Cloudflare is a domain registrar itself, with fairly transparent registration and renewal pricing. You can also buy domains on platforms like Spaceship and move DNS hosting to Cloudflare.
 
-Once your domain is on Cloudflare, you get a solid DNS management system right away.
+Once your domain is on Cloudflare, you get a solid DNS management system.
 
-The key point: resolution isn't billed by query volume. Unlike some big domestic vendors that are especially shameless — charging by resolution count? That's just ugly.
+The key point: DNS resolution isn't billed per query. Unlike some big domestic providers, which are gross enough to charge by the number of resolution queries — talk about shameless.
 
-This makes Cloudflare great for multi-domain, multi-subdomain, small-project matrices.
+Cloudflare is great for multi-domain, multi-subdomain, and small-project matrices.
 
-You can set up:
+You can run:
 
 - `api.xxx.com`
 - `img.xxx.com`
@@ -39,55 +39,55 @@ You can set up:
 - `status.xxx.com`
 - `admin.xxx.com`
 
-Buy one domain and assign different subdomains to different services, with no extra charge for DNS resolution itself.
+Buy one domain, assign different subdomains to different services, and DNS resolution itself costs nothing extra.
 
-For web traffic that needs proxying, turn on the little orange cloud and let Cloudflare take over proxying, caching, and HTTPS certificates.
+For web traffic that needs proxying, flip on the orange cloud and let Cloudflare handle proxying, caching, and HTTPS certificates.
 
 ## Free CDN
 
-CDN caching is the most awesome thing about Cloudflare. Many people first learn about Cloudflare through it. For blogs, official sites, and documentation sites, the most direct value is:
+CDN caching is the coolest thing Cloudflare has — it's how most people first hear about the company. For blogs, official sites, and docs sites, the value is straightforward:
 
-Faster access, lighter origin server, less bandwidth. Especially if you use a very cheap VPS, putting Cloudflare in front makes the experience much better.
+Faster visits, a lighter origin server, and less bandwidth. Especially if you're on a cheap VPS, putting Cloudflare in front makes a big felt difference.
 
 ## Free Pages
 
-Pages can host static websites and frontend projects for free.
+Pages can host static sites and frontend projects for free.
 
 - Personal blogs
-- Product official sites
-- Documentation sites
+- Product websites
+- Docs sites
 - Landing pages
-- Open-source project homepages
+- Open-source project pages
 - Course material pages
 - Waitlist pages
 - Download instruction pages
-- E-book promo pages
+- Ebook promo pages
 
-These kinds of pages can be hosted directly, no need to buy a separate server. Once you bind your own domain, it becomes a long-term personal site or project homepage.
+These can be hosted directly, no separate server purchase needed. Bind your own domain and it becomes a long-term personal site or project homepage.
 
 ## Free Workers
 
-When a website needs an API, authentication, or other dynamic logic, you can use Workers. Code runs on Cloudflare's network, no need to maintain your own server; besides JavaScript / TypeScript, it also supports runtimes like WebAssembly.
+When your site needs APIs, auth, or other dynamic logic, use Workers. Your code runs on Cloudflare's network — no server maintenance on your end. Besides JavaScript/TypeScript, it also supports WebAssembly and other runtimes.
 
-The free tier gives you 100,000 requests per day. If a personal project can genuinely sustain that volume, it's not too late to upgrade to the paid tier.
+The free tier includes 100k requests per day. If a personal project genuinely outgrows that, upgrade to paid — no rush.
 
-Workers Paid starts at $5 per month.
+Workers Paid starts at $5/month.
 
 Many small projects don't need a full backend at all. One Worker is enough.
 
 ## Free KV
 
-KV is good for data that needs fast reads but not strong consistency, like config, feature flags, and cached results. It's not a full Redis replacement, but it covers many simple needs in personal projects.
+KV fits data that needs fast reads but not strong consistency — config, feature flags, cached results. It's not a full Redis replacement, but it covers a lot of simple needs in personal projects.
 
 ## Free D1
 
-D1 is Cloudflare's hosted SQLite database, good for relational data. The free tier has 5 GB of total storage, plus separate daily read and write quotas.
+D1 is Cloudflare's managed SQLite database, good for relational data. The free tier includes 5 GB of total storage, plus daily read/write quotas.
 
 ## Free R2
 
-R2 is S3-API-compatible object storage, good for images, attachments, and backups. Its biggest advantage is that egress from R2 doesn't incur bandwidth fees — costs mainly come from storage volume and operation count; the free tier also has a storage and request quota.
+R2 is an S3-API-compatible object store, good for images, attachments, and backups. Its biggest advantage: no bandwidth fees when serving from R2 — you pay mainly for storage and operations. There's also a free tier with a quota for both.
 
-You can use it to store:
+You can put in it:
 
 - Images
 - Attachments
@@ -100,15 +100,15 @@ You can use it to store:
 - Static assets
 - Datasets
 - Audio files
-- Short video clips
+- Small video assets
 
 ## Free Email Routing
 
-Email Routing can forward mail sent to your custom domain to an existing inbox, available on the free tier. Cloudflare also now has Email Sending for sending transactional email via Workers, but sending to arbitrary recipients requires Workers Paid — don't confuse it with free inbound forwarding.
+Email Routing forwards email sent to your custom domain to an existing mailbox — available on the free tier. Cloudflare also has Email Sending for transactional email via Workers, but sending to arbitrary recipients requires Workers Paid, so don't confuse it with free inbound forwarding.
 
 ## Free Turnstile
 
-Turnstile is Cloudflare's human verification, which usually doesn't require users to identify traffic lights or distorted characters. Good for:
+Turnstile is Cloudflare's human verification, and users usually don't have to identify traffic lights or distorted letters. Good for:
 
 - Login
 - Registration
@@ -120,14 +120,14 @@ Turnstile is Cloudflare's human verification, which usually doesn't require user
 
 ## Free Tunnel
 
-If your home NAS, local dev machine, or game server needs external access, you can use Tunnel to build a channel that actively connects from your intranet to Cloudflare.
+Want to expose your home NAS, local dev machine, or game server to the internet? Use Tunnel to build a pipe that connects from your internal network out to Cloudflare, actively.
 
-Your home NAS, local dev machine, and intranet services can be exposed through Cloudflare Tunnel. The core value:
+Your NAS, local dev boxes, internal services — can all be exposed through Cloudflare Tunnel. Core value:
 
 - No public IP needed
-- No router port opening
-- No exposing the origin server IP
-- Can use your own domain
+- No router port forwarding
+- No exposing origin IPs
+- Can attach your own domain
 
 For example:
 
@@ -137,24 +137,24 @@ For example:
 - `n8n.xxx.com`
 - `home.xxx.com`
 
-This thing is a godsend for home server enthusiasts.
+This thing is a godsend for home-server tinkerers.
 
 ## Free Access
 
-Access can sit in front of backends, test environments, and internal tools, verifying identity before letting anyone through. Email verification codes, Google, GitHub, or team identity sources can all be connected — no need to write a whole registration/login system just for one internal page. For example:
+Access sits in front of admin panels, staging environments, and internal tools, verifying identity before letting people in. Email OTP, Google, GitHub, or team identity providers all work — no need to write another registration/login system just for an internal page. For example:
 
-- Only specified emails can enter
-- Only Google login can enter
-- Only GitHub login can enter
-- Only team members can enter
+- Only specific emails get in
+- Only Google login gets in
+- Only GitHub login gets in
+- Only team members get in
 
-This is very useful for protecting backends, test environments, and internal tools.
+This is very handy for protecting backends, staging, and internal tools.
 
 ## Free AI Gateway
 
-AI Gateway can sit in front of different model providers, uniformly logging requests, latency, errors, and cache hits, and can also do rate limiting and fallback. When building AI products early on, using one entry point to manage multiple compatible APIs saves a lot of trouble.
+AI Gateway can sit in front of multiple model providers, uniformly logging requests, latency, errors, and cache hits, plus rate limiting and fallback. When building an AI product early, managing multiple compatible APIs through one entry point saves a lot of hassle.
 
-It can help you see:
+It lets you observe:
 
 - Request volume
 - Latency
@@ -164,37 +164,37 @@ It can help you see:
 - Rate limiting
 - Fallback
 
-You can put a layer in front of OpenAI, Anthropic, Workers AI, and various compatible APIs.
+Whether you're using OpenAI, Anthropic, Workers AI, or assorted compatible APIs, you can wrap one layer in front of them.
 
-For early AI products, it's great as a unified entry point.
+For early AI products, it makes a great unified entry point.
 
 ## Free Browser Run
 
-Cloudflare now calls this capability Browser Run. It can launch a full browser session in the cloud and control the page with code or AI.
+Cloudflare now calls this capability Browser Run. It launches full browser sessions in the cloud, controllable via code or AI.
 
 Good for:
 
 - Webpage screenshots
 - Webpage to Markdown
 - Webpage automation testing
-- Page content collection
-- Dynamic webpage parsing
+- Page content scraping
+- Dynamic page parsing
 - Webpage to PDF
 
 There's a daily free quota.
 
 ## Free Images Transform
 
-Cloudflare Images has an image transformation quota for scaling, cropping, and format conversion. At high volume you need to account for it separately, or you can run your own transcoding service on paid Workers using Container.
+Cloudflare Images has a transformation quota for resizing, cropping, and format conversion. Heavy usage is billed separately, or you can run your own transcoding service on paid Workers with Containers.
 
-This pairs well with R2:
+Pair it with R2:
 
-- R2 stores the originals
-- Images does thumbnails and format conversion
-- Cloudflare caches and distributes
+- R2 stores originals
+- Images makes thumbnails and format conversions
+- Cloudflare cache distributes
 
 Good for blog covers, avatars, product images, and article illustrations.
 
-Cloudflare's free tier already covers a lot of personal projects. When you genuinely need higher request volume, compute time, or paid capabilities, start adding from the $5/month Workers Paid.
+Cloudflare's free quota already covers plenty of personal projects. If you genuinely need higher request volume, compute time, or paid features, upgrade from the $5/month Workers Paid tier and scale up.
 
-And here I want to say: Cloudflare, please pay me!!
+And here I want to say: Cloudflare, please wire me the money!!

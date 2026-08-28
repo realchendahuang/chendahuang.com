@@ -1,6 +1,6 @@
 category: ai
-title: "The Preset concept in DeepSeek Harness: the distribution unit of Agents"
-description: "The same model loading different Presets can become completely different Agents."
+title: "DeepSeek Harness's Preset concept: the distribution unit of agents"
+description: "Load different Presets on the same model and you get completely different agents."
 date: 2026-08-17
 likes: 161
 bookmarks: 0
@@ -8,20 +8,20 @@ reposts: 23
 views: 38000
 url: https://x.com/realchendahuang/status/2089206966015176725
 content: |
-  I've been studying DeepSeek Harness lately. There's a concept called Preset worth paying attention to.
+  Lately I've been studying DeepSeek Harness. There's a concept called Preset worth paying attention to.
 
-  Preset can be understood as the distribution unit of Agents. The same model loading different Presets can ultimately become completely different Agents.
+  Preset can be understood as the distribution unit of an agent. Load different Presets on the same model, and it becomes completely different agents.
 
-  What's the biggest difference between Preset and Skill?
+  What's the biggest difference between a Preset and a Skill?
 
-  - A financial-report-analysis Skill: teaches the Agent how to analyze financial reports.
-  - A financial-report-analysis Preset: directly combines the financial-report-analysis Skill, web search, Browser, PDF, Python, Subagents, research Prompts, and context strategy all together, giving you an out-of-the-box Agent.
+  - A financial-report-analysis Skill: teaches the agent how to analyze financial reports.
+  - A financial-report-analysis Preset: bundles the financial-report-analysis Skill, web search, Browser, PDF, Python, subagents, research prompts, and context strategy all together — handing you an out-of-the-box agent.
 
-  In the future, two layers of market will likely emerge simultaneously.
+  In the future, two market layers will likely emerge at once.
 
-  - One layer is the Plugin / Skill Marketplace, mainly for developers and advanced users to build Agents;
-  - One layer is the Preset / Agent Marketplace, truly aimed at ordinary users.
+  - One: a Plugin / Skill marketplace, mainly for developers and power users building agents;
+  - One: a Preset / Agent marketplace, truly aimed at ordinary users.
 
-  This is actually very close to the App Store logic. The App Store showcases a complete App. Preset showcases a complete Agent application.
+  This is actually very close to the App Store logic. The App Store showcases a complete app; a Preset showcases a complete agent application.
 
-  In the past, people shared Prompts. Later they started sharing Skills. Next, they'll likely share Presets.
+  In the past, people shared prompts. Then they started sharing skills. Next, they'll probably be sharing Presets.

@@ -1,6 +1,6 @@
 category: tools
 title: "I made a macOS Playbook"
-description: "For people who just bought a Mac, just switched from Windows to Mac, or always felt their Mac wasn't working smoothly."
+description: "For people who just got a Mac, just switched from Windows, or have always felt the Mac never quite clicked."
 date: 2026-06-21
 likes: 13
 bookmarks: 13
@@ -10,15 +10,15 @@ url: https://x.com/realchendahuang/status/2068757325222137863
 content: |
   I made a macOS Playbook.
 
-  For people who just bought a Mac, just switched from Windows to Mac, or always felt their Mac wasn't working smoothly.
+  For people who just bought a Mac, just switched from Windows, or have always felt their Mac never quite clicked.
 
-  Inside it covers:
+  It covers:
 
-  - What software to install first after buying a Mac
+  - What to install first after getting a Mac
   - How Windows users adapt to macOS
   - How to choose tools like Rectangle / AltTab / Homebrew
-  - How to use cross-device collaboration
-  - How to configure the terminal, Git, SSH, and AI Coding environment
+  - How to work across devices
+  - How to set up the terminal, Git, SSH, and AI coding environment
   - How to handle system maintenance, troubleshooting, secure backup, and device migration
 
   Playbook: [chendahuang.com/playbooks](/playbooks)

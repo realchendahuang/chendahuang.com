@@ -1,5 +1,5 @@
 category: cloudflare
-title: "Why FlareMo: jot things down casually, and they slowly grow into knowledge"
+title: "Why FlareMo: jot it down casually, and it slowly grows into knowledge"
 description: "Looking for a tool that lets you 'jot things down casually and slowly grow them into knowledge.'"
 date: 2026-06-27
 likes: 1
@@ -10,14 +10,14 @@ url: https://x.com/realchendahuang/status/2070807195332297205
 content: |
   Looking for a tool that lets you "jot things down casually and slowly grow them into knowledge."
 
-  I want Flomo's out-of-the-box, non-intrusive inspiration capture;
+  I want Flomo's out-of-the-box, zero-friction inspiration capture;
 
-  I want Memos' mature open-source ecosystem, migratable data, and playable API;
+  I want Memos' mature open-source ecosystem, portable data, and an API you can actually play with;
 
-  But I don't want to spin up another VPS and maintain Docker, Postgres, and a persistent Node process.
+  But I don't want to spin up another VPS and babysit Docker, Postgres, and a Node process that runs forever.
 
-  So what to do? FlareMo's approach is to treat Memos' data model and API as a "spec," and rebuild the entire runtime on Cloudflare:
+  So what to do? FlareMo's approach: treat Memos' data model and API as the "spec," and rebuild the whole runtime on Cloudflare:
 
-  Workers run the API, D1 stores notes, R2 holds attachments, Queues/Cron run background jobs, and Vectorize + Workers AI are reserved for future semantic search and AI workflows.
+  Workers run the API, D1 stores notes, R2 holds attachments, Queues/Cron handle background jobs, and Vectorize + Workers AI are saved for future semantic search and AI workflows.
 
-  Standing on Memos' shoulders, building a personal knowledge base that lives on the edge cloud.
+  Standing on Memos' shoulders to build a personal knowledge base that lives on the edge cloud.

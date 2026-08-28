@@ -1,9 +1,9 @@
 title: Hermes Memory for OpenCode
-description: Add a layer of cross-session persistent memory to OpenCode Agents — user preferences, project conventions, and past pitfalls all stored in Markdown.
+description: Cross-session persistent memory for OpenCode agents — user preferences, project conventions, and pitfalls you've hit, all stored as Markdown.
 type: OpenCode plugin
 url: https://github.com/realchendahuang/opencode-hermes-memory
 image: /projects/hermes-memory.webp
-imageAlt: Hermes Memory deep-blue product card with a golden badge
+imageAlt: Hermes Memory deep-blue product card with a gold badge
 icon: i-lucide-brain-circuit
 color: "#fbbf24"
 tags: ["OpenCode", "Plugin", "Memory", "Markdown", "MIT"]

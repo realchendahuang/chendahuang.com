@@ -1,6 +1,6 @@
 category: tools
-title: "Docker tech selection on Mac: Colima / OrbStack / Docker Desktop"
-description: "A simple tech selection for Docker options on Mac."
+title: "Docker options on Mac: Colima / OrbStack / Docker Desktop"
+description: "A quick tech-selection breakdown of Docker options on Mac."
 date: 2026-06-20
 likes: 0
 bookmarks: 0
@@ -8,9 +8,9 @@ reposts: 0
 views: 211
 url: https://x.com/realchendahuang/status/2068238972728533154
 content: |
-  A simple tech selection for Docker options on Mac.
+  A quick tech-selection breakdown of Docker options on Mac.
 
-  - **Colima**: free and open source, very lightweight, but basically command-line only. Good for people who accept tinkering and are used to the command line.
-  - **Apple Container**: Apple's new container direction, worth watching in the future, but the ecosystem is currently weak and still at a very early stage. For example, Docker Compose isn't even supported.
-  - **OrbStack**: has a GUI, is light and fast, and has well-developed ecosystem support. The downside is it's not open source — the commercial version requires a license, but the personal version is free.
-  - **Docker Desktop**: the official product, but it's heavy and bloated, with a terrible experience. On Mac, avoid it if you can.
+  - **Colima**: free and open source, very lightweight, but basically command-line only. For people who don't mind tinkering and live in the terminal.
+  - **Apple Container**: Apple's new container direction — worth watching, but the ecosystem is still at a very early stage. Even Docker Compose isn't supported yet.
+  - **OrbStack**: has a GUI, light and fast, with solid ecosystem support. Downside: not open source — the commercial version needs a license, but the personal one is free.
+  - **Docker Desktop**: the official product, yet heavy and bloated, with a lousy experience. On a Mac, avoid it if you can.

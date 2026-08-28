@@ -1,6 +1,6 @@
 category: cloudflare
 title: "Workers are cyber laborers"
-description: "I feel many people still understand less than 1% of Cloudflare Workers."
+description: "I feel like most people still understand less than 1% of Cloudflare Workers."
 date: 2026-06-16
 likes: 1
 bookmarks: 2
@@ -8,31 +8,31 @@ reposts: 1
 views: 1743
 url: https://x.com/realchendahuang/status/2066895041910763934
 content: |
-  I feel many people still understand less than 1% of Cloudflare Workers.
+  I feel like most people still understand less than 1% of Cloudflare Workers.
 
   Workers are cyber laborers.
 
-  They handle the dirty work behind your website.
+  They do the dirty grunt work behind your website for you.
 
-  Like submitting forms, uploading files, calling AI, login verification, processing payment notifications, and building a small product's API. Workers can do it all.
+  Submitting forms, uploading files, calling AI, login validation, handling payment notifications, and the API of a small product — Workers does all of it.
 
-  The most absurd thing about Workers: free users get 100,000 requests per day, not spending a dime.
+  The most outrageous thing about Workers: free users get 100,000 requests per day without spending a cent.
 
-  What does 100,000 mean?
+  What does 100,000 even mean?
 
-  If your website has 1,000 users a day, even if it runs 24 hours nonstop with someone visiting every second, that's only 86,400 visits a day — you can't even use it all up.
+  Say your site has 1,000 users a day. Even if it runs nonstop 24 hours and someone visits every single second, that's only 86,400 visits a day — still not enough to blow through the quota.
 
-  If you can actually use up all that free quota,
+  If you can actually burn through all that free quota...
 
-  what are you even thinking? You'd be rich.
+  what are you waiting for? You're about to get rich.
 
-  Now you can write the logic first and hand it directly to Workers to run.
-  Paired with the Hono API framework, that's the best practice.
+  Right now you can write the logic and just hand it to a Worker to run.
+  Pair it with the Hono API framework and that's the best practice.
 
-  This is the most delightful thing about Cloudflare Workers.
+  This is what makes Cloudflare Workers so delightful.
 
-  Pay? Pay my ass.
+  Pay? Yeah, right.
 
-  Cloudflare is kind-hearted.
+  Cloudflare has a kind heart.
 
-  It can't bear to let you spend money.
+  It can't bear to see you spend money.

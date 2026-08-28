@@ -1,5 +1,5 @@
 category: cloudflare
-title: "Moving circumvention subscription aggregation to Cloudflare"
+title: "I moved my circumvention subscription aggregation to Cloudflare"
 description: "I moved circumvention subscription aggregation to Cloudflare."
 date: 2026-06-28
 likes: 327
@@ -8,14 +8,14 @@ reposts: 56
 views: 44611
 url: https://x.com/realchendahuang/status/2071247817109348796
 content: |
-  I moved circumvention subscription aggregation to Cloudflare.
+  I moved my circumvention subscription aggregation to Cloudflare.
 
-  Open-sourced a completely free circumvention subscription link aggregation project deployed on Cloudflare.
+  Open-sourced a subscription-link aggregation project that deploys completely free on Cloudflare.
 
-  It helps you aggregate all your circumvention subscription links and self-hosted network nodes into a single link, while also adding routing rules.
+  It folds all your circumvention subscription links and self-built nodes into one link, with routing rules attached.
 
-  Truly achieving the goal of using just one link across all clients, without needing to configure each client separately.
+  Truly one link — usable in every client, no per-client configuration.
 
   GitHub: https://github.com/realchendahuang/sub-store-cloudflare
 
-  Blog original: [I moved my airport subscription aggregation to Cloudflare](/blog/sub-store-cloudflare)
+  Full post: [I moved my airport subscription aggregation to Cloudflare](/blog/sub-store-cloudflare)

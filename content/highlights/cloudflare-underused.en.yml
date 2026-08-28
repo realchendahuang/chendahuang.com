@@ -1,6 +1,6 @@
 category: cloudflare
-title: "People still use less than 1% of Cloudflare's capabilities"
-description: "I feel people still use less than 1% of Cloudflare's capabilities."
+title: "We've still developed less than 1% of Cloudflare"
+description: "I feel like we've still developed less than 1% of Cloudflare."
 date: 2026-06-15
 likes: 377
 bookmarks: 470
@@ -8,18 +8,18 @@ reposts: 32
 views: 88959
 url: https://x.com/realchendahuang/status/2066446337936110030
 content: |
-  I feel people still use less than 1% of Cloudflare's capabilities.
+  I feel like we've still developed less than 1% of Cloudflare.
 
-  It now has way too many features.
+  It has shipped way too many features.
 
   - Object storage with R2
-  - Backend API with Worker
+  - Backend API with Workers
   - AI gateway with AI Gateway
   - Heavy compute with Container
   - Caching with KV
   - Database with D1
-  - If you use PostgreSQL, you can connect it with HyperDrive
+  - Using PostgreSQL? Hook it up with HyperDrive
 
-  And so on, there's much more — only what you can't think of, nothing it can't do.
+  And that's just the start — the list goes on and on. If you can dream it up, it can probably do it.
 
-  The key is it's damn cheap. The free tier lasts a long time. What's a free tier? It means not spending a dime — a cyber bodhisattva.
+  The kicker is it's genuinely dirt cheap. The free tier alone lasts you a long time. What's a free tier? It means paying zero — a cyber-bodhisattva, an actual saint.

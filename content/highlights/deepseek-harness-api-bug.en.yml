@@ -1,6 +1,6 @@
 category: ai
-title: "DeepSeek Harness calling third-party API reports unknown tool: a gateway data format issue"
-description: "The tool name isn't really lost — the gateway lost the data format."
+title: "DeepSeek Harness hits 'unknown tool' with third-party APIs: a gateway data-format issue"
+description: "The tool name isn't actually lost — the gateway mangled the data format."
 date: 2026-08-18
 likes: 2
 bookmarks: 0
@@ -10,13 +10,13 @@ url: https://x.com/realchendahuang/status/2089636108271550484
 content: |
   DeepSeek Harness + third-party API compatibility issue:
 
-  When the Agent calls tools like Bash, it reports `ToolNotFoundError: unknown tool ""`, which looks like the tool wasn't registered.
+  When the agent calls tools like Bash, it errors with `ToolNotFoundError: unknown tool ""`, which looks like the tool was never registered.
 
-  Actually, the data format returned by the gateway differs from DeepSeek's official one, and the tool name got lost in the middle.
+  What actually happens: the gateway returns a different data format from DeepSeek's official API, and the tool name gets dropped somewhere in between.
 
-  A few related GitHub Discussions links:
+  A few relevant GitHub Discussions links:
 
   - Search "unknown tool" in deepseek-ai/dsh#issues
-  - People using self-hosted gateways (OpenRouter / OneAPI / new-api) are most likely to hit this pitfall
+  - People running self-hosted gateways (OpenRouter / OneAPI / new-api) are the most likely to hit this
 
-  Troubleshooting approach: capture a complete tool_call request and response, and compare whether the tool name in the gateway logs is an empty string.
+  Debugging approach: capture a full tool_call request and response, and check whether the tool name in the gateway logs is an empty string.

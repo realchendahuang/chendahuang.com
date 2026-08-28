@@ -1,12 +1,12 @@
 title: FeedSieve
-description: A cyber janitor for your X feed — keeping bot spam, low-quality AI flooding, crypto gurus, and engagement bait out of your timeline.
+description: The cyberspace janitor for your X feed — keeping bot spam, low-quality AI sludge, crypto grifters, and engagement bait out of your timeline.
 type: Open-source X tool
 url: https://github.com/realchendahuang/feedsieve
 image: /projects/feedsieve.webp
-imageAlt: FeedSieve cyan dark-tone product card
+imageAlt: FeedSieve cyan dark product card
 icon: i-lucide-shield-check
 color: "#22d3ee"
-tags: ["X", "RSS", "Bot Filter", "Denoising", "OSS"]
+tags: ["X", "RSS", "Bot Filter", "De-noising", "OSS"]
 date: 2026-08-25
 status: ongoing
 stars: 0

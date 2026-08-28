@@ -1,6 +1,6 @@
 category: tools
-title: "A list of software from years of deep macOS use"
-description: "After years of deep macOS use, I've summarized these awesome pieces of software:"
+title: "The software list from years of deep macOS use"
+description: "After years of deep macOS use, here are the pieces of software I've found to be genuinely great:"
 date: 2026-06-19
 likes: 405
 bookmarks: 585
@@ -8,17 +8,17 @@ reposts: 75
 views: 49530
 url: https://x.com/realchendahuang/status/2067911283215827305
 content: |
-  After years of deep macOS use, I've summarized these awesome pieces of software:
+  After years of deep macOS use, here are the pieces of software I've found to be genuinely great:
 
-  - **QuickRecorder**: a screen-recording gem, small in size, powerful in function.
-  - **ClashParty**: for circumvention, Mihomo core, supports many protocols, updates fast, beautiful interface.
-  - **V2rayN**: for circumvention, supports many protocols, interface a bit retro, but stable and free.
-  - **Doubao input method**: voice input is extremely accurate, supports macOS, iOS, Android, with Windows on the way.
-  - **Brave**: a privacy-first browser with built-in ad filtering, cleaner than extension-based filtering, the best companion for watching YouTube.
-  - **Mos**: makes your mouse wheel scroll more smoothly.
-  - **Amphetamine**: keeps your laptop from sleeping even when the lid is closed, the best companion for Vibe Coding.
-  - **UU Remote**: a remote desktop tool from NetEase, free and fast. With it, what limits image quality is never the membership but the network speed. I usually use it to remotely control macOS from my phone to check Vibe Coding results — the key mapping efficiency is too high.
-  - **Tencent Lemon**: a macOS junk-cleaning tool from Tencent, uninstalling software is smooth, and the status bar icon is handy too.
-  - **Mole**: the strongest macOS junk-cleaning tool, terminal version free, UI version paid.
-  - **Tailscale**: a remote site-to-site networking tool based on WireGuard. With it, you can connect to your home computer from the ends of the earth.
-  - **Obsidian**: in the AI era, a local-first knowledge management tool. The ecosystem is too good, and pairing it with the official Web Clipper browser extension works wonders.
+  - **QuickRecorder**: a screen-recording gem — tiny, yet powerful.
+  - **ClashParty**: circumvention with the Mihomo core — lots of protocols, fast updates, and a good-looking interface.
+  - **V2rayN**: circumvention with lots of protocols; the UI is a bit dated, but it's stable and free.
+  - **Doubao keyboard**: voice input accurate to a scary degree. Supports macOS, iOS, Android; Windows is on the way.
+  - **Brave**: a privacy-first browser with built-in ad filtering — cleaner than extension-based filtering, and the best companion for watching YouTube.
+  - **Mos**: makes your mouse wheel scroll silky smooth.
+  - **Amphetamine**: keeps your laptop awake with the lid closed — the best companion for vibe coding.
+  - **UU Remote**: NetEase's remote desktop tool, free and fast. With it, what caps the image quality is never the membership — it's your network speed. I usually use it to remote into my Mac from my phone to check vibe-coding results; the key mapping is absurdly efficient.
+  - **Tencent Lemon**: Tencent's Mac junk cleaner — uninstalling apps is smooth, and the menu-bar icon is handy.
+  - **Mole**: the strongest Mac junk cleaner out there — terminal version free, UI version paid.
+  - **Tailscale**: WireGuard-based remote networking. With it, you can reach your little home computer from the ends of the earth.
+  - **Obsidian**: in the AI era, the local-first knowledge management tool. The ecosystem is just too good — pair it with the official Web Clipper browser extension and it works wonders.

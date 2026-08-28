@@ -1,9 +1,9 @@
 title: Sub-Store Cloudflare
-description: A subscription aggregation and rule configuration tool deployed on Cloudflare Workers, putting subscription sources, node processing, combined subscriptions, and routing rule templates in the cloud.
+description: Subscription aggregation and rule configuration on Cloudflare Workers — sources, node processing, combined subscriptions, and routing templates, all in the cloud.
 type: Cloudflare tool
 url: https://github.com/realchendahuang/sub-store-cloudflare
 image: /projects/sub-store-cloudflare.webp
-imageAlt: Sub-Store Cloudflare's subscription source and combined subscription management interface
+imageAlt: Sub-Store Cloudflare's subscription source and combined subscription management UI
 icon: i-simple-icons-cloudflare
 color: "#f38020"
 tags: ["Cloudflare Workers", "D1", "Mihomo", "sing-box", "Subscription management"]

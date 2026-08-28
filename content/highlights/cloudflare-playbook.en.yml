@@ -1,6 +1,6 @@
 category: cloudflare
 title: "I made a Cloudflare Playbook"
-description: "For all indie developers who want to build products with AI Coding."
+description: "For every indie developer who wants to build products with AI coding."
 date: 2026-06-21
 likes: 125
 bookmarks: 176
@@ -10,17 +10,17 @@ url: https://x.com/realchendahuang/status/2068732869854613903
 content: |
   I made a Cloudflare Playbook.
 
-  For all indie developers who want to build products with AI Coding.
+  For every indie developer who wants to build products with AI coding.
 
-  Inside it covers:
+  It covers:
 
-  - How to choose common Cloudflare services
+  - How to pick among Cloudflare's common services
   - How to use Workers / Pages / D1 / R2 / KV / AI Gateway
   - Whether the free tier is actually enough
   - When to buy the $5 Workers Paid
-  - The pitfalls where AI-written CF code most easily fails
-  - How to configure Cloudflare Skills and MCP for Codex / Claude Code
-  - Which open-source projects you can directly reference
+  - The pitfalls where AI-written CF code blows up most often
+  - How to set up Cloudflare Skills and MCP for Codex / Claude Code
+  - Which open-source projects you can reference directly
 
   My goal is simple:
 

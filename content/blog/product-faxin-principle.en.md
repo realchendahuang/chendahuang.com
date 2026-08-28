@@ -1,6 +1,6 @@
 ---
-title: The "original intent" principle: why indie developers must learn to let go
-description: Why did you set out? Who did you set out for? Which problem do you actually want to solve? A product's sharpness comes from what you're willing to give up.
+title: The founding-intention principle: why indie developers must learn to let go
+description: Why do you set out? Who do you set out for? Which problem are you actually trying to solve? A product's sharpness comes from what you dare to cut.
 date: 2026-06-20
 minRead: 10
 source: x-article
@@ -17,142 +17,142 @@ author:
 
 > Originally published on [X Articles](https://x.com/realchendahuang/article/2068296188340895744).
 
-I recently noticed a very interesting phenomenon:
+Lately I've noticed an interesting pattern:
 
-Many people building tools want to serve everyone from the very start.
+Lots of people building tools start by wanting to serve everyone.
 
-This is a very dangerous idea.
+That's a dangerous thought.
 
-If you plan to serve everyone, then you're not thinking from anyone's perspective at all.
+If you want to serve everyone, that means you haven't stood in anyone's shoes at all.
 
-This is a product person's ivory-tower building, self-admiration.
+It's a product person building in a bubble, admiring their own reflection.
 
-The right approach is to catch a small batch of users, grab their pain points, and serve them hard.
+The right move is to grab a small batch of users, find the pain that cuts them deep, and serve the hell out of them.
 
-You need to know who is truly in pain and truly urgent, and who is willing to pay for the service today.
+Know who among them really hurts and is in a hurry, and who would hand over money for your service today.
 
-I want to share with everyone: the **original intent principle**.
+Let me share a principle I call the **founding-intention principle**.
 
-It mainly discusses these questions:
+It's about these questions:
 
-- Why did you set out?
-- Who did you set out for?
+- Why do you set out?
+- Who do you set out for?
 - Which problem do you actually want to solve?
 
-## What is original intent
+## What is "founding intention"
 
-There's a passage in *置身钉内*:
+There's a passage in *Standing in the Nail* (置身钉内):
 
-> Original intent is the inner motivation and fundamental vow of behavior — the starting point, direction, and source of power for all work, life, practice, and cultivation. Products also have their original intent. A product's original intent is the most primitive starting point of its initiator. In most cases, a good product has only one main original intent. When a product's original intent is many and lacks priority, it becomes a greedy and anxious product.
+> Founding intention (发心) is the inner motive and fundamental vow behind action — the starting point, direction, and source of energy for all work, life, practice, and cultivation. Products have founding intentions too. A product's founding intention is the most original starting point of its founder. In most cases, a good product has only one primary founding intention. When a product's intentions multiply without priority, it becomes a greedy and anxious product.
 
-The criterion for judging original intent is: when a product's ideas conflict, who does it truly side with?
+The test for founding intention: when the product's values conflict, who does it truly lean toward?
 
-When user experience conflicts with commercialization, who does it side with?
+User experience and monetization conflict — who does it lean toward?
 
-When simplicity conflicts with feature completeness, who does it side with?
+Simple and pleasant versus feature-complete — who does it lean toward?
 
-Once the answer comes out, the product's original intent comes out too.
+Once the answers come out, the product's founding intention is revealed.
 
-## Meituan: the mindset of local life transactions
+## Meituan: the mental anchor of local-life transactions
 
-Among domestic super apps, this phenomenon is common. Meituan is a great example.
+This pattern is common among Chinese super-apps. Meituan is a textbook example.
 
-Meituan's user mindset is local life transactions.
+Meituan's user mental model is local-life transactions.
 
-Users open Meituan: order food when hungry, book a hotel when going out, buy movie tickets, find a room when traveling. The core value is helping users complete real-life transactions faster.
+You open Meituan: ordering food when hungry, booking restaurants when going out, buying movie tickets, finding hotels. Its core value is helping users complete real-life transactions faster.
 
-But later we saw novels, short dramas, mini-games, videos, and livestreams appear in Meituan.
+But over time, Meituan has grown novels, short dramas, mini-games, video, and livestreams.
 
-You can even do this in Meituan: "Genshin, launch!!!"
+You can even, inside Meituan: "START GENSHIN!!!"
 
-How absurd is that???
+Tell me that's not ridiculous???
 
-Games have value, of course, and Genshin can indeed launch. But it shouldn't launch when I'm starving!
+Games definitely have value, and sure, Genshin can start. But don't start Genshin while my stomach is growling!
 
-Bro, let me fill my stomach first before we talk about Genshin!!!
+Man, let me fill my belly before we talk about Genshin!!!
 
-Users come with a task and leave when the task is done. The faster users complete their goal, the more trustworthy the product.
+Users come with a task, finish it, and leave. The faster users hit their goal, the more trustworthy the product becomes.
 
-This is the most counterintuitive thing about many high-frequency tools: they make money from traffic, but their long-term value comes from restraint.
+That's the counterintuitive truth about many high-frequency tools: they make money off traffic, but their long-term value comes from restraint.
 
-## Alipay: wallet temperament vs. content feed
+## Alipay: wallet vibes fighting the content feed
 
-Alipay is the same breed. Alipay's underlying mindset is money, credit, and certainty.
+Alipay is cut from the same cloth. Alipay's underlying identity is money, credit, and certainty.
 
-Users open Alipay to pay, receive money, transfer, pay bills, check statements, take the subway, scan health insurance codes. This is a high-trust scenario.
+You open Alipay to pay, collect, transfer, pay bills, check statements, ride the subway, scan your medical code. It's a high-trust scenario.
 
-Users hand over their money, identity, credit, and life payments to it, so its product temperament is a wallet — rock solid.
+Users hand it their money, identity, credit, and household bills — so its product temperament is a wallet: rock-solid steady.
 
-But you can scroll short videos in a wallet. It's like being able to get a foot massage and full SPA service inside a bank.
+But now you can scroll short videos inside your wallet. Like a bank that also offers foot massages, SPA, and the full package.
 
-Users will mutter to themselves: did I come here to get things done, or to get taken care of?
+Users start wondering: did I come here to take care of business, or to get taken care of?
 
-Money scenarios need calm; content feeds naturally get people hooked.
+Money scenarios need calm; content feeds are engineered to hook you.
 
-Cramming two temperaments together produces a strange greasiness.
+Force the two temperaments together and you get a weird greasy feeling.
 
-## The most dangerous place for original intent drift
+## Where intention-drift is most dangerous
 
-Many domestic apps have grown financial entry points. Food delivery lets you borrow money, ride-hailing lets you borrow money, travel lets you borrow money, shopping lets you borrow money, maps and local life can also lead to loan services.
+Many domestic apps have sprouted financial entrances. Food delivery lets you borrow money; ride-hailing lets you borrow; travel lets you borrow; shopping lets you borrow; maps and local-life apps route you to loan services too.
 
-Stuffing a borrowing entry into these scenarios may boost monetization efficiency in the short term, but in the long term it changes how users look at you.
+Stick a lending entrance into these scenarios and you might improve monetization in the short term, but long term, you change how users look at you.
 
-You used to be a tool; now you look like a middleman.
+You used to be a tool. Now you're a middleman.
 
-You used to help me get one thing done; now you're casually assessing whether I can borrow a sum of money.
+You used to help me get one thing done. Now you take the opportunity to assess whether I'm good for another loan.
 
-This is the most dangerous place for original intent drift. It won't destroy the product immediately.
+That's the most dangerous part of intention drift. It doesn't destroy the product overnight.
 
-It will slowly change the product's temperament.
+It slowly changes the product's temper.
 
-Big companies do this with their own business logic. They have massive traffic, complex organizations, monetization pressure, and many departments that need to eat.
+Big companies doing this have their own business logic. They have massive traffic, complex organizations, monetization pressure, and many departments to feed.
 
-We don't need to stand on a moral high ground and curse them.
+We don't need to lecture them from a moral high ground.
 
-## The indie developer's advantage is cleanliness
+## The indie developer's advantage is being clean
 
-As an indie developer, your product can be very clean — even clean to the point of being a bit shabby.
+As an indie developer, your product can be thoroughly clean — clean enough to look almost shabby.
 
-This is actually an advantage.
+That's actually an advantage.
 
-Many indie developers get anxious at first, feeling their features are too few, their scenario too narrow, their market not big enough. But what an early product should fear most is precisely "looking big."
+Many indie developers start out anxious: too few features, too narrow a use case, market not big enough. But the thing early products should actually fear is "looking big."
 
-Once the market is big, users become an average. The average has no expression and won't pay.
+Make the market big and users turn into an average. Averages have no expression, and they don't pay.
 
-A truly valuable starting point is usually much smaller. You first find a small group of people, in pain specific enough, who want to use it today, willing to pay separately for this feature, and who see the product and immediately feel "this was made for me."
+A genuinely valuable starting point is usually much smaller. Find a handful of people whose pain is specific enough, who want it today, who'd pay for this one feature alone, who see the product and feel "this was made for me."
 
-At that point, the product starts to have life.
+That's when the product starts to have life.
 
-For example, "a podcast editing tool" is too broad. Change it to "for solo podcast hosts, quickly cut a one-hour interview into several short videos," and the product immediately becomes sharp.
+For example, "a podcast editing tool" is far too broad. Change it to "for solo podcast hosts, quickly cut a one-hour interview into a few short videos" and the product instantly becomes sharp.
 
-For example, "a landing page generator for developers" is also broad. Change it to "for indie developers, quickly generate a landing page that can collect emails before product launch," and the need becomes much clearer.
+"An AI landing page generator for developers" is also vague. "For indie developers, quickly generate an email-capturing landing page before a product launch" — now the need is clear.
 
-## The original intent principle ultimately lands on "letting go"
+## The founding-intention principle ultimately lands on "letting go"
 
-True strategic advantage comes not from what you do, but from what you dare not to do.
+Real strategic advantage isn't what you do — it's what you dare not to do.
 
-This sentence is the product mantra of indie developers. The most precious resource of an indie developer is attention. Every extra direction you take on is one more thing to maintain.
+That sentence is an indie developer's product mantra. An indie developer's most precious resource is attention. Every direction you add is more upkeep.
 
 WeChat is a positive example worth studying.
 
-WeChat is of course already very complex, but its most core conversation entry has remained stable long-term. Users open WeChat and their first reaction is still to find people, read messages, and handle relationships.
+WeChat is certainly complex, but its core conversation entrance has stayed stable for years. Users open WeChat and their first instinct is still: find someone, see messages, handle relationships.
 
-Video Channels didn't eat the chat list, Official Accounts didn't turn the message page into a content feed, and Mini Programs didn't require users to browse an app store every time they open WeChat.
+Channels didn't eat the chat list. Official accounts didn't turn the message page into a content feed. Mini programs don't require users to browse an app store every time they open WeChat.
 
-WeChat's restraint isn't about having few features. Its brilliance is knowing where the load-bearing walls are. A house can add floors, be renovated, be remodeled, but the load-bearing walls can't be casually torn down.
+WeChat's restraint isn't about having few features. It's that it knows where the load-bearing walls are. You can add floors, renovate, remodel — but you can't tear down the load-bearing walls.
 
-So now I think that for indie developers building products, the first thing to write isn't a roadmap, but a "let-go list."
+So these days I think the first thing an indie developer should write isn't a roadmap — it's a "letting-go list."
 
-- Which people not to serve first
-- Which scenarios not to touch first
-- Which features not to add for now
-- Which monetization opportunities to hold back on
-- What can't enter the homepage
-- What can't interrupt the main flow
-- What, even if it looks valuable, can't break the main task
+- Which people to not serve yet
+- Which scenarios to not touch yet
+- Which features to not add for now
+- Which monetization opportunities to hold off on
+- What must never go on the homepage
+- What must never interrupt the main flow
+- What, even if it looks valuable, must not break the core task
 
-We never had a big company's traffic, brand, or organizational resources. The only place we can win is being more specific, cleaner, and sharper.
+We don't have the traffic, the brand, or the organizational resources of big companies. The only places we can win are being more specific, cleaner, and sharper.
 
-**A product's true sharpness comes from what you're willing to give up.**
+**A product's true sharpness comes from what you're willing to cut.**
 
-Reference: *[置身钉内](https://drive.google.com/file/d/1-jRahxfzJMQD9-8J9pZyeX1DIwKMyeg7/view?usp=drivesdk)*
+Reference: *[Standing in the Nail](https://drive.google.com/file/d/1-jRahxfzJMQD9-8J9pZyeX1DIwKMyeg7/view?usp=drivesdk)*

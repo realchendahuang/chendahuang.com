@@ -1,5 +1,5 @@
 title: Dahuang X Post
-description: Turn Chinese ideas, project updates, and long-form writing into short posts or threads suited to the X feed, and check the opening, structure, and viral potential.
+description: Turn Chinese ideas, project updates, and long-form writing into short posts or threads that fit the X feed — and check the opening, structure, and viral potential.
 url: https://github.com/realchendahuang/dahuang-x-post
 install: npx skills add realchendahuang/dahuang-x-post -g
 icon: i-simple-icons-x

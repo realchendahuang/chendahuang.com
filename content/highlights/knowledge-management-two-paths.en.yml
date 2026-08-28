@@ -1,6 +1,6 @@
 category: ai
-title: "Two paths of knowledge management: Feishu workflow vs. Cloudflare productization"
-description: "Recently rethinking knowledge management."
+title: "Two paths for knowledge management: a Feishu workflow vs. a Cloudflare product"
+description: "Lately I've been rethinking knowledge management."
 date: 2026-07-08
 likes: 3
 bookmarks: 2
@@ -8,49 +8,49 @@ reposts: 0
 views: 439
 url: https://x.com/realchendahuang/status/2074900341456503169
 content: |
-  Recently rethinking knowledge management.
+  Lately I've been rethinking knowledge management.
 
-  I found there are actually two paths here.
+  I realized there are actually two paths here.
 
   **One is building on Feishu.**
 
-  Its advantages are very direct:
+  Its advantages are direct:
 
-  Free, multi-device sync, shareable, convenient collaboration, and rich enough in form.
+  free, multi-device sync, shareable, easy collaboration, and rich enough in form.
 
-  Documents, multi-dimensional tables, spreadsheets, slides, canvas, Todo, and knowledge bases — these modules combined already cover many personal and team knowledge management scenarios.
+  Documents, multi-dimensional tables, spreadsheets, slides, canvas, Todo, knowledge bases — these modules combined already cover a lot of personal and team knowledge-management scenarios.
 
-  I especially favor multi-dimensional tables.
+  I'm especially bullish on the multi-dimensional tables.
 
   They're well suited as a knowledge hub.
 
-  Information collection, material archiving, status management, structured organization, and content reproduction can all revolve around them.
+  Information collection, material archiving, status management, structured organization, content re-production — all of it can revolve around them.
 
-  Add Feishu CLI and AI Agents, and Feishu is no longer just an office tool.
+  Add the Feishu CLI and AI agents, and Feishu stops being just an office tool.
 
-  It's more like a knowledge workflow system that can be operated by Agents.
+  It becomes more like a knowledge workflow system agents can operate.
 
-  **The other path is self-building on Cloudflare.**
+  **The other path is building your own on Cloudflare.**
 
-  This path is freer and more suited to productization.
+  This path is freer and better suited to productization.
 
-  For example, the FlareMo I'm building now is an attempt to build a knowledge management product on Cloudflare.
+  FlareMo, the thing I'm building now, is an attempt at a knowledge-management product on Cloudflare.
 
-  Cloudflare's advantage is that its underlying capabilities are very complete:
+  Cloudflare's advantage is that the underlying capabilities are complete:
 
-  Frontend, backend, database, object storage, vector search, and AI capabilities can all be combined.
+  frontend, backend, database, object storage, vector search, AI — all combinable.
 
-  But it requires development.
+  But it takes development.
 
-  And you need to design the data structure, search experience, permission system, and product logic yourself.
+  And you have to design the data structure, search experience, permission system, and product logic yourself.
 
-  So my current judgment is:
+  So my current take:
 
-  - Feishu is good for quickly setting up a knowledge management system you can use right away.
-  - Cloudflare is good for turning knowledge management into a truly controllable, iterable product.
+  - Feishu is for quickly standing up a knowledge-management system you can use today.
+  - Cloudflare is for turning knowledge management into a truly controllable, iterable product.
 
   Both paths are worth studying.
 
-  One leans toward workflow.
+  One leans workflow.
 
-  One leans toward productization.
+  One leans productization.

@@ -1,5 +1,5 @@
 category: cloudflare
-title: "Cloudflare Container pitfall: debugging without stop cost me $4"
+title: "Cloudflare Container pitfall: forgot to stop during debugging, got billed $4"
 description: "A Cloudflare Container victim has appeared."
 date: 2026-06-27
 likes: 0
@@ -10,6 +10,6 @@ url: https://x.com/realchendahuang/status/2070820905224441922
 content: |
   A Cloudflare Container victim has appeared.
 
-  Because the code was in the debugging stage, the stop command didn't take effect.
+  Because the code I was writing was still in the debugging stage, the stop command never took effect.
 
-  This caused a Container to run continuously for 7 days, costing me $4.
+  So one Container ran continuously for 7 days and cost me $4.
