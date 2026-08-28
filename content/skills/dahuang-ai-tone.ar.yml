@@ -1,0 +1,8 @@
+title: Dahuang AI Tone
+description: يعيد كتابة النصوص بأسلوب الذكاء الاصطناعي الخاص بـ GPT/Claude/Gemini/Doubao، أو يحدّد النموذج الذي يبدو النص الأقرب إليه أكثر من غيره.
+url: https://github.com/realchendahuang/dahuang-ai-tone
+install: npx skills add realchendahuang/dahuang-ai-tone -g
+icon: i-lucide-fingerprint
+color: "#a855f7"
+tags: ["Agent Skill", "أسلوب AI", "أسلوب النماذج", "كشف الأسلوب", "الكتابة بالصينية"]
+date: 2025-05-01

@@ -1,0 +1,13 @@
+category: tools
+title: "Einheitliche Verwaltung für Proxy-Abos"
+description: "Airport-Dienste + selbst gebaute VPS-Nodes einheitlich verwalten, einheitlich routen, einheitlich einen Abo-Link ausgeben."
+date: 2026-06-29
+likes: 92
+bookmarks: 137
+reposts: 14
+views: 10207
+url: https://x.com/realchendahuang/status/2071465309085790305
+content: |
+  Zum unzensierten Surfen: Wenn du einen Airport-Dienst gekauft UND eigene VPS-Nodes aufgesetzt hast und beide einheitlich verwalten, einheitlich routen und in einen einzigen Abo-Link ausgeben willst.
+  Wenn die Routing-Regeln, der Node-Filter und die Kombinationslogik serverseitig gepflegt werden sollen, statt sie in jedem Client erneut zu konfigurieren.
+  Wenn die Leichtbau-Deployment-Art von Cloudflare reicht und du weder Server, noch Datenbank-Dienste noch komplexe Hintergrund-Tasks pflegen willst.

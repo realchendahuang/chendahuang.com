@@ -1,6 +1,6 @@
 ---
 title: How free users can squeeze Cloudflare dry — how far does the free tier actually get you?
-description: Cloudflare's free tier can carry an entire personal internet infrastructure: DNS, CDN, Pages, Workers, KV, D1, R2, email, Tunnel, AI Gateway and more.
+description: "Cloudflare's free tier can carry an entire personal internet infrastructure: DNS, CDN, Pages, Workers, KV, D1, R2, email, Tunnel, AI Gateway and more."
 date: 2026-06-15
 minRead: 8
 source: x-article

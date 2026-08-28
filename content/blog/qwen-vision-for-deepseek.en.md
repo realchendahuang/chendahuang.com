@@ -1,6 +1,6 @@
 ---
-title: Giving DeepSeek multimodality: the Qwen-3.7-Flash vision approach
-description: DeepSeek V4 Flash has no multimodality — what do you do for image understanding? After surveying the market, the most cost-effective option right now is Qwen-3.7-Flash: recognizing an image costs almost nothing, and pairing it with V4 Flash patches the gap.
+title: "Giving DeepSeek multimodality: the Qwen-3.7-Flash vision approach"
+description: "DeepSeek V4 Flash has no multimodality — what do you do for image understanding? After surveying the market, the most cost-effective option right now is Qwen-3.7-Flash: recognizing an image costs almost nothing, and pairing it with V4 Flash patches the gap."
 date: 2026-08-06
 minRead: 5
 source: x

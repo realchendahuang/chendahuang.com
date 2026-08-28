@@ -1,0 +1,15 @@
+category: ai
+title: "DeepSeek API に組み込みの Web 検索、公式の検索能力をタダで使う"
+description: "DeepSeek 公式 API に、まさかの Web 検索が内蔵されてた。"
+date: 2026-08-05
+likes: 1037
+bookmarks: 885
+reposts: 89
+views: 230537
+url: https://x.com/realchendahuang/status/2084826975102030013
+content: |
+  いいもの見つけた。DeepSeek公式、まさかのAPIにWeb検索を内蔵してた。
+  Responses形式のエンドポイントでdeepseek-v4-flashモデルを呼び、リクエストパラメータでweb_searchツールを宣言するだけで、彼らのサーバー側で実行される検索能力がそのまま使える。
+  自分でサードパーティの検索エンジンに繋がなくても、検索APIキーの追加申請も不要。
+  検索フロー全体を公式が丸ごとホスティングしてくれてる。
+  原文: https://t.co/D4AXo7crHw

@@ -1,0 +1,38 @@
+category: cloudflare
+title: "Un Worker es un obrero cibernético"
+description: "Siento que mucha gente entiende menos del 1% de Cloudflare Workers."
+date: 2026-06-16
+likes: 1
+bookmarks: 2
+reposts: 1
+views: 1743
+url: https://x.com/realchendahuang/status/2066895041910763934
+content: |
+  Siento que mucha gente entiende menos del 1% de Cloudflare Workers.
+
+  Un Worker es un obrero cibernético.
+
+  Se dedica en exclusiva a hacerte el trabajo sucio de detrás de tu web.
+
+  Enviar formularios, subir archivos, llamar a la IA, verificar logins, procesar notificaciones de pago, servir la API de un producto pequeño: el Worker hace de todo.
+
+  Lo más flipante del Worker: los usuarios gratuitos tienen 100.000 peticiones al día, sin soltar ni un céntimo.
+
+  ¿Qué significa 100.000?
+
+  Si tu web tiene 1000 usuarios al día, aunque no pare nunca y cada segundo venga alguien a visitarla, son 86.400 visitas de un día entero. Ni así se te acaba la cuota.
+
+  Si de verdad pudieras agotar esa cuota gratuita.
+
+  ¿Qué esperas? Estás forrado.
+
+  Ahora puedes escribir la lógica y dársela directamente al Worker para que la corra.
+  Combinado con el framework de API Hono, esa es la mejor práctica.
+
+  Eso es lo más goloso de Cloudflare Workers.
+
+  ¿Pagar? Una mierda de pago.
+
+  Cloudflare tiene buen corazón.
+
+  No quiere que gastes dinero.

@@ -1,0 +1,10 @@
+title: Codex Playbook
+description: Ein Praxis-Handbuch, das Codex als langfristiges Kollaborationssystem behandelt – von der Oberflächenwahl, Prompt-Verträgen und Context Engineering bis zu Skills, MCP, Review, CI und Release.
+url: https://github.com/realchendahuang/codex-playbook
+onlineUrl: https://chendahuang.com/playbook/codex/
+icon: i-lucide-bot
+color: "#10a37f"
+tags: ["Codex", "Agent", "Context Engineering", "Skills", "MCP"]
+date: 2026-07-10
+status: ongoing
+stars: 1

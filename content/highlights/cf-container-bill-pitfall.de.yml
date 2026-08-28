@@ -1,0 +1,15 @@
+category: cloudflare
+title: "Cloudflare Container-Fallstrick: Debuggen ohne Stop kostete 4 Dollar"
+description: "Das erste Cloudflare-Container-Opfer ist da."
+date: 2026-06-27
+likes: 0
+bookmarks: 0
+reposts: 0
+views: 353
+url: https://x.com/realchendahuang/status/2070820905224441922
+content: |
+  Das erste Cloudflare-Container-Opfer ist da.
+
+  Weil der Code in der Debugphase war, griff der stop-Befehl nicht.
+
+  Ein Container lief dadurch 7 Tage durch – und hat mir 4 Dollar abgezogen.

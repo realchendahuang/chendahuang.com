@@ -1,0 +1,20 @@
+category: cloudflare
+title: "فشل الذكاء الاصطناعي في مشاريع Cloudflare ليس بسبب نحو الكود"
+description: "غالباً ما يكتب الذكاء الاصطناعي Workers كأنها Node.js، ويعامل Binding كمتغير بيئة."
+date: 2026-06-22
+likes: 23
+bookmarks: 42
+reposts: 4
+views: 1462
+url: https://x.com/realchendahuang/status/2068853978004365739
+content: |
+  كثيرون يكتبون مشاريع Cloudflare بالذكاء الاصطناعي، والفشل ليس بسبب نحو اللغة.
+  المشكلة الحقيقية:
+  يكتب الذكاء الاصطناعي Workers كأنها Node.js في أغلب الأحيان
+  ويستخدم Binding كما لو كان process.env
+  وينسى await
+  ويسمن قيم عامة (globals) لتخزين حالة الطلب على نحو خاطئ
+  ولا يعلم أن طلبات الموارد الثابتة مجانية
+  ويستدعي R2 الخاص به من Worker عبر REST API
+  وجمعت كل هذه الحفر في Playbook الخاص بـ Cloudflare.
+  وكتبت أيضاً على الطريق

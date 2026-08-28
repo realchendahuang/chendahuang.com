@@ -1,0 +1,22 @@
+category: ai
+title: "La manía común de la generación GPT-5: escribir las necesidades internas en los textos de la interfaz"
+description: "La raíz de la redundancia en los textos de la interfaz es que no separa lo que va al usuario de lo que va al desarrollador."
+date: 2026-08-12
+likes: 2
+bookmarks: 0
+reposts: 1
+views: 1500
+url: https://x.com/realchendahuang/status/2087349882101370909
+content: |
+  Qué certero. Esta es la manía común de la generación GPT-5:
+
+  siempre escribe en los textos de la interfaz sus necesidades internas, para demostrar su carga de trabajo. Para demostrarse: mira, yo sí lo he hecho, ¿a que soy una pasada?, no he holgazaneado, he puesto todos tus requisitos sobre la mesa.
+
+  Y además los textos de la interfaz son muy redundantes. De la 5.0 a la 5.6, tantas generaciones iterando y siguen sin cambiar ese problema: ya lo llevan metido hasta los huesos.
+
+  Todo el que haya hecho de verdad producto de frontend lo entiende:
+
+  - en la interfaz, tanto la letra pequeña como la grande, todo es texto dirigido al usuario
+  - el texto que debe llegar al desarrollador en el chat, jamás debe escribirse dentro del producto
+
+  Pero no solo escribe mal los textos: además mete el feedback interno en el producto para «demostrar» que ha hecho algo.

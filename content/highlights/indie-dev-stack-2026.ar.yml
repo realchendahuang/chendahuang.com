@@ -1,0 +1,39 @@
+category: product
+title: "أفضل ممارسة لتطوير التطبيقات المستقلة 2026: ابدأ بـ Web + PWA"
+description: "أشارككم خبراتي المؤلمة من أكثر من عام من التطوير المستقل وما وقعت فيه من حفر."
+date: 2026-06-22
+likes: 263
+bookmarks: 422
+reposts: 46
+views: 37055
+url: https://x.com/realchendahuang/status/2069042963280503182
+content: |
+  أشارككم خبراتي المؤلمة من أكثر من عام من التطوير المستقل وما وقعت فيه من حفر.
+
+  في 2026، إن أراد المطوّر المستقل بناء تطبيق، فالممارسة الأمثل:
+
+  **في طور النموذج الأول (MVP) اصنع Web + PWA أولاً.** تطوير أسرع، وتصحيح أسرع، وتكرار أسرع.
+
+  حزمة الويب التقنية:
+
+  React + TanStack Start + Vite + TypeScript + shadcn/ui + Base UI + Tailwind CSS + better-auth + Vercel AI SDK + oxfmt / oxlint
+
+  خلفية موحدة:
+
+  Hono + Cloudflare Workers
+
+  تصحيح الويب:
+
+  Chrome DevTools MCP + إضافة Codex لـ Chrome
+
+  وما إن يجرى المنتج فعلاً، فاعمل نسخة الجوال من بعد.
+
+  حزمة الجوال التقنية:
+
+  React Native + Expo + Expo Router + NativeWind + React Native Reusables + Reanimated + Gesture Handler + EAS Build / Submit / Update
+
+  الفكرة الجوهرية بسيطة:
+
+  تحقق من الطلب أولاً عبر Web + PWA.
+
+  فإن وُجد مستخدمون فعلاً، ارتقِ إلى React Native + Expo لبناء التطبيق.

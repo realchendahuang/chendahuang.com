@@ -1,0 +1,49 @@
+seo:
+  title: "陈大黄 - 作品とコンテンツ"
+  description: "陈大黄の個人作品・コンテンツ公開サイト。プロジェクト、Playbook、Agent Skill、記事、ポストを掲載。"
+title: "陈大黄"
+description: "洞察マニア、ジョーク担当｜元 AI プロダクトマネージャー｜インディー開発者｜効率的な語学習得の研究者｜AI 効率ツールいじり名人｜プロダクト・デザイン・開発・運営・営業のオールラウンダー"
+hero:
+  links:
+    - label: "プロジェクトを見る"
+      to: /projects
+      color: "primary"
+    - label: "GitHub"
+      to: https://github.com/realchendahuang
+      color: "neutral"
+      target: "_blank"
+  images:
+    - src: /projects/cherina-pod.webp
+      alt: Cherina Pod バイリンガルポッドキャスト精聴ツール
+    - src: /projects/feedsieve.webp
+      alt: FeedSieve X フィード整理ツール
+    - src: /projects/flaremo.webp
+      alt: FlareMo 個人ナレッジ管理
+    - src: /projects/sub-store-cloudflare.webp
+      alt: Sub-Store Cloudflare サブスクリプション集約ツール
+    - src: /projects/pi-config.webp
+      alt: pi-config Pi Coding Agent 設定
+    - src: /projects/deepmate.webp
+      alt: DeepMate AI Harness コントロールパネル
+    - src: /projects/hermes-memory.webp
+      alt: Hermes Memory OpenCode 用永続メモリプラグイン
+    - src: /projects/god-museum.webp
+      alt: God-Museum 文明横断の神話ギャラリー
+    - src: /projects/ai-chronicle.webp
+      alt: AI Chronicle 業界クロニクル
+blog:
+  title: "最新記事"
+highlights:
+  title: "注目のポスト"
+  links:
+    - label: "すべて見る"
+      icon: "i-lucide-arrow-right"
+      to: "/highlights"
+      color: "neutral"
+      variant: "soft"
+    - label: "X ホーム"
+      icon: "i-simple-icons-x"
+      to: "https://x.com/realchendahuang"
+      target: "_blank"
+      color: "neutral"
+      variant: "soft"

@@ -1,0 +1,12 @@
+title: FeedSieve
+description: O faxineiro cibernético do seu feed no X — mantém spam de bots, lixo de IA de baixa qualidade, golpistas de cripto e iscas de engajamento fora da sua timeline.
+type: Ferramenta open source para X
+url: https://github.com/realchendahuang/feedsieve
+image: /projects/feedsieve.webp
+imageAlt: Card do produto FeedSieve em ciano com fundo escuro
+icon: i-lucide-shield-check
+color: "#22d3ee"
+tags: ["X", "RSS", "Filtro de bots", "Redução de ruído", "OSS"]
+date: 2026-08-25
+status: ongoing
+stars: 0

@@ -1,0 +1,49 @@
+seo:
+  title: "陈大黄 - الأعمال والمحتوى"
+  description: "موقع عرض الأعمال والمحتوى الشخصي لـ 陈大黄. يضم المشاريع والأدلة (Playbook) ومهارات الوكلاء (Agent Skill) والمقالات والمنشورات."
+title: "陈大黄"
+description: "صاحب رؤى ثاقبة، سريع البديهة ｜ مدير منتجات سابق في الذكاء الاصطناعي ｜ مطوّر مستقل ｜ باحث في تعلم اللغات بكفاءة ｜ خبير متمرس في أدوات إنتاجية الذكاء الاصطناعي ｜ متمكن متعدد المجالات في المنتج والتصميم والتطوير والعمليات والمبيعات"
+hero:
+  links:
+    - label: "المشاريع"
+      to: /projects
+      color: "primary"
+    - label: "GitHub"
+      to: https://github.com/realchendahuang
+      color: "neutral"
+      target: "_blank"
+  images:
+    - src: /projects/cherina-pod.webp
+      alt: Cherina Pod - استماع مركّز للبودكاست ثنائي اللغة
+    - src: /projects/feedsieve.webp
+      alt: FeedSieve - أداة تنظيف خلاصة X
+    - src: /projects/flaremo.webp
+      alt: FlareMo - إدارة المعرفة الشخصية
+    - src: /projects/sub-store-cloudflare.webp
+      alt: Sub-Store Cloudflare - أداة تجميع الاشتراكات
+    - src: /projects/pi-config.webp
+      alt: pi-config - إعداد Pi Coding Agent
+    - src: /projects/deepmate.webp
+      alt: DeepMate - لوحة تحكم AI Harness
+    - src: /projects/hermes-memory.webp
+      alt: Hermes Memory - إضافة الذاكرة الدائمة لـ OpenCode
+    - src: /projects/god-museum.webp
+      alt: God-Museum - معرض الأساطير عبر الحضارات
+    - src: /projects/ai-chronicle.webp
+      alt: AI Chronicle - تأريخ الصناعة
+blog:
+  title: "أحدث المقالات"
+highlights:
+  title: "أفضل المنشورات"
+  links:
+    - label: "عرض الكل"
+      icon: "i-lucide-arrow-right"
+      to: "/highlights"
+      color: "neutral"
+      variant: "soft"
+    - label: "حساب X"
+      icon: "i-simple-icons-x"
+      to: "https://x.com/realchendahuang"
+      target: "_blank"
+      color: "neutral"
+      variant: "soft"

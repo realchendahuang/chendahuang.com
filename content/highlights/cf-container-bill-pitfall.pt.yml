@@ -1,0 +1,15 @@
+category: cloudflare
+title: "Pisando na bola com Cloudflare Container: debug sem stop custou 4 dólares"
+description: "Mais uma vítima do Cloudflare Container."
+date: 2026-06-27
+likes: 0
+bookmarks: 0
+reposts: 0
+views: 353
+url: https://x.com/realchendahuang/status/2070820905224441922
+content: |
+  Mais uma vítima do Cloudflare Container.
+
+  Como o código que escrevi estava em fase de debug, o comando stop não foi efetivado.
+
+  Resultado: um Container rodando 7 dias seguidos, me cobraram 4 dólares.

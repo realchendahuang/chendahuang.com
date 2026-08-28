@@ -1,0 +1,10 @@
+title: Cloudflare 実践マニュアル
+description: 機能モジュール、AI コーディングワークフロー、課金から、よく使うアーキテクチャと実際のハマりどころまで、Cloudflare を一冊で解説する中国語マニュアル。
+url: https://github.com/realchendahuang/cloudflare-playbook
+onlineUrl: https://chendahuang.com/playbook/cloudflare/
+icon: i-simple-icons-cloudflare
+color: "#F38020"
+tags: ["Cloudflare", "AI コード作成", "Workers", "デプロイ", "アーキテクチャ"]
+date: 2025-01-01
+status: ongoing
+stars: 69

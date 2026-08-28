@@ -1,0 +1,22 @@
+category: cloudflare
+title: "Deploy do Sub-Store concluído na Cloudflare"
+description: "Passei um tempinho e concluí o deploy do Sub-Store na Cloudflare."
+date: 2026-06-27
+likes: 209
+bookmarks: 244
+reposts: 29
+views: 67007
+url: https://x.com/realchendahuang/status/2070689769731019207
+content: |
+  Passei um tempinho e concluí o deploy do Sub-Store na Cloudflare.
+
+  Fundi tudo: meus nós próprios e os nós reserva do serviço de proxy, e ainda encaixei a assinatura automática com regras de roteamento ACL4SSR.
+
+  Com uma única URL de assinatura, realizando direto:
+
+  - fusão de nós de vários provedores
+  - filtragem de nós
+  - configuração de regras de roteamento
+  - atualização automática de configuração
+
+  Um deslizar só.

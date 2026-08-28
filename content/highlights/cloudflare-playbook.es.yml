@@ -1,0 +1,29 @@
+category: cloudflare
+title: "He hecho un Cloudflare Playbook"
+description: "Para todo desarrollador independiente que quiera hacer productos con AI Coding."
+date: 2026-06-21
+likes: 125
+bookmarks: 176
+reposts: 29
+views: 9114
+url: https://x.com/realchendahuang/status/2068732869854613903
+content: |
+  He hecho un Cloudflare Playbook.
+
+  Para todo desarrollador independiente que quiera hacer productos con AI Coding.
+
+  Dentro hay recopilado:
+
+  - cómo elegir entre los servicios habituales de Cloudflare
+  - cómo usar Workers / Pages / D1 / R2 / KV / AI Gateway
+  - si la cuota gratuita da o no da de sí
+  - cuándo merece la pena pagar los $5 de Workers Paid
+  - los errores típicos del código CF escrito con IA
+  - cómo configurar Codex / Claude Code con el Skill y el MCP de Cloudflare
+  - qué proyectos open source sirven como referencia directa
+
+  Mi objetivo es simple:
+
+  escribir código con IA y desplegarlo por todo el mundo con Cloudflare.
+
+  Playbook: [chendahuang.com/playbooks](/playbooks)

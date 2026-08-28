@@ -1,0 +1,25 @@
+category: cloudflare
+title: "On exploite encore moins de 1 % de ce que Cloudflare sait faire"
+description: "J'ai l'impression qu'on exploite encore moins de 1 % de ce que Cloudflare sait faire."
+date: 2026-06-15
+likes: 377
+bookmarks: 470
+reposts: 32
+views: 88959
+url: https://x.com/realchendahuang/status/2066446337936110030
+content: |
+  J'ai l'impression qu'on exploite encore moins de 1 % de ce que Cloudflare sait faire.
+
+  Il a sorti trop de fonctions.
+
+  - le stockage objet avec R2
+  - l'API backend avec Worker
+  - la passerelle IA avec AI Gateway
+  - le calcul lourd avec Container
+  - le cache avec KV
+  - la base de données avec D1
+  - si tu utilises PostgreSQL, tu peux brancher HyperDrive dessus
+
+  Et cetera, et encore plein d'autres : tout ce que tu peux imaginer, il le fait.
+
+  Le plus fou c'est que c'est vraiment pas cher. Le quota gratuit suffit pour longtemps. C'est quoi, un quota gratuit ? C'est ne pas débourser un centime, bodhisattva cybernétique.

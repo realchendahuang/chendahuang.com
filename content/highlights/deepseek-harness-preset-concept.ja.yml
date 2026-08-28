@@ -1,0 +1,27 @@
+category: ai
+title: "DeepSeek Harness の Preset 概念：Agent の配布単位"
+description: "同じモデルでも、違う Preset を読み込めば、まったく別の Agent になる。"
+date: 2026-08-17
+likes: 161
+bookmarks: 0
+reposts: 23
+views: 38000
+url: https://x.com/realchendahuang/status/2089206966015176725
+content: |
+  最近 DeepSeek Harness を調べてる。Preset という概念が注目に値する。
+
+  Preset は Agent の配布単位として理解できる。同じモデルでも違う Preset を読み込めば、最終的にまったく別の Agent に変わる。
+
+  Preset と Skill の最大の違いは何か？
+
+  - ある財務分析 Skill：Agent に財務諸表の分析方法を教える。
+  - ある財務分析 Preset：財務分析 Skill、Web 検索、Browser、PDF、Python、Subagents、研究 Prompt、コンテキスト戦略を全部組み合わせて、開けたらすぐ使える Agent をそのまま渡してくれる。
+
+  未来には二層の市場が同時にできそうだ。
+
+  - 一層は Plugin / Skill Marketplace、主に開発者や上級ユーザー向けの Agent 組み立て。
+  - 一層は Preset / Agent Marketplace、本当に一般ユーザー向け。
+
+  これは実は App Store のロジックにかなり近い。App Store が並べるのは完成した App。Preset が並べるのは完成した Agent アプリ。
+
+  みんなは過去に Prompt を共有してた。その後 Skill を共有し始めた。今後はおそらく Preset を共有する時代になる。

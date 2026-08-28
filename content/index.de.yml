@@ -1,0 +1,49 @@
+seo:
+  title: "Chen Dahuang - Werke & Inhalte"
+  description: "Chen Dahuangs persönliche Ausstellung für Werke und Inhalte. Mit Projekten, Playbooks, Agent Skills, Artikeln und Posts."
+title: "Chen Dahuang"
+description: "Insights-Nerd, Wortwitz-Meister | Ex-AI-Produktmanager | Indie-Entwickler | Effizienzforscher fürs Sprachenlernen | Bastler für AI-Productivity-Tools | Allrounder für Produkt, Design, Entwicklung, Betrieb und Vertrieb"
+hero:
+  links:
+    - label: "Projekte ansehen"
+      to: /projects
+      color: "primary"
+    - label: "GitHub"
+      to: https://github.com/realchendahuang
+      color: "neutral"
+      target: "_blank"
+  images:
+    - src: /projects/cherina-pod.webp
+      alt: Cherina Pod, intensives Zuhören bei zweisprachigen Podcasts
+    - src: /projects/feedsieve.webp
+      alt: FeedSieve, Aufräumtool für den X-Feed
+    - src: /projects/flaremo.webp
+      alt: FlareMo, persönliches Wissensmanagement
+    - src: /projects/sub-store-cloudflare.webp
+      alt: Sub-Store Cloudflare, Tool zur Abo-Aggregation
+    - src: /projects/pi-config.webp
+      alt: pi-config, Konfiguration für den Pi Coding Agent
+    - src: /projects/deepmate.webp
+      alt: DeepMate, Kontrollpanel für den AI Harness
+    - src: /projects/hermes-memory.webp
+      alt: Hermes Memory, Plugin für persistentes Gedächtnis in OpenCode
+    - src: /projects/god-museum.webp
+      alt: God-Museum, Mythen-Galerie über alle Zivilisationen
+    - src: /projects/ai-chronicle.webp
+      alt: AI Chronicle, Chronik der Branche
+blog:
+  title: "Neueste Artikel"
+highlights:
+  title: "Empfohlene Posts"
+  links:
+    - label: "Alle ansehen"
+      icon: "i-lucide-arrow-right"
+      to: "/highlights"
+      color: "neutral"
+      variant: "soft"
+    - label: "X-Startseite"
+      icon: "i-simple-icons-x"
+      to: "https://x.com/realchendahuang"
+      target: "_blank"
+      color: "neutral"
+      variant: "soft"

@@ -1,0 +1,16 @@
+category: ai
+title: "DeepSeek V4 Flash にマルチモーダルがない？Qwen-3.7-Flash で補う"
+description: "コスパ最強の識図モデル Qwen-3.7-Flash をリサーチした。"
+date: 2026-08-06
+likes: 659
+bookmarks: 675
+reposts: 78
+views: 89530
+url: https://x.com/realchendahuang/status/2085265465564336327
+content: |
+  多くの人がDeepSeek V4 Flashにマルチモーダル機能がないと文句を言う
+  俺が調べたところ、現時点で最もコスパのいい識図モデルはQwen-3.7-Flash。
+  画像一枚の認識コストは0.0004〜0.001元、普通の画像1,000枚の認識で約0.6〜0.8元
+  上の情報を踏まえて、俺たちは本当の「AI貧乏人フルセット」スキームを導き出した：
+  1. OpenCodeGo 5ドルプランでDeepSeek V4 Flashを使ってコードを書く
+  2. https://t.co/mlvdSTaD6M

@@ -1,0 +1,21 @@
+category: cloudflare
+title: "Meilleures pratiques 2026 indie dev : le pack Cloudflare du radin"
+description: "Meilleures pratiques 2026 de l'indie dev : le pack Cloudflare du radin."
+date: 2026-06-15
+likes: 225
+bookmarks: 335
+reposts: 34
+views: 40629
+url: https://x.com/realchendahuang/status/2066586160902881542
+content: |
+  Meilleures pratiques 2026 de l'indie dev
+  le pack Cloudflare du radin
+  Codex : écrire le code, toute la stack
+  GitHub : versioning
+  Stripe : système de paiement
+  Front : TanStack Start
+  Back : Hono + Cloudflare Workers
+  Déploiement : Cloudflare Pages
+  Base de données : Cloudflare D1
+  Stockage de fichiers : Cloudflare R2
+  Cache / config : Cloudflare KV

@@ -1,0 +1,16 @@
+category: cloudflare
+title: "無料アカウントで Cloudflare のリソースをどこまでタダ乗りできるか"
+description: "Cloudflare の無料枠、ハマりどころ、ベストプラクティスを 3 日かけて整理した。"
+date: 2026-06-19
+likes: 45
+bookmarks: 53
+reposts: 10
+views: 4802
+url: https://x.com/realchendahuang/status/2067989092525384046
+content: |
+  俺たちの無料アカウントで、Cloudflare のリソースをどこまでタダ乗りできるのか？
+  Cloudflare を使うとき、どんなハマりどころとベストプラクティスがあるのか？
+  これらの問題を、丸々 3 日間、がっつり調べた。
+  答えは下のリポジトリに体系立てて置いてある。
+  このリポジトリは今後も継続更新する：
+  https://t.co/gDuCwIdWHi https://t.co/WZqEZLH9pE

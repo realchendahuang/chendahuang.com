@@ -1,0 +1,12 @@
+title: DeepMate
+description: "Un compañero ligero y panel de control para DeepSeek Harness: gestiona runtimes, modelos, providers, perfiles, plugins y el autodiagnóstico Doctor, todo en un solo lugar."
+type: App de escritorio Rust · Tauri
+url: https://github.com/realchendahuang/DeepMate
+image: /projects/deepmate.webp
+imageAlt: Tarjeta de producto de DeepMate en negro y rojo
+icon: i-lucide-cpu
+color: "#f87171"
+tags: ["Rust", "Tauri", "DeepSeek", "Control Plane", "Doctor", "MIT"]
+date: 2026-08-17
+status: ongoing
+stars: 2

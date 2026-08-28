@@ -1,0 +1,23 @@
+category: cloudflare
+title: "なぜ FlareMo を作るのか：さっとメモして、少しずつ知識に育てる"
+description: "「さっとメモして、少しずつ知識に育つ」ツールを探している。"
+date: 2026-06-27
+likes: 1
+bookmarks: 2
+reposts: 1
+views: 258
+url: https://x.com/realchendahuang/status/2070807195332297205
+content: |
+  「さっとメモして、少しずつ知識に育つ」ツールを探している。
+
+  Flomo のような、開けたらすぐメモできる、邪魔にならないアイデア収集がほしい；
+
+  Memos のような、成熟したオープンソースエコシステム、データ移行可、API で遊べるのもほしい；
+
+  でも新しい VPS を立てて、Docker、Postgres、Node の常駐プロセスをメンテしたくはない。
+
+  じゃあどうするか。FlareMo のやり方は、Memos のデータモデルと API を「仕様」とみなして、ランタイムごと Cloudflare の上に組み直す：
+
+  Workers で API を動かし、D1 にノート、R2 に添付ファイル、Queues/Cron でバックグラウンド処理、Vectorize + Workers AI は今後のセマンティック検索と AI ワークフローのために取っておく。
+
+  Memos の肩に乗って、エッジクラウドの上に育つ個人ナレッジベースを一本、作る。

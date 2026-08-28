@@ -1,0 +1,21 @@
+category: cloudflare
+title: "2026 独立開発ベストプラクティス：Cloudflare 貧乏人フルセット"
+description: "2026 年独立開発ベストプラクティス、それが Cloudflare 貧乏人フルセット。"
+date: 2026-06-15
+likes: 225
+bookmarks: 335
+reposts: 34
+views: 40629
+url: https://x.com/realchendahuang/status/2066586160902881542
+content: |
+  2026年独立開発ベストプラクティス、その名も
+  Cloudflare貧乏人フルセット
+  Codex：コードを書き、フルスタック開発を完結
+  GitHub：バージョン管理
+  Stripe：決済
+  フロント：TanStack Start
+  バックエンド：Hono + Cloudflare Workers
+  デプロイ：Cloudflare Pages
+  データベース：Cloudflare D1
+  ファイルストレージ：Cloudflare R2
+  キャッシュ / 設定：Cloudflare KV

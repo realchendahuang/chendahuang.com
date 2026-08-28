@@ -1,0 +1,15 @@
+category: cloudflare
+title: "Piège Cloudflare Container : 4 dollars facturés pour un stop qui n'a pas marché pendant le debug"
+description: "La première victime de Cloudflare Container est arrivée."
+date: 2026-06-27
+likes: 0
+bookmarks: 0
+reposts: 0
+views: 353
+url: https://x.com/realchendahuang/status/2070820905224441922
+content: |
+  La première victime de Cloudflare Container est arrivée.
+
+  Parce que le code écrit était en phase de debog, la commande stop n'a pas pris effet.
+
+  Résultat : un Container a tourné 7 jours d'affilée et m'a facturé 4 dollars.

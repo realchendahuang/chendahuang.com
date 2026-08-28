@@ -1,0 +1,25 @@
+category: ai
+title: "Warum die Responses API für Agents besser passt als Chat Completions"
+description: "Viele müssen bei AI-Tools einen API-Key konfigurieren, manchmal auch ein Schnittstellenformat wählen."
+date: 2026-07-09
+likes: 1
+bookmarks: 0
+reposts: 0
+views: 96
+url: https://x.com/realchendahuang/status/2075074946301317487
+content: |
+  Viele müssen bei AI-Tools einen API-Key konfigurieren, manchmal auch ein Schnittstellenformat wählen.
+
+  Dieses Schnittstellenformat lässt sich simpel verstehen als:
+
+  Die verabredete Kommunikationsweise zwischen dir und dem Modell-Dienst.
+
+  Zum Beispiel: Die früher bekannteste kompatible OpenAI-Schnittstelle meint oft Chat Completions. Dieses Format passt perfekt zum Chatten und zu simpler Textgenerierung. Deshalb wird es von vielen Modell-Anbietern im In- und Ausland bevorzugt kompatibel angeboten.
+
+  Aber heute sind die Szenarien für AI-Anwendungen viel komplexer geworden. Modelle sollen oft Dateien lesen, Webseiten abrufen, Funktionen aufrufen, Code ausführen, sich mit MCP verbinden, Kontext behalten und dann weitere Aufgaben erledigen.
+
+  Genau hier zeigt der Wert der Responses API von OpenAI.
+
+  - Ihre Reasoning-Modelle liefern bessere Ergebnisse. Dasselbe Modell in einer passenderen Schnittstellenstruktur erledigt Aufgaben besser.
+  - Sie ist nativ für Agents gebaut. Das Modell kann innerhalb einer einzigen API-Anfrage mehrere Tools aufrufen.
+  - Sie spart Geld. Die Cache-Auslastung der Responses API liegt im Vergleich zu Chat Completions um 40 bis 80 % höher. Höhere Cache-Auslastung heißt: günstigere wiederholte Aufrufe und leichter optimierbare Antwortzeiten.

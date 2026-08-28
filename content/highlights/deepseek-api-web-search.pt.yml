@@ -1,0 +1,15 @@
+category: ai
+title: "Busca na web embutida na API do DeepSeek: a busca oficial de graça"
+description: "A API oficial do DeepSeek vem com busca na web embutida."
+date: 2026-08-05
+likes: 1037
+bookmarks: 885
+reposts: 89
+views: 230537
+url: https://x.com/realchendahuang/status/2084826975102030013
+content: |
+  Achei uma joia: a DeepSeek embutiu busca na web na própria API oficial.
+  Chamando o modelo deepseek-v4-flash pelo endpoint no formato Responses, é só declarar a ferramenta web_search nos parâmetros e já usa a busca executada no servidor deles.
+  Sem integrar buscador de terceiros, sem pedir chave de busca.
+  O fluxo de busca inteiro é hospedado oficialmente.
+  Original: https://t.co/D4AXo7crHw

@@ -1,0 +1,21 @@
+category: cloudflare
+title: "Best Practices für Indie-Devs 2026: Das Cloudflare-Komplettpaket für Sparfüchse"
+description: "Best Practices des Indie-Dev 2026: das Cloudflare-Komplettpaket für Sparfüchse."
+date: 2026-06-15
+likes: 225
+bookmarks: 335
+reposts: 34
+views: 40629
+url: https://x.com/realchendahuang/status/2066586160902881542
+content: |
+  Best Practices des Indie-Dev 2026:
+  Cloudflare-Komplettpaket für Sparfüchse
+  Codex: Code schreiben, Full-Stack inklusive
+  GitHub: Versionsverwaltung
+  Stripe: Zahlungssystem
+  Frontend: TanStack Start
+  Backend: Hono + Cloudflare Workers
+  Deployment: Cloudflare Pages
+  Datenbank: Cloudflare D1
+  Datei-Storage: Cloudflare R2
+  Cache / Config: Cloudflare KV

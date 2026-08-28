@@ -1,0 +1,22 @@
+category: ai
+title: "DeepSeek Harness vs API tierce : erreur unknown tool, un problème de format de données dans la passerelle"
+description: "Le nom de l'outil n'est pas vraiment perdu, c'est la passerelle qui a perdu le format des données."
+date: 2026-08-18
+likes: 2
+bookmarks: 0
+reposts: 2
+views: 2313
+url: https://x.com/realchendahuang/status/2089636108271550484
+content: |
+  DeepSeek Harness + problème de compatibilité d'API tierce :
+
+  Quand l'agent appelle des outils comme Bash, il renvoie `ToolNotFoundError: unknown tool ""`, on dirait que l'outil n'est pas enregistré.
+
+  En réalité, le format de données renvoyé par la passerelle diffère de celui de l'officiel DeepSeek, et le nom de l'outil se perd en chemin.
+
+  Quelques liens GitHub Discussions liés :
+
+  - chercher « unknown tool » dans deepseek-ai/dsh#issues
+  - ceux qui montent leur propre passerelle (OpenRouter / OneAPI / new-api) tombent le plus facilement dans ce piège
+
+  Piste de débug : attraper une requête et une réponse tool_call complètes, et comparer si le nom de l'outil dans les logs de la passerelle est une chaîne vide.

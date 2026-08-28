@@ -1,0 +1,9 @@
+title: Dahuang X Post
+description: Transforme des idées, des mises à jour de projet et de longs textes en posts courts ou Threads taillés pour le flux X, puis vérifie l'accroche, la structure et le potentiel de diffusion.
+url: https://github.com/realchendahuang/dahuang-x-post
+install: npx skills add realchendahuang/dahuang-x-post -g
+icon: i-simple-icons-x
+color: "#111111"
+tags: ["Agent Skill", "X", "Écriture chinoise", "Hook", "Thread"]
+date: 2026-07-10
+stars: 0

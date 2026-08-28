@@ -1,0 +1,197 @@
+{
+  "site": {
+    "name": "陈大黄",
+    "description": "Le portfolio et la vitrine de contenus de Chen Dahuang. Projets, guides, skills, articles et posts."
+  },
+  "nav": {
+    "home": "Accueil",
+    "projects": "Projets",
+    "playbooks": "Guides",
+    "skills": "Skills",
+    "blog": "Blog",
+    "highlights": "Posts",
+    "menu": "Menu",
+    "openMenu": "Ouvrir le menu de navigation"
+  },
+  "sections": {
+    "blog": "Blog",
+    "project": "Projets",
+    "playbook": "Guides",
+    "skill": "Skills",
+    "highlight": "Posts"
+  },
+  "search": {
+    "label": "Rechercher",
+    "shortcut": "Rechercher (Cmd+K)",
+    "placeholder": "Rechercher blog, projets, guides, skills, posts…",
+    "empty": "Tapez un mot-clé pour chercher sur tout le site",
+    "noResults": "Aucun résultat pour «{query}»"
+  },
+  "theme": {
+    "toDark": "Passer en mode sombre",
+    "toLight": "Passer en mode clair"
+  },
+  "footer": {
+    "rss": "Flux RSS",
+    "onX": "Chen Dahuang sur X",
+    "onGithub": "Chen Dahuang sur GitHub"
+  },
+  "a11y": {
+    "skipToContent": "Aller au contenu principal"
+  },
+  "hero": {
+    "highlights": "Posts en vedette",
+    "blogPosts": "Articles de blog",
+    "projects": "Projets",
+    "githubStars": "Étoiles GitHub"
+  },
+  "landing": {
+    "shareHighlight": "Des posts en vedette de Chen Dahuang : {title}",
+    "linkCopied": "Lien copié, va le partager",
+    "likes": "j'aime",
+    "bookmarks": "favoris",
+    "original": "Original",
+    "about": "À propos",
+    "aboutTitle": "Développeur indie, bricolant Cloudflare et les outils de productivité IA",
+    "aboutBody": "Ancien product manager en IA, désormais concentré sur le développement indépendant : combiner IA, Cloudflare et création de contenu dans mes propres produits et flux. Projets, guides et blog sont le registre public de cette exploration — si vous faites quelque chose de similaire, échangeons.",
+    "support": "Soutenez-moi sur Afdian",
+    "xLink": "X (anciennement Twitter)",
+    "xDesc": "Mises à jour quotidiennes, réflexions et conseils pratiques",
+    "githubLink": "GitHub",
+    "githubDesc": "Code source des projets et dépôts de guides",
+    "rssLink": "Flux RSS",
+    "rssDesc": "Les nouveautés du blog directement dans votre lecteur",
+    "work": "Travaux",
+    "recentProjects": "Projets récents",
+    "viewAllProjects": "Voir tous les projets",
+    "readMore": "Lire la suite"
+  },
+  "projects": {
+    "tryOnline": "Essayer en ligne",
+    "github": "GitHub",
+    "view": "Voir {title}",
+    "preview": "Aperçu de {title}"
+  },
+  "playbooks": {
+    "readOnline": "Lire en ligne",
+    "viewOnGithub": "Voir sur GitHub"
+  },
+  "skills": {
+    "readOnline": "Lire en ligne",
+    "viewOnGithub": "Voir sur GitHub"
+  },
+  "highlights": {
+    "count": "{count} posts au total. Parcourez par thème, chronologie ou popularité, recherchez des mots-clés, filtrez par catégorie ou cliquez sur un titre pour déplier.",
+    "xHome": "Profil X",
+    "searchPosts": "Rechercher des posts",
+    "searchPlaceholder": "Rechercher par titre ou contenu…",
+    "expandAll": "Tout déplier",
+    "collapseAll": "Tout replier",
+    "viewMode": "Mode d'affichage",
+    "filterTheme": "Filtrer par thème",
+    "all": "Tous",
+    "hot": "Populaire",
+    "hotTitle": "Post populaire",
+    "likes": "j'aime",
+    "bookmarks": "favoris",
+    "reposts": "reposts",
+    "views": "vues",
+    "viewOnX": "Voir l'original sur X",
+    "noMatch": "Aucun post correspondant, essayez un autre mot-clé.",
+    "noPosts": "Aucun post sous ce filtre.",
+    "countSuffix": "posts"
+  },
+  "blog": {
+    "count": "{count} articles au total. Recherchez par mot-clé ou filtrez par tag.",
+    "archive": "Archive",
+    "tags": "Tags",
+    "rss": "Flux RSS",
+    "searchPlaceholder": "Rechercher par titre, description ou tags…",
+    "all": "Tous",
+    "found": "{count} trouvés",
+    "tagFilter": "tag «{tag}»",
+    "keywordFilter": "mot-clé «{keyword}»",
+    "pinned": "Épinglé",
+    "pinnedTitle": "Post épinglé",
+    "original": "Original",
+    "originalTitle": "Article original de ce site",
+    "noMatch": "Aucun article correspondant, essayez un autre mot-clé ou tag.",
+    "minutes": "min"
+  },
+  "archive": {
+    "title": "Archive",
+    "description": "Tous les articles du blog archivés par année.",
+    "count": "{count} articles, organisés par année.",
+    "posts": "articles"
+  },
+  "tags": {
+    "title": "Tags",
+    "description": "Parcourez tous les articles du blog par tag.",
+    "count": "{count} tags au total, cliquez pour voir les articles correspondants.",
+    "all": "Tous",
+    "allPosts": "Tous les articles",
+    "underTag": "Articles sous le tag «{tag}»",
+    "empty": "Aucun article sous ce tag."
+  },
+  "friends": {
+    "empty": "Pas encore de liens amis. Ajoutez un fichier dans content/friends/*.yml.",
+    "avatar": "Avatar de {name}"
+  },
+  "post": {
+    "allPosts": "Tous les articles",
+    "updated": "Mis à jour le {date}",
+    "minRead": "{count} min de lecture",
+    "original": "Original",
+    "sourceX": "Publié à l'origine sur X",
+    "indieDev": "Développeur indépendant",
+    "collapseToc": "Replier le sommaire",
+    "viewToc": "Voir le sommaire",
+    "toc": "Sommaire",
+    "shareHint": "Si ça vous a été utile, partagez-le.",
+    "shareToX": "Partager sur X",
+    "xOriginal": "Original sur X",
+    "copyLink": "Copier le lien",
+    "share": "Partager",
+    "related": "Lectures liées",
+    "subscribe": "Abonnez-vous aux nouveautés",
+    "subscribeDesc": "Les nouveaux posts synchronisent avec RSS, ou suivez-moi sur X.",
+    "rss": "Flux RSS",
+    "followX": "Suivre sur X",
+    "support": "Soutenir",
+    "backToTop": "Retour en haut",
+    "linkCopied": "Lien de l'article copié dans le presse-papiers",
+    "shareText": "Du blog de Chen Dahuang : {title}"
+  },
+  "error": {
+    "title": "Page introuvable",
+    "description": "Cette page n'existe pas ou a été déplacée."
+  },
+  "seo": {
+    "notFound": "Page introuvable"
+  },
+  "highlightsCategories": {
+    "cloudflare": "Cloudflare",
+    "cloudflareDesc": "Cloud de périphérie, Workers, infrastructure gratuite et expérience de déploiement",
+    "tools": "Liste d'outils",
+    "toolsDesc": "Recommandations de logiciels, plugins, matériel et outils de productivité",
+    "ai": "Réflexions IA",
+    "aiDesc": "Modèles, agents, gestion des connaissances et méthodes de collaboration",
+    "product": "Développement produit",
+    "productDesc": "Développement indie, stack technique et jugement produit",
+    "opc": "Startup OPC",
+    "opcDesc": "Entreprise unipersonnelle, enregistrement et opérations",
+    "growth": "Croissance de contenu",
+    "growthDesc": "Opération de X, méthodes de publication et revues de croissance",
+    "essay": "Essais",
+    "essayDesc": "Observations sur la valeur, l'humour et les perspectives non techniques"
+  },
+  "highlightViewModes": {
+    "theme": "Par thème",
+    "themeDesc": "Parcourir groupé par catégorie",
+    "timeline": "Chronologie",
+    "timelineDesc": "Trié par date de publication",
+    "heat": "Par popularité",
+    "heatDesc": "Trié par likes et engagement"
+  },
+  "monthLabel": "{month} {year}"
+}

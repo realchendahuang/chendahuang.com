@@ -1,0 +1,20 @@
+category: cloudflare
+title: "AI で Cloudflare プロジェクトが失敗するのは、構文のせいじゃない"
+description: "AI はよく Workers を Node.js みたいに書き、Binding を環境変数だと思っている。"
+date: 2026-06-22
+likes: 23
+bookmarks: 42
+reposts: 4
+views: 1462
+url: https://x.com/realchendahuang/status/2068853978004365739
+content: |
+  AI で Cloudflare プロジェクトを書いて失敗するのは、構文のせいじゃない。
+  本当の問題は：
+  AI がよく Workers を Node.js みたいに書くこと
+  Binding を process.env として使うこと
+  await を忘れること
+  グローバル変数でリクエスト状態を保存すること
+  静的アセットのリクエストが無料だと知らないこと
+  Worker から REST API で自分の R2 を呼ぶこと
+  こうしたハマりどころは全部 Cloudflare Playbook にまとめてある。
+  ついでに書いたのが

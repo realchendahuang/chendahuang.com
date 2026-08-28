@@ -1,0 +1,9 @@
+title: Dahuang Human Tone
+description: Remove cascas de template, palavras-ônibus, finais empolados e interação fake de textos em chinês. Muda a estrutura, não os fatos — preserva a informação e a voz do autor.
+url: https://github.com/realchendahuang/dahuang-human-tone
+install: npx skills add realchendahuang/dahuang-human-tone -g
+icon: i-lucide-wand-sparkles
+color: "#00DC82"
+tags: ["Agent Skill", "Tirar sabor de IA", "Escrita em chinês", "Claude Code", "Codex"]
+date: 2025-05-01
+stars: 10

@@ -1,0 +1,56 @@
+category: ai
+title: "Deux routes pour la gestion des connaissances : le workflow Feishu contre le produit Cloudflare"
+description: "Je repense à la gestion des connaissances, dernièrement."
+date: 2026-07-08
+likes: 3
+bookmarks: 2
+reposts: 0
+views: 439
+url: https://x.com/realchendahuang/status/2074900341456503169
+content: |
+  Je repense à la gestion des connaissances, dernièrement.
+
+  Je découvre qu'il y a en fait deux routes.
+
+  **Une route, monter sur Feishu.**
+
+  Ses avantages sont directs :
+
+  gratuit, synchronisé multi-appareils, partageable, collaboration facile, et déclinaisons suffisamment riches.
+
+  Documents, tableaux multidimensionnels, tableurs, diapos, canevas, Todo, bases de connaissances : ces modules combinés couvrent déjà beaucoup de scénarios de gestion des connaissances personnels et d'équipe.
+
+  Je mise surtout sur les tableaux multidimensionnels.
+
+  Ils conviennent très bien comme noyau de connaissances.
+
+  La collecte d'infos, l'archivage des ressources, la gestion d'état, le rangement structuré, la re-production de contenu, tout peut s'organiser autour d'eux.
+
+  Avec en plus le CLI Feishu et les agents IA, Feishu n'est plus juste un logiciel bureautique.
+
+  C'est plutôt un système de workflow de connaissances qu'un agent peut manipuler.
+
+  **L'autre route, se construire sur Cloudflare.**
+
+  Celle-ci est plus libre, et plus adaptée à la production de produit.
+
+  Par exemple FlareMo, que je développe en ce moment, veut être un produit de gestion des connaissances basé sur Cloudflare.
+
+  L'avantage de Cloudflare : des capacités de fond très complètes.
+
+  Front, back, base de données, stockage objet, recherche vectorielle, capacités IA : tout est combinable.
+
+  Mais il faut développer.
+
+  Il faut en plus concevoir soi-même la structure des données, l'expérience de recherche, le système de permissions et la logique produit.
+
+  Mon jugement actuel :
+
+  - Feishu convient pour monter vite un système de gestion des connaissances utilisable tout de suite.
+  - Cloudflare convient pour faire de la gestion des connaissances un vrai produit, contrôlable et itérable.
+
+  Ces deux routes valent la peine d'être étudiées.
+
+  L'une penche vers le workflow.
+
+  L'autre penche vers le produit.

@@ -1,0 +1,12 @@
+title: FlareMo
+description: Cloudflare ネイティブの個人ナレッジ管理システム。Memos 互換 API を備え、データは自分でホストできる。
+type: 個人ナレッジ管理
+url: https://github.com/realchendahuang/FlareMo
+image: /projects/flaremo.webp
+imageAlt: FlareMo のメモタイムラインとタグ画面
+icon: i-lucide-sticky-note
+color: "#f59e0b"
+tags: ["Cloudflare", "Memos", "D1", "R2", "ナレッジ管理"]
+date: 2026-07-10
+status: ongoing
+stars: 150

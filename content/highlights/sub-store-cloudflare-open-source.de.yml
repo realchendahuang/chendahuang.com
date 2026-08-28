@@ -1,0 +1,21 @@
+category: cloudflare
+title: "Proxy-Abo-Aggregation auf Cloudflare verlegt"
+description: "Ich habe die Proxy-Abo-Aggregation auf Cloudflare verlegt."
+date: 2026-06-28
+likes: 327
+bookmarks: 479
+reposts: 56
+views: 44611
+url: https://x.com/realchendahuang/status/2071247817109348796
+content: |
+  Ich habe die Proxy-Abo-Aggregation auf Cloudflare verlegt.
+
+  Open Source veröffentlicht: ein Projekt, das Proxy-Abo-Links-Aggregation komplett gratis auf Cloudflare deployed.
+
+  Es bündelt alle deine Proxy-Abo-Links und selbst gebauten Netzwerk-Nodes in einer einzigen Link – und du kannst zu passende Routing-Regeln konfigurieren.
+
+  So brauchst du wirklich nur eine einzige Link, die in allen Clients funktioniert – kein Client muss mehr einzeln konfiguriert werden.
+
+  GitHub: https://github.com/realchendahuang/sub-store-cloudflare
+
+  Blog-Original: [Ich habe meine Sub-Abo-Aggregation auf Cloudflare verlegt](/blog/sub-store-cloudflare)

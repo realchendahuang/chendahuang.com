@@ -8,25 +8,27 @@ const availableLocales = computed(() =>
 )
 
 const switchTo = (code: string) => {
-  const path = switchLocalePath(code as 'zh' | 'en')
+  const path = switchLocalePath(code as 'zh' | 'en' | 'ja' | 'es' | 'pt' | 'fr' | 'de' | 'ar')
   if (path) {
     navigateTo(path)
   } else {
-    setLocale(code as 'zh' | 'en')
+    setLocale(code as 'zh' | 'en' | 'ja' | 'es' | 'pt' | 'fr' | 'de' | 'ar')
   }
 }
 </script>
 
 <template>
-  <UButton
-    v-for="target in availableLocales"
-    :key="target.code"
-    :label="target.code === 'en' ? 'EN' : '中文'"
-    color="neutral"
-    variant="ghost"
-    size="sm"
-    class="rounded-full"
-    :aria-label="target.code === 'en' ? 'Switch to English' : '切换到中文'"
-    @click="switchTo(target.code)"
-  />
+  <UDropdownMenu
+    :items="availableLocales.map(l => ({ label: l.name ?? l.code, click: () => switchTo(l.code) }))"
+    :content="{ align: 'end', sideOffset: 6 }"
+  >
+    <UButton
+      icon="i-lucide-languages"
+      color="neutral"
+      variant="ghost"
+      size="sm"
+      class="rounded-full"
+      :aria-label="'Switch language'"
+    />
+  </UDropdownMenu>
 </template>

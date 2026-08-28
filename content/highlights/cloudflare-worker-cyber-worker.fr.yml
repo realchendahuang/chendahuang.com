@@ -1,0 +1,38 @@
+category: cloudflare
+title: "Worker, c'est le travailleur cybernétique"
+description: "J'ai l'impression que beaucoup comprennent encore moins de 1 % de ce qu'est Cloudflare Worker."
+date: 2026-06-16
+likes: 1
+bookmarks: 2
+reposts: 1
+views: 1743
+url: https://x.com/realchendahuang/status/2066895041910763934
+content: |
+  J'ai l'impression que beaucoup comprennent encore moins de 1 % de ce qu'est Cloudflare Worker.
+
+  Worker, c'est le travailleur cybernétique.
+
+  Il s'occupe des sales boulots derrière ton site web.
+
+  Soumettre un formulaire, uploader un fichier, appeler une IA, vérifier un login, gérer une notification de paiement, servir l'API d'un petit produit : Worker fait tout.
+
+  Le truc le plus absurde chez Worker : les utilisateurs gratuits ont un quota de 100 000 requêtes par jour, sans un centime.
+
+  100 000 requêtes, ça représente quoi ?
+
+  Si ton site a 1000 utilisateurs par jour, même s'il tourne 24 h sans interruption, avec une visite à chaque seconde, ça fait 86 400 visites par jour : le quota n'est même pas épuisé.
+
+  Si tu arrives vraiment à épuiser le quota gratuit.
+
+  Y'a plus à réfléchir : t'es riche.
+
+  Pour l'instant tu peux écrire la logique et la confier direct à Worker.
+  Combiné au framework Hono API, c'est la bonne pratique ultime.
+
+  C'est ça, le plus savoureux chez Cloudflare Worker.
+
+  Payer ? Payer quoi, payer rien.
+
+  Cloudflare a bon cœur.
+
+  Il ne supporte pas de te voir dépenser.

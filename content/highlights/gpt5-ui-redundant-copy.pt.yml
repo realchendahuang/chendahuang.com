@@ -1,0 +1,22 @@
+category: ai
+title: "A mania comum da geração GPT-5: escrever demanda interna no copy da interface"
+description: "A raiz do copy redundante na interface é que ele nunca separa o texto pro usuário do retorno pro desenvolvedor."
+date: 2026-08-12
+likes: 2
+bookmarks: 0
+reposts: 1
+views: 1500
+url: https://x.com/realchendahuang/status/2087349882101370909
+content: |
+  Falou com precisão cirúrgica, essa é a mania comum da geração GPT-5:
+
+  sempre escrever a demanda interna no copy da interface, pra provar o próprio esforço. Pra provar: olha, eu realmente fiz, tô com uma cara ótima, né, não dei corpo mole não, coloquei todas as suas demandas em cima da mesa pra você.
+
+  E o copy na interface é absurdamente redundante. Da 5.0 pra 5.6, foi geração após geração, e o problema continua lá — já entrou na medula.
+
+  Quem já fez produto de frontend de verdade entende:
+
+  - todo texto na interface, pequeno ou grande, é copy direcionado ao usuário
+  - o que deveria ser retorno pro desenvolvedor, na conversa, nunca deveria ir pro produto
+
+  Mas não é só o copy que é ruim: ele ainda escreve o retorno interno no produto pra "mostrar" que realmente fez alguma coisa.

@@ -1,0 +1,56 @@
+category: ai
+title: "As duas trilhas da gestão de conhecimento: fluxo no Feishu vs. produto na Cloudflare"
+description: "Ando repensando a gestão de conhecimento ultimamente."
+date: 2026-07-08
+likes: 3
+bookmarks: 2
+reposts: 0
+views: 439
+url: https://x.com/realchendahuang/status/2074900341456503169
+content: |
+  Ando repensando a gestão de conhecimento ultimamente.
+
+  Descobri que aqui existem duas trilhas.
+
+  **Uma é montar em cima do Feishu.**
+
+  A vantagem é direta:
+
+  grátis, sincroniza em vários aparelhos, dá pra compartilhar, colaboração fácil, e os formatos são ricos o bastante.
+
+  Documento, tabela multidimensional, planilha, slide, canvas, Todo, base de conhecimento — esses módulos combinados já cobrem muita cena de gestão de conhecimento pessoal e de time.
+
+  Eu aposto principalmente na tabela multidimensional.
+
+  Ela é ótima como hub central de conhecimento.
+
+  Coleta de informação, arquivamento de material, gestão de status, organização estruturada, reprocessamento de conteúdo — tudo pode girar em torno dela.
+
+  Somado ao CLI e aos AI Agents do Feishu, o Feishu deixa de ser só um software de escritório.
+
+  Fica mais como um sistema de fluxo de conhecimento que o Agent consegue operar.
+
+  **A outra trilha é desenvolver em cima da Cloudflare.**
+
+  Essa trilha é mais livre e combina mais com produto.
+
+  Por exemplo o FlareMo que estou fazendo agora nasce de querer fazer um produto de gestão de conhecimento com base na Cloudflare.
+
+  A vantagem da Cloudflare é que as capacidades de base são completas:
+
+  frontend, backend, banco de dados, object storage, busca vetorial, capacidade de IA — dá pra combinar tudo.
+
+  Mas exige desenvolvimento.
+
+  E também exige desenhar você mesmo a estrutura de dados, a experiência de busca, o sistema de permissão e a lógica de produto.
+
+  Então meu julgamento hoje:
+
+  - O Feishu serve pra montar rápido um sistema de gestão de conhecimento utilizável na hora.
+  - A Cloudflare serve pra transformar gestão de conhecimento em produto de verdade, controlável e iterável.
+
+  As duas trilhas merecem estudo.
+
+  Uma pende pro fluxo de trabalho.
+
+  A outra pende pra produto.

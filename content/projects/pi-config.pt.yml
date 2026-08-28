@@ -1,0 +1,12 @@
+title: pi-config
+description: "Minha configuração pronta para uso do Pi Coding Agent: 17 plugins + 18 Skills globais + 2 servidores MCP, instalados com um único comando."
+type: Configuração de assistente de código com IA
+url: https://github.com/realchendahuang/pi-config
+image: /projects/pi-config.webp
+imageAlt: "Card roxo escuro do pi-config: configuração do Pi / My Pi Coding Agent Setup"
+icon: i-lucide-terminal
+color: "#a78bfa"
+tags: ["Pi", "Coding Agent", "Plugins", "Skills", "MCP", "Shell"]
+date: 2026-07-25
+status: ongoing
+stars: 139

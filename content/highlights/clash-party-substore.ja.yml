@@ -1,0 +1,17 @@
+category: tools
+title: "Clash Party + Cloudflare Substore、サブスクリンク一本で分流完結"
+description: "Clash Party の科学上网（プロキシ）を Cloudflare 上の Substore と組み合わせる。"
+date: 2026-06-28
+likes: 138
+bookmarks: 161
+reposts: 20
+views: 12327
+url: https://x.com/realchendahuang/status/2071268842496839820
+content: |
+  Clash Party で科学上网（プロキシ）
+  組み合わせるのは Cloudflare にデプロイした Substore
+  サブスクリンク一本で、複数ベンダーの集約・ルール分流が完了
+  気持ちいい（力強く）！
+  あと Clash Party 这个クライアントも推す。非常にエレガント。
+  俺の sub-store-cloudflare のオープンソースアドレス：
+  https://t.co/u8zhrOSrAw https://t.co/Zzc3IXKsLI

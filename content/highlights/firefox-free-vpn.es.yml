@@ -1,0 +1,20 @@
+category: tools
+title: "Firefox: 50G de VPN gratis al mes"
+description: "¡Dios santo! Me acabo de enterar de que Firefox da a cada usuario 50G de VPN gratis al mes."
+date: 2026-06-30
+likes: 1639
+bookmarks: 2268
+reposts: 372
+views: 161249
+url: https://x.com/realchendahuang/status/2071963210689970673
+content: |
+  ¡Dios santo! Me acabo de enterar de que el navegador Firefox da a cada usuario 50G de VPN gratis al mes.
+
+  Ayuda un montón en esos escenarios incómodos de «el huevo o la gallina».
+
+  Cómo se usa:
+
+  1. En la barra de direcciones, escribe `about:config`
+  2. Entra en las preferencias avanzadas y pulsa «mostrar todas»
+  3. Busca `browser.ipProtection.enabled`
+  4. Cambia el valor de esa entrada a true

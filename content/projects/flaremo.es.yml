@@ -1,0 +1,12 @@
+title: FlareMo
+description: Sistema de gestión del conocimiento personal nativo de Cloudflare, con API compatible con Memos y datos alojados por ti.
+type: Gestión del conocimiento personal
+url: https://github.com/realchendahuang/FlareMo
+image: /projects/flaremo.webp
+imageAlt: Interfaz de línea de tiempo de notas y etiquetas de FlareMo
+icon: i-lucide-sticky-note
+color: "#f59e0b"
+tags: ["Cloudflare", "Memos", "D1", "R2", "Gestión del conocimiento"]
+date: 2026-07-10
+status: ongoing
+stars: 150

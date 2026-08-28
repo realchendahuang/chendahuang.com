@@ -1,0 +1,9 @@
+title: Dahuang X Post
+description: 中国語のアイデア、プロジェクト更新、長文を X フィード向けの短文ポストやスレッドに書き直し、冒頭・構成・バズりやすさをチェックするスキル。
+url: https://github.com/realchendahuang/dahuang-x-post
+install: npx skills add realchendahuang/dahuang-x-post -g
+icon: i-simple-icons-x
+color: "#111111"
+tags: ["Agent Skill", "X", "中国語ライティング", "Hook", "Thread"]
+date: 2026-07-10
+stars: 0

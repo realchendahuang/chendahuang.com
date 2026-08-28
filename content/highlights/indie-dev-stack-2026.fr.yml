@@ -1,0 +1,39 @@
+category: product
+title: "Les bonnes pratiques unite dev 2026 : d'abord Web + PWA"
+description: "Je partage plus d'un an de leçons de sucs et de larmes du développement indépendant."
+date: 2026-06-22
+likes: 263
+bookmarks: 422
+reposts: 46
+views: 37055
+url: https://x.com/realchendahuang/status/2069042963280503182
+content: |
+  Je partage plus d'un an de leçons de sucs et de larmes du développement indépendant.
+
+  En 2026, l'indie dev qui veut développer une app, la bonne pratique est :
+
+  **Au stade MVP, fais d'abord du Web + PWA.** Dev rapide, debug rapide, itération rapide.
+
+  Stack Web :
+
+  React + TanStack Start + Vite + TypeScript + shadcn/ui + Base UI + Tailwind CSS + better-auth + Vercel AI SDK + oxfmt / oxlint
+
+  Back unifié :
+
+  Hono + Cloudflare Workers
+
+  Debug Web :
+
+  Chrome DevTools MCP + plugin Chrome Codex
+
+  Quand le produit tourne vraiment, on fait le mobile.
+
+  Stack mobile :
+
+  React Native + Expo + Expo Router + NativeWind + React Native Reusables + Reanimated + Gesture Handler + EAS Build / Submit / Update
+
+  L'idée centrale est simple :
+
+  valider d'abord le besoin avec Web + PWA.
+
+  S'il y a vraiment des utilisateurs, on passe à React Native + Expo pour l'app.

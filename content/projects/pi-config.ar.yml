@@ -1,0 +1,12 @@
+title: pi-config
+description: "إعدادات Pi Coding Agent الجاهزة للاستخدام الفوري: 17 إضافة + 18 Skill عام + خادما MCP Server، مع أمر تثبيت واحد."
+type: إعداد مساعد برمجة بالذكاء الاصطناعي
+url: https://github.com/realchendahuang/pi-config
+image: /projects/pi-config.webp
+imageAlt: "بطاقة منتج pi-config البنفسجية الداكنة: Pi config / My Pi Coding Agent Setup"
+icon: i-lucide-terminal
+color: "#a78bfa"
+tags: ["Pi", "Coding Agent", "Plugins", "Skills", "MCP", "Shell"]
+date: 2026-07-25
+status: ongoing
+stars: 139

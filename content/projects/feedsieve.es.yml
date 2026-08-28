@@ -1,0 +1,12 @@
+title: FeedSieve
+description: "El conserje del ciberespacio para tu feed de X: mantiene fuera de tu timeline el spam de bots, la porquería IA de baja calidad, los estafadores cripto y el cebo de interacción."
+type: Herramienta open source para X
+url: https://github.com/realchendahuang/feedsieve
+image: /projects/feedsieve.webp
+imageAlt: Tarjeta de producto cian oscuro de FeedSieve
+icon: i-lucide-shield-check
+color: "#22d3ee"
+tags: ["X", "RSS", "Bot Filter", "Reducción de ruido", "OSS"]
+date: 2026-08-25
+status: ongoing
+stars: 0

@@ -1,0 +1,39 @@
+category: product
+title: "2026 独立開発アプリのベストプラクティス：まず Web+PWA"
+description: "1 年余りの血と涙の独立開発ハマり経験をシェアします。"
+date: 2026-06-22
+likes: 263
+bookmarks: 422
+reposts: 46
+views: 37055
+url: https://x.com/realchendahuang/status/2069042963280503182
+content: |
+  1 年余りの血と涙の独立開発ハマり経験をシェアします。
+
+  2026 年、独立開発者がアプリを作るなら、ベストプラクティスは：
+
+  **MVP 段階はまず Web + PWA。** 開発が速く、デバッグが速く、反復も速い。
+
+  Web 技術スタック：
+
+  React + TanStack Start + Vite + TypeScript + shadcn/ui + Base UI + Tailwind CSS + better-auth + Vercel AI SDK + oxfmt / oxlint
+
+  バックエンド統一：
+
+  Hono + Cloudflare Workers
+
+  Web デバッグ：
+
+  Chrome DevTools MCP + Codex Chrome プラグイン
+
+  プロダクトが本当に走り出してから、モバイルを作る。
+
+  モバイル技術スタック：
+
+  React Native + Expo + Expo Router + NativeWind + React Native Reusables + Reanimated + Gesture Handler + EAS Build / Submit / Update
+
+  核心の考え方はすごくシンプル：
+
+  まず Web + PWA で需要を検証する。
+
+  本当にユーザーがいれば、React Native + Expo でアプリにする。

@@ -1,0 +1,20 @@
+category: tools
+title: "Firefox: monatlich 50G VPN gratis"
+description: "Heilige Krabbe! Ich wusste bis eben nicht, dass der Firefox-Browser jedem Nutzer 50G VPN-Traffic pro Monat schenkt."
+date: 2026-06-30
+likes: 1639
+bookmarks: 2268
+reposts: 372
+views: 161249
+url: https://x.com/realchendahuang/status/2071963210689970673
+content: |
+  Heilige Krabbe! Ich wusste bis eben nicht, dass der Firefox-Browser jedem Nutzer 50G VPN-Traffic pro Monat schenkt.
+
+  Für peinliche Huhn-oder-Ei-Szenarien ist das eine große Hilfe.
+
+  So geht's:
+
+  1. In der Adressleiste `about:config` eingeben
+  2. In die erweiterten Einstellungen gehen, „Alle anzeigen" klicken
+  3. Nach `browser.ipProtection.enabled` suchen
+  4. Den Wert dieses Eintrags auf true setzen

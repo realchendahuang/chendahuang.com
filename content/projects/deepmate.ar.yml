@@ -1,0 +1,12 @@
+title: DeepMate
+description: رفيق خفيف الوزن ولوحة تحكم لـ DeepSeek Harness — لإدارة موحّدة لبيئات التشغيل والنماذج والموزّعين (Provider) والملفات الشخصية (Profile) والإضافات وفحص Doctor الذاتي.
+type: تطبيق سطح مكتب Rust · Tauri
+url: https://github.com/realchendahuang/DeepMate
+image: /projects/deepmate.webp
+imageAlt: بطاقة منتج DeepMate بألوان الأسود والأحمر
+icon: i-lucide-cpu
+color: "#f87171"
+tags: ["Rust", "Tauri", "DeepSeek", "Control Plane", "Doctor", "MIT"]
+date: 2026-08-17
+status: ongoing
+stars: 2

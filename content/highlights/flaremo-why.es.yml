@@ -1,0 +1,23 @@
+category: cloudflare
+title: "Por qué hice FlareMo: anota sobre la marcha, y despacio se convierte en conocimiento"
+description: "Quería encontrar una herramienta para «anotar sobre la marcha y que despacio se convierta en conocimiento»."
+date: 2026-06-27
+likes: 1
+bookmarks: 2
+reposts: 1
+views: 258
+url: https://x.com/realchendahuang/status/2070807195332297205
+content: |
+  Quería encontrar una herramienta para «anotar sobre la marcha y que despacio se convierta en conocimiento».
+
+  Quería la recogida de inspiraciones de Flomo: lista para anotar desde el segundo uno y sin interrupciones;
+
+  quería el ecosistema open source maduro de Memos, con datos migrables y una API con la que jugar;
+
+  y no quería montar otro VPS, ni mantener Docker, ni Postgres, ni procesos residentes de Node.
+
+  ¿Y entonces qué? Lo que hace FlareMo es tomar el modelo de datos y la API de Memos como «especificación» y reconstruir todo el runtime sobre Cloudflare:
+
+  Workers sirve la API, D1 guarda las notas, R2 aloja los adjuntos, Queues/Cron corren en segundo plano, Vectorize + Workers AI quedan para la futura búsqueda semántica y los flujos de IA.
+
+  Subido a hombros de Memos, hago una base de conocimiento personal que crece en la edge cloud.

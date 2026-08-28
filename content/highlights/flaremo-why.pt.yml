@@ -1,0 +1,23 @@
+category: cloudflare
+title: "Por que fazer o FlareMo: anotar solto, deixar virar conhecimento devagarinho"
+description: "Quero achar uma ferramenta de 'anotar solto, virar conhecimento devagarinho'."
+date: 2026-06-27
+likes: 1
+bookmarks: 2
+reposts: 1
+views: 258
+url: https://x.com/realchendahuang/status/2070807195332297205
+content: |
+  Quero achar uma ferramenta de "anotar solto, virar conhecimento devagarinho".
+
+  Com a captura de ideias na hora, sem intervenção, estilo Flomo;
+
+  com o ecossistema open source maduro do Memos, dados migráveis, API explorável;
+
+  e sem abrir mais um VPS, sem manter Docker, Postgres, processo Node rodando pra sempre.
+
+  E aí? O FlareMo trata o modelo de dados e a API do Memos como "especificação", e remonta a runtime inteira na Cloudflare:
+
+  Workers roda a API, D1 guarda as notas, R2 guarda os anexos, Queues/Cron roda o background, Vectorize + Workers AI ficam reservados pra busca semântica e fluxos de IA no futuro.
+
+  De pé sobre os ombros do Memos, uma base de conhecimento pessoal que mora na edge cloud.

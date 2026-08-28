@@ -1,0 +1,15 @@
+category: cloudflare
+title: "Cloudflare Container でハマった：デバッグで stop せず 4 ドル課金"
+description: "Cloudflare Container の被害者が現れた。"
+date: 2026-06-27
+likes: 0
+bookmarks: 0
+reposts: 0
+views: 353
+url: https://x.com/realchendahuang/status/2070820905224441922
+content: |
+  Cloudflare Container の被害者が現れた。
+
+  書いたコードがデバッグ段階だったせいで、stop コマンドが効かなかった。
+
+  そのせいで Container が 7 日間連続で動き続けて、4 ドル取られた。

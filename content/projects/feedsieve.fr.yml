@@ -1,0 +1,12 @@
+title: FeedSieve
+description: Le concierge cybernétique de ton flux X — il garde le spam de bots, le remplissage IA bas de gamme, les gourous crypto et les pièges à engagement hors de ta timeline.
+type: Outil open source pour X
+url: https://github.com/realchendahuang/feedsieve
+image: /projects/feedsieve.webp
+imageAlt: Carte produit cyan sombre de FeedSieve
+icon: i-lucide-shield-check
+color: "#22d3ee"
+tags: ["X", "RSS", "Bot Filter", "Réduction du bruit", "OSS"]
+date: 2026-08-25
+status: ongoing
+stars: 0

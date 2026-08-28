@@ -1,0 +1,12 @@
+title: Sub-Store Cloudflare
+description: Tool für Abo-Aggregation und Regelkonfiguration auf Cloudflare Workers – Quellen, Node-Verarbeitung, kombinierte Abos und Routing-Regel-Templates, alles in der Cloud.
+type: Cloudflare-Tool
+url: https://github.com/realchendahuang/sub-store-cloudflare
+image: /projects/sub-store-cloudflare.webp
+imageAlt: Sub-Store Cloudflare Verwaltung von Abo-Quellen und kombinierten Abos
+icon: i-simple-icons-cloudflare
+color: "#f38020"
+tags: ["Cloudflare Workers", "D1", "Mihomo", "sing-box", "Abo-Verwaltung"]
+date: 2026-07-09
+status: ongoing
+stars: 253

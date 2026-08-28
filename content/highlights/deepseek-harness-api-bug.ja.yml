@@ -1,0 +1,22 @@
+category: ai
+title: "DeepSeek Harness でサードパーティ API を呼ぶと unknown tool エラー：ゲートウェイのデータ形式問題"
+description: "ツール名は本当に消えたわけじゃない。ゲートウェイがデータ形式を落としてしまった。"
+date: 2026-08-18
+likes: 2
+bookmarks: 0
+reposts: 2
+views: 2313
+url: https://x.com/realchendahuang/status/2089636108271550484
+content: |
+  DeepSeek Harness + サードパーティ API の互換問題：
+
+  Agent が Bash などのツールを呼ぶと `ToolNotFoundError: unknown tool ""` が出て、あたかもツールが未登録なように見える。
+
+  実際はゲートウェイが返すデータ形式が DeepSeek 公式と違っていて、ツール名が途中で消されてしまっている。
+
+  関連する GitHub Discussions のリンク：
+
+  - deepseek-ai/dsh#issues で "unknown tool" を検索
+  - 自前ゲートウェイ（OpenRouter / OneAPI / new-api）を使う人が一番踏みやすい罠
+
+  調査の考え方：tool_call のリクエストとレスポンスを丸ごと一度キャプチャして、ゲートウェイのログにあるツール名が空文字列になってないかを比較する。

@@ -1,0 +1,25 @@
+category: cloudflare
+title: "O pessoal ainda explora menos de 1% da Cloudflare"
+description: "Tenho a impressão de que o pessoal explora menos de 1% da Cloudflare."
+date: 2026-06-15
+likes: 377
+bookmarks: 470
+reposts: 32
+views: 88959
+url: https://x.com/realchendahuang/status/2066446337936110030
+content: |
+  Tenho a impressão de que o pessoal explora menos de 1% da Cloudflare.
+
+  Hoje ela tem um montão de recursos.
+
+  - object storage usa R2
+  - API de backend usa Worker
+  - gateway de IA usa AI Gateway
+  - compute pesado usa Container
+  - cache usa KV
+  - banco de dados usa D1
+  - se for PostgreSQL, usa HyperDrive pra conectar
+
+  E por aí vai, milhares de outros — você nem imagina, e ela faz tudo.
+
+  O ponto é que é barata pra caramba. Só a franquia grátis já dura um tempão. Sabe o que é franquia grátis? É não tirar um tostão do bolso. Um bodisatva cibernético.

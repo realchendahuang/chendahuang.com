@@ -1,0 +1,20 @@
+category: tools
+title: "Firefox offre 50 Go de VPN gratuits par mois"
+description: "Halte-là ! Je viens d'apprendre que Firefox offre à chaque utilisateur 50 Go de VPN gratuits par mois."
+date: 2026-06-30
+likes: 1639
+bookmarks: 2268
+reposts: 372
+views: 161249
+url: https://x.com/realchendahuang/status/2071963210689970673
+content: |
+  Halte-là ! Je viens d'apprendre que Firefox offre à chaque utilisateur 50 Go de VPN gratuits par mois.
+
+  Pour les situations cocasses du poulet et de l'œuf, c'est d'un grand secours.
+
+  Mode d'emploi :
+
+  1. Tape `about:config` dans la barre d'adresse
+  2. Entre dans les préférences avancées, clique sur « tout afficher »
+  3. Recherche `browser.ipProtection.enabled`
+  4. Passe la valeur de l'entrée sur true

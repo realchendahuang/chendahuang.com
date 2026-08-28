@@ -1,0 +1,12 @@
+title: pi-config
+description: 私の Pi Coding Agent おすすめ設定：17 プラグイン + 18 グローバル Skill + 2 MCP Server、一行コマンドでインストール。
+type: AI コーディングアシスタント設定
+url: https://github.com/realchendahuang/pi-config
+image: /projects/pi-config.webp
+imageAlt: pi-config のダークパープル製品カード：Pi config / My Pi Coding Agent Setup
+icon: i-lucide-terminal
+color: "#a78bfa"
+tags: ["Pi", "Coding Agent", "Plugins", "Skills", "MCP", "Shell"]
+date: 2026-07-25
+status: ongoing
+stars: 139

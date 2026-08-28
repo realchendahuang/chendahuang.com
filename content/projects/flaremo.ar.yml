@@ -1,0 +1,12 @@
+title: FlareMo
+description: نظام إدارة معرفة شخصية مبني أصلاً على Cloudflare، يوفّر واجهة API متوافقة مع Memos، وتستضيف بياناتك بنفسك.
+type: إدارة المعرفة الشخصية
+url: https://github.com/realchendahuang/FlareMo
+image: /projects/flaremo.webp
+imageAlt: واجهة الخط الزمني للملاحظات والوسوم في FlareMo
+icon: i-lucide-sticky-note
+color: "#f59e0b"
+tags: ["Cloudflare", "Memos", "D1", "R2", "إدارة المعرفة"]
+date: 2026-07-10
+status: ongoing
+stars: 150

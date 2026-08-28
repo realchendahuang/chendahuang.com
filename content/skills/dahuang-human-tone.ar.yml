@@ -1,0 +1,9 @@
+title: Dahuang Human Tone
+description: يُزيل من النصوص الصينية القوالب الجاهزة، وكلمات الإرشاد الزائدة، والخواتيم الرنانة، والتفاعلات المزيّفة. يغيّر البنية دون تغيير الحقائق، ويحافظ على المعلومات وأسلوب المؤلف.
+url: https://github.com/realchendahuang/dahuang-human-tone
+install: npx skills add realchendahuang/dahuang-human-tone -g
+icon: i-lucide-wand-sparkles
+color: "#00DC82"
+tags: ["Agent Skill", "إزالة الطابع الاصطناعي", "الكتابة بالصينية", "Claude Code", "Codex"]
+date: 2025-05-01
+stars: 10

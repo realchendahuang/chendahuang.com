@@ -1,0 +1,56 @@
+category: ai
+title: "Zwei Wege des Wissensmanagements: Feishu-Workflow vs. Cloudflare-Produkt"
+description: "Zuletzt denke ich über das Thema Wissensmanagement neu nach."
+date: 2026-07-08
+likes: 3
+bookmarks: 2
+reposts: 0
+views: 439
+url: https://x.com/realchendahuang/status/2074900341456503169
+content: |
+  Zuletzt denke ich über das Thema Wissensmanagement neu nach.
+
+  Dabei entdecke ich: Es gibt zwei Wege.
+
+  **Der eine: auf Feishu aufbauen.**
+
+  Seine Vorteile sind direkt:
+
+  Gratis, Multi-Device-Sync, teilbar, kollaborationsfreundlich und in der Form vielfältig genug.
+
+  Dokumente, mehrdimensionale Tabellen, Tabellen, Folien, Canvas, Todo, Wissensdatenbank – kombiniert decken diese Module schon viele Wissensmanagement-Szenarien für Einzelpersonen und Teams ab.
+
+  Besonders den multidimensionalen Tabellen traue ich viel zu.
+
+  Sie eignen sich perfekt als Wissenszentrale.
+
+  Informationssammlung, Materialarchivierung, Statusverwaltung, strukturierte Aufbereitung, Inhaltsreproduktion – alles kann sich darum drehen.
+
+  Plus Feishu CLI und AI Agents ist Feishu kein reines Office-Tool mehr.
+
+  Es ist eher ein Wissens-Workflow-System, das ein Agent bedienen kann.
+
+  **Der andere Weg: eigene Entwicklung auf Cloudflare.**
+
+  Dieser Weg ist freier und besser für Produktform.
+
+  Etwa FlareMo, das ich gerade baue – ein Wissensmanagement-Produkt auf Cloudflare-Basis.
+
+  Der Vorteil von Cloudflare: Die Grund-Fähigkeiten sind komplett:
+
+  Frontend, Backend, Datenbank, Objektspeicher, Vektor-Suche, AI-Fähigkeiten – alles kombinierbar.
+
+  Aber es braucht Entwicklung.
+
+  Man muss Datenstrukturen, Such-Erlebnis, Permission-System und Produktlogik selbst entwerfen.
+
+  Mein aktuelles Urteil:
+
+  - Feishu passt, um schnell ein sofort nutzbares Wissensmanagement-System aufzusetzen.
+  - Cloudflare passt, um Wissensmanagement zu einem wirklich kontrollierbaren, iterierbaren Produkt zu machen.
+
+  Beide Wege sind es wert, erforscht zu werden.
+
+  Einer tendiert zum Workflow.
+
+  Einer tendiert zum Produkt.

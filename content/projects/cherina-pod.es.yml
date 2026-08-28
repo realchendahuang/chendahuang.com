@@ -1,0 +1,12 @@
+title: Cherina Pod
+description: "App de escucha intensiva de podcasts bilingües. Toca una frase en inglés y te salta la traducción al chino; repite por frases, cambia la velocidad y haz shadowing: entender de verdad importa más que entender de más."
+type: Producto indie
+url: https://pod.cherina.app/
+onlineUrl: https://pod.cherina.app/
+image: /projects/cherina-pod.webp
+imageAlt: "Portada de Cherina Pod: seguir escuchando, aprendizaje de inglés, tarjetas de portada bilingües"
+icon: i-lucide-headphones
+color: "#e25822"
+tags: ["Podcast", "Escucha intensiva", "Aprendizaje de inglés", "Bilingüe", "Producto indie"]
+date: 2026-08-26
+status: ongoing

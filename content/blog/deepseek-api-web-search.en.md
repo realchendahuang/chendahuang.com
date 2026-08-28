@@ -1,6 +1,6 @@
 ---
 title: DeepSeek's API has built-in web search — freeload the official search via the Responses API
-description: DeepSeek built web search straight into the API: call deepseek-v4-flash through the Responses interface and declare the web_search tool. No third-party search engine integration, no search API key required.
+description: "DeepSeek built web search straight into the API: call deepseek-v4-flash through the Responses interface and declare the web_search tool. No third-party search engine integration, no search API key required."
 date: 2026-08-05
 minRead: 6
 source: x

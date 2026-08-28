@@ -1,0 +1,20 @@
+category: cloudflare
+title: "Un projet Cloudflare écrit par l'IA qui a flop — pas à cause de la syntaxe"
+description: "L'IA écrit trop souvent du Workers comme si c'était du Node.js, et traite les Bindings comme des variables d'environnement."
+date: 2026-06-22
+likes: 23
+bookmarks: 42
+reposts: 4
+views: 1462
+url: https://x.com/realchendahuang/status/2068853978004365739
+content: |
+  Beaucoup utilisent l'IA pour écrire des projets Cloudflare, et ça flop pas à cause de la syntaxe.
+  Le vrai problème :
+  l'IA écrit souvent du Workers comme si c'était du Node.js
+  ou utilise les Bindings comme process.env
+  oublie les await
+  stocke l'état de la requête dans des variables globales n'importe comment
+  ignore que les requêtes de ressources statiques sont gratuites
+  ou appelle son propre R2 via l'API REST depuis un Worker
+  Tous ces pièges, je les ai réunis dans le Cloudflare Playbook.
+  Et au passage j'ai écrit

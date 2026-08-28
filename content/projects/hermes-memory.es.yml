@@ -1,0 +1,12 @@
+title: Hermes Memory for OpenCode
+description: "Memoria persistente entre sesiones para los agentes de OpenCode: preferencias de usuario, convenciones del proyecto y errores ya sufridos, todo guardado en Markdown."
+type: Plugin de OpenCode
+url: https://github.com/realchendahuang/opencode-hermes-memory
+image: /projects/hermes-memory.webp
+imageAlt: Tarjeta de producto azul oscuro de Hermes Memory con insignia dorada
+icon: i-lucide-brain-circuit
+color: "#fbbf24"
+tags: ["OpenCode", "Plugin", "Memory", "Markdown", "MIT"]
+date: 2026-08-11
+status: ongoing
+stars: 9

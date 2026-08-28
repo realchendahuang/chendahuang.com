@@ -1,0 +1,10 @@
+title: Cloudflare, manuel pratique
+description: Des modules de fonctionnalités, workflows de codage IA et facturation, jusqu'aux architectures classiques et aux vrais pièges du terrain — un manuel qui explique Cloudflare en clair.
+url: https://github.com/realchendahuang/cloudflare-playbook
+onlineUrl: https://chendahuang.com/playbook/cloudflare/
+icon: i-simple-icons-cloudflare
+color: "#F38020"
+tags: ["Cloudflare", "Codage IA", "Workers", "Déploiement", "Architecture"]
+date: 2025-01-01
+status: ongoing
+stars: 69

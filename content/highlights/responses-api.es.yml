@@ -1,0 +1,25 @@
+category: ai
+title: "Por qué la Responses API encaja mejor que Chat Completions para los Agents"
+description: "Cuando mucha gente usa herramientas de IA, tiene que configurar una API Key, y a veces hasta elegir el formato de la interfaz."
+date: 2026-07-09
+likes: 1
+bookmarks: 0
+reposts: 0
+views: 96
+url: https://x.com/realchendahuang/status/2075074946301317487
+content: |
+  Cuando mucha gente usa herramientas de IA, tiene que configurar una API Key, y a veces hasta elegir el formato de la interfaz.
+
+  Ese formato se puede entender de forma simple como:
+
+  la forma acordada de comunicarse entre tú y el servicio del modelo.
+
+  Por ejemplo, la interfaz compatible con OpenAI que todos conocemos se refiere muchas veces a Chat Completions. Ese formato va genial para chatear y también para generación de texto simple. Por eso muchos fabricantes de modelos, de aquí y de fuera, le dan prioridad de compatibilidad.
+
+  Pero ahora, al hacer aplicaciones de IA, los escenarios se han complicado mucho. El modelo tiene que leer archivos, consultar páginas web, llamar funciones, correr código, conectarse a MCP, mantener el contexto y seguir completando las tareas posteriores.
+
+  Ahí es donde sale el valor de la Responses API que sacó OpenAI.
+
+  - Su modelo de razonamiento rinde mejor. El mismo modelo, metido en una estructura de interfaz más adecuada, completa mejor las tareas.
+  - Es nativa para Agents. El modelo puede llamar a varias herramientas dentro de una sola petición de API.
+  - Ahorra más. La utilización de caché de la Responses API sube entre un 40% y un 80% comparada con Chat Completions. Cuanto más acierta la caché, más barato sale repetir llamadas y más fácil es optimizar la velocidad de respuesta.

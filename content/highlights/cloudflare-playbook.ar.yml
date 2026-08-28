@@ -1,0 +1,29 @@
+category: cloudflare
+title: "صنعتُ دليلاً عملياً لـ Cloudflare"
+description: "يناسب كل مطوّر مستقل يريد صناعة منتج عبر البرمجة بالذكاء الاصطناعي."
+date: 2026-06-21
+likes: 125
+bookmarks: 176
+reposts: 29
+views: 9114
+url: https://x.com/realchendahuang/status/2068732869854613903
+content: |
+  صنعتُ دليلاً عملياً لـ Cloudflare.
+
+  يناسب كل مطوّر مستقل يريد صناعة منتج عبر البرمجة بالذكاء الاصطناعي (AI Coding).
+
+  وجمعت فيه:
+
+  - كيف تختار خدمات Cloudflare الشائعة
+  - كيف تستخدم Workers / Pages / D1 / R2 / KV / AI Gateway
+  - هل تكفي الحصة المجانية أصلاً
+  - متى تشتري Workers Paid بــ5 دولارات
+  - الحفر التي يسقط فيها الذكاء الاصطناعي عند كتابة كود Cloudflare
+  - كيف تضبط Codex / Claude Code مع Skill وMCP الخاصين بـ Cloudflare
+  - ما المشاريع مفتوحة المصدر التي يمكن الاعتماد عليها مباشرة
+
+  هدفي بسيط:
+
+  اكتب الكود بالذكاء الاصطناعي، وانشره حول العالم عبر Cloudflare.
+
+  Playbook: [chendahuang.com/playbooks](/playbooks)

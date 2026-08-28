@@ -1,0 +1,197 @@
+{
+  "site": {
+    "name": "陈大黄",
+    "description": "陈大黄のポートフォリオ兼コンテンツ発信サイト。プロジェクト、ガイド、スキル、記事、ポストを収録。"
+  },
+  "nav": {
+    "home": "ホーム",
+    "projects": "プロジェクト",
+    "playbooks": "ガイド",
+    "skills": "スキル",
+    "blog": "ブログ",
+    "highlights": "ポスト",
+    "menu": "メニュー",
+    "openMenu": "ナビゲーションメニューを開く"
+  },
+  "sections": {
+    "blog": "ブログ",
+    "project": "プロジェクト",
+    "playbook": "ガイド",
+    "skill": "スキル",
+    "highlight": "ポスト"
+  },
+  "search": {
+    "label": "検索",
+    "shortcut": "検索 (Cmd+K)",
+    "placeholder": "ブログ・プロジェクト・ガイド・スキル・ポストを検索…",
+    "empty": "キーワードを入力してサイト全体を検索",
+    "noResults": "「{query}」に一致する結果はありません"
+  },
+  "theme": {
+    "toDark": "ダークモードに切り替え",
+    "toLight": "ライトモードに切り替え"
+  },
+  "footer": {
+    "rss": "RSS フィード",
+    "onX": "Xで陳大黄をフォロー",
+    "onGithub": "GitHubで陳大黄をフォロー"
+  },
+  "a11y": {
+    "skipToContent": "メインコンテンツへ移動"
+  },
+  "hero": {
+    "highlights": "注目ポスト",
+    "blogPosts": "ブログ記事",
+    "projects": "プロジェクト",
+    "githubStars": "GitHub Stars"
+  },
+  "landing": {
+    "shareHighlight": "陳大黄の注目ポストより：{title}",
+    "linkCopied": "リンクをコピーしました。シェアしてくださいね",
+    "likes": "いいね",
+    "bookmarks": "ブックマーク",
+    "original": "元記事",
+    "about": "私について",
+    "aboutTitle": "独立開発者。Cloudflare と AI 効率ツールをいじるのが好き",
+    "aboutBody": "元AIプロダクトマネージャー。いまは独立開発に専念：AI・Cloudflare・コンテンツ制作を組み合わせて、自分自身のプロダクトとワークフローを作っている。プロジェクトやガイドやブログは、その探求の公開記録——同じことをやっている人がいたら、ぜひ交流しましょう。",
+    "support": "Afdian で支援する",
+    "xLink": "X（旧Twitter）",
+    "xDesc": "日常の更新・つぶやき・実践的な話",
+    "githubLink": "GitHub",
+    "githubDesc": "プロジェクトのソースコードとガイドのリポジトリ",
+    "rssLink": "RSS フィード",
+    "rssDesc": "ブログ更新をリーダーで受け取り",
+    "work": "作品",
+    "recentProjects": "最近のプロジェクト",
+    "viewAllProjects": "すべてのプロジェクトを見る",
+    "readMore": "続きを読む"
+  },
+  "projects": {
+    "tryOnline": "オンラインで試す",
+    "github": "GitHub",
+    "view": "{title} を見る",
+    "preview": "{title} のプレビュー"
+  },
+  "playbooks": {
+    "readOnline": "オンラインで読む",
+    "viewOnGithub": "GitHub で見る"
+  },
+  "skills": {
+    "readOnline": "オンラインで読む",
+    "viewOnGithub": "GitHub で見る"
+  },
+  "highlights": {
+    "count": "全 {count} 件。テーマ・タイムライン・人気の順で閲覧でき、キーワード検索・カテゴリ絞り込み・タイトルクリックで本文展開も可能。",
+    "xHome": "X ホーム",
+    "searchPosts": "ポストを検索",
+    "searchPlaceholder": "タイトルや内容のキーワード…",
+    "expandAll": "すべて展開",
+    "collapseAll": "すべて折りたたむ",
+    "viewMode": "表示モード",
+    "filterTheme": "テーマで絞り込み",
+    "all": "すべて",
+    "hot": "人気",
+    "hotTitle": "人気のポスト",
+    "likes": "いいね",
+    "bookmarks": "ブックマーク",
+    "reposts": "リポスト",
+    "views": "ビュー",
+    "viewOnX": "Xで元記事を見る",
+    "noMatch": "一致するポストがありません。別のキーワードを試してください。",
+    "noPosts": "この絞り込みではポストがありません。",
+    "countSuffix": "件"
+  },
+  "blog": {
+    "count": "全 {count} 記事。キーワード検索やタグ絞り込みができます。",
+    "archive": "アーカイブ",
+    "tags": "タグ",
+    "rss": "RSS フィード",
+    "searchPlaceholder": "タイトル・説明・タグを検索…",
+    "all": "すべて",
+    "found": "{count} 件見つかりました",
+    "tagFilter": "タグ「{tag}」",
+    "keywordFilter": "キーワード「{keyword}」",
+    "pinned": "固定",
+    "pinnedTitle": "固定記事",
+    "original": "オリジナル",
+    "originalTitle": "当サイトのオリジナル記事",
+    "noMatch": "一致する記事がありません。別のキーワードやタグを試してください。",
+    "minutes": "分"
+  },
+  "archive": {
+    "title": "アーカイブ",
+    "description": "全ブログ記事を年ごとに整理。",
+    "count": "全 {count} 記事を年ごとに整理しています。",
+    "posts": "記事"
+  },
+  "tags": {
+    "title": "タグ",
+    "description": "タグで全ブログ記事を閲覧。",
+    "count": "タグ全 {count} 件。クリックで関連記事を表示。",
+    "all": "すべて",
+    "allPosts": "全記事",
+    "underTag": "タグ「{tag}」の記事",
+    "empty": "このタグの記事はまだありません。"
+  },
+  "friends": {
+    "empty": "まだ友链はありません。content/friends/*.yml にファイルを追加してください。",
+    "avatar": "{name} のアバター"
+  },
+  "post": {
+    "allPosts": "全記事",
+    "updated": "更新日 {date}",
+    "minRead": "{count} 分で読めます",
+    "original": "オリジナル",
+    "sourceX": "X の原文",
+    "indieDev": "独立开发者",
+    "collapseToc": "目次を閉じる",
+    "viewToc": "目次を見る",
+    "toc": "目次",
+    "shareHint": "役に立ったら、ぜひ友達にシェアを。",
+    "shareToX": "X でシェア",
+    "xOriginal": "X 原文",
+    "copyLink": "リンクをコピー",
+    "share": "シェア",
+    "related": "関連記事",
+    "subscribe": "更新を受け取る",
+    "subscribeDesc": "新着記事は RSS に同期。X でのフォローもどうぞ。",
+    "rss": "RSS フィード",
+    "followX": "X をフォロー",
+    "support": "支援する",
+    "backToTop": "トップへ戻る",
+    "linkCopied": "記事リンクをコピーしました",
+    "shareText": "陳大黄のブログより：{title}"
+  },
+  "error": {
+    "title": "ページが見つかりません",
+    "description": "このページは存在しないか、移動された可能性があります。"
+  },
+  "seo": {
+    "notFound": "ページが見つかりません"
+  },
+  "highlightsCategories": {
+    "cloudflare": "Cloudflare",
+    "cloudflareDesc": "エッジクラウド・Workers・無料インフラ・デプロイ体験",
+    "tools": "ツールリスト",
+    "toolsDesc": "ソフト・プラグイン・ハード・効率ツールのおすすめ",
+    "ai": "AI 思考",
+    "aiDesc": "モデル・エージェント・知識管理・コラボ手法",
+    "product": "プロダクト開発",
+    "productDesc": "独立開発・技術スタック・プロダクト判断",
+    "opc": "OPC 起業",
+    "opcDesc": "一人会社・登録・経営の実践",
+    "growth": "コンテンツ成長",
+    "growthDesc": "X 運営・投稿術・フォロワー増加の振り返り",
+    "essay": "エッセイ",
+    "essayDesc": "価値・ユーモア・非ツール視点の観察"
+  },
+  "highlightViewModes": {
+    "theme": "テーマ別",
+    "themeDesc": "カテゴリ単位で閲覧",
+    "timeline": "タイムライン",
+    "timelineDesc": "公開日の新しい順",
+    "heat": "人気順",
+    "heatDesc": "いいねとエンゲージメント順"
+  },
+  "monthLabel": "{year} 年 {month} 月"
+}

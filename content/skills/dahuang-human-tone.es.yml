@@ -1,0 +1,9 @@
+title: Dahuang Human Tone
+description: "Quita de los textos en chino las cáscaras de plantilla, las palabras señalizadoras, los finales moralizantes y las interacciones falsas. Cambia la estructura, no los hechos: conserva la información y el estilo del autor."
+url: https://github.com/realchendahuang/dahuang-human-tone
+install: npx skills add realchendahuang/dahuang-human-tone -g
+icon: i-lucide-wand-sparkles
+color: "#00DC82"
+tags: ["Agent Skill", "Quitar el estilo IA", "Escritura en chino", "Claude Code", "Codex"]
+date: 2025-05-01
+stars: 10

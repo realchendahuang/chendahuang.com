@@ -1,0 +1,22 @@
+category: ai
+title: "DeepSeek Harness meldet bei Drittanbieter-API unknown tool: Gateway-Datenformat-Problem"
+description: "Der Toolname ist nicht wirklich weg – das Gateway hat das Datenformat kaputtgemacht."
+date: 2026-08-18
+likes: 2
+bookmarks: 0
+reposts: 2
+views: 2313
+url: https://x.com/realchendahuang/status/2089636108271550484
+content: |
+  DeepSeek Harness + Drittanbieter-API Kompatibilitätsproblem:
+
+  Wenn der Agent Tools wie Bash aufruft, kommt `ToolNotFoundError: unknown tool ""` – als wäre das Tool nie registriert.
+
+  Tatsächlich liefert das Gateway ein anderes Datenformat als der offizielle DeepSeek-Dienst, und der Toolname geht mittendrin verloren.
+
+  Ein paar relevante GitHub-Discussions-Links:
+
+  - In deepseek-ai/dsh#issues nach "unknown tool" suchen
+  - Wer sich ein eigenes Gateway baut (OpenRouter / OneAPI / new-api), tappt am leichtesten in diese Falle
+
+  Debug-Ansatz: einmal die komplette tool_call-Request und -Response mitschneiden und im Gateway-Log prüfen, ob der Toolname ein leerer String ist.

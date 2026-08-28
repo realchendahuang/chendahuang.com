@@ -1,0 +1,22 @@
+category: cloudflare
+title: "Sub-Store-Deployment auf Cloudflare abgeschlossen"
+description: "Ich habe mir die Zeit genommen und Sub-Store auf Cloudflare deployed."
+date: 2026-06-27
+likes: 209
+bookmarks: 244
+reposts: 29
+views: 67007
+url: https://x.com/realchendahuang/status/2070689769731019207
+content: |
+  Ich habe mir die Zeit genommen und Sub-Store auf Cloudflare deployed.
+
+  Meine eigenen Nodes und die Backup-Nodes des Airport-Dienstes sind jetzt vollständig zusammengebracht, dazu automatische Abos mit den ACL4SSR-Routing-Regeln.
+
+  Mit einer einzigen Abo-Link bin ich direkt abgedeckt:
+
+  - Node-Merging mehrerer Anbieter
+  - Node-Filter
+  - Routing-Regel-Konfiguration
+  - Automatische Config-Updates
+
+  Einfach butterweich.

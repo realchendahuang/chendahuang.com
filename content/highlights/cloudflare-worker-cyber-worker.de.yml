@@ -1,0 +1,38 @@
+category: cloudflare
+title: "Worker ist der Cyber-Arbeiter"
+description: "Ich habe das Gefühl, viele verstehen Cloudflare Worker noch zu unter 1 %."
+date: 2026-06-16
+likes: 1
+bookmarks: 2
+reposts: 1
+views: 1743
+url: https://x.com/realchendahuang/status/2066895041910763934
+content: |
+  Ich habe das Gefühl, viele verstehen Cloudflare Worker noch zu unter 1 %.
+
+  Worker ist der Cyber-Arbeiter.
+
+  Für dich zuständig für all die Drecksarbeit hinter der Website.
+
+  Etwa Formular absenden, Dateien hochladen, AI aufrufen, Login verifizieren, Zahlungs-Notifications verarbeiten, die Schnittstelle eines kleinen Produkts bauen. Worker macht das alles.
+
+  Das Krasseste an Worker: Gratis-Nutzer haben 100.000 Requests pro Tag – ohne einen Cent.
+
+  Was heißt 100.000 Requests?
+
+  Wenn deine Website 1000 Nutzer pro Tag hat – selbst wenn sie 24 Stunden ununterbrochen läuft und jede Sekunde jemand reinklickt – sind das 86.400 Requests am Tag. Die schafft man gar nicht.
+
+  Und wenn du das Gratis-Kontingent wirklich voll ausreizt.
+
+  Wovon träumst du da noch? Du bist reich.
+
+  Jetzt kannst du erst die Logik schreiben und sie direkt vom Worker abarbeiten lassen.
+  Kombiniert mit dem Hono-API-Framework ist das Best Practice.
+
+  Das ist der geilste Teil an Cloudflare Worker.
+
+  Geld ausgeben? Von wegen.
+
+  Cloudflare hat ein gutes Herz.
+
+  Es gönnt dir nicht, Geld auszugeben.

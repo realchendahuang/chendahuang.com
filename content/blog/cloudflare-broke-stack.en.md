@@ -1,6 +1,6 @@
 ---
-title: 2026 indie dev best practices: the Cloudflare "broke-ass all-in-one" stack
-description: The zero-cost tech stack for indie developers: Codex for writing code, GitHub for version control, Stripe for payments, TanStack Start for frontend, Hono + Workers for backend, D1 for database, R2 for storage, KV for caching — all running on Cloudflare.
+title: "2026 indie dev best practices: the Cloudflare \"broke-ass all-in-one\" stack"
+description: "The zero-cost tech stack for indie developers: Codex for writing code, GitHub for version control, Stripe for payments, TanStack Start for frontend, Hono + Workers for backend, D1 for database, R2 for storage, KV for caching — all running on Cloudflare."
 date: 2026-06-15
 minRead: 6
 source: x

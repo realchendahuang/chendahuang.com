@@ -1,0 +1,8 @@
+title: Dahuang AI Tone
+description: 文章を GPT/Claude/Gemini/豆包（Doubao）っぽい AI スタイルに書き換えたり、ある文がどのモデルが書いたのかを判定したりするスキル。
+url: https://github.com/realchendahuang/dahuang-ai-tone
+install: npx skills add realchendahuang/dahuang-ai-tone -g
+icon: i-lucide-fingerprint
+color: "#a855f7"
+tags: ["Agent Skill", "AI っぽさ", "モデル風格", "スタイル判定", "中国語ライティング"]
+date: 2025-05-01

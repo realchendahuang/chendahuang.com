@@ -1,0 +1,22 @@
+category: cloudflare
+title: "Despliegue de Sub-Store completado en Cloudflare"
+description: "Me tiré un rato y completé el despliegue de Sub-Store en Cloudflare."
+date: 2026-06-27
+likes: 209
+bookmarks: 244
+reposts: 29
+views: 67007
+url: https://x.com/realchendahuang/status/2070689769731019207
+content: |
+  Me tiré un rato y completé el despliegue de Sub-Store en Cloudflare.
+
+  Fundí en uno mis nodos propios y los nodos de respaldo del servicio de proxys, y le puse encima la suscripción automática de reglas de enrutamiento ACL4SSR.
+
+  Con una sola suscripción conseguí:
+
+  - la fusión de nodos de varios proveedores
+  - el filtrado de nodos
+  - la configuración de reglas de enrutamiento
+  - la actualización automática de la configuración
+
+  De lo más terso.

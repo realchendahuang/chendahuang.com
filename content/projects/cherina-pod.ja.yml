@@ -1,0 +1,12 @@
+title: Cherina Pod
+description: バイリンガルポッドキャスト精聴アプリ。英語の一文をタップすると中国語訳が出る。文単位のリピート、速度調整、シャドーイング対応——「わかる」ことより「聴ける」ことが大事。
+type: インディープロダクト
+url: https://pod.cherina.app/
+onlineUrl: https://pod.cherina.app/
+image: /projects/cherina-pod.webp
+imageAlt: Cherina Pod ホーム：続きから聴く、英語学習、バイリンガル表紙カード
+icon: i-lucide-headphones
+color: "#e25822"
+tags: ["ポッドキャスト", "精聴", "英語学習", "バイリンガル", "インディープロダクト"]
+date: 2026-08-26
+status: ongoing

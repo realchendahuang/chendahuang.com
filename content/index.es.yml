@@ -1,0 +1,49 @@
+seo:
+  title: "Chen Dahuang - Trabajos y contenido"
+  description: "El escaparate personal de los trabajos y el contenido de Chen Dahuang. Reúne proyectos, playbooks, Agent Skills, artículos y posts."
+title: "Chen Dahuang"
+description: "Rastreador de insights, cuentachistes | Ex PM de producto de IA | Desarrollador independiente | Investigador de aprendizaje eficiente de idiomas | Manitas en herramientas de productividad IA | Polivalente en producto, diseño, desarrollo, operaciones y ventas"
+hero:
+  links:
+    - label: "Ver proyectos"
+      to: /projects
+      color: "primary"
+    - label: "GitHub"
+      to: https://github.com/realchendahuang
+      color: "neutral"
+      target: "_blank"
+  images:
+    - src: /projects/cherina-pod.webp
+      alt: Cherina Pod, app de escucha intensiva de podcasts bilingües
+    - src: /projects/feedsieve.webp
+      alt: FeedSieve, herramienta para limpiar el feed de X
+    - src: /projects/flaremo.webp
+      alt: FlareMo, gestión de conocimiento personal
+    - src: /projects/sub-store-cloudflare.webp
+      alt: Sub-Store Cloudflare, herramienta de agregación de suscripciones
+    - src: /projects/pi-config.webp
+      alt: pi-config, configuración del agente de coding Pi
+    - src: /projects/deepmate.webp
+      alt: DeepMate, panel de control de AI Harness
+    - src: /projects/hermes-memory.webp
+      alt: Hermes Memory, plugin de memoria persistente para OpenCode
+    - src: /projects/god-museum.webp
+      alt: God-Museum, museo de mitologías entre civilizaciones
+    - src: /projects/ai-chronicle.webp
+      alt: AI Chronicle, crónica de la industria
+blog:
+  title: "Artículos recientes"
+highlights:
+  title: "Posts destacados"
+  links:
+    - label: "Ver todos"
+      icon: "i-lucide-arrow-right"
+      to: "/highlights"
+      color: "neutral"
+      variant: "soft"
+    - label: "Página de X"
+      icon: "i-simple-icons-x"
+      to: "https://x.com/realchendahuang"
+      target: "_blank"
+      color: "neutral"
+      variant: "soft"

@@ -1,0 +1,23 @@
+category: cloudflare
+title: "Warum FlareMo: Nebenbemerkungen notieren, langsam wächst Wissen daraus"
+description: 'Ich wollte ein Tool für „spontan notieren, langsam wächst Wissen daraus".'
+date: 2026-06-27
+likes: 1
+bookmarks: 2
+reposts: 1
+views: 258
+url: https://x.com/realchendahuang/status/2070807195332297205
+content: |
+  Ich wollte ein Tool für „spontan notieren, langsam wächst Wissen daraus".
+
+  Flomo-artig: Out of the box notieren, unaufdringliche Ideensammlung;
+
+  Memos-artig: ausgereiftes Open-Source-Ökosystem, migrierbare Daten, spielbare API;
+
+  Aber ohne erneut einen VPS aufzusetzen, Docker, Postgres und Node-Daemons zu pflegen.
+
+  Na dann. FlareMo behandelt das Datenmodell und die API von Memos als „Spezifikation" und baut die Runtime komplett auf Cloudflare neu:
+
+  Workers für die API, D1 für Notizen, R2 für Anhänge, Queues/Cron für den Hintergrund, Vectorize + Workers AI als Reservierung für semantische Suche und AI-Workflows später.
+
+  Auf den Schultern von Memos: eine persönliche Wissensbasis, die auf der Edge-Cloud wächst.

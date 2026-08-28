@@ -1,0 +1,23 @@
+category: cloudflare
+title: "Pourquoi FlareMo : noter au vol, et voir pousser la connaissance"
+description: "Je cherchais un outil « qui note au vol, et fait pousser la connaissance »."
+date: 2026-06-27
+likes: 1
+bookmarks: 2
+reposts: 1
+views: 258
+url: https://x.com/realchendahuang/status/2070807195332297205
+content: |
+  Je cherchais un outil « qui note au vol, et fait pousser la connaissance ».
+
+  Je voulais la collecte d'idées prête à l'emploi et sans intrusion de Flomo ;
+
+  l'écosystème open source mûr de Memos, des données migrables, une API jouable ;
+
+  et je ne voulais pas rouvrir un VPS, maintenir Docker, Postgres ou des processus Node permanents.
+
+  Alors quoi faire ? L'approche de FlareMo : prendre le modèle de données et l'API de Memos comme « norme », et reconstruire le runtime entièrement sur Cloudflare :
+
+  Workers pour l'API, D1 pour les notes, R2 pour les pièces jointes, Queues/Cron pour les tâches de fond, Vectorize + Workers AI réservés aux futurs besoins de recherche sémantique et de workflows IA.
+
+  Debout sur les épaules de Memos, fabriquer une base de connaissances personnelle qui vit sur le cloud en périphérie.

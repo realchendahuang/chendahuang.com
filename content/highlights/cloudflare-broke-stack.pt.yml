@@ -1,0 +1,21 @@
+category: cloudflare
+title: "Melhores práticas de dev independente em 2026: o combo pobretão da Cloudflare"
+description: "Melhores práticas de dev independente em 2026 — o combo pobretão da Cloudflare."
+date: 2026-06-15
+likes: 225
+bookmarks: 335
+reposts: 34
+views: 40629
+url: https://x.com/realchendahuang/status/2066586160902881542
+content: |
+  Melhores práticas de dev independente em 2026:
+  o combo pobretão da Cloudflare
+  Codex: escreve o código, toca o full-stack
+  GitHub: controle de versão
+  Stripe: sistema de pagamento
+  Frontend: TanStack Start
+  Backend: Hono + Cloudflare Workers
+  Deploy: Cloudflare Pages
+  Banco de dados: Cloudflare D1
+  Armazenamento: Cloudflare R2
+  Cache / Config: Cloudflare KV

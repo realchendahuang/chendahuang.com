@@ -1,0 +1,12 @@
+title: pi-config
+description: "Meine Out-of-the-Box-Konfiguration für den Pi Coding Agent: 17 Plugins + 18 globale Skills + 2 MCP Server, installiert mit einem einzigen Befehl."
+type: AI-Programmierassistenten-Konfiguration
+url: https://github.com/realchendahuang/pi-config
+image: /projects/pi-config.webp
+imageAlt: "pi-config Produktkarte in Dunkellila: Pi Config / My Pi Coding Agent Setup"
+icon: i-lucide-terminal
+color: "#a78bfa"
+tags: ["Pi", "Coding Agent", "Plugins", "Skills", "MCP", "Shell"]
+date: 2026-07-25
+status: ongoing
+stars: 139

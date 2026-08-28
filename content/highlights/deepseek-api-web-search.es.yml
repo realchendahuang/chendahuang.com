@@ -1,0 +1,15 @@
+category: ai
+title: "La API de DeepSeek trae la búsqueda integrada: estírate gratis la búsqueda oficial"
+description: "Resulta que la API oficial de DeepSeek trae la búsqueda de internet integrada."
+date: 2026-08-05
+likes: 1037
+bookmarks: 885
+reposts: 89
+views: 230537
+url: https://x.com/realchendahuang/status/2084826975102030013
+content: |
+  Encontré algo bueno: resulta que DeepSeek oficial trae la búsqueda de internet integrada en la API.
+  Si llamas al modelo deepseek-v4-flash con la interfaz en formato Responses, con declarar la herramienta web_search en los parámetros de la petición ya puedes usar directamente la búsqueda que ejecuta su servidor.
+  Nada de integrarte buscadores de terceros por tu cuenta, ni pedir claves extra de la interfaz de búsqueda.
+  Todo el flujo de búsqueda lo gestiona oficialmente.
+  Original: https://t.co/D4AXo7crHw

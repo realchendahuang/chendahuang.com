@@ -1,0 +1,21 @@
+category: cloudflare
+title: "نقلمُ تجميع اشتراكات العبور الحر إلى Cloudflare"
+description: "نقلتُ تجميع اشتراكات العبور الحر إلى Cloudflare."
+date: 2026-06-28
+likes: 327
+bookmarks: 479
+reposts: 56
+views: 44611
+url: https://x.com/realchendahuang/status/2071247817109348796
+content: |
+  نقلتُ تجميع اشتراكات العبور الحر إلى Cloudflare.
+
+  وفتحتُ مصدر مشروع تجميع روابط اشتراكات العبور الحر، المنشور مجاناً تماماً على Cloudflare.
+
+  يجمع لك كل روابط اشتراكات العبور الحر وعقد الشبكة المبنية ذاتياً في رابط واحد، مع إمكانية ضبط قواعد توزيع الحركة في صاحبه.
+
+  ويحقق ذلك فعلاً: تكفي رابطٌ واحد في كل العملاء، من دون إعداد منفرد لكل عميل.
+
+  GitHub: https://github.com/realchendahuang/sub-store-cloudflare
+
+  مقال المدونة الأصلي: [نقلتُ تجميع اشتراكات «المطارات» إلى Cloudflare](/blog/sub-store-cloudflare)

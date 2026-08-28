@@ -1,0 +1,29 @@
+category: ai
+title: "État de DeepSeek Harness : 150 000 stars, toujours en Developer Preview"
+description: "L'influence court plus vite que le niveau d'ingénierie, l'écosystème périphérique se développe très vite."
+date: 2026-08-18
+likes: 7
+bookmarks: 0
+reposts: 10
+views: 6200
+url: https://x.com/realchendahuang/status/2089642236413985278
+content: |
+  J'ai récemment refeuilleté le repo et les Discussions de DeepSeek Harness, et ce projet est maintenant dans une phase très intéressante :
+
+  DeepSeek Harness a déjà 150 000+ stars, et le repo cumule plus de 12 000 commits.
+
+  Mais le README officiel précise toujours très clairement : pour l'instant ce n'est qu'une Developer Preview, il y aura des changements qui cassent la compatibilité.
+
+  La rc.7 est sortie le 17 août. La création d'Issues et de PR est limitée, le retour passe par les Discussions.
+
+  La communauté est grande, mais le développement centralisé. Les bugs pullulent, comme le problème `unknown tool ""`.
+
+  Ce qui manque le plus : la couverture de tests, la compatibilité entre Providers, la fiabilité des sessions.
+
+  Côté architecture, c'est toujours séduisant, comme un socle de système d'exploitation pour agents :
+
+  - Everything is a Plugin
+  - l'architecture de composition Cordis
+  - Preset / Skill / MCP / Agent / Provider, tout est pluginifiable
+
+  Le projet est dans une phase où « l'influence dépasse le niveau d'ingénierie ».

@@ -1,0 +1,25 @@
+category: cloudflare
+title: "La gente sigue usando menos del 1% del potencial de Cloudflare"
+description: "Siento que la gente sigue explotando menos del 1% de Cloudflare."
+date: 2026-06-15
+likes: 377
+bookmarks: 470
+reposts: 32
+views: 88959
+url: https://x.com/realchendahuang/status/2066446337936110030
+content: |
+  Siento que la gente sigue explotando menos del 1% de Cloudflare.
+
+  Ha sacado demasiadas funciones ya.
+
+  - el almacenamiento de objetos con R2
+  - las APIs de backend con Workers
+  - el gateway de IA con AI Gateway
+  - el cómputo pesado con Containers
+  - la caché con KV
+  - la base de datos con D1
+  - si usas PostgreSQL, puedes conectarte con HyperDrive
+
+  Y ni te cuento lo que falta, muchísimo més: solo tiene que ocurrírsete, que de ello todo se puede.
+
+  Lo clave es que es barato de cojones. Con la cuota gratuita aguantas un montón. ¿Qué significa cuota gratuita? Pagar cero, ni un céntimo: el bodhisattva cibernético.

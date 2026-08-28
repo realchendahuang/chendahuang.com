@@ -1,0 +1,13 @@
+category: tools
+title: "Une gestion unifiée des abonnements pour le réseau"
+description: "Fournisseurs + nœuds VPS maison : gestion unifiée, routage unifié, un seul lien d'abonnement en sortie."
+date: 2026-06-29
+likes: 92
+bookmarks: 137
+reposts: 14
+views: 10207
+url: https://x.com/realchendahuang/status/2071465309085790305
+content: |
+  À propos du réseau : si tu as acheté un fournisseur, et monté aussi tes propres nœuds VPS, tu veux les gérer de façon unifiée, les router de façon unifiée, et sortir un seul lien d'abonnement.
+  Tu veux garder les règles de routage, le filtrage des nœuds et la logique de combinaison côté serveur, plutôt que reconfigurer chaque client.
+  Tu veux une exécution à la Cloudflare, légère à déployer, sans tenir un serveur, un service de base de données ni des tâches d'arrière-plan compliquées.

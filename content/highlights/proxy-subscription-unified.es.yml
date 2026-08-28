@@ -1,0 +1,13 @@
+category: tools
+title: "Un plan de gestión unificada de suscripciones de VPN"
+description: "Servicios de proxy + nodos VPS propios: gestión unificada, enrutamiento unificado y una única suscripción a la salida."
+date: 2026-06-29
+likes: 92
+bookmarks: 137
+reposts: 14
+views: 10207
+url: https://x.com/realchendahuang/status/2071465309085790305
+content: |
+  Sobre la evasión de la censura: si has pagado un servicio de proxy y además te has montado nodos VPS propios, y quieres gestionarlo todo unificado, con enrutamiento unificado y una única suscripción a la salida.
+  Quieres mantener en el servidor las reglas de enrutamiento, el filtrado de nodos y la lógica de combinación, en lugar de configurarlas de nuevo en cada cliente.
+  Quieres ejecutarlo con la forma de despliegue ligera de Cloudflare, sin mantener servidores, servicios de base de datos ni tareas de fondo complejas.

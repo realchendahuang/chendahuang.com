@@ -1,0 +1,20 @@
+category: cloudflare
+title: "IA escreve projetos Cloudflare que quebram — e não por causa de sintaxe"
+description: "A IA vive escrevendo Workers como se fosse Node.js e tratando Binding como variável de ambiente."
+date: 2026-06-22
+likes: 23
+bookmarks: 42
+reposts: 4
+views: 1462
+url: https://x.com/realchendahuang/status/2068853978004365739
+content: |
+  Muita gente usa IA pra escrever projetos Cloudflare e quebra — não por causa de sintaxe.
+  O problema real é:
+  a IA escreve Workers como se fossem Node.js
+  usa Binding como process.env
+  esquece o await
+  salva estado de requisição em variável global
+  não sabe que request de asset estático é grátis
+  e chama o próprio R2 de dentro do Worker via REST API
+  Todas essas armadilhas eu juntei no Cloudflare Playbook.
+  E de quebra ainda escrevi

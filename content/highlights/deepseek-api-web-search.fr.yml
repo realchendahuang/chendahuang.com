@@ -1,0 +1,15 @@
+category: ai
+title: "DeepSeek intègre la recherche web dans son API : la recherche officielle à l'œil"
+description: "L'API officielle DeepSeek intègre carrément la recherche web."
+date: 2026-08-05
+likes: 1037
+bookmarks: 885
+reposts: 89
+views: 230537
+url: https://x.com/realchendahuang/status/2084826975102030013
+content: |
+  J'ai déniché un truc bien : DeepSeek a carrément intégré la recherche web dans son API officielle.
+  Appelle le modèle deepseek-v4-flash via l'interface au format Responses : il suffit de déclarer l'outil web_search dans les paramètres de la requête pour profiter de la recherche exécutée côté serveur.
+  Pas besoin de brancher soi-même un moteur tiers, ni de demander une clé d'API de recherche.
+  Toute la chaîne de recherche est hébergée officiellement.
+  Article : https://t.co/D4AXo7crHw

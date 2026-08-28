@@ -1,0 +1,13 @@
+category: tools
+title: "Plano de gestão unificada de assinaturas de proxy"
+description: "Serviço de proxy + nós próprios de VPS: gestão unificada, roteamento unificado, URL de assinatura unificada na saída."
+date: 2026-06-29
+likes: 92
+bookmarks: 137
+reposts: 14
+views: 10207
+url: https://x.com/realchendahuang/status/2071465309085790305
+content: |
+  Sobre contorno de rede: se você assinou um serviço de proxy e também montou nós próprios de VPS, e quer gestão unificada, roteamento unificado e uma URL de assinatura só na saída.
+  Quer manter as regras de roteamento, a filtragem de nós e a lógica de combinação no lado do servidor, em vez de configurar repetidamente em cada cliente.
+  Quer rodar com o deploy leve da Cloudflare, sem manter servidor, banco de dados e tarefa pesada em background.

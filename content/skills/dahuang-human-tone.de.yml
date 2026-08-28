@@ -1,0 +1,9 @@
+title: Dahuang Human Tone
+description: Entfernt aus chinesischen Texten die Template-Hülle, Wegweiser-Wörter, hochtrabenden Abschlüsse und gespielte Interaktion. Ändert die Struktur, nicht die Fakten – und bewahrt Informationen und Autorenstimme.
+url: https://github.com/realchendahuang/dahuang-human-tone
+install: npx skills add realchendahuang/dahuang-human-tone -g
+icon: i-lucide-wand-sparkles
+color: "#00DC82"
+tags: ["Agent Skill", "Ent-AI-Flavor", "Chinesisches Schreiben", "Claude Code", "Codex"]
+date: 2025-05-01
+stars: 10

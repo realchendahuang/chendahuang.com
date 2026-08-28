@@ -1,0 +1,49 @@
+seo:
+  title: "陈大黄 - Œuvres et contenus"
+  description: "L'exposition personnelle des œuvres et contenus de 陈大黄. Projets, Playbooks, Agent Skills, articles et posts."
+title: "陈大黄"
+description: "Expert en insights, blagueur｜ancien PM en IA｜développeur indépendant｜chercheur enthousiaste en acquisition de langues efficaces｜spécialiste du bidouillage d'outils d'IA｜touche-à-tout : produit, design, dev, ops, vente"
+hero:
+  links:
+    - label: "Voir les projets"
+      to: /projects
+      color: "primary"
+    - label: "GitHub"
+      to: https://github.com/realchendahuang
+      color: "neutral"
+      target: "_blank"
+  images:
+    - src: /projects/cherina-pod.webp
+      alt: Cherina Pod, écoute attentive de podcasts bilingues
+    - src: /projects/feedsieve.webp
+      alt: FeedSieve, outil de nettoyage du flux X
+    - src: /projects/flaremo.webp
+      alt: FlareMo, gestion des connaissances personnelles
+    - src: /projects/sub-store-cloudflare.webp
+      alt: Sub-Store Cloudflare, agrégateur d'abonnements
+    - src: /projects/pi-config.webp
+      alt: pi-config, configuration de l'agent de code Pi
+    - src: /projects/deepmate.webp
+      alt: DeepMate, panneau de contrôle AI Harness
+    - src: /projects/hermes-memory.webp
+      alt: Hermes Memory, plugin de mémoire persistante pour OpenCode
+    - src: /projects/god-museum.webp
+      alt: God-Museum, musée des mythes intercivilisations
+    - src: /projects/ai-chronicle.webp
+      alt: AI Chronicle, chronique de l'industrie
+blog:
+  title: "Derniers articles"
+highlights:
+  title: "Posts à la une"
+  links:
+    - label: "Tout voir"
+      icon: "i-lucide-arrow-right"
+      to: "/highlights"
+      color: "neutral"
+      variant: "soft"
+    - label: "Profil X"
+      icon: "i-simple-icons-x"
+      to: "https://x.com/realchendahuang"
+      target: "_blank"
+      color: "neutral"
+      variant: "soft"

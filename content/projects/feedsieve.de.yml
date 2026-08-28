@@ -1,0 +1,12 @@
+title: FeedSieve
+description: Der Cyber-Reiniger für deinen X-Feed – hält Bot-Spam, billige AI-Spülmasse, Krypto-Lehrer und Interaktions-Phishing aus deiner Timeline fern.
+type: Open-Source-X-Tool
+url: https://github.com/realchendahuang/feedsieve
+image: /projects/feedsieve.webp
+imageAlt: FeedSieve Produktkarte in Cyan mit dunklem Hintergrund
+icon: i-lucide-shield-check
+color: "#22d3ee"
+tags: ["X", "RSS", "Bot Filter", "Entrauschen", "OSS"]
+date: 2026-08-25
+status: ongoing
+stars: 0

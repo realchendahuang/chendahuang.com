@@ -1,0 +1,21 @@
+category: cloudflare
+title: "科学上网（プロキシ）サブスク集約を Cloudflare に移した"
+description: "科学上网（プロキシ）サブスク集約を Cloudflare に移した。"
+date: 2026-06-28
+likes: 327
+bookmarks: 479
+reposts: 56
+views: 44611
+url: https://x.com/realchendahuang/status/2071247817109348796
+content: |
+  科学上网（プロキシ）サブスク集約を Cloudflare に移した。
+
+  Cloudflare に完全無料でデプロイできる科学上网サブスクリンク集約プロジェクトをオープンソースで公開した。
+
+  あなたの全部の科学上网サブスクリンク、自前のネットワークノードを、一つのリンクに統一集約し、さらに分流ルールも付けられる。
+
+  本当にリンク一本だけで、すべてのクライアントで使える。クライアントごとに個別設定する必要がない。
+
+  GitHub：https://github.com/realchendahuang/sub-store-cloudflare
+
+  ブログ原文：[機場サブスク集約を Cloudflare に移した](/blog/sub-store-cloudflare)

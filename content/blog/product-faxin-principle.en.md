@@ -1,5 +1,5 @@
 ---
-title: The founding-intention principle: why indie developers must learn to let go
+title: "The founding-intention principle: why indie developers must learn to let go"
 description: Why do you set out? Who do you set out for? Which problem are you actually trying to solve? A product's sharpness comes from what you dare to cut.
 date: 2026-06-20
 minRead: 10

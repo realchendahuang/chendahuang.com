@@ -1,6 +1,6 @@
 ---
-title: Don't get carried away when users say "that's awesome": pain points vs. itch points
-description: Verbal approval is worth nothing. There's only one hard standard for judging demand: what the user is willing to pay.
+title: "Don't get carried away when users say \"that's awesome\": pain points vs. itch points"
+description: "Verbal approval is worth nothing. There's only one hard standard for judging demand: what the user is willing to pay."
 date: 2026-06-20
 minRead: 8
 source: x-article

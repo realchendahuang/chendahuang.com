@@ -1,0 +1,25 @@
+category: cloudflare
+title: "Cloudflare wird von den meisten noch zu unter 1 % ausgeschöpft"
+description: "Ich habe das Gefühl, Cloudflare wird von den meisten noch zu unter 1 % ausgeschöpft."
+date: 2026-06-15
+likes: 377
+bookmarks: 470
+reposts: 32
+views: 88959
+url: https://x.com/realchendahuang/status/2066446337936110030
+content: |
+  Ich habe das Gefühl, Cloudflare wird von den meisten noch zu unter 1 % ausgeschöpft.
+
+  Es sind inzwischen viel zu viele Features.
+
+  - Objektspeicher: R2
+  - Backend-API: Worker
+  - AI-Gateway: AI Gateway
+  - Rechenintensives: Container
+  - Cache: KV
+  - Datenbank: D1
+  - Für PostgreSQL: per HyperDrive andocken
+
+  Und so weiter, und so fort – denk dir was aus, es hat es schon.
+
+  Vor allem: Es ist verdammt billig. Das Gratis-Kontingent trägt ewig. Was heißt Gratis-Kontingent? Keine müde Mark zahlen – Cyber-Bodhisattva.

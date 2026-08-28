@@ -1,6 +1,6 @@
 ---
-title: DeepSeek V4 Flash stable release, hands-on: cheap, fast, 1M context, built-in search
-description: A few days deep-diving the stable DeepSeek V4 Flash release: aggressively cheap, lightning fast, 1M context, official built-in web search, fully open source. The one weakness is multimodality — but you can patch it by combining other models.
+title: "DeepSeek V4 Flash stable release, hands-on: cheap, fast, 1M context, built-in search"
+description: "A few days deep-diving the stable DeepSeek V4 Flash release: aggressively cheap, lightning fast, 1M context, official built-in web search, fully open source. The one weakness is multimodality — but you can patch it by combining other models."
 date: 2026-08-05
 pinned: true
 minRead: 7

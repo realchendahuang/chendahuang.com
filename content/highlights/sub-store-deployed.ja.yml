@@ -1,0 +1,22 @@
+category: cloudflare
+title: "Cloudflare 上で Sub-Store のデプロイを完了"
+description: "時間をかけて Cloudflare 上で Sub-Store のデプロイを完了した。"
+date: 2026-06-27
+likes: 209
+bookmarks: 244
+reposts: 29
+views: 67007
+url: https://x.com/realchendahuang/status/2070689769731019207
+content: |
+  時間をかけて Cloudflare 上で Sub-Store のデプロイを完了した。
+
+  自分の自前ノードと機場（プロキシサービス）のバックアップノードを全部一つに融合させて、さらに ACL4SSR 分流ルールの自動サブスクも組み合わせた。
+
+  サブスクリンク一本で、そのまま実現：
+
+  - 複数ベンダーのノード統合
+  - ノードフィルタリング
+  - 分流ルール設定
+  - 設定の自動更新
+
+  シルキーすぎる。

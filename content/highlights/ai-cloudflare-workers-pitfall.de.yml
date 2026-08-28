@@ -1,0 +1,20 @@
+category: cloudflare
+title: "AI-Cloudflare-Projekte crashen – nicht wegen der Syntax"
+description: "AI schreibt Workers ständig wie Node.js und verwechselt Bindings mit Umgebungsvariablen."
+date: 2026-06-22
+likes: 23
+bookmarks: 42
+reposts: 4
+views: 1462
+url: https://x.com/realchendahuang/status/2068853978004365739
+content: |
+  Viele lassen ihre Cloudflare-Projekte von AI schreiben – der Crash kommt nicht von der Syntax.
+  Das eigentliche Problem:
+  AI schreibt Workers ständig wie Node.js
+  benutzt Bindings wie process.env
+  vergisst await
+  missbraucht globale Variablen für Request-State
+  weiß nicht, dass statische Asset-Requests gratis sind
+  ruft das eigene R2 über die REST-API aus dem Worker auf
+  Diese Fallstricke habe ich alle im Cloudflare Playbook gesammelt.
+  Nebenbei hab ich noch geschrieben

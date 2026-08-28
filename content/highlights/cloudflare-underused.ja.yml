@@ -1,0 +1,25 @@
+category: cloudflare
+title: "みんな Cloudflare をまだ 1% も使いこなせてない"
+description: "みんな Cloudflare を使いこなせてる度合いは、まだ 1% に届いてない気がする。"
+date: 2026-06-15
+likes: 377
+bookmarks: 470
+reposts: 32
+views: 88959
+url: https://x.com/realchendahuang/status/2066446337936110030
+content: |
+  みんな Cloudflare を使いこなせてる度合いは、まだ 1% に届いてない気がする。
+
+  今や機能を出しすぎてる。
+
+  - オブジェクトストレージは R2
+  - バックエンド API は Worker
+  - AI ゲートウェイは AI Gateway
+  - 重い計算は Container
+  - キャッシュは KV
+  - データベースは D1
+  - PostgreSQL を使うなら、HyperDrive で接続すればいい
+
+  などなど、まだまだたくさんある。想像できなければできないほど、できないことはない。
+
+  なにより本当に安い。無料枠だけで長く使える。無料枠って何だ？ 一銭も払わないってことだよ、サイバー菩薩。

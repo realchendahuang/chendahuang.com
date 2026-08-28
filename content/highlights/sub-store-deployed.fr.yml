@@ -1,0 +1,22 @@
+category: cloudflare
+title: "Déploiement de Sub-Store terminé sur Cloudflare"
+description: "J'ai pris un peu de temps pour finir le déploiement de Sub-Store sur Cloudflare."
+date: 2026-06-27
+likes: 209
+bookmarks: 244
+reposts: 29
+views: 67007
+url: https://x.com/realchendahuang/status/2070689769731019207
+content: |
+  J'ai pris un peu de temps pour finir le déploiement de Sub-Store sur Cloudflare.
+
+  Mes nœuds maison et les nœuds de secours du fournisseur sont tous fondus ensemble, avec en plus l'abonnement automatique des règles de routage ACL4SSR.
+
+  Avec un seul lien d'abonnement, je obtiens :
+
+  - la fusion des nœuds multi-fournisseurs
+  - le filtrage des nœuds
+  - la configuration des règles de routage
+  - la mise à jour automatique de la config
+
+  Lisse comme de l'huile.

@@ -1,0 +1,26 @@
+category: ai
+title: "Dahuang AI Tone：AI 味を匂いで嗅ぎ分けられて初めて、落とし方も分かる"
+description: "ちょっとぶっ飛んだ Skill を作った：Dahuang AI Tone"
+date: 2026-06-22
+likes: 0
+bookmarks: 0
+reposts: 0
+views: 213
+url: https://x.com/realchendahuang/status/2069025354623377580
+content: |
+  ちょっとぶっ飛んだ Skill を作った：
+
+  **Dahuang AI Tone**
+
+  みんな「AI 味を落とす」話をしてる。でも AI 味って一体何だ？
+
+  これは二つのことができちゃう：
+
+  - 普通の文章を、指定したモデルの AI 味に書き換えられる
+  - 逆に、ある文章のどこが AI っぽいか、どのモデルの口調かを指摘できる
+
+  その価値は：
+
+  先に AI 味を嗅ぎ分けられてこそ、AI 味の落とし方が分かる。
+
+  GitHub：https://github.com/realchendahuang/dahuang-ai-tone

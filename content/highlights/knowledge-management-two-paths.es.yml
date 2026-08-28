@@ -1,0 +1,56 @@
+category: ai
+title: "Dos rutas para la gestión del conocimiento: el flujo de Feishu vs. el producto de Cloudflare"
+description: "Últimamente estoy replanteándome todo el asunto de la gestión del conocimiento."
+date: 2026-07-08
+likes: 3
+bookmarks: 2
+reposts: 0
+views: 439
+url: https://x.com/realchendahuang/status/2074900341456503169
+content: |
+  Últimamente estoy replanteándome todo el asunto de la gestión del conocimiento.
+
+  He descubierto que aquí hay dos rutas posibles.
+
+  **Una es montarla sobre Feishu.**
+
+  Sus ventajas son directas:
+
+  gratis, sincronización entre dispositivos, se puede compartir, colaboración fácil, y con formas suficientemente variadas.
+
+  Documentos, tablas multidimensionales, hojas, diapositivas, lienzos, Todos, bases de conocimiento: combinando esos módulos ya se cubren muchos escenarios de gestión del conocimiento, personales y de equipo.
+
+  Me gusta especialmente la tabla multidimensional.
+
+  Encaja muy bien como centro del conocimiento.
+
+  La recogida de información, el archivo de materiales, la gestión de estados, el ordenamiento estructurado y la reproducción de contenido pueden girar todas en torno a ella.
+
+  Y sumando la CLI de Feishu y los AI Agents, Feishu deja de ser solo una suite de oficina.
+
+  Es más bien un sistema de flujos de conocimiento manipulable por Agents.
+
+  **La otra ruta es desarrollarla sobre Cloudflare en casa.**
+
+  Ese camino es más libre, y además casa mejor con la productificación.
+
+  Por ejemplo, FlareMo, que estoy haciendo ahora, quiere ser un producto de gestión del conocimiento sobre Cloudflare.
+
+  La ventaja de Cloudflare es que las capacidades de base son muy completas:
+
+  frontend, backend, base de datos, almacenamiento de objetos, búsqueda vectorial y capacidades de IA, todo se puede combinar.
+
+  Pero requiere desarrollo.
+
+  Y hay que diseñarse uno mismo la estructura de datos, la experiencia de búsqueda, el sistema de permisos y la lógica del producto.
+
+  Así que mi juicio ahora es:
+
+  - Feishu sirve para montar rápido un sistema de gestión del conocimiento usable ya mismo.
+  - Cloudflare sirve para convertir la gestión del conocimiento en un producto de verdad controlable e iterable.
+
+  Las dos rutas merecen estudio.
+
+  Una tira más hacia el flujo de trabajo.
+
+  La otra, hacia el producto.

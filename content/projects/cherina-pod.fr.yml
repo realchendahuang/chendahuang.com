@@ -1,0 +1,12 @@
+title: Cherina Pod
+description: Une app de podcasts bilingues pour l'écoute attentive. Touche une phrase en anglais, la traduction chinoise s'affiche ; boucle par phrase, vitesse réglable, répétition à voix haute — comprendre compte plus qu'écouter toujours plus.
+type: Produit indépendant
+url: https://pod.cherina.app/
+onlineUrl: https://pod.cherina.app/
+image: /projects/cherina-pod.webp
+imageAlt: "Cherina Pod, page d'accueil : continuer l'écoute, apprentissage de l'anglais, cartes de couverture bilingues"
+icon: i-lucide-headphones
+color: "#e25822"
+tags: ["Podcast", "Écoute attentive", "Apprentissage de l'anglais", "Bilingue", "Produit indépendant"]
+date: 2026-08-26
+status: ongoing

@@ -1,0 +1,15 @@
+category: cloudflare
+title: "Tropezándome con Cloudflare Container: depurando sin hacer stop me cobraron 4 dólares"
+description: "Ya apareció la víctima de Cloudflare Container."
+date: 2026-06-27
+likes: 0
+bookmarks: 0
+reposts: 0
+views: 353
+url: https://x.com/realchendahuang/status/2070820905224441922
+content: |
+  Ya apareció la víctima de Cloudflare Container.
+
+  Como el código estaba en fase de depuración, la instrucción stop no llegó a surtir efecto.
+
+  Un Container estuvo corriendo 7 días seguidos y me quitaron 4 dólares.

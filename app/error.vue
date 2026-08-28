@@ -13,7 +13,8 @@ const { t, locale } = useI18n()
 
 useHead(() => ({
   htmlAttrs: {
-    lang: locale.value === 'en' ? 'en' : 'zh-CN'
+    lang: locale.value === 'en' ? 'en' : locale.value === 'ja' ? 'ja' : locale.value === 'es' ? 'es' : locale.value === 'pt' ? 'pt-BR' : locale.value === 'fr' ? 'fr' : locale.value === 'de' ? 'de' : locale.value === 'ar' ? 'ar' : 'zh-CN',
+    dir: locale.value === 'ar' ? 'rtl' : 'ltr'
   }
 }))
 

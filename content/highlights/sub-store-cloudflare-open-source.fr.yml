@@ -1,0 +1,21 @@
+category: cloudflare
+title: "L'agrégateur d'abonnements pour le réseau, déménagé sur Cloudflare"
+description: "J'ai déplacé mon agrégateur d'abonnements sur Cloudflare."
+date: 2026-06-28
+likes: 327
+bookmarks: 479
+reposts: 56
+views: 44611
+url: https://x.com/realchendahuang/status/2071247817109348796
+content: |
+  J'ai déplacé mon agrégateur d'abonnements sur Cloudflare.
+
+  J'ai ouvert un projet d'agrégation de liens d'abonnement, gratuit et déployé entièrement sur Cloudflare.
+
+  Il agrège tous tes liens d'abonnement et nœuds réseau maison en un seul lien, avec règles de routage en option.
+
+  Vraiment : un seul lien, utilisable dans tous les clients, sans configurer chaque client un par un.
+
+  GitHub : https://github.com/realchendahuang/sub-store-cloudflare
+
+  Article du blog : [J'ai déplacé mon agrégateur d'abonnements vers Cloudflare](/blog/sub-store-cloudflare)

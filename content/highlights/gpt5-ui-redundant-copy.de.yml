@@ -1,0 +1,22 @@
+category: ai
+title: "Der Geburtsfehler der GPT-5-Generation: interne Anforderungen als UI-Text schreiben"
+description: "Die Redundanz im UI-Text kommt daher, dass Texte für Nutzer und Feedback für Entwickler nie getrennt werden."
+date: 2026-08-12
+likes: 2
+bookmarks: 0
+reposts: 1
+views: 1500
+url: https://x.com/realchendahuang/status/2087349882101370909
+content: |
+  Zuvor treffend gesagt – das ist der Geburtsfehler der GPT-5-Generation:
+
+  Immer wieder interne Anforderungen als UI-Text zu schreiben, um die eigene Arbeit zu beweisen. Um zu zeigen: Schau her, ich hab's wirklich gemacht, seht ihr, wie stark ich bin? Ich hab nicht gefaulenzt, ich habe alle eure Anforderungen auf den Tisch gelegt, okay?
+
+  Dazu sind die UI-Texte maximal redundant. Von 5.0 über 5.6 – so viele Iterationen und das Problem ist bis heute unverändert, es sitzt in den Knochen.
+
+  Wer wirklich Frontend-Produkte gebaut hat, versteht:
+
+  - Ob Klein- oder Großdruck im UI: Es sind alles Texte für die Nutzer
+  - Was eigentlich im Chat an die Entwickler zurückgemeldet gehört, darf niemals ins Produkt geschrieben werden
+
+  Aber das Modell schreibt nicht nur schlechte Texte, es schreibt seine internen Feedbacks auch noch ins Produkt, um zu „zeigen", dass es wirklich was getan hat.

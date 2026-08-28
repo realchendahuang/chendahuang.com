@@ -1,0 +1,8 @@
+title: Dahuang AI Tone
+description: Reescribe textos para que suenen con el estilo IA de GPT, Claude, Gemini o Doubao, o detecta a qué modelo se parece más un texto.
+url: https://github.com/realchendahuang/dahuang-ai-tone
+install: npx skills add realchendahuang/dahuang-ai-tone -g
+icon: i-lucide-fingerprint
+color: "#a855f7"
+tags: ["Agent Skill", "Estilo IA", "Estilo de modelo", "Detección de estilo", "Escritura en chino"]
+date: 2025-05-01

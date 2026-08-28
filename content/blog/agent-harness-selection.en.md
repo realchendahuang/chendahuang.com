@@ -1,6 +1,6 @@
 ---
 title: After tinkering with Pi Agent, OMP, Codex, and ZCode, why I finally chose OpenCode + OpenChamber
-description: A retrospective on choosing an Agent Harness: three criteria — GUI experience, vendor lock-in, and freedom for secondary development — ruled out Pi Agent, OMP, Codex, and ZCode, and finally settled on the OpenCode core + OpenChamber interface.
+description: "A retrospective on choosing an Agent Harness: three criteria — GUI experience, vendor lock-in, and freedom for secondary development — ruled out Pi Agent, OMP, Codex, and ZCode, and finally settled on the OpenCode core + OpenChamber interface."
 date: 2026-08-06
 minRead: 6
 source: x

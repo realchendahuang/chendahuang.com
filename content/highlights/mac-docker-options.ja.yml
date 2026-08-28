@@ -1,0 +1,16 @@
+category: tools
+title: "Mac の Docker 技術選定：Colima / OrbStack / Docker Desktop"
+description: "Mac の Docker 環境、簡単に技術選定する。"
+date: 2026-06-20
+likes: 0
+bookmarks: 0
+reposts: 0
+views: 211
+url: https://x.com/realchendahuang/status/2068238972728533154
+content: |
+  Mac の Docker 環境、簡単に技術選定をする。
+
+  - **Colima**：無料オープンソース、とても軽量、でもほぼコマンドラインのみ。いじるのが好きで、コマンドラインに慣れてる人向け。
+  - **Apple Container**：Apple が出した新しいコンテナの方向性。今後注目に値するけど、現状エコシステムが弱く、まだかなり初期段階。例えば Docker Compose にも対応してない。
+  - **OrbStack**：GUI もあるし、軽くて速く、エコシステム対応も充実。欠点はオープンソースでないことと、商用版はライセンスが必要なこと。ただ個人版は無料。
+  - **Docker Desktop**：公式が出したものなのに、重くて肥大化して、体験はクソ。Mac では使わないに越したことはない。
