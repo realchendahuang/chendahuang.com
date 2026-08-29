@@ -11,7 +11,8 @@
     "blog": "ブログ",
     "highlights": "ポスト",
     "menu": "メニュー",
-    "openMenu": "ナビゲーションメニューを開く"
+    "openMenu": "ナビゲーションメニューを開く",
+    "switchLanguage": "言語を切り替え"
   },
   "sections": {
     "blog": "ブログ",
@@ -81,7 +82,7 @@
     "viewOnGithub": "GitHub で見る"
   },
   "highlights": {
-    "count": "全 {count} 件。テーマ・タイムライン・人気の順で閲覧でき、キーワード検索・カテゴリ絞り込み・タイトルクリックで本文展開も可能。",
+    "count": "全 {count} 件",
     "xHome": "X ホーム",
     "searchPosts": "ポストを検索",
     "searchPlaceholder": "タイトルや内容のキーワード…",
@@ -102,9 +103,8 @@
     "countSuffix": "件"
   },
   "blog": {
-    "count": "全 {count} 記事。キーワード検索やタグ絞り込みができます。",
+    "count": "全 {count} 記事",
     "archive": "アーカイブ",
-    "tags": "タグ",
     "rss": "RSS フィード",
     "searchPlaceholder": "タイトル・説明・タグを検索…",
     "all": "すべて",
@@ -124,15 +124,6 @@
     "count": "全 {count} 記事を年ごとに整理しています。",
     "posts": "記事"
   },
-  "tags": {
-    "title": "タグ",
-    "description": "タグで全ブログ記事を閲覧。",
-    "count": "タグ全 {count} 件。クリックで関連記事を表示。",
-    "all": "すべて",
-    "allPosts": "全記事",
-    "underTag": "タグ「{tag}」の記事",
-    "empty": "このタグの記事はまだありません。"
-  },
   "friends": {
     "empty": "まだ友链はありません。content/friends/*.yml にファイルを追加してください。",
     "avatar": "{name} のアバター"
@@ -150,7 +141,6 @@
     "shareHint": "役に立ったら、ぜひ友達にシェアを。",
     "shareToX": "X でシェア",
     "xOriginal": "X 原文",
-    "copyLink": "リンクをコピー",
     "share": "シェア",
     "related": "関連記事",
     "subscribe": "更新を受け取る",

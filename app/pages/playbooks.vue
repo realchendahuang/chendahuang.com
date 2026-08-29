@@ -18,12 +18,7 @@ const { data: playbooks } = await useAsyncData(`playbooks:${locale.value}`, () =
     <section
       class="border-t border-default pb-20 sm:pb-28"
     >
-      <Motion
-        :initial="{ opacity: 0, y: 24 }"
-        :while-in-view="{ opacity: 1, y: 0 }"
-        :viewport="{ once: true, amount: 0.08 }"
-        :transition="{ duration: 0.78, ease: [0.22, 1, 0.36, 1] }"
-      >
+      <FadeUp :amount="0.08">
         <UContainer>
           <article
             v-for="(playbook, index) in playbooks"
@@ -88,7 +83,7 @@ const { data: playbooks } = await useAsyncData(`playbooks:${locale.value}`, () =
             </div>
           </article>
         </UContainer>
-      </Motion>
+      </FadeUp>
     </section>
   </div>
 </template>

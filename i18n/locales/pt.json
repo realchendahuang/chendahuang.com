@@ -11,7 +11,8 @@
     "blog": "Blog",
     "highlights": "Posts",
     "menu": "Menu",
-    "openMenu": "Abrir menu de navegação"
+    "openMenu": "Abrir menu de navegação",
+    "switchLanguage": "Mudar idioma"
   },
   "sections": {
     "blog": "Blog",
@@ -81,7 +82,7 @@
     "viewOnGithub": "Ver no GitHub"
   },
   "highlights": {
-    "count": "{count} posts no total. Navegue por tema, linha do tempo ou popularidade, busque palavras-chave, filtre por categoria ou clique num título para expandir.",
+    "count": "{count} posts",
     "xHome": "Perfil no X",
     "searchPosts": "Buscar posts",
     "searchPlaceholder": "Buscar por título ou conteúdo…",
@@ -102,9 +103,8 @@
     "countSuffix": "posts"
   },
   "blog": {
-    "count": "{count} artigos no total. Busque por palavra-chave ou filtre por tag.",
+    "count": "{count} artigos",
     "archive": "Arquivo",
-    "tags": "Tags",
     "rss": "Feed RSS",
     "searchPlaceholder": "Buscar por título, descrição ou tags…",
     "all": "Todos",
@@ -124,15 +124,6 @@
     "count": "{count} artigos, organizados por ano.",
     "posts": "artigos"
   },
-  "tags": {
-    "title": "Tags",
-    "description": "Explore todos os artigos do blog por tag.",
-    "count": "{count} tags no total, clique para ver os artigos relacionados.",
-    "all": "Todos",
-    "allPosts": "Todos os artigos",
-    "underTag": "Artigos com a tag «{tag}»",
-    "empty": "Nenhum artigo com esta tag."
-  },
   "friends": {
     "empty": "Ainda sem links de amigos. Adicione um arquivo em content/friends/*.yml.",
     "avatar": "Avatar de {name}"
@@ -150,7 +141,6 @@
     "shareHint": "Se achou útil, compartilhe com alguém.",
     "shareToX": "Compartilhar no X",
     "xOriginal": "Original do X",
-    "copyLink": "Copiar link",
     "share": "Compartilhar",
     "related": "Leituras relacionadas",
     "subscribe": "Assine para receber novidades",

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { locale } = useI18n()
+const { locale, t } = useI18n()
 
 const { data: page } = await useAsyncData(`index:${locale.value}`, () => {
   return queryCollection('index').where('locale', '=', locale.value).first()
@@ -23,8 +23,8 @@ useSeoMeta({
 })
 
 defineOgImage('Portfolio', {
-  headline: '独立开发者',
-  title: '陈大黄',
+  headline: t('post.indieDev'),
+  title: t('site.name'),
   description: page.value?.seo?.description || page.value?.description
 })
 

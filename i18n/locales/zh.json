@@ -11,7 +11,8 @@
     "blog": "博客",
     "highlights": "帖子",
     "menu": "菜单",
-    "openMenu": "打开导航菜单"
+    "openMenu": "打开导航菜单",
+    "switchLanguage": "切换语言"
   },
   "sections": {
     "blog": "博客",
@@ -81,7 +82,7 @@
     "viewOnGithub": "在 GitHub 查看"
   },
   "highlights": {
-    "count": "共 {count} 条。可按主题分组、时间线或热度浏览，也可搜索关键词、筛分类、点击标题展开正文。",
+    "count": "共 {count} 条",
     "xHome": "X 主页",
     "searchPosts": "搜索帖子",
     "searchPlaceholder": "搜标题或内容关键词…",
@@ -102,9 +103,8 @@
     "countSuffix": "条"
   },
   "blog": {
-    "count": "共 {count} 篇文章。可按关键词搜索或按标签筛选。",
+    "count": "共 {count} 篇文章",
     "archive": "归档",
-    "tags": "标签",
     "rss": "RSS 订阅",
     "searchPlaceholder": "搜索文章标题、描述或标签…",
     "all": "全部",
@@ -124,15 +124,6 @@
     "count": "共 {count} 篇文章，按年份整理。",
     "posts": "篇"
   },
-  "tags": {
-    "title": "标签",
-    "description": "按标签浏览全部博客文章。",
-    "count": "共 {count} 个标签，点击查看对应文章。",
-    "all": "全部",
-    "allPosts": "全部文章",
-    "underTag": "标签「{tag}」下的文章",
-    "empty": "该标签下暂无文章。"
-  },
   "friends": {
     "empty": "暂无友链，可添加 content/friends/*.yml 文件。",
     "avatar": "{name} 的头像"
@@ -150,7 +141,6 @@
     "shareHint": "如果你觉得有用，欢迎转发给朋友。",
     "shareToX": "转发到 X",
     "xOriginal": "X 原文",
-    "copyLink": "复制链接",
     "share": "分享",
     "related": "相关阅读",
     "subscribe": "订阅更新",

@@ -2,8 +2,9 @@
 import type { IndexCollectionItem } from '@nuxt/content'
 import type { ProjectSummary } from '~/types/content'
 
-const { footer, global } = useAppConfig()
+const { global } = useAppConfig()
 const { t, locale } = useI18n()
+const localePath = useLocalePath()
 
 defineProps<{
   page: IndexCollectionItem
@@ -30,7 +31,7 @@ const { data: stats } = await useAsyncData(`hero-stats:${locale.value}`, async (
     :ui="{
       headline: 'flex items-center justify-center',
       title: 'text-shadow-md max-w-lg mx-auto',
-      description: () => 'mt-3 mx-auto max-w-3xl break-keep text-pretty text-base leading-7 text-muted',
+      description: 'mt-3',
       links: 'mt-4 flex-col justify-center items-center'
     }"
   >
@@ -106,8 +107,8 @@ const { data: stats } = await useAsyncData(`hero-stats:${locale.value}`, async (
           <NuxtLink
             v-for="item in stats"
             :key="item.label"
-            :to="item.to"
-            :target="item.to?.startsWith('http') ? '_blank' : undefined"
+            :to="item.to.startsWith('http') ? item.to : localePath(item.to)"
+            :target="item.to.startsWith('http') ? '_blank' : undefined"
             class="flex items-baseline gap-1.5 rounded-md px-1 py-0.5 transition-colors hover:bg-elevated hover:text-highlighted"
           >
             <span class="font-serif text-xl font-medium text-highlighted">
@@ -149,31 +150,6 @@ const { data: stats } = await useAsyncData(`hero-stats:${locale.value}`, async (
           />
         </div>
       </Motion>
-
-      <div class="gap-x-4 inline-flex mt-4">
-        <Motion
-          v-for="(link, index) of footer?.links"
-          :key="index"
-
-          :initial="{
-            opacity: 0,
-            y: 8
-          }"
-          :animate="{
-            opacity: 1,
-            y: 0
-          }"
-          :transition="{
-            duration: 0.55,
-            ease: [0.22, 1, 0.36, 1],
-            delay: 0.5 + index * 0.1
-          }"
-        >
-          <UButton
-            v-bind="{ size: 'md', color: 'neutral', variant: 'ghost', ...link }"
-          />
-        </Motion>
-      </div>
     </template>
 
     <UMarquee
@@ -199,7 +175,7 @@ const { data: stats } = await useAsyncData(`hero-stats:${locale.value}`, async (
         }"
       >
         <NuxtLink
-          to="/projects"
+          :to="localePath('/projects')"
           class="shrink-0"
         >
           <NuxtImg

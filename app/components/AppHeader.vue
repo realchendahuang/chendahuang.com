@@ -6,6 +6,7 @@ const props = defineProps<{
 }>()
 
 const { t } = useI18n()
+const localePath = useLocalePath()
 
 const mobileLinks = computed<DropdownMenuItem[]>(() => props.links.map(link => ({
   label: link.label,
@@ -20,10 +21,10 @@ const mobileLinks = computed<DropdownMenuItem[]>(() => props.links.map(link => (
   <div class="fixed inset-x-3 top-2 z-50 sm:hidden">
     <div class="flex items-center justify-between rounded-full border border-muted/50 bg-muted/90 px-3 py-1.5 shadow-lg shadow-neutral-950/5 backdrop-blur-sm">
       <NuxtLink
-        to="/"
+        :to="localePath('/')"
         class="px-2 py-2 text-sm font-semibold text-highlighted"
       >
-        陈大黄
+        {{ t('site.name') }}
       </NuxtLink>
 
       <div class="flex items-center gap-1">

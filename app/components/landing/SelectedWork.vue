@@ -23,12 +23,7 @@ const works = computed(() => (projects.value ?? []).map(project => ({
     id="work"
     class="scroll-mt-20 border-t border-default py-14 sm:py-20"
   >
-    <Motion
-      :initial="{ opacity: 0, y: 24 }"
-      :while-in-view="{ opacity: 1, y: 0 }"
-      :viewport="{ once: true, amount: 0.2 }"
-      :transition="{ duration: 0.78, ease: [0.22, 1, 0.36, 1] }"
-    >
+    <FadeUp>
       <UContainer>
         <div class="grid gap-4 sm:grid-cols-[10rem_1fr] sm:gap-10">
           <p class="editorial-label pt-1">
@@ -79,6 +74,6 @@ const works = computed(() => (projects.value ?? []).map(project => ({
           />
         </div>
       </UContainer>
-    </Motion>
+    </FadeUp>
   </section>
 </template>

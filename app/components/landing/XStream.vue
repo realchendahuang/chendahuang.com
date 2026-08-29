@@ -8,7 +8,7 @@ defineProps<{
   page: IndexCollectionItem
 }>()
 
-const { t } = useI18n()
+const { t, locale } = useI18n()
 
 const { data: highlights } = await useContentSection<HighlightSummary>('home-highlights', {
   collection: 'highlights',
@@ -54,20 +54,14 @@ const shareHighlight = async (item: { title: string, url: string }) => {
       </div>
     </template>
 
-    <Motion
-      class="grid gap-3 sm:grid-cols-2"
-      :initial="{ opacity: 0, y: 24 }"
-      :while-in-view="{ opacity: 1, y: 0 }"
-      :viewport="{ once: true, amount: 0.2 }"
-      :transition="{ duration: 0.78, ease: [0.22, 1, 0.36, 1] }"
-    >
+    <FadeUp class="grid gap-3 sm:grid-cols-2">
       <article
         v-for="item in highlights"
         :key="item.url"
         class="rounded-lg border border-default bg-elevated/30 p-4 transition-[border-color,transform] duration-300 hover:-translate-y-0.5 hover:border-primary/40"
       >
         <div class="mb-3 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-dimmed">
-          <time>{{ formatShortDate(item.date) }}</time>
+          <time>{{ formatShortDate(item.date, locale) }}</time>
           <span>{{ formatCount(item.likes) }} {{ t('landing.likes') }}</span>
           <span v-if="item.bookmarks">{{ formatCount(item.bookmarks) }} {{ t('landing.bookmarks') }}</span>
         </div>
@@ -100,6 +94,6 @@ const shareHighlight = async (item: { title: string, url: string }) => {
           />
         </div>
       </article>
-    </Motion>
+    </FadeUp>
   </UPageSection>
 </template>

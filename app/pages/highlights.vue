@@ -2,7 +2,6 @@
 import type { HighlightsCollectionItem, PagesCollectionItem } from '@nuxt/content'
 import {
   formatCount,
-  formatMonthLabel,
   getHighlightCategory,
   getHighlightCategoryLabel,
   getHighlightCategoryDescription,
@@ -217,24 +216,29 @@ const displaySections = computed<DisplaySection[]>(() => {
 
   if (viewMode.value === 'timeline') {
     const source = sortedByDate(filtered)
-    const groups = new Map<string, HighlightsCollectionItem[]>()
+    // 按 年-月 分组,标签走 i18n(monthLabel);source 已按日期倒序,Map 保持该顺序
+    const groups = new Map<string, { label: string, items: HighlightsCollectionItem[] }>()
 
     for (const item of source) {
-      const label = formatMonthLabel(item.date)
-      if (!groups.has(label)) {
-        groups.set(label, [])
+      const date = new Date(item.date)
+      const key = `${date.getUTCFullYear()}-${date.getUTCMonth() + 1}`
+      if (!groups.has(key)) {
+        groups.set(key, {
+          label: t('monthLabel', { year: date.getUTCFullYear(), month: date.getUTCMonth() + 1 }),
+          items: []
+        })
       }
-      groups.get(label)!.push(item)
+      groups.get(key)!.items.push(item)
     }
 
-    return [...groups.entries()].map(([label, items]) => ({
-      id: label,
-      label,
-      description: `${items.length} ${t('highlights.countSuffix')}`,
+    return [...groups.entries()].map(([key, group]) => ({
+      id: key,
+      label: group.label,
+      description: `${group.items.length} ${t('highlights.countSuffix')}`,
       sticky: true,
       showCategoryBadge: true,
-      items,
-      panelId: `timeline-${label}`
+      items: group.items,
+      panelId: `timeline-${key}`
     }))
   }
 
@@ -278,12 +282,9 @@ const setCategory = (category: HighlightCategoryId | 'all') => {
         />
       </div>
 
-      <Motion
+      <FadeUp
         class="mt-8 space-y-5"
-        :initial="{ opacity: 0, y: 24 }"
-        :while-in-view="{ opacity: 1, y: 0 }"
-        :viewport="{ once: true, amount: 0.12 }"
-        :transition="{ duration: 0.78, ease: [0.22, 1, 0.36, 1] }"
+        :amount="0.12"
       >
         <div class="grid gap-4 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-end">
           <div>
@@ -371,7 +372,7 @@ const setCategory = (category: HighlightCategoryId | 'all') => {
             </UButton>
           </div>
         </div>
-      </Motion>
+      </FadeUp>
     </UContainer>
 
     <section class="border-t border-default pb-20 sm:pb-28">
@@ -430,7 +431,7 @@ const setCategory = (category: HighlightCategoryId | 'all') => {
                       :title="getHighlightCategoryLabel(item.category, t)"
                     />
                     <time :datetime="toIsoDate(item.date)">
-                      {{ formatDisplayDate(item.date) }}
+                      {{ formatDisplayDate(item.date, locale) }}
                     </time>
                     <span
                       v-if="(item.likes ?? 0) >= 1000"

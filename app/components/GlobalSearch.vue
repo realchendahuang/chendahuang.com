@@ -8,9 +8,18 @@ const { t } = useI18n()
     icon="i-lucide-search"
     variant="ghost"
     color="neutral"
-    square
+    size="sm"
+    class="rounded-full"
     :aria-label="t('search.shortcut')"
     :title="t('search.label')"
     @click="open = true"
-  />
+  >
+    <template #trailing>
+      <UKbd
+        value="⌘K"
+        size="sm"
+        class="hidden sm:inline-flex"
+      />
+    </template>
+  </UButton>
 </template>

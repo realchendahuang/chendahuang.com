@@ -11,7 +11,8 @@
     "blog": "Blog",
     "highlights": "Posts",
     "menu": "Menu",
-    "openMenu": "Open navigation menu"
+    "openMenu": "Open navigation menu",
+    "switchLanguage": "Switch language"
   },
   "sections": {
     "blog": "Blog",
@@ -81,7 +82,7 @@
     "viewOnGithub": "View on GitHub"
   },
   "highlights": {
-    "count": "{count} posts in total. Browse by theme, timeline or heat, search keywords, filter categories, or click a title to expand.",
+    "count": "{count} posts",
     "xHome": "X profile",
     "searchPosts": "Search posts",
     "searchPlaceholder": "Search title or content keywords…",
@@ -102,9 +103,8 @@
     "countSuffix": "posts"
   },
   "blog": {
-    "count": "{count} articles in total. Search by keyword or filter by tag.",
+    "count": "{count} articles",
     "archive": "Archive",
-    "tags": "Tags",
     "rss": "RSS feed",
     "searchPlaceholder": "Search title, description or tags…",
     "all": "All",
@@ -124,15 +124,6 @@
     "count": "{count} articles, organized by year.",
     "posts": "posts"
   },
-  "tags": {
-    "title": "Tags",
-    "description": "Browse all blog posts by tag.",
-    "count": "{count} tags in total, click to view related posts.",
-    "all": "All",
-    "allPosts": "All posts",
-    "underTag": "Posts under tag \"{tag}\"",
-    "empty": "No posts under this tag."
-  },
   "friends": {
     "empty": "No friend links yet. Add a content/friends/*.yml file.",
     "avatar": "{name}'s avatar"
@@ -150,7 +141,6 @@
     "shareHint": "If you found this useful, feel free to share it with a friend.",
     "shareToX": "Share on X",
     "xOriginal": "X original",
-    "copyLink": "Copy link",
     "share": "Share",
     "related": "Related reading",
     "subscribe": "Subscribe for updates",

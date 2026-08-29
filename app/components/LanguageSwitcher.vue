@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { locale, locales } = useI18n()
+const { locale, locales, t } = useI18n()
 
 const switchLocalePath = useSwitchLocalePath()
 
@@ -25,7 +25,7 @@ const items = computed(() =>
       variant="ghost"
       size="sm"
       class="rounded-full"
-      :aria-label="'Switch language'"
+      :aria-label="t('nav.switchLanguage')"
     />
   </UDropdownMenu>
 </template>

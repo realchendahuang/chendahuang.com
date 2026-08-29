@@ -11,7 +11,8 @@
     "blog": "Blog",
     "highlights": "Posts",
     "menu": "Menü",
-    "openMenu": "Navigationsmenü öffnen"
+    "openMenu": "Navigationsmenü öffnen",
+    "switchLanguage": "Sprache wechseln"
   },
   "sections": {
     "blog": "Blog",
@@ -81,7 +82,7 @@
     "viewOnGithub": "Auf GitHub ansehen"
   },
   "highlights": {
-    "count": "{count} Posts insgesamt. Nach Thema, Zeitleiste oder Popularität browsen, Stichwörter suchen, nach Kategorie filtern oder auf einen Titel klicken zum Aufklappen.",
+    "count": "{count} Posts",
     "xHome": "X-Profil",
     "searchPosts": "Posts suchen",
     "searchPlaceholder": "Nach Titel oder Inhalt suchen…",
@@ -102,9 +103,8 @@
     "countSuffix": "Posts"
   },
   "blog": {
-    "count": "{count} Artikel insgesamt. Nach Stichwort suchen oder nach Tag filtern.",
+    "count": "{count} Artikel",
     "archive": "Archiv",
-    "tags": "Tags",
     "rss": "RSS-Feed",
     "searchPlaceholder": "Nach Titel, Beschreibung oder Tags suchen…",
     "all": "Alle",
@@ -124,15 +124,6 @@
     "count": "{count} Artikel, nach Jahr organisiert.",
     "posts": "Artikel"
   },
-  "tags": {
-    "title": "Tags",
-    "description": "Alle Blogartikel nach Tag durchstöbern.",
-    "count": "{count} Tags insgesamt, klicke, um zugehörige Artikel zu sehen.",
-    "all": "Alle",
-    "allPosts": "Alle Artikel",
-    "underTag": "Artikel mit Tag „{tag}“",
-    "empty": "Keine Artikel unter diesem Tag."
-  },
   "friends": {
     "empty": "Noch keine Freundeslinks. Füge eine Datei in content/friends/*.yml hinzu.",
     "avatar": "Avatar von {name}"
@@ -150,7 +141,6 @@
     "shareHint": "Wenn dir das geholfen hat, teile es mit jemandem.",
     "shareToX": "Auf X teilen",
     "xOriginal": "X-Original",
-    "copyLink": "Link kopieren",
     "share": "Teilen",
     "related": "Verwandte Beiträge",
     "subscribe": "Für Updates abonnieren",

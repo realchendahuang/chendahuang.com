@@ -11,7 +11,8 @@
     "blog": "Blog",
     "highlights": "Posts",
     "menu": "Menu",
-    "openMenu": "Ouvrir le menu de navigation"
+    "openMenu": "Ouvrir le menu de navigation",
+    "switchLanguage": "Changer de langue"
   },
   "sections": {
     "blog": "Blog",
@@ -81,7 +82,7 @@
     "viewOnGithub": "Voir sur GitHub"
   },
   "highlights": {
-    "count": "{count} posts au total. Parcourez par thème, chronologie ou popularité, recherchez des mots-clés, filtrez par catégorie ou cliquez sur un titre pour déplier.",
+    "count": "{count} posts",
     "xHome": "Profil X",
     "searchPosts": "Rechercher des posts",
     "searchPlaceholder": "Rechercher par titre ou contenu…",
@@ -102,9 +103,8 @@
     "countSuffix": "posts"
   },
   "blog": {
-    "count": "{count} articles au total. Recherchez par mot-clé ou filtrez par tag.",
+    "count": "{count} articles",
     "archive": "Archive",
-    "tags": "Tags",
     "rss": "Flux RSS",
     "searchPlaceholder": "Rechercher par titre, description ou tags…",
     "all": "Tous",
@@ -124,15 +124,6 @@
     "count": "{count} articles, organisés par année.",
     "posts": "articles"
   },
-  "tags": {
-    "title": "Tags",
-    "description": "Parcourez tous les articles du blog par tag.",
-    "count": "{count} tags au total, cliquez pour voir les articles correspondants.",
-    "all": "Tous",
-    "allPosts": "Tous les articles",
-    "underTag": "Articles sous le tag «{tag}»",
-    "empty": "Aucun article sous ce tag."
-  },
   "friends": {
     "empty": "Pas encore de liens amis. Ajoutez un fichier dans content/friends/*.yml.",
     "avatar": "Avatar de {name}"
@@ -150,7 +141,6 @@
     "shareHint": "Si ça vous a été utile, partagez-le.",
     "shareToX": "Partager sur X",
     "xOriginal": "Original sur X",
-    "copyLink": "Copier le lien",
     "share": "Partager",
     "related": "Lectures liées",
     "subscribe": "Abonnez-vous aux nouveautés",

@@ -5,9 +5,7 @@ export default defineAppConfig({
       light: '/avatar.jpg',
       alt: '陈大黄的头像'
     },
-    meetingLink: 'https://x.com/realchendahuang',
     email: 'chendanhuang31016@gmail.com',
-    available: true,
     sponsorLink: 'https://afdian.com/'
   },
   ui: {
@@ -22,25 +20,5 @@ export default defineAppConfig({
         description: 'mt-2 text-base mx-auto max-w-2xl text-pretty text-muted'
       }
     }
-  },
-  footer: {
-    credits: `© ${new Date().getFullYear()} 陈大黄`,
-    colorMode: false,
-    links: [{
-      'icon': 'i-lucide-rss',
-      'to': '/rss.xml',
-      'target': '_blank',
-      'aria-label': 'RSS 订阅'
-    }, {
-      'icon': 'i-simple-icons-x',
-      'to': 'https://x.com/realchendahuang',
-      'target': '_blank',
-      'aria-label': '陈大黄 on X'
-    }, {
-      'icon': 'i-simple-icons-github',
-      'to': 'https://github.com/realchendahuang',
-      'target': '_blank',
-      'aria-label': '陈大黄 on GitHub'
-    }]
   }
 })

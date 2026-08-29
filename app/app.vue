@@ -26,14 +26,14 @@ useHead(() => ({
     { rel: 'alternate', type: 'application/rss+xml', title: `${siteName.value} 的博客`, href: toAbsoluteUrl('/rss.xml') }
   ],
   htmlAttrs: {
-    lang: locale.value === 'en' ? 'en' : locale.value === 'ja' ? 'ja' : locale.value === 'es' ? 'es' : locale.value === 'pt' ? 'pt-BR' : locale.value === 'fr' ? 'fr' : locale.value === 'de' ? 'de' : locale.value === 'ar' ? 'ar' : 'zh-CN',
-    dir: locale.value === 'ar' ? 'rtl' : 'ltr'
+    lang: getLocaleMeta(locale.value).language,
+    dir: getLocaleMeta(locale.value).dir
   }
 }))
 
 useSeoMeta({
   ogSiteName: siteName,
-  ogLocale: () => locale.value === 'en' ? 'en_US' : locale.value === 'ja' ? 'ja_JP' : locale.value === 'es' ? 'es_ES' : locale.value === 'pt' ? 'pt_BR' : locale.value === 'fr' ? 'fr_FR' : locale.value === 'de' ? 'de_DE' : locale.value === 'ar' ? 'ar_AR' : 'zh_CN',
+  ogLocale: () => getLocaleMeta(locale.value).ogLocale,
   ogType: 'website',
   twitterCard: 'summary_large_image',
   twitterSite: '@realchendahuang',

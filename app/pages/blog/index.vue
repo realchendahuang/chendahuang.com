@@ -2,6 +2,7 @@
 import type { BlogCollectionItem, PagesCollectionItem } from '@nuxt/content'
 
 const { t, locale } = useI18n()
+const localePath = useLocalePath()
 
 const { data } = await useAsyncData(`blog-page-with-posts:${locale.value}`, async () => {
   const [pageResult, postsResult] = await Promise.all([
@@ -115,13 +116,6 @@ const isFiltering = computed(() => activeTag.value !== 'all' || searchQuery.valu
             variant="ghost"
           />
           <UButton
-            to="/tags"
-            :label="t('blog.tags')"
-            icon="i-lucide-tags"
-            color="neutral"
-            variant="ghost"
-          />
-          <UButton
             to="/rss.xml"
             :label="t('blog.rss')"
             icon="i-lucide-rss"
@@ -188,11 +182,11 @@ const isFiltering = computed(() => activeTag.value !== 'all' || searchQuery.valu
           <NuxtLink
             v-for="post in filteredPosts"
             :key="post.path"
-            :to="post.path"
+            :to="localePath(post.path)"
             class="group grid grid-cols-[minmax(0,1fr)_1.5rem] gap-4 border-b border-default py-7 transition-colors hover:bg-elevated sm:grid-cols-[9rem_minmax(0,1fr)_1.5rem] sm:gap-6 sm:px-2 sm:py-8"
           >
             <p class="col-span-2 text-xs font-medium text-dimmed sm:col-span-1">
-              {{ formatShortDate(post.date) }} · {{ post.minRead }} {{ t('blog.minutes') }}
+              {{ formatShortDate(post.date, locale) }} · {{ post.minRead }} {{ t('blog.minutes') }}
             </p>
 
             <div>

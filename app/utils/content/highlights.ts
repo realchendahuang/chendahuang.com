@@ -89,14 +89,6 @@ export function getHighlightViewModeDescription(id: string, t: (key: string) => 
   return t(`highlightViewModes.${id}Desc`)
 }
 
-export function formatMonthLabel(date: Date | string | number) {
-  const value = new Date(date)
-  if (Number.isNaN(value.getTime())) {
-    return ''
-  }
-  return `${value.getFullYear()} 年 ${value.getMonth() + 1} 月`
-}
-
 export function formatCount(n?: number) {
   const value = n ?? 0
   if (value >= 10000) {

@@ -5,10 +5,14 @@ const searchOpen = useState('global-search-open', () => false)
 const searchQuery = ref('')
 const inputRef = useTemplateRef('inputRef')
 const { t } = useI18n()
+const localePath = useLocalePath()
 
 const { items: allItems, ensureLoaded } = useSearchIndex()
 
 const sectionLabel = (key: SearchSectionKey) => t(`sections.${key}`)
+
+// 内部路径补 locale 前缀,外部链接原样
+const localizeTo = (to: string) => (to.startsWith('http') ? to : localePath(to))
 
 // modal 默认空,首次打开时按需加载
 watch(searchOpen, async (open) => {
@@ -45,7 +49,7 @@ const goTo = (item: SearchHit) => {
   if (item.to.startsWith('http')) {
     window.open(item.to, '_blank', 'noopener')
   } else {
-    navigateTo(item.to)
+    navigateTo(localePath(item.to))
   }
 }
 
@@ -145,7 +149,7 @@ onBeforeUnmount(() => {
               :key="`${item.to}-${index}`"
             >
               <NuxtLink
-                :to="item.to"
+                :to="localizeTo(item.to)"
                 :target="item.to.startsWith('http') ? '_blank' : undefined"
                 class="flex items-start gap-3 rounded-md px-3 py-2.5 transition-colors hover:bg-elevated"
                 :class="{ 'bg-elevated': index === activeIndex }"

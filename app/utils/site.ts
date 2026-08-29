@@ -1,3 +1,5 @@
+import { getLocaleMeta } from './locale'
+
 export const SITE_URL = 'https://chendahuang.com'
 
 export const SITE_NAME = '陈大黄'
@@ -19,8 +21,9 @@ export const toAbsoluteUrl = (url: string) => new URL(url, SITE_URL).toString()
 
 export const toIsoDate = (date: string | Date) => new Date(date).toISOString()
 
-export const formatDisplayDate = (date: string | Date, locale: string = 'zh-CN') => {
-  return new Intl.DateTimeFormat(locale, {
+// locale 传 i18n code('zh'/'en'/…),内部映射为 Intl locale
+export const formatDisplayDate = (date: string | Date, locale: string = 'zh') => {
+  return new Intl.DateTimeFormat(getLocaleMeta(locale).language, {
     year: 'numeric',
     month: 'long',
     day: 'numeric',
@@ -28,8 +31,8 @@ export const formatDisplayDate = (date: string | Date, locale: string = 'zh-CN')
   }).format(new Date(date))
 }
 
-export const formatShortDate = (date: string | Date, locale: string = 'zh-CN') => {
-  return new Intl.DateTimeFormat(locale, {
+export const formatShortDate = (date: string | Date, locale: string = 'zh') => {
+  return new Intl.DateTimeFormat(getLocaleMeta(locale).language, {
     year: 'numeric',
     month: '2-digit',
     day: '2-digit',

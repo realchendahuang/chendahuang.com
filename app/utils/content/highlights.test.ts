@@ -1,7 +1,6 @@
 import { describe, it, expect } from 'vitest'
 import {
   formatCount,
-  formatMonthLabel,
   getHighlightCategory,
   HIGHLIGHT_CATEGORIES
 } from './highlights'
@@ -27,17 +26,6 @@ describe('formatCount', () => {
 
   it('treats undefined as 0', () => {
     expect(formatCount(undefined)).toBe('0')
-  })
-})
-
-describe('formatMonthLabel', () => {
-  it('renders year and month in Chinese', () => {
-    expect(formatMonthLabel('2026-08-20')).toBe('2026 年 8 月')
-    expect(formatMonthLabel(new Date('2025-01-01'))).toBe('2025 年 1 月')
-  })
-
-  it('returns empty string for invalid input', () => {
-    expect(formatMonthLabel('not-a-date')).toBe('')
   })
 })
 

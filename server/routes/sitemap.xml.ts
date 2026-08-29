@@ -1,16 +1,6 @@
 import { queryCollection } from '@nuxt/content/server'
 import { escapeXml, toCanonicalUrl, toIsoDate } from '../../app/utils/site'
-
-const LOCALES: Array<{ code: string, lang: string }> = [
-  { code: 'zh', lang: 'zh-CN' },
-  { code: 'en', lang: 'en' },
-  { code: 'ja', lang: 'ja' },
-  { code: 'es', lang: 'es' },
-  { code: 'pt', lang: 'pt-BR' },
-  { code: 'fr', lang: 'fr' },
-  { code: 'de', lang: 'de' },
-  { code: 'ar', lang: 'ar' }
-]
+import { SITE_LOCALES } from '../../app/utils/locale'
 
 const localePath = (code: string, path: string) => {
   if (code === 'zh') return path
@@ -25,10 +15,10 @@ export default defineEventHandler(async (event) => {
     .order('date', 'DESC')
     .all()
 
-  const staticPaths = ['/', '/projects', '/playbooks', '/skills', '/blog', '/archive', '/tags', '/friends', '/highlights']
+  const staticPaths = ['/', '/projects', '/playbooks', '/skills', '/blog', '/archive', '/friends', '/highlights']
 
-  const alternatesFor = (path: string) => LOCALES.map(l => ({
-    lang: l.lang,
+  const alternatesFor = (path: string) => SITE_LOCALES.map(l => ({
+    lang: l.language,
     href: toCanonicalUrl(localePath(l.code, path))
   }))
 

@@ -1,6 +1,7 @@
 <script setup lang="ts">
 const route = useRoute()
 const { t, locale } = useI18n()
+const localePath = useLocalePath()
 
 // 内容 path 不含 /en 前缀,用 slug 参数拼出 /blog/... 路径
 const slug = computed(() => (route.params.slug as string[]).join('/'))
@@ -48,7 +49,7 @@ if (!page.value.image) {
   const ogPaths = defineOgImage('Portfolio', {
     title,
     description,
-    headline: '博客'
+    headline: t('nav.blog')
   })
   if (import.meta.server) {
     coverImage.value = ogPaths[0] ?? ''
@@ -95,8 +96,6 @@ useHead({
   }]
 })
 
-const articleLink = computed(() => canonicalUrl)
-
 const shareText = computed(() => t('post.shareText', { title: page.value?.title ?? '' }))
 
 const shareUrl = computed(() => {
@@ -123,13 +122,15 @@ const toc = computed<TocItem[]>(() => {
     .filter((item: TocItem) => item.id && item.text)
 })
 
-// 阅读进度
+// 阅读进度 + 回到顶部共用一个 scroll 监听
 const readingProgress = ref(0)
+const showBackToTop = ref(false)
 const mobileTocOpen = ref(false)
 const onScroll = () => {
   const doc = document.documentElement
   const total = doc.scrollHeight - window.innerHeight
   readingProgress.value = total > 0 ? Math.min(1, window.scrollY / total) : 0
+  showBackToTop.value = window.scrollY > 600
 }
 onMounted(() => {
   window.addEventListener('scroll', onScroll, { passive: true })
@@ -200,17 +201,6 @@ onBeforeUnmount(() => {
 })
 
 // 回到顶部
-const showBackToTop = ref(false)
-const onScrollTop = () => {
-  showBackToTop.value = window.scrollY > 600
-}
-onMounted(() => {
-  window.addEventListener('scroll', onScrollTop, { passive: true })
-  onScrollTop()
-})
-onBeforeUnmount(() => {
-  window.removeEventListener('scroll', onScrollTop)
-})
 const scrollToTop = () => {
   window.scrollTo({ top: 0, behavior: 'smooth' })
 }
@@ -265,7 +255,7 @@ const relatedPosts = computed(() => {
       <article v-if="page">
         <header class="mx-auto max-w-3xl">
           <ULink
-            to="/blog"
+            :to="localePath('/blog')"
             class="inline-flex items-center gap-1.5 text-sm font-medium text-muted transition-colors hover:text-highlighted"
           >
             <UIcon
@@ -277,12 +267,12 @@ const relatedPosts = computed(() => {
 
           <div class="mt-8 flex flex-wrap items-center gap-x-3 gap-y-2 text-xs font-medium text-dimmed">
             <time :datetime="publishedTime">
-              {{ formatDisplayDate(page.date) }}
+              {{ formatDisplayDate(page.date, locale) }}
             </time>
             <template v-if="page.updated">
               <span aria-hidden="true">·</span>
               <time :datetime="toIsoDate(page.updated)">
-                {{ t('post.updated', { date: formatDisplayDate(page.updated) }) }}
+                {{ t('post.updated', { date: formatDisplayDate(page.updated, locale) }) }}
               </time>
             </template>
             <span aria-hidden="true">·</span>
@@ -343,7 +333,7 @@ const relatedPosts = computed(() => {
             <NuxtLink
               v-for="tag in page.tags"
               :key="tag"
-              :to="`/blog?tag=${encodeURIComponent(tag)}`"
+              :to="localePath({ path: '/blog', query: { tag } })"
               class="rounded-full border border-default px-2.5 py-1 text-xs text-muted transition-colors hover:border-primary/40 hover:text-highlighted"
             >
               {{ tag }}
@@ -458,14 +448,6 @@ const relatedPosts = computed(() => {
                   size="sm"
                   variant="soft"
                   color="neutral"
-                  icon="i-lucide-link"
-                  :label="t('post.copyLink')"
-                  @click="copyToClipboard(articleLink, t('post.linkCopied'))"
-                />
-                <UButton
-                  size="sm"
-                  variant="soft"
-                  color="neutral"
                   icon="i-lucide-share-2"
                   :label="t('post.share')"
                   @click="shareArticle"
@@ -489,11 +471,11 @@ const relatedPosts = computed(() => {
                 <NuxtLink
                   v-for="post in relatedPosts"
                   :key="post.path"
-                  :to="post.path"
+                  :to="localePath(post.path)"
                   class="group flex flex-col gap-2 rounded-lg border border-default p-4 transition-colors hover:border-primary/40 hover:bg-elevated"
                 >
                   <p class="text-xs text-dimmed">
-                    {{ formatShortDate(post.date) }} · {{ post.minRead }} {{ t('blog.minutes') }}
+                    {{ formatShortDate(post.date, locale) }} · {{ post.minRead }} {{ t('blog.minutes') }}
                   </p>
                   <h3 class="line-clamp-2 text-sm font-medium leading-snug text-highlighted group-hover:text-primary">
                     {{ post.title }}

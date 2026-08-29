@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const { t, locale } = useI18n()
+const localePath = useLocalePath()
 
 const { data: posts } = await useAsyncData(`archive-posts:${locale.value}`, () =>
   queryCollection('blog').where('locale', '=', locale.value).select('path', 'title', 'date', 'minRead', 'tags').order('date', 'DESC').all()
@@ -60,7 +61,7 @@ defineOgImage('Portfolio', { title: () => t('archive.title'), description: () =>
               <NuxtLink
                 v-for="post in group.items"
                 :key="post.path"
-                :to="post.path"
+                :to="localePath(post.path)"
                 class="group flex items-baseline justify-between gap-4 py-4 transition-colors hover:bg-elevated sm:px-2"
               >
                 <div class="min-w-0">
@@ -83,7 +84,7 @@ defineOgImage('Portfolio', { title: () => t('archive.title'), description: () =>
 
                 <div class="flex shrink-0 items-center gap-3">
                   <span class="text-xs text-dimmed">
-                    {{ formatShortDate(post.date) }}
+                    {{ formatShortDate(post.date, locale) }}
                   </span>
                   <span class="text-xs text-dimmed">
                     {{ post.minRead }} {{ t('blog.minutes') }}
