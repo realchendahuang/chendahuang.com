@@ -49,6 +49,42 @@ const routeRules = Object.fromEntries([
   ['/sitemap.xml', prerenderRule]
 ])
 
+/** Cloudflare Pages _routes.json 上限 100 条规则,nitro 默认逐文件收集 exclude
+ *  (8 语言文章页 + 静态资产远超上限)会被截断,非默认语言文章页因此丢失走 worker 报 404。
+ *  关掉自动收集,用通配符手写:约 48 条,新增语言/文章自动覆盖。 */
+const routesExclude = [
+  // 构建资产与 OG 图(og-image 模块会自加 /_og/s/*,别再写 /_og/* 否则判定重叠)
+  '/_nuxt/*',
+  '/_fonts/*',
+  '/_og-static-fonts/*',
+  // 根级静态文件
+  '/',
+  '/_payload.json',
+  '/apple-touch-icon.png',
+  '/avatar-logo.png',
+  '/avatar.jpg',
+  '/favicon.ico',
+  '/favicon.png',
+  '/robots.txt',
+  '/site-icon.svg',
+  '/rss.xml',
+  '/sitemap.xml',
+  '/llms.txt',
+  '/llms-full.txt',
+  '/dump.blog.sql',
+  '/dump.friends.sql',
+  '/dump.highlights.sql',
+  '/dump.index.sql',
+  '/dump.pages.sql',
+  '/dump.playbooks.sql',
+  '/dump.projects.sql',
+  '/dump.skills.sql',
+  // 默认语言(zh)各板块:列表页 + 文章页 + payload + 项目图片(/projects/*)
+  ...STATIC_PATHS.filter(p => p !== '/').flatMap(p => [p, `${p}/*`]),
+  // 非默认语言整棵子树
+  ...SITE_LOCALES.filter(l => l.code !== DEFAULT_LOCALE).flatMap(l => [`/${l.code}`, `/${l.code}/*`])
+]
+
 export default defineNuxtConfig({
   modules: [
     '@nuxt/eslint',
@@ -87,6 +123,15 @@ export default defineNuxtConfig({
   nitro: {
     preset: 'cloudflare-pages',
     compatibilityDate: '2026-08-08',
+    cloudflare: {
+      pages: {
+        defaultRoutes: false,
+        routes: {
+          include: ['/*'],
+          exclude: routesExclude
+        }
+      }
+    },
     prerender: {
       routes: prerenderRoutes,
       crawlLinks: false,
