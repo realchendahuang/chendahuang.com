@@ -72,7 +72,7 @@ useHead({
       'image': schemaImage,
       'datePublished': publishedTime,
       'dateModified': modifiedTime,
-      'inLanguage': 'zh-CN',
+      'inLanguage': getLocaleMeta(locale.value).language,
       'mainEntityOfPage': {
         '@type': 'WebPage',
         '@id': canonicalUrl

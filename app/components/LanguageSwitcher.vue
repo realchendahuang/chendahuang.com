@@ -8,7 +8,11 @@ const items = computed(() =>
     .filter(l => l.code !== locale.value)
     .map(l => ({
       label: l.name?.split(' ')[0] ?? l.code,
-      to: switchLocalePath(l.code as 'zh' | 'en' | 'ja' | 'es' | 'pt' | 'fr' | 'de' | 'ar') || undefined
+      to: switchLocalePath(l.code as 'zh' | 'en' | 'ja' | 'es' | 'pt' | 'fr' | 'de' | 'ar') || undefined,
+      // switchLocalePath 已产出目标语言的最终路径;不加此项 ULink 会把它当未本地化路径
+      // 再按"当前语言"二次本地化,zh(默认语言无前缀)的目标会被改写回当前语言路径,
+      // 导致 en→zh 等切回默认语言的操作失效(点击等于原地不动)。
+      locale: false
     }))
 )
 </script>
