@@ -3,11 +3,14 @@ import type { NavigationMenuItem } from '@nuxt/ui'
 /**
  * 导航链接。标签走 i18n,统一为两字中文 / 对应英文。
  * 搜索已合并为弹窗,不再作为导航项。
+ *
+ * 必须返回 computed:AppHeader 挂在 layout 里,切换语言时 layout 不会
+ * 重新执行 setup,普通数组会把首次渲染的语言"冻住",顶栏菜单不跟随切换。
  */
-export function useNavLinks(): NavigationMenuItem[] {
+export function useNavLinks(): ComputedRef<NavigationMenuItem[]> {
   const { t } = useI18n()
 
-  return [{
+  return computed(() => [{
     label: t('nav.home'),
     icon: 'i-lucide-home',
     to: '/'
@@ -31,5 +34,5 @@ export function useNavLinks(): NavigationMenuItem[] {
     label: t('nav.highlights'),
     icon: 'i-lucide-bookmark',
     to: '/highlights'
-  }]
+  }])
 }
