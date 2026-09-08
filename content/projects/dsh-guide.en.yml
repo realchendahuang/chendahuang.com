@@ -1,0 +1,10 @@
+title: "dsh-guide · Journey of a Message"
+description: "Climb inside a Coding Agent: follow a single message through seven 3D scenes as it travels through a production-grade agent (DeepSeek Harness). An interactive source-code explainer website."
+type: "Interactive explainer website"
+url: "https://github.com/realchendahuang/dsh-guide"
+onlineUrl: "https://chendahuang.com/dsh"
+icon: "i-lucide-send"
+color: "#2dd4bf"
+tags: ["DeepSeek Harness", "3D", "WebGL", "Interactive"]
+date: 2026-08-13
+status: "ongoing"

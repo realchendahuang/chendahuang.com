@@ -1,0 +1,10 @@
+title: "OMPChamber"
+description: "عميل سطح مكتب لبيئة تشغيل وكيل OMP (Oh My Pi)، مبني على أساس واجهة OpenChamber — OMP يتولى قدرات الوكيل، وOpenChamber يتولى تجربة المنتج. شغّل أعمال الوكيل، حافظ على السيطرة، وانطلق من أي مكان."
+type: "عميل سطح مكتب للوكلاء"
+url: "https://github.com/realchendahuang/OMPChamber"
+icon: "i-lucide-monitor"
+color: "#60a5fa"
+tags: ["OMP", "Agent", "Desktop", "OpenChamber", "Rust"]
+date: 2026-08-10
+status: "ongoing"
+stars: 55

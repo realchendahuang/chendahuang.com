@@ -1,0 +1,40 @@
+category: "ai"
+title: "DeepSeek Harness の4モード解説"
+description: "Standard は日常開発向け、PTC は複雑タスクの効率モード、Minimal は明確な小タスク用、Creator は Agent が Agent を作る。"
+date: 2026-08-15
+likes: 46
+bookmarks: 60
+reposts: 6
+views: 10141
+url: "https://x.com/realchendahuang/status/2088643296021401829"
+content: |
+  DeepSeek Harness の4つのモードを調べるのに時間をかけたので、それぞれの長所・短所・向いている場面をまとめる。
+
+  1. Standard——日常開発に最適
+  Standard は DeepSeek Harness 標準のフル装備 Coding Agent だ。日常開発に必要なものはほぼ揃っていて、問題がどこにあるのかまだ分からず、Agent 自身に探らせたいタスクに特に向いている。
+
+  ただ、作業の大半が LLM → Tool → LLM → Tool → LLM → Tool という流れなので、タスクが複雑になるほど Tool Calling のラウンドトリップが増え、レイテンシとトークン消費が膨らむ。
+
+  だから探索中心のタスクはまず Standard。
+
+  2. PTC——複雑タスクの効率モード
+  PTC ならモデルが TypeScript のブロックを書き、複数のツール呼び出しを1回の実行にまとめられる。
+
+  Standard なら：ファイルを検索 → モデルに戻る → ファイルを読む → モデルに戻る → 検索 → モデルに戻る → 編集 → モデルに戻る。
+  PTC なら：モデルが TypeScript を書く → 1回実行 → 検索＋ループ＋フィルタ＋読み取り＋処理 → 最終結果を返す。
+
+  これでラウンドトリップを減らせるし、大量の意味のない中間データがモデルの Context に入るのも防げる。バッチ処理や繰り返し作業、構造化処理こそ PTC の得意分野だ。
+
+  3. Minimal——モデルには Bash ＋ Editor だけ
+  最大の長所はシンプルさ：ツールが少なく、Tool Schema も小さく、Prompt の固定オーバーヘッドも低い。
+
+  ただし Web なし、Skills なし、Subagent なし、Workflow なし。複雑なタスクは1体の Agent が力業でやり抜くしかない。しかも Minimal には Standard の完全な Context Compaction がない。だから短いタスクなら固定トークン消費が低くても、セッションが極端に長く Bash の出力が多い場合は、結局トークンを節約できないかもしれない。
+
+  Minimal が最も活きるのは、明確でよく定義された小タスク——明確で短ければ短いほどいい。
+
+  4. Creator——Agent で Agent を作る
+  Standard に加えて Cordis Runtime、プラグイン実験、Preset 作成ができる。Agent そのものを、組み合わせて作れるものにしてしまう。
+
+  考えてみると結構かわいい：モデルが自分の屋台を出して商品を売り、自分の屋台をあれこれ整える——自給自足だ。
+
+  ただ Creator の最大の問題は権限が大きいこと。そこは要注意。

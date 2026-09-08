@@ -1,0 +1,19 @@
+category: "ai"
+title: "DeepSeek Harness got the form right"
+description: "No inhumane TUI upfront — Web UI out of the box. No installer, no bundled browser engine, barely any storage."
+date: 2026-08-13
+likes: 101
+bookmarks: 20
+reposts: 3
+views: 53910
+url: "https://x.com/realchendahuang/status/2087903125302862187"
+content: |
+  I think DeepSeek Harness nailed the form factor.
+  
+  Instead of jumping straight into an anti-human TUI, it ships a Web UI.
+  
+  And it barely takes any storage — because there is no installer at all. No Electron framework ramming a browser engine inside. That's a lot of storage saved.
+
+  The only drawback is that it lives in the browser — but you can install it as a PWA, and then it feels exactly like a native client.
+
+  Installing a web app as an application via Chrome is genuinely useful. In the screenshot here, it's a webpage, yet it behaves no differently from a desktop app.

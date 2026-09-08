@@ -1,0 +1,40 @@
+category: "ai"
+title: "DeepSeek Harness's four modes, explained"
+description: "Standard for everyday dev, PTC for complex efficiency, Minimal for crisp small tasks, and Creator — agents building agents."
+date: 2026-08-15
+likes: 46
+bookmarks: 60
+reposts: 6
+views: 10141
+url: "https://x.com/realchendahuang/status/2088643296021401829"
+content: |
+  I spent some time on DeepSeek Harness's four modes — here's the pros, cons and use cases for each.
+  
+  1. Standard — best for everyday development
+  Standard is DeepSeek Harness's default full Coding Agent. It ships with everything everyday development needs, and it's especially suited to tasks where you don't yet know where the problem is and the agent needs to explore on its own.
+  
+  But since most of the work is LLM → Tool → LLM → Tool → LLM → Tool, the Tool Calling round trips pile up as tasks get complex, raising latency and token cost.
+  
+  So: exploration-first tasks go to Standard.
+  
+  2. PTC — the efficiency mode for complex tasks
+  PTC lets the model write a block of TypeScript that combines multiple tool calls into one execution.
+  
+  Standard might be: search files → back to model → read file → back to model → search → back to model → edit → back to model.
+  PTC becomes: model writes TypeScript → run once → search + loop + filter + read + process → return the final result.
+  
+  That cuts round trips and keeps huge amounts of meaningless intermediate data out of the model context. So batched, repetitive, structured processing is where PTC shines.
+  
+  3. Minimal — just Bash + Editor for the model
+  Its biggest strength is simplicity: few tools, small tool schemas, low fixed prompt overhead.
+  
+  But no Web, no Skills, no Subagent, no Workflow — complex tasks have to be brute-forced by one agent. And Minimal lacks Standard's full Context Compaction. So while short tasks have low fixed token overhead, on very long sessions with lots of Bash output it may not actually save tokens.
+  
+  Minimal is the pick for crisp, well-defined small tasks — the clearer and shorter, the better.
+  
+  4. Creator — using an agent to create agents
+  It has Standard plus the Cordis Runtime, plugin experiments, and Preset creation. It even turns the agent itself into something composable and creatable.
+  
+  Kind of cute, honestly: the model sets up its own stall to sell goods, then fusses over its own stall — self-sufficient.
+  
+  But Creator's biggest problem is its elevated permissions. Keep that in mind.

@@ -1,0 +1,9 @@
+title: "Pi Agent (macOS)"
+description: "تطبيق أصلي لنظام macOS: غلاف SwiftUI يستضيف بيئة تشغيل Pi خاضعة للإشراف ومدمجة. مكتبة المشاريع، التنقل بين السلاسل، سجلات الجلسات، طرفية SwiftTerm، لوحات مساحة العمل وGit، بيانات اعتماد Keychain — تجربة سطح مكتب جاهزة للاستخدام من Pi."
+type: "تطبيق أصلي لنظام macOS"
+url: "https://github.com/realchendahuang/dahuang-pi-web-ui"
+icon: "i-lucide-apple"
+color: "#64748b"
+tags: ["macOS", "SwiftUI", "Pi", "Agent", "Native"]
+date: 2026-07-25
+status: "ongoing"

@@ -96,7 +96,7 @@ const { data: stats } = await useAsyncData(`hero-stats:${locale.value}`, async (
           delay: 0.3
         }"
       >
-        <p class="mx-auto max-w-3xl break-keep text-pretty text-base leading-7 text-muted">
+        <p class="mx-auto max-w-3xl break-keep whitespace-pre-line text-pretty text-base leading-7 text-muted">
           {{ page.description }}
         </p>
 

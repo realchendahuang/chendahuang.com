@@ -1,0 +1,9 @@
+title: "XuanJi（玄机）"
+description: "单人多主 AI 占卜工作区，跑在 Cloudflare 全栈上：八字、西方星盘与推运、紫微斗数、塔罗、易经、合盘与每日指引。确定性计算负责事实，AI 负责解读。"
+type: "AI 占卜应用"
+url: "https://github.com/realchendahuang/xuanji"
+icon: "i-lucide-moon-star"
+color: "#7c3aed"
+tags: ["Cloudflare", "TanStack", "Hono", "AI", "八字", "紫微"]
+date: 2026-07-11
+status: "ongoing"

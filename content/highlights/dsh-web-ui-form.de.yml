@@ -1,0 +1,19 @@
+category: "ai"
+title: "DeepSeek Harness hat die Form hinbekommen"
+description: "Keine menschenfeindliche TUI zuerst — stattdessen Web UI von Anfang an. Kein Installer, kein eingepackter Browser-Engine, kaum Speicher."
+date: 2026-08-13
+likes: 101
+bookmarks: 20
+reposts: 3
+views: 53910
+url: "https://x.com/realchendahuang/status/2087903125302862187"
+content: |
+  Ich finde, DeepSeek Harness hat die Formfrage perfekt gelöst.
+  
+  Statt direkt in eine menschenfeindliche TUI zu springen, liefert es eine Web UI.
+  
+  Und es braucht kaum Speicher — weil es gar keinen Installer gibt. Kein Electron-Framework, das einen Browser-Engine hineinzwängt. Das spart eine Menge Speicher.
+  
+  Der einzige Nachteil: Man nutzt es im Browser. Dabei kann man es einfach als PWA-Programm installieren. Dann ist es von einem nativen Client kaum zu unterscheiden.
+  
+  Webseiten über Chrome als App zu installieren ist eine wirklich praktische Funktion. In meinem Screenshot hier ist es zwar eine Webseite, fühlt sich aber in der Nutzung nicht anders an als eine Desktop-Anwendung.

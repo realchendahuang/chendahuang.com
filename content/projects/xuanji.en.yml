@@ -1,0 +1,9 @@
+title: "XuanJi"
+description: "A private, single-owner AI divination workspace on a full-stack Cloudflare app: BaZi, Western astrology and transits, Zi Wei Dou Shu, Tarot, I Ching, compatibility and daily guidance. Deterministic calculation for the facts, AI for the reading."
+type: "AI divination app"
+url: "https://github.com/realchendahuang/xuanji"
+icon: "i-lucide-moon-star"
+color: "#7c3aed"
+tags: ["Cloudflare", "TanStack", "Hono", "AI", "BaZi", "Zi Wei"]
+date: 2026-07-11
+status: "ongoing"

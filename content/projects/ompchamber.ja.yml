@@ -1,0 +1,10 @@
+title: "OMPChamber"
+description: "OpenChamber の UI 基盤の上に構築した OMP Agent ランタイム（Oh My Pi）のデスクトップクライアント——OMP が Agent 機能を担い、OpenChamber がプロダクト体験を担う。Agent の作業を実行し、コントロールを保ち、どこからでも出発できる。"
+type: "Agent デスクトップクライアント"
+url: "https://github.com/realchendahuang/OMPChamber"
+icon: "i-lucide-monitor"
+color: "#60a5fa"
+tags: ["OMP", "Agent", "Desktop", "OpenChamber", "Rust"]
+date: 2026-08-10
+status: "ongoing"
+stars: 55

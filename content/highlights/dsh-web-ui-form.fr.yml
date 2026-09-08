@@ -1,0 +1,19 @@
+category: "ai"
+title: "DeepSeek Harness a réussi son pari sur la forme"
+description: "Pas de TUI inhumaine d'emblée — une Web UI d'office. Pas d'installeur, pas de moteur de navigateur embarqué, presque aucun espace de stockage."
+date: 2026-08-13
+likes: 101
+bookmarks: 20
+reposts: 3
+views: 53910
+url: "https://x.com/realchendahuang/status/2087903125302862187"
+content: |
+  Je trouve que DeepSeek Harness a parfaitement réussi son pari sur la forme.
+  
+  Au lieu de foncer tête baissée dans une TUI anti-humaine, il livre une Web UI.
+  
+  Et il prend à peine de place — parce qu'il n'y a tout simplement pas d'installeur. Aucun framework Electron qui fourre un moteur de navigateur à l'intérieur. Ça, c'est beaucoup de stockage économisé.
+  
+  Le seul inconvénient, c'est de devoir l'utiliser dans le navigateur. Mais on peut tout à fait l'installer comme une application PWA. Et là, plus aucune différence avec un client natif.
+  
+  Installer la version web comme une application depuis Chrome est une fonctionnalité très pratique. Dans cette capture, même si c'est une page web, à l'usage elle ne se distingue pas d'une application de bureau.

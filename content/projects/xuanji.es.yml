@@ -1,0 +1,9 @@
+title: "XuanJi"
+description: "Un espacio de trabajo privado de adivinación con IA, para un único dueño, sobre una app full-stack de Cloudflare: BaZi, astrología occidental y tránsitos, Zi Wei Dou Shu, Tarot, I Ching, compatibilidad y orientación diaria. Cálculo determinista para los hechos, IA para la interpretación."
+type: "App de adivinación con IA"
+url: "https://github.com/realchendahuang/xuanji"
+icon: "i-lucide-moon-star"
+color: "#7c3aed"
+tags: ["Cloudflare", "TanStack", "Hono", "AI", "BaZi", "Zi Wei"]
+date: 2026-07-11
+status: "ongoing"

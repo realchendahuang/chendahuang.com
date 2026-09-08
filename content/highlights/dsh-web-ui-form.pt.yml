@@ -1,0 +1,19 @@
+category: "ai"
+title: "O DeepSeek Harness acertou na forma"
+description: "Nada de TUI desumana logo de cara — Web UI de cara. Sem instalador, sem engine de navegador embutida à força, quase nada de armazenamento."
+date: 2026-08-13
+likes: 101
+bookmarks: 20
+reposts: 3
+views: 53910
+url: "https://x.com/realchendahuang/status/2087903125302862187"
+content: |
+  Acho que o DeepSeek Harness acertou em cheio na forma.
+  
+  Em vez de pular direto para uma TUI antihumana, ele entrega uma Web UI.
+  
+  E ele ocupa quase nada de armazenamento — porque não existe instalador nenhum. Nenhum framework Electron enfiando um engine de navegador para dentro. Isso economiza muita memória.
+  
+  A única desvantagem é ter que usar no navegador. Mas dá para instalá-lo perfeitamente como um aplicativo PWA. Aí fica praticamente igual a um cliente nativo.
+  
+  Instalar a versão web como aplicativo pelo Chrome é um recurso muito útil. Nesta minha captura de tela, embora seja uma página web, na prática é igual a um aplicativo de desktop.

@@ -1,0 +1,9 @@
+title: "XuanJi"
+description: "Cloudflare フルスタックで動く、単独オーナーのプライベート AI 占いワークスペース：八字、西洋占星術とトランジット、紫微斗数、タロット、易経、相性診断、毎日のガイダンス。事実は決定的な計算、読み解きは AI が担う。"
+type: "AI 占いアプリ"
+url: "https://github.com/realchendahuang/xuanji"
+icon: "i-lucide-moon-star"
+color: "#7c3aed"
+tags: ["Cloudflare", "TanStack", "Hono", "AI", "BaZi", "Zi Wei"]
+date: 2026-07-11
+status: "ongoing"

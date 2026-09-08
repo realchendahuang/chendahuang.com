@@ -1,0 +1,27 @@
+category: "ai"
+title: "The $5 OpenCode Go is officially dead"
+description: "The first-month $5 deal is gone — $10 from the start — which suddenly makes Command GOAT look friendly."
+date: 2026-08-29
+likes: 267
+bookmarks: 198
+reposts: 11
+views: 50354
+url: "https://x.com/realchendahuang/status/2093699519108288568"
+content: |
+  The "amazing $5" OpenCode Go everyone was hyping on X has completely fallen apart.
+  
+  OpenCode Go used to have a first-month $5 deal that kept its value-for-money alive — now even that is gone, $10 from the start.
+  
+  By comparison, the competitor's Command GOAT plans are starting to look better and better.
+  
+  DeepSeek V4 Flash, GLM-5.3 Flash, GLM-5.3 are the workhorse models for heavy coding and running agents right now — and the Command GOAT plan gives them noticeably more generous quotas.
+
+  I now split coding models into two simple buckets: the core models and the grunt models.
+
+  V4 Pro, GLM-5.3 and the like are core models — they chew the hard bones. Complex architecture, gnarly bugs, big refactors, key decisions: when a problem is truly hard, hand it to them.
+
+  V4 Flash and GLM-5.3 Flash are grunt models. Reading repos, searching code, editing files, running tests, batch work, breaking new ground — that dirty work is exactly what Flash should grind through.
+
+  The Command GOAT plan has plenty of grunt quota, and its core model quota has no obvious weak spot either.
+
+  So I'm declaring it: the Command GOAT plan is the current version answer.

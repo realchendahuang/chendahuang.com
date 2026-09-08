@@ -1,0 +1,15 @@
+category: "ai"
+title: "DeepSeek Harness 的形态很好"
+description: "不搞反人类 TUI，上来就是 Web UI；没有安装包，不硬塞浏览器内核，省存储。"
+date: 2026-08-13
+likes: 101
+bookmarks: 20
+reposts: 3
+views: 53910
+url: "https://x.com/realchendahuang/status/2087903125302862187"
+content: |
+  我觉得Deepseek Harness它的形式非常好。
+  没有一上来就搞反人类的TUI，反而是Web UI。
+  首先它的安装包不会很大，因为它根本就没有安装包。不会用某些Electron框架硬塞一个浏览器内核进去。就非常的节省存储。
+  唯一的缺点就是要在浏览器里用。其实完全可以把它作为PWA的程序安装起来。这样就跟原生客户端没啥区别了。
+  使用Chrome浏览器把网页端作为应用安装，是一个非常实用的功能。比如我这个截图里，它虽然是一个网页，但是实际跟桌面端的应用用起来没什么区别。

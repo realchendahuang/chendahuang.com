@@ -1,0 +1,10 @@
+title: "dsh-guide · メッセージの旅"
+description: "Coding Agent の中に入り込む：1 通のメッセージが本番グレードのエージェント（DeepSeek Harness）内部を駆け抜ける 7 つの 3D シーンを追体験。ソースコードを解説するインタラクティブサイト。"
+type: "インタラクティブ解説サイト"
+url: "https://github.com/realchendahuang/dsh-guide"
+onlineUrl: "https://chendahuang.com/dsh"
+icon: "i-lucide-send"
+color: "#2dd4bf"
+tags: ["DeepSeek Harness", "3D", "WebGL", "インタラクティブ"]
+date: 2026-08-13
+status: "ongoing"

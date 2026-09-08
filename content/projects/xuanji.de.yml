@@ -1,0 +1,9 @@
+title: "XuanJi"
+description: "Ein privater AI-Arbeitsbereich für Wahrsagerei mit einem einzigen Besitzer, auf einer Full-Stack-Cloudflare-App: BaZi, westliche Astrologie und Transite, Zi Wei Dou Shu, Tarot, I Ging, Kompatibilität und tägliche Begleitung. Deterministische Rechnung für die Fakten, AI für die Deutung."
+type: "AI-Wahrsage-App"
+url: "https://github.com/realchendahuang/xuanji"
+icon: "i-lucide-moon-star"
+color: "#7c3aed"
+tags: ["Cloudflare", "TanStack", "Hono", "AI", "BaZi", "Zi Wei"]
+date: 2026-07-11
+status: "ongoing"

@@ -1,0 +1,10 @@
+title: "OMPChamber"
+description: "基于 OpenChamber 的 OMP Agent 桌面客户端——OMP 负责 Agent 能力，OpenChamber 负责产品体验。运行 Agent 工作，掌控全局，随处出发。"
+type: "Agent 桌面客户端"
+url: "https://github.com/realchendahuang/OMPChamber"
+icon: "i-lucide-monitor"
+color: "#60a5fa"
+tags: ["OMP", "Agent", "Desktop", "OpenChamber", "Rust"]
+date: 2026-08-10
+status: "ongoing"
+stars: 55

@@ -1,0 +1,23 @@
+category: "ai"
+title: "El CEO de Command Code apareció en mis comentarios"
+description: "Me había saltado una partida: la factura de la caché. Resulta que el caching decide los costos de los Coding Agents."
+date: 2026-08-30
+likes: 154
+bookmarks: 89
+reposts: 5
+views: 62171
+url: "https://x.com/realchendahuang/status/2093878404131283101"
+content: |
+  Ayer publiqué una comparación entre Command GOAT y OpenCode Go, y el CEO de Command Code vino personalmente a comentar.
+  
+  Dijo que me había faltado una partida: la factura de la caché. Investigué el tema, y Command Code tiene algo interesante entre manos.
+  
+  Un Coding Agent es, en esencia, una enorme máquina de Prefix Cache. Una sesión de varios cientos de miles de tokens: en la siguiente ronda, los tokens realmente nuevos quizá sean solo unos pocos miles. El system prompt, las herramientas, el contexto del código y el historial de la conversación apenas cambian. Cuanto mayor es la tasa de acierto de la caché, más baratos se vuelven esos contextos antiguos.
+  
+  Command Code hizo recientemente un trabajo serio de Cache Thrashing, principalmente con estas estrategias:
+  
+  Anclar las sesiones al mismo pod de GPU para mantener caliente la caché KV; mantener el prefijo estable lo más intacto posible y evitar que los fallbacks de proveedores revuelvan el contexto; y además su Tool Call Repair, donde la harness corrige localmente los parámetros erróneos del modelo en lugar de devolver los errores al modelo para que reintente.
+  
+  El changelog de v0.33.0 literalmente lista: Major Cache Overhaul, reducción mediana de costos de 2,9×. Ahora afirman oficialmente tasas sostenidas de acierto de caché del 95–99 %.
+  
+  El mismo modelo, el mismo plan de 10 $, pero gracias al caching la diferencia se acumula hasta dar un resultado completamente distinto.

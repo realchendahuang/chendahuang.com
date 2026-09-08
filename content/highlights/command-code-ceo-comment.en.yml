@@ -1,0 +1,23 @@
+category: "ai"
+title: "Command Code's CEO showed up in my comments"
+description: "I had missed a line item — the cache bill. Turns out caching decides Coding Agent costs."
+date: 2026-08-30
+likes: 154
+bookmarks: 89
+reposts: 5
+views: 62171
+url: "https://x.com/realchendahuang/status/2093878404131283101"
+content: |
+  Yesterday I posted a comparison of Command GOAT and OpenCode Go, and Command Code's CEO personally came to comment.
+  
+  He said I'd missed a line item — the caching bill. I dug into it, and Command Code has something going on.
+  
+  A Coding Agent is essentially a giant Prefix Cache machine. A session of several hundred thousand tokens — by the next round, the genuinely new tokens might be only a few thousand. The system prompt, tools, code context and conversation history barely change. The higher the cache hit rate, the cheaper those old contexts get.
+  
+  Command Code recently did a serious round of Cache Thrashing work, mainly with these strategies:
+  
+  Pin sessions to the same GPU pod to keep the KV cache warm; keep the stable prefix as intact as possible and stop provider fallbacks from messing with context; plus their Tool Call Repair, where the harness fixes wrong model parameters locally instead of sending errors back to the model to retry.
+  
+  The v0.33.0 changelog literally lists: Major Cache Overhaul, median cost reduction 2.9×. They now officially claim sustained cache hit rates of 95–99%.
+  
+  Same model, same $10 plan — but because of caching, the difference compounds into a completely different outcome.
