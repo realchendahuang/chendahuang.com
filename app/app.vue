@@ -4,6 +4,7 @@ const route = useRoute()
 const { locale, t } = useI18n()
 
 usePageTracking()
+useGoogleAnalytics()
 
 const color = computed(() => colorMode.value === 'dark' ? '#111318' : '#ffffff')
 const canonicalUrl = computed(() => toCanonicalUrl(route.path))

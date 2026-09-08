@@ -116,6 +116,13 @@ export default defineNuxtConfig({
     }
   },
 
+  runtimeConfig: {
+    public: {
+      // GA4 Measurement ID(G- 开头)。空 = 不加载 GA;可用环境变量 NUXT_PUBLIC_GA_ID 覆盖
+      gaId: ''
+    }
+  },
+
   routeRules,
 
   compatibilityDate: '2026-07-10',
