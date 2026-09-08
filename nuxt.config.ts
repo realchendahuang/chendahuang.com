@@ -102,6 +102,20 @@ export default defineNuxtConfig({
     enabled: true
   },
 
+  app: {
+    head: {
+      script: [
+        // Google AdSense(发布商 ca-pub-9220805950691621)。代码 consent-aware:
+        // 配合 CookieConsent 的 consent 默认拒绝,未同意用户不会被个性化跟踪。
+        {
+          src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9220805950691621',
+          async: true,
+          crossorigin: 'anonymous'
+        }
+      ]
+    }
+  },
+
   css: ['~/assets/css/main.css'],
 
   site: {
