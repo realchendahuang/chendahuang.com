@@ -36,13 +36,18 @@
     "rss": "RSS 订阅",
     "onX": "陈大黄 on X",
     "onGithub": "陈大黄 on GitHub",
-    "totalVisits": "总访问 {count}"
+    "totalVisits": "总访问 {count}",
+    "privacy": "隐私政策"
   },
   "cookie": {
     "message": "本站使用 Cookie 统计访问数据，帮助你了解内容效果。你可以随时在页脚更改选择。",
     "accept": "全部接受",
     "reject": "仅必要 Cookie",
     "settings": "Cookie 设置"
+  },
+  "privacy": {
+    "title": "隐私政策",
+    "body": "最后更新：2026-09-08\n\n本政策说明陈大黄（chendahuang.com，下称「本站」）如何收集与使用访问数据。\n\n■ 我们收集什么\n· 自建访问统计：记录页面路径、页面语言、来源国家、referrer 域名与随机会话编号，不存储 IP 地址，不使用 Cookie。\n· Google Analytics 4：在你同意后用于分析流量，数据由 Google 处理，可能包含设备信息与大致地理位置。\n\n■ Cookie 与同意管理\n首次访问时，页面底部会出现同意横幅：选择「全部接受」即允许统计 Cookie；选择「仅必要 Cookie」则不写入任何统计或广告 Cookie，分析数据以匿名聚合方式衡量。你可以随时点击页脚的「Cookie 设置」更改选择。\n\n■ 广告\n本站使用 Google AdSense 展示广告。在你同意的前提下，Google 及其合作伙伴可能根据你的访问记录投放个性化广告；你也可以在 Google 广告设置（adssettings.google.com）中管理广告偏好或关闭个性化。\n\n■ 第三方链接与嵌入内容\n本站包含指向第三方网站（如 X、GitHub）的链接。这些网站有自己的隐私政策，本站不对其负责。\n\n■ 数据保留与联系\n自建统计数据仅用于访问分析，不做其他用途。如对本政策有任何疑问，欢迎通过 X（{'@'}realchendahuang）联系我。"
   },
   "a11y": {
     "skipToContent": "跳到主要内容"

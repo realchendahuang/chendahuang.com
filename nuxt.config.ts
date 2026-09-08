@@ -20,7 +20,7 @@ const BLOG_SLUGS = [...new Set(
 )]
 
 /** 需要预渲染的静态页 */
-const STATIC_PATHS = ['/', '/projects', '/playbooks', '/skills', '/blog', '/archive', '/friends', '/highlights']
+const STATIC_PATHS = ['/', '/projects', '/playbooks', '/skills', '/blog', '/archive', '/friends', '/highlights', '/privacy']
 
 const localePrefix = (code: string) => (code === DEFAULT_LOCALE ? '' : `/${code}`)
 

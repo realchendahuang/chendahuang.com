@@ -71,6 +71,13 @@ onMounted(async () => {
             {{ t('cookie.settings') }}
           </button>
         </template>
+        <span aria-hidden="true">·</span>
+        <NuxtLink
+          to="/privacy"
+          class="transition-colors hover:text-highlighted"
+        >
+          {{ t('footer.privacy') }}
+        </NuxtLink>
       </span>
     </template>
 

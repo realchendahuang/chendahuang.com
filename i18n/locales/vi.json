@@ -36,13 +36,18 @@
     "rss": "Kênh RSS",
     "onX": "Chen Dahuang trên X",
     "onGithub": "Chen Dahuang trên GitHub",
-    "totalVisits": "{count} lượt truy cập"
+    "totalVisits": "{count} lượt truy cập",
+    "privacy": "Quyền riêng tư"
   },
   "cookie": {
     "message": "Trang này sử dụng cookie để phân tích lượt truy cập. Bạn có thể thay đổi lựa chọn bất cứ lúc nào ở chân trang.",
     "accept": "Chấp nhận tất cả",
     "reject": "Chỉ cần thiết",
     "settings": "Cài đặt cookie"
+  },
+  "privacy": {
+    "title": "Chính sách quyền riêng tư",
+    "body": "Cập nhật lần cuối: 2026-09-08\n\nChính sách này giải thích cách Chen Dahuang (chendahuang.com, \"trang này\") thu thập và sử dụng dữ liệu truy cập.\n\n■ Những gì chúng tôi thu thập\n· Thống kê truy cập tự vận hành: đường dẫn trang, ngôn ngữ trang, quốc gia, tên miền giới thiệu và một mã phiên ngẫu nhiên. Không lưu địa chỉ IP và không dùng cookie.\n· Google Analytics 4: với sự đồng ý của bạn, dùng để phân tích lưu lượng. Dữ liệu do Google xử lý, có thể bao gồm thông tin thiết bị và vị trí gần đúng.\n\n■ Cookie và quản lý đồng ý\nLần truy cập đầu, một biểu ngữ đồng ý sẽ hiện ra: \"Chấp nhận tất cả\" cho phép cookie phân tích; \"Chỉ cần thiết\" không ghi cookie phân tích hay quảng cáo và đo lường lượt truy cập ẩn danh theo tổng hợp. Bạn có thể thay đổi lựa chọn bất cứ lúc nào qua \"Cài đặt cookie\" ở chân trang.\n\n■ Quảng cáo\nTrang này dùng Google AdSense để hiển thị quảng cáo. Theo sự đồng ý của bạn, Google và đối tác có thể hiển thị quảng cáo cá nhân hóa dựa trên lượt truy cập. Bạn có thể quản lý cá nhân hóa trong Cài đặt quảng cáo của Google (adssettings.google.com).\n\n■ Liên kết và nội dung bên thứ ba\nTrang này có liên kết đến các trang bên thứ ba (như X, GitHub). Các trang đó có chính sách riêng, trang này không chịu trách nhiệm về chúng.\n\n■ Lưu trữ và liên hệ\nThống kê tự vận hành chỉ dùng để phân tích truy cập. Mọi thắc mắc về chính sách này, hãy liên hệ tôi qua X ({'@'}realchendahuang)."
   },
   "a11y": {
     "skipToContent": "Bỏ qua, đến nội dung chính"

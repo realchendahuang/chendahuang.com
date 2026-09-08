@@ -15,7 +15,7 @@ export default defineEventHandler(async (event) => {
     .order('date', 'DESC')
     .all()
 
-  const staticPaths = ['/', '/projects', '/playbooks', '/skills', '/blog', '/archive', '/friends', '/highlights']
+  const staticPaths = ['/', '/projects', '/playbooks', '/skills', '/blog', '/archive', '/friends', '/highlights', '/privacy']
 
   const alternatesFor = (path: string) => SITE_LOCALES.map(l => ({
     lang: l.language,

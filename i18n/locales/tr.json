@@ -36,13 +36,18 @@
     "rss": "RSS beslemesi",
     "onX": "X'te Chen Dahuang",
     "onGithub": "GitHub'da Chen Dahuang",
-    "totalVisits": "{count} ziyaret"
+    "totalVisits": "{count} ziyaret",
+    "privacy": "Gizlilik"
   },
   "cookie": {
     "message": "Bu site ziyaretleri analiz etmek için çerez kullanır. Seçiminizi alt bilgiden istediğiniz zaman değiştirebilirsiniz.",
     "accept": "Tümünü kabul et",
     "reject": "Yalnızca gerekli",
     "settings": "Çerez ayarları"
+  },
+  "privacy": {
+    "title": "Gizlilik Politikası",
+    "body": "Son güncelleme: 2026-09-08\n\nBu politika, Chen Dahuang'un (chendahuang.com, \"bu site\") ziyaret verilerini nasıl topladığını ve kullandığını açıklar.\n\n■ Topladıklarımız\n· Kendi ziyaret istatistiklerimiz: sayfa yolu, sayfa dili, ülke, yönlendiren alan adı ve rastgele bir oturum kimliği. IP adresleri saklanmaz, çerez kullanılmaz.\n· Google Analytics 4: onayınızla trafik analizi için kullanılır. Veriler Google tarafından işlenir ve cihaz bilgisi ile yaklaşık konum içerebilir.\n\n■ Çerezler ve onay\nİlk ziyarette bir onay bandı görünür: \"Tümünü kabul et\" analiz çerezlerine izin verir; \"Yalnızca gerekli\" hiçbir analiz veya reklam çerezi yazmaz ve ziyaretleri anonim toplam olarak ölçer. Seçiminizi alt bilgideki \"Çerez ayarları\"ndan dilediğiniz zaman değiştirebilirsiniz.\n\n■ Reklamlar\nBu site reklam göstermek için Google AdSense kullanır. Onayınıza bağlı olarak Google ve iş ortakları ziyaretlerinize dayalı kişiselleştirilmiş reklamlar gösterebilir. Kişiselleştirmeyi Google Reklam Ayarları'ndan (adssettings.google.com) yönetebilirsiniz.\n\n■ Üçüncü taraf bağlantılar ve içerik\nBu site X, GitHub gibi üçüncü taraf sitelere bağlantı içerir. Bu sitelerin kendi gizlilik politikaları vardır ve bu site bunlardan sorumlu değildir.\n\n■ Veri saklama ve iletişim\nKendi istatistiklerimiz yalnızca ziyaret analizi için kullanılır. Politika hakkında sorularınız için X ({'@'}realchendahuang) üzerinden ulaşabilirsiniz."
   },
   "a11y": {
     "skipToContent": "Ana içeriğe geç"

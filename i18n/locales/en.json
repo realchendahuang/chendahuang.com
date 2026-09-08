@@ -36,13 +36,18 @@
     "rss": "RSS feed",
     "onX": "Chen Dahuang on X",
     "onGithub": "Chen Dahuang on GitHub",
-    "totalVisits": "{count} site visits"
+    "totalVisits": "{count} site visits",
+    "privacy": "Privacy"
   },
   "cookie": {
     "message": "This site uses cookies to understand how visitors use it. You can change your choice anytime from the footer.",
     "accept": "Accept all",
     "reject": "Essential only",
     "settings": "Cookie settings"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "body": "Last updated: 2026-09-08\n\nThis policy explains how Chen Dahuang (chendahuang.com, \"this site\") collects and uses visit data.\n\n■ What we collect\n· Self-hosted visit stats: page path, page language, source country, referrer domain and a random session id. No IP addresses are stored and no cookies are used.\n· Google Analytics 4: with your consent, used to analyze traffic. Data is processed by Google and may include device information and coarse location.\n\n■ Cookies and consent\nOn your first visit, a consent banner appears: \"Accept all\" allows analytics cookies; \"Essential only\" writes no analytics or advertising cookies and measures visits anonymously in aggregate. You can change your choice anytime via \"Cookie settings\" in the footer.\n\n■ Advertising\nThis site uses Google AdSense to show ads. Subject to your consent, Google and its partners may serve personalized ads based on your visits. You can manage ad personalization at Google Ad Settings (adssettings.google.com).\n\n■ Third-party links and content\nThis site links to third-party websites (e.g. X, GitHub). Those sites have their own privacy policies, for which this site is not responsible.\n\n■ Data retention and contact\nSelf-hosted stats are used solely for visit analysis. For questions about this policy, reach me on X ({'@'}realchendahuang)."
   },
   "a11y": {
     "skipToContent": "Skip to main content"

@@ -36,13 +36,18 @@
     "rss": "Kanał RSS",
     "onX": "Chen Dahuang na X",
     "onGithub": "Chen Dahuang na GitHubie",
-    "totalVisits": "{count} wizyt"
+    "totalVisits": "{count} wizyt",
+    "privacy": "Prywatność"
   },
   "cookie": {
     "message": "Ta strona używa plików cookie do analizy odwiedzin. Swój wybór możesz zmienić w każdej chwili w stopce.",
     "accept": "Zaakceptuj wszystkie",
     "reject": "Tylko niezbędne",
     "settings": "Ustawienia plików cookie"
+  },
+  "privacy": {
+    "title": "Polityka prywatności",
+    "body": "Ostatnia aktualizacja: 2026-09-08\n\nNiniejsza polityka wyjaśnia, jak Chen Dahuang (chendahuang.com, „ta strona\") zbiera i wykorzystuje dane o odwiedzinach.\n\n■ Co zbieramy\n· Własne statystyki odwiedzin: ścieżka strony, język strony, kraj, domena odsyłająca oraz losowy identyfikator sesji. Adresy IP nie są przechowywane, a pliki cookie nie są używane.\n· Google Analytics 4: za Twoją zgodą służy do analizy ruchu. Dane przetwarza Google i mogą zawierać informacje o urządzeniu oraz przybliżoną lokalizację.\n\n■ Pliki cookie i zgoda\nPodczas pierwszej wizyty pojawia się baner zgody: „Zaakceptuj wszystkie\" zezwala na pliki cookie analityczne; „Tylko niezbędne\" nie zapisuje żadnych plików analitycznych ani reklamowych, a wizyty mierzone są anonimowo w ujęciu zbiorczym. Wybór możesz zmienić w każdej chwili w „Ustawieniach plików cookie\" w stopce.\n\n■ Reklamy\nTa strona używa Google AdSense do wyświetlania reklam. Za Twoją zgodą Google i jej partnerzy mogą wyświetlać spersonalizowane reklamy na podstawie Twoich wizyt. Personalizacją zarządzisz w Ustawieniach reklam Google (adssettings.google.com).\n\n■ Linki i treści stron trzecich\nStrona zawiera linki do witryn trzecich (np. X, GitHub). Mają one własne polityki prywatności, za które ta strona nie odpowiada.\n\n■ Przechowywanie danych i kontakt\nWłasne statystyki służą wyłącznie do analizy odwiedzin. Pytania o politykę? Napisz do mnie na X ({'@'}realchendahuang)."
   },
   "a11y": {
     "skipToContent": "Przejdź do głównej treści"

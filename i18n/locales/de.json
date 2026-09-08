@@ -36,13 +36,18 @@
     "rss": "RSS-Feed",
     "onX": "Chen Dahuang auf X",
     "onGithub": "Chen Dahuang auf GitHub",
-    "totalVisits": "{count} Besuche"
+    "totalVisits": "{count} Besuche",
+    "privacy": "Datenschutz"
   },
   "cookie": {
     "message": "Diese Website verwendet Cookies, um zu verstehen, wie Besucher sie nutzen. Deine Auswahl kannst du jederzeit in der Fußzeile ändern.",
     "accept": "Alle akzeptieren",
     "reject": "Nur essenzielle",
     "settings": "Cookie-Einstellungen"
+  },
+  "privacy": {
+    "title": "Datenschutzerklärung",
+    "body": "Zuletzt aktualisiert: 2026-09-08\n\nDiese Richtlinie erklärt, wie Chen Dahuang (chendahuang.com, „diese Website“) Besuchsdaten erhebt und verwendet.\n\n■ Was wir erheben\n· Eigene Besucherstatistik: Seitenpfad, Seitensprache, Herkunftsland, Referrer-Domain und eine zufällige Sitzungs-ID. Es werden keine IP-Adressen gespeichert und keine Cookies verwendet.\n· Google Analytics 4: mit Ihrer Einwilligung zur Traffic-Analyse. Die Daten werden von Google verarbeitet und können Geräteinformationen und grobe Standortdaten enthalten.\n\n■ Cookies und Einwilligung\nBeim ersten Besuch erscheint ein Einwilligungsbanner: „Alle akzeptieren“ erlaubt Analyse-Cookies; „Nur essenzielle“ schreibt keine Analyse- oder Werbe-Cookies und misst Besuche anonym aggregiert. Ihre Auswahl können Sie jederzeit über „Cookie-Einstellungen“ im Footer ändern.\n\n■ Werbung\nDiese Website verwendet Google AdSense, um Werbung anzuzeigen. Mit Ihrer Einwilligung können Google und Partner personalisierte Werbung auf Grundlage Ihrer Besuche ausspielen. Die Personalisierung können Sie in den Google Anzeigeneinstellungen (adssettings.google.com) verwalten.\n\n■ Links und Inhalte Dritter\nDiese Website enthält Links zu Websites Dritter (z. B. X, GitHub). Diese Websites haben eigene Datenschutzerklärungen, für die diese Website nicht verantwortlich ist.\n\n■ Aufbewahrung und Kontakt\nEigene Statistiken werden ausschließlich zur Besucheranalyse verwendet. Fragen zur Richtlinie? Erreichen Sie mich auf X ({'@'}realchendahuang)."
   },
   "a11y": {
     "skipToContent": "Zum Hauptinhalt springen"

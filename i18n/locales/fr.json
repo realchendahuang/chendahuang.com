@@ -36,13 +36,18 @@
     "rss": "Flux RSS",
     "onX": "Chen Dahuang sur X",
     "onGithub": "Chen Dahuang sur GitHub",
-    "totalVisits": "{count} visites"
+    "totalVisits": "{count} visites",
+    "privacy": "Confidentialité"
   },
   "cookie": {
     "message": "Ce site utilise des cookies pour comprendre son utilisation par les visiteurs. Vous pouvez modifier votre choix à tout moment depuis le pied de page.",
     "accept": "Tout accepter",
     "reject": "Essentiels uniquement",
     "settings": "Paramètres des cookies"
+  },
+  "privacy": {
+    "title": "Politique de confidentialité",
+    "body": "Dernière mise à jour : 2026-09-08\n\nCette politique explique comment Chen Dahuang (chendahuang.com, « ce site ») collecte et utilise les données de visite.\n\n■ Ce que nous collectons\n· Statistiques d'accès maison : chemin de page, langue, pays d'origine, domaine référent et un identifiant de session aléatoire. Aucune adresse IP n'est stockée et aucun cookie n'est utilisé.\n· Google Analytics 4 : avec votre consentement, utilisé pour analyser le trafic. Les données sont traitées par Google et peuvent inclure des informations sur l'appareil et une localisation approximative.\n\n■ Cookies et consentement\nLors de votre première visite, un bandeau de consentement apparaît : « Tout accepter » autorise les cookies d'analyse ; « Essentiels uniquement » n'écrit aucun cookie d'analyse ou publicitaire et mesure les visites de manière anonyme et agrégée. Vous pouvez modifier votre choix à tout moment via « Paramètres des cookies » en pied de page.\n\n■ Publicité\nCe site utilise Google AdSense pour afficher des annonces. Sous réserve de votre consentement, Google et ses partenaires peuvent diffuser des annonces personnalisées selon vos visites. Vous pouvez gérer la personnalisation dans les Paramètres des annonces Google (adssettings.google.com).\n\n■ Liens et contenus tiers\nCe site contient des liens vers des sites tiers (ex. : X, GitHub). Ces sites ont leurs propres politiques de confidentialité, dont ce site n'est pas responsable.\n\n■ Conservation et contact\nLes statistiques maison servent uniquement à l'analyse des visites. Pour toute question sur cette politique, contactez-moi sur X ({'@'}realchendahuang)."
   },
   "a11y": {
     "skipToContent": "Aller au contenu principal"

@@ -36,13 +36,18 @@
     "rss": "Umpan RSS",
     "onX": "Chen Dahuang di X",
     "onGithub": "Chen Dahuang di GitHub",
-    "totalVisits": "{count} kunjungan"
+    "totalVisits": "{count} kunjungan",
+    "privacy": "Privasi"
   },
   "cookie": {
     "message": "Situs ini menggunakan cookie untuk menganalisis kunjungan. Anda dapat mengubah pilihan kapan saja dari footer.",
     "accept": "Terima semua",
     "reject": "Hanya yang penting",
     "settings": "Pengaturan cookie"
+  },
+  "privacy": {
+    "title": "Kebijakan Privasi",
+    "body": "Terakhir diperbarui: 2026-09-08\n\nKebijakan ini menjelaskan bagaimana Chen Dahuang (chendahuang.com, \"situs ini\") mengumpulkan dan menggunakan data kunjungan.\n\n■ Yang kami kumpulkan\n· Statistik kunjungan mandiri: jalur halaman, bahasa halaman, negara asal, domain perujuk, dan ID sesi acak. Tidak ada alamat IP yang disimpan dan tidak ada cookie yang digunakan.\n· Google Analytics 4: dengan persetujuan Anda, digunakan untuk menganalisis lalu lintas. Data diproses Google dan dapat mencakup informasi perangkat serta perkiraan lokasi.\n\n■ Cookie dan persetujuan\nPada kunjungan pertama, banner persetujuan muncul: \"Terima semua\" mengizinkan cookie analitik; \"Hanya yang penting\" tidak menulis cookie analitik atau iklan dan mengukur kunjungan secara anonim agregat. Anda dapat mengubah pilihan kapan saja melalui \"Pengaturan cookie\" di footer.\n\n■ Iklan\nSitus ini menggunakan Google AdSense untuk menampilkan iklan. Berdasarkan persetujuan Anda, Google dan mitranya dapat menayangkan iklan yang dipersonalisasi berdasarkan kunjungan Anda. Personalisasi dapat dikelola di Setelan Iklan Google (adssettings.google.com).\n\n■ Tautan dan konten pihak ketiga\nSitus ini memuat tautan ke situs pihak ketiga (mis. X, GitHub). Situs tersebut memiliki kebijakan privasinya sendiri dan situs ini tidak bertanggung jawab atasnya.\n\n■ Penyimpanan data dan kontak\nStatistik mandiri hanya digunakan untuk analisis kunjungan. Pertanyaan tentang kebijakan ini? Hubungi saya di X ({'@'}realchendahuang)."
   },
   "a11y": {
     "skipToContent": "Langsung ke konten utama"

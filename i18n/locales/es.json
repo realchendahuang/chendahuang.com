@@ -36,13 +36,18 @@
     "rss": "Feed RSS",
     "onX": "Chen Dahuang en X",
     "onGithub": "Chen Dahuang en GitHub",
-    "totalVisits": "{count} visitas"
+    "totalVisits": "{count} visitas",
+    "privacy": "Privacidad"
   },
   "cookie": {
     "message": "Este sitio utiliza cookies para analizar cómo lo visitan. Puedes cambiar tu elección en cualquier momento desde el pie de página.",
     "accept": "Aceptar todo",
     "reject": "Solo esenciales",
     "settings": "Configuración de cookies"
+  },
+  "privacy": {
+    "title": "Política de privacidad",
+    "body": "Última actualización: 2026-09-08\n\nEsta política explica cómo Chen Dahuang (chendahuang.com, \"este sitio\") recopila y utiliza los datos de las visitas.\n\n■ Qué recopilamos\n· Estadísticas propias: ruta de la página, idioma, país de origen, dominio de referencia y un identificador de sesión aleatorio. No se almacenan direcciones IP ni se utilizan cookies.\n· Google Analytics 4: con tu consentimiento, se usa para analizar el tráfico. Google procesa los datos, que pueden incluir información del dispositivo y ubicación aproximada.\n\n■ Cookies y consentimiento\nEn tu primera visita aparece un banner de consentimiento: \"Aceptar todo\" permite las cookies de análisis; \"Solo esenciales\" no escribe cookies de análisis ni publicidad y mide las visitas de forma anónima y agregada. Puedes cambiar tu elección en cualquier momento en \"Configuración de cookies\" del pie de página.\n\n■ Publicidad\nEste sitio usa Google AdSense para mostrar anuncios. Según tu consentimiento, Google y sus socios pueden mostrar anuncios personalizados según tus visitas. Puedes gestionar la personalización en la Configuración de anuncios de Google (adssettings.google.com).\n\n■ Enlaces y contenido de terceros\nEste sitio contiene enlaces a sitios de terceros (p. ej., X, GitHub). Esos sitios tienen sus propias políticas de privacidad, de las que este sitio no se hace responsable.\n\n■ Conservación y contacto\nLas estadísticas propias se usan únicamente para el análisis de visitas. Si tienes dudas sobre esta política, escríbeme en X ({'@'}realchendahuang)."
   },
   "a11y": {
     "skipToContent": "Saltar al contenido principal"

@@ -36,13 +36,18 @@
     "rss": "RSS 訂閱",
     "onX": "陳大黃 on X",
     "onGithub": "陳大黃 on GitHub",
-    "totalVisits": "總訪問 {count}"
+    "totalVisits": "總訪問 {count}",
+    "privacy": "隱私權政策"
   },
   "cookie": {
     "message": "本站使用 Cookie 統計造訪資料，幫助你了解內容效果。你可以隨時在頁尾更改選擇。",
     "accept": "全部接受",
     "reject": "僅必要 Cookie",
     "settings": "Cookie 設定"
+  },
+  "privacy": {
+    "title": "隱私權政策",
+    "body": "最後更新：2026-09-08\n\n本政策說明陳大黃（chendahuang.com，下稱「本站」）如何蒐集與使用造訪資料。\n\n■ 我們蒐集什麼\n· 自建造訪統計：記錄頁面路徑、頁面語言、來源國家、referrer 網域與隨機工作階段編號，不儲存 IP 位址，不使用 Cookie。\n· Google Analytics 4：在你同意後用於分析流量，資料由 Google 處理，可能包含裝置資訊與大致地理位置。\n\n■ Cookie 與同意管理\n首次造訪時，頁面底部會出現同意橫幅：選擇「全部接受」即允許統計 Cookie；選擇「僅必要 Cookie」則不寫入任何統計或廣告 Cookie，分析資料以匿名彙總方式衡量。你可以隨時點擊頁尾的「Cookie 設定」更改選擇。\n\n■ 廣告\n本站使用 Google AdSense 顯示廣告。在你同意的前提下，Google 及其合作夥伴可能根據你的造訪記錄投放個人化廣告；你也可以在 Google 廣告設定（adssettings.google.com）中管理廣告偏好或關閉個人化。\n\n■ 第三方連結與嵌入內容\n本站包含指向第三方網站（如 X、GitHub）的連結。這些網站有自己的隱私權政策，本站不對其負責。\n\n■ 資料保留與聯絡\n自建統計資料僅用於造訪分析，不做其他用途。如對本政策有任何疑問，歡迎透過 X（{'@'}realchendahuang）聯絡我。"
   },
   "a11y": {
     "skipToContent": "跳至主要內容"
