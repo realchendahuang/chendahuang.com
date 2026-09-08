@@ -7,7 +7,7 @@ const items = computed(() =>
   (locales.value as Array<{ code: string, name?: string }>)
     .filter(l => l.code !== locale.value)
     .map(l => ({
-      label: l.name?.split(' ')[0] ?? l.code,
+      label: t(`langNames.${l.code as 'zh' | 'en' | 'ja' | 'es' | 'pt' | 'fr' | 'de' | 'ru' | 'ar'}`),
       to: switchLocalePath(l.code as 'zh' | 'en' | 'ja' | 'es' | 'pt' | 'fr' | 'de' | 'ru' | 'ar') || undefined,
       // switchLocalePath 已产出目标语言的最终路径;不加此项 ULink 会把它当未本地化路径
       // 再按"当前语言"二次本地化,zh(默认语言无前缀)的目标会被改写回当前语言路径,

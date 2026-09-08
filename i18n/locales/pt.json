@@ -183,5 +183,16 @@
     "heat": "Por popularidade",
     "heatDesc": "Ordenado por curtidas e engajamento"
   },
-  "monthLabel": "{month} de {year}"
+  "monthLabel": "{month} de {year}",
+  "langNames": {
+    "zh": "Chinês",
+    "en": "Inglês",
+    "ja": "Japonês",
+    "es": "Espanhol",
+    "pt": "Português",
+    "fr": "Francês",
+    "de": "Alemão",
+    "ru": "Russo",
+    "ar": "Árabe"
+  }
 }

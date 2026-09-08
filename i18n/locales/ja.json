@@ -183,5 +183,16 @@
     "heat": "人気順",
     "heatDesc": "いいねとエンゲージメント順"
   },
-  "monthLabel": "{year} 年 {month} 月"
+  "monthLabel": "{year} 年 {month} 月",
+  "langNames": {
+    "zh": "中国語",
+    "en": "英語",
+    "ja": "日本語",
+    "es": "スペイン語",
+    "pt": "ポルトガル語",
+    "fr": "フランス語",
+    "de": "ドイツ語",
+    "ru": "ロシア語",
+    "ar": "アラビア語"
+  }
 }

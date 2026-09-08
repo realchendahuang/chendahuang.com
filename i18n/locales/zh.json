@@ -183,5 +183,16 @@
     "heat": "按热度",
     "heatDesc": "按点赞与互动排序"
   },
-  "monthLabel": "{year} 年 {month} 月"
+  "monthLabel": "{year} 年 {month} 月",
+  "langNames": {
+    "zh": "中文",
+    "en": "英语",
+    "ja": "日语",
+    "es": "西班牙语",
+    "pt": "葡萄牙语",
+    "fr": "法语",
+    "de": "德语",
+    "ru": "俄语",
+    "ar": "阿拉伯语"
+  }
 }

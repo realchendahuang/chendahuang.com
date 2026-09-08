@@ -183,5 +183,16 @@
     "heat": "By heat",
     "heatDesc": "Sorted by likes and engagement"
   },
-  "monthLabel": "{month} {year}"
+  "monthLabel": "{month} {year}",
+  "langNames": {
+    "zh": "Chinese",
+    "en": "English",
+    "ja": "Japanese",
+    "es": "Spanish",
+    "pt": "Portuguese",
+    "fr": "French",
+    "de": "German",
+    "ru": "Russian",
+    "ar": "Arabic"
+  }
 }

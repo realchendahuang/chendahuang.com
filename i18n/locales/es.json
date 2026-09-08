@@ -183,5 +183,16 @@
     "heat": "Por popularidad",
     "heatDesc": "Ordenado por likes e interacción"
   },
-  "monthLabel": "{month} de {year}"
+  "monthLabel": "{month} de {year}",
+  "langNames": {
+    "zh": "Chino",
+    "en": "Inglés",
+    "ja": "Japonés",
+    "es": "Español",
+    "pt": "Portugués",
+    "fr": "Francés",
+    "de": "Alemán",
+    "ru": "Ruso",
+    "ar": "Árabe"
+  }
 }
