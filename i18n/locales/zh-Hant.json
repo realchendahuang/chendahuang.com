@@ -38,6 +38,12 @@
     "onGithub": "陳大黃 on GitHub",
     "totalVisits": "總訪問 {count}"
   },
+  "cookie": {
+    "message": "本站使用 Cookie 統計造訪資料，幫助你了解內容效果。你可以隨時在頁尾更改選擇。",
+    "accept": "全部接受",
+    "reject": "僅必要 Cookie",
+    "settings": "Cookie 設定"
+  },
   "a11y": {
     "skipToContent": "跳至主要內容"
   },

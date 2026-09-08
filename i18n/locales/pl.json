@@ -38,6 +38,12 @@
     "onGithub": "Chen Dahuang na GitHubie",
     "totalVisits": "{count} wizyt"
   },
+  "cookie": {
+    "message": "Ta strona używa plików cookie do analizy odwiedzin. Swój wybór możesz zmienić w każdej chwili w stopce.",
+    "accept": "Zaakceptuj wszystkie",
+    "reject": "Tylko niezbędne",
+    "settings": "Ustawienia plików cookie"
+  },
   "a11y": {
     "skipToContent": "Przejdź do głównej treści"
   },

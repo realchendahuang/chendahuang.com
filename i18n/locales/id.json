@@ -38,6 +38,12 @@
     "onGithub": "Chen Dahuang di GitHub",
     "totalVisits": "{count} kunjungan"
   },
+  "cookie": {
+    "message": "Situs ini menggunakan cookie untuk menganalisis kunjungan. Anda dapat mengubah pilihan kapan saja dari footer.",
+    "accept": "Terima semua",
+    "reject": "Hanya yang penting",
+    "settings": "Pengaturan cookie"
+  },
   "a11y": {
     "skipToContent": "Langsung ke konten utama"
   },

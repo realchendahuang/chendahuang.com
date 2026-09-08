@@ -61,6 +61,7 @@ useSeoMeta({
           <NuxtPage />
         </UMain>
       </NuxtLayout>
+      <CookieConsent />
     </UApp>
   </MotionConfig>
 </template>

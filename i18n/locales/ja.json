@@ -38,6 +38,12 @@
     "onGithub": "GitHubで陳大黄をフォロー",
     "totalVisits": "総アクセス {count}"
   },
+  "cookie": {
+    "message": "当サイトはアクセス解析のために Cookie を使用しています。選択はフッターからいつでも変更できます。",
+    "accept": "すべて受け入れる",
+    "reject": "必須のみ",
+    "settings": "Cookie 設定"
+  },
   "a11y": {
     "skipToContent": "メインコンテンツへ移動"
   },

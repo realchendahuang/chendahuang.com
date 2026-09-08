@@ -20,6 +20,9 @@ const links = computed(() => [{
 
 const totalVisits = ref<number | null>(null)
 
+const gaId = (useRuntimeConfig().public.gaId as string) || ''
+const cookieVisible = useState('cookie-consent-visible', () => false)
+
 const formattedVisits = computed(() => {
   if (totalVisits.value == null) return ''
   return new Intl.NumberFormat(getLocaleMeta(locale.value).language).format(totalVisits.value)
@@ -57,6 +60,16 @@ onMounted(async () => {
           <span :title="t('footer.totalVisits', { count: formattedVisits })">
             {{ t('footer.totalVisits', { count: formattedVisits }) }}
           </span>
+        </template>
+        <template v-if="gaId">
+          <span aria-hidden="true">·</span>
+          <button
+            type="button"
+            class="cursor-pointer transition-colors hover:text-highlighted"
+            @click="cookieVisible = true"
+          >
+            {{ t('cookie.settings') }}
+          </button>
         </template>
       </span>
     </template>

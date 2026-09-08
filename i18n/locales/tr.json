@@ -38,6 +38,12 @@
     "onGithub": "GitHub'da Chen Dahuang",
     "totalVisits": "{count} ziyaret"
   },
+  "cookie": {
+    "message": "Bu site ziyaretleri analiz etmek için çerez kullanır. Seçiminizi alt bilgiden istediğiniz zaman değiştirebilirsiniz.",
+    "accept": "Tümünü kabul et",
+    "reject": "Yalnızca gerekli",
+    "settings": "Çerez ayarları"
+  },
   "a11y": {
     "skipToContent": "Ana içeriğe geç"
   },

@@ -38,6 +38,12 @@
     "onGithub": "Chen Dahuang trên GitHub",
     "totalVisits": "{count} lượt truy cập"
   },
+  "cookie": {
+    "message": "Trang này sử dụng cookie để phân tích lượt truy cập. Bạn có thể thay đổi lựa chọn bất cứ lúc nào ở chân trang.",
+    "accept": "Chấp nhận tất cả",
+    "reject": "Chỉ cần thiết",
+    "settings": "Cài đặt cookie"
+  },
   "a11y": {
     "skipToContent": "Bỏ qua, đến nội dung chính"
   },

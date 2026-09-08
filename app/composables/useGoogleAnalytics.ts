@@ -1,17 +1,15 @@
 /**
  * Google Analytics 4 (GA4) 接入。
  * 未配置 gaId(环境变量 NUXT_PUBLIC_GA_ID)时完全静默,不加载任何脚本。
- * 意见征求模式 v2:EEA/英国/瑞士默认拒绝分析 Cookie(GA 走无 Cookie 衡量 + 行为建模),
- * 其他地区默认允许;全站无广告投放,ad_* 一律拒绝。私有看板 /stats 不计入 GA。
+ *
+ * 意见征求模式 v2(严格 opt-in):默认全域拒绝(analytics + ads),
+ * 由 CookieConsent 横幅在用户选择后 gtag('consent','update') 放行;
+ * 拒绝/未选择时 GA 走无 Cookie 衡量 + 行为建模。私有看板 /stats 不计入 GA。
  */
 
-/** EEA 27 国 + 冰岛/列支敦士登/挪威 + 英国 + 瑞士 */
-const EEA_REGIONS = ['AT', 'BE', 'BG', 'HR', 'CY', 'CZ', 'DK', 'EE', 'FI', 'FR', 'DE', 'GR', 'HU', 'IE', 'IT', 'LV', 'LT', 'LU', 'MT', 'NL', 'PL', 'PT', 'RO', 'SK', 'SI', 'ES', 'SE', 'IS', 'LI', 'NO', 'GB', 'CH']
-
-/** consent 默认值必须在 gtag.js 加载前同步设置 */
+/** consent 默认值必须在 gtag.js 加载前同步设置;wait_for_update 给横幅交互留缓冲 */
 const CONSENT_SCRIPT = `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
-gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'granted'});
-gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied'},{region:${JSON.stringify(EEA_REGIONS)}});
+gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',wait_for_update:500});
 gtag('js',new Date());`
 
 export function useGoogleAnalytics() {

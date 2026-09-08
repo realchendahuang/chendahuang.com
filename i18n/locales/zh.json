@@ -38,6 +38,12 @@
     "onGithub": "陈大黄 on GitHub",
     "totalVisits": "总访问 {count}"
   },
+  "cookie": {
+    "message": "本站使用 Cookie 统计访问数据，帮助你了解内容效果。你可以随时在页脚更改选择。",
+    "accept": "全部接受",
+    "reject": "仅必要 Cookie",
+    "settings": "Cookie 设置"
+  },
   "a11y": {
     "skipToContent": "跳到主要内容"
   },
