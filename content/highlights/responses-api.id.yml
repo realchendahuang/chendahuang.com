@@ -1,0 +1,25 @@
+category: ai
+title: "Kenapa Responses API lebih cocok untuk Agent daripada Chat Completions"
+description: "Orang yang mengonfigurasi tools AI biasanya mengatur API key, dan kadang diminta memilih format antarmuka."
+date: 2026-07-09
+likes: 1
+bookmarks: 0
+reposts: 0
+views: 96
+url: https://x.com/realchendahuang/status/2075074946301317487
+content: |
+  Orang yang mengonfigurasi tools AI biasanya mengatur API key, dan kadang diminta memilih format antarmuka.
+
+  Format antarmuka itu, sederhananya:
+
+  cara komunikasi yang disepakati antara kamu dan layanan model.
+
+  Misalnya, "antarmuka kompatibel OpenAI" yang dikenal kebanyakan orang sering merujuk ke Chat Completions. Format itu unggul untuk chat dan pembuatan teks sederhana, sebab itu vendor model di mana-mana mengutamakan kompatibilitas dengannya.
+
+  Tapi membangun aplikasi AI sekarang jauh lebih kompleks. Model sekarang perlu membaca file, menjelajah web, memanggil fungsi, menjalankan kode, terhubung ke MCP, menyimpan konteks, dan melanjutkan ke langkah-langkah berikutnya.
+
+  Di situlah Responses API OpenAI menunjukkan nilainya.
+
+  - Model penalarannya bekerja lebih baik. Model yang sama, ditempatkan dalam struktur antarmuka yang lebih pas, menyelesaikan tugas lebih baik.
+  - Ia secara alami cocok untuk agents. Satu permintaan API bisa memanggil banyak tools.
+  - Biayanya lebih murah. Dibanding Chat Completions, pemanfaatan cache Responses API naik 40%–80%. Semakin tinggi pemanfaatan cache, semakin murah panggilan berulang dan semakin mudah mengoptimalkan latensi.

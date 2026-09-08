@@ -1,0 +1,23 @@
+category: "ai"
+title: "CEO của Command Code tự vào tận khu bình luận của tôi"
+description: "Tôi đã bỏ sót một khoản — hóa đơn cache. Hóa ra caching quyết định chi phí của Coding Agent."
+date: 2026-08-30
+likes: 154
+bookmarks: 89
+reposts: 5
+views: 62171
+url: "https://x.com/realchendahuang/status/2093878404131283101"
+content: |
+  Hôm qua tôi đăng bài so sánh Command GOAT và OpenCode Go, thì CEO của Command Code đích thân vào bình luận.
+
+  Anh ấy nói tôi đã bỏ sót một khoản — hóa đơn caching. Tôi đào sâu vào, và phát hiện Command Code có điều gì đó hay ho.
+
+  Một Coding Agent về cơ bản là một cỗ máy Prefix Cache khổng lồ. Một session vài trăm nghìn token — sang vòng tiếp theo, số token thực sự mới có thể chỉ vài nghìn. System prompt, tools, bối cảnh code và lịch sử hội thoại gần như không đổi. Tỷ lệ trúng cache càng cao, những context cũ đó càng rẻ.
+
+  Gần đây Command Code đã làm một đợt Cache Thrashing nghiêm túc, chủ yếu bằng các chiến lược sau:
+
+  Ghim session vào cùng một GPU pod để giữ KV cache ấm; giữ stable prefix càng nguyên vẹn càng tốt và ngăn provider fallback làm hỏng context; thêm Tool Call Repair, trong đó harness tự sửa tham số model bị sai ngay tại chỗ thay vì gửi lỗi ngược về model để thử lại.
+
+  Changelog v0.33.0 thậm chí ghi đích danh: Major Cache Overhaul, giảm chi phí trung vị 2.9×. Họ hiện tuyên bố chính thức duy trì được tỷ lệ trúng cache 95–99%.
+
+  Cùng một model, cùng gói 10 đô — nhưng vì caching, khác biệt tích lũy lại thành một kết cục hoàn toàn khác.

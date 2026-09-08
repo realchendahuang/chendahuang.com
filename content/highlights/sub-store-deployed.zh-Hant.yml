@@ -1,0 +1,22 @@
+category: cloudflare
+title: "在 Cloudflare 上完成 Sub-Store 部署"
+description: "花了點時間，在 Cloudflare 上完成了 Sub-Store 部署。"
+date: 2026-06-27
+likes: 209
+bookmarks: 244
+reposts: 29
+views: 67007
+url: https://x.com/realchendahuang/status/2070689769731019207
+content: |
+  花了點時間，在 Cloudflare 上完成了 Sub-Store 部署。
+
+  把我自建的節點和機場的備用節點全部融合在一起，還搭配上了 ACL4SSR 分流規則自動訂閱。
+
+  直接用一條訂閱連結就實現了：
+
+  - 多家供應商節點合併
+  - 節點過濾
+  - 分流規則設定
+  - 設定自動更新
+
+  絲滑到不行。

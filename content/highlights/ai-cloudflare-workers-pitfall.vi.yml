@@ -1,0 +1,20 @@
+category: cloudflare
+title: "Khi AI viết project Cloudflare thì sập — mà không phải vì cú pháp"
+description: "AI cứ viết Workers như đang viết Node.js và xem Bindings như biến môi trường."
+date: 2026-06-22
+likes: 23
+bookmarks: 42
+reposts: 4
+views: 1462
+url: https://x.com/realchendahuang/status/2068853978004365739
+content: |
+  Rất nhiều người dùng AI để viết project Cloudflare, và khi nó sập thì không phải vì cú pháp.
+  Vấn đề thực sự nằm ở:
+  AI viết Workers cứ như đang viết Node.js
+  xem Bindings như process.env
+  quên await
+  nhét trạng thái request vào biến toàn cục
+  không biết rằng request tài nguyên tĩnh là miễn phí
+  và gọi R2 của chính mình từ bên trong một Worker qua REST API
+  Tất cả những cái bẫy này tôi đều đã tổng hợp vào Cloudflare Playbook.
+  Và tiện thể, tôi cũng đã viết

@@ -1,0 +1,206 @@
+{
+  "site": {
+    "name": "Chen Dahuang",
+    "description": "Trang tổng hợp tác phẩm và nội dung cá nhân của Chen Dahuang. Bao gồm dự án, hướng dẫn, kỹ năng, bài viết và bài đăng."
+  },
+  "nav": {
+    "home": "Trang chủ",
+    "projects": "Dự án",
+    "playbooks": "Hướng dẫn",
+    "skills": "Kỹ năng",
+    "blog": "Blog",
+    "highlights": "Bài đăng",
+    "menu": "Menu",
+    "openMenu": "Mở menu điều hướng",
+    "switchLanguage": "Đổi ngôn ngữ"
+  },
+  "sections": {
+    "blog": "Blog",
+    "project": "Dự án",
+    "playbook": "Hướng dẫn",
+    "skill": "Kỹ năng",
+    "highlight": "Bài đăng"
+  },
+  "search": {
+    "label": "Tìm kiếm",
+    "shortcut": "Tìm kiếm (Cmd+K)",
+    "placeholder": "Tìm blog, dự án, hướng dẫn, kỹ năng, bài đăng…",
+    "empty": "Nhập từ khóa để tìm trong toàn bộ trang web",
+    "noResults": "Không có kết quả cho \"{query}\""
+  },
+  "theme": {
+    "toDark": "Chuyển sang chế độ tối",
+    "toLight": "Chuyển sang chế độ sáng"
+  },
+  "footer": {
+    "rss": "Kênh RSS",
+    "onX": "Chen Dahuang trên X",
+    "onGithub": "Chen Dahuang trên GitHub"
+  },
+  "a11y": {
+    "skipToContent": "Bỏ qua, đến nội dung chính"
+  },
+  "hero": {
+    "highlights": "Bài đăng nổi bật",
+    "blogPosts": "Bài viết blog",
+    "projects": "Dự án",
+    "githubStars": "Sao GitHub"
+  },
+  "landing": {
+    "shareHighlight": "Từ các bài đăng nổi bật của Chen Dahuang: {title}",
+    "linkCopied": "Đã sao chép liên kết, hãy chia sẻ nhé",
+    "likes": "lượt thích",
+    "bookmarks": "lượt đánh dấu",
+    "original": "Bản gốc",
+    "about": "Về tôi",
+    "aboutTitle": "Indie developer, đang mày mò với Cloudflare và các công cụ AI tăng năng suất",
+    "aboutBody": "Cựu product manager mảng AI, hiện tập trung làm indie development: kết hợp AI, Cloudflare và sáng tạo nội dung thành những sản phẩm và quy trình làm việc của riêng mình. Các dự án, hướng dẫn và bài viết blog chính là nhật ký công khai của hành trình khám phá này — nếu bạn cũng đang làm điều tương tự, hãy kết nối với tôi nhé.",
+    "support": "Ủng hộ tôi trên Afdian",
+    "xLink": "X (trước đây là Twitter)",
+    "xDesc": "Cập nhật hằng ngày, chia sẻ suy nghĩ và mẹo thực tế",
+    "githubLink": "GitHub",
+    "githubDesc": "Mã nguồn dự án và kho chứa hướng dẫn",
+    "rssLink": "Kênh RSS",
+    "rssDesc": "Bài viết mới được gửi thẳng tới trình đọc tin của bạn",
+    "work": "Tác phẩm",
+    "recentProjects": "Các dự án gần đây",
+    "viewAllProjects": "Xem tất cả dự án",
+    "readMore": "Đọc thêm"
+  },
+  "projects": {
+    "tryOnline": "Dùng thử trực tuyến",
+    "github": "GitHub",
+    "view": "Xem {title}",
+    "preview": "Xem trước dự án {title}"
+  },
+  "playbooks": {
+    "readOnline": "Đọc trực tuyến",
+    "viewOnGithub": "Xem trên GitHub"
+  },
+  "skills": {
+    "readOnline": "Đọc trực tuyến",
+    "viewOnGithub": "Xem trên GitHub"
+  },
+  "highlights": {
+    "count": "{count} bài đăng",
+    "xHome": "Trang cá nhân X",
+    "searchPosts": "Tìm bài đăng",
+    "searchPlaceholder": "Tìm theo tiêu đề hoặc từ khóa nội dung…",
+    "expandAll": "Mở rộng tất cả",
+    "collapseAll": "Thu gọn tất cả",
+    "viewMode": "Chế độ xem",
+    "filterTheme": "Lọc theo chủ đề",
+    "all": "Tất cả",
+    "hot": "Phổ biến",
+    "hotTitle": "Bài đăng phổ biến",
+    "likes": "lượt thích",
+    "bookmarks": "lượt đánh dấu",
+    "reposts": "lượt chia sẻ lại",
+    "views": "lượt xem",
+    "viewOnX": "Xem bản gốc trên X",
+    "noMatch": "Không có bài đăng phù hợp, thử từ khóa khác nhé.",
+    "noPosts": "Không có bài đăng nào trong bộ lọc này.",
+    "countSuffix": "bài đăng"
+  },
+  "blog": {
+    "count": "{count} bài viết",
+    "archive": "Lưu trữ",
+    "rss": "Kênh RSS",
+    "searchPlaceholder": "Tìm theo tiêu đề, mô tả hoặc thẻ…",
+    "all": "Tất cả",
+    "found": "Tìm thấy {count}",
+    "tagFilter": "thẻ \"{tag}\"",
+    "keywordFilter": "từ khóa \"{keyword}\"",
+    "pinned": "Đã ghim",
+    "pinnedTitle": "Bài viết đã ghim",
+    "original": "Bản gốc",
+    "originalTitle": "Bài viết gốc đăng trên trang này",
+    "noMatch": "Không có bài viết phù hợp, thử từ khóa hoặc thẻ khác nhé.",
+    "minutes": "phút"
+  },
+  "archive": {
+    "title": "Lưu trữ",
+    "description": "Toàn bộ bài viết blog được lưu trữ theo năm.",
+    "count": "{count} bài viết, được sắp xếp theo năm.",
+    "posts": "bài viết"
+  },
+  "friends": {
+    "empty": "Chưa có liên kết bạn bè. Hãy thêm file content/friends/*.yml.",
+    "avatar": "Ảnh đại diện của {name}"
+  },
+  "post": {
+    "allPosts": "Tất cả bài đăng",
+    "updated": "Cập nhật {date}",
+    "minRead": "{count} phút đọc",
+    "original": "Bản gốc",
+    "sourceX": "Ban đầu đăng trên X",
+    "indieDev": "Indie developer",
+    "collapseToc": "Thu gọn mục lục",
+    "viewToc": "Xem mục lục",
+    "toc": "Mục lục",
+    "shareHint": "Nếu thấy hữu ích, hãy chia sẻ bài viết này cho một người bạn.",
+    "shareToX": "Chia sẻ lên X",
+    "xOriginal": "Bản gốc trên X",
+    "share": "Chia sẻ",
+    "related": "Bài viết liên quan",
+    "subscribe": "Đăng ký nhận bài viết mới",
+    "subscribeDesc": "Bài viết mới được đồng bộ lên RSS, hoặc theo dõi tôi trên X.",
+    "rss": "Kênh RSS",
+    "followX": "Theo dõi trên X",
+    "support": "Ủng hộ tôi",
+    "backToTop": "Lên đầu trang",
+    "linkCopied": "Đã sao chép liên kết bài viết vào bộ nhớ tạm",
+    "shareText": "Từ blog của Chen Dahuang: {title}"
+  },
+  "error": {
+    "title": "Không tìm thấy trang",
+    "description": "Trang này không tồn tại hoặc đã bị chuyển đi."
+  },
+  "seo": {
+    "notFound": "Không tìm thấy trang"
+  },
+  "highlightsCategories": {
+    "cloudflare": "Cloudflare",
+    "cloudflareDesc": "Edge cloud, Workers, hạ tầng miễn phí và kinh nghiệm triển khai",
+    "tools": "Danh sách công cụ",
+    "toolsDesc": "Gợi ý về phần mềm, plugin, phần cứng và công cụ năng suất",
+    "ai": "Suy nghĩ về AI",
+    "aiDesc": "Mô hình, agent, quản lý tri thức và cách phối hợp làm việc",
+    "product": "Phát triển sản phẩm",
+    "productDesc": "Indie development, công nghệ sử dụng và nhận định về sản phẩm",
+    "opc": "Khởi nghiệp OPC",
+    "opcDesc": "Công ty một người, đăng ký thành lập và vận hành",
+    "growth": "Tăng trưởng nội dung",
+    "growthDesc": "Vận hành X, cách đăng bài và tổng kết tăng follower",
+    "essay": "Tản văn",
+    "essayDesc": "Quan sát về giá trị, sự hài hước và góc nhìn ngoài công cụ"
+  },
+  "highlightViewModes": {
+    "theme": "Theo chủ đề",
+    "themeDesc": "Duyệt theo nhóm chủ đề",
+    "timeline": "Dòng thời gian",
+    "timelineDesc": "Sắp xếp theo ngày đăng",
+    "heat": "Theo độ phổ biến",
+    "heatDesc": "Sắp xếp theo lượt thích và mức độ tương tác"
+  },
+  "monthLabel": "Tháng {month} năm {year}",
+  "langNames": {
+    "zh": "Tiếng Trung",
+    "en": "Tiếng Anh",
+    "ja": "Tiếng Nhật",
+    "es": "Tiếng Tây Ban Nha",
+    "pt": "Tiếng Bồ Đào Nha",
+    "fr": "Tiếng Pháp",
+    "de": "Tiếng Đức",
+    "ru": "Tiếng Nga",
+    "ar": "Tiếng Ả Rập",
+    "ko": "Tiếng Hàn",
+    "zh-Hant": "Tiếng Trung Phồn thể",
+    "vi": "Tiếng Việt",
+    "id": "Tiếng Indonesia",
+    "tr": "Tiếng Thổ Nhĩ Kỳ",
+    "hi": "Tiếng Hindi",
+    "pl": "Tiếng Ba Lan",
+    "fa": "Tiếng Ba Tư"
+  }
+}

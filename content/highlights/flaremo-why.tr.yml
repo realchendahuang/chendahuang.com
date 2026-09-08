@@ -1,0 +1,23 @@
+category: cloudflare
+title: "FlareMo neden? Gelişigüzel not al, zamanla bilgiye dönüşsün"
+description: "'Gelişigüzel not alıp zamanla bilgiye dönüştüren' bir araç arıyorum."
+date: 2026-06-27
+likes: 1
+bookmarks: 2
+reposts: 1
+views: 258
+url: https://x.com/realchendahuang/status/2070807195332297205
+content: |
+  "Gelişigüzel not alıp zamanla bilgiye dönüştüren" bir araç arıyorum.
+
+  Flomo'nun kutudan çıktığı gibi kullanıma hazır, sıfır sürtünmeli ilham yakalama özelliğini istiyorum;
+
+  Memos'un olgun açık kaynak ekosistemini, taşınabilir verisini ve gerçekten kurcalayabileceğin bir API'sini istiyorum;
+
+  Ama bir VPS daha açıp Docker, Postgres ve sonsuza dek çalışan bir Node sürecine bakmak istemiyorum.
+
+  Peki ne yapmalı? FlareMo'nun yaklaşımı: Memos'un veri modelini ve API'sini "şartname" olarak kabul et, çalışma zamanını da tamamen Cloudflare üzerine yeniden kur:
+
+  Workers API'yi çalıştırır, D1 notları saklar, R2 ekleri tutar, Queues/Cron arka plan işlerini yürütür, Vectorize + Workers AI ise gelecekteki anlamsal arama ve AI iş akışları için ayrılır.
+
+  Memos'un omuzlarında yükselerek kenar bulutta yaşayan kişisel bir bilgi tabanı kurmak.

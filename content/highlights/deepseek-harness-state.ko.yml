@@ -1,0 +1,29 @@
+category: ai
+title: "오늘의 DeepSeek Harness: 15만 Star인데 여전히 Developer Preview"
+description: "영향력이 엔지니어링 성숙도를 앞서 달리고 있고, 주변 생태계는 빠르게 확장 중이다."
+date: 2026-08-18
+likes: 7
+bookmarks: 0
+reposts: 10
+views: 6200
+url: https://x.com/realchendahuang/status/2089642236413985278
+content: |
+  나는 최근에 DeepSeek Harness 저장소와 Discussions를 다시 훑어봤다. 이 프로젝트는 아주 흥미로운 단계에 있다:
+
+  DeepSeek Harness는 이미 15만 개가 넘는 Star를 갖고 있고, 저장소에는 12,000회 이상의 커밋이 쌓여 있다.
+
+  그런데도 공식 README는 여전히 아주 분명하게 밝히고 있다: 지금은 Developer Preview일 뿐이며, 호환성을 깨는 변경이 아직 올 예정이다.
+
+  rc.7은 8월 17일에 출시됐다. Issue와 PR 생성은 제한되어 있고, 피드백은 Discussions를 통해 이뤄진다.
+
+  커뮤니티는 거대하지만 핵심 개발은 소수의 손에 집중되어 있다. unknown tool "" 문제 같은 버그가 계속 튀어나오고 있다.
+
+  가장 부족한 것은 테스트 커버리지, Provider 호환성, 세션 신뢰성이다.
+
+  아키텍처는 여전히 매력적이다. 에이전트 운영체제의 기반 같다:
+
+  - Everything is a Plugin
+  - Cordis 조합 아키텍처
+  - Preset / Skill / MCP / Agent / Provider 전부 플러그인화
+
+  이 프로젝트는 지금 "영향력이 엔지니어링을 앞서는" 단계에 있다.

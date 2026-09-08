@@ -1,0 +1,9 @@
+title: "Pi Agent (macOS)"
+description: "네이티브 macOS 앱: 감독되는 번들 Pi Runtime을 호스팅하는 SwiftUI 셸. 프로젝트 라이브러리, 스레드 탐색, 대화 기록, SwiftTerm 터미널, 워크스페이스·Git 패널, Keychain 자격 증명 — Pi를 위한 즉시 사용 가능한 데스크톱 경험입니다."
+type: "네이티브 macOS 앱"
+url: "https://github.com/realchendahuang/dahuang-pi-web-ui"
+icon: "i-lucide-apple"
+color: "#64748b"
+tags: ["macOS", "SwiftUI", "Pi", "Agent", "Native"]
+date: 2026-07-25
+status: "ongoing"

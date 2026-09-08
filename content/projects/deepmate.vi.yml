@@ -1,0 +1,12 @@
+title: "DeepMate"
+description: "Người bạn đồng hành và bảng điều khiển gọn nhẹ cho DeepSeek Harness — runtime, model, provider, profile, plugin và tính năng tự kiểm tra Doctor, tất cả gom vào một nơi."
+type: "Ứng dụng desktop Rust · Tauri"
+url: https://github.com/realchendahuang/DeepMate
+image: /projects/deepmate.webp
+imageAlt: "Thẻ sản phẩm đen–đỏ của DeepMate"
+icon: i-lucide-cpu
+color: "#f87171"
+tags: ["Rust", "Tauri", "DeepSeek", "Control Plane", "Doctor", "MIT"]
+date: 2026-08-17
+status: ongoing
+stars: 2

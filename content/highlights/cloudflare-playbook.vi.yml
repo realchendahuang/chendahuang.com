@@ -1,0 +1,29 @@
+category: cloudflare
+title: "Tôi đã làm một cuốn Cloudflare Playbook"
+description: "Dành cho mọi indie developer muốn làm sản phẩm bằng AI Coding."
+date: 2026-06-21
+likes: 125
+bookmarks: 176
+reposts: 29
+views: 9114
+url: https://x.com/realchendahuang/status/2068732869854613903
+content: |
+  Tôi đã làm một cuốn Cloudflare Playbook.
+
+  Dành cho mọi indie developer muốn làm sản phẩm bằng AI Coding.
+
+  Nó bao gồm:
+
+  - Cách chọn lựa giữa các dịch vụ phổ biến của Cloudflare
+  - Cách dùng Workers / Pages / D1 / R2 / KV / AI Gateway
+  - Liệu gói miễn phí có thực sự đủ không
+  - Khi nào nên mua Workers Paid 5 đô
+  - Những cái bẫy khiến code CF do AI viết dễ sập nhất
+  - Cách cấu hình Cloudflare Skills và MCP cho Codex / Claude Code
+  - Có những dự án mã nguồn mở nào có thể tham khảo trực tiếp
+
+  Mục tiêu của tôi rất đơn giản:
+
+  Viết code bằng AI, triển khai toàn cầu bằng Cloudflare.
+
+  Playbook: [chendahuang.com/playbooks](/playbooks)

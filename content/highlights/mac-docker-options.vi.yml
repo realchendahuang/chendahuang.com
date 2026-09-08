@@ -1,0 +1,16 @@
+category: tools
+title: "Các lựa chọn Docker trên Mac: Colima / OrbStack / Docker Desktop"
+description: "Điểm nhanh qua cách chọn lựa Docker trên Mac."
+date: 2026-06-20
+likes: 0
+bookmarks: 0
+reposts: 0
+views: 211
+url: https://x.com/realchendahuang/status/2068238972728533154
+content: |
+  Điểm nhanh qua cách chọn lựa Docker trên Mac.
+
+  - **Colima**: mã nguồn mở miễn phí, cực nhẹ, nhưng về cơ bản chỉ dùng được bằng dòng lệnh. Dành cho người không ngại vọc vạch và sống trong terminal.
+  - **Apple Container**: hướng container mới của Apple — đáng theo dõi, nhưng hệ sinh thái vẫn còn rất sớm. Thậm chí Docker Compose cũng chưa được hỗ trợ.
+  - **OrbStack**: có giao diện, nhẹ và nhanh, hệ sinh thái hỗ trợ tốt. Nhược điểm: không mã nguồn mở — bản thương mại cần license, nhưng bản cá nhân thì miễn phí.
+  - **Docker Desktop**: sản phẩm chính hãng, nhưng nặng nề phình to, trải nghiệm tệ. Trên Mac, tránh được thì cứ tránh.

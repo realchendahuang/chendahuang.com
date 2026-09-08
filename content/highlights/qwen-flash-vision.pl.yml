@@ -1,0 +1,16 @@
+category: ai
+title: "DeepSeek V4 Flash bez multimodalności? Dolep Qwen-3.7-Flash"
+description: "Po researchu znalazłem najbardziej opłacalny model wizyjny: Qwen-3.7-Flash."
+date: 2026-08-06
+likes: 659
+bookmarks: 675
+reposts: 78
+views: 89530
+url: https://x.com/realchendahuang/status/2085265465564336327
+content: |
+  Mnóstwo ludzi narzeka, że DeepSeek V4 Flash nie ma multimodalności.
+  Zrobiłem research: obecnie najbardziej opłacalny model wizyjny to Qwen-3.7-Flash.
+  Rozpoznanie jednego obrazu kosztuje 0,0004–0,001 juana; rozpoznanie 1000 zwykłych obrazów ≈ 0,6–0,8 juana.
+  Na tej podstawie wyliczyliśmy prawdziwy pakiet AI dla gołodupców:
+  1. Plan OpenCode Go za 5 dolarów, z DeepSeek V4 Flash do pisania kodu
+  2. https://t.co/mlvdSTaD6M

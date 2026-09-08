@@ -1,0 +1,206 @@
+{
+  "site": {
+    "name": "Chen Dahuang",
+    "description": "Chen Dahuang의 개인 포트폴리오이자 콘텐츠 전시 사이트. 프로젝트, 가이드, 스킬, 글과 포스트를 모아 두었습니다."
+  },
+  "nav": {
+    "home": "홈",
+    "projects": "프로젝트",
+    "playbooks": "가이드",
+    "skills": "스킬",
+    "blog": "블로그",
+    "highlights": "포스트",
+    "menu": "메뉴",
+    "openMenu": "탐색 메뉴 열기",
+    "switchLanguage": "언어 변경"
+  },
+  "sections": {
+    "blog": "블로그",
+    "project": "프로젝트",
+    "playbook": "가이드",
+    "skill": "스킬",
+    "highlight": "포스트"
+  },
+  "search": {
+    "label": "검색",
+    "shortcut": "검색 (Cmd+K)",
+    "placeholder": "블로그, 프로젝트, 가이드, 스킬, 포스트 검색…",
+    "empty": "사이트 전체를 검색할 키워드를 입력하세요",
+    "noResults": "\"{query}\" 검색 결과가 없습니다"
+  },
+  "theme": {
+    "toDark": "다크 모드로 전환",
+    "toLight": "라이트 모드로 전환"
+  },
+  "footer": {
+    "rss": "RSS 피드",
+    "onX": "Chen Dahuang on X",
+    "onGithub": "Chen Dahuang on GitHub"
+  },
+  "a11y": {
+    "skipToContent": "본문으로 건너뛰기"
+  },
+  "hero": {
+    "highlights": "추천 포스트",
+    "blogPosts": "블로그 글",
+    "projects": "프로젝트",
+    "githubStars": "GitHub 스타"
+  },
+  "landing": {
+    "shareHighlight": "Chen Dahuang의 추천 포스트: {title}",
+    "linkCopied": "링크가 복사되었습니다. 공유해 보세요!",
+    "likes": "좋아요",
+    "bookmarks": "북마크",
+    "original": "원문",
+    "about": "소개",
+    "aboutTitle": "Cloudflare와 AI 생산성 도구를 만지작거리는 인디 개발자",
+    "aboutBody": "전직 AI 프로덕트 매니저였고, 지금은 인디 개발에 집중하며 AI, Cloudflare, 콘텐츠 제작을 조합해 나만의 제품과 워크플로우를 만들고 있습니다. 프로젝트와 가이드, 블로그 글은 그 탐험의 공개 기록입니다. 비슷한 일을 하고 있다면 함께 이야기 나눠요.",
+    "support": "Afdian에서 후원하기",
+    "xLink": "X(구 Twitter)",
+    "xDesc": "매일의 업데이트, 생각과 실용 팁",
+    "githubLink": "GitHub",
+    "githubDesc": "프로젝트 소스 코드와 가이드 저장소",
+    "rssLink": "RSS 피드",
+    "rssDesc": "블로그 업데이트를 리더기로 받아보세요",
+    "work": "작업물",
+    "recentProjects": "최근 프로젝트",
+    "viewAllProjects": "전체 프로젝트 보기",
+    "readMore": "더 읽기"
+  },
+  "projects": {
+    "tryOnline": "온라인 체험",
+    "github": "GitHub",
+    "view": "{title} 보기",
+    "preview": "{title} 프로젝트 미리보기"
+  },
+  "playbooks": {
+    "readOnline": "온라인으로 읽기",
+    "viewOnGithub": "GitHub에서 보기"
+  },
+  "skills": {
+    "readOnline": "온라인으로 읽기",
+    "viewOnGithub": "GitHub에서 보기"
+  },
+  "highlights": {
+    "count": "{count}개의 포스트",
+    "xHome": "X 홈",
+    "searchPosts": "포스트 검색",
+    "searchPlaceholder": "제목 또는 내용 키워드 검색…",
+    "expandAll": "모두 펼치기",
+    "collapseAll": "모두 접기",
+    "viewMode": "보기 방식",
+    "filterTheme": "주제로 필터링",
+    "all": "전체",
+    "hot": "인기",
+    "hotTitle": "인기 포스트",
+    "likes": "좋아요",
+    "bookmarks": "북마크",
+    "reposts": "리포스트",
+    "views": "조회",
+    "viewOnX": "X에서 원문 보기",
+    "noMatch": "일치하는 포스트가 없습니다. 다른 키워드로 검색해 보세요.",
+    "noPosts": "이 필터에 해당하는 포스트가 없습니다.",
+    "countSuffix": "포스트"
+  },
+  "blog": {
+    "count": "{count}개의 글",
+    "archive": "아카이브",
+    "rss": "RSS 피드",
+    "searchPlaceholder": "제목, 설명 또는 태그 검색…",
+    "all": "전체",
+    "found": "검색 결과 {count}개",
+    "tagFilter": "태그 \"{tag}\"",
+    "keywordFilter": "키워드 \"{keyword}\"",
+    "pinned": "고정",
+    "pinnedTitle": "상단 고정 글",
+    "original": "오리지널",
+    "originalTitle": "이 사이트에서 처음 게시한 오리지널 글",
+    "noMatch": "일치하는 글이 없습니다. 다른 키워드나 태그로 검색해 보세요.",
+    "minutes": "분"
+  },
+  "archive": {
+    "title": "아카이브",
+    "description": "연도별로 정리한 전체 블로그 글.",
+    "count": "연도별로 정리한 글 {count}개.",
+    "posts": "글"
+  },
+  "friends": {
+    "empty": "아직 친구 링크가 없습니다. content/friends/*.yml 파일을 추가하세요.",
+    "avatar": "{name}의 아바타"
+  },
+  "post": {
+    "allPosts": "전체 글",
+    "updated": "{date} 업데이트",
+    "minRead": "{count}분 분량",
+    "original": "오리지널",
+    "sourceX": "X에서 가져온 글",
+    "indieDev": "인디 개발자",
+    "collapseToc": "목차 접기",
+    "viewToc": "목차 보기",
+    "toc": "목차",
+    "shareHint": "도움이 되었다면 친구에게 공유해 주세요.",
+    "shareToX": "X에 공유",
+    "xOriginal": "X 원문",
+    "share": "공유",
+    "related": "관련 글",
+    "subscribe": "업데이트 구독",
+    "subscribeDesc": "새 글이 RSS로 동기화되며, X에서도 팔로우할 수 있습니다.",
+    "rss": "RSS 피드",
+    "followX": "X 팔로우",
+    "support": "후원하기",
+    "backToTop": "맨 위로",
+    "linkCopied": "글 링크가 클립보드에 복사되었습니다",
+    "shareText": "Chen Dahuang의 블로그에서 가져온 글: {title}"
+  },
+  "error": {
+    "title": "페이지를 찾을 수 없음",
+    "description": "이 페이지는 존재하지 않거나 다른 곳으로 이동되었습니다."
+  },
+  "seo": {
+    "notFound": "페이지를 찾을 수 없음"
+  },
+  "highlightsCategories": {
+    "cloudflare": "Cloudflare",
+    "cloudflareDesc": "엣지 클라우드, Workers, 무료 인프라와 배포 경험",
+    "tools": "도구 목록",
+    "toolsDesc": "소프트웨어, 플러그인, 하드웨어와 생산성 도구 추천",
+    "ai": "AI 생각",
+    "aiDesc": "모델, 에이전트, 지식 관리와 협업 방식",
+    "product": "제품 개발",
+    "productDesc": "인디 개발, 기술 스택과 제품 판단",
+    "opc": "OPC 창업",
+    "opcDesc": "1인 기업, 설립과 운영 실무",
+    "growth": "콘텐츠 성장",
+    "growthDesc": "X 운영, 포스팅 방법과 팔로워 성장 회고",
+    "essay": "에세이",
+    "essayDesc": "가치, 유머 등 비도구적 관점의 관찰"
+  },
+  "highlightViewModes": {
+    "theme": "주제별",
+    "themeDesc": "카테고리별로 묶어 보기",
+    "timeline": "타임라인",
+    "timelineDesc": "발행일 순으로 정렬",
+    "heat": "인기순",
+    "heatDesc": "좋아요와 반응 순으로 정렬"
+  },
+  "monthLabel": "{year}년 {month}월",
+  "langNames": {
+    "zh": "중국어",
+    "en": "영어",
+    "ja": "일본어",
+    "es": "스페인어",
+    "pt": "포르투갈어",
+    "fr": "프랑스어",
+    "de": "독일어",
+    "ru": "러시아어",
+    "ar": "아랍어",
+    "ko": "한국어",
+    "zh-Hant": "번체 중국어",
+    "vi": "베트남어",
+    "id": "인도네시아어",
+    "tr": "터키어",
+    "hi": "힌디어",
+    "pl": "폴란드어",
+    "fa": "페르시아어"
+  }
+}

@@ -1,0 +1,206 @@
+{
+  "site": {
+    "name": "Chen Dahuang",
+    "description": "Osobiste portfolio Chena Dahuanga i prezentacja treści. Projekty, poradniki, umiejętności, artykuły i posty."
+  },
+  "nav": {
+    "home": "Strona główna",
+    "projects": "Projekty",
+    "playbooks": "Poradniki",
+    "skills": "Umiejętności",
+    "blog": "Blog",
+    "highlights": "Posty",
+    "menu": "Menu",
+    "openMenu": "Otwórz menu nawigacji",
+    "switchLanguage": "Zmień język"
+  },
+  "sections": {
+    "blog": "Blog",
+    "project": "Projekty",
+    "playbook": "Poradniki",
+    "skill": "Umiejętności",
+    "highlight": "Posty"
+  },
+  "search": {
+    "label": "Szukaj",
+    "shortcut": "Szukaj (Cmd+K)",
+    "placeholder": "Szukaj w blogu, projektach, poradnikach, umiejętnościach i postach…",
+    "empty": "Wpisz słowo kluczowe, aby przeszukać całą stronę",
+    "noResults": "Brak wyników dla „{query}”"
+  },
+  "theme": {
+    "toDark": "Przełącz na tryb ciemny",
+    "toLight": "Przełącz na tryb jasny"
+  },
+  "footer": {
+    "rss": "Kanał RSS",
+    "onX": "Chen Dahuang na X",
+    "onGithub": "Chen Dahuang na GitHubie"
+  },
+  "a11y": {
+    "skipToContent": "Przejdź do głównej treści"
+  },
+  "hero": {
+    "highlights": "Posty",
+    "blogPosts": "Artykuły z bloga",
+    "projects": "Projekty",
+    "githubStars": "Gwiazdy GitHub"
+  },
+  "landing": {
+    "shareHighlight": "Z wyróżnionych postów Chena Dahuanga: {title}",
+    "linkCopied": "Link skopiowany — podziel się nim",
+    "likes": "polubień",
+    "bookmarks": "zakładek",
+    "original": "Oryginał",
+    "about": "O mnie",
+    "aboutTitle": "Niezależny deweloper, eksperymentujący z Cloudflare i narzędziami AI",
+    "aboutBody": "Były product manager AI, obecnie skupiony na niezależnym developmentcie — łączę AI, Cloudflare i tworzenie treści we własnych produktach i procesach pracy. Projekty, poradniki i artykuły na blogu to publiczny zapis moich eksperymentów; jeśli robisz coś podobnego, odezwij się.",
+    "support": "Wesprzyj mnie na Afdian",
+    "xLink": "X (dawniej Twitter)",
+    "xDesc": "Codzienne aktualizacje, przemyślenia i praktyczne wskazówki",
+    "githubLink": "GitHub",
+    "githubDesc": "Kody źródłowe projektów i repozytoria poradników",
+    "rssLink": "Kanał RSS",
+    "rssDesc": "Aktualizacje bloga prosto do Twojego czytnika",
+    "work": "Prace",
+    "recentProjects": "Ostatnie projekty",
+    "viewAllProjects": "Zobacz wszystkie projekty",
+    "readMore": "Czytaj dalej"
+  },
+  "projects": {
+    "tryOnline": "Wypróbuj online",
+    "github": "GitHub",
+    "view": "Zobacz {title}",
+    "preview": "Podgląd projektu {title}"
+  },
+  "playbooks": {
+    "readOnline": "Czytaj online",
+    "viewOnGithub": "Zobacz na GitHubie"
+  },
+  "skills": {
+    "readOnline": "Czytaj online",
+    "viewOnGithub": "Zobacz na GitHubie"
+  },
+  "highlights": {
+    "count": "{count} postów",
+    "xHome": "Profil na X",
+    "searchPosts": "Szukaj postów",
+    "searchPlaceholder": "Szukaj w tytułach lub treści…",
+    "expandAll": "Rozwiń wszystko",
+    "collapseAll": "Zwiń wszystko",
+    "viewMode": "Tryb widoku",
+    "filterTheme": "Filtruj po temacie",
+    "all": "Wszystkie",
+    "hot": "Popularny",
+    "hotTitle": "Popularny post",
+    "likes": "polubień",
+    "bookmarks": "zakładek",
+    "reposts": "repostów",
+    "views": "wyświetleń",
+    "viewOnX": "Zobacz oryginał na X",
+    "noMatch": "Brak pasujących postów — spróbuj innego słowa kluczowego.",
+    "noPosts": "Brak postów dla tego filtra.",
+    "countSuffix": "postów"
+  },
+  "blog": {
+    "count": "{count} artykułów",
+    "archive": "Archiwum",
+    "rss": "Kanał RSS",
+    "searchPlaceholder": "Szukaj w tytule, opisie lub tagach…",
+    "all": "Wszystkie",
+    "found": "Znaleziono: {count}",
+    "tagFilter": "tag „{tag}”",
+    "keywordFilter": "słowo „{keyword}”",
+    "pinned": "Przypięty",
+    "pinnedTitle": "Przypięty artykuł",
+    "original": "Oryginał",
+    "originalTitle": "Oryginalny artykuł na tej stronie",
+    "noMatch": "Brak pasujących artykułów — spróbuj innego słowa kluczowego lub tagu.",
+    "minutes": "min"
+  },
+  "archive": {
+    "title": "Archiwum",
+    "description": "Wszystkie artykuły z bloga, pogrupowane według lat.",
+    "count": "{count} artykułów, pogrupowanych według lat.",
+    "posts": "artykułów"
+  },
+  "friends": {
+    "empty": "Brak linków do znajomych. Dodaj plik content/friends/*.yml.",
+    "avatar": "Awatar użytkownika {name}"
+  },
+  "post": {
+    "allPosts": "Wszystkie artykuły",
+    "updated": "Zaktualizowano {date}",
+    "minRead": "{count} min czytania",
+    "original": "Oryginał",
+    "sourceX": "Pierwotnie z X",
+    "indieDev": "Niezależny deweloper",
+    "collapseToc": "Zwiń spis treści",
+    "viewToc": "Pokaż spis treści",
+    "toc": "Spis treści",
+    "shareHint": "Jeśli uznasz to za przydatne, podziel się ze znajomym.",
+    "shareToX": "Udostępnij na X",
+    "xOriginal": "Oryginał na X",
+    "share": "Udostępnij",
+    "related": "Powiązane artykuły",
+    "subscribe": "Subskrybuj aktualizacje",
+    "subscribeDesc": "Nowe artykuły trafiają na RSS; możesz też obserwować mnie na X.",
+    "rss": "Kanał RSS",
+    "followX": "Obserwuj na X",
+    "support": "Wesprzyj mnie",
+    "backToTop": "Wróć na górę",
+    "linkCopied": "Link do artykułu skopiowany do schowka",
+    "shareText": "Z bloga Chena Dahuanga: {title}"
+  },
+  "error": {
+    "title": "Nie znaleziono strony",
+    "description": "Ta strona nie istnieje lub została przeniesiona."
+  },
+  "seo": {
+    "notFound": "Nie znaleziono strony"
+  },
+  "highlightsCategories": {
+    "cloudflare": "Cloudflare",
+    "cloudflareDesc": "Chmura brzegowa, Workers, darmowa infrastruktura i doświadczenia z wdrożeń",
+    "tools": "Lista narzędzi",
+    "toolsDesc": "Polecane programy, wtyczki, sprzęt i narzędzia zwiększające produktywność",
+    "ai": "Przemyślenia o AI",
+    "aiDesc": "Modele, agenci, zarządzanie wiedzą i metody współpracy",
+    "product": "Rozwój produktów",
+    "productDesc": "Niezależny development, stos technologiczny i decyzje produktowe",
+    "opc": "Jednoosobowa firma",
+    "opcDesc": "Firma jednoosobowa — rejestracja i prowadzenie działalności",
+    "growth": "Rozwój treści",
+    "growthDesc": "Obsługa X, metody publikacji i podsumowania wzrostu obserwujących",
+    "essay": "Eseje",
+    "essayDesc": "Obserwacje o wartości, humorze i spojrzeniu spoza narzędzi"
+  },
+  "highlightViewModes": {
+    "theme": "Według tematu",
+    "themeDesc": "Przeglądaj pogrupowane według kategorii",
+    "timeline": "Oś czasu",
+    "timelineDesc": "Sortowane według daty publikacji",
+    "heat": "Według popularności",
+    "heatDesc": "Sortowane według polubień i zaangażowania"
+  },
+  "monthLabel": "{month} {year}",
+  "langNames": {
+    "zh": "Chiński",
+    "en": "Angielski",
+    "ja": "Japoński",
+    "es": "Hiszpański",
+    "pt": "Portugalski",
+    "fr": "Francuski",
+    "de": "Niemiecki",
+    "ru": "Rosyjski",
+    "ar": "Arabski",
+    "ko": "Koreański",
+    "zh-Hant": "Tradycyjny chiński",
+    "vi": "Wietnamski",
+    "id": "Indonezyjski",
+    "tr": "Turecki",
+    "hi": "Hindi",
+    "pl": "Polski",
+    "fa": "Perski"
+  }
+}

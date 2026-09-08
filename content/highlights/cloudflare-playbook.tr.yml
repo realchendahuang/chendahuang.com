@@ -1,0 +1,29 @@
+category: cloudflare
+title: "Bir Cloudflare Playbook hazırladım"
+description: "AI ile kod yazıp ürün geliştirmek isteyen her indie geliştirici için."
+date: 2026-06-21
+likes: 125
+bookmarks: 176
+reposts: 29
+views: 9114
+url: https://x.com/realchendahuang/status/2068732869854613903
+content: |
+  Bir Cloudflare Playbook hazırladım.
+
+  AI ile kod yazıp ürün geliştirmek isteyen her indie geliştirici için.
+
+  Neleri kapsıyor:
+
+  - Cloudflare'ın yaygın servisleri arasında nasıl seçim yapılır
+  - Workers / Pages / D1 / R2 / KV / AI Gateway nasıl kullanılır
+  - Ücretsiz katman gerçekten yeterli mi
+  - 5 dolarlık Workers Paid'i ne zaman satın almalı
+  - AI'ın yazdığı CF kodunun en çok patladığı tuzaklar neler
+  - Codex / Claude Code için Cloudflare Skills ve MCP nasıl kurulur
+  - Hangi açık kaynak projeleri doğrudan referans alabilirsin
+
+  Hedefim basit:
+
+  AI ile kod yaz, Cloudflare ile global deploy et.
+
+  Playbook: [chendahuang.com/playbooks](/playbooks)

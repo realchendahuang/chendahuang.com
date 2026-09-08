@@ -1,0 +1,9 @@
+title: "Pi Agent (macOS)"
+description: "Natywna aplikacja macOS: powłoka SwiftUI hostująca nadzorowane, wbudowane środowisko Pi Runtime. Biblioteka projektów, nawigacja po wątkach, transkrypty, terminal SwiftTerm, panele workspace i git, poświadczenia Keychain — gotowe do użycia desktopowe doświadczenie dla Pi."
+type: "Natywna aplikacja macOS"
+url: "https://github.com/realchendahuang/dahuang-pi-web-ui"
+icon: "i-lucide-apple"
+color: "#64748b"
+tags: ["macOS", "SwiftUI", "Pi", "Agent", "Native"]
+date: 2026-07-25
+status: "ongoing"

@@ -1,0 +1,12 @@
+title: "Sub-Store Cloudflare"
+description: "Cloudflare Workers पर चलने वाला सब्सक्रिप्शन-एग्रीगेशन और रूल-कॉन्फ़िगरेशन टूल — सब्सक्रिप्शन सोर्स, नोड प्रोसेसिंग, कंबाइंड सब्सक्रिप्शन और रूटिंग टेम्प्लेट, सब कुछ क्लाउड में।"
+type: "Cloudflare टूल"
+url: "https://github.com/realchendahuang/sub-store-cloudflare"
+image: "/projects/sub-store-cloudflare.webp"
+imageAlt: "Sub-Store Cloudflare का सब्सक्रिप्शन-सोर्स और कंबाइंड-सब्सक्रिप्शन मैनेजमेंट इंटरफ़ेस"
+icon: "i-simple-icons-cloudflare"
+color: "#f38020"
+tags: ["Cloudflare Workers", "D1", "Mihomo", "sing-box", "सब्सक्रिप्शन मैनेजमेंट"]
+date: 2026-07-09
+status: "ongoing"
+stars: 253

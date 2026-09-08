@@ -1,0 +1,12 @@
+title: "Cherina Pod"
+description: "집중 청취를 위한 이중 언어 팟캐스트 앱. 영어 문장을 탭하면 중국어 번역이 표시되고, 문장 단위 반복·속도 조절·쉐도잉을 지원합니다. 그저 알아듣는 것보다 더 깊이 이해하는 것이 중요합니다."
+type: "인디 제품"
+url: "https://pod.cherina.app/"
+onlineUrl: "https://pod.cherina.app/"
+image: "/projects/cherina-pod.webp"
+imageAlt: "Cherina Pod 홈: 이어서 듣기, 영어 학습, 이중 언어 커버 카드"
+icon: "i-lucide-headphones"
+color: "#e25822"
+tags: ["팟캐스트", "집중 청취", "영어 학습", "이중 언어", "인디 제품"]
+date: 2026-08-26
+status: "ongoing"

@@ -1,0 +1,21 @@
+category: cloudflare
+title: "Przeniosłem agregację subskrypcji do omijania blokad na Cloudflare"
+description: "Przeniosłem agregację subskrypcji do omijania blokad na Cloudflare."
+date: 2026-06-28
+likes: 327
+bookmarks: 479
+reposts: 56
+views: 44611
+url: https://x.com/realchendahuang/status/2071247817109348796
+content: |
+  Przeniosłem agregację subskrypcji do omijania blokad na Cloudflare.
+
+  Uwolniłem jako open source projekt agregujący linki subskrypcji, który wdraża się całkowicie za darmo na Cloudflare.
+
+  Składa wszystkie twoje linki subskrypcji i własne węzły w jeden link, z dołączonymi regułami routingu.
+
+  Naprawdę jeden link – działa w każdym kliencie, bez konfiguracji per klient.
+
+  GitHub: https://github.com/realchendahuang/sub-store-cloudflare
+
+  Pełny wpis: [Przeniosłem agregację subskrypcji z airportu na Cloudflare](/blog/sub-store-cloudflare)

@@ -1,0 +1,40 @@
+category: "ai"
+title: "Bốn chế độ của DeepSeek Harness, giải thích rõ ràng"
+description: "Standard cho dev hằng ngày, PTC cho hiệu quả tác vụ phức tạp, Minimal cho tác vụ nhỏ gọn, và Creator — agent tạo ra agent."
+date: 2026-08-15
+likes: 46
+bookmarks: 60
+reposts: 6
+views: 10141
+url: "https://x.com/realchendahuang/status/2088643296021401829"
+content: |
+  Tôi dành chút thời gian cho bốn chế độ của DeepSeek Harness — đây là ưu, nhược điểm và trường hợp dùng của từng chế độ.
+
+  1. Standard — tốt nhất cho phát triển hằng ngày
+  Standard là Coding Agent đầy đủ mặc định của DeepSeek Harness. Nó mang theo mọi thứ phát triển hằng ngày cần, và đặc biệt hợp với những tác vụ mà bạn chưa biết vấn đề nằm ở đâu và agent cần tự khám phá.
+
+  Nhưng vì phần lớn công việc là LLM → Tool → LLM → Tool → LLM → Tool, số vòng tool calling cứ chất lên khi tác vụ trở nên phức tạp, làm tăng độ trễ và chi phí token.
+
+  Vậy nên: tác vụ thiên về khám phá thì để Standard.
+
+  2. PTC — chế độ hiệu quả cho tác vụ phức tạp
+  PTC cho phép model viết một khối TypeScript gộp nhiều lệnh gọi tool thành một lần thực thi.
+
+  Standard có thể là: tìm file → về model → đọc file → về model → tìm → về model → sửa → về model.
+  PTC trở thành: model viết TypeScript → chạy một lần → tìm + lặp + lọc + đọc + xử lý → trả về kết quả cuối cùng.
+
+  Điều đó cắt giảm số vòng round trip và giữ cho lượng lớn dữ liệu trung gian vô nghĩa không lọt vào context của model. Vậy nên xử lý theo lô, lặp lại, có cấu trúc chính là nơi PTC tỏa sáng.
+
+  3. Minimal — chỉ Bash + Editor cho model
+  Điểm mạnh lớn nhất của nó là sự đơn giản: ít tool, tool schema nhỏ, chi phí prompt cố định thấp.
+
+  Nhưng không có Web, không có Skills, không có Subagent, không có Workflow — tác vụ phức tạp phải bị một agent cày bừa. Và Minimal thiếu Context Compaction đầy đủ như Standard. Vậy nên dù tác vụ ngắn có chi phí token cố định thấp, với những session rất dài có nhiều đầu ra Bash thì nó có thể không thực sự tiết kiệm token.
+
+  Minimal là lựa chọn cho những tác vụ nhỏ rõ ràng, được định nghĩa kỹ — càng rõ và càng ngắn càng tốt.
+
+  4. Creator — dùng agent để tạo ra agent
+  Nó có Standard cộng thêm Cordis Runtime, thử nghiệm plugin và khả năng tạo Preset. Nó còn biến chính agent thành thứ có thể tổ hợp và sáng tạo được.
+
+  Thành thật mà nói hơi dễ thương: model tự dựng một cái quầy để bán hàng, rồi tự chăm chút cái quầy của mình — tự cung tự cấp.
+
+  Nhưng vấn đề lớn nhất của Creator là quyền hạn được nâng cao. Hãy ghi nhớ điều đó.

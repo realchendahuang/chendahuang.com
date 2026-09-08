@@ -1,0 +1,10 @@
+title: "راهنمای عملی Cloudflare"
+description: "از ماژول‌های قابلیت، گردش‌های کاری کدنویسی AI و صورتحساب، تا معماری‌های رایج و اشتباهاتی که واقعاً افراد به آن‌ها می‌خورند — کتاب راهنمایی که Cloudflare را به زبان ساده توضیح می‌دهد."
+url: "https://github.com/realchendahuang/cloudflare-playbook"
+onlineUrl: "https://chendahuang.com/playbook/cloudflare/"
+icon: "i-simple-icons-cloudflare"
+color: "#F38020"
+tags: ["Cloudflare", "کدنویسی AI", "Workers", "استقرار", "معماری"]
+date: 2025-01-01
+status: "ongoing"
+stars: 69

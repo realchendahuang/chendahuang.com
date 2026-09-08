@@ -1,0 +1,23 @@
+category: "ai"
+title: "CEO Command Code pojawił się w moich komentarzach"
+description: "Pominąłem jedną pozycję — rachunek za cache. Okazuje się, że to cache decyduje o kosztach Coding Agenta."
+date: 2026-08-30
+likes: 154
+bookmarks: 89
+reposts: 5
+views: 62171
+url: "https://x.com/realchendahuang/status/2093878404131283101"
+content: |
+  Wczoraj opublikowałem porównanie Command GOAT i OpenCode Go, a CEO Command Code osobiście przyszedł do komentarzy.
+
+  Powiedział, że pominąłem jedną pozycję — rachunek za cache. Podrążyłem temat i Command Code coś tam ma.
+
+  Coding Agent to w istocie wielka maszyna na Prefix Cache. Sesja kilkuset tysięcy tokenów — w kolejnej rundzie prawdziwie nowych tokenów może być tylko kilka tysięcy. Prompt systemowy, narzędzia, kontekst kodu i historia rozmowy prawie się nie zmieniają. Im wyższy wskaźnik trafień cache, tym tańsze są te stare konteksty.
+
+  Command Code niedawno wykonał poważną rundę prac nad Cache Thrashing, głównie w tych strategiach:
+
+  Przypinanie sesji do tego samego GPU poda, żeby utrzymać ciepły KV cache; utrzymywanie stabilnego prefiksu w możliwie nienaruszonym stanie i powstrzymywanie awaryjnych przełączeń dostawców przed psuciem kontekstu; a do tego ich Tool Call Repair, gdzie harness naprawia błędne parametry modelu lokalnie, zamiast wysyłać błędy z powrotem do modelu, żeby próbował ponownie.
+
+  Changelog v0.33.0 dosłownie wymienia: Major Cache Overhaul, medianowa redukcja kosztów 2,9×. Oficjalnie deklarują teraz utrzymywane wskaźniki trafień cache na poziomie 95–99%.
+
+  Ten sam model, ten sam plan za 10 dolarów — ale przez cache różnica narasta i daje zupełnie inny wynik.

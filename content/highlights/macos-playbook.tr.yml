@@ -1,0 +1,24 @@
+category: tools
+title: "Bir macOS Playbook hazırladım"
+description: "Yeni Mac almış, Windows'tan Mac'e geçmiş ya da Mac'i hiç oturmamış hisseden insanlar için."
+date: 2026-06-21
+likes: 13
+bookmarks: 13
+reposts: 2
+views: 1183
+url: https://x.com/realchendahuang/status/2068757325222137863
+content: |
+  Bir macOS Playbook hazırladım.
+
+  Yeni Mac almış, Windows'tan Mac'e geçmiş ya da Mac'inin hiç oturmadığını hisseden insanlar için.
+
+  İçinde şunlar var:
+
+  - Mac aldıktan sonra ilk ne kurulmalı
+  - Windows kullanıcıları macOS'a nasıl uyum sağlar
+  - Rectangle / AltTab / Homebrew gibi araçlar nasıl seçilir
+  - Cihazlar arası nasıl çalışılır
+  - Terminal, Git, SSH ve AI kodlama ortamı nasıl kurulur
+  - Sistem bakımı, sorun giderme, güvenli yedekleme ve cihaz geçişi nasıl yapılır
+
+  Playbook: [chendahuang.com/playbooks](/playbooks)

@@ -1,0 +1,25 @@
+category: ai
+title: "Vì sao Responses API hợp với agent hơn Chat Completions"
+description: "Người cấu hình công cụ AI thường phải đặt API key, đôi khi còn được yêu cầu chọn định dạng giao diện."
+date: 2026-07-09
+likes: 1
+bookmarks: 0
+reposts: 0
+views: 96
+url: https://x.com/realchendahuang/status/2075074946301317487
+content: |
+  Người cấu hình công cụ AI thường phải đặt API key, đôi khi còn được yêu cầu chọn định dạng giao diện.
+
+  Định dạng giao diện, nói nôm na, là:
+
+  cách thức giao tiếp đã được thống nhất giữa bạn và dịch vụ model.
+
+  Ví dụ, “giao diện tương thích OpenAI” mà đa số biết đến thường chỉ Chat Completions. Định dạng này rất giỏi chat và sinh văn bản đơn giản, nên các hãng model khắp nơi đều ưu tiên tương thích với nó.
+
+  Nhưng làm app AI thời nay phức tạp hơn nhiều. Model giờ phải đọc file, lướt web, gọi hàm, chạy code, kết nối MCP, giữ ngữ cảnh, và tiếp tục các bước tiếp theo.
+
+  Đó là chỗ Responses API của OpenAI phát huy giá trị.
+
+  - Model lý luận của nó chạy tốt hơn. Cùng một model, đặt vào cấu trúc giao diện hợp hơn thì hoàn thành việc tốt hơn.
+  - Sinh ra đã hợp với agent. Một lần gọi API có thể gọi nhiều công cụ.
+  - Tốn ít chi phí hơn. So với Chat Completions, tỉ lệ tận dụng cache của Responses API cải thiện 40%–80%. Tận dụng cache cao hơn nghĩa là gọi lặp rẻ hơn và tối ưu độ trễ dễ hơn.

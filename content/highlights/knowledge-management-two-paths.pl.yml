@@ -1,0 +1,56 @@
+category: ai
+title: "Dwie ścieżki zarządzania wiedzą: workflow na Feishu a produkt na Cloudflare"
+description: "Ostatnio na nowo przemyślałem zarządzanie wiedzą."
+date: 2026-07-08
+likes: 3
+bookmarks: 2
+reposts: 0
+views: 439
+url: https://x.com/realchendahuang/status/2074900341456503169
+content: |
+  Ostatnio na nowo przemyślałem zarządzanie wiedzą.
+
+  Zorientowałem się, że są tu dwie ścieżki.
+
+  **Jedna – budowanie na Feishu.**
+
+  Jego zalety są oczywiste:
+
+  darmowe, synchronizacja na wielu urządzeniach, możliwość udostępniania, łatwa współpraca i wystarczająco bogata forma.
+
+  Dokumenty, tabele wielowymiarowe, arkusze, slajdy, płótno, Todo, bazy wiedzy – te moduły w połączeniu pokrywają już mnóstwo osobistych i zespołowych scenariuszy zarządzania wiedzą.
+
+  Szczególnie wierzę w tabele wielowymiarowe.
+
+  Świetnie nadają się na centrum wiedzy.
+
+  Zbieranie informacji, archiwizowanie materiałów, zarządzanie statusami, strukturalna organizacja, wtórna produkcja treści – wszystko może się wokół nich obracać.
+
+  Dodaj do tego CLI Feishu i agentów AI, a Feishu przestaje być zwykłym narzędziem biurowym.
+
+  Staje się czymś w rodzaju systemu workflow wiedzy, którym mogą sterować agenci.
+
+  **Druga – zbudowanie własnego na Cloudflare.**
+
+  Ta ścieżka jest swobodniejsza i lepiej nadaje się do uproduktowienia.
+
+  FlareMo, rzecz, którą teraz buduję, to próba produktu do zarządzania wiedzą na Cloudflare.
+
+  Zaletą Cloudflare jest kompletność bazowych możliwości:
+
+  frontend, backend, baza danych, przechowywanie obiektów, wyszukiwanie wektorowe, AI – wszystko można łączyć.
+
+  Ale wymaga developmentu.
+
+  I sam musisz zaprojektować strukturę danych, doświadczenie wyszukiwania, system uprawnień i logikę produktu.
+
+  Więc mój obecny wniosek:
+
+  - Feishu służy do szybkiego postawienia systemu zarządzania wiedzą, którego możesz użyć już dziś.
+  - Cloudflare służy do zamiany zarządzania wiedzą w naprawdę kontrolowalny, iterowalny produkt.
+
+  Obie ścieżki warto studiować.
+
+  Jedna ciąży ku workflow.
+
+  Druga ku uproduktowieniu.

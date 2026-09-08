@@ -1,0 +1,10 @@
+title: "Podręcznik Cloudflare"
+description: "Od modułów funkcji, workflow programowania z AI i rozliczeń, po typowe architektury i pułapki, na które ludzie naprawdę wpadają — podręcznik, który wyjaśnia Cloudflare prostym językiem."
+url: https://github.com/realchendahuang/cloudflare-playbook
+onlineUrl: https://chendahuang.com/playbook/cloudflare/
+icon: i-simple-icons-cloudflare
+color: "#F38020"
+tags: ["Cloudflare", "Programowanie z AI", "Workers", "Wdrożenia", "Architektura"]
+date: 2025-01-01
+status: ongoing
+stars: 69

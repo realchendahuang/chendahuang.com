@@ -1,0 +1,27 @@
+category: ai
+title: "Dahuang Human Tone：讓天下沒有難讀的 AI 小作文"
+description: "花了一天的時間，我把「去除文章的 AI 味」這件事情好好研究了一番。"
+date: 2026-06-22
+likes: 11
+bookmarks: 23
+reposts: 2
+views: 1104
+url: https://x.com/realchendahuang/status/2069051412240273678
+content: |
+  花了一天的時間，我把「去除文章的 AI 味」這件事情好好研究了一番。
+
+  綜合對比了市面上主流的 Humanizer、去 AI 味 Skill、Prompt 方案。
+
+  再結合我從 2023 年用大語言模型到現在，被 GPT、Claude、Gemini、豆包各種 AI 味反覆折磨出來的經驗。
+
+  做了這個：
+
+  **Dahuang Human Tone**
+
+  一個面向中文語境的去 AI 味 Skill。
+
+  我的願望是：
+
+  讓天下沒有難讀的 AI 小作文。
+
+  GitHub：https://github.com/realchendahuang/dahuang-human-tone

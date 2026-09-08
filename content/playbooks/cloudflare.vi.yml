@@ -1,0 +1,10 @@
+title: "Sổ tay thực hành Cloudflare"
+description: "Từ các mô-đun tính năng, quy trình lập trình bằng AI và chi phí, đến các kiến trúc phổ biến và những cái bẫy mà người ta thực sự dính phải — một cuốn sổ tay giải thích Cloudflare bằng ngôn ngữ dễ hiểu."
+url: https://github.com/realchendahuang/cloudflare-playbook
+onlineUrl: https://chendahuang.com/playbook/cloudflare/
+icon: i-simple-icons-cloudflare
+color: "#F38020"
+tags: ["Cloudflare", "Lập trình AI", "Workers", "Triển khai", "Kiến trúc"]
+date: 2025-01-01
+status: ongoing
+stars: 69

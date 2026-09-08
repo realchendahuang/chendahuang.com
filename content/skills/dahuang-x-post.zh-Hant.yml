@@ -1,0 +1,9 @@
+title: "Dahuang X Post"
+description: "把中文想法、專案更新和長文改成適合 X 訊息流的短帖或 Thread，並檢查開頭、結構和傳播潛力。"
+url: "https://github.com/realchendahuang/dahuang-x-post"
+install: "npx skills add realchendahuang/dahuang-x-post -g"
+icon: "i-simple-icons-x"
+color: "#111111"
+tags: ["Agent Skill", "X", "中文寫作", "Hook", "Thread"]
+date: 2026-07-10
+stars: 0

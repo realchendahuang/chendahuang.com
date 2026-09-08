@@ -1,0 +1,23 @@
+category: "ai"
+title: "Command Code'ın CEO'su yorumlarıma geldi"
+description: "Bir kalem satırı atlamışım — cache faturası. Meğer önbellekleme, Kodlama Ajanı maliyetlerini belirliyormuş."
+date: 2026-08-30
+likes: 154
+bookmarks: 89
+reposts: 5
+views: 62171
+url: "https://x.com/realchendahuang/status/2093878404131283101"
+content: |
+  Dün Command GOAT ile OpenCode Go karşılaştırması paylaşmıştım; Command Code'ın CEO'su bizzat yorum yapmaya geldi.
+  
+  Bir kalem satırı atladığımı söyledi — cache faturası. İşin içine girdim, Command Code'da kayda değer bir şey var.
+  
+  Bir Kodlama Ajanı, özünde kocaman bir Prefix Cache makinesidir. Birkaç yüz bin token'lık bir oturumda — bir sonraki turda gerçekten yeni olan token'lar yalnızca birkaç bin olabilir. Sistem promptu, araçlar, kod bağlamı ve konuşma geçmişi neredeyse hiç değişmez. Cache isabet oranı ne kadar yüksekse, o eski bağlamlar o kadar ucuzlar.
+  
+  Command Code son zamanlarda ciddi bir Cache Thrashing çalışması yapmış, başlıca şu stratejilerle:
+  
+  Oturumları aynı GPU pod'una sabitleyip KV cache'i sıcak tutmak; kararlı öneki olabildiğince bozulmadan korumak ve sağlayıcı fallback'lerinin bağlamı bozmasını engellemek; bir de Tool Call Repair — modelin yanlış parametrelerini hata mesajını modele geri gönderip denettirmek yerine harness yerelde düzeltiyor.
+  
+  v0.33.0 sürüm notlarında gerçekten şunlar yazıyor: Major Cache Overhaul, medyan maliyet düşüşü 2.9×. Artık resmî olarak %95–99 arası kalıcı cache isabet oranı iddia ediyorlar.
+  
+  Aynı model, aynı 10 dolarlık plan — ama cache sayesinde fark, bambaşka bir sonuca katlanıyor.

@@ -1,0 +1,22 @@
+category: ai
+title: "DeepSeek Harness با APIهای شخص ثالث خطای unknown tool میدهد: مشکل فرمت داده در گیتوی"
+description: "اسم ابزار واقعاً گم نشده — گیتوی فرمت داده را خراب کرده."
+date: 2026-08-18
+likes: 2
+bookmarks: 0
+reposts: 2
+views: 2313
+url: https://x.com/realchendahuang/status/2089636108271550484
+content: |
+  مشکل سازگاری DeepSeek Harness + API شخص ثالث:
+
+  وقتی عامل (agent) ابزارهایی مثل Bash را صدا میزند، با خطای `ToolNotFoundError: unknown tool ""` مواجه میشود، که انگار ابزار هرگز ثبت نشده.
+
+  چیزی که واقعاً اتفاق میافتد: گیتوی فرمت دادهای متفاوت از API رسمی DeepSeek برمیگرداند و اسم ابزار جایی در این بین گم میشود.
+
+  چند لینک GitHub Discussions مرتبط:
+
+  - در deepseek-ai/dsh#issues دنبال «unknown tool» بگردید
+  - کسانی که گیتوی self-hosted اجرا میکنند (OpenRouter / OneAPI / new-api) بیشتر از همه ممکن است به این تله بخورند
+
+  روش دیباگ: یک درخواست و پاسخ کامل tool_call را بگیر و چک کن که آیا اسم ابزار در لاگهای گیتوی رشتهی خالی است یا نه.

@@ -1,0 +1,52 @@
+seo:
+  title: "Chen Dahuang - آثار و محتوا"
+  description: "ویترین شخصی آثار و محتوای Chen Dahuang؛ شامل پروژه‌ها، راهنماها، مهارت‌های ایجنت (Agent Skill)، مقاله‌ها و پست‌ها."
+title: "Chen Dahuang"
+description: |
+  اکنون | KOSX @kosxai — مسئول استارتاپ‌ها و توسعهٔ مستقل در شرق چین | شریک یک شرکت هوش مصنوعی در نینگبو
+  حوزهٔ فعالیت | Indie Hacker | مدیر محصول سابق هوش مصنوعی | بینش‌های محصول / شوخ‌طبعی
+  در حال ساخت | یادداشت‌های FlareMo | پاکسازی فید X با FeedSieve | پادکست دوزبانهٔ Cherina Pod
+hero:
+  links:
+    - label: "مشاهدهٔ پروژه‌ها"
+      to: /projects
+      color: "primary"
+    - label: "GitHub"
+      to: https://github.com/realchendahuang
+      color: "neutral"
+      target: "_blank"
+  images:
+    - src: /projects/cherina-pod.webp
+      alt: Cherina Pod، اپلیکیشن گوش دادن به پادکست دوزبانه
+    - src: /projects/feedsieve.webp
+      alt: FeedSieve، ابزار پاک‌سازی فید X
+    - src: /projects/flaremo.webp
+      alt: FlareMo، مدیریت دانش شخصی
+    - src: /projects/sub-store-cloudflare.webp
+      alt: Sub-Store Cloudflare، ابزار تجمیع اشتراک‌ها
+    - src: /projects/pi-config.webp
+      alt: pi-config، پیکربندی Pi Coding Agent
+    - src: /projects/deepmate.webp
+      alt: DeepMate، پنل کنترل AI Harness
+    - src: /projects/hermes-memory.webp
+      alt: Hermes Memory، افزونهٔ حافظهٔ دائمی برای OpenCode
+    - src: /projects/god-museum.webp
+      alt: God-Museum، گالری اسطوره‌های فرهنگ‌های مختلف
+    - src: /projects/ai-chronicle.webp
+      alt: AI Chronicle، مرور تاریخچهٔ صنعت هوش مصنوعی
+blog:
+  title: "جدیدترین مقاله‌ها"
+highlights:
+  title: "پست‌های برگزیده"
+  links:
+    - label: "مشاهدهٔ همه"
+      icon: "i-lucide-arrow-right"
+      to: "/highlights"
+      color: "neutral"
+      variant: "soft"
+    - label: "صفحهٔ X"
+      icon: "i-simple-icons-x"
+      to: "https://x.com/realchendahuang"
+      target: "_blank"
+      color: "neutral"
+      variant: "soft"

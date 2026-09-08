@@ -1,0 +1,25 @@
+category: ai
+title: "為什麼說 Responses API 比 Chat Completions 更適合 Agent"
+description: "很多人平常使用 AI 工具，都需要設定 API Key，有時候還會要你選擇介面格式。"
+date: 2026-07-09
+likes: 1
+bookmarks: 0
+reposts: 0
+views: 96
+url: https://x.com/realchendahuang/status/2075074946301317487
+content: |
+  很多人平常使用 AI 工具，都需要設定 API Key，有時候還會要你選擇介面格式。
+
+  這個介面格式可以簡單理解成：
+
+  你和模型服務之間約定好的溝通方式。
+
+  比如以前大家最熟的 OpenAI 相容介面，很多時候指的就是 Chat Completions。這套格式很適合聊天，也很適合簡單的文字生成，所以海內外很多模型廠商都會優先相容它。
+
+  但現在做 AI 應用，場景已經複雜很多了。模型常常要讀檔案、查網頁、呼叫函式、執行程式碼、連接 MCP、保留上下文，再繼續完成後面的任務。
+
+  這時候，OpenAI 推出的 Responses API 的價值就出來了。
+
+  - 它的推理模型效果更好。同一個模型，放在更合適的介面結構裡，任務完成的成效會更好。
+  - 它原生就適合 Agent。模型可以在一次 API 請求裡呼叫多個工具。
+  - 它更省錢。Responses API 的快取利用率比 Chat Completions 提升了 40% 到 80%。快取利用率越高，重複呼叫的成本就越低，回應速度也更容易最佳化。

@@ -1,0 +1,10 @@
+title: "OMPChamber"
+description: "کلاینت دسکتاپ برای زمان اجرای عامل OMP (Oh My Pi) که روی پایهٔ رابط OpenChamber ساخته شده — OMP توانایی عامل را تأمین می‌کند، OpenChamber تجربه را می‌سازد. کارهای عامل را اجرا کنید، کنترل را در دست بگیرید و از هر جا عرضه کنید."
+type: "کلاینت دسکتاپ عامل"
+url: "https://github.com/realchendahuang/OMPChamber"
+icon: "i-lucide-monitor"
+color: "#60a5fa"
+tags: ["OMP", "Agent", "Desktop", "OpenChamber", "Rust"]
+date: 2026-08-10
+status: "ongoing"
+stars: 55

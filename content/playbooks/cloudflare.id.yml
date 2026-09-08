@@ -1,0 +1,10 @@
+title: Panduan Praktis Cloudflare
+description: Dari modul fitur, alur kerja pemrograman AI, dan penagihan, hingga arsitektur umum dan jebakan yang benar-benar dialami orang — sebuah buku pedoman yang menjelaskan Cloudflare dalam bahasa yang sederhana.
+url: https://github.com/realchendahuang/cloudflare-playbook
+onlineUrl: https://chendahuang.com/playbook/cloudflare/
+icon: i-simple-icons-cloudflare
+color: "#F38020"
+tags: ["Cloudflare", "Pemrograman AI", "Workers", "Deployment", "Arsitektur"]
+date: 2025-01-01
+status: ongoing
+stars: 69

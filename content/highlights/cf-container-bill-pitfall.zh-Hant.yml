@@ -1,0 +1,15 @@
+category: cloudflare
+title: "Cloudflare Container 踩坑：除錯沒 stop 扣了 4 美元"
+description: "Cloudflare Container 受害者出現了。"
+date: 2026-06-27
+likes: 0
+bookmarks: 0
+reposts: 0
+views: 353
+url: https://x.com/realchendahuang/status/2070820905224441922
+content: |
+  Cloudflare Container 受害者出現了。
+
+  因為寫的程式碼還在除錯階段，stop 指令沒有生效。
+
+  導致一個 Container 連續運行了 7 天，扣了我 4 美元。

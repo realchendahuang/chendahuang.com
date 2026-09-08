@@ -38,4 +38,16 @@ blog:
   title: "Последние статьи"
 highlights:
   title: "Лучшие посты"
+  links:
+    - label: "Смотреть все"
+      icon: "i-lucide-arrow-right"
+      to: "/highlights"
+      color: "neutral"
+      variant: "soft"
+    - label: "Профиль в X"
+      icon: "i-simple-icons-x"
+      to: "https://x.com/realchendahuang"
+      target: "_blank"
+      color: "neutral"
+      variant: "soft"
 links: []

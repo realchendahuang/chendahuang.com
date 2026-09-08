@@ -1,0 +1,16 @@
+category: ai
+title: "DeepSeek V4 Flash tidak punya multimodalitas? Tambal dengan Qwen-3.7-Flash"
+description: "Setelah riset, ditemukan model vision paling hemat biaya: Qwen-3.7-Flash."
+date: 2026-08-06
+likes: 659
+bookmarks: 675
+reposts: 78
+views: 89530
+url: https://x.com/realchendahuang/status/2085265465564336327
+content: |
+  Banyak orang mengeluh DeepSeek V4 Flash tidak punya multimodalitas.
+  Saya riset: model vision paling hemat biaya saat ini adalah Qwen-3.7-Flash.
+  Mengenali satu gambar biayanya 0,0004–0,001 yuan; mengenali 1.000 gambar biasa ≈ 0,6–0,8 yuan.
+  Berdasarkan itu, kita sampai pada paket lengkap AI paling hemat ala anak kos:
+  1. Paket OpenCode Go $5, pakai DeepSeek V4 Flash untuk nulis kode
+  2. https://t.co/mlvdSTaD6M

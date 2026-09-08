@@ -1,0 +1,9 @@
+title: "XuanJi"
+description: "Ruang kerja ramalan AI pribadi dengan satu pemilik di aplikasi Cloudflare full-stack: BaZi, astrologi Barat dan transit, Zi Wei Dou Shu, Tarot, I Ching, kecocokan dan panduan harian. Perhitungan deterministik untuk fakta, AI untuk tafsirannya."
+type: "Aplikasi ramalan AI"
+url: "https://github.com/realchendahuang/xuanji"
+icon: "i-lucide-moon-star"
+color: "#7c3aed"
+tags: ["Cloudflare", "TanStack", "Hono", "AI", "BaZi", "Zi Wei"]
+date: 2026-07-11
+status: "ongoing"

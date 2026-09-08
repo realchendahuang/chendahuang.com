@@ -1,0 +1,20 @@
+category: tools
+title: "Firefox: 50G VPN miễn phí mỗi tháng"
+description: "Trời ơi! Tôi vừa mới biết Firefox cho mỗi người dùng 50G dung lượng VPN miễn phí mỗi tháng."
+date: 2026-06-30
+likes: 1639
+bookmarks: 2268
+reposts: 372
+views: 161249
+url: https://x.com/realchendahuang/status/2071963210689970673
+content: |
+  Trời ơi! Tôi vừa mới biết trình duyệt Firefox cho mỗi người dùng 50G dung lượng VPN miễn phí mỗi tháng.
+
+  Cực kỳ hữu ích cho cái tình huống oái oăm gà có trước hay trứng có trước.
+
+  Cách dùng:
+
+  1. Gõ `about:config` vào thanh địa chỉ
+  2. Vào tùy chọn nâng cao và bấm "Show all"
+  3. Tìm `browser.ipProtection.enabled`
+  4. Chuyển giá trị của mục đó thành true

@@ -1,0 +1,9 @@
+title: "Dahuang X Post"
+description: "중국어 아이디어, 프로젝트 업데이트, 장문을 X 피드에 맞는 짧은 게시물이나 스레드로 바꿔주고, 서두·구조·확산 가능성까지 점검합니다."
+url: "https://github.com/realchendahuang/dahuang-x-post"
+install: "npx skills add realchendahuang/dahuang-x-post -g"
+icon: "i-simple-icons-x"
+color: "#111111"
+tags: ["Agent Skill", "X", "중국어 작성", "Hook", "Thread"]
+date: 2026-07-10
+stars: 0

@@ -1,0 +1,9 @@
+title: "XuanJi"
+description: "फ़ुल-स्टैक Cloudflare ऐप पर चलने वाला एक निजी, एक-मालिक (single-owner) AI भविष्यवाणी वर्कस्पेस: BaZi, पश्चिमी ज्योतिष और ट्रांज़िट, Zi Wei Dou Shu, टैरो, I Ching, अनुकूलता जाँच और दैनिक मार्गदर्शन। तथ्यों के लिए निश्चित (deterministic) गणना, व्याख्या के लिए AI।"
+type: "AI भविष्यवाणी ऐप"
+url: "https://github.com/realchendahuang/xuanji"
+icon: "i-lucide-moon-star"
+color: "#7c3aed"
+tags: ["Cloudflare", "TanStack", "Hono", "AI", "BaZi", "Zi Wei"]
+date: 2026-07-11
+status: "ongoing"

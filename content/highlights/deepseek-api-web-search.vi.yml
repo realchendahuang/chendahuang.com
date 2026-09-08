@@ -1,0 +1,15 @@
+category: ai
+title: "API của DeepSeek có sẵn tìm kiếm web — xài chùa luôn cả tìm kiếm chính thức"
+description: "API chính thức của DeepSeek thực ra có tích hợp sẵn tìm kiếm web."
+date: 2026-08-05
+likes: 1037
+bookmarks: 885
+reposts: 89
+views: 230537
+url: https://x.com/realchendahuang/status/2084826975102030013
+content: |
+  Phát hiện ra thứ hay ho — DeepSeek thực sự tích hợp tìm kiếm web ngay trong API của mình.
+  Gọi model deepseek-v4-flash qua giao diện Responses, chỉ cần khai báo tool web_search trong tham số request là dùng trực tiếp được khả năng tìm kiếm chạy phía server của họ.
+  Không cần tích hợp công cụ tìm kiếm bên thứ ba, không cần xin riêng một API key tìm kiếm.
+  Toàn bộ pipeline tìm kiếm do đội ngũ chính thức của họ vận hành.
+  Nguyên văn: https://t.co/D4AXo7crHw

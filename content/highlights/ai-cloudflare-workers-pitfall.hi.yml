@@ -1,0 +1,20 @@
+category: cloudflare
+title: "जब AI Cloudflare प्रोजेक्ट लिखता है, तो वह क्रैश हो जाता है — और इसका कारण सिंटैक्स नहीं है"
+description: "AI Workers को Node.js की तरह लिखता रहता है और Bindings को पर्यावरण चर (environment variables) मान लेता है।"
+date: 2026-06-22
+likes: 23
+bookmarks: 42
+reposts: 4
+views: 1462
+url: https://x.com/realchendahuang/status/2068853978004365739
+content: |
+  बहुत से लोग Cloudflare प्रोजेक्ट लिखने के लिए AI का इस्तेमाल करते हैं, और जब वह बिगड़ जाता है, तो इसका कारण सिंटैक्स नहीं होता।
+  असली समस्याएँ:
+  AI Workers को ऐसे लिखना जैसे वे Node.js हों
+  Bindings को process.env जैसा मान लेना
+  await लिखना भूल जाना
+  रिक्वेस्ट स्टेट को ग्लोबल में छिपाना
+  यह न जानना कि स्टैटिक एसेट रिक्वेस्ट मुफ्त हैं
+  और अपने ही R2 को Worker के अंदर से REST API के ज़रिए कॉल करना
+  इन सभी गड्ढों को मैंने Cloudflare Playbook में समेट दिया है।
+  और वैसे, मैंने इस पर भी काम किया

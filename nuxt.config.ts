@@ -148,7 +148,9 @@ export default defineNuxtConfig({
       const locale = match ? match[1] : DEFAULT_LOCALE
       ctx.content.locale = locale
       if (match && typeof ctx.content.path === 'string') {
-        const suffix = new RegExp(`\\.${locale}$`)
+        // Nuxt Content 已将路径小写化(如 /projects.zh-hant),而 locale 码保留原始大小写,
+        // 用 i 标志同时匹配两种形式,否则 zh-Hant 这类含大写码的语言去不掉后缀。
+        const suffix = new RegExp(`\\.${locale}$`, 'i')
         ctx.content.path = ctx.content.path.replace(suffix, '')
       }
     }

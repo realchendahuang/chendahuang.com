@@ -1,0 +1,8 @@
+title: "Dahuang AI Tone"
+description: "Metni GPT, Claude, Gemini veya Doubao'nun AI tarzına benzeyecek şekilde yeniden yazın — ya da bir metnin en çok hangi modele benzediğini tespit edin."
+url: "https://github.com/realchendahuang/dahuang-ai-tone"
+install: npx skills add realchendahuang/dahuang-ai-tone -g
+icon: "i-lucide-fingerprint"
+color: "#a855f7"
+tags: ["Agent Skill", "AI tadı", "Model stili", "Stil tespiti", "Çince yazım"]
+date: 2025-05-01

@@ -1,0 +1,15 @@
+category: cloudflare
+title: "Cái bẫy Cloudflare Container: quên stop khi gỡ lỗi, bị trừ 4 đô"
+description: "Một nạn nhân của Cloudflare Container đã xuất hiện."
+date: 2026-06-27
+likes: 0
+bookmarks: 0
+reposts: 0
+views: 353
+url: https://x.com/realchendahuang/status/2070820905224441922
+content: |
+  Một nạn nhân của Cloudflare Container đã xuất hiện.
+
+  Vì code tôi đang viết vẫn còn trong giai đoạn gỡ lỗi, lệnh stop không hề có tác dụng.
+
+  Thế là một Container chạy liên tục 7 ngày và tốn của tôi 4 đô.

@@ -1,0 +1,13 @@
+category: tools
+title: "Solusi terpadu untuk mengelola langganan circumvention"
+description: "Airport + node VPS mandiri dalam satu atap: manajemen terpadu, routing terpadu, satu tautan langganan keluar."
+date: 2026-06-29
+likes: 92
+bookmarks: 137
+reposts: 14
+views: 10207
+url: https://x.com/realchendahuang/status/2071465309085790305
+content: |
+  Kalau kamu sudah membeli airport circumvention dan juga membangun node VPS sendiri, dan ingin keduanya dikelola secara seragam, di-routing seragam, dan keluar sebagai satu tautan langganan.
+  Kamu ingin aturan routing, penyaringan node, dan logika kombinasi dipelihara di sisi server, bukan dikonfigurasi klien per klien.
+  Kamu ingin menjalankannya dengan deployment ringan Cloudflare — tanpa server, tanpa layanan database, tanpa pekerjaan latar belakang kompleks yang harus dipelihara.

@@ -1,0 +1,10 @@
+title: "dsh-guide · سفرِ یک پیام"
+description: "به درون یک Coding Agent بروید: یک پیام را در هفت صحنهٔ سه‌بعدی دنبال کنید، در حالی که در دل یک عامل تولیدی (DeepSeek Harness) سفر می‌کند. وب‌سایتی تعاملی برای توضیح کد منبع."
+type: "وب‌سایت تعاملی توضیحی"
+url: "https://github.com/realchendahuang/dsh-guide"
+onlineUrl: "https://chendahuang.com/dsh"
+icon: "i-lucide-send"
+color: "#2dd4bf"
+tags: ["DeepSeek Harness", "3D", "WebGL", "تعاملی"]
+date: 2026-08-13
+status: "ongoing"

@@ -1,0 +1,27 @@
+category: ai
+title: "Khái niệm Preset của DeepSeek Harness: đơn vị phân phối của agent"
+description: "Tải các Preset khác nhau lên cùng một model là có những agent hoàn toàn khác nhau."
+date: 2026-08-17
+likes: 161
+bookmarks: 0
+reposts: 23
+views: 38000
+url: https://x.com/realchendahuang/status/2089206966015176725
+content: |
+  Dạo này tôi đang nghiên cứu DeepSeek Harness. Có một khái niệm tên là Preset đáng để chú ý.
+
+  Preset có thể hiểu là đơn vị phân phối của một agent. Tải các Preset khác nhau lên cùng một model, nó sẽ thành những agent hoàn toàn khác nhau.
+
+  Khác biệt lớn nhất giữa Preset và Skill là gì?
+
+  - Một Skill phân tích báo cáo tài chính: dạy agent cách phân tích báo cáo tài chính.
+  - Một Preset phân tích báo cáo tài chính: gói gọn Skill phân tích báo cáo tài chính, tìm kiếm web, Browser, PDF, Python, subagents, prompt nghiên cứu và chiến lược context tất cả vào một mớ — trao cho bạn một agent dùng được ngay.
+
+  Trong tương lai, hai tầng thị trường có khả năng sẽ xuất hiện cùng lúc.
+
+  - Một: marketplace Plugin / Skill, chủ yếu cho developer và người dùng nâng cao dựng agent;
+  - Một: marketplace Preset / Agent, thực sự hướng tới người dùng phổ thông.
+
+  Điều này thực ra rất gần với logic của App Store. App Store trưng bày một ứng dụng hoàn chỉnh; một Preset trưng bày một ứng dụng agent hoàn chỉnh.
+
+  Trước đây người ta chia sẻ prompt. Rồi bắt đầu chia sẻ skill. Tiếp theo, chắc họ sẽ chia sẻ Preset.

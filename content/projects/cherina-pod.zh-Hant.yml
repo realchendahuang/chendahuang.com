@@ -1,0 +1,12 @@
+title: "Cherina Pod"
+description: "雙語播客精聽應用程式。點一句英文，跳出中文翻譯；按句循環、調整速度、跟讀——聽懂，比聽懂更多更重要。"
+type: "獨立產品"
+url: "https://pod.cherina.app/"
+onlineUrl: "https://pod.cherina.app/"
+image: "/projects/cherina-pod.webp"
+imageAlt: "Cherina Pod 首頁：繼續聽、英語學習、雙語封面卡片"
+icon: "i-lucide-headphones"
+color: "#e25822"
+tags: ["播客", "精聽", "英語學習", "雙語", "獨立產品"]
+date: 2026-08-26
+status: "ongoing"

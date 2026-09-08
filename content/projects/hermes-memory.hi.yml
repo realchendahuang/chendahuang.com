@@ -1,0 +1,12 @@
+title: "Hermes Memory for OpenCode"
+description: "OpenCode एजेंट्स के लिए क्रॉस-सेशन पर्सिस्टेंट मेमोरी — यूज़र प्रेफ़रेंस, प्रोजेक्ट कन्वेंशन और आपके सामने आ चुकी परेशानियाँ, सब कुछ Markdown में स्टोर होता है।"
+type: "OpenCode प्लगइन"
+url: "https://github.com/realchendahuang/opencode-hermes-memory"
+image: "/projects/hermes-memory.webp"
+imageAlt: "Hermes Memory का गहरे नीले रंग का प्रोडक्ट कार्ड, जिस पर सुनहरा बैज है"
+icon: "i-lucide-brain-circuit"
+color: "#fbbf24"
+tags: ["OpenCode", "Plugin", "Memory", "Markdown", "MIT"]
+date: 2026-08-11
+status: "ongoing"
+stars: 9

@@ -1,0 +1,38 @@
+category: cloudflare
+title: "Workers chính là những lao động cyber"
+description: "Tôi cảm thấy hầu hết mọi người vẫn hiểu chưa tới 1% về Cloudflare Workers."
+date: 2026-06-16
+likes: 1
+bookmarks: 2
+reposts: 1
+views: 1743
+url: https://x.com/realchendahuang/status/2066895041910763934
+content: |
+  Tôi cảm thấy hầu hết mọi người vẫn hiểu chưa tới 1% về Cloudflare Workers.
+
+  Workers chính là những lao động cyber.
+
+  Chúng làm hộ bạn những việc cực nhọc, bẩn thỉu phía sau website của bạn.
+
+  Gửi form, tải file lên, gọi AI, xác thực đăng nhập, xử lý thông báo thanh toán, và API của một sản phẩm nhỏ — Workers làm hết.
+
+  Điều điên rồ nhất của Workers: người dùng miễn phí có 100.000 request mỗi ngày mà không tốn một xu.
+
+  100.000 nghĩa là gì?
+
+  Giả sử site của bạn có 1.000 người dùng mỗi ngày. Dù chạy không ngừng 24 giờ và mỗi giây đều có người ghé thăm, một ngày cũng chỉ có 86.400 lượt — vẫn không đủ để phá ngân sách.
+
+  Nếu bạn thực sự xài hết cái ngân sách miễn phí đó...
+
+  thì còn chờ gì nữa? Sắp giàu to rồi đấy.
+
+  Ngay bây giờ bạn có thể viết logic và cứ giao cho một Worker chạy.
+  Kết hợp với framework API Hono, đó chính là best practice.
+
+  Đây chính là thứ làm nên sự tuyệt vời của Cloudflare Workers.
+
+  Trả tiền à? Không đời nào.
+
+  Cloudflare có tấm lòng nhân hậu.
+
+  Nó không nỡ nhìn bạn tiêu tiền.

@@ -1,0 +1,52 @@
+seo:
+  title: "陳大黃 - 作品與內容"
+  description: "陳大黃的個人作品與內容展示站。收錄專案、Playbook、Agent Skill、文章與貼文。"
+title: "陳大黃"
+description: |
+  現在｜KOSX @kosxai — 華東新創與獨立開發負責人｜寧波 AI 科技公司合夥人
+  賽道｜Indie Hacker｜前 AI 產品經理｜產品洞察/笑話擔當
+  進行中｜FlareMo 筆記｜FeedSieve X 清理｜Cherina Pod 雙語播客
+hero:
+  links:
+    - label: "查看專案"
+      to: /projects
+      color: "primary"
+    - label: "GitHub"
+      to: https://github.com/realchendahuang
+      color: "neutral"
+      target: "_blank"
+  images:
+    - src: /projects/cherina-pod.webp
+      alt: Cherina Pod 雙語播客精聽 App
+    - src: /projects/feedsieve.webp
+      alt: FeedSieve X 資訊流清理工具
+    - src: /projects/flaremo.webp
+      alt: FlareMo 個人知識管理
+    - src: /projects/sub-store-cloudflare.webp
+      alt: Sub-Store Cloudflare 訂閱聚合工具
+    - src: /projects/pi-config.webp
+      alt: pi-config Pi Coding Agent 設定
+    - src: /projects/deepmate.webp
+      alt: DeepMate AI Harness 控制台
+    - src: /projects/hermes-memory.webp
+      alt: Hermes Memory OpenCode 持久記憶外掛
+    - src: /projects/god-museum.webp
+      alt: God-Museum 跨文明神話展館
+    - src: /projects/ai-chronicle.webp
+      alt: AI Chronicle 產業編年史
+blog:
+  title: "最新文章"
+highlights:
+  title: "精選貼文"
+  links:
+    - label: "查看全部"
+      icon: "i-lucide-arrow-right"
+      to: "/highlights"
+      color: "neutral"
+      variant: "soft"
+    - label: "X 首頁"
+      icon: "i-simple-icons-x"
+      to: "https://x.com/realchendahuang"
+      target: "_blank"
+      color: "neutral"
+      variant: "soft"

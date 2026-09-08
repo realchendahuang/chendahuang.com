@@ -1,0 +1,10 @@
+title: Panduan Praktis Codex
+description: Buku pedoman praktis untuk memperlakukan Codex sebagai sistem kolaborasi jangka panjang — dari pemilihan antarmuka, kontrak prompt, dan rekayasa konteks, hingga Skills, MCP, Review, CI, dan rilis.
+url: https://github.com/realchendahuang/codex-playbook
+onlineUrl: https://chendahuang.com/playbook/codex/
+icon: i-lucide-bot
+color: "#10a37f"
+tags: ["Codex", "Agent", "Rekayasa konteks", "Skills", "MCP"]
+date: 2026-07-10
+status: ongoing
+stars: 1

@@ -1,0 +1,9 @@
+title: "XuanJi"
+description: "Cloudflare full-stack uygulaması üzerinde tek sahipli, özel bir AI fal çalışma alanı: BaZi, Batı astrolojisi ve transitler, Zi Wei Dou Shu, Tarot, I Ching, uyum analizi ve günlük rehberlik. Olgular için deterministik hesaplama, yorum için AI."
+type: "AI fal uygulaması"
+url: "https://github.com/realchendahuang/xuanji"
+icon: "i-lucide-moon-star"
+color: "#7c3aed"
+tags: ["Cloudflare", "TanStack", "Hono", "AI", "BaZi", "Zi Wei"]
+date: 2026-07-11
+status: "ongoing"

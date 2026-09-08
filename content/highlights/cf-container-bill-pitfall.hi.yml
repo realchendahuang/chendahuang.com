@@ -1,0 +1,15 @@
+category: cloudflare
+title: "Cloudflare Container का गड्ढा: डीबगिंग के दौरान stop नहीं किया, $4 का बिल"
+description: "Cloudflare Container का एक पीड़ित सामने आ गया है।"
+date: 2026-06-27
+likes: 0
+bookmarks: 0
+reposts: 0
+views: 353
+url: https://x.com/realchendahuang/status/2070820905224441922
+content: |
+  Cloudflare Container का एक पीड़ित सामने आ गया है।
+
+  क्योंकि मैं जो कोड लिख रहा था वह अभी डीबगिंग चरण में था, stop कमांड कभी प्रभावी नहीं हुआ।
+
+  तो एक Container लगातार 7 दिनों तक चलता रहा और मुझसे $4 काट लिए।

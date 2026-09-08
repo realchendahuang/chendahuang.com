@@ -1,0 +1,52 @@
+seo:
+  title: "Chen Dahuang — prace i treści"
+  description: "Osobista prezentacja prac i treści Chena Dahuanga. Projekty, poradniki, agent skills, artykuły i posty."
+title: "Chen Dahuang"
+description: |
+  Teraz | KOSX @kosxai — kierownik ds. startupów i niezależnego developmentu we Wschodnich Chinach | Partner w firmie AI w Ningbo
+  Kierunek | Indie Hacker | Były product manager AI | Wnioski o produktach / żartowniś
+  W trakcie | FlareMo (notatki) | FeedSieve (czyszczenie X) | Cherina Pod (dwujęzyczny podcast)
+hero:
+  links:
+    - label: "Zobacz projekty"
+      to: /projects
+      color: "primary"
+    - label: "GitHub"
+      to: https://github.com/realchendahuang
+      color: "neutral"
+      target: "_blank"
+  images:
+    - src: /projects/cherina-pod.webp
+      alt: Cherina Pod — aplikacja do słuchania dwujęzycznego podcastu
+    - src: /projects/feedsieve.webp
+      alt: FeedSieve — narzędzie do czyszczenia kanału X
+    - src: /projects/flaremo.webp
+      alt: FlareMo — osobiste zarządzanie wiedzą
+    - src: /projects/sub-store-cloudflare.webp
+      alt: Sub-Store Cloudflare — narzędzie do agregacji subskrypcji
+    - src: /projects/pi-config.webp
+      alt: pi-config — konfiguracja Pi Coding Agent
+    - src: /projects/deepmate.webp
+      alt: DeepMate — panel sterowania AI Harness
+    - src: /projects/hermes-memory.webp
+      alt: Hermes Memory — wtyczka trwałej pamięci dla OpenCode
+    - src: /projects/god-museum.webp
+      alt: God-Museum — galeria mitów różnych cywilizacji
+    - src: /projects/ai-chronicle.webp
+      alt: AI Chronicle — kronika branży AI
+blog:
+  title: "Najnowsze artykuły"
+highlights:
+  title: "Wyróżnione posty"
+  links:
+    - label: "Zobacz wszystkie"
+      icon: "i-lucide-arrow-right"
+      to: "/highlights"
+      color: "neutral"
+      variant: "soft"
+    - label: "Strona X"
+      icon: "i-simple-icons-x"
+      to: "https://x.com/realchendahuang"
+      target: "_blank"
+      color: "neutral"
+      variant: "soft"

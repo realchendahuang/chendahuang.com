@@ -1,0 +1,10 @@
+title: "OMPChamber"
+description: "Một client desktop cho agent runtime OMP (Oh My Pi) xây dựng trên nền tảng giao diện OpenChamber — OMP đảm nhiệm sức mạnh của agent, OpenChamber đảm nhiệm trải nghiệm. Chạy các tác vụ agent, nắm quyền kiểm soát và bắt tay vào việc từ bất cứ đâu."
+type: "Client desktop cho Agent"
+url: "https://github.com/realchendahuang/OMPChamber"
+icon: "i-lucide-monitor"
+color: "#60a5fa"
+tags: ["OMP", "Agent", "Desktop", "OpenChamber", "Rust"]
+date: 2026-08-10
+status: "ongoing"
+stars: 55

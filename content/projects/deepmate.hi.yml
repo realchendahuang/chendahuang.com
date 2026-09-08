@@ -1,0 +1,12 @@
+title: "DeepMate"
+description: "DeepSeek Harness के लिए एक हल्का-फुल्का साथी (companion) और कंट्रोल पैनल — रनटाइम, मॉडल, प्रोवाइडर, प्रोफ़ाइल, प्लगइन और Doctor सेल्फ-चेक, सब एक ही जगह पर।"
+type: "Rust · Tauri डेस्कटॉप ऐप"
+url: "https://github.com/realchendahuang/DeepMate"
+image: "/projects/deepmate.webp"
+imageAlt: "DeepMate का काले-लाल रंगों वाला प्रोडक्ट कार्ड"
+icon: "i-lucide-cpu"
+color: "#f87171"
+tags: ["Rust", "Tauri", "DeepSeek", "Control Plane", "Doctor", "MIT"]
+date: 2026-08-17
+status: "ongoing"
+stars: 2

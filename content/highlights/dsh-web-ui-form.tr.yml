@@ -1,0 +1,19 @@
+category: "ai"
+title: "DeepSeek Harness formu tutturmuş"
+description: "Önce insanlık dışı bir TUI yok — kutudan Web UI çıkıyor. Yükleyici yok, gömülü tarayıcı motoru yok, neredeyse hiç depolama kaplamıyor."
+date: 2026-08-13
+likes: 101
+bookmarks: 20
+reposts: 3
+views: 53910
+url: "https://x.com/realchendahuang/status/2087903125302862187"
+content: |
+  Bence DeepSeek Harness form faktörünü tutturdu.
+  
+  Doğrudan insanlık dışı bir TUI'ye atlamak yerine bir Web UI ile geliyor.
+  
+  Üstelik neredeyse hiç depolama kaplamıyor — çünkü hiç yükleyici yok. İçine tarayıcı motoru sokuşturan bir Electron framework yok. Bu sayede epey depolama kazanılıyor.
+
+  Tek eksisi tarayıcıda yaşaması — ama PWA olarak kurabilirsin, o zaman tamamen yerel bir istemci gibi hissettiriyor.
+
+  Bir web uygulamasını Chrome üzerinden uygulama olarak kurmak gerçekten işe yarıyor. Buradaki ekran görüntüsünde bir web sayfası olmasına rağmen masaüstü uygulamasından hiçbir farkı yok.

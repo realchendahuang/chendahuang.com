@@ -1,0 +1,8 @@
+title: "Dahuang AI Tone"
+description: "متنی را بازنویسی می‌کند تا شبیه سبک AI مدل‌های GPT، Claude، Gemini یا Doubao شود — یا تشخیص می‌دهد یک متن بیشتر شبیه کدام مدل است."
+url: "https://github.com/realchendahuang/dahuang-ai-tone"
+install: "npx skills add realchendahuang/dahuang-ai-tone -g"
+icon: "i-lucide-fingerprint"
+color: "#a855f7"
+tags: ["Agent Skill", "سبک AI", "سبک مدل", "تشخیص سبک", "نوشتن به چینی"]
+date: 2025-05-01

@@ -1,0 +1,15 @@
+category: cloudflare
+title: "Cloudflare Container tuzağı: hata ayıklarken durdurmayı unutunca 4 dolar fatura geldi"
+description: "Bir Cloudflare Container kurbanı ortaya çıktı."
+date: 2026-06-27
+likes: 0
+bookmarks: 0
+reposts: 0
+views: 353
+url: https://x.com/realchendahuang/status/2070820905224441922
+content: |
+  Bir Cloudflare Container kurbanı ortaya çıktı.
+
+  Yazdığım kod hâlâ hata ayıklama aşamasında olduğu için durdurma komutu hiçbir türlü işe yaramadı.
+
+  Böylece bir Container 7 gün boyunca kesintisiz çalıştı ve bana 4 dolara mal oldu.

@@ -1,0 +1,12 @@
+title: "FlareMo"
+description: "Cloudflare-नेटिव व्यक्तिगत ज्ञान प्रबंधन सिस्टम, Memos-कंपैटिबल API के साथ — आपका डेटा, आपकी खुद की होस्टिंग पर।"
+type: "व्यक्तिगत ज्ञान प्रबंधन"
+url: "https://github.com/realchendahuang/FlareMo"
+image: "/projects/flaremo.webp"
+imageAlt: "FlareMo का नोट-टाइमलाइन और टैग इंटरफ़ेस"
+icon: "i-lucide-sticky-note"
+color: "#f59e0b"
+tags: ["Cloudflare", "Memos", "D1", "R2", "ज्ञान प्रबंधन"]
+date: 2026-07-10
+status: "ongoing"
+stars: 150

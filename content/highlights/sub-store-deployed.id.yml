@@ -1,0 +1,22 @@
+category: cloudflare
+title: "Selesai deploy Sub-Store di Cloudflare"
+description: "Butuh waktu sebentar, tapi akhirnya Sub-Store berhasil di-deploy di Cloudflare."
+date: 2026-06-27
+likes: 209
+bookmarks: 244
+reposts: 29
+views: 67007
+url: https://x.com/realchendahuang/status/2070689769731019207
+content: |
+  Butuh waktu sebentar, tapi akhirnya saya berhasil men-deploy Sub-Store di Cloudflare.
+
+  Menggabungkan node buatanku sendiri dan node cadangan airport menjadi satu, dan memasangkannya dengan aturan routing ACL4SSR pada auto-subscribe.
+
+  Selesai dengan satu tautan langganan:
+
+  - Menggabungkan node dari banyak penyedia
+  - Penyaringan node
+  - Konfigurasi aturan routing
+  - Pembaruan konfigurasi otomatis
+
+  Lebih mulus dari mulus.

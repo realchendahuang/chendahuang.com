@@ -1,0 +1,23 @@
+category: cloudflare
+title: "Dlaczego FlareMo: notujesz od niechcenia, a wiedza powoli z tego rośnie"
+description: "Szukam narzędzia, które pozwala „notować od niechcenia i powoli zamieniać to w wiedzę”."
+date: 2026-06-27
+likes: 1
+bookmarks: 2
+reposts: 1
+views: 258
+url: https://x.com/realchendahuang/status/2070807195332297205
+content: |
+  Szukam narzędzia, które pozwala „notować od niechcenia i powoli zamieniać to w wiedzę”.
+
+  Chcę nienachalne zbieranie inspiracji od ręki, bez żadnego tarcia – jak w Flomo;
+
+  chcę dojrzały, otwarty ekosystem Memos – przenośne dane i API, którym można się realnie pobawić;
+
+  ale nie chcę stawiać kolejnego VPS-a i pilnować Dockera, Postgresa i procesu Node, który działa wiecznie.
+
+  Więc co robić? Podejście FlareMo: potraktować model danych i API Memos jako „specyfikację” i odbudować cały runtime na Cloudflare:
+
+  Workers obsługują API, D1 przechowuje notatki, R2 trzyma załączniki, Queues/Cron zajmują się zadaniami w tle, a Vectorize + Workers AI są odłożone na przyszłe wyszukiwanie semantyczne i workflow AI.
+
+  Stając na barkach Memos, buduję osobistą bazę wiedzy, która żyje w chmurze brzegowej.

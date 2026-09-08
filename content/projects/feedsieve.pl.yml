@@ -1,0 +1,12 @@
+title: "FeedSieve"
+description: "Cyber-sprzątacz Twojego kanału X — trzyma bot-spam, niskiej jakości AI-śmieci, naciągaczy kryptowalutowych i przynęty na zaangażowanie z dala od Twojej osi czasu."
+type: "Narzędzie open-source dla X"
+url: https://github.com/realchendahuang/feedsieve
+image: /projects/feedsieve.webp
+imageAlt: "Cyjanowo-ciemna karta produktu FeedSieve"
+icon: i-lucide-shield-check
+color: "#22d3ee"
+tags: ["X", "RSS", "Bot Filter", "Odszumianie", "OSS"]
+date: 2026-08-25
+status: ongoing
+stars: 0

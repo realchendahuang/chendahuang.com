@@ -1,0 +1,23 @@
+category: "ai"
+title: "CEO Command Code mampir di kolom komentar saya"
+description: "Saya melewatkan satu pos biaya — tagihan cache. Ternyata caching yang menentukan biaya Coding Agent."
+date: 2026-08-30
+likes: 154
+bookmarks: 89
+reposts: 5
+views: 62171
+url: "https://x.com/realchendahuang/status/2093878404131283101"
+content: |
+  Kemarin saya memposting perbandingan Command GOAT dan OpenCode Go, dan CEO Command Code datang sendiri berkomentar.
+  
+  Dia bilang saya melewatkan satu pos biaya — tagihan caching. Saya telusuri lebih dalam, dan ternyata Command Code memang punya sesuatu.
+  
+  Coding Agent pada dasarnya adalah mesin Prefix Cache raksasa. Sebuah session berisi beberapa ratus ribu token — saat putaran berikutnya, token yang benar-benar baru mungkin hanya beberapa ribu. System prompt, tools, konteks kode, dan riwayat percakapan nyaris tidak berubah. Semakin tinggi tingkat cache hit, semakin murah biaya konteks lama itu.
+  
+  Command Code baru-baru ini mengerjakan serangkaian kerja Cache Thrashing yang serius, terutama dengan strategi-strategi berikut:
+  
+  Pin session ke GPU pod yang sama agar KV cache tetap hangat; jaga stable prefix seutuh mungkin dan hentikan fallback provider agar tidak mengacaukan konteks; ditambah Tool Call Repair mereka, di mana harness memperbaiki parameter model yang salah secara lokal, alih-alih mengirim error kembali ke model untuk dicoba ulang.
+  
+  Changelog v0.33.0 bahkan secara eksplisit mencantumkan: Major Cache Overhaul, pengurangan biaya median 2.9×. Mereka kini secara resmi mengklaim tingkat cache hit berkelanjutan sebesar 95–99%.
+  
+  Model yang sama, paket $10 yang sama — tapi karena caching, perbedaannya terakumulasi menjadi hasil yang benar-benar berbeda.

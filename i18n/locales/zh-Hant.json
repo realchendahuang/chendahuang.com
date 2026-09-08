@@ -1,0 +1,206 @@
+{
+  "site": {
+    "name": "陳大黃",
+    "description": "陳大黃的個人作品與內容展示站。收錄專案、教學、技能、文章與貼文。"
+  },
+  "nav": {
+    "home": "首頁",
+    "projects": "專案",
+    "playbooks": "教學",
+    "skills": "技能",
+    "blog": "部落格",
+    "highlights": "貼文",
+    "menu": "選單",
+    "openMenu": "開啟導覽選單",
+    "switchLanguage": "切換語言"
+  },
+  "sections": {
+    "blog": "部落格",
+    "project": "專案",
+    "playbook": "教學",
+    "skill": "技能",
+    "highlight": "貼文"
+  },
+  "search": {
+    "label": "搜尋",
+    "shortcut": "搜尋 (Cmd+K)",
+    "placeholder": "搜尋部落格、專案、教學、技能、貼文…",
+    "empty": "輸入關鍵字開始搜尋全站內容",
+    "noResults": "找不到「{query}」相關內容"
+  },
+  "theme": {
+    "toDark": "切換至深色模式",
+    "toLight": "切換至淺色模式"
+  },
+  "footer": {
+    "rss": "RSS 訂閱",
+    "onX": "陳大黃 on X",
+    "onGithub": "陳大黃 on GitHub"
+  },
+  "a11y": {
+    "skipToContent": "跳至主要內容"
+  },
+  "hero": {
+    "highlights": "精選貼文",
+    "blogPosts": "部落格文章",
+    "projects": "專案",
+    "githubStars": "GitHub Stars"
+  },
+  "landing": {
+    "shareHighlight": "來自陳大黃的精選貼文：{title}",
+    "linkCopied": "連結已複製，快去分享吧",
+    "likes": "喜歡",
+    "bookmarks": "收藏",
+    "original": "原文",
+    "about": "關於我",
+    "aboutTitle": "獨立開發者，專注於 Cloudflare 與 AI 效率工具",
+    "aboutBody": "前 AI 產品經理，現在專注於獨立開發：把 AI、Cloudflare 與內容創作整合成自己的產品與工作流程。專案、教學與部落格都是我探索過程的公開紀錄——如果你也在做類似的事，歡迎交流。",
+    "support": "愛發電 · 支持我",
+    "xLink": "X（原 Twitter）",
+    "xDesc": "日常更新、碎碎念與乾貨分享",
+    "githubLink": "GitHub",
+    "githubDesc": "專案原始碼與教學儲存庫",
+    "rssLink": "RSS 訂閱",
+    "rssDesc": "部落格更新第一時間推送至你的閱讀器",
+    "work": "作品",
+    "recentProjects": "最近在做的專案",
+    "viewAllProjects": "查看全部專案",
+    "readMore": "閱讀全文"
+  },
+  "projects": {
+    "tryOnline": "線上體驗",
+    "github": "GitHub",
+    "view": "查看 {title}",
+    "preview": "{title} 專案預覽"
+  },
+  "playbooks": {
+    "readOnline": "線上閱讀",
+    "viewOnGithub": "在 GitHub 查看"
+  },
+  "skills": {
+    "readOnline": "線上閱讀",
+    "viewOnGithub": "在 GitHub 查看"
+  },
+  "highlights": {
+    "count": "共 {count} 則貼文",
+    "xHome": "X 首頁",
+    "searchPosts": "搜尋貼文",
+    "searchPlaceholder": "搜尋標題或內容關鍵字…",
+    "expandAll": "全部展開",
+    "collapseAll": "全部收合",
+    "viewMode": "檢視模式",
+    "filterTheme": "主題篩選",
+    "all": "全部",
+    "hot": "熱門",
+    "hotTitle": "熱門貼文",
+    "likes": "喜歡",
+    "bookmarks": "收藏",
+    "reposts": "轉發",
+    "views": "觀看",
+    "viewOnX": "在 X 查看原文",
+    "noMatch": "找不到符合的貼文，試試其他關鍵字。",
+    "noPosts": "目前此篩選下沒有貼文。",
+    "countSuffix": "則貼文"
+  },
+  "blog": {
+    "count": "共 {count} 篇文章",
+    "archive": "封存",
+    "rss": "RSS 訂閱",
+    "searchPlaceholder": "搜尋標題、描述或標籤…",
+    "all": "全部",
+    "found": "找到 {count} 篇",
+    "tagFilter": "標籤「{tag}」",
+    "keywordFilter": "關鍵字「{keyword}」",
+    "pinned": "置頂",
+    "pinnedTitle": "置頂文章",
+    "original": "原創",
+    "originalTitle": "本站原創文章",
+    "noMatch": "找不到符合的文章，試試其他關鍵字或標籤。",
+    "minutes": "分鐘"
+  },
+  "archive": {
+    "title": "封存",
+    "description": "依年份封存的全部部落格文章。",
+    "count": "共 {count} 篇文章，依年份整理。",
+    "posts": "篇"
+  },
+  "friends": {
+    "empty": "目前暫無友站連結，可新增 content/friends/*.yml 檔案。",
+    "avatar": "{name} 的大頭貼"
+  },
+  "post": {
+    "allPosts": "全部文章",
+    "updated": "更新於 {date}",
+    "minRead": "閱讀時間 {count} 分鐘",
+    "original": "原創",
+    "sourceX": "原文來自 X",
+    "indieDev": "獨立開發者",
+    "collapseToc": "收合目錄",
+    "viewToc": "檢視目錄",
+    "toc": "目錄",
+    "shareHint": "如果你覺得這篇文章有用，歡迎分享給朋友。",
+    "shareToX": "分享到 X",
+    "xOriginal": "X 原文",
+    "share": "分享",
+    "related": "相關文章",
+    "subscribe": "訂閱更新",
+    "subscribeDesc": "新文章會同步到 RSS，也可以在 X 上追蹤我。",
+    "rss": "RSS 訂閱",
+    "followX": "在 X 上追蹤",
+    "support": "支持我",
+    "backToTop": "回到頂端",
+    "linkCopied": "文章連結已複製到剪貼簿",
+    "shareText": "來自陳大黃的部落格：{title}"
+  },
+  "error": {
+    "title": "找不到頁面",
+    "description": "此頁面不存在或已被移動。"
+  },
+  "seo": {
+    "notFound": "找不到頁面"
+  },
+  "highlightsCategories": {
+    "cloudflare": "Cloudflare",
+    "cloudflareDesc": "邊緣雲端、Workers、免費基礎設施與部署經驗",
+    "tools": "工具清單",
+    "toolsDesc": "軟體、外掛、硬體與效率工具推薦",
+    "ai": "AI 思考",
+    "aiDesc": "模型、Agent、知識管理與協作方法",
+    "product": "產品開發",
+    "productDesc": "獨立開發、技術棧與產品判斷",
+    "opc": "OPC 創業",
+    "opcDesc": "一人公司、註冊園區與經營實務",
+    "growth": "內容成長",
+    "growthDesc": "X 經營、發文方法與漲粉覆盤",
+    "essay": "人文隨筆",
+    "essayDesc": "關於價值、幽默與非工具視角的觀察"
+  },
+  "highlightViewModes": {
+    "theme": "依主題",
+    "themeDesc": "依分類分組瀏覽",
+    "timeline": "時間軸",
+    "timelineDesc": "依發布時間排序",
+    "heat": "依熱度",
+    "heatDesc": "依喜歡數與互動排序"
+  },
+  "monthLabel": "{year} 年 {month} 月",
+  "langNames": {
+    "zh": "中文",
+    "en": "英文",
+    "ja": "日文",
+    "es": "西班牙文",
+    "pt": "葡萄牙文",
+    "fr": "法文",
+    "de": "德文",
+    "ru": "俄文",
+    "ar": "阿拉伯文",
+    "ko": "韓文",
+    "zh-Hant": "繁體中文",
+    "vi": "越南文",
+    "id": "印尼文",
+    "tr": "土耳其文",
+    "hi": "印地文",
+    "pl": "波蘭文",
+    "fa": "波斯文"
+  }
+}

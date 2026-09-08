@@ -1,0 +1,39 @@
+category: product
+title: "بهترین روشِ اپ‌سازیِ مستقل در 2026: اول Web + PWA"
+description: "بیش از یک سال تجربه‌ی خون‌واشکِ توسعه‌ی مستقل و اشتباه‌هایش را با شما شریک می‌شوم."
+date: 2026-06-22
+likes: 263
+bookmarks: 422
+reposts: 46
+views: 37055
+url: https://x.com/realchendahuang/status/2069042963280503182
+content: |
+  بیش از یک سال تجربه‌ی خون‌واشکِ توسعه‌ی مستقل و چاله‌هایی که توش افتادم را با شما شریک می‌شوم.
+
+  در 2026، اگر یک توسعه‌دهنده‌ی مستقل می‌خواهد اپ بسازد، بهترین روش این است:
+
+  **در مرحله‌ی MVP اول Web + PWA را بساز.** توسعه‌ی سریع، دیباگِ سریع، تکرارِ سریع.
+
+  استکِ وب:
+
+  React + TanStack Start + Vite + TypeScript + shadcn/ui + Base UI + Tailwind CSS + better-auth + Vercel AI SDK + oxfmt / oxlint
+
+  بک‌اندِ یکپارچه:
+
+  Hono + Cloudflare Workers
+
+  دیباگِ وب:
+
+  Chrome DevTools MCP + افزونه‌ی Codex برای Chrome
+
+  وقتی محصول واقعاً راه افتاد، بعد برو سراغ موبایل.
+
+  استکِ موبایل:
+
+  React Native + Expo + Expo Router + NativeWind + React Native Reusables + Reanimated + Gesture Handler + EAS Build / Submit / Update
+
+  ایده‌ی اصلی ساده است:
+
+  اول با Web + PWA تقاضا را اعتبارسنجی کن.
+
+  وقتی واقعاً کاربر داشتی، با React Native + Expo اپِ واقعی را بساز.

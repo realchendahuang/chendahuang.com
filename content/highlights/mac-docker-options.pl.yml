@@ -1,0 +1,16 @@
+category: tools
+title: "Opcje Dockera na Macu: Colima / OrbStack / Docker Desktop"
+description: "Szybkie zestawienie wyboru technologii dla Dockera na Macu."
+date: 2026-06-20
+likes: 0
+bookmarks: 0
+reposts: 0
+views: 211
+url: https://x.com/realchendahuang/status/2068238972728533154
+content: |
+  Szybkie zestawienie wyboru technologii dla Dockera na Macu.
+
+  - **Colima**: darmowe i open source, bardzo lekkie, ale w zasadzie tylko z linii poleceń. Dla ludzi, którzy nie boją się dłubać i żyją w terminalu.
+  - **Apple Container**: nowy kierunek kontenerów od Apple – warto obserwować, ale ekosystem jest jeszcze na bardzo wczesnym etapie. Nawet Docker Compose nie jest jeszcze wspierany.
+  - **OrbStack**: ma GUI, lekkie i szybkie, z solidnym wsparciem ekosystemu. Minus: nie jest open source – wersja komercyjna wymaga licencji, ale wersja osobista jest darmowa.
+  - **Docker Desktop**: oficjalny produkt, a jednak ciężki i napompowany, z fatalnym doświadczeniem. Na Macu, jeśli możesz, unikaj go.

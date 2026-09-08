@@ -1,0 +1,15 @@
+category: ai
+title: "API DeepSeek punya web search bawaan — gratisan pakai pencarian resmi"
+description: "API resmi DeepSeek ternyata punya web search bawaan."
+date: 2026-08-05
+likes: 1037
+bookmarks: 885
+reposts: 89
+views: 230537
+url: https://x.com/realchendahuang/status/2084826975102030013
+content: |
+  Menemukan sesuatu yang bagus — DeepSeek ternyata membangun web search langsung di dalam API-nya.
+  Panggil model deepseek-v4-flash lewat interface Responses, dan cukup deklarasikan tool web_search di parameter permintaan untuk langsung memakai kemampuan pencarian sisi server mereka.
+  Tidak perlu integrasi mesin pencari pihak ketiga, tidak perlu mengajukan API key pencarian terpisah.
+  Seluruh alur pencarian dihosting langsung oleh tim resmi.
+  Sumber: https://t.co/D4AXo7crHw

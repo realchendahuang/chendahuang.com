@@ -1,0 +1,9 @@
+title: "Dahuang X Post"
+description: "Çince fikirleri, proje güncellemelerini ve uzun yazıları X akışına uygun kısa gönderilere veya thread'lere dönüştürün — açılışı, yapıyı ve viral potansiyeli de kontrol edin."
+url: "https://github.com/realchendahuang/dahuang-x-post"
+install: npx skills add realchendahuang/dahuang-x-post -g
+icon: "i-simple-icons-x"
+color: "#111111"
+tags: ["Agent Skill", "X", "Çince yazım", "Hook", "Thread"]
+date: 2026-07-10
+stars: 0

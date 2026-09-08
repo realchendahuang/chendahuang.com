@@ -1,0 +1,29 @@
+category: cloudflare
+title: "Saya membuat sebuah Cloudflare Playbook"
+description: "Untuk semua indie developer yang ingin membuat produk dengan AI coding."
+date: 2026-06-21
+likes: 125
+bookmarks: 176
+reposts: 29
+views: 9114
+url: https://x.com/realchendahuang/status/2068732869854613903
+content: |
+  Saya membuat sebuah Cloudflare Playbook.
+
+  Untuk semua indie developer yang ingin membuat produk dengan AI coding.
+
+  Isinya mencakup:
+
+  - Cara memilih di antara layanan umum Cloudflare
+  - Cara memakai Workers / Pages / D1 / R2 / KV / AI Gateway
+  - Apakah tier gratis benar-benar cukup
+  - Kapan harus membeli Workers Paid $5
+  - Jebakan-jebakan tempat kode CF buatan AI paling sering meledak
+  - Cara menyiapkan Cloudflare Skills dan MCP untuk Codex / Claude Code
+  - Proyek open-source mana yang bisa langsung dijadikan referensi
+
+  Tujuan saya sederhana:
+
+  Menulis kode dengan AI, deploy secara global dengan Cloudflare.
+
+  Playbook: [chendahuang.com/playbooks](/playbooks)

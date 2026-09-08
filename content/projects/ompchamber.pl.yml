@@ -1,0 +1,10 @@
+title: "OMPChamber"
+description: "Aplikacja desktopowa dla środowiska agenta OMP (Oh My Pi) zbudowana na fundamencie UI OpenChamber — OMP napędza agenta, OpenChamber odpowiada za doświadczenie. Uruchamiaj pracę agenta, zachowuj kontrolę i twórz z dowolnego miejsca."
+type: "Desktopowy klient agenta"
+url: "https://github.com/realchendahuang/OMPChamber"
+icon: "i-lucide-monitor"
+color: "#60a5fa"
+tags: ["OMP", "Agent", "Desktop", "OpenChamber", "Rust"]
+date: 2026-08-10
+status: "ongoing"
+stars: 55

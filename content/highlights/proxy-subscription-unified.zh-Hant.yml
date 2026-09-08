@@ -1,0 +1,13 @@
+category: tools
+title: "翻牆訂閱的統一管理方案"
+description: "機場 + 自建 VPS 節點統一管理、統一分流、統一輸出訂閱連結。"
+date: 2026-06-29
+likes: 92
+bookmarks: 137
+reposts: 14
+views: 10207
+url: https://x.com/realchendahuang/status/2071465309085790305
+content: |
+  關於翻牆，如果買了機場、又自己架了 VPS 節點，會希望把它們統一管理、統一分流，統一輸出一條訂閱連結。
+  希望把分流規則、節點篩選和組合邏輯放在伺服器端維護，而不是在每個用戶端重複設定。
+  希望用 Cloudflare 的輕量部署方式來跑，不想維護伺服器、資料庫服務和複雜的背景任務。

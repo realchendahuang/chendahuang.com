@@ -1,0 +1,25 @@
+category: cloudflare
+title: "우리는 아직 Cloudflare의 1%도 활용하지 못했다"
+description: "우리는 아직 Cloudflare의 1%도 활용하지 못한 것 같다."
+date: 2026-06-15
+likes: 377
+bookmarks: 470
+reposts: 32
+views: 88959
+url: https://x.com/realchendahuang/status/2066446337936110030
+content: |
+  우리는 아직 Cloudflare의 1%도 활용하지 못한 것 같다.
+
+  기능이 너무 많이 나왔다.
+
+  - 객체 스토리지는 R2
+  - 백엔드 API는 Workers
+  - AI 게이트웨이는 AI Gateway
+  - 무거운 연산은 Container
+  - 캐싱은 KV
+  - 데이터베이스는 D1
+  - PostgreSQL을 쓴다면? HyperDrive로 연결하면 된다
+
+  그리고 이건 시작에 불과하다 — 목록은 끝이 없다. 상상만 할 수 있으면, 아마 다 할 수 있다.
+
+  결정타는 진짜 미친 듯이 싸다는 것. 무료 혜택만으로도 오래 쓸 수 있다. 무료 혜택이 뭔 뜻이냐? 한 푼도 안 낸다는 뜻이다 — 사이버 보살, 진짜 성인군자다.

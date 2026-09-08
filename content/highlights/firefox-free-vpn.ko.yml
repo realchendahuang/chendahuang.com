@@ -1,0 +1,20 @@
+category: tools
+title: "Firefox: 매달 무료 VPN 50G"
+description: "세상에! Firefox 브라우저가 모든 사용자에게 매달 무료 VPN 트래픽 50G를 준다는 것을 이제서야 알았다."
+date: 2026-06-30
+likes: 1639
+bookmarks: 2268
+reposts: 372
+views: 161249
+url: https://x.com/realchendahuang/status/2071963210689970673
+content: |
+  세상에! Firefox 브라우저가 모든 사용자에게 매달 무료 VPN 트래픽 50G를 준다는 것을 이제서야 알았다.
+
+  닭이 먼저냐 달걀이 먼저냐 같은 난처한 상황에서 몹시 유용하다.
+
+  사용법:
+
+  1. 주소창에 `about:config` 입력
+  2. 고급 환경설정으로 들어가 "모두 표시" 클릭
+  3. `browser.ipProtection.enabled` 검색
+  4. 해당 항목의 값을 true로 변경

@@ -1,0 +1,15 @@
+category: cloudflare
+title: "Cloudflare Container 함정: 디버깅 중에 멈추지 않아 4달러 청구"
+description: "Cloudflare Container 피해자가 나타났다."
+date: 2026-06-27
+likes: 0
+bookmarks: 0
+reposts: 0
+views: 353
+url: https://x.com/realchendahuang/status/2070820905224441922
+content: |
+  Cloudflare Container 피해자가 나타났다.
+
+  작성 중인 코드가 아직 디버깅 단계라 stop 명령이 적용되지 않았다.
+
+  그 바람에 Container 하나가 7일 동안 계속 실행되면서 4달러가 청구됐다.

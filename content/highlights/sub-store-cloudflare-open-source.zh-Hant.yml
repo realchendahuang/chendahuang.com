@@ -1,0 +1,21 @@
+category: cloudflare
+title: "翻牆訂閱聚合搬到 Cloudflare 上"
+description: "我把翻牆訂閱聚合搬到了 Cloudflare 上。"
+date: 2026-06-28
+likes: 327
+bookmarks: 479
+reposts: 56
+views: 44611
+url: https://x.com/realchendahuang/status/2071247817109348796
+content: |
+  我把翻牆訂閱聚合搬到了 Cloudflare 上。
+
+  開源了一個完全免費、部署在 Cloudflare 上的翻牆訂閱連結聚合專案。
+
+  幫你把所有的翻牆訂閱連結、自建的節點，統一聚合在一條連結上，同時還可以配上分流規則。
+
+  真正做到只需要一條連結，就能在所有的用戶端使用，不需要每個用戶端單獨設定。
+
+  GitHub：https://github.com/realchendahuang/sub-store-cloudflare
+
+  部落格原文：[我把機場訂閱聚合搬到了 Cloudflare 上](/blog/sub-store-cloudflare)

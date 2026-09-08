@@ -1,0 +1,13 @@
+category: tools
+title: "Erişim (circumvention) aboneliklerini yönetmek için birleşik bir çözüm"
+description: "Havaalanları + kendi barındırdığın VPS düğümleri tek çatı altında: birleşik yönetim, birleşik yönlendirme, tek bir abonelik bağlantısı."
+date: 2026-06-29
+likes: 92
+bookmarks: 137
+reposts: 14
+views: 10207
+url: https://x.com/realchendahuang/status/2071465309085790305
+content: |
+  Bir erişim (circumvention) havaalanı satın aldıysan ve kendi VPS düğümlerini de kurduysan ve hepsinin birleşik yönetilmesini, birleşik yönlendirilmesini ve tek bir abonelik bağlantısı olarak çıkmasını istiyorsan.
+  Yönlendirme kurallarının, düğüm filtrelemenin ve kombinasyon mantığının istemci istemci yapılandırmak yerine sunucu tarafında tutulmasını istiyorsan.
+  Cloudflare'in hafif dağıtımıyla çalıştırmak istiyorsan — sunucu, veritabanı hizmeti veya karmaşık arka plan görevi bakımı istemiyorsan.

@@ -1,0 +1,23 @@
+category: cloudflare
+title: "FlareMo를 만든 이유: 가볍게 적어두면 천천히 지식으로 자란다"
+description: "'가볍게 적어두고, 천천히 지식으로 키우는' 도구를 찾고 있다."
+date: 2026-06-27
+likes: 1
+bookmarks: 2
+reposts: 1
+views: 258
+url: https://x.com/realchendahuang/status/2070807195332297205
+content: |
+  "가볍게 적어두고, 천천히 지식으로 키우는" 도구를 찾고 있다.
+
+  Flomo처럼 열자마자 바로 쓰는, 방해 없는 영감 수집이 필요하고;
+
+  Memos처럼 성숙한 오픈소스 생태계, 옮겨갈 수 있는 데이터, 갖고 놀 수 있는 API가 필요하다;
+
+  하지만 VPS를 또 한 대 열고 Docker, Postgres, 그리고 영원히 떠 있는 Node 프로세스를 관리하고 싶지는 않다.
+
+  그럼 어떡할까. FlareMo의 방법은 Memos의 데이터 모델과 API를 하나의 "스펙"으로 삼고, 런타임 전체를 Cloudflare 위에서 처음부터 다시 짓는 것이다:
+
+  Workers가 API를 돌리고, D1이 노트를 저장하며, R2가 첨부파일을 맡고, Queues/Cron이 백그라운드 작업을 처리하고, Vectorize + Workers AI는 앞으로의 시맨틱 검색과 AI 워크플로를 위해 남겨둔다.
+
+  Memos의 어깨 위에 서서, 엣지 클라우드에서 자라는 개인 지식 베이스를 만든다.

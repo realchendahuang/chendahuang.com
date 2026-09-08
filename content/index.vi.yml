@@ -1,0 +1,52 @@
+seo:
+  title: "Chen Dahuang - Tác phẩm & Nội dung"
+  description: "Nơi trưng bày tác phẩm và nội dung của Chen Dahuang, gồm các dự án, hướng dẫn, agent skill, bài viết và bài đăng."
+title: "Chen Dahuang"
+description: |
+  Hiện tại | KOSX @kosxai — phụ trách mảng khởi nghiệp và indie dev tại khu vực Đông Trung Quốc | Đối tác tại một công ty AI ở Ninh Ba
+  Định hướng | Indie Hacker | Cựu product manager AI | Insight về sản phẩm / kể chuyện cười
+  Đang làm | FlareMo — ghi chú | FeedSieve — dọn feed X | Cherina Pod — podcast song ngữ
+hero:
+  links:
+    - label: "Xem dự án"
+      to: /projects
+      color: "primary"
+    - label: "GitHub"
+      to: https://github.com/realchendahuang
+      color: "neutral"
+      target: "_blank"
+  images:
+    - src: /projects/cherina-pod.webp
+      alt: Cherina Pod — ứng dụng nghe podcast song ngữ
+    - src: /projects/feedsieve.webp
+      alt: FeedSieve — công cụ dọn dẹp feed X
+    - src: /projects/flaremo.webp
+      alt: FlareMo — quản lý kiến thức cá nhân
+    - src: /projects/sub-store-cloudflare.webp
+      alt: Sub-Store Cloudflare — công cụ tổng hợp subscription
+    - src: /projects/pi-config.webp
+      alt: pi-config — cấu hình cho Pi Coding Agent
+    - src: /projects/deepmate.webp
+      alt: DeepMate — bảng điều khiển AI harness
+    - src: /projects/hermes-memory.webp
+      alt: Hermes Memory — plugin bộ nhớ bền vững cho OpenCode
+    - src: /projects/god-museum.webp
+      alt: God-Museum — bộ sưu tập thần thoại của các nền văn minh
+    - src: /projects/ai-chronicle.webp
+      alt: AI Chronicle — biên niên sử ngành AI
+blog:
+  title: "Bài viết mới nhất"
+highlights:
+  title: "Bài đăng nổi bật"
+  links:
+    - label: "Xem tất cả"
+      icon: "i-lucide-arrow-right"
+      to: "/highlights"
+      color: "neutral"
+      variant: "soft"
+    - label: "Trang chủ X"
+      icon: "i-simple-icons-x"
+      to: "https://x.com/realchendahuang"
+      target: "_blank"
+      color: "neutral"
+      variant: "soft"

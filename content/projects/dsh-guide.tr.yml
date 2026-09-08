@@ -1,0 +1,10 @@
+title: "dsh-guide · Bir Mesajın Yolculuğu"
+description: "Bir Coding Agent'ın içine girin: tek bir mesajı, üretim kalitesinde bir agent'ın (DeepSeek Harness) içinde yedi 3D sahne boyunca izleyin. Kaynak kodunu açıklayan etkileşimli bir web sitesi."
+type: "Etkileşimli açıklayıcı web sitesi"
+url: "https://github.com/realchendahuang/dsh-guide"
+onlineUrl: "https://chendahuang.com/dsh"
+icon: "i-lucide-send"
+color: "#2dd4bf"
+tags: ["DeepSeek Harness", "3D", "WebGL", "Etkileşimli"]
+date: 2026-08-13
+status: "ongoing"

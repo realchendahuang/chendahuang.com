@@ -1,0 +1,22 @@
+category: cloudflare
+title: "Cloudflare에서 Sub-Store 배포 완료"
+description: "시간이 좀 걸렸지만 Cloudflare에서 Sub-Store 배포를 완료했다."
+date: 2026-06-27
+likes: 209
+bookmarks: 244
+reposts: 29
+views: 67007
+url: https://x.com/realchendahuang/status/2070689769731019207
+content: |
+  시간이 좀 걸렸지만, Cloudflare에서 Sub-Store 배포를 완료했다.
+
+  자체 구축 노드와 에어포트의 백업 노드를 하나로 합치고, ACL4SSR 분기 규칙 자동 구독까지 붙였다.
+
+  구독 링크 하나로 구현한 것:
+
+  - 여러 공급사 노드 병합
+  - 노드 필터링
+  - 분기 규칙 설정
+  - 설정 자동 업데이트
+
+  매끄럽기 그지없다.

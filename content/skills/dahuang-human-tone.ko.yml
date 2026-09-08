@@ -1,0 +1,9 @@
+title: "Dahuang Human Tone"
+description: "중국어 텍스트에서 템플릿 껍데기, 길잡이 표현, 달콤한 마무리, 가짜 관심 유도 문구를 걷어냅니다. 구조는 바꾸되 사실은 바꾸지 않으며, 정보와 작가의 목소리는 유지합니다."
+url: "https://github.com/realchendahuang/dahuang-human-tone"
+install: "npx skills add realchendahuang/dahuang-human-tone -g"
+icon: "i-lucide-wand-sparkles"
+color: "#00DC82"
+tags: ["Agent Skill", "AI 감성 제거", "중국어 작성", "Claude Code", "Codex"]
+date: 2025-05-01
+stars: 10

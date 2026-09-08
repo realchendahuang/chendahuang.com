@@ -1,0 +1,22 @@
+category: ai
+title: "GPT-5 neslinin yapısal kusuru: iç gereksinimleri arayüz metnine yazmak"
+description: "Şişkin arayüz metninin kökeni, kullanıcıya dönük metni geliştiriciye dönük geri bildirimden asla ayırmaması."
+date: 2026-08-12
+likes: 2
+bookmarks: 0
+reposts: 1
+views: 1500
+url: https://x.com/realchendahuang/status/2087349882101370909
+content: |
+  Çok isabetli söylenmiş — GPT-5 neslinin yapısal kusuru bu:
+
+  İş yükünü kanıtlamak için iç gereksinimleri hep arayüz metnine yazıyor. Kendini kanıtlamak için — bak, gerçekten yaptım, harika değil miyim, kaytarmadım, bütün gereksinimlerini masaya serdim.
+
+  Ve arayüz metni inanılmaz şişkin. 5.0'dan 5.6'ya, nesilden nesile — hâlâ düzeltilmedi. İliklerine işlemiş.
+
+  Gerçekten ön uç ürünü çıkarmış herkes bilir:
+
+  - Arayüzdeki küçük ya da büyük her metin, kullanıcıya dönük metindir
+  - Geliştiricilere sohbette iletilmesi gereken metin asla ürüne yazılmamalı
+
+  Ama sadece kötü metin yazmakla kalmıyor — bir şeyler yaptığını "göstermek" için iç geri bildirimi de sık sık ürüne yazıyor.

@@ -1,0 +1,12 @@
+title: "Sub-Store Cloudflare"
+description: "Tổng hợp subscription và cấu hình quy tắc chạy trên Cloudflare Workers — các nguồn subscription, xử lý node, subscription tổng hợp và mẫu định tuyến, tất cả đều nằm trên cloud."
+type: "Công cụ Cloudflare"
+url: https://github.com/realchendahuang/sub-store-cloudflare
+image: /projects/sub-store-cloudflare.webp
+imageAlt: "Giao diện quản lý nguồn subscription và subscription tổng hợp của Sub-Store Cloudflare"
+icon: i-simple-icons-cloudflare
+color: "#f38020"
+tags: ["Cloudflare Workers", "D1", "Mihomo", "sing-box", "Quản lý subscription"]
+date: 2026-07-09
+status: ongoing
+stars: 253

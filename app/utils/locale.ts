@@ -12,7 +12,15 @@ export const SITE_LOCALES = [
   { code: 'fr', language: 'fr', ogLocale: 'fr_FR', name: 'Français', dir: 'ltr' },
   { code: 'de', language: 'de', ogLocale: 'de_DE', name: 'Deutsch', dir: 'ltr' },
   { code: 'ru', language: 'ru', ogLocale: 'ru_RU', name: 'Русский', dir: 'ltr' },
-  { code: 'ar', language: 'ar', ogLocale: 'ar_AR', name: 'العربية', dir: 'rtl' }
+  { code: 'ar', language: 'ar', ogLocale: 'ar_AR', name: 'العربية', dir: 'rtl' },
+  { code: 'ko', language: 'ko', ogLocale: 'ko_KR', name: '한국어', dir: 'ltr' },
+  { code: 'zh-Hant', language: 'zh-Hant', ogLocale: 'zh_TW', name: '繁體中文', dir: 'ltr' },
+  { code: 'vi', language: 'vi', ogLocale: 'vi_VN', name: 'Tiếng Việt', dir: 'ltr' },
+  { code: 'id', language: 'id', ogLocale: 'id_ID', name: 'Bahasa Indonesia', dir: 'ltr' },
+  { code: 'tr', language: 'tr', ogLocale: 'tr_TR', name: 'Türkçe', dir: 'ltr' },
+  { code: 'hi', language: 'hi', ogLocale: 'hi_IN', name: 'हिन्दी', dir: 'ltr' },
+  { code: 'pl', language: 'pl', ogLocale: 'pl_PL', name: 'Polski', dir: 'ltr' },
+  { code: 'fa', language: 'fa', ogLocale: 'fa_IR', name: 'فارسی', dir: 'rtl' }
 ] as const
 
 export type SiteLocaleCode = (typeof SITE_LOCALES)[number]['code']

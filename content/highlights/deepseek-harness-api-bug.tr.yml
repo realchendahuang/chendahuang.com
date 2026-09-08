@@ -1,0 +1,22 @@
+category: ai
+title: "DeepSeek Harness üçüncü taraf API'lerde 'unknown tool' hatası veriyor: bir ağ geçidi veri formatı sorunu"
+description: "Araç adı aslında kaybolmuyor — ağ geçidi veri formatını bozuyor."
+date: 2026-08-18
+likes: 2
+bookmarks: 0
+reposts: 2
+views: 2313
+url: https://x.com/realchendahuang/status/2089636108271550484
+content: |
+  DeepSeek Harness + üçüncü taraf API uyumluluk sorunu:
+
+  Ajan Bash gibi araçları çağırdığında `ToolNotFoundError: unknown tool ""` hatası alıyor; araç hiç kaydedilmemiş gibi görünüyor.
+
+  Aslında olan şu: ağ geçidi, DeepSeek'in resmî API'sinden farklı bir veri formatı döndürüyor ve aracın adı arada bir yerde kayboluyor.
+
+  Birkaç ilgili GitHub Discussions bağlantısı:
+
+  - deepseek-ai/dsh#issues içinde "unknown tool" araması yapın
+  - Kendi barındırdığı ağ geçitlerini kullananlar (OpenRouter / OneAPI / new-api) bununla en çok karşılaşanlar
+
+  Hata ayıklama yaklaşımı: tam bir tool_call isteği ve yanıtını yakalayın, ağ geçidi günlüklerinde araç adının boş bir dize olup olmadığını kontrol edin.

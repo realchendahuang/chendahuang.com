@@ -1,0 +1,9 @@
+title: Dahuang Human Tone
+description: Buang cangkang templat, frasa penunjuk jalan, penutup yang terlalu manis, dan interaksi palsu dari teks berbahasa Mandarin. Ubah strukturnya, bukan faktanya — pertahankan informasi dan suara penulisnya.
+url: https://github.com/realchendahuang/dahuang-human-tone
+install: npx skills add realchendahuang/dahuang-human-tone -g
+icon: i-lucide-wand-sparkles
+color: "#00DC82"
+tags: ["Agent Skill", "Menghilangkan rasa AI", "Tulisan berbahasa Mandarin", "Claude Code", "Codex"]
+date: 2025-05-01
+stars: 10

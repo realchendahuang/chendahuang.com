@@ -1,0 +1,19 @@
+category: "ai"
+title: "DeepSeek Harness memilih bentuk yang pas"
+description: "Tanpa TUI anti-manusia di awal — Web UI langsung tersedia. Tanpa installer, tanpa mesin browser yang disuntikkan, nyaris tanpa beban penyimpanan."
+date: 2026-08-13
+likes: 101
+bookmarks: 20
+reposts: 3
+views: 53910
+url: "https://x.com/realchendahuang/status/2087903125302862187"
+content: |
+  Menurut saya, DeepSeek Harness menang soal form factor.
+  
+  Alih-alih langsung melompat ke TUI yang anti-manusia, ia mengirimkan Web UI.
+  
+  Dan ia nyaris tidak memakan penyimpanan — karena memang tidak ada installer sama sekali. Tidak ada framework Electron yang memaksakan mesin browser masuk ke dalam. Banyak sekali penyimpanan yang dihemat.
+
+  Satu-satunya kekurangan adalah ia hidup di browser — tapi kamu bisa memasangnya sebagai PWA, dan rasanya persis seperti client native.
+
+  Memasang web app sebagai aplikasi lewat Chrome itu benar-benar berguna. Pada screenshot di sini, ia adalah halaman web, tapi perilakunya tidak berbeda dari aplikasi desktop.

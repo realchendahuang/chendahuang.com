@@ -1,0 +1,40 @@
+category: "ai"
+title: "DeepSeek Harness'ın dört modu, açıklamalı"
+description: "Günlük geliştirme için Standard, karmaşık işlerde verimlilik için PTC, net küçük işler için Minimal, bir de Creator — ajan yapan ajanlar."
+date: 2026-08-15
+likes: 46
+bookmarks: 60
+reposts: 6
+views: 10141
+url: "https://x.com/realchendahuang/status/2088643296021401829"
+content: |
+  DeepSeek Harness'ın dört moduna zaman ayırdım — işte her birinin artıları, eksileri ve kullanım senaryoları.
+  
+  1. Standard — günlük geliştirme için en iyisi
+  Standard, DeepSeek Harness'ın varsayılan tam Kodlama Ajanı. Günlük geliştirmenin ihtiyaç duyduğu her şeyle birlikte geliyor; özellikle sorunun nerede olduğunu henüz bilmediğin, ajanın kendi başına keşfetmesi gereken işlere çok uygun.
+  
+  Ama işin çoğu LLM → Tool → LLM → Tool → LLM → Tool olduğu için, işler karmaşıklaştıkça Tool Calling gidiş-gelişleri birikiyor; gecikme ve token maliyeti artıyor.
+  
+  Yani: keşif öncelikli işler Standard'a gider.
+  
+  2. PTC — karmaşık işler için verimlilik modu
+  PTC, modelin birden çok araç çağrısını tek bir çalıştırmada birleştiren bir TypeScript bloğu yazmasına izin veriyor.
+  
+  Standard şöyle olabilir: dosya ara → modele dön → dosyayı oku → modele dön → ara → modele dön → düzenle → modele dön.
+  PTC şuna dönüşür: model TypeScript yazar → bir kez çalıştır → ara + döngü + filtrele + oku + işle → nihai sonucu döndür.
+  
+  Bu, gidiş-gelişleri kesiyor ve anlamsız ara verilerin devasa kısmını model bağlamının dışında tutuyor. Yani toplu, tekrarlı, yapılandırılmış işlemler PTC'nin parladığı yer.
+  
+  3. Minimal — model için sadece Bash + Editor
+  En büyük gücü sadelik: az araç, küçük araç şemaları, düşük sabit prompt yükü.
+  
+  Ama Web yok, Skills yok, Subagent yok, Workflow yok — karmaşık işler tek bir ajanla kaba kuvvetle halledilmek zorunda. Üstelik Minimal'de Standard'ın tam Bağlam Sıkıştırması yok. Yani kısa işlerde sabit token yükü düşük olsa da, çok uzun oturumlarda ve bol Bash çıktısında aslında token kurtarmayabilir.
+  
+  Minimal, net ve iyi tanımlanmış küçük işler için doğru seçimdir — ne kadar net ve kısa olursa o kadar iyi.
+  
+  4. Creator — ajanla ajan yaratmak
+  Standard'a ek olarak Cordis Runtime, plugin deneyleri ve Preset oluşturma var. Hatta ajanın kendisini bile birleştirilebilir ve yaratılabilir bir şeye dönüştürüyor.
+  
+  Açıkçası bayağı sevimli: model kendi tezgahını kurup mal satıyor, sonra kendi tezgahıyla ilgileniyor — kendi kendine yetiyor.
+  
+  Ama Creator'ın en büyük sorunu yüksek izinleri. Aklında olsun.

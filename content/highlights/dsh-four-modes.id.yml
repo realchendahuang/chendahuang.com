@@ -1,0 +1,40 @@
+category: "ai"
+title: "Empat mode DeepSeek Harness, dijelaskan"
+description: "Standard untuk pengembangan sehari-hari, PTC untuk efisiensi tugas kompleks, Minimal untuk tugas kecil yang jelas, dan Creator — agent yang menciptakan agent."
+date: 2026-08-15
+likes: 46
+bookmarks: 60
+reposts: 6
+views: 10141
+url: "https://x.com/realchendahuang/status/2088643296021401829"
+content: |
+  Saya meluangkan waktu mempelajari empat mode DeepSeek Harness — berikut kelebihan, kekurangan, dan kasus penggunaannya masing-masing.
+  
+  1. Standard — paling cocok untuk pengembangan sehari-hari
+  Standard adalah Coding Agent lengkap bawaan DeepSeek Harness. Ia dilengkapi semua yang dibutuhkan pengembangan sehari-hari, dan sangat cocok untuk tugas yang awalnya belum diketahui masalahnya ada di mana, sehingga agent harus menjelajah sendiri.
+  
+  Tapi karena sebagian besar kerjanya adalah LLM → Tool → LLM → Tool → LLM → Tool, round trip Tool Calling semakin menumpuk saat tugas makin kompleks, menaikkan latensi dan biaya token.
+  
+  Jadi: tugas yang mengutamakan eksplorasi masuk ke Standard.
+  
+  2. PTC — mode efisiensi untuk tugas kompleks
+  PTC memungkinkan model menulis satu blok TypeScript yang menggabungkan beberapa panggilan tool menjadi satu kali eksekusi.
+  
+  Standard biasanya: cari file → kembali ke model → baca file → kembali ke model → cari → kembali ke model → edit → kembali ke model.
+  PTC menjadi: model menulis TypeScript → jalankan sekali → cari + loop + filter + baca + proses → kembalikan hasil akhir.
+  
+  Ini memangkas round trip dan menjaga data antara yang tak bermakna dalam jumlah besar agar tidak masuk ke konteks model. Jadi pemrosesan massal, berulang, dan terstruktur adalah tempat PTC bersinar.
+  
+  3. Minimal — hanya Bash + Editor untuk model
+  Kekuatan terbesarnya adalah kesederhanaan: sedikit tool, skema tool yang kecil, overhead prompt tetap yang rendah.
+  
+  Tapi tidak ada Web, tidak ada Skills, tidak ada Subagent, tidak ada Workflow — tugas kompleks harus dipaksakan (brute-force) oleh satu agent. Dan Minimal tidak punya Context Compaction lengkap seperti Standard. Jadi meski untuk tugas pendek overhead token tetapnya rendah, pada session yang sangat panjang dengan banyak output Bash, ia mungkin tidak benar-benar menghemat token.
+  
+  Minimal adalah pilihan untuk tugas kecil yang jelas dan terdefinisi baik — makin jelas dan makin pendek, makin bagus.
+  
+  4. Creator — memakai agent untuk menciptakan agent
+  Ia punya Standard ditambah Cordis Runtime, eksperimen plugin, dan pembuatan Preset. Ia bahkan mengubah agent itu sendiri menjadi sesuatu yang bisa dikomposisikan dan diciptakan.
+  
+  Jujur, lumayan lucu: model membuka lapak sendiri untuk berjualan, lalu merapikan lapaknya sendiri — serba mandiri.
+  
+  Tapi masalah terbesar Creator adalah izinnya yang tinggi. Perlu diingat.

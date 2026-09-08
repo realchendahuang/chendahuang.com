@@ -1,0 +1,12 @@
+title: "pi-config"
+description: "Bộ cấu hình Pi Coding Agent dùng ngay của tôi: 17 plugin + 18 Skill toàn cục + 2 MCP server, cài đặt chỉ với một dòng lệnh."
+type: "Cấu hình trợ lý lập trình AI"
+url: https://github.com/realchendahuang/pi-config
+image: /projects/pi-config.webp
+imageAlt: "Thẻ sản phẩm tím đậm của pi-config: Pi config / My Pi Coding Agent Setup"
+icon: i-lucide-terminal
+color: "#a78bfa"
+tags: ["Pi", "Coding Agent", "Plugins", "Skills", "MCP", "Shell"]
+date: 2026-07-25
+status: ongoing
+stars: 139

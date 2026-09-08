@@ -1,0 +1,56 @@
+category: ai
+title: "Bilgi yönetimi için iki yol: bir Feishu iş akışı mı, bir Cloudflare ürünü mü"
+description: "Son zamanlarda bilgi yönetimini yeniden düşünüyorum."
+date: 2026-07-08
+likes: 3
+bookmarks: 2
+reposts: 0
+views: 439
+url: https://x.com/realchendahuang/status/2074900341456503169
+content: |
+  Son zamanlarda bilgi yönetimini yeniden düşünüyorum.
+
+  Burada aslında iki yol olduğunu fark ettim.
+
+  **Biri Feishu üzerine kurmak.**
+
+  Avantajları doğrudan:
+
+  ücretsiz, çoklu cihazda senkronize, paylaşılabilir, kolay iş birliği ve biçim olarak da yeterince zengin.
+
+  Dokümanlar, çok boyutlu tablolar, elektronik tablolar, slaytlar, tuval, Todo, bilgi tabanları — bu modüller bir araya geldiğinde birçok kişisel ve ekip bilgi yönetimi senaryosunu karşılıyor.
+
+  Özellikle çok boyutlu tablolara inanıyorum.
+
+  Bir bilgi merkezi olarak çok uygunlar.
+
+  Bilgi toplama, materyal arşivleme, durum yönetimi, yapılandırılmış düzenleme, içeriğin yeniden üretimi — hepsi onların etrafında dönebilir.
+
+  Feishu CLI ve AI ajanları ekleyince, Feishu sadece bir ofis aracı olmaktan çıkıyor.
+
+  Daha çok ajanların işletebileceği bir bilgi iş akışı sistemine dönüşüyor.
+
+  **Diğer yol ise Cloudflare üzerine kendi sistemini kurmak.**
+
+  Bu yol daha özgür ve ürünleştirmeye daha uygun.
+
+  Şu an üzerinde çalıştığım FlareMo, Cloudflare üzerinde bir bilgi yönetimi ürünü denemesi.
+
+  Cloudflare'in avantajı, altyapı yeteneklerinin eksiksiz olması:
+
+  ön uç, arka uç, veritabanı, nesne depolama, vektör arama, AI — hepsi birleştirilebilir.
+
+  Ama geliştirme gerektiriyor.
+
+  Veri yapısını, arama deneyimini, izin sistemini ve ürün mantığını da kendin tasarlaman gerekiyor.
+
+  Şu anki görüşüm:
+
+  - Feishu, bugün kullanabileceğin bir bilgi yönetimi sistemini hızlıca kurmak için.
+  - Cloudflare, bilgi yönetimini gerçekten kontrol edilebilir, iterasyon yapılabilir bir ürüne dönüştürmek için.
+
+  Her iki yol da incelenmeye değer.
+
+  Biri iş akışına yatkın.
+
+  Biri ürünleştirmeye yatkın.

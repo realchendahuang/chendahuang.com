@@ -1,0 +1,40 @@
+category: "ai"
+title: "DeepSeek Harness의 네 가지 모드, 정리"
+description: "일상 개발에는 Standard, 복잡한 효율 작업에는 PTC, 명확한 소규모 작업에는 Minimal, 그리고 Creator — 에이전트가 에이전트를 만든다."
+date: 2026-08-15
+likes: 46
+bookmarks: 60
+reposts: 6
+views: 10141
+url: "https://x.com/realchendahuang/status/2088643296021401829"
+content: |
+  DeepSeek Harness의 네 가지 모드를 살펴보는 데 시간을 좀 들였다 — 각각의 장단점과 활용 사례를 정리한다.
+
+  1. Standard — 일상 개발에 가장 적합
+  Standard는 DeepSeek Harness의 기본 전체 Coding Agent다. 일상 개발에 필요한 것들을 기본으로 갖추고 있고, 문제가 어디인지 아직 모르는 상태에서 에이전트가 스스로 탐색해야 하는 작업에 특히 잘 맞는다.
+
+  다만 작업의 대부분이 LLM → Tool → LLM → Tool → LLM → Tool로 이뤄지기 때문에, 작업이 복잡해질수록 Tool Calling 왕복(round trip)이 쌓여 지연 시간과 토큰 비용이 올라간다.
+
+  그래서: 탐색 우선의 작업은 Standard로 간다.
+
+  2. PTC — 복잡한 작업을 위한 효율 모드
+  PTC는 모델이 여러 도구 호출을 하나의 실행으로 묶는 TypeScript 블록을 작성하게 한다.
+
+  Standard라면: 파일 검색 → 모델 복귀 → 파일 읽기 → 모델 복귀 → 검색 → 모델 복귀 → 편집 → 모델 복귀.
+  PTC라면: 모델이 TypeScript 작성 → 한 번 실행 → 검색 + 반복 + 필터 + 읽기 + 처리 → 최종 결과 반환.
+
+  이렇게 하면 왕복이 줄고, 의미 없는 중간 데이터가 대량으로 모델 컨텍스트에 들어가는 것도 막을 수 있다. 그래서 대량 일괄 처리, 반복 작업, 구조화된 처리는 PTC가 가장 빛난다.
+
+  3. Minimal — 모델에게 Bash + Editor만 주는 모드
+  가장 큰 장점은 단순함이다: 도구가 적고, 도구 스키마가 작으며, 고정 프롬프트 오버헤드가 낮다.
+
+  하지만 Web도, Skills도, Subagent도, Workflow도 없다 — 복잡한 작업은 에이전트 하나가 억지로 해내야 한다. 게다가 Minimal에는 Standard의 완전한 Context Compaction도 없다. 그래서 짧은 작업은 고정 토큰 오버헤드가 낮지만, Bash 출력이 많은 아주 긴 세션이라면 실제로는 토큰을 아껴 주지 못할 수도 있다.
+
+  Minimal은 명확하게 정의된 작은 작업에 고르는 모드다 — 명확하고 짧을수록 좋다.
+
+  4. Creator — 에이전트로 에이전트를 만드는 모드
+  Standard에 Cordis Runtime, 플러그인 실험, Preset 제작 기능이 더해져 있다. 에이전트 자체까지도 조립하고 창조할 수 있는 대상으로 만든다.
+
+  솔직히 꽤 귀엽다: 모델이 스스로 노점을 차리고 물건을 팔면서, 자기 노점을 스스로 가꾼다 — 자급자족.
+
+  하지만 Creator의 가장 큰 문제는 권한이 높다는 점이다. 이 점은 명심하라.

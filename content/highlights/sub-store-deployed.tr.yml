@@ -1,0 +1,22 @@
+category: cloudflare
+title: "Sub-Store dağıtımını Cloudflare üzerinde tamamladım"
+description: "Biraz zaman aldı ama Sub-Store'u Cloudflare üzerinde dağıttım."
+date: 2026-06-27
+likes: 209
+bookmarks: 244
+reposts: 29
+views: 67007
+url: https://x.com/realchendahuang/status/2070689769731019207
+content: |
+  Biraz zaman aldı ama Sub-Store'u Cloudflare üzerinde dağıttım.
+
+  Kendi kurduğum düğümleri ve havaalanının yedek düğümlerini tekte birleştirdim ve otomatik aboneliğe ACL4SSR yönlendirme kurallarını ekledim.
+
+  Tek bir abonelik bağlantısıyla halledildi:
+
+  - Birden fazla sağlayıcının düğümlerini birleştirme
+  - Düğüm filtreleme
+  - Yönlendirme kuralı yapılandırma
+  - Otomatik yapılandırma güncellemeleri
+
+  Pürüzsüzden de pürüzsüz.

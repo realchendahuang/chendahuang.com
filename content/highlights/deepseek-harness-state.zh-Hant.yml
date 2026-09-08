@@ -1,0 +1,29 @@
+category: ai
+title: "DeepSeek Harness 現況：15 萬 Star 仍是 Developer Preview"
+description: "影響力跑在工程能力前面，外圍生態擴張非常快。"
+date: 2026-08-18
+likes: 7
+bookmarks: 0
+reposts: 10
+views: 6200
+url: https://x.com/realchendahuang/status/2089642236413985278
+content: |
+  我最近又翻了一遍 DeepSeek Harness 的倉庫和 Discussions，感覺這個專案現在正處在一個很有意思的階段：
+
+  DeepSeek Harness 目前已經有 15 萬+ Star、倉庫累計超過 1.2 萬次 Commit。
+
+  但官方 README 依然非常明確地寫著：現在只是 Developer Preview，還會發生破壞相容性的改動。
+
+  rc.7 於 8 月 17 日發布。Issues 和 PR 限制建立，回饋走 Discussions。
+
+  社群很大但核心開發集中。Bug 頻出，比如 unknown tool "" 問題。
+
+  最缺的是測試覆蓋、Provider 相容性、會話可靠性。
+
+  架構上還是有吸引力的，像 Agent 作業系統底座：
+
+  - Everything is a Plugin
+  - Cordis 組合架構
+  - Preset / Skill / MCP / Agent / Provider 全部外掛化
+
+  專案現在處在「影響力超前於工程能力」的階段。

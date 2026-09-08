@@ -1,0 +1,26 @@
+category: ai
+title: "Dahuang AI Tone: AI 냄새를 맡을 수 있어야 떼어낼 수도 있다"
+description: "내가 만든 다소 엉뚱한 Skill: Dahuang AI Tone"
+date: 2026-06-22
+likes: 0
+bookmarks: 0
+reposts: 0
+views: 213
+url: https://x.com/realchendahuang/status/2069025354623377580
+content: |
+  나는 다소 엉뚱한 Skill을 하나 만들었다:
+
+  **Dahuang AI Tone**
+
+  모두가 "AI 냄새 빼기"를 이야기한다. 그런데 AI 냄새란 정확히 뭘까?
+
+  이것은 두 가지 일을 한다:
+
+  - 평범한 텍스트를 특정 모델의 AI 냄새가 나는 스타일로 다시 쓴다
+  - 또는 그 반대: 텍스트의 어디가 AI 냄새가 나는지, 어떤 모델의 말투를 닮았는지 짚어 준다
+
+  그 가치는:
+
+  AI 냄새를 맡을 수 있어야 어떻게 떼어낼지 안다는 것이다.
+
+  GitHub: https://github.com/realchendahuang/dahuang-ai-tone

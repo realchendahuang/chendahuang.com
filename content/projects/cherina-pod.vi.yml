@@ -1,0 +1,12 @@
+title: "Cherina Pod"
+description: "Ứng dụng podcast song ngữ để luyện nghe chuyên sâu. Chạm vào một câu tiếng Anh là bản dịch tiếng Trung hiện ra; lặp theo từng câu, chỉnh tốc độ và đọc theo — hiểu cho thấu vẫn hơn nghe cho nhiều."
+type: "Sản phẩm indie"
+url: https://pod.cherina.app/
+onlineUrl: https://pod.cherina.app/
+image: /projects/cherina-pod.webp
+imageAlt: "Trang chủ Cherina Pod: tiếp tục nghe, học tiếng Anh, thẻ bìa song ngữ"
+icon: i-lucide-headphones
+color: "#e25822"
+tags: ["Podcast", "Nghe chuyên sâu", "Học tiếng Anh", "Song ngữ", "Sản phẩm indie"]
+date: 2026-08-26
+status: ongoing

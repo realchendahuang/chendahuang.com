@@ -1,0 +1,22 @@
+category: cloudflare
+title: "Ukończyłem wdrożenie Sub-Store na Cloudflare"
+description: "Zajęło mi to chwilę, ale wdrożyłem Sub-Store na Cloudflare."
+date: 2026-06-27
+likes: 209
+bookmarks: 244
+reposts: 29
+views: 67007
+url: https://x.com/realchendahuang/status/2070689769731019207
+content: |
+  Zajęło mi to chwilę, ale wdrożyłem Sub-Store na Cloudflare.
+
+  Połączyłem moje własne węzły i zapasowe węzły z airportu w jedno i dopiąłem reguły routingu ACL4SSR na automatycznej subskrypcji.
+
+  Załatwione jednym linkiem subskrypcji:
+
+  - Scalanie węzłów od wielu dostawców
+  - Filtrowanie węzłów
+  - Konfiguracja reguł routingu
+  - Automatyczna aktualizacja konfiguracji
+
+  Gładsze niż gładkie.

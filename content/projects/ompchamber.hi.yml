@@ -1,0 +1,10 @@
+title: "OMPChamber"
+description: "OpenChamber UI-फ़ाउंडेशन पर बना OMP एजेंट-रनटाइम (Oh My Pi) का डेस्कटॉप क्लाइंट — OMP एजेंट को शक्ति देता है, OpenChamber अनुभव को। एजेंट का काम चलाइए, पूरा कंट्रोल अपने पास रखिए और कहीं से भी शिप कीजिए।"
+type: "एजेंट डेस्कटॉप क्लाइंट"
+url: "https://github.com/realchendahuang/OMPChamber"
+icon: "i-lucide-monitor"
+color: "#60a5fa"
+tags: ["OMP", "Agent", "Desktop", "OpenChamber", "Rust"]
+date: 2026-08-10
+status: "ongoing"
+stars: 55

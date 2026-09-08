@@ -1,0 +1,23 @@
+category: cloudflare
+title: "Vì sao làm FlareMo: ghi chép tùy hứng, để tri thức lớn dần"
+description: "Tìm một công cụ để “ghi chép tùy hứng, để tri thức lớn dần theo thời gian”."
+date: 2026-06-27
+likes: 1
+bookmarks: 2
+reposts: 1
+views: 258
+url: https://x.com/realchendahuang/status/2070807195332297205
+content: |
+  Tìm một công cụ để “ghi chép tùy hứng, để tri thức lớn dần theo thời gian”.
+
+  Muốn kiểu thu thập cảm hứng mở ra là ghi ngay, không bị cọ xát, như Flomo;
+
+  muốn hệ sinh thái mã nguồn mở chín muồi, dữ liệu dễ di chuyển và API thật sự nghịch được, như Memos;
+
+  nhưng lại không muốn mở thêm một con VPS nữa để chăm Docker, Postgres và một tiến trình Node chạy vĩnh viễn.
+
+  Vậy làm sao đây? Cách của FlareMo: coi mô hình dữ liệu và API của Memos như một “bản đặc tả”, rồi dựng lại toàn bộ runtime trên Cloudflare:
+
+  Workers chạy API, D1 lưu ghi chú, R2 chứa tệp đính kèm, Queues/Cron xử lý tác vụ nền, còn Vectorize + Workers AI để dành cho tìm kiếm ngữ nghĩa và các quy trình AI sau này.
+
+  Đứng trên vai Memos để xây một kho tri thức cá nhân sống trên đám mây biên.

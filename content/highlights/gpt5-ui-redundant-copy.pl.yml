@@ -1,0 +1,22 @@
+category: ai
+title: "Wada wrodzona generacji GPT-5: wpisywanie wewnętrznych wymagań w teksty interfejsu"
+description: "Źródłem napompowanych tekstów interfejsu jest to, że nigdy nie oddziela tekstów dla użytkownika od informacji zwrotnych dla dewelopera."
+date: 2026-08-12
+likes: 2
+bookmarks: 0
+reposts: 1
+views: 1500
+url: https://x.com/realchendahuang/status/2087349882101370909
+content: |
+  Świetnie ujęte – to wada wrodzona generacji GPT-5:
+
+  Ciągle wpisuje wewnętrzne wymagania do tekstów interfejsu, żeby udowodnić swój wkład pracy. Żeby się udowodnić – no popatrz, naprawdę to zrobiłem, czy nie jestem świetny, nie obijałem się, rozłożyłem wszystkie twoje wymagania na stole.
+
+  A teksty w interfejsie są napompowane ponad wszelką miarę. Od 5.0 aż po 5.6 – generacja za generacją – i nadal tego nie naprawiono. To siedzi w kościach.
+
+  Każdy, kto naprawdę wdrażał produkty frontendowe, wie:
+
+  - Każdy tekst na widoku, duży czy mały, to tekst skierowany do użytkownika
+  - Teksty, które powinny trafić do dewelopera jako informacja zwrotna w czacie, nigdy nie powinny być pisane do produktu
+
+  Ale ono nie tylko pisze słabe teksty – często wpisuje do produktu wewnętrzne informacje zwrotne, żeby „pokazać”, że faktycznie coś zrobiło.

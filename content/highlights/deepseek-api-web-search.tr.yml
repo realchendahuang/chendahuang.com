@@ -1,0 +1,15 @@
+category: ai
+title: "DeepSeek'in API'sinde yerleşik web araması var — resmî aramadan beleş yararlan"
+description: "DeepSeek'in resmî API'sinin içinde gerçekten web araması geliyor."
+date: 2026-08-05
+likes: 1037
+bookmarks: 885
+reposts: 89
+views: 230537
+url: https://x.com/realchendahuang/status/2084826975102030013
+content: |
+  Harika bir şey buldum — DeepSeek web aramayı doğrudan API'sinin içine yerleştirmiş.
+  Responses arayüzü üzerinden deepseek-v4-flash modelini çağır; istek parametrelerinde bir web_search aracı tanımlaman yeterli, sunucu tarafı aramayı doğrudan kullanırsın.
+  Üçüncü taraf arama motoru entegrasyonu yok, ayrıca arama API anahtarı başvurusu da yok.
+  Arama boru hattının tamamı resmî ekip tarafından barındırılıyor.
+  Orijinal: https://t.co/D4AXo7crHw

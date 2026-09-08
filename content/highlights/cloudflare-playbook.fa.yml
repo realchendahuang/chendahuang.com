@@ -1,0 +1,29 @@
+category: cloudflare
+title: "یک Cloudflare Playbook ساختم"
+description: "برای همهی توسعهدهندههای مستقلی که میخواهند با کدنویسیِ AI محصول بسازند."
+date: 2026-06-21
+likes: 125
+bookmarks: 176
+reposts: 29
+views: 9114
+url: https://x.com/realchendahuang/status/2068732869854613903
+content: |
+  یک Cloudflare Playbook ساختم.
+
+  برای همهی توسعهدهندههای مستقلی که میخواهند با کدنویسیِ AI محصول بسازند.
+
+  چیزهایی که پوشش میدهد:
+
+  - سرویسهای پرکاربرد Cloudflare را چطور انتخاب کنیم
+  - Workers / Pages / D1 / R2 / KV / AI Gateway را چطور استفاده کنیم
+  - آیا پلن رایگان واقعاً کافی است
+  - چه زمانی پلن $5 Workers Paid را بخریم
+  - تلههایی که کد CF نوشتهشده با AI بیشتر از همه در آنها میترکد
+  - چطور برای Codex / Claude Code، Cloudflare Skills و MCP را تنظیم کنیم
+  - کدام پروژههای متنباز را میتوان مستقیم مرجع گرفت
+
+  هدفم ساده است:
+
+  با AI کد بنویس، با Cloudflare در کل جهان دیپلوی کن.
+
+  Playbook: [chendahuang.com/playbooks](/playbooks)

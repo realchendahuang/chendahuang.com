@@ -1,0 +1,12 @@
+title: FlareMo
+description: Sistem manajemen pengetahuan pribadi berbasis Cloudflare dengan API yang kompatibel dengan Memos — data Anda, di-host sendiri.
+type: Manajemen pengetahuan pribadi
+url: https://github.com/realchendahuang/FlareMo
+image: /projects/flaremo.webp
+imageAlt: Antarmuka linimasa catatan dan tag FlareMo
+icon: i-lucide-sticky-note
+color: "#f59e0b"
+tags: ["Cloudflare", "Memos", "D1", "R2", "Manajemen pengetahuan"]
+date: 2026-07-10
+status: ongoing
+stars: 150

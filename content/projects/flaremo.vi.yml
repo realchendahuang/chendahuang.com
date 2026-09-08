@@ -1,0 +1,12 @@
+title: "FlareMo"
+description: "Hệ thống quản lý kiến thức cá nhân sinh ra từ nền tảng Cloudflare, cung cấp API tương thích Memos — dữ liệu của bạn, do bạn tự lưu trữ."
+type: "Quản lý kiến thức cá nhân"
+url: https://github.com/realchendahuang/FlareMo
+image: /projects/flaremo.webp
+imageAlt: "Giao diện dòng thời gian ghi chú và thẻ nhãn của FlareMo"
+icon: i-lucide-sticky-note
+color: "#f59e0b"
+tags: ["Cloudflare", "Memos", "D1", "R2", "Quản lý kiến thức"]
+date: 2026-07-10
+status: ongoing
+stars: 150

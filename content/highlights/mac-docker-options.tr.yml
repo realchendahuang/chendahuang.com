@@ -1,0 +1,16 @@
+category: tools
+title: "Mac'te Docker seçenekleri: Colima / OrbStack / Docker Desktop"
+description: "Mac'te Docker seçenekleri üzerine kısa bir teknoloji seçimi dökümü."
+date: 2026-06-20
+likes: 0
+bookmarks: 0
+reposts: 0
+views: 211
+url: https://x.com/realchendahuang/status/2068238972728533154
+content: |
+  Mac'te Docker seçenekleri üzerine kısa bir teknoloji seçimi dökümü.
+
+  - **Colima**: ücretsiz ve açık kaynak, çok hafif, ama temelde yalnızca komut satırı. Kurcalamaktan çekinmeyen ve terminalde yaşayan insanlar için.
+  - **Apple Container**: Apple'ın yeni konteyner yönelimi — izlemeye değer, ama ekosistem hâlâ çok erken aşamada. Docker Compose bile henüz desteklenmiyor.
+  - **OrbStack**: GUI'si var, hafif ve hızlı, ekosistem desteği sağlam. Dezavantajı: açık kaynak değil — ticari sürüm lisans gerektiriyor, kişisel sürümse ücretsiz.
+  - **Docker Desktop**: resmî ürün, ama ağır ve şişkin, deneyimi berbat. Mac'te kullanabiliyorsan kullanma.

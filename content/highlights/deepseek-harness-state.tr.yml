@@ -1,0 +1,29 @@
+category: ai
+title: "DeepSeek Harness bugün: 150 bin yıldız ve hâlâ Developer Preview"
+description: "Etki, mühendislik olgunluğunun önünde koşuyor, çevresel ekosistem de hızla genişliyor."
+date: 2026-08-18
+likes: 7
+bookmarks: 0
+reposts: 10
+views: 6200
+url: https://x.com/realchendahuang/status/2089642236413985278
+content: |
+  Geçenlerde DeepSeek Harness reposuna ve Discussions'a tekrar göz attım; proje çok ilginç bir aşamada:
+
+  DeepSeek Harness'ın 150 bin artı yıldızı ve repoda 12.000'den fazla commit'i var.
+
+  Yine de resmî README hâlâ çok net söylüyor: şu an yalnızca bir Developer Preview ve geriye dönük uyumsuz değişiklikler hâlâ gelecek.
+
+  rc.7 17 Ağustos'ta yayınlandı. Issue ve PR oluşturma kısıtlı; geri bildirimler Discussions üzerinden gidiyor.
+
+  Topluluk devasa, ama çekirdek geliştirme birkaç elde yoğunlaşmış. Hatalar durmadan çıkıyor — "unknown tool" sorunu gibi.
+
+  En çok eksik olanlar: test kapsamı, sağlayıcı uyumluluğu ve oturum güvenilirliği.
+
+  Mimari olarak hâlâ cazip, bir ajan işletim sisteminin temeli gibi:
+
+  - Her şey bir Plugin
+  - Cordis kompozisyon mimarisi
+  - Preset / Skill / MCP / Agent / Provider — hepsi plugin'leştirilmiş
+
+  Proje, "etkinin mühendisliğin önünde koştuğu" aşamada.

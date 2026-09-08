@@ -1,0 +1,23 @@
+category: "ai"
+title: "Command Code CEO 親自來留言區"
+description: "少算了一筆快取的帳——Prefix Cache 才是 Coding Agent 成本的大頭。"
+date: 2026-08-30
+likes: 154
+bookmarks: 89
+reposts: 5
+views: 62171
+url: "https://x.com/realchendahuang/status/2093878404131283101"
+content: |
+  昨天我發 Command GOAT 和 OpenCode Go 的額度對比，Command Code 的 CEO 親自跑來評論了。
+
+  他說我其實還少算了一筆快取的帳，我順著去研究了一下，發現 Command Code 有點東西。
+
+  Coding Agent 本身就是一個巨大的 Prefix Cache 機器。一個幾十萬 Token 的 Session，跑到下一輪的時候，真正新增的可能只有幾千 Token，前面的 System Prompt、Tools、程式碼上下文、歷史對話基本都沒變。快取命中率越高，這些舊 Context 就越便宜。
+
+  Command Code 他們前段時間專門狠狠地做了一輪 Cache Thrashing，主要採取的策略如下：
+
+  同一個 Session 盡量固定到相同的 GPU Pod，保持 KV Cache 熱著；盡量維持 Stable Prefix，Provider fallback 也不亂改 Context；再加上他們那套 Tool Call Repair，模型參數寫錯了 Harness 直接在本地修，少讓模型來回報錯重試。
+
+  v0.33.0 的 Changelog 甚至直接寫了：Major Cache Overhaul，median cost reduction 2.9×。他們現在官方宣稱快取命中率已經能長期做到 95～99% 左右。
+
+  同一個模型，同樣是 10 美元套餐，因為快取帶來的差異，這玩意累積起來，效果天差地別。

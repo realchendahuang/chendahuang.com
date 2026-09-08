@@ -1,0 +1,52 @@
+seo:
+  title: "Chen Dahuang - Karya & Konten"
+  description: "Pameran pribadi karya dan konten Chen Dahuang. Menampilkan proyek, panduan, agent skill, artikel, dan kiriman."
+title: "Chen Dahuang"
+description: |
+  Saat ini | KOSX @kosxai — kepala startup & indie dev China Timur | Mitra di perusahaan AI di Ningbo
+  Bidang | Indie Hacker | Mantan product manager AI | Wawasan produk / pelawak
+  Sedang dikerjakan | Catatan FlareMo | Pembersihan X FeedSieve | Podcast bilingual Cherina Pod
+hero:
+  links:
+    - label: "Lihat Proyek"
+      to: /projects
+      color: "primary"
+    - label: "GitHub"
+      to: https://github.com/realchendahuang
+      color: "neutral"
+      target: "_blank"
+  images:
+    - src: /projects/cherina-pod.webp
+      alt: Cherina Pod, aplikasi mendengarkan podcast bilingual
+    - src: /projects/feedsieve.webp
+      alt: FeedSieve, alat pembersih lini masa X
+    - src: /projects/flaremo.webp
+      alt: FlareMo, manajemen pengetahuan pribadi
+    - src: /projects/sub-store-cloudflare.webp
+      alt: Sub-Store Cloudflare, alat agregasi langganan
+    - src: /projects/pi-config.webp
+      alt: pi-config, konfigurasi Pi Coding Agent
+    - src: /projects/deepmate.webp
+      alt: DeepMate, panel kontrol AI harness
+    - src: /projects/hermes-memory.webp
+      alt: Hermes Memory, plugin memori persisten untuk OpenCode
+    - src: /projects/god-museum.webp
+      alt: God-Museum, galeri mitologi lintas peradaban
+    - src: /projects/ai-chronicle.webp
+      alt: AI Chronicle, kronik industri AI
+blog:
+  title: "Artikel Terbaru"
+highlights:
+  title: "Kiriman Pilihan"
+  links:
+    - label: "Lihat Semua"
+      icon: "i-lucide-arrow-right"
+      to: "/highlights"
+      color: "neutral"
+      variant: "soft"
+    - label: "Beranda X"
+      icon: "i-simple-icons-x"
+      to: "https://x.com/realchendahuang"
+      target: "_blank"
+      color: "neutral"
+      variant: "soft"

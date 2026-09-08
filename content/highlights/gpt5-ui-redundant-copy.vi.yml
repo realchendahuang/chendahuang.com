@@ -1,0 +1,22 @@
+category: ai
+title: "Căn bệnh cố hữu của thế hệ GPT-5: viết cả yêu cầu nội bộ vào chữ trên giao diện"
+description: "Cội rễ của tình trạng chữ nghĩa phình to trên UI là nó chưa từng tách bạch văn bản cho người dùng với phản hồi cho nhà phát triển."
+date: 2026-08-12
+likes: 2
+bookmarks: 0
+reposts: 1
+views: 1500
+url: https://x.com/realchendahuang/status/2087349882101370909
+content: |
+  Quá chuẩn — đây là căn bệnh cố hữu của thế hệ GPT-5:
+
+  Nó cứ viết cả yêu cầu nội bộ vào chữ trên giao diện để chứng minh khối lượng công việc của mình. Để tự chứng minh — ơ nhìn này, tôi làm thật đấy, tôi giỏi chứ, tôi có lười đâu, từng yêu cầu của anh tôi đều bày ra cả rồi nhé.
+
+  Và chữ trên giao diện phình to đến mức khó tin. Từ 5.0 cho đến tận 5.6 — hết đời này đến đời khác — vẫn chưa sửa được. Nó đã ngấm vào tận tủy.
+
+  Ai từng thật sự ship sản phẩm frontend đều biết:
+
+  - Mọi dòng chữ trên giao diện, to hay nhỏ, đều là văn bản hướng tới người dùng
+  - Văn bản vốn thuộc về phản hồi trong chat dành cho nhà phát triển thì không bao giờ được viết vào sản phẩm
+
+  Nhưng nó không chỉ viết văn bản dở — mà còn thường viết cả phản hồi nội bộ vào sản phẩm để “khoe” rằng mình đã làm được gì đó.

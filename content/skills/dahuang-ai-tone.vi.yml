@@ -1,0 +1,8 @@
+title: "Dahuang AI Tone"
+description: "Viết lại văn bản để mang phong cách AI của GPT, Claude, Gemini hoặc Doubao — hoặc nhận diện xem một đoạn văn bản giống model nào nhất."
+url: https://github.com/realchendahuang/dahuang-ai-tone
+install: npx skills add realchendahuang/dahuang-ai-tone -g
+icon: i-lucide-fingerprint
+color: "#a855f7"
+tags: ["Agent Skill", "Chất AI", "Phong cách model", "Nhận diện phong cách", "Viết tiếng Trung"]
+date: 2025-05-01

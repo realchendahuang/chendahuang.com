@@ -1,0 +1,12 @@
+title: "FeedSieve"
+description: "Người lao công của không gian mạng cho feed X của bạn — giữ spam bot, rác AI kém chất lượng, kẻ lừa đảo crypto và bẫy câu tương tác tránh xa dòng thời gian của bạn."
+type: "Công cụ X mã nguồn mở"
+url: https://github.com/realchendahuang/feedsieve
+image: /projects/feedsieve.webp
+imageAlt: "Thẻ sản phẩm tông xanh cyan tối của FeedSieve"
+icon: i-lucide-shield-check
+color: "#22d3ee"
+tags: ["X", "RSS", "Bot Filter", "Khử nhiễu", "OSS"]
+date: 2026-08-25
+status: ongoing
+stars: 0

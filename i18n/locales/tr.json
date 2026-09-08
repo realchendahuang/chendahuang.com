@@ -1,0 +1,206 @@
+{
+  "site": {
+    "name": "Chen Dahuang",
+    "description": "Chen Dahuang'ın kişisel portfolyosu ve içerik vitrini: projeler, rehberler, beceriler, yazılar ve gönderiler."
+  },
+  "nav": {
+    "home": "Ana Sayfa",
+    "projects": "Projeler",
+    "playbooks": "Rehberler",
+    "skills": "Beceriler",
+    "blog": "Blog",
+    "highlights": "Gönderiler",
+    "menu": "Menü",
+    "openMenu": "Gezinme menüsünü aç",
+    "switchLanguage": "Dili değiştir"
+  },
+  "sections": {
+    "blog": "Blog",
+    "project": "Projeler",
+    "playbook": "Rehberler",
+    "skill": "Beceriler",
+    "highlight": "Gönderiler"
+  },
+  "search": {
+    "label": "Ara",
+    "shortcut": "Ara (Cmd+K)",
+    "placeholder": "Blog yazıları, projeler, rehberler, beceriler ve gönderilerde ara…",
+    "empty": "Tüm siteyi aramak için bir anahtar kelime yaz",
+    "noResults": "\"{query}\" için sonuç bulunamadı"
+  },
+  "theme": {
+    "toDark": "Karanlık moda geç",
+    "toLight": "Aydınlık moda geç"
+  },
+  "footer": {
+    "rss": "RSS beslemesi",
+    "onX": "X'te Chen Dahuang",
+    "onGithub": "GitHub'da Chen Dahuang"
+  },
+  "a11y": {
+    "skipToContent": "Ana içeriğe geç"
+  },
+  "hero": {
+    "highlights": "Öne çıkanlar",
+    "blogPosts": "Blog yazıları",
+    "projects": "Projeler",
+    "githubStars": "GitHub yıldızları"
+  },
+  "landing": {
+    "shareHighlight": "Chen Dahuang'ın öne çıkan gönderilerinden: {title}",
+    "linkCopied": "Bağlantı kopyalandı, hadi paylaş!",
+    "likes": "beğeni",
+    "bookmarks": "yer imi",
+    "original": "Orijinal",
+    "about": "Hakkımda",
+    "aboutTitle": "Indie geliştirici; Cloudflare ve AI üretkenlik araçlarıyla uğraşıyor",
+    "aboutBody": "Eski AI ürün yöneticisi, artık indie geliştirmeye odaklanmış durumda: AI'ı, Cloudflare'ı ve içerik üretimini kendi ürünlerimde ve iş akışlarımda birleştiriyorum. Projeler, rehberler ve blog yazıları bu keşfin açık kaydı — sen de benzer bir şey yapıyorsan, tanışalım.",
+    "support": "Afdian'da bana destek ol",
+    "xLink": "X (eski adıyla Twitter)",
+    "xDesc": "Günlük güncellemeler, düşünceler ve pratik ipuçları",
+    "githubLink": "GitHub",
+    "githubDesc": "Proje kaynak kodları ve rehber depoları",
+    "rssLink": "RSS beslemesi",
+    "rssDesc": "Blog güncellemeleri okuyucuna gelsin",
+    "work": "Çalışmalar",
+    "recentProjects": "Son projeler",
+    "viewAllProjects": "Tüm projeleri gör",
+    "readMore": "Devamını oku"
+  },
+  "projects": {
+    "tryOnline": "Çevrimiçi dene",
+    "github": "GitHub",
+    "view": "{title} projesini görüntüle",
+    "preview": "{title} projesinin önizlemesi"
+  },
+  "playbooks": {
+    "readOnline": "Çevrimiçi oku",
+    "viewOnGithub": "GitHub'da görüntüle"
+  },
+  "skills": {
+    "readOnline": "Çevrimiçi oku",
+    "viewOnGithub": "GitHub'da görüntüle"
+  },
+  "highlights": {
+    "count": "{count} gönderi",
+    "xHome": "X profili",
+    "searchPosts": "Gönderilerde ara",
+    "searchPlaceholder": "Başlık veya içerik anahtar kelimeleriyle ara…",
+    "expandAll": "Tümünü genişlet",
+    "collapseAll": "Tümünü daralt",
+    "viewMode": "Görünüm modu",
+    "filterTheme": "Temaya göre filtrele",
+    "all": "Tümü",
+    "hot": "Popüler",
+    "hotTitle": "Popüler gönderi",
+    "likes": "beğeni",
+    "bookmarks": "yer imi",
+    "reposts": "yeniden paylaşım",
+    "views": "görüntülenme",
+    "viewOnX": "Orijinalini X'te görüntüle",
+    "noMatch": "Eşleşen gönderi bulunamadı, başka bir anahtar kelime dene.",
+    "noPosts": "Bu filtrede hiç gönderi yok.",
+    "countSuffix": "gönderi"
+  },
+  "blog": {
+    "count": "{count} yazı",
+    "archive": "Arşiv",
+    "rss": "RSS beslemesi",
+    "searchPlaceholder": "Başlık, açıklama veya etiketlere göre ara…",
+    "all": "Tümü",
+    "found": "{count} yazı bulundu",
+    "tagFilter": "\"{tag}\" etiketi",
+    "keywordFilter": "\"{keyword}\" anahtar kelimesi",
+    "pinned": "Sabitlenmiş",
+    "pinnedTitle": "Sabitlenmiş yazı",
+    "original": "Orijinal",
+    "originalTitle": "Bu sitede yayınlanan orijinal yazı",
+    "noMatch": "Eşleşen yazı bulunamadı, başka bir anahtar kelime veya etiket dene.",
+    "minutes": "dk"
+  },
+  "archive": {
+    "title": "Arşiv",
+    "description": "Tüm blog yazıları yıla göre arşivlendi.",
+    "count": "{count} yazı, yıla göre derlendi.",
+    "posts": "yazı"
+  },
+  "friends": {
+    "empty": "Henüz arkadaşlık bağlantısı yok. content/friends/*.yml ekleyebilirsin.",
+    "avatar": "{name} adlı kişinin avatarı"
+  },
+  "post": {
+    "allPosts": "Tüm yazılar",
+    "updated": "{date} tarihinde güncellendi",
+    "minRead": "{count} dk okuma",
+    "original": "Orijinal",
+    "sourceX": "Aslen X'te yayınlanmış",
+    "indieDev": "Indie geliştirici",
+    "collapseToc": "İçindekileri daralt",
+    "viewToc": "İçindekileri görüntüle",
+    "toc": "İçindekiler",
+    "shareHint": "Bunu faydalı bulduysan bir arkadaşınla paylaşmaktan çekinme.",
+    "shareToX": "X'te paylaş",
+    "xOriginal": "X'teki orijinal",
+    "share": "Paylaş",
+    "related": "İlgili yazılar",
+    "subscribe": "Güncellemeler için abone ol",
+    "subscribeDesc": "Yeni yazılar RSS'e eklenir; beni X'te de takip edebilirsin.",
+    "rss": "RSS beslemesi",
+    "followX": "X'te takip et",
+    "support": "Destek ol",
+    "backToTop": "Başa dön",
+    "linkCopied": "Yazı bağlantısı panoya kopyalandı",
+    "shareText": "Chen Dahuang'ın blogundan: {title}"
+  },
+  "error": {
+    "title": "Sayfa bulunamadı",
+    "description": "Bu sayfa mevcut değil veya taşınmış olabilir."
+  },
+  "seo": {
+    "notFound": "Sayfa bulunamadı"
+  },
+  "highlightsCategories": {
+    "cloudflare": "Cloudflare",
+    "cloudflareDesc": "Edge cloud, Workers, ücretsiz altyapı ve dağıtım deneyimleri",
+    "tools": "Araç listesi",
+    "toolsDesc": "Yazılım, eklenti, donanım ve üretkenlik aracı önerileri",
+    "ai": "AI üzerine düşünceler",
+    "aiDesc": "Modeller, ajanlar, bilgi yönetimi ve iş birliği yöntemleri",
+    "product": "Ürün geliştirme",
+    "productDesc": "Indie geliştirme, teknoloji yığını ve ürün anlayışı",
+    "opc": "OPC girişimi",
+    "opcDesc": "Tek kişilik şirket: kurulum, kayıt ve operasyon süreçleri",
+    "growth": "İçerik büyümesi",
+    "growthDesc": "X'te operasyon, paylaşım yöntemleri ve takipçi artışı değerlendirmeleri",
+    "essay": "Denemeler",
+    "essayDesc": "Değer, mizah ve araç dışı bakış açılarına dair gözlemler"
+  },
+  "highlightViewModes": {
+    "theme": "Temaya göre",
+    "themeDesc": "Kategorilere göre gruplanmış göz atma",
+    "timeline": "Zaman çizelgesi",
+    "timelineDesc": "Yayın tarihine göre sıralı",
+    "heat": "Popülerliğe göre",
+    "heatDesc": "Beğeni ve etkileşime göre sıralı"
+  },
+  "monthLabel": "{month} {year}",
+  "langNames": {
+    "zh": "Çince",
+    "en": "İngilizce",
+    "ja": "Japonca",
+    "es": "İspanyolca",
+    "pt": "Portekizce",
+    "fr": "Fransızca",
+    "de": "Almanca",
+    "ru": "Rusça",
+    "ar": "Arapça",
+    "ko": "Korece",
+    "zh-Hant": "Geleneksel Çince",
+    "vi": "Vietnamca",
+    "id": "Endonezce",
+    "tr": "Türkçe",
+    "hi": "Hintçe",
+    "pl": "Lehçe",
+    "fa": "Farsça"
+  }
+}

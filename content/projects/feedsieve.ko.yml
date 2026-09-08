@@ -1,0 +1,12 @@
+title: "FeedSieve"
+description: "X 피드를 위한 사이버 공간 청소부 — 봇 스팸, 질 낮은 AI 쓰레기, 암호화폐 사기꾼, 참여 유도성 낚시글을 타임라인에서 걸러냅니다."
+type: "오픈소스 X 도구"
+url: "https://github.com/realchendahuang/feedsieve"
+image: "/projects/feedsieve.webp"
+imageAlt: "FeedSieve 시안 색 다크 제품 카드"
+icon: "i-lucide-shield-check"
+color: "#22d3ee"
+tags: ["X", "RSS", "Bot Filter", "잡음 제거", "OSS"]
+date: 2026-08-25
+status: "ongoing"
+stars: 0

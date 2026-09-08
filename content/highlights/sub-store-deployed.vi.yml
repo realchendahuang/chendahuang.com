@@ -1,0 +1,22 @@
+category: cloudflare
+title: "Hoàn tất triển khai Sub-Store trên Cloudflare"
+description: "Mất khá nhiều thời gian, nhưng cuối cùng mình đã triển khai được Sub-Store trên Cloudflare."
+date: 2026-06-27
+likes: 209
+bookmarks: 244
+reposts: 29
+views: 67007
+url: https://x.com/realchendahuang/status/2070689769731019207
+content: |
+  Mất một khoảng thời gian, nhưng cuối cùng mình đã triển khai được Sub-Store trên Cloudflare.
+
+  Gộp node tự dựng và node dự phòng của sân bay thành một, kèm quy tắc route ACL4SSR tự cập nhật.
+
+  Xong xuôi chỉ với một link subscription duy nhất:
+
+  - Gộp node từ nhiều nhà cung cấp
+  - Lọc node
+  - Cấu hình quy tắc route
+  - Tự động cập nhật cấu hình
+
+  Mượt còn hơn mượt.

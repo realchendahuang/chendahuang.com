@@ -1,0 +1,25 @@
+category: ai
+title: "學 Agent 原理：去看真正開源的 Pi Agent"
+description: "有老哥問：有沒有 Claude Code 比較好的分析文件可以學習？"
+date: 2026-06-18
+likes: 2
+bookmarks: 1
+reposts: 0
+views: 330
+url: https://x.com/realchendahuang/status/2067422630232412489
+content: |
+  有老哥問：
+
+  有沒有 Claude Code 比較好的分析文件可以學習？
+
+  我的回答是，在 AI 時代，一定要處處想到 AI，要讓 AI 輔助你去學習。
+
+  如果真的想學 Agent 的原理。
+
+  可以去看看 Pi Agent 這個專案。
+
+  麻雀雖小五臟俱全，太適合學習了，程式碼品質還很高。
+
+  Claude Code 並非開源，是原始碼外洩。
+
+  Pi Agent 才是真正的開源。

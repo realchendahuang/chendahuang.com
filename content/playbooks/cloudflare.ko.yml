@@ -1,0 +1,10 @@
+title: "Cloudflare 실전 매뉴얼"
+description: "기능 모듈, AI 코딩 워크플로우, 과금부터 흔한 아키텍처와 실제로 겪는 함정까지, Cloudflare를 쉽게 설명하는 핸드북입니다."
+url: "https://github.com/realchendahuang/cloudflare-playbook"
+onlineUrl: "https://chendahuang.com/playbook/cloudflare/"
+icon: "i-simple-icons-cloudflare"
+color: "#F38020"
+tags: ["Cloudflare", "AI 코딩", "Workers", "배포", "아키텍처"]
+date: 2025-01-01
+status: "ongoing"
+stars: 69

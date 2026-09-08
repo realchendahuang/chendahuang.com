@@ -1,0 +1,27 @@
+category: "ai"
+title: "5 dolarlık OpenCode Go resmen öldü"
+description: "İlk aylık 5 dolarlık fırsat gitti — baştan 10 dolar — bu da Command GOAT'ı birden dostane gösteriyor."
+date: 2026-08-29
+likes: 267
+bookmarks: 198
+reposts: 11
+views: 50354
+url: "https://x.com/realchendahuang/status/2093699519108288568"
+content: |
+  X'te herkesin övdüğü "harika 5 dolarlık" OpenCode Go tamamen çöktü.
+
+  OpenCode Go'nun eskiden fiyat/performansını ayakta tutan bir ilk ay 5 dolarlık fırsatı vardı — şimdi o bile yok, baştan 10 dolar.
+
+  Karşılaştırınca, rakibin Command GOAT paketleri giderek daha iyi görünmeye başladı.
+
+  DeepSeek V4 Flash, GLM-5.3 Flash, GLM-5.3 şu an yoğun kodlama ve ajan çalıştırma için esas iş gücü modelleri — ve Command GOAT paketi bunlara gözle görülür biçimde daha cömert kotalar veriyor.
+
+  Artık kodlama modellerini iki basit kutuya ayırıyorum: ana modeller ve angarya modelleri.
+
+  V4 Pro, GLM-5.3 ve benzerleri ana modeller — sert kemikleri çiğnerler. Karmaşık mimari, inatçı hatalar, büyük refactor'lar, kilit kararlar: sorun gerçekten zor olduğunda onlara devret.
+
+  V4 Flash ve GLM-5.3 Flash angarya modelleri. Repo okuma, kod arama, dosya düzenleme, test çalıştırma, toplu işler, yeni zemin açma — o pis işleri Flash'ın öğütmesi gereken şey tam olarak bunlar.
+
+  Command GOAT paketinin angarya kotası bol ve ana model kotasında da bariz bir zayıf nokta yok.
+
+  Bu yüzden ilan ediyorum: Command GOAT paketi şu anki sürümün cevabı.

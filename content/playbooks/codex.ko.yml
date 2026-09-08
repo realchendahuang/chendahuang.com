@@ -1,0 +1,10 @@
+title: "Codex 실전 매뉴얼"
+description: "Codex를 장기 협업 시스템으로 다루기 위한 실전 핸드북 — 서피스 선택, 프롬프트 계약, 컨텍스트 엔지니어링부터 Skills, MCP, Review, CI와 릴리스까지."
+url: "https://github.com/realchendahuang/codex-playbook"
+onlineUrl: "https://chendahuang.com/playbook/codex/"
+icon: "i-lucide-bot"
+color: "#10a37f"
+tags: ["Codex", "Agent", "컨텍스트 엔지니어링", "Skills", "MCP"]
+date: 2026-07-10
+status: "ongoing"
+stars: 1

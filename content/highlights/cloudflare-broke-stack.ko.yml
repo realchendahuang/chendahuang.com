@@ -1,0 +1,21 @@
+category: cloudflare
+title: "2026 인디 개발 베스트 프랙티스: Cloudflare 가난뱅이 올인원 스택"
+description: "2026년 인디 개발 베스트 프랙티스: Cloudflare 가난뱅이 올인원 스택."
+date: 2026-06-15
+likes: 225
+bookmarks: 335
+reposts: 34
+views: 40629
+url: https://x.com/realchendahuang/status/2066586160902881542
+content: |
+  2026 인디 개발 베스트 프랙티스:
+  Cloudflare 가난뱅이 올인원 스택
+  Codex: 코드 작성, 풀스택 개발 담당
+  GitHub: 버전 관리
+  Stripe: 결제
+  프런트엔드: TanStack Start
+  백엔드: Hono + Cloudflare Workers
+  배포: Cloudflare Pages
+  데이터베이스: Cloudflare D1
+  파일 저장: Cloudflare R2
+  캐시 / 설정: Cloudflare KV

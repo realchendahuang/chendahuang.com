@@ -1,0 +1,38 @@
+category: cloudflare
+title: "Worker'lar siber emekçiler"
+description: "Bana kalırsa çoğu kişi Cloudflare Workers'ı hâlâ %1'inden az anlıyor."
+date: 2026-06-16
+likes: 1
+bookmarks: 2
+reposts: 1
+views: 1743
+url: https://x.com/realchendahuang/status/2066895041910763934
+content: |
+  Bana kalırsa çoğu kişi Cloudflare Workers'ı hâlâ %1'inden az anlıyor.
+
+  Worker'lar siber emekçilerdir.
+
+  Web sitenin arkasındaki pis işleri senin yerine onlar yapıyor.
+
+  Form gönderme, dosya yükleme, AI çağrıları, giriş doğrulama, ödeme bildirimleri ve küçük bir ürünün API'si — Worker'lar hepsini halleder.
+
+  Worker'ların en çılgın yanı: ücretsiz kullanıcılar tek kuruş ödemeden günde 100.000 istek alıyor.
+
+  100.000 ne demek?
+
+  Sitenin günde 1.000 kullanıcısı olduğunu düşün. 24 saat hiç durmadan çalışsa bile her saniye biri girse günde ancak 86.400 ziyaret edilir — yine de kotayı tüketmeye yetmez.
+
+  Bu ücretsiz kotayı gerçekten tüketebilirsen...
+
+  daha ne bekliyorsun? Zengin olmak üzeresin.
+
+  Şu an mantığı yazıp çalıştırması için bir Worker'a teslim edebilirsin.
+  Hono API framework'üyle birleştirince en iyi pratik bu.
+
+  Cloudflare Workers'ı bu kadar keyifli yapan da bu.
+
+  Ödeme mi? Güldürme.
+
+  Cloudflare'ın kalbi iyi.
+
+  Senin para harcadığını görmeye dayanamıyor.

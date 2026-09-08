@@ -1,0 +1,10 @@
+title: "OMPChamber"
+description: "OpenChamber UI 기반 위에 구축된 OMP 에이전트 런타임(Oh My Pi)용 데스크톱 클라이언트 — OMP는 에이전트 기능을, OpenChamber는 경험을 담당합니다. 에이전트 작업을 실행하고, 통제권을 지키며, 어디서든 배포하세요."
+type: "에이전트 데스크톱 클라이언트"
+url: "https://github.com/realchendahuang/OMPChamber"
+icon: "i-lucide-monitor"
+color: "#60a5fa"
+tags: ["OMP", "Agent", "Desktop", "OpenChamber", "Rust"]
+date: 2026-08-10
+status: "ongoing"
+stars: 55

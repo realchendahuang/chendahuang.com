@@ -1,0 +1,15 @@
+category: "ai"
+title: "DeepSeek Harness 的形態很好"
+description: "不搞反人類 TUI，上來就是 Web UI；沒有安裝包，不硬塞瀏覽器引擎，省儲存。"
+date: 2026-08-13
+likes: 101
+bookmarks: 20
+reposts: 3
+views: 53910
+url: "https://x.com/realchendahuang/status/2087903125302862187"
+content: |
+  我覺得 Deepseek Harness 它的形式非常好。
+  沒有一上來就搞反人類的 TUI，反而是 Web UI。
+  首先它的安裝包不會很大，因為它根本就沒有安裝包。不會用某些 Electron 框架硬塞一個瀏覽器引擎進去。就非常的節省儲存。
+  唯一的缺點就是要在瀏覽器裡用。其實完全可以把它作為 PWA 的程式安裝起來。這樣就跟原生客戶端沒啥區別了。
+  使用 Chrome 瀏覽器把網頁端作為應用程式安裝，是一個非常實用的功能。比如我這個截圖裡，它雖然是一個網頁，但是實際跟桌面端的應用程式用起來沒什麼區別。

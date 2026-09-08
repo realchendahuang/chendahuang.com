@@ -1,0 +1,9 @@
+title: "Dahuang X Post"
+description: "चीनी भाषा में लिखे विचारों, प्रोजेक्ट अपडेट्स और लंबे लेखों को X फ़ीड के हिसाब से छोटे पोस्ट या थ्रेड में बदलें — साथ ही शुरुआत, संरचना और वायरल होने की क्षमता की जाँच करें।"
+url: "https://github.com/realchendahuang/dahuang-x-post"
+install: npx skills add realchendahuang/dahuang-x-post -g
+icon: "i-simple-icons-x"
+color: "#111111"
+tags: ["Agent Skill", "X", "चीनी लेखन", "Hook", "Thread"]
+date: 2026-07-10
+stars: 0

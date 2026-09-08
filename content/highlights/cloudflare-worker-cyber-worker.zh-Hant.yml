@@ -1,0 +1,38 @@
+category: cloudflare
+title: "Worker 就是賽博勞工"
+description: "我感覺很多人對 Cloudflare Worker 的理解依然不足 1%。"
+date: 2026-06-16
+likes: 1
+bookmarks: 2
+reposts: 1
+views: 1743
+url: https://x.com/realchendahuang/status/2066895041910763934
+content: |
+  我感覺很多人對 Cloudflare Worker 的理解依然不足 1%。
+
+  Worker 就是賽博勞工。
+
+  專門幫你處理網站背後的髒活累活。
+
+  比如提交表單、上傳檔案、呼叫 AI、登入驗證、處理支付通知、做一個小產品的介面。Worker 都能做。
+
+  Worker 最離譜的地方是：免費使用者每天有 10 萬次請求額度，一毛錢都不用掏。
+
+  10 萬次是什麼概念？
+
+  如果你的網站每天有 1000 個使用者，哪怕你的網站 24 小時不停，每秒都有人來訪問一次，一天也才 86400 次，這都做不完。
+
+  如果真的能把這些免費額度用完。
+
+  還想啥呢？你就發財了。
+
+  現在你可以先寫邏輯，直接交給 Worker 去跑。
+  搭配 Hono API 框架，就是最佳實務。
+
+  這就是 Cloudflare Worker 最香的地方。
+
+  花錢？花個屁的錢。
+
+  Cloudflare 他心善。
+
+  捨不得你花錢。

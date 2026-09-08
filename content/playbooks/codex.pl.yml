@@ -1,0 +1,10 @@
+title: "Podręcznik Codex"
+description: "Praktyczny podręcznik do traktowania Codex jako długoterminowego systemu współpracy — od wyboru interfejsu, kontraktów promptów i inżynierii kontekstu, po Skills, MCP, Review, CI i wydawanie."
+url: https://github.com/realchendahuang/codex-playbook
+onlineUrl: https://chendahuang.com/playbook/codex/
+icon: i-lucide-bot
+color: "#10a37f"
+tags: ["Codex", "Agent", "Inżynieria kontekstu", "Skills", "MCP"]
+date: 2026-07-10
+status: ongoing
+stars: 1

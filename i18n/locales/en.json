@@ -193,6 +193,14 @@
     "fr": "French",
     "de": "German",
     "ru": "Russian",
-    "ar": "Arabic"
+    "ar": "Arabic",
+    "ko": "Korean",
+    "zh-Hant": "Traditional Chinese",
+    "vi": "Vietnamese",
+    "id": "Indonesian",
+    "tr": "Turkish",
+    "hi": "Hindi",
+    "pl": "Polish",
+    "fa": "Persian"
   }
 }

@@ -1,0 +1,40 @@
+category: "ai"
+title: "Cztery tryby DeepSeek Harness, wyjaśnione"
+description: "Standard na codzienny dev, PTC na efektywność w złożonych zadaniach, Minimal na konkretne małe zadania, a Creator — agenci budujący agentów."
+date: 2026-08-15
+likes: 46
+bookmarks: 60
+reposts: 6
+views: 10141
+url: "https://x.com/realchendahuang/status/2088643296021401829"
+content: |
+  Spędziłem trochę czasu nad czterema trybami DeepSeek Harness — oto plusy, minusy i przypadki użycia każdego z nich.
+
+  1. Standard — najlepszy do codziennego developmentu
+  Standard to domyślny pełny Coding Agent DeepSeek Harness. Ma wszystko, czego potrzebuje codzienny development, i świetnie sprawdza się w zadaniach, w których jeszcze nie wiesz, gdzie jest problem, a agent musi sam eksplorować.
+
+  Ale ponieważ większość pracy to LLM → Tool → LLM → Tool → LLM → Tool, okrężne wywołania narzędzi nawarstwiają się, gdy zadania stają się złożone, podnosząc opóźnienia i koszty tokenów.
+
+  Więc: zadania wymagające eksploracji idą do Standard.
+
+  2. PTC — tryb efektywności dla złożonych zadań
+  PTC pozwala modelowi napisać blok TypeScript, który łączy wiele wywołań narzędzi w jedno wykonanie.
+
+  Standard może wyglądać tak: szukanie plików → z powrotem do modelu → odczyt pliku → z powrotem do modelu → szukanie → z powrotem do modelu → edycja → z powrotem do modelu.
+  PTC wygląda tak: model pisze TypeScript → uruchom raz → szukaj + pętla + filtruj + czytaj + przetwarzaj → zwróć finalny wynik.
+
+  To tnie okrężne wywołania i trzyma ogromne ilości bezsensownych danych pośrednich z dala od kontekstu modelu. Więc wsadowe, powtarzalne, ustrukturyzowane przetwarzanie to miejsce, gdzie PTC błyszczy.
+
+  3. Minimal — tylko Bash + Editor dla modelu
+  Jego największą siłą jest prostota: mało narzędzi, małe schematy narzędzi, niski stały narzut promptu.
+
+  Ale bez Web, bez Skills, bez Subagenta, bez Workflow — złożone zadania trzeba przeforsować siłą jednego agenta. A Minimal nie ma pełnej kompakcji kontekstu ze Standard. Więc choć krótkie zadania mają niski stały narzut tokenów, przy bardzo długich sesjach z dużą ilością wyjścia Bash może faktycznie nie oszczędzać tokenów.
+
+  Minimal to wybór do konkretnych, dobrze zdefiniowanych małych zadań — im jaśniej i krócej, tym lepiej.
+
+  4. Creator — używanie agenta do tworzenia agentów
+  Ma Standard plus Cordis Runtime, eksperymenty z pluginami i tworzenie Presetów. Nawet zamienia samego agenta w coś komponowalnego i tworzalnego.
+
+  Trochę urocze, szczerze mówiąc: model rozstawia własny stragan, żeby sprzedawać towary, a potem sam dba o swój stragan — samowystarczalny.
+
+  Ale największym problemem Creatora są podniesione uprawnienia. Miej to na uwadze.

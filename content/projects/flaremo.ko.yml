@@ -1,0 +1,12 @@
+title: "FlareMo"
+description: "Cloudflare 네이티브 개인 지식 관리 시스템으로, Memos 호환 API를 제공하고 데이터를 직접 호스팅합니다."
+type: "개인 지식 관리"
+url: "https://github.com/realchendahuang/FlareMo"
+image: "/projects/flaremo.webp"
+imageAlt: "FlareMo의 메모 타임라인과 태그 인터페이스"
+icon: "i-lucide-sticky-note"
+color: "#f59e0b"
+tags: ["Cloudflare", "Memos", "D1", "R2", "지식 관리"]
+date: 2026-07-10
+status: "ongoing"
+stars: 150

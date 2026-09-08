@@ -1,0 +1,39 @@
+category: product
+title: "Praktik terbaik aplikasi indie 2026: Web + PWA dulu"
+description: "Berbagi lebih dari setahun pengalaman jatuh bangun berdarah-darah para pengembang indie."
+date: 2026-06-22
+likes: 263
+bookmarks: 422
+reposts: 46
+views: 37055
+url: https://x.com/realchendahuang/status/2069042963280503182
+content: |
+  Berbagi lebih dari setahun pengalaman jatuh bangun berdarah-darah para pengembang indie.
+
+  Di tahun 2026, kalau seorang pengembang indie ingin membuat aplikasi, praktik terbaiknya adalah:
+
+  **Di tahap MVP, kerjakan Web + PWA dulu.** Cepat dikembangkan, cepat di-debug, cepat diiterasi.
+
+  Tumpukan Web:
+
+  React + TanStack Start + Vite + TypeScript + shadcn/ui + Base UI + Tailwind CSS + better-auth + Vercel AI SDK + oxfmt / oxlint
+
+  Backend disatukan:
+
+  Hono + Cloudflare Workers
+
+  Debug Web:
+
+  Chrome DevTools MCP + ekstensi Codex Chrome
+
+  Begitu produknya benar-benar berjalan, baru buat versi mobile.
+
+  Tumpukan mobile:
+
+  React Native + Expo + Expo Router + NativeWind + React Native Reusables + Reanimated + Gesture Handler + EAS Build / Submit / Update
+
+  Inti idenya sederhana:
+
+  Validasi dulu kebutuhannya dengan Web + PWA.
+
+  Begitu benar-benar ada pengguna, baru pakai React Native + Expo untuk aplikasi yang sesungguhnya.

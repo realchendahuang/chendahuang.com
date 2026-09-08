@@ -1,0 +1,27 @@
+category: "ai"
+title: "5달러 OpenCode Go, 완전히 망했다"
+description: "첫 달 5달러 혜택이 사라지고 처음부터 10달러 — 그렇게 되니 Command GOAT가 한층 잘 보이기 시작한다."
+date: 2026-08-29
+likes: 267
+bookmarks: 198
+reposts: 11
+views: 50354
+url: "https://x.com/realchendahuang/status/2093699519108288568"
+content: |
+  예전에 X에서 다들 '어메이징한 5달러'라며 떠들던 OpenCode Go가 완전히 무너졌다.
+
+  OpenCode Go는 원래 가성비를 지탱해 주던 첫 달 5달러 혜택이 있었는데, 이제 그것마저 사라져 처음부터 10달러다.
+
+  대조적으로, 경쟁사인 Command GOAT의 요금제는 갈수록 더 좋아 보이기 시작한다.
+
+  DeepSeek V4 Flash, GLM-5.3 Flash, GLM-5.3은 지금 고강도 코딩과 에이전트 운영에 진짜로 쓰이는 주력 모델인데, Command GOAT 요금제는 이들에게 눈에 띄게 더 관대한 할당량을 준다.
+
+  이제 나는 코딩 모델을 두 부류로 나눈다: 주력 모델과 잡일 모델.
+
+  V4 Pro, GLM-5.3 같은 것은 주력 모델 — 단단한 뼈다귀를 씹는 쪽이다. 복잡한 아키텍처, 골치 아픈 버그, 대형 리팩터링, 핵심 결정: 문제가 진짜 어려울 때 그들에게 맡기면 된다.
+
+  V4 Flash, GLM-5.3 Flash는 잡일 모델이다. 리포 읽기, 코드 검색, 파일 수정, 테스트 실행, 배치 처리, 개척 작업 — 그런 궂은일은 Flash가 갈아 넣어야 마땅하다.
+
+  Command GOAT 요금제는 잡일 모델 할당량이 넉넉하고, 주력 모델 할당량도 뚜렷한 약점이 없다.
+
+  그래서 선언한다: Command GOAT 요금제가 지금 시점의 정답이다.

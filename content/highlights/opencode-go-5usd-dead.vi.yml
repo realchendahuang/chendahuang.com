@@ -1,0 +1,27 @@
+category: "ai"
+title: "OpenCode Go 5 USD chính thức chết"
+description: "Ưu đãi 5 USD tháng đầu đã hết — vào là 10 USD, bỗng dưng Command GOAT trông thân thiện hẳn."
+date: 2026-08-29
+likes: 267
+bookmarks: 198
+reposts: 11
+views: 50354
+url: "https://x.com/realchendahuang/status/2093699519108288568"
+content: |
+  Cái “gói 5 USD siêu ngon” OpenCode Go mà mọi người trên X khen nức khen nở đã hoàn toàn sụp đổ.
+
+  OpenCode Go từng có ưu đãi 5 USD tháng đầu để giữ vững giá trị — giờ đến cái đó cũng không còn, vào là 10 USD.
+
+  So vào thì mấy gói Command GOAT của đối thủ ngày càng trông đáng tiền.
+
+  DeepSeek V4 Flash, GLM-5.3 Flash, GLM-5.3 đang là những model làm việc nặng cho coding và chạy agent — mà gói Command GOAT lại cho quota rõ ràng hào phóng hơn hẳn.
+
+  Giờ mình chia model coding thành hai rổ đơn giản: model nòng cốt và model chân sai.
+
+  V4 Pro, GLM-5.3 cùng loại là model nòng cốt — chuyên gặm xương cứng. Kiến trúc phức tạp, bug khó nhằn, refactor lớn, quyết định then chốt: khi vấn đề thật sự khó, cứ đưa cho chúng.
+
+  V4 Flash và GLM-5.3 Flash là model chân sai. Đọc repo, tìm code, sửa file, chạy test, việc hàng loạt, khai phá vùng mới — mấy việc chân tay đó đúng là thứ Flash nên cày.
+
+  Gói Command GOAT quota chân sai thì dư dả, mà quota model nòng cốt cũng chẳng thấy điểm yếu rõ ràng nào.
+
+  Nên mình tuyên bố luôn: gói Command GOAT chính là đáp án của thời điểm hiện tại.

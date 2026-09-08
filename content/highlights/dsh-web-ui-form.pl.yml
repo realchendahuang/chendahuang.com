@@ -1,0 +1,19 @@
+category: "ai"
+title: "DeepSeek Harness trafił w formę"
+description: "Żadnego nieludzkiego TUI na starcie — Web UI od razu z pudełka. Bez instalatora, bez wbudowanego silnika przeglądarki, ledwo zajmuje miejsca."
+date: 2026-08-13
+likes: 101
+bookmarks: 20
+reposts: 3
+views: 53910
+url: "https://x.com/realchendahuang/status/2087903125302862187"
+content: |
+  Myślę, że DeepSeek Harness trafił w formę.
+
+  Zamiast wchodzić od razu w nieludzki TUI, dostarcza Web UI.
+
+  I zajmuje ledwo co miejsca — bo nie ma żadnego instalatora. Żadnego frameworka Electron wpychającego silnik przeglądarki do środka. To naprawdę sporo zaoszczędzonego miejsca.
+
+  Jedyną wadą jest to, że żyje w przeglądarce — ale możesz zainstalować go jako PWA i wtedy czuje się dokładnie jak natywny klient.
+
+  Instalowanie aplikacji webowej jako aplikacji przez Chrome jest naprawdę przydatne. Na zrzucie ekranu to strona internetowa, a zachowuje się dokładnie jak aplikacja desktopowa.

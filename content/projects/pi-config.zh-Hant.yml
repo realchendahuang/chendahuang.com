@@ -1,0 +1,12 @@
+title: "pi-config"
+description: "我的 Pi Coding Agent 開箱即用設定：17 個外掛 + 18 個全域 Skill + 2 個 MCP Server，一行指令安裝。"
+type: "AI 程式設計助手設定"
+url: "https://github.com/realchendahuang/pi-config"
+image: "/projects/pi-config.webp"
+imageAlt: "pi-config 暗紫色產品卡：Pi 設定 / My Pi Coding Agent Setup"
+icon: "i-lucide-terminal"
+color: "#a78bfa"
+tags: ["Pi", "Coding Agent", "Plugins", "Skills", "MCP", "Shell"]
+date: 2026-07-25
+status: "ongoing"
+stars: 139

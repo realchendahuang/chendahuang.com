@@ -1,0 +1,25 @@
+category: cloudflare
+title: "大家對 Cloudflare 的開發程度依然不足 1%"
+description: "我感覺大家對 Cloudflare 的開發程度依然不足 1%。"
+date: 2026-06-15
+likes: 377
+bookmarks: 470
+reposts: 32
+views: 88959
+url: https://x.com/realchendahuang/status/2066446337936110030
+content: |
+  我感覺大家對 Cloudflare 的開發程度依然不足 1%。
+
+  它現在出了太多的功能。
+
+  - 物件儲存用 R2
+  - 後端 API 用 Worker
+  - AI 閘道用 AI Gateway
+  - 重運算用 Container
+  - 快取用 KV
+  - 資料庫用 D1
+  - 如果用 PostgreSQL，可以用 HyperDrive 連一下
+
+  等等，還有很多很多，只有你想不到，沒有它做不到。
+
+  關鍵是真他媽便宜。免費額度就能用很久。什麼叫免費額度？就是一毛錢都不用掏啊，賽博菩薩。

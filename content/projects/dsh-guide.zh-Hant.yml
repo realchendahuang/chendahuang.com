@@ -1,0 +1,10 @@
+title: "dsh-guide · 一條消息的旅行"
+description: "鑽進 Coding Agent 的身體裡：跟著一條消息，用七幕 3D 場景走完它在生產級 Agent（DeepSeek Harness）內部的完整旅程。互動式原始碼科普網站。"
+type: "互動科普網站"
+url: "https://github.com/realchendahuang/dsh-guide"
+onlineUrl: "https://chendahuang.com/dsh"
+icon: "i-lucide-send"
+color: "#2dd4bf"
+tags: ["DeepSeek Harness", "3D", "WebGL", "科普"]
+date: 2026-08-13
+status: "ongoing"

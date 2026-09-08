@@ -1,0 +1,10 @@
+title: "dsh-guide · 메시지의 여정"
+description: "Coding Agent 안으로 들어가 보세요: 하나의 메시지가 프로덕션급 에이전트(DeepSeek Harness) 내부를 지나치는 일곱 개의 3D 장면을 따라갑니다. 소스 코드를 설명하는 인터랙티브 웹사이트입니다."
+type: "인터랙티브 해설 웹사이트"
+url: "https://github.com/realchendahuang/dsh-guide"
+onlineUrl: "https://chendahuang.com/dsh"
+icon: "i-lucide-send"
+color: "#2dd4bf"
+tags: ["DeepSeek Harness", "3D", "WebGL", "인터랙티브"]
+date: 2026-08-13
+status: "ongoing"

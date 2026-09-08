@@ -1,0 +1,52 @@
+seo:
+  title: "Chen Dahuang - 작업물과 콘텐츠"
+  description: "Chen Dahuang의 개인 작업물·콘텐츠 전시 공간. 프로젝트, 가이드, Agent Skill, 글과 포스트를 소개합니다."
+title: "Chen Dahuang"
+description: |
+  현재 | KOSX @kosxai — 중국 동부 스타트업·인디 개발 총괄 | 닝보(Ningbo) AI 기업 파트너
+  분야 | Indie Hacker | 전직 AI 프로덕트 매니저 | 제품 인사이트 / 유머 담당
+  만드는 중 | FlareMo(노트 앱) | FeedSieve(X 피드 정리) | Cherina Pod(이중 언어 팟캐스트)
+hero:
+  links:
+    - label: "프로젝트 보기"
+      to: /projects
+      color: "primary"
+    - label: "GitHub"
+      to: https://github.com/realchendahuang
+      color: "neutral"
+      target: "_blank"
+  images:
+    - src: /projects/cherina-pod.webp
+      alt: Cherina Pod — 이중 언어 팟캐스트 청취 앱
+    - src: /projects/feedsieve.webp
+      alt: FeedSieve — X 피드 정리 도구
+    - src: /projects/flaremo.webp
+      alt: FlareMo — 개인 지식 관리 도구
+    - src: /projects/sub-store-cloudflare.webp
+      alt: Sub-Store Cloudflare — 구독 집계 도구
+    - src: /projects/pi-config.webp
+      alt: pi-config — Pi Coding Agent 설정
+    - src: /projects/deepmate.webp
+      alt: DeepMate — AI Harness 제어판
+    - src: /projects/hermes-memory.webp
+      alt: Hermes Memory — OpenCode용 영구 메모리 플러그인
+    - src: /projects/god-museum.webp
+      alt: God-Museum — 여러 문명의 신화를 아우르는 갤러리
+    - src: /projects/ai-chronicle.webp
+      alt: AI Chronicle — AI 업계 연대기
+blog:
+  title: "최신 글"
+highlights:
+  title: "추천 포스트"
+  links:
+    - label: "전체 보기"
+      icon: "i-lucide-arrow-right"
+      to: "/highlights"
+      color: "neutral"
+      variant: "soft"
+    - label: "X 홈"
+      icon: "i-simple-icons-x"
+      to: "https://x.com/realchendahuang"
+      target: "_blank"
+      color: "neutral"
+      variant: "soft"

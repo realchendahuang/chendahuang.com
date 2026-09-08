@@ -1,0 +1,8 @@
+title: Dahuang AI Tone
+description: Tulis ulang teks agar terdengar seperti gaya AI dari GPT, Claude, Gemini, atau Doubao — atau deteksi model mana yang paling mirip dengan sebuah teks.
+url: https://github.com/realchendahuang/dahuang-ai-tone
+install: npx skills add realchendahuang/dahuang-ai-tone -g
+icon: i-lucide-fingerprint
+color: "#a855f7"
+tags: ["Agent Skill", "Rasa AI", "Gaya model", "Deteksi gaya", "Tulisan berbahasa Mandarin"]
+date: 2025-05-01

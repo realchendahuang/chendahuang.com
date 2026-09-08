@@ -1,0 +1,52 @@
+seo:
+  title: "Chen Dahuang - रचनाएँ और कंटेंट"
+  description: "Chen Dahuang की कृतियों और कंटेंट की निजी प्रदर्शनी। इसमें प्रोजेक्ट, मार्गदर्शिकाएँ, agent skills, लेख और पोस्ट शामिल हैं।"
+title: "Chen Dahuang"
+description: |
+  अभी | KOSX @kosxai — पूर्वी चीन में स्टार्टअप्स और इंडी डेवलपमेंट के प्रमुख | निंगबो की AI कंपनी में पार्टनर
+  क्षेत्र | Indie Hacker | पूर्व AI प्रोडक्ट मैनेजर | प्रोडक्ट इनसाइट्स / चुटकुलों का शौकीन
+  निर्माणाधीन | FlareMo नोट्स | FeedSieve X क्लीनअप | Cherina Pod द्विभाषी पॉडकास्ट
+hero:
+  links:
+    - label: "परियोजनाएँ देखें"
+      to: /projects
+      color: "primary"
+    - label: "GitHub"
+      to: https://github.com/realchendahuang
+      color: "neutral"
+      target: "_blank"
+  images:
+    - src: /projects/cherina-pod.webp
+      alt: Cherina Pod — द्विभाषी पॉडकास्ट सुनने का ऐप
+    - src: /projects/feedsieve.webp
+      alt: FeedSieve — X फ़ीड साफ़ करने का टूल
+    - src: /projects/flaremo.webp
+      alt: FlareMo — पर्सनल नॉलेज मैनेजमेंट
+    - src: /projects/sub-store-cloudflare.webp
+      alt: Sub-Store Cloudflare — सब्सक्रिप्शन एग्रीगेशन टूल
+    - src: /projects/pi-config.webp
+      alt: pi-config — Pi Coding Agent की कॉन्फ़िगरेशन
+    - src: /projects/deepmate.webp
+      alt: DeepMate — AI हार्नेस कंट्रोल पैनल
+    - src: /projects/hermes-memory.webp
+      alt: Hermes Memory — OpenCode के लिए परसिस्टेंट मेमोरी प्लगइन
+    - src: /projects/god-museum.webp
+      alt: God-Museum — अलग-अलग सभ्यताओं की माइथोलॉजी गैलरी
+    - src: /projects/ai-chronicle.webp
+      alt: AI Chronicle — इंडस्ट्री की क्रॉनिकल
+blog:
+  title: "ताज़ा लेख"
+highlights:
+  title: "चुनिंदा पोस्ट"
+  links:
+    - label: "सभी देखें"
+      icon: "i-lucide-arrow-right"
+      to: "/highlights"
+      color: "neutral"
+      variant: "soft"
+    - label: "X होमपेज"
+      icon: "i-simple-icons-x"
+      to: "https://x.com/realchendahuang"
+      target: "_blank"
+      color: "neutral"
+      variant: "soft"

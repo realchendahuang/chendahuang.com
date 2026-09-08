@@ -1,0 +1,22 @@
+category: ai
+title: "DeepSeek Harness báo 'unknown tool' với API bên thứ ba: lỗi định dạng dữ liệu ở gateway"
+description: "Tên tool thực ra không hề bị mất — gateway làm hỏng định dạng dữ liệu."
+date: 2026-08-18
+likes: 2
+bookmarks: 0
+reposts: 2
+views: 2313
+url: https://x.com/realchendahuang/status/2089636108271550484
+content: |
+  Vấn đề tương thích DeepSeek Harness + API bên thứ ba:
+
+  Khi agent gọi các tool như Bash, nó báo lỗi `ToolNotFoundError: unknown tool ""`, trông cứ như tool chưa bao giờ được đăng ký.
+
+  Chuyện thực sự là: gateway trả về một định dạng dữ liệu khác với API chính thức của DeepSeek, và tên tool bị rớt đâu đó ở giữa.
+
+  Một vài link GitHub Discussions liên quan:
+
+  - Tìm "unknown tool" trong deepseek-ai/dsh#issues
+  - Những người tự chạy gateway (OpenRouter / OneAPI / new-api) là những người dễ dính nhất
+
+  Cách tiếp cận để gỡ lỗi: bắt trọn một request và response tool_call, kiểm tra xem tên tool trong log của gateway có phải là chuỗi rỗng không.

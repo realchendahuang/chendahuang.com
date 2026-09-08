@@ -1,0 +1,19 @@
+category: "ai"
+title: "DeepSeek Harness đã chọn đúng hình thái"
+description: "Không đưa ra một TUI phi nhân tính ngay từ đầu — Web UI có sẵn ngay. Không installer, không nhét engine trình duyệt vào, gần như không tốn dung lượng."
+date: 2026-08-13
+likes: 101
+bookmarks: 20
+reposts: 3
+views: 53910
+url: "https://x.com/realchendahuang/status/2087903125302862187"
+content: |
+  Tôi nghĩ DeepSeek Harness đã chọn đúng hình thái (form factor).
+
+  Thay vì nhảy thẳng vào một TUI chống con người, nó mang theo một Web UI.
+
+  Và nó gần như không tốn dung lượng — vì không hề có installer. Không có framework Electron nhồi một engine trình duyệt vào bên trong. Tiết kiệm được khối dung lượng.
+
+  Nhược điểm duy nhất là nó nằm trong trình duyệt — nhưng bạn có thể cài nó như một PWA, và khi đó cảm giác y hệt một client native.
+
+  Việc cài một web app thành ứng dụng qua Chrome thực sự hữu ích. Trong ảnh chụp màn hình ở đây, nó là một trang web, vậy mà hành xử chẳng khác gì một ứng dụng desktop.

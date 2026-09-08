@@ -1,0 +1,10 @@
+title: "Cloudflare 實戰手冊"
+description: "從功能模組、AI 程式設計工作流和計費，到常用架構與實際踩坑，一本講清楚 Cloudflare 的繁體中文手冊。"
+url: "https://github.com/realchendahuang/cloudflare-playbook"
+onlineUrl: "https://chendahuang.com/playbook/cloudflare/"
+icon: "i-simple-icons-cloudflare"
+color: "#F38020"
+tags: ["Cloudflare", "AI 程式設計", "Workers", "部署", "架構"]
+date: 2025-01-01
+status: "ongoing"
+stars: 69

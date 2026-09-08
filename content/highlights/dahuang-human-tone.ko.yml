@@ -1,0 +1,27 @@
+category: ai
+title: "Dahuang Human Tone: 세상에 읽기 힘든 AI 글은 없어야 한다"
+description: "하루를 꼬박 써서 '글에서 AI 냄새 빼기'를 제대로 연구했다."
+date: 2026-06-22
+likes: 11
+bookmarks: 23
+reposts: 2
+views: 1104
+url: https://x.com/realchendahuang/status/2069051412240273678
+content: |
+  나는 "글에서 AI 냄새 빼기"를 하루 종일 제대로 연구했다.
+
+  시중에 나온 주요 Humanizer들과, AI 냄새 제거 Skill, 프롬프트 방식들을 종합적으로 비교했다.
+
+  거기에 2023년부터 LLM을 써 오며 GPT, Claude, Gemini, Doubao의 갖가지 AI 냄새에 나날이 시달려 온 내 경험까지 더했다.
+
+  그리고 이것을 만들었다:
+
+  **Dahuang Human Tone**
+
+  중국어 환경을 위해 만들어진 AI 냄새 제거 Skill.
+
+  내 바람은:
+
+  세상에 읽기 힘든 AI 글이 없어야 한다는 것이다.
+
+  GitHub: https://github.com/realchendahuang/dahuang-human-tone

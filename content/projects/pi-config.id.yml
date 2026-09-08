@@ -1,0 +1,12 @@
+title: pi-config
+description: "Konfigurasi Pi Coding Agent saya yang siap pakai: 17 plugin + 18 Skill global + 2 server MCP, diinstal dengan satu perintah."
+type: Konfigurasi asisten pemrograman AI
+url: https://github.com/realchendahuang/pi-config
+image: /projects/pi-config.webp
+imageAlt: "Kartu produk pi-config ungu tua: konfigurasi Pi / My Pi Coding Agent Setup"
+icon: i-lucide-terminal
+color: "#a78bfa"
+tags: ["Pi", "Coding Agent", "Plugins", "Skills", "MCP", "Shell"]
+date: 2026-07-25
+status: ongoing
+stars: 139

@@ -1,0 +1,8 @@
+title: "Dahuang AI Tone"
+description: "टेक्स्ट को GPT, Claude, Gemini या Doubao जैसी AI-शैली में फिर से लिखें — या पता लगाएँ कि टेक्स्ट का कोई हिस्सा किस मॉडल की लिखावट से सबसे ज़्यादा मिलता-जुलता है।"
+url: "https://github.com/realchendahuang/dahuang-ai-tone"
+install: npx skills add realchendahuang/dahuang-ai-tone -g
+icon: "i-lucide-fingerprint"
+color: "#a855f7"
+tags: ["Agent Skill", "AI शैली", "मॉडल शैली", "शैली पहचान", "चीनी लेखन"]
+date: 2025-05-01

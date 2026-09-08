@@ -1,0 +1,12 @@
+title: "pi-config"
+description: "मेरा टर्नकी Pi Coding Agent सेटअप: 17 प्लगइन्स + 18 ग्लोबल Skills + 2 MCP सर्वर — सिर्फ़ एक कमांड से इंस्टॉल हो जाता है।"
+type: "AI कोडिंग असिस्टेंट कॉन्फ़िगरेशन"
+url: "https://github.com/realchendahuang/pi-config"
+image: "/projects/pi-config.webp"
+imageAlt: "pi-config का गहरे बैंगनी रंग का प्रोडक्ट कार्ड: Pi config / My Pi Coding Agent Setup"
+icon: "i-lucide-terminal"
+color: "#a78bfa"
+tags: ["Pi", "Coding Agent", "Plugins", "Skills", "MCP", "Shell"]
+date: 2026-07-25
+status: "ongoing"
+stars: 139

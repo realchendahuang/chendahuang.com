@@ -1,0 +1,20 @@
+category: tools
+title: "Firefox: ayda 50G ücretsiz VPN"
+description: "Vay canına! Firefox'un her kullanıcıya ayda 50G ücretsiz VPN trafiği verdiğini yeni öğrendim."
+date: 2026-06-30
+likes: 1639
+bookmarks: 2268
+reposts: 372
+views: 161249
+url: https://x.com/realchendahuang/status/2071963210689970673
+content: |
+  Vay canına! Firefox tarayıcısının her kullanıcıya ayda 50G ücretsiz VPN trafiği verdiğini yeni öğrendim.
+
+  O garip tavuk-yumurta ikilemi için biçilmiş kaftan.
+
+  Nasıl kullanılır:
+
+  1. Adres çubuğuna `about:config` yaz
+  2. Gelişmiş tercihlere git, "Show all" butonuna tıkla
+  3. `browser.ipProtection.enabled` değerini ara
+  4. O girişin değerini true yap

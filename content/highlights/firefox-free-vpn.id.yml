@@ -1,0 +1,20 @@
+category: tools
+title: "Firefox: 50G VPN gratis setiap bulan"
+description: "Astaga! Saya baru tahu Firefox memberikan 50G trafik VPN gratis per bulan untuk setiap pengguna."
+date: 2026-06-30
+likes: 1639
+bookmarks: 2268
+reposts: 372
+views: 161249
+url: https://x.com/realchendahuang/status/2071963210689970673
+content: |
+  Astaga! Saya baru tahu browser Firefox memberikan 50G trafik VPN gratis per bulan untuk setiap pengguna.
+
+  Sangat membantu untuk dilema ayam-dan-telur yang canggung itu.
+
+  Cara pakai:
+
+  1. Ketik `about:config` di bilah alamat
+  2. Masuk ke preferensi lanjutan dan klik "Show all"
+  3. Cari `browser.ipProtection.enabled`
+  4. Ubah nilai entri itu menjadi true

@@ -1,0 +1,21 @@
+category: cloudflare
+title: "Best practice indie dev 2026: bộ giải pháp trọn gói 'nghèo kiết' của Cloudflare"
+description: "Best practice phát triển indie 2026: bộ giải pháp trọn gói 'nghèo kiết' của Cloudflare."
+date: 2026-06-15
+likes: 225
+bookmarks: 335
+reposts: 34
+views: 40629
+url: https://x.com/realchendahuang/status/2066586160902881542
+content: |
+  Best practice phát triển indie 2026:
+  bộ giải pháp trọn gói "nghèo kiết" của Cloudflare
+  Codex: viết code, lo toàn bộ phát triển full-stack
+  GitHub: quản lý phiên bản
+  Stripe: hệ thống thanh toán
+  Frontend: TanStack Start
+  Backend: Hono + Cloudflare Workers
+  Triển khai: Cloudflare Pages
+  Cơ sở dữ liệu: Cloudflare D1
+  Lưu trữ file: Cloudflare R2
+  Cache / cấu hình: Cloudflare KV

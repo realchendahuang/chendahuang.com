@@ -1,0 +1,23 @@
+category: cloudflare
+title: "Kenapa FlareMo: catat santai, lama-lama tumbuh jadi pengetahuan"
+description: "Mencari alat yang bisa 'mencatat hal-hal santai dan pelan-pelan menumbuhkannya menjadi pengetahuan.'"
+date: 2026-06-27
+likes: 1
+bookmarks: 2
+reposts: 1
+views: 258
+url: https://x.com/realchendahuang/status/2070807195332297205
+content: |
+  Mencari alat yang bisa "mencatat hal-hal secara santai dan pelan-pelan menumbuhkannya menjadi pengetahuan."
+
+  Saya ingin penangkapan inspirasi ala Flomo yang langsung jalan tanpa gesekan;
+
+  Saya ingin ekosistem sumber terbuka Memos yang matang, data yang bisa dipindah-pindah, dan API yang benar-benar bisa dimainkan;
+
+  Tapi saya tidak mau nyalain VPS baru lalu menjaga Docker, Postgres, dan proses Node yang berjalan selamanya.
+
+  Terus gimana? Cara FlareMo: anggap model data dan API Memos sebagai "spesifikasi", lalu bangun ulang seluruh runtime-nya di atas Cloudflare:
+
+  Workers menjalankan API, D1 menyimpan catatan, R2 menampung lampiran, Queues/Cron mengurus pekerjaan latar belakang, dan Vectorize + Workers AI dicadangkan untuk pencarian semantik dan alur kerja AI di masa depan.
+
+  Berdiri di pundak Memos untuk membangun basis pengetahuan pribadi yang hidup di edge cloud.

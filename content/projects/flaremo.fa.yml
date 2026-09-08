@@ -1,0 +1,12 @@
+title: "FlareMo"
+description: "سامانهٔ مدیریت دانش شخصی بومی Cloudflare با API سازگار با Memos — داده‌های شما، میزبانی‌شده روی سرور خودتان."
+type: "مدیریت دانش شخصی"
+url: "https://github.com/realchendahuang/FlareMo"
+image: "/projects/flaremo.webp"
+imageAlt: "خط زمانی یادداشت‌ها و رابط برچسب‌ها در FlareMo"
+icon: "i-lucide-sticky-note"
+color: "#f59e0b"
+tags: ["Cloudflare", "Memos", "D1", "R2", "مدیریت دانش"]
+date: 2026-07-10
+status: "ongoing"
+stars: 150

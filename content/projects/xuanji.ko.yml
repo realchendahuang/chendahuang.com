@@ -1,0 +1,9 @@
+title: "XuanJi"
+description: "풀스택 Cloudflare 앱 위의 단일 사용자 AI 점술 워크스페이스: 사주, 서양 점성술과 트랜짓, 자미두수, 타로, 역경, 궁합과 데일리 가이드. 사실은 결정적 계산이, 해석은 AI가 담당합니다."
+type: "AI 점술 앱"
+url: "https://github.com/realchendahuang/xuanji"
+icon: "i-lucide-moon-star"
+color: "#7c3aed"
+tags: ["Cloudflare", "TanStack", "Hono", "AI", "BaZi", "Zi Wei"]
+date: 2026-07-11
+status: "ongoing"

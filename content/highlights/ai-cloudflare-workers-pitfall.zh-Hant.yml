@@ -1,0 +1,20 @@
+category: cloudflare
+title: "AI 寫 Cloudflare 專案翻車，不是因為語法"
+description: "AI 經常把 Workers 當 Node.js 寫，把 Binding 當環境變數。"
+date: 2026-06-22
+likes: 23
+bookmarks: 42
+reposts: 4
+views: 1462
+url: https://x.com/realchendahuang/status/2068853978004365739
+content: |
+  很多人用 AI 寫 Cloudflare 專案，翻車不是因為語法。
+  真正的問題是：
+  AI 經常把 Workers 當 Node.js 寫
+  把 Binding 當 process.env 用
+  忘記 await
+  亂用全域變數存請求狀態
+  不知道靜態資源請求免費
+  從 Worker 裡用 REST API 呼叫自己的 R2
+  這些坑我都整理進了 Cloudflare Playbook。
+  順便還寫了

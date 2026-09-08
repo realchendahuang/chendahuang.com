@@ -1,0 +1,19 @@
+category: "ai"
+title: "5 美元 OpenCode Go 徹底涼了"
+description: "首月 5 美元優惠沒了，直接 10 美元——相比之下，Command GOAT 突然眉清目秀起來。"
+date: 2026-08-29
+likes: 267
+bookmarks: 198
+reposts: 11
+views: 50354
+url: "https://x.com/realchendahuang/status/2093699519108288568"
+content: |
+  之前 X 上吹得很兇的 5 美元 OpenCode Go 已經徹底涼了。
+  以前 OpenCode Go 好歹還有個首月 5 美元的優惠能撐一下性價比，現在連 5 美元優惠都沒了，直接 10 美元。
+  作為對比，競爭對手 Command GOAT 套餐開始變得眉清目秀起來。
+  DeepSeek V4 Flash、GLM-5.3 Flash、GLM-5.3 這些現在真正適合高強度 Coding、跑 Agent 的主力模型，Command GOAT 套餐給的額度明顯更慷慨。
+  我現在其實會把 Coding 模型簡單分成兩類：主力模型和苦力模型。
+  V4 Pro、GLM-5.3 這種就是主力模型，負責啃硬骨頭。複雜架構、疑難 Bug、大重構、關鍵決策，遇到真正難的問題都可以交給它們。
+  V4 Flash、GLM-5.3 Flash 屬於苦力模型。讀 repo、搜程式碼、改檔案、跑測試、批次處理、開荒，這種髒活累活就該讓 Flash 往死裡做。
+  Command GOAT 套餐苦力模型的額度夠大，主力模型的額度也沒有明顯短板。
+  所以我要宣布：Command GOAT 套餐才是目前的版本答案。

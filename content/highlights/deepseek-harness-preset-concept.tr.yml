@@ -1,0 +1,27 @@
+category: ai
+title: "DeepSeek Harness'ın Preset kavramı: ajanların dağıtım birimi"
+description: "Aynı model üzerine farklı Preset'ler yüklersen tamamen farklı ajanlar elde edersin."
+date: 2026-08-17
+likes: 161
+bookmarks: 0
+reposts: 23
+views: 38000
+url: https://x.com/realchendahuang/status/2089206966015176725
+content: |
+  Son zamanlarda DeepSeek Harness'ı inceliyorum. Preset diye dikkate değer bir kavram var.
+
+  Preset, bir ajanın dağıtım birimi olarak anlaşılabilir. Aynı model üzerinde farklı Preset'ler yüklersen model tamamen farklı ajanlara dönüşür.
+
+  Bir Preset ile bir Skill arasındaki en büyük fark ne?
+
+  - Bir finansal-rapor-analizi Skill'i: ajana finansal raporları nasıl analiz edeceğini öğretir.
+  - Bir finansal-rapor-analizi Preset'i: finansal-rapor-analizi Skill'ini, web aramasını, Browser'ı, PDF'i, Python'ı, alt ajanları, araştırma promptlarını ve bağlam stratejisini bir arada paketler — sana kutudan çıktığı gibi hazır bir ajan verir.
+
+  Gelecekte muhtemelen iki pazar katmanı birden ortaya çıkacak.
+
+  - Birincisi: ajan geliştiren geliştiricilere ve güç kullanıcılara yönelik Plugin / Skill pazarı;
+  - Birincisi değil, ötekisi: gerçekten sıradan kullanıcılara yönelik Preset / Agent pazarı.
+
+  Bu aslında App Store mantığına çok yakın. App Store eksiksiz bir uygulamayı sergiler; bir Preset de eksiksiz bir ajan uygulamasını sergiler.
+
+  Eskiden insanlar prompt paylaşırdı. Sonra skill paylaşmaya başladılar. Bir sonraki adımda muhtemelen Preset paylaşacaklar.

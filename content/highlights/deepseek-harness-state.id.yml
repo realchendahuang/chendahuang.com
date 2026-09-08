@@ -1,0 +1,29 @@
+category: ai
+title: "DeepSeek Harness hari ini: 150k star dan masih Developer Preview"
+description: "Pengaruhnya berjalan lebih cepat daripada kematangan engineering, dan ekosistem di sekitarnya berkembang pesat."
+date: 2026-08-18
+likes: 7
+bookmarks: 0
+reposts: 10
+views: 6200
+url: https://x.com/realchendahuang/status/2089642236413985278
+content: |
+  Belakangan ini saya menelusuri lagi repo dan Discussions DeepSeek Harness, dan proyek ini berada di tahap yang sangat menarik:
+
+  DeepSeek Harness sudah punya 150k+ star dan lebih dari 12.000 commit di repo-nya.
+
+  Namun README resminya masih menyatakan dengan sangat jelas: saat ini ia masih Developer Preview, dan perubahan yang memecah kompatibilitas masih akan datang.
+
+  rc.7 dirilis pada 17 Agustus. Pembuatan Issue dan PR dibatasi; umpan balik lewat Discussions.
+
+  Komunitanya besar, tapi pengembangan inti terkonsentrasi di segelintir orang. Bug terus bermunculan — seperti masalah unknown tool "".
+
+  Yang paling kurang: cakupan pengujian, kompatibilitas provider, dan keandalan session.
+
+  Secara arsitektur ia tetap menarik, seperti fondasi sebuah sistem operasi agent:
+
+  - Everything is a Plugin
+  - Arsitektur komposisi Cordis
+  - Preset / Skill / MCP / Agent / Provider semuanya diplugin-kan
+
+  Proyek ini berada di tahap "pengaruh berjalan lebih cepat daripada engineering".

@@ -1,0 +1,12 @@
+title: "Sub-Store Cloudflare"
+description: "Cloudflare Workers에서 실행되는 구독 집계 및 규칙 구성 도구 — 구독 소스, 노드 처리, 결합 구독, 라우팅 템플릿을 모두 클라우드에서 처리합니다."
+type: "Cloudflare 도구"
+url: "https://github.com/realchendahuang/sub-store-cloudflare"
+image: "/projects/sub-store-cloudflare.webp"
+imageAlt: "Sub-Store Cloudflare의 구독 소스 및 결합 구독 관리 UI"
+icon: "i-simple-icons-cloudflare"
+color: "#f38020"
+tags: ["Cloudflare Workers", "D1", "Mihomo", "sing-box", "구독 관리"]
+date: 2026-07-09
+status: "ongoing"
+stars: 253

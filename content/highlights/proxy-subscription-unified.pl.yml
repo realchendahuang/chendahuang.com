@@ -1,0 +1,13 @@
+category: tools
+title: "Ujednolicone rozwiązanie zarządzania subskrypcjami do omijania blokad"
+description: "Airporty + własne węzły VPS pod jednym dachem: ujednolicone zarządzanie, ujednolicone routowanie, jeden link subskrypcji na wyjściu."
+date: 2026-06-29
+likes: 92
+bookmarks: 137
+reposts: 14
+views: 10207
+url: https://x.com/realchendahuang/status/2071465309085790305
+content: |
+  Jeśli kupiłeś jakiś „airport” do omijania blokad i do tego postawiłeś własne węzły na VPS, a chcesz nimi zarządzać ujednolicenie, routować ujednolicenie i wyprowadzić wszystko jako jeden link subskrypcji.
+  Chcesz, żeby reguły routingu, filtrowanie węzłów i logika ich łączenia były utrzymywane po stronie serwera, a nie konfigurowane klient po kliencie.
+  Chcesz to uruchomić na lekkim wdrożeniu Cloudflare – bez serwerów, bez usług baz danych, bez skomplikowanych zadań w tle do utrzymania.

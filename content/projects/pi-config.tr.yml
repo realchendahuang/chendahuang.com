@@ -1,0 +1,12 @@
+title: "pi-config"
+description: "Anahtar teslim Pi Coding Agent kurulumum: 17 eklenti + 18 global Skill + 2 MCP sunucusu, tek komutla kurulur."
+type: "AI kodlama asistanı yapılandırması"
+url: "https://github.com/realchendahuang/pi-config"
+image: "/projects/pi-config.webp"
+imageAlt: "pi-config koyu mor ürün kartı: Pi yapılandırması / My Pi Coding Agent Setup"
+icon: "i-lucide-terminal"
+color: "#a78bfa"
+tags: ["Pi", "Coding Agent", "Plugins", "Skills", "MCP", "Shell"]
+date: 2026-07-25
+status: "ongoing"
+stars: 139

@@ -1,0 +1,28 @@
+category: "ai"
+title: "DeepSeek Harness 四種模式詳解"
+description: "Standard 適合日常開發，PTC 是複雜任務的效率模式，Minimal 做明確小任務，Creator 用 Agent 創造 Agent。"
+date: 2026-08-15
+likes: 46
+bookmarks: 60
+reposts: 6
+views: 10141
+url: "https://x.com/realchendahuang/status/2088643296021401829"
+content: |
+  花了點時間研究一下 DeepSeek Harness 這四種模式，我把四種模式的優缺點和適用場景捋一下。
+  1. Standard：最適合日常開發
+  Standard 就是 DeepSeek Harness 預設的完整 Coding Agent。它把日常開發需要的東西基本都配齊了，特別適合那種一開始並不知道問題在哪裡，需要 Agent 自己探索的任務。
+  但因為大量操作都是：LLM → Tool → LLM → Tool → LLM → Tool，任務複雜以後，Tool Calling 的 round trip 會越來越多，延遲和 Token 開銷都會上去。
+  所以探索性任務優先 Standard。
+  2. PTC：複雜任務的效率模式
+  PTC 允許模型寫一段 TypeScript，把多個工具呼叫組合起來一次執行。
+  例如 Standard 可能是：搜尋檔案 → 回模型 → 讀檔案 → 回模型 → 搜尋 → 回模型 → 修改 → 回模型
+  PTC 可以變成：模型寫 TypeScript → 一次執行 → 搜尋 + 迴圈 + 過濾 + 讀取 + 處理 → 回傳最終結果
+  這可以減少 round trip，也可以減少大量無意義的中間資料進入模型 Context。所以大量批次處理、重複操作、結構化處理特別適合 PTC。
+  3. Minimal：只給模型 Bash + Editor
+  它最大的優點就是簡單。工具數量少，Tool Schema 少，Prompt 固定開銷低。
+  但是沒有 Web，沒有 Skills，沒有 Subagent，沒有 Workflow。複雜任務只能一個 Agent 自己硬幹。而且 Minimal 沒有 Standard 那套完整的 Context Compaction。所以它雖然短任務固定 Token 開銷低，但如果 Session 特別長、Bash 輸出特別多，反而未必真的省 Token。
+  因此 Minimal 最適合明確的小任務，任務越明確、越短，Minimal 越香。
+  4. Creator：用 Agent 創造 Agent
+  擁有 Standard + Cordis Runtime + Plugin 實驗 + Preset 創作能力。它連 Agent 本身都做成了可以組合和創建的東西。
+  想想還挺可愛的，模型自己支了個攤子開始賣貨，然後自己把自己的攤子擺弄擺弄，自給自足。
+  但 Creator 最大的問題也是權限高。這一點要注意。

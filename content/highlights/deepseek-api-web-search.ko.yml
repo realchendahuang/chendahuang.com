@@ -1,0 +1,15 @@
+category: ai
+title: "DeepSeek API에 웹 검색이 내장 — 공식 검색 능력을 공짜로 쓰기"
+description: "DeepSeek 공식 API에 실제로 웹 검색이 내장되어 있다."
+date: 2026-08-05
+likes: 1037
+bookmarks: 885
+reposts: 89
+views: 230537
+url: https://x.com/realchendahuang/status/2084826975102030013
+content: |
+  좋은 걸 발견했다 — DeepSeek가 API에 웹 검색을 그대로 내장해 놨다.
+  Responses 인터페이스로 deepseek-v4-flash 모델을 호출하면서, 요청 파라미터에 web_search 도구만 선언하면 그들의 서버 측 검색을 바로 쓸 수 있다.
+  서드파티 검색 엔진을 연동할 필요도, 별도로 검색 API 키를 신청할 필요도 없다.
+  검색 파이프라인 전체가 공식 팀에 의해 호스팅된다.
+  원문: https://t.co/D4AXo7crHw

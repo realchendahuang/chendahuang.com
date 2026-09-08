@@ -1,0 +1,39 @@
+category: product
+title: "Sprawdzone praktyki 2026 dla aplikacji indie: najpierw Web + PWA"
+description: "Dzielę się ponad rokiem wykrwawionych, wyciśniętych łzami błędów niezależnego developmentu."
+date: 2026-06-22
+likes: 263
+bookmarks: 422
+reposts: 46
+views: 37055
+url: https://x.com/realchendahuang/status/2069042963280503182
+content: |
+  Dzielę się ponad rokiem wykrwawionych, wyciśniętych łzami błędów niezależnego developmentu.
+
+  W 2026 roku, jeśli niezależny deweloper chce zbudować aplikację, najlepsza praktyka to:
+
+  **Na etapie MVP najpierw Web + PWA.** Szybki development, szybki debug, szybkie iteracje.
+
+  Stack webowy:
+
+  React + TanStack Start + Vite + TypeScript + shadcn/ui + Base UI + Tailwind CSS + better-auth + Vercel AI SDK + oxfmt / oxlint
+
+  Zunifikowany backend:
+
+  Hono + Cloudflare Workers
+
+  Debug webu:
+
+  Chrome DevTools MCP + rozszerzenie Codex do Chrome
+
+  Gdy produkt naprawdę ruszy, wtedy robimy mobile.
+
+  Stack mobilny:
+
+  React Native + Expo + Expo Router + NativeWind + React Native Reusables + Reanimated + Gesture Handler + EAS Build / Submit / Update
+
+  Główna myśl jest prosta:
+
+  Najpierw zweryfikuj popyt Webem + PWA.
+
+  Gdy masz prawdziwych użytkowników, wnieś React Native + Expo i zrób prawdziwą aplikację.

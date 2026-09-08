@@ -1,0 +1,27 @@
+category: ai
+title: "Konsep Preset di DeepSeek Harness: unit distribusi agent"
+description: "Model yang sama dimuat dengan Preset berbeda, jadilah agent yang benar-benar berbeda."
+date: 2026-08-17
+likes: 161
+bookmarks: 0
+reposts: 23
+views: 38000
+url: https://x.com/realchendahuang/status/2089206966015176725
+content: |
+  Belakangan ini saya sedang mempelajari DeepSeek Harness. Ada satu konsep bernama Preset yang patut diperhatikan.
+
+  Preset bisa dipahami sebagai unit distribusi sebuah agent. Model yang sama dimuat dengan Preset yang berbeda, dan ia akan menjadi agent yang benar-benar berbeda.
+
+  Apa perbedaan terbesar antara Preset dan Skill?
+
+  - Sebuah Skill analisis laporan keuangan: mengajari agent cara menganalisis laporan keuangan.
+  - Sebuah Preset analisis laporan keuangan: menggabungkan Skill analisis laporan keuangan, web search, Browser, PDF, Python, subagents, prompt riset, dan strategi konteks sekaligus — memberimu agent yang siap pakai.
+
+  Ke depannya, kemungkinan besar dua lapis pasar akan muncul bersamaan.
+
+  - Satu: marketplace Plugin / Skill, terutama untuk developer dan power user yang merakit agent;
+  - Satu: marketplace Preset / Agent, yang benar-benar ditujukan untuk pengguna biasa.
+
+  Ini sebenarnya sudah sangat dekat dengan logika App Store. App Store menampilkan sebuah aplikasi utuh; Preset menampilkan aplikasi agent yang utuh.
+
+  Dulu orang berbagi prompt. Lalu mereka mulai berbagi skill. Berikutnya, mungkin mereka akan berbagi Preset.

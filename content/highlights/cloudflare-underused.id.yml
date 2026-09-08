@@ -1,0 +1,25 @@
+category: cloudflare
+title: "Kita baru mengembangkan kurang dari 1% Cloudflare"
+description: "Saya merasa kita baru mengembangkan kurang dari 1% Cloudflare."
+date: 2026-06-15
+likes: 377
+bookmarks: 470
+reposts: 32
+views: 88959
+url: https://x.com/realchendahuang/status/2066446337936110030
+content: |
+  Saya merasa kita baru mengembangkan kurang dari 1% Cloudflare.
+
+  Ia sudah merilis terlalu banyak fitur.
+
+  - Penyimpanan objek dengan R2
+  - API backend dengan Workers
+  - AI gateway dengan AI Gateway
+  - Komputasi berat dengan Container
+  - Caching dengan KV
+  - Database dengan D1
+  - Pakai PostgreSQL? Sambungkan dengan HyperDrive
+
+  Dan itu baru permulaan — daftarnya masih panjang sekali. Kalau kamu bisa membayangkannya, kemungkinan besar ia bisa melakukannya.
+
+  Yang paling gila: harganya benar-benar murah sekali. Tier gratisnya saja sudah bisa dipakai bertahan lama. Apa itu tier gratis? Artinya tidak membayar sepeser pun — seorang bodhisatwa siber, orang suci sungguhan.

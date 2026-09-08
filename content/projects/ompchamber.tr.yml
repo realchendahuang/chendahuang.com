@@ -1,0 +1,10 @@
+title: "OMPChamber"
+description: "OpenChamber UI temeli üzerine inşa edilmiş, OMP agent çalışma zamanı (Oh My Pi) için bir masaüstü istemcisi — OMP agent'ı çalıştırır, OpenChamber deneyimi sahiplenir. Agent işlerini yürütün, kontrolü elinizde tutun, her yerden yayınlayın."
+type: "Agent masaüstü istemcisi"
+url: "https://github.com/realchendahuang/OMPChamber"
+icon: "i-lucide-monitor"
+color: "#60a5fa"
+tags: ["OMP", "Agent", "Desktop", "OpenChamber", "Rust"]
+date: 2026-08-10
+status: "ongoing"
+stars: 55

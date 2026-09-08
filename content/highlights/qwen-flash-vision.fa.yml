@@ -1,0 +1,16 @@
+category: ai
+title: "DeepSeek V4 Flash چندوجهی ندارد؟ با Qwen-3.7-Flash وصله‌اش کن"
+description: "بعد از تحقیق، به‌صرفه‌ترین مدلِ بینایی را پیدا کردم: Qwen-3.7-Flash."
+date: 2026-08-06
+likes: 659
+bookmarks: 675
+reposts: 78
+views: 89530
+url: https://x.com/realchendahuang/status/2085265465564336327
+content: |
+  خیلی‌ها گله می‌کنند DeepSeek V4 Flash قابلیتِ چندوجهی ندارد.
+  تحقیق کردم: به‌صرفه‌ترین مدلِ بیناییِ حال حاضر Qwen-3.7-Flash است.
+  تشخیصِ یک تصویر 0.0004 تا 0.001 یوان هزینه دارد؛ تشخیصِ 1,000 تصویرِ معمولی تقریباً 0.6 تا 0.8 یوان.
+  بر این اساس به استکِ کاملِ هوش مصنوعیِ مخصوصِ مفلس‌های واقعی رسیدیم:
+  1. پلنِ 5 دلاریِ OpenCode Go، با DeepSeek V4 Flash کد بنویس
+  2. https://t.co/mlvdSTaD6M

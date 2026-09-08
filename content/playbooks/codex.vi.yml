@@ -1,0 +1,10 @@
+title: "Codex Playbook"
+description: "Một cuốn sổ tay thực hành xem Codex như một hệ thống cộng tác lâu dài — từ việc lựa chọn bề mặt, hợp đồng prompt và kỹ thuật xây dựng ngữ cảnh, đến Skills, MCP, Review, CI và phát hành."
+url: https://github.com/realchendahuang/codex-playbook
+onlineUrl: https://chendahuang.com/playbook/codex/
+icon: i-lucide-bot
+color: "#10a37f"
+tags: ["Codex", "Agent", "Kỹ thuật ngữ cảnh", "Skills", "MCP"]
+date: 2026-07-10
+status: ongoing
+stars: 1

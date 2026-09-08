@@ -1,0 +1,20 @@
+category: cloudflare
+title: "AI, Cloudflare projeleri yazarken işler patlıyor — ve suç sözdiziminde değil"
+description: "AI, Worker'ları sürekli Node.js gibi yazıyor ve Binding'lere ortam değişkeni muamelesi yapıyor."
+date: 2026-06-22
+likes: 23
+bookmarks: 42
+reposts: 4
+views: 1462
+url: https://x.com/realchendahuang/status/2068853978004365739
+content: |
+  Pek çok kişi AI ile Cloudflare projeleri yazdırıyor; işler patladığında sorun sözdiziminde değil.
+  Asıl sorunlar şunlar:
+  AI'ın Worker'ları Node.js gibi yazması
+  Binding'lere process.env muamelesi yapması
+  await'i unutması
+  istek durumunu global değişkenlerde saklaması
+  statik dosya isteklerinin ücretsiz olduğunu bilmemesi
+  ve kendi R2'sini Worker içinden REST API ile çağırması
+  Bütün bu tuzakları Cloudflare Playbook'ta topladım.
+  Bu arada, bir şey daha üzerinde çalıştım

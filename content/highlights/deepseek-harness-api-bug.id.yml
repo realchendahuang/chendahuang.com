@@ -1,0 +1,22 @@
+category: ai
+title: "DeepSeek Harness melaporkan 'unknown tool' dengan API pihak ketiga: masalah format data di gateway"
+description: "Nama tool itu sebenarnya tidak hilang — gateway yang merusak format datanya."
+date: 2026-08-18
+likes: 2
+bookmarks: 0
+reposts: 2
+views: 2313
+url: https://x.com/realchendahuang/status/2089636108271550484
+content: |
+  Masalah kompatibilitas DeepSeek Harness + API pihak ketiga:
+
+  Saat agent memanggil tool seperti Bash, muncul error `ToolNotFoundError: unknown tool ""`, yang terlihat seperti tool-nya tidak pernah didaftarkan.
+
+  Yang sebenarnya terjadi: gateway mengembalikan format data yang berbeda dari API resmi DeepSeek, dan nama tool-nya hilang entah di mana di tengah proses.
+
+  Beberapa tautan GitHub Discussions yang relevan:
+
+  - Cari "unknown tool" di deepseek-ai/dsh#issues
+  - Orang yang menjalankan gateway self-hosted (OpenRouter / OneAPI / new-api) paling rentan kena masalah ini
+
+  Cara penelusuran: tangkap satu permintaan dan respons tool_call lengkap, lalu periksa apakah nama tool di log gateway berupa string kosong.

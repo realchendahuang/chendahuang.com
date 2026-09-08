@@ -1,0 +1,12 @@
+title: "pi-config"
+description: "제 턴키 Pi Coding Agent 설정: 플러그인 17개 + 글로벌 Skill 18개 + MCP 서버 2개, 한 줄 명령으로 설치됩니다."
+type: "AI 코딩 어시스턴트 설정"
+url: "https://github.com/realchendahuang/pi-config"
+image: "/projects/pi-config.webp"
+imageAlt: "pi-config 다크 퍼플 제품 카드: Pi 구성 / My Pi Coding Agent Setup"
+icon: "i-lucide-terminal"
+color: "#a78bfa"
+tags: ["Pi", "Coding Agent", "플러그인", "Skills", "MCP", "Shell"]
+date: 2026-07-25
+status: "ongoing"
+stars: 139

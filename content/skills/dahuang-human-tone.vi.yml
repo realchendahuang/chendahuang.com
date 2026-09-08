@@ -1,0 +1,9 @@
+title: "Dahuang Human Tone"
+description: "Lột bỏ lớp vỏ khuôn mẫu, cụm từ chỉ đường, cái kết sến súa và tương tác giả khỏi văn bản tiếng Trung. Đổi cấu trúc, không đổi sự thật — giữ nguyên thông tin và giọng văn của tác giả."
+url: https://github.com/realchendahuang/dahuang-human-tone
+install: npx skills add realchendahuang/dahuang-human-tone -g
+icon: i-lucide-wand-sparkles
+color: "#00DC82"
+tags: ["Agent Skill", "Khử chất AI", "Viết tiếng Trung", "Claude Code", "Codex"]
+date: 2025-05-01
+stars: 10

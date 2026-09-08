@@ -1,0 +1,16 @@
+category: tools
+title: "Mac에서의 Docker 선택: Colima / OrbStack / Docker Desktop"
+description: "Mac에서의 Docker 방안, 간단히 기술 선정을 해 봤다."
+date: 2026-06-20
+likes: 0
+bookmarks: 0
+reposts: 0
+views: 211
+url: https://x.com/realchendahuang/status/2068238972728533154
+content: |
+  Mac에서의 Docker 방안, 간단히 기술 선정을 해 봤다.
+
+  - **Colima**: 무료 오픈소스, 매우 가볍지만, 기본적으로 커맨드라인뿐이다. 삽질을 달게 받아들이고 터미널에서 사는 사람에게 맞다.
+  - **Apple Container**: 애플의 새로운 컨테이너 방향 — 앞으로 주목할 만하지만, 생태계는 아직 아주 초기 단계다. Docker Compose조차 지원하지 않는다.
+  - **OrbStack**: GUI도 있고 가볍고 빠르며, 생태계 지원도 탄탄하다. 단점은 오픈소스가 아니라는 것 — 상업용 버전은 라이선스가 필요하지만 개인용은 무료다.
+  - **Docker Desktop**: 공식 제품인데, 정작 무겁고 비대하며 경험이 형편없다. Mac에서는 쓸 수 있으면 안 쓰는 게 낫다.

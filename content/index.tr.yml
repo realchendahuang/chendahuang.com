@@ -1,0 +1,52 @@
+seo:
+  title: "Chen Dahuang - Çalışmalar ve İçerik"
+  description: "Chen Dahuang'ın çalışmalarını ve içeriklerini sergileyen kişisel vitrin. Projeler, rehberler, agent skill'leri, yazılar ve gönderiler."
+title: "Chen Dahuang"
+description: |
+  Şu an | KOSX @kosxai — Doğu Çin'de startup ve indie geliştirme sorumlusu | Ningbo'daki bir AI şirketinde ortak
+  Alan | Indie Hacker | Eski AI ürün yöneticisi | Ürün içgörüleri / mizah
+  Yapımda | FlareMo notları | FeedSieve X temizliği | Cherina Pod iki dilli podcast
+hero:
+  links:
+    - label: "Projeleri Gör"
+      to: /projects
+      color: "primary"
+    - label: "GitHub"
+      to: https://github.com/realchendahuang
+      color: "neutral"
+      target: "_blank"
+  images:
+    - src: /projects/cherina-pod.webp
+      alt: Cherina Pod iki dilli podcast dinleme uygulaması
+    - src: /projects/feedsieve.webp
+      alt: FeedSieve, X akışını temizleme aracı
+    - src: /projects/flaremo.webp
+      alt: FlareMo kişisel bilgi yönetimi uygulaması
+    - src: /projects/sub-store-cloudflare.webp
+      alt: Sub-Store Cloudflare abonelik toplama aracı
+    - src: /projects/pi-config.webp
+      alt: pi-config, Pi Coding Agent yapılandırması
+    - src: /projects/deepmate.webp
+      alt: DeepMate, AI harness kontrol paneli
+    - src: /projects/hermes-memory.webp
+      alt: Hermes Memory, OpenCode için kalıcı bellek eklentisi
+    - src: /projects/god-museum.webp
+      alt: God-Museum, medeniyetler arası mitoloji galerisi
+    - src: /projects/ai-chronicle.webp
+      alt: AI Chronicle, AI sektörü kronolojisi
+blog:
+  title: "Son Yazılar"
+highlights:
+  title: "Öne Çıkan Gönderiler"
+  links:
+    - label: "Tümünü Gör"
+      icon: "i-lucide-arrow-right"
+      to: "/highlights"
+      color: "neutral"
+      variant: "soft"
+    - label: "X profili"
+      icon: "i-simple-icons-x"
+      to: "https://x.com/realchendahuang"
+      target: "_blank"
+      color: "neutral"
+      variant: "soft"

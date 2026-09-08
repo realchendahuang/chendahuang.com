@@ -1,0 +1,15 @@
+category: ai
+title: "DeepSeek API 內建網路搜尋，白嫖官方搜尋能力"
+description: "DeepSeek 官方 API 居然內建了網路搜尋。"
+date: 2026-08-05
+likes: 1037
+bookmarks: 885
+reposts: 89
+views: 230537
+url: https://x.com/realchendahuang/status/2084826975102030013
+content: |
+  發現個好東西，DeepSeek 官方居然在 API 裡內建了網路搜尋。
+  用 Responses 格式的介面呼叫 deepseek-v4-flash 模型，只要在請求參數裡宣告 web_search 工具，就能直接用他們伺服器端執行的搜尋能力。
+  不用自己對接第三方搜尋引擎，也不用額外申請搜尋介面金鑰。
+  整套搜尋流程官方直接託管了。
+  原文: https://t.co/D4AXo7crHw

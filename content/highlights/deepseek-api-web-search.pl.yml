@@ -1,0 +1,15 @@
+category: ai
+title: "API DeepSeeka ma wbudowane wyszukiwanie w sieci — korzystaj z oficjalnej wyszukiwarki za darmo"
+description: "Oficjalne API DeepSeeka faktycznie ma wbudowane wyszukiwanie w sieci."
+date: 2026-08-05
+likes: 1037
+bookmarks: 885
+reposts: 89
+views: 230537
+url: https://x.com/realchendahuang/status/2084826975102030013
+content: |
+  Znalazłem coś świetnego — DeepSeek wbudował wyszukiwanie w sieci bezpośrednio w swoje API.
+  Wywołaj model deepseek-v4-flash przez interfejs Responses i po prostu zadeklaruj narzędzie web_search w parametrach żądania, żeby korzystać bezpośrednio z ich wyszukiwania po stronie serwera.
+  Żadnej integracji z wyszukiwarką trzeciej strony, żadnego ubiegania się o osobny klucz API do wyszukiwania.
+  Cały pipeline wyszukiwania jest prowadzony przez oficjalny zespół.
+  Oryginał: https://t.co/D4AXo7crHw

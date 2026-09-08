@@ -1,0 +1,56 @@
+category: ai
+title: "Hai hướng làm quản lý tri thức: một luồng workflow trên Feishu và một sản phẩm trên Cloudflare"
+description: "Dạo này mình đang nghĩ lại về quản lý tri thức."
+date: 2026-07-08
+likes: 3
+bookmarks: 2
+reposts: 0
+views: 439
+url: https://x.com/realchendahuang/status/2074900341456503169
+content: |
+  Dạo này mình đang nghĩ lại về quản lý tri thức.
+
+  Mình nhận ra vấn đề này thực ra có hai hướng đi.
+
+  **Một là xây dựng dựa trên Feishu.**
+
+  Ưu điểm của nó rất trực tiếp:
+
+  miễn phí, đồng bộ đa thiết bị, dễ chia sẻ, dễ cộng tác, và hình thức cũng đủ phong phú.
+
+  Tài liệu, bảng đa chiều, bảng tính, slide, canvas, Todo, kho tri thức — mấy mô-đun này kết hợp lại đã phủ được rất nhiều tình huống quản lý tri thức cá nhân lẫn đội nhóm.
+
+  Mình đặc biệt ưng bảng đa chiều.
+
+  Chúng rất hợp để làm trung tâm tri thức.
+
+  Thu thập thông tin, lưu trữ tư liệu, quản lý trạng thái, tổ chức có cấu trúc, tái sản xuất nội dung — tất cả đều có thể xoay quanh chúng.
+
+  Thêm Feishu CLI và AI agent vào, Feishu không còn chỉ là một công cụ văn phòng.
+
+  Nó trở nên giống một hệ thống workflow tri thức mà agent có thể vận hành.
+
+  **Hai là tự xây trên Cloudflare.**
+
+  Hướng này tự do hơn và hợp để sản phẩm hóa hơn.
+
+  FlareMo, thứ mình đang xây, chính là một nỗ lực làm sản phẩm quản lý tri thức trên Cloudflare.
+
+  Ưu điểm của Cloudflare là năng lực nền tảng khá đầy đủ:
+
+  frontend, backend, database, lưu trữ object, tìm kiếm vector, AI — tất cả đều ghép được với nhau.
+
+  Nhưng nó cần tự mình phát triển.
+
+  Và bạn phải tự thiết kế cấu trúc dữ liệu, trải nghiệm tìm kiếm, hệ thống phân quyền lẫn logic sản phẩm.
+
+  Nên quan điểm hiện tại của mình:
+
+  - Feishu dành cho việc dựng nhanh một hệ quản lý tri thức dùng được ngay hôm nay.
+  - Cloudflare dành cho việc biến quản lý tri thức thành một sản phẩm thật sự kiểm soát được và lặp được.
+
+  Cả hai hướng đều đáng nghiên cứu.
+
+  Một hướng nghiêng về workflow.
+
+  Một hướng nghiêng về sản phẩm hóa.

@@ -1,0 +1,12 @@
+title: "FlareMo"
+description: "Cloudflare-native bir kişisel bilgi yönetim sistemi, Memos uyumlu API — verileriniz size ait, kendi sunucunuzda."
+type: "Kişisel bilgi yönetimi"
+url: "https://github.com/realchendahuang/FlareMo"
+image: "/projects/flaremo.webp"
+imageAlt: "FlareMo'nun not zaman çizelgesi ve etiket arayüzü"
+icon: "i-lucide-sticky-note"
+color: "#f59e0b"
+tags: ["Cloudflare", "Memos", "D1", "R2", "Bilgi yönetimi"]
+date: 2026-07-10
+status: "ongoing"
+stars: 150

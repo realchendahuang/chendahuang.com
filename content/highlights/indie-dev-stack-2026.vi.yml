@@ -1,0 +1,39 @@
+category: product
+title: "Best practice làm app indie 2026: ưu tiên Web + PWA trước"
+description: "Chia sẻ hơn một năm kinh nghiệm indie dev đẫm máu và nước mắt."
+date: 2026-06-22
+likes: 263
+bookmarks: 422
+reposts: 46
+views: 37055
+url: https://x.com/realchendahuang/status/2069042963280503182
+content: |
+  Chia sẻ hơn một năm trải nghiệm indie dev đầy máu và nước mắt.
+
+  Bước sang 2026, indie developer muốn làm app thì best practice là:
+
+  **Ở giai đoạn MVP, làm Web + PWA trước.** Phát triển nhanh, sửa lỗi nhanh, vòng lặp nhanh.
+
+  Web stack:
+
+  React + TanStack Start + Vite + TypeScript + shadcn/ui + Base UI + Tailwind CSS + better-auth + Vercel AI SDK + oxfmt / oxlint
+
+  Backend thống nhất:
+
+  Hono + Cloudflare Workers
+
+  Debug web:
+
+  Chrome DevTools MCP + extension Codex Chrome
+
+  Khi nào sản phẩm thật sự chạy được thì mới làm mobile.
+
+  Mobile stack:
+
+  React Native + Expo + Expo Router + NativeWind + React Native Reusables + Reanimated + Gesture Handler + EAS Build / Submit / Update
+
+  Ý tưởng cốt lõi rất đơn giản:
+
+  Lấy Web + PWA để kiểm chứng nhu cầu trước.
+
+  Khi thật sự có người dùng rồi, hãy mang React Native + Expo ra làm app thật.

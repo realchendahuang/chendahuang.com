@@ -1,0 +1,206 @@
+{
+  "site": {
+    "name": "Chen Dahuang",
+    "description": "Portofolio pribadi dan pameran konten Chen Dahuang. Menampilkan proyek, panduan, keterampilan, artikel, dan kiriman."
+  },
+  "nav": {
+    "home": "Beranda",
+    "projects": "Proyek",
+    "playbooks": "Panduan",
+    "skills": "Keterampilan",
+    "blog": "Blog",
+    "highlights": "Kiriman",
+    "menu": "Menu",
+    "openMenu": "Buka menu navigasi",
+    "switchLanguage": "Ganti bahasa"
+  },
+  "sections": {
+    "blog": "Blog",
+    "project": "Proyek",
+    "playbook": "Panduan",
+    "skill": "Keterampilan",
+    "highlight": "Kiriman"
+  },
+  "search": {
+    "label": "Cari",
+    "shortcut": "Cari (Cmd+K)",
+    "placeholder": "Cari di blog, proyek, panduan, keterampilan, kiriman…",
+    "empty": "Ketik kata kunci untuk mencari seluruh situs",
+    "noResults": "Tidak ada hasil untuk \"{query}\""
+  },
+  "theme": {
+    "toDark": "Beralih ke mode gelap",
+    "toLight": "Beralih ke mode terang"
+  },
+  "footer": {
+    "rss": "Umpan RSS",
+    "onX": "Chen Dahuang di X",
+    "onGithub": "Chen Dahuang di GitHub"
+  },
+  "a11y": {
+    "skipToContent": "Langsung ke konten utama"
+  },
+  "hero": {
+    "highlights": "Kiriman",
+    "blogPosts": "Artikel blog",
+    "projects": "Proyek",
+    "githubStars": "GitHub Stars"
+  },
+  "landing": {
+    "shareHighlight": "Dari kiriman Chen Dahuang: {title}",
+    "linkCopied": "Tautan disalin, yuk bagikan",
+    "likes": "suka",
+    "bookmarks": "bookmark",
+    "original": "Asli",
+    "about": "Tentang",
+    "aboutTitle": "Indie developer, bereksperimen dengan Cloudflare dan tools produktivitas AI",
+    "aboutBody": "Mantan product manager AI, kini fokus pada indie development: memadukan AI, Cloudflare, dan pembuatan konten menjadi produk serta alur kerja saya sendiri. Proyek, panduan, dan artikel blog adalah catatan publik dari proses eksplorasi saya — kalau kamu melakukan hal serupa, mari terhubung.",
+    "support": "Dukung saya di Afdian",
+    "xLink": "X (sebelumnya Twitter)",
+    "xDesc": "Pembaruan harian, renungan, dan tips praktis",
+    "githubLink": "GitHub",
+    "githubDesc": "Kode sumber proyek dan repositori panduan",
+    "rssLink": "Umpan RSS",
+    "rssDesc": "Pembaruan blog langsung terkirim ke pembaca RSS-mu",
+    "work": "Karya",
+    "recentProjects": "Proyek terbaru",
+    "viewAllProjects": "Lihat semua proyek",
+    "readMore": "Baca selengkapnya"
+  },
+  "projects": {
+    "tryOnline": "Coba online",
+    "github": "GitHub",
+    "view": "Lihat {title}",
+    "preview": "Pratinjau proyek {title}"
+  },
+  "playbooks": {
+    "readOnline": "Baca online",
+    "viewOnGithub": "Lihat di GitHub"
+  },
+  "skills": {
+    "readOnline": "Baca online",
+    "viewOnGithub": "Lihat di GitHub"
+  },
+  "highlights": {
+    "count": "{count} kiriman",
+    "xHome": "Profil X",
+    "searchPosts": "Cari kiriman",
+    "searchPlaceholder": "Cari judul atau kata kunci isi…",
+    "expandAll": "Bentangkan semua",
+    "collapseAll": "Ciutkan semua",
+    "viewMode": "Mode tampilan",
+    "filterTheme": "Filter berdasarkan tema",
+    "all": "Semua",
+    "hot": "Populer",
+    "hotTitle": "Kiriman populer",
+    "likes": "suka",
+    "bookmarks": "bookmark",
+    "reposts": "repost",
+    "views": "tayangan",
+    "viewOnX": "Lihat kiriman asli di X",
+    "noMatch": "Tidak ada kiriman yang cocok, coba kata kunci lain.",
+    "noPosts": "Belum ada kiriman di filter ini.",
+    "countSuffix": "kiriman"
+  },
+  "blog": {
+    "count": "{count} artikel",
+    "archive": "Arsip",
+    "rss": "Umpan RSS",
+    "searchPlaceholder": "Cari judul, deskripsi, atau tag…",
+    "all": "Semua",
+    "found": "{count} ditemukan",
+    "tagFilter": "tag \"{tag}\"",
+    "keywordFilter": "kata kunci \"{keyword}\"",
+    "pinned": "Disematkan",
+    "pinnedTitle": "Artikel disematkan",
+    "original": "Asli",
+    "originalTitle": "Artikel asli di situs ini",
+    "noMatch": "Tidak ada artikel yang cocok, coba kata kunci atau tag lain.",
+    "minutes": "mnt"
+  },
+  "archive": {
+    "title": "Arsip",
+    "description": "Semua artikel blog diarsipkan berdasarkan tahun.",
+    "count": "{count} artikel, dikelompokkan berdasarkan tahun.",
+    "posts": "artikel"
+  },
+  "friends": {
+    "empty": "Belum ada tautan teman. Tambahkan file content/friends/*.yml.",
+    "avatar": "Avatar {name}"
+  },
+  "post": {
+    "allPosts": "Semua artikel",
+    "updated": "Diperbarui {date}",
+    "minRead": "{count} mnt baca",
+    "original": "Asli",
+    "sourceX": "Awalnya dari X",
+    "indieDev": "Indie developer",
+    "collapseToc": "Ciutkan daftar isi",
+    "viewToc": "Lihat daftar isi",
+    "toc": "Daftar isi",
+    "shareHint": "Kalau menurutmu ini bermanfaat, silakan bagikan ke temanmu.",
+    "shareToX": "Bagikan di X",
+    "xOriginal": "Asli di X",
+    "share": "Bagikan",
+    "related": "Bacaan terkait",
+    "subscribe": "Berlangganan pembaruan",
+    "subscribeDesc": "Artikel baru disinkronkan ke RSS, atau ikuti saya di X.",
+    "rss": "Umpan RSS",
+    "followX": "Ikuti di X",
+    "support": "Dukung saya",
+    "backToTop": "Kembali ke atas",
+    "linkCopied": "Tautan artikel disalin ke papan klip",
+    "shareText": "Dari blog Chen Dahuang: {title}"
+  },
+  "error": {
+    "title": "Halaman tidak ditemukan",
+    "description": "Halaman ini tidak ada atau telah dipindahkan."
+  },
+  "seo": {
+    "notFound": "Halaman tidak ditemukan"
+  },
+  "highlightsCategories": {
+    "cloudflare": "Cloudflare",
+    "cloudflareDesc": "Edge cloud, Workers, infrastruktur gratis, dan pengalaman deployment",
+    "tools": "Daftar tools",
+    "toolsDesc": "Rekomendasi perangkat lunak, plugin, perangkat keras, dan tools produktivitas",
+    "ai": "Pemikiran AI",
+    "aiDesc": "Model, agen, manajemen pengetahuan, dan cara berkolaborasi",
+    "product": "Pengembangan produk",
+    "productDesc": "Indie development, tech stack, dan pertimbangan produk",
+    "opc": "Startup OPC",
+    "opcDesc": "One-person company, pendaftaran, dan operasional",
+    "growth": "Pertumbuhan konten",
+    "growthDesc": "Aktivitas di X, cara menulis, dan evaluasi pertumbuhan pengikut",
+    "essay": "Esai",
+    "essayDesc": "Pengamatan tentang nilai, humor, dan perspektif non-tool"
+  },
+  "highlightViewModes": {
+    "theme": "Berdasarkan tema",
+    "themeDesc": "Jelajahi dikelompokkan per kategori",
+    "timeline": "Linimasa",
+    "timelineDesc": "Diurutkan berdasarkan tanggal terbit",
+    "heat": "Berdasarkan popularitas",
+    "heatDesc": "Diurutkan berdasarkan suka dan keterlibatan"
+  },
+  "monthLabel": "{month} {year}",
+  "langNames": {
+    "zh": "Tionghoa",
+    "en": "Inggris",
+    "ja": "Jepang",
+    "es": "Spanyol",
+    "pt": "Portugis",
+    "fr": "Prancis",
+    "de": "Jerman",
+    "ru": "Rusia",
+    "ar": "Arab",
+    "ko": "Korea",
+    "zh-Hant": "Tionghoa Tradisional",
+    "vi": "Vietnam",
+    "id": "Indonesia",
+    "tr": "Turki",
+    "hi": "Hindi",
+    "pl": "Polandia",
+    "fa": "Persia"
+  }
+}

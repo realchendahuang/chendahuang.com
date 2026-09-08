@@ -1,0 +1,21 @@
+category: cloudflare
+title: "Mình đã chuyển bộ gộp subscription vượt tường lửa sang Cloudflare"
+description: "Mình đã chuyển việc gộp subscription vượt tường lửa sang Cloudflare."
+date: 2026-06-28
+likes: 327
+bookmarks: 479
+reposts: 56
+views: 44611
+url: https://x.com/realchendahuang/status/2071247817109348796
+content: |
+  Mình đã chuyển việc gộp subscription vượt tường lửa sang Cloudflare.
+
+  Mã nguồn mở một dự án gộp link subscription, triển khai trên Cloudflare hoàn toàn miễn phí.
+
+  Nó gộp tất cả link subscription và node tự dựng của bạn thành một link duy nhất, kèm theo quy tắc route.
+
+  Đúng nghĩa một link — client nào cũng dùng được, không cần cấu hình từng client.
+
+  GitHub: https://github.com/realchendahuang/sub-store-cloudflare
+
+  Bài đầy đủ: [Mình đã chuyển việc gộp subscription sân bay sang Cloudflare](/blog/sub-store-cloudflare)

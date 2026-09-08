@@ -1,0 +1,21 @@
+category: cloudflare
+title: "2026 獨立開發最佳實務：Cloudflare 窮鬼全家桶"
+description: "2026 年獨立開發最佳實務之 Cloudflare 窮鬼全家桶。"
+date: 2026-06-15
+likes: 225
+bookmarks: 335
+reposts: 34
+views: 40629
+url: https://x.com/realchendahuang/status/2066586160902881542
+content: |
+  2026 年獨立開發最佳實務 之
+  Cloudflare 窮鬼全家桶
+  Codex：寫程式碼，搞定全端開發
+  GitHub：版本控制
+  Stripe：金流系統
+  前端：TanStack Start
+  後端：Hono + Cloudflare Workers
+  部署：Cloudflare Pages
+  資料庫：Cloudflare D1
+  檔案儲存：Cloudflare R2
+  快取 / 設定：Cloudflare KV

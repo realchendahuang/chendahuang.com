@@ -1,0 +1,16 @@
+category: ai
+title: "DeepSeek V4 Flash에 멀티모달이 없다고? Qwen-3.7-Flash로 메우기"
+description: "조사 결과, 현재 가장 가성비 높은 이미지 인식 모델은 Qwen-3.7-Flash다."
+date: 2026-08-06
+likes: 659
+bookmarks: 675
+reposts: 78
+views: 89530
+url: https://x.com/realchendahuang/status/2085265465564336327
+content: |
+  많은 사람이 DeepSeek V4 Flash에는 멀티모달 기능이 없다고 불평한다.
+  조사해 보니 현재 가장 가성비 높은 이미지 인식 모델은 Qwen-3.7-Flash다.
+  이미지 한 장 인식 비용은 0.0004~0.001위안, 보통 이미지 1,000장 인식은 약 0.6~0.8위안이다.
+  이를 바탕으로 우리는 진짜 돈 없는 사람용 올인원 AI 스택을 도출했다:
+  1. OpenCode Go 5달러 요금제로 DeepSeek V4 Flash를 코딩에 쓰기
+  2. https://t.co/mlvdSTaD6M

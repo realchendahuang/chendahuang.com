@@ -1,0 +1,12 @@
+title: "Cherina Pod"
+description: "Dwujęzyczna aplikacja do intensywnego słuchania podcastów. Dotknij angielskiego zdania, aby zobaczyć chińskie tłumaczenie; odtwarzaj w pętli zdanie po zdaniu, reguluj tempo i powtarzaj za lektorem — głębsze zrozumienie znaczy więcej niż samo rozumienie."
+type: "Produkt indie"
+url: https://pod.cherina.app/
+onlineUrl: https://pod.cherina.app/
+image: /projects/cherina-pod.webp
+imageAlt: "Strona główna Cherina Pod: ciągłe słuchanie, nauka angielskiego, dwujęzyczne karty okładek"
+icon: i-lucide-headphones
+color: "#e25822"
+tags: ["Podcast", "Intensywne słuchanie", "Nauka angielskiego", "Dwujęzyczny", "Produkt indie"]
+date: 2026-08-26
+status: ongoing

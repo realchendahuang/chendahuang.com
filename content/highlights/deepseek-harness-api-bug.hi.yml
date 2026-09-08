@@ -1,0 +1,22 @@
+category: ai
+title: "DeepSeek Harness को तीसरे पक्ष के API पर 'unknown tool' मिलता है: गेटवे डेटा-फ़ॉर्मेट की समस्या"
+description: "टूल का नाम सच में खोया नहीं है — गेटवे ने डेटा फ़ॉर्मेट बिगाड़ दिया।"
+date: 2026-08-18
+likes: 2
+bookmarks: 0
+reposts: 2
+views: 2313
+url: https://x.com/realchendahuang/status/2089636108271550484
+content: |
+  DeepSeek Harness + तीसरे पक्ष के API संगतता की समस्या:
+
+  जब agent Bash जैसे टूल कॉल करता है, तो `ToolNotFoundError: unknown tool ""` त्रुटि आती है, जो ऐसा दिखता है मानो टूल कभी पंजीकृत ही नहीं हुआ।
+
+  असल में क्या होता है: गेटवे DeepSeek के आधिकारिक API से अलग डेटा फ़ॉर्मेट लौटाता है, और टूल का नाम बीच में कहीं खो जाता है।
+
+  कुछ प्रासंगिक GitHub Discussions लिंक:
+
+  - deepseek-ai/dsh#issues में "unknown tool" खोजें
+  - सेल्फ-होस्टेड गेटवे (OpenRouter / OneAPI / new-api) चलाने वाले लोगों को यह समस्या सबसे ज़्यादा आती है
+
+  डीबगिंग का तरीका: एक पूरा tool_call रिक्वेस्ट और रिस्पॉन्स कैप्चर करें, और जाँचें कि गेटवे लॉग में टूल का नाम खाली स्ट्रिंग तो नहीं है।

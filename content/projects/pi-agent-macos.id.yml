@@ -1,0 +1,9 @@
+title: "Pi Agent (macOS)"
+description: "Aplikasi macOS asli: cangkang SwiftUI yang meng-host Pi Runtime yang diawasi dan dibundel. Pustaka proyek, navigasi utas, transkrip, terminal SwiftTerm, panel ruang kerja dan git, kredensial Keychain — pengalaman desktop siap pakai untuk Pi."
+type: "Aplikasi macOS asli"
+url: "https://github.com/realchendahuang/dahuang-pi-web-ui"
+icon: "i-lucide-apple"
+color: "#64748b"
+tags: ["macOS", "SwiftUI", "Pi", "Agent", "Native"]
+date: 2026-07-25
+status: "ongoing"

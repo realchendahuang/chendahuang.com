@@ -1,0 +1,20 @@
+category: cloudflare
+title: "Kiedy AI pisze projekty Cloudflare, to wybucha — i nie chodzi o składnię"
+description: "AI wciąż pisze Workery jak Node.js i traktuje Bindingi jak zmienne środowiskowe."
+date: 2026-06-22
+likes: 23
+bookmarks: 42
+reposts: 4
+views: 1462
+url: https://x.com/realchendahuang/status/2068853978004365739
+content: |
+  Wiele osób pisze projekty Cloudflare za pomocą AI, a kiedy coś wybucha, to nie chodzi o składnię.
+  Prawdziwe problemy:
+  AI pisze Workery tak, jakby były Node.js
+  traktuje Bindingi jak process.env
+  zapomina o await
+  chowa stan żądania w zmiennych globalnych
+  nie wie, że żądania do statycznych zasobów są darmowe
+  i wywołuje własne R2 z wewnątrz Workera przez REST API
+  Wszystkie te pułapki zebrałem w Cloudflare Playbook.
+  A przy okazji — pracowałem też nad

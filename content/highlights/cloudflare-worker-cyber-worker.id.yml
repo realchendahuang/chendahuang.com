@@ -1,0 +1,38 @@
+category: cloudflare
+title: "Workers adalah buruh siber"
+description: "Saya merasa kebanyakan orang masih memahami kurang dari 1% Cloudflare Workers."
+date: 2026-06-16
+likes: 1
+bookmarks: 2
+reposts: 1
+views: 1743
+url: https://x.com/realchendahuang/status/2066895041910763934
+content: |
+  Saya merasa kebanyakan orang masih memahami kurang dari 1% Cloudflare Workers.
+
+  Workers adalah buruh siber.
+
+  Mereka yang mengerjakan pekerjaan kasar di balik layar website-mu.
+
+  Mengirim formulir, mengunggah file, memanggil AI, validasi login, menangani notifikasi pembayaran, sampai API sebuah produk kecil — semuanya bisa dikerjakan Workers.
+
+  Hal paling gila tentang Workers: pengguna gratis mendapat 100.000 permintaan per hari tanpa mengeluarkan uang sepeser pun.
+
+  100.000 itu seperti apa sih?
+
+  Misal situsmu punya 1.000 pengguna sehari. Bahkan jika berjalan nonstop 24 jam dan ada orang yang berkunjung setiap detik, itu hanya 86.400 kunjungan per hari — masih belum cukup untuk menghabiskan kuota.
+
+  Kalau kamu benar-benar bisa menghabiskan seluruh kuota gratis itu...
+
+  masih menunggu apa? Kamu hampir jadi kaya.
+
+  Sekarang kamu tinggal menulis logikanya dan langsung menyerahkannya ke Worker untuk dijalankan.
+  Padukan dengan framework API Hono, dan itulah praktik terbaiknya.
+
+  Inilah yang membuat Cloudflare Workers begitu menggoda.
+
+  Bayar? Masa sih.
+
+  Cloudflare itu baik hati.
+
+  Ia tidak tega melihatmu mengeluarkan uang.

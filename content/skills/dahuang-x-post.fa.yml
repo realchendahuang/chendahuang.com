@@ -1,0 +1,9 @@
+title: "Dahuang X Post"
+description: "ایده‌های چینی، به‌روزرسانی‌های پروژه و نوشته‌های بلند را به پست‌های کوتاه یا Threadهای مناسب فید X تبدیل می‌کند — و شروع، ساختار و پتانسیل انتشار را بررسی می‌کند."
+url: "https://github.com/realchendahuang/dahuang-x-post"
+install: "npx skills add realchendahuang/dahuang-x-post -g"
+icon: "i-simple-icons-x"
+color: "#111111"
+tags: ["Agent Skill", "X", "نوشتن به چینی", "Hook", "Thread"]
+date: 2026-07-10
+stars: 0

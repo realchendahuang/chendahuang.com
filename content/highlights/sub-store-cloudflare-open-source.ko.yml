@@ -1,0 +1,21 @@
+category: cloudflare
+title: "인터넷 우회 구독 애그리게이션을 Cloudflare로 이전"
+description: "인터넷 우회 구독 애그리게이션을 Cloudflare로 옮겼다."
+date: 2026-06-28
+likes: 327
+bookmarks: 479
+reposts: 56
+views: 44611
+url: https://x.com/realchendahuang/status/2071247817109348796
+content: |
+  인터넷 우회 구독 애그리게이션을 Cloudflare로 옮겼다.
+
+  Cloudflare에 완전 무료로 배포되는 우회 구독 링크 애그리게이션 프로젝트를 오픈소스로 공개했다.
+
+  모든 우회 구독 링크와 자체 구축 노드를 하나의 링크로 합쳐 주고, 분기 규칙까지 붙일 수 있다.
+
+  진짜로 링크 하나만 있으면 모든 클라이언트에서 쓸 수 있어서, 클라이언트마다 따로 설정할 필요가 없다.
+
+  GitHub: https://github.com/realchendahuang/sub-store-cloudflare
+
+  블로그 원문: [에어포트 구독 애그리게이션을 Cloudflare로 옮겼다](/blog/sub-store-cloudflare)

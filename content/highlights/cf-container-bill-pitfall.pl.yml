@@ -1,0 +1,15 @@
+category: cloudflare
+title: "Pułapka Cloudflare Container: zapomniałem zatrzymać podczas debugowania, naliczyli mi 4 dolary"
+description: "Pojawiła się ofiara Cloudflare Container."
+date: 2026-06-27
+likes: 0
+bookmarks: 0
+reposts: 0
+views: 353
+url: https://x.com/realchendahuang/status/2070820905224441922
+content: |
+  Pojawiła się kolejna ofiara Cloudflare Container.
+
+  Ponieważ kod, który pisałem, był jeszcze na etapie debugowania, polecenie stop nigdy nie zadziałało.
+
+  Jeden Container działał więc bez przerwy przez 7 dni i kosztował mnie 4 dolary.

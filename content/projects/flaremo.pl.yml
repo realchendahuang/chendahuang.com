@@ -1,0 +1,12 @@
+title: "FlareMo"
+description: "Natywny dla Cloudflare system zarządzania wiedzą osobistą z API zgodnym z Memos — Twoje dane, hostowane samodzielnie."
+type: "Zarządzanie wiedzą osobistą"
+url: https://github.com/realchendahuang/FlareMo
+image: /projects/flaremo.webp
+imageAlt: "Oś czasu notatek i interfejs tagów FlareMo"
+icon: i-lucide-sticky-note
+color: "#f59e0b"
+tags: ["Cloudflare", "Memos", "D1", "R2", "Zarządzanie wiedzą"]
+date: 2026-07-10
+status: ongoing
+stars: 150

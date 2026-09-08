@@ -1,0 +1,16 @@
+category: ai
+title: "DeepSeek V4 Flash 缺多模態？用 Qwen-3.7-Flash 補上"
+description: "調查了性價比最高的圖像辨識模型 Qwen-3.7-Flash。"
+date: 2026-08-06
+likes: 659
+bookmarks: 675
+reposts: 78
+views: 89530
+url: https://x.com/realchendahuang/status/2085265465564336327
+content: |
+  很多人抱怨 DeepSeek V4 Flash 沒有多模態的功能
+  我研究了一下，目前性價比最高的圖像辨識模型是 Qwen-3.7-Flash。
+  辨識一張圖片，成本在人民幣 0.0004～0.001 元，辨識 1,000 張普通圖片 ≈ 0.6～0.8 元
+  基於以上資訊，我們得出了真正的 AI 窮鬼全家桶方案：
+  1. OpenCode Go 5 美元套餐，用 DeepSeek V4 Flash 寫程式
+  2. https://t.co/mlvdSTaD6M

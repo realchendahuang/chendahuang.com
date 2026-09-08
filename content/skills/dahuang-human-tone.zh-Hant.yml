@@ -1,0 +1,9 @@
+title: "Dahuang Human Tone"
+description: "去掉中文文本裡的模板殼、路標詞、昇華收尾和假互動。改結構，不改事實，保留資訊和作者風格。"
+url: "https://github.com/realchendahuang/dahuang-human-tone"
+install: "npx skills add realchendahuang/dahuang-human-tone -g"
+icon: "i-lucide-wand-sparkles"
+color: "#00DC82"
+tags: ["Agent Skill", "去 AI 味", "中文寫作", "Claude Code", "Codex"]
+date: 2025-05-01
+stars: 10

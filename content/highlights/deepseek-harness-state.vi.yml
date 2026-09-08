@@ -1,0 +1,29 @@
+category: ai
+title: "DeepSeek Harness hôm nay: 150k sao mà vẫn còn là Developer Preview"
+description: "Tầm ảnh hưởng đang chạy trước độ chín muồi về kỹ thuật, và hệ sinh thái xung quanh đang mở rộng nhanh."
+date: 2026-08-18
+likes: 7
+bookmarks: 0
+reposts: 10
+views: 6200
+url: https://x.com/realchendahuang/status/2089642236413985278
+content: |
+  Gần đây tôi xem lại repo và Discussions của DeepSeek Harness, và dự án này đang ở một giai đoạn rất thú vị:
+
+  DeepSeek Harness đã có hơn 150k sao và hơn 12.000 commit trong repo.
+
+  Thế mà README chính thức vẫn ghi rất rõ ràng: hiện chỉ là Developer Preview, và các thay đổi phá vỡ tương thích vẫn còn đến.
+
+  rc.7 được phát hành vào ngày 17 tháng 8. Việc tạo Issue và PR bị hạn chế; phản hồi đi qua Discussions.
+
+  Cộng đồng thì khổng lồ, nhưng phát triển lõi tập trung trong tay rất ít người. Bug cứ nối tiếp nhau xuất hiện — như vụ unknown tool "".
+
+  Thứ đang thiếu nhất: độ phủ test, tương thích provider, và độ tin cậy của session.
+
+  Về kiến trúc nó vẫn còn hấp dẫn, như nền tảng của một hệ điều hành agent:
+
+  - Everything is a Plugin
+  - Kiến trúc tổ hợp Cordis
+  - Preset / Skill / MCP / Agent / Provider đều được plugin hóa
+
+  Dự án đang ở giai đoạn "tầm ảnh hưởng chạy trước năng lực kỹ thuật".

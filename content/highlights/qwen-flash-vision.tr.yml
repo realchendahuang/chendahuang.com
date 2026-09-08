@@ -1,0 +1,16 @@
+category: ai
+title: "DeepSeek V4 Flash'ta çok modluluk mu eksik? Qwen-3.7-Flash ile kapat"
+description: "Araştırma sonucu bulunan en uygun maliyetli görüntü tanıma modeli: Qwen-3.7-Flash."
+date: 2026-08-06
+likes: 659
+bookmarks: 675
+reposts: 78
+views: 89530
+url: https://x.com/realchendahuang/status/2085265465564336327
+content: |
+  Pek çok kişi DeepSeek V4 Flash'ın çok modluluğu olmadığından yakınıyor.
+  Araştırmayı yaptım: şu an en uygun maliyetli görüntü tanıma modeli Qwen-3.7-Flash.
+  Tek bir görseli tanımak 0,0004–0,001 yuan tutuyor; 1.000 sıradan görseli tanımak ≈ 0,6–0,8 yuan.
+  Buna dayanarak, gerçek "beş parasız" hepsi-bir-arada AI yığınına ulaştık:
+  1. Kod yazmak için DeepSeek V4 Flash kullanan OpenCode Go 5 dolarlık paket
+  2. https://t.co/mlvdSTaD6M

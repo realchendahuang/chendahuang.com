@@ -1,0 +1,56 @@
+category: ai
+title: "Dua jalur manajemen pengetahuan: alur kerja Feishu vs produk Cloudflare"
+description: "Belakangan ini saya memikirkan ulang soal manajemen pengetahuan."
+date: 2026-07-08
+likes: 3
+bookmarks: 2
+reposts: 0
+views: 439
+url: https://x.com/realchendahuang/status/2074900341456503169
+content: |
+  Belakangan ini saya memikirkan ulang soal manajemen pengetahuan.
+
+  Saya sadar sebenarnya ada dua jalur di sini.
+
+  **Satu: dibangun di atas Feishu.**
+
+  Kelebihannya langsung terlihat:
+
+  gratis, sinkron multi-perangkat, bisa dibagikan, mudah berkolaborasi, dan bentuknya cukup kaya.
+
+  Dokumen, tabel multidimensi, spreadsheet, slide, kanvas, Todo, knowledge base — modul-modul ini kalau digabungkan sudah mencakup banyak skenario manajemen pengetahuan pribadi dan tim.
+
+  Saya terutama optimistis dengan tabel multidimensi.
+
+  Ia sangat cocok dijadikan pusat pengetahuan.
+
+  Pengumpulan informasi, pengarsipan materi, manajemen status, penataan terstruktur, produksi ulang konten — semuanya bisa berputar di sekitarnya.
+
+  Ditambah Feishu CLI dan AI agents, Feishu tidak lagi sekadar tools kantor.
+
+  Ia lebih mirip sistem alur kerja pengetahuan yang bisa dioperasikan agents.
+
+  **Dua: membangun sendiri di atas Cloudflare.**
+
+  Jalur ini lebih bebas dan lebih cocok untuk diprodukkan.
+
+  FlareMo, yang sedang saya bangun sekarang, adalah upaya membuat produk manajemen pengetahuan di atas Cloudflare.
+
+  Kelebihan Cloudflare adalah kapabilitas dasarnya lengkap:
+
+  frontend, backend, database, penyimpanan objek, pencarian vektor, AI — semuanya bisa dikombinasikan.
+
+  Tapi ia butuh pengembangan.
+
+  Dan kamu harus mendesain sendiri struktur datanya, pengalaman pencariannya, sistem izinnya, serta logika produknya.
+
+  Jadi penilaian saya sekarang:
+
+  - Feishu cocok untuk segera membangun sistem manajemen pengetahuan yang bisa langsung dipakai hari ini.
+  - Cloudflare cocok untuk menjadikan manajemen pengetahuan sebuah produk yang benar-benar terkontrol dan bisa diiterasi.
+
+  Kedua jalur ini sama-sama layak dipelajari.
+
+  Satu condong ke alur kerja.
+
+  Satu condong ke produk.

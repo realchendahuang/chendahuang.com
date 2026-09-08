@@ -1,0 +1,9 @@
+title: "XuanJi"
+description: "Một không gian bói toán AI riêng tư dành cho một chủ sở hữu, chạy trên ứng dụng Cloudflare full-stack: BaZi (Tử Bình), chiêm tinh phương Tây và transit, Tử Vi Đẩu Số, Tarot, Kinh Dịch, độ tương hợp và chỉ dẫn hằng ngày. Tính toán tất định lo phần dữ kiện, AI lo phần luận giải."
+type: "Ứng dụng bói toán AI"
+url: "https://github.com/realchendahuang/xuanji"
+icon: "i-lucide-moon-star"
+color: "#7c3aed"
+tags: ["Cloudflare", "TanStack", "Hono", "AI", "BaZi", "Zi Wei"]
+date: 2026-07-11
+status: "ongoing"

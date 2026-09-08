@@ -1,0 +1,39 @@
+category: product
+title: "2026 इंडी ऐप बेस्ट प्रैक्टिस: पहले Web + PWA"
+description: "एक साल से ज़्यादा की मेहनत से मिले, ख़ून-पसीने वाले इंडी डेव नुक़सानों को शेयर कर रहा हूँ।"
+date: 2026-06-22
+likes: 263
+bookmarks: 422
+reposts: 46
+views: 37055
+url: https://x.com/realchendahuang/status/2069042963280503182
+content: |
+  एक साल से ज़्यादा की मेहनत से मिले, ख़ून-पसीने वाले इंडी डेव नुक़सानों को शेयर कर रहा हूँ।
+
+  2026 में, अगर किसी इंडी डेवलपर को ऐप बनाना है, तो बेस्ट प्रैक्टिस है:
+
+  **MVP स्टेज पर पहले Web + PWA करो।** विकास तेज़, डिबग तेज़, इटरेशन तेज़।
+
+  Web स्टैक:
+
+  React + TanStack Start + Vite + TypeScript + shadcn/ui + Base UI + Tailwind CSS + better-auth + Vercel AI SDK + oxfmt / oxlint
+
+  यूनिफाइड बैकएंड:
+
+  Hono + Cloudflare Workers
+
+  Web डिबगिंग:
+
+  Chrome DevTools MCP + Codex Chrome extension
+
+  एक बार प्रोडक्ट सच में चलने लगे, तब मोबाइल करो।
+
+  मोबाइल स्टैक:
+
+  React Native + Expo + Expo Router + NativeWind + React Native Reusables + Reanimated + Gesture Handler + EAS Build / Submit / Update
+
+  कोर आइडिया सरल है:
+
+  पहले Web + PWA से डिमांड वैलिडेट करो।
+
+  जब सच में यूज़र आ जाएँ, तब असली ऐप के लिए React Native + Expo ले आओ।

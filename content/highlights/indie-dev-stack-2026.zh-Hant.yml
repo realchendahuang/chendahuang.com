@@ -1,0 +1,39 @@
+category: product
+title: "2026 獨立開發 APP 的最佳實踐：先 Web+PWA"
+description: "分享給大家我一年多血淚換來的獨立開發踩坑經驗。"
+date: 2026-06-22
+likes: 263
+bookmarks: 422
+reposts: 46
+views: 37055
+url: https://x.com/realchendahuang/status/2069042963280503182
+content: |
+  分享給大家我一年多血淚換來的獨立開發踩坑經驗。
+
+  2026 年，獨立開發者想開發 APP，最佳實踐是：
+
+  **MVP 階段先做 Web + PWA。** 開發快，除錯快，迭代快。
+
+  Web 技術棧：
+
+  React + TanStack Start + Vite + TypeScript + shadcn/ui + Base UI + Tailwind CSS + better-auth + Vercel AI SDK + oxfmt / oxlint
+
+  後端統一：
+
+  Hono + Cloudflare Workers
+
+  Web 除錯：
+
+  Chrome DevTools MCP + Codex Chrome 擴充功能
+
+  等產品真的跑起來，再做行動端。
+
+  行動端技術棧：
+
+  React Native + Expo + Expo Router + NativeWind + React Native Reusables + Reanimated + Gesture Handler + EAS Build / Submit / Update
+
+  核心思路很簡單：
+
+  先用 Web + PWA 驗證需求。
+
+  真的有使用者，再上 React Native + Expo 做 APP。

@@ -1,0 +1,16 @@
+category: ai
+title: "DeepSeek V4 Flash में मल्टीमॉडैलिटी नहीं? Qwen-3.7-Flash से पैच करो"
+description: "रिसर्च के बाद पाया सबसे किफ़ायती विज़न मॉडल: Qwen-3.7-Flash।"
+date: 2026-08-06
+likes: 659
+bookmarks: 675
+reposts: 78
+views: 89530
+url: https://x.com/realchendahuang/status/2085265465564336327
+content: |
+  बहुत सारे लोग शिकायत करते हैं कि DeepSeek V4 Flash में मल्टीमॉडैलिटी नहीं है।
+  मैंने रिसर्च किया: इस समय सबसे किफ़ायती विज़न मॉडल Qwen-3.7-Flash है।
+  एक इमेज पहचानने की लागत 0.0004–0.001 युआन है; 1,000 साधारण इमेज पहचानना ≈ 0.6–0.8 युआन।
+  इसी के आधार पर, हम पहुँचे हैं असली किफ़ायती ऑल-इन-वन AI स्टैक पर:
+  1. OpenCode Go $5 प्लान, DeepSeek V4 Flash से कोड लिखने के लिए
+  2. https://t.co/mlvdSTaD6M

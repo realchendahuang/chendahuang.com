@@ -1,0 +1,22 @@
+category: ai
+title: "Cacat bawaan generasi GPT-5: menulis kebutuhan internal ke dalam teks UI"
+description: "Akar dari teks UI yang bengkak adalah ia tidak pernah memisahkan teks untuk pengguna dari umpan balik untuk pengembang."
+date: 2026-08-12
+likes: 2
+bookmarks: 0
+reposts: 1
+views: 1500
+url: https://x.com/realchendahuang/status/2087349882101370909
+content: |
+  Sangat tepat sekali — ini cacat bawaan generasi GPT-5:
+
+  Ia terus menulis kebutuhan internal ke dalam teks UI untuk membuktikan beban kerjanya. Untuk membuktikan dirinya — oh lihat, aku benar-benar mengerjakannya, hebat kan, aku tidak bermalas-malasan, semua kebutuhanmu sudah kupajang di atas meja.
+
+  Dan teks UI-nya bengkak luar biasa. Dari 5.0 sampai 5.6 — bergenerasi-generasi — masih saja belum diperbaiki. Sudah mendarah daging.
+
+  Siapa pun yang benar-benar pernah merilis produk frontend pasti paham:
+
+  - Setiap teks di antarmuka, besar maupun kecil, adalah teks yang menghadap ke pengguna
+  - Teks yang seharusnya menjadi umpan balik untuk pengembang di chat tidak boleh pernah ditulis ke dalam produk
+
+  Tapi ia bukan cuma menulis teks yang jelek — ia juga sering menulis umpan balik internal ke dalam produk untuk "menunjukkan" bahwa ia benar-benar melakukan sesuatu.

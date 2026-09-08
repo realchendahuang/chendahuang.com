@@ -1,0 +1,8 @@
+title: "Dahuang AI Tone"
+description: "텍스트를 GPT, Claude, Gemini, Doubao의 AI 스타일로 다시 쓰거나, 특정 텍스트가 어떤 모델의 스타일과 가장 유사한지 감지합니다."
+url: "https://github.com/realchendahuang/dahuang-ai-tone"
+install: "npx skills add realchendahuang/dahuang-ai-tone -g"
+icon: "i-lucide-fingerprint"
+color: "#a855f7"
+tags: ["Agent Skill", "AI 감성", "모델 스타일", "스타일 감지", "중국어 작성"]
+date: 2025-05-01

@@ -1,0 +1,10 @@
+title: "dsh-guide · एक संदेश की यात्रा"
+description: "Coding Agent के अंदर घुसकर देखें: एक संदेश के साथ सात 3D सीन में चलें, जब वह एक प्रोडक्शन-लेवल एजेंट (DeepSeek Harness) के भीतर अपनी पूरी यात्रा तय करता है। सोर्स-कोड समझाने वाली इंटरैक्टिव वेबसाइट।"
+type: "इंटरैक्टिव एक्सप्लेनर वेबसाइट"
+url: "https://github.com/realchendahuang/dsh-guide"
+onlineUrl: "https://chendahuang.com/dsh"
+icon: "i-lucide-send"
+color: "#2dd4bf"
+tags: ["DeepSeek Harness", "3D", "WebGL", "इंटरैक्टिव"]
+date: 2026-08-13
+status: "ongoing"

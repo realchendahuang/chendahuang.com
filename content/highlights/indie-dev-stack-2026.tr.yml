@@ -1,0 +1,39 @@
+category: product
+title: "2026 bağımsız uygulama en iyi pratikleri: önce Web + PWA"
+description: "Bir yılı aşkın kanlı canlı, gözyaşıyla kazanılmış bağımsız geliştirme tuzaklarını paylaşıyorum."
+date: 2026-06-22
+likes: 263
+bookmarks: 422
+reposts: 46
+views: 37055
+url: https://x.com/realchendahuang/status/2069042963280503182
+content: |
+  Bir yılı aşkın kanlı canlı, gözyaşıyla kazanılmış bağımsız geliştirme tuzaklarını paylaşıyorum.
+
+  2026'da bağımsız geliştirici bir uygulama yapmak istiyorsa en iyi pratik şu:
+
+  **MVP aşamasında önce Web + PWA yap.** Geliştirmesi hızlı, hata ayıklaması hızlı, iterasyonu hızlı.
+
+  Web teknoloji yığını:
+
+  React + TanStack Start + Vite + TypeScript + shadcn/ui + Base UI + Tailwind CSS + better-auth + Vercel AI SDK + oxfmt / oxlint
+
+  Birleşik arka uç:
+
+  Hono + Cloudflare Workers
+
+  Web hata ayıklama:
+
+  Chrome DevTools MCP + Codex Chrome eklentisi
+
+  Ürün gerçekten çalışmaya başlayınca mobil tarafa geç.
+
+  Mobil teknoloji yığını:
+
+  React Native + Expo + Expo Router + NativeWind + React Native Reusables + Reanimated + Gesture Handler + EAS Build / Submit / Update
+
+  Temel fikir çok basit:
+
+  Önce Web + PWA ile talebi doğrula.
+
+  Gerçekten kullanıcın olduğunda gerçek uygulama için React Native + Expo'yu devreye al.

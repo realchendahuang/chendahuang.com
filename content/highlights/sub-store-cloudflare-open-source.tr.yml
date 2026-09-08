@@ -1,0 +1,21 @@
+category: cloudflare
+title: "Erişim (circumvention) abonelik agregasyonumu Cloudflare'e taşıdım"
+description: "Erişim (circumvention) abonelik agregasyonumu Cloudflare'e taşıdım."
+date: 2026-06-28
+likes: 327
+bookmarks: 479
+reposts: 56
+views: 44611
+url: https://x.com/realchendahuang/status/2071247817109348796
+content: |
+  Erişim (circumvention) abonelik agregasyonumu Cloudflare'e taşıdım.
+
+  Cloudflare üzerinde tamamen ücretsiz dağıtılan bir abonelik bağlantısı agregasyon projesini açık kaynak yaptım.
+
+  Tüm erişim abonelik bağlantılarını ve kendi kurduğun düğümleri, yönlendirme kuralları eklenmiş tek bir bağlantıda toplar.
+
+  Gerçekten tek bir bağlantı — her istemcide kullanılabilir, istemci bazında yapılandırma yok.
+
+  GitHub: https://github.com/realchendahuang/sub-store-cloudflare
+
+  Tam yazı: [Havaalanı abonelik agregasyonumu Cloudflare'e taşıdım](/blog/sub-store-cloudflare)

@@ -1,0 +1,38 @@
+category: cloudflare
+title: "Workers to cyber-pracownicy fizyczni"
+description: "Mam wrażenie, że większość ludzi wciąż rozumie mniej niż 1% Cloudflare Workers."
+date: 2026-06-16
+likes: 1
+bookmarks: 2
+reposts: 1
+views: 1743
+url: https://x.com/realchendahuang/status/2066895041910763934
+content: |
+  Mam wrażenie, że większość ludzi wciąż rozumie mniej niż 1% Cloudflare Workers.
+
+  Workers to cyber-pracownicy fizyczni.
+
+  Odwalają za ciebie brudną robotę za twoją stroną.
+
+  Wysyłanie formularzy, wgrywanie plików, wywoływanie AI, walidacja logowania, obsługa powiadomień o płatnościach i API małego produktu — Workers robi to wszystko.
+
+  Najbardziej oburzająca rzecz w Workers: darmowi użytkownicy dostają 100 000 żądań dziennie, nie wydając ani grosza.
+
+  Co w ogóle znaczy 100 000?
+
+  Powiedzmy, że twoja strona ma 1000 użytkowników dziennie. Nawet jeśli działa non stop 24 godziny i ktoś odwiedza ją co sekundę, to tylko 86 400 odwiedzin dziennie — wciąż za mało, żeby przebić limit.
+
+  Jeśli faktycznie potrafisz spalić cały ten darmowy limit...
+
+  na co czekasz? Zaraz się wzbogacisz.
+
+  Teraz możesz napisać logikę i po prostu oddać ją Workerowi do wykonania.
+  Połącz to z frameworkiem API Hono i to jest dobra praktyka.
+
+  To sprawia, że Cloudflare Workers jest tak urocze.
+
+  Płacić? Ta, jasne.
+
+  Cloudflare ma dobre serce.
+
+  Nie może znieść widoku, jak wydajesz pieniądze.
