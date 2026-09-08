@@ -1,0 +1,10 @@
+title: "dsh-guide · Путешествие сообщения"
+description: "Загляните внутрь Coding Agent: проследите путь одного сообщения через семь 3D-сцен, пока оно путешествует по агенту продакшен-уровня (DeepSeek Harness). Интерактивный сайт, объясняющий исходный код."
+type: "Интерактивный научно-популярный сайт"
+url: "https://github.com/realchendahuang/dsh-guide"
+onlineUrl: "https://chendahuang.com/dsh"
+icon: "i-lucide-send"
+color: "#2dd4bf"
+tags: ["DeepSeek Harness", "3D", "WebGL", "Интерактивный"]
+date: 2026-08-13
+status: "ongoing"

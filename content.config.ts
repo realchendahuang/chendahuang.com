@@ -36,7 +36,8 @@ export default defineContentConfig({
         { include: 'index.pt.yml' },
         { include: 'index.fr.yml' },
         { include: 'index.de.yml' },
-        { include: 'index.ar.yml' }
+        { include: 'index.ar.yml' },
+        { include: 'index.ru.yml' }
       ],
       schema: z.object({
         locale: z.string().default('zh'),
@@ -79,6 +80,7 @@ export default defineContentConfig({
         { include: 'blog.fr.yml' },
         { include: 'blog.de.yml' },
         { include: 'blog.ar.yml' },
+        { include: 'blog.ru.yml' },
         { include: 'projects.yml' },
         { include: 'projects.en.yml' },
         { include: 'projects.ja.yml' },
@@ -87,6 +89,7 @@ export default defineContentConfig({
         { include: 'projects.fr.yml' },
         { include: 'projects.de.yml' },
         { include: 'projects.ar.yml' },
+        { include: 'projects.ru.yml' },
         { include: 'playbooks.yml' },
         { include: 'playbooks.en.yml' },
         { include: 'playbooks.ja.yml' },
@@ -95,6 +98,7 @@ export default defineContentConfig({
         { include: 'playbooks.fr.yml' },
         { include: 'playbooks.de.yml' },
         { include: 'playbooks.ar.yml' },
+        { include: 'playbooks.ru.yml' },
         { include: 'skills.yml' },
         { include: 'skills.en.yml' },
         { include: 'skills.ja.yml' },
@@ -103,6 +107,7 @@ export default defineContentConfig({
         { include: 'skills.fr.yml' },
         { include: 'skills.de.yml' },
         { include: 'skills.ar.yml' },
+        { include: 'skills.ru.yml' },
         { include: 'highlights.yml' },
         { include: 'highlights.en.yml' },
         { include: 'highlights.ja.yml' },
@@ -111,6 +116,7 @@ export default defineContentConfig({
         { include: 'highlights.fr.yml' },
         { include: 'highlights.de.yml' },
         { include: 'highlights.ar.yml' },
+        { include: 'highlights.ru.yml' },
         { include: 'friends.yml' },
         { include: 'friends.en.yml' },
         { include: 'friends.ja.yml' },
@@ -118,7 +124,8 @@ export default defineContentConfig({
         { include: 'friends.pt.yml' },
         { include: 'friends.fr.yml' },
         { include: 'friends.de.yml' },
-        { include: 'friends.ar.yml' }
+        { include: 'friends.ar.yml' },
+        { include: 'friends.ru.yml' }
       ],
       schema: z.object({
         locale: z.string().default('zh'),

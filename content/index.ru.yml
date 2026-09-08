@@ -1,0 +1,41 @@
+seo:
+  title: "Chen Dahuang — работы и контент"
+  description: "Персональная витрина работ и контента Chen Dahuang. Проекты, гайды, agent skills, статьи и посты."
+title: "Chen Dahuang"
+description: |
+  Сейчас | KOSX @kosxai — руководитель направления стартапов и инди-разработки в Восточном Китае | Партнёр ИИ-компании в Нинбо
+  Направление | Indie Hacker | Экс-продакт-менеджер по ИИ | Инсайты о продуктах / юмор
+  В работе | FlareMo (заметки) | FeedSieve (чистка X) | Cherina Pod (двуязычный подкаст)
+hero:
+  links:
+    - label: "Проекты"
+      to: /projects
+      color: "primary"
+    - label: "GitHub"
+      to: https://github.com/realchendahuang
+      color: "neutral"
+      target: "_blank"
+  images:
+    - src: /projects/cherina-pod.webp
+      alt: Cherina Pod — приложение для прослушивания двуязычного подкаста
+    - src: /projects/feedsieve.webp
+      alt: FeedSieve — инструмент очистки ленты X
+    - src: /projects/flaremo.webp
+      alt: FlareMo — личное управление знаниями
+    - src: /projects/sub-store-cloudflare.webp
+      alt: Sub-Store Cloudflare — агрегатор подписок
+    - src: /projects/pi-config.webp
+      alt: pi-config — настройка Pi Coding Agent
+    - src: /projects/deepmate.webp
+      alt: DeepMate — панель управления AI Harness
+    - src: /projects/hermes-memory.webp
+      alt: Hermes Memory — плагин постоянной памяти для OpenCode
+    - src: /projects/god-museum.webp
+      alt: God-Museum — музей мифов разных цивилизаций
+    - src: /projects/ai-chronicle.webp
+      alt: AI Chronicle — хроника индустрии ИИ
+blog:
+  title: "Последние статьи"
+highlights:
+  title: "Лучшие посты"
+links: []

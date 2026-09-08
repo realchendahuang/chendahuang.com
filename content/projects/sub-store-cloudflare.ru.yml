@@ -1,0 +1,12 @@
+title: "Sub-Store Cloudflare"
+description: "Агрегация подписок и настройка правил на Cloudflare Workers: источники подписок, обработка узлов, комбинированные подписки и шаблоны правил маршрутизации — всё в облаке."
+type: "Инструмент для Cloudflare"
+url: https://github.com/realchendahuang/sub-store-cloudflare
+image: /projects/sub-store-cloudflare.webp
+imageAlt: "Интерфейс управления источниками подписок и комбинированными подписками в Sub-Store Cloudflare"
+icon: i-simple-icons-cloudflare
+color: "#f38020"
+tags: ["Cloudflare Workers", "D1", "Mihomo", "sing-box", "Управление подписками"]
+date: 2026-07-09
+status: ongoing
+stars: 253

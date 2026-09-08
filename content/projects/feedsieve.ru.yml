@@ -1,0 +1,12 @@
+title: "FeedSieve"
+description: "Кибер-уборщик вашей ленты X — не пускает в ваш таймлайн спам ботов, низкопробный ИИ-шлак, крипто-жуликов и приманки для вовлечения."
+type: "Open-source инструмент для X"
+url: https://github.com/realchendahuang/feedsieve
+image: /projects/feedsieve.webp
+imageAlt: "Тёмная карточка продукта FeedSieve в циановых тонах"
+icon: i-lucide-shield-check
+color: "#22d3ee"
+tags: ["X", "RSS", "Bot Filter", "Шумоподавление", "OSS"]
+date: 2026-08-25
+status: ongoing
+stars: 0

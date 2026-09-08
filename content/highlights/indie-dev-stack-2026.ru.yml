@@ -1,0 +1,39 @@
+category: product
+title: "Лучшие практики инди-приложений 2026: сначала Web + PWA"
+description: "Делюсь годом с лишним выстраданных граблей инди-разработки."
+date: 2026-06-22
+likes: 263
+bookmarks: 422
+reposts: 46
+views: 37055
+url: https://x.com/realchendahuang/status/2069042963280503182
+content: |
+  Делюсь годом с лишним выстраданных граблей инди-разработки.
+
+  В 2026 году, если инди-разработчик хочет сделать приложение, лучшая практика такова:
+
+  **На этапе MVP сначала делай Web + PWA.** Быстро разрабатывать, быстро отлаживать, быстро итерировать.
+
+  Веб-стек:
+
+  React + TanStack Start + Vite + TypeScript + shadcn/ui + Base UI + Tailwind CSS + better-auth + Vercel AI SDK + oxfmt / oxlint
+
+  Единый бэкенд:
+
+  Hono + Cloudflare Workers
+
+  Отладка веба:
+
+  Chrome DevTools MCP + расширение Codex для Chrome
+
+  Когда продукт реально заработал — тогда мобильный.
+
+  Мобильный стек:
+
+  React Native + Expo + Expo Router + NativeWind + React Native Reusables + Reanimated + Gesture Handler + EAS Build / Submit / Update
+
+  Ключевая идея проста:
+
+  Сначала проверь спрос на Web + PWA.
+
+  Когда действительно появятся пользователи — выпускай настоящее приложение на React Native + Expo.

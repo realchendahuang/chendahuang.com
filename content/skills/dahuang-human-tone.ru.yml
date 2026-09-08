@@ -1,0 +1,9 @@
+title: "Dahuang Human Tone"
+description: "Снимает с китайских текстов шаблонную оболочку, слова-указатели, приторные концовки и фальшивое вовлечение. Меняет структуру, а не факты — сохраняет информацию и авторский голос."
+url: https://github.com/realchendahuang/dahuang-human-tone
+install: npx skills add realchendahuang/dahuang-human-tone -g
+icon: i-lucide-wand-sparkles
+color: "#00DC82"
+tags: ["Agent Skill", "Убрать AI-стиль", "Китайский текст", "Claude Code", "Codex"]
+date: 2025-05-01
+stars: 10

@@ -1,0 +1,10 @@
+title: "OMPChamber"
+description: "Десктоп-клиент рантайма агента OMP (Oh My Pi) на UI-фундаменте OpenChamber — OMP отвечает за возможности агента, OpenChamber — за опыт продукта. Выполняйте работу агента, сохраняйте контроль и стартуйте откуда угодно."
+type: "Десктоп-клиент для агентов"
+url: "https://github.com/realchendahuang/OMPChamber"
+icon: "i-lucide-monitor"
+color: "#60a5fa"
+tags: ["OMP", "Agent", "Desktop", "OpenChamber", "Rust"]
+date: 2026-08-10
+status: "ongoing"
+stars: 55

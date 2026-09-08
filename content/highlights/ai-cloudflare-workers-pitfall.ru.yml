@@ -1,0 +1,20 @@
+category: cloudflare
+title: "Когда ИИ пишет Cloudflare-проекты, всё падает — и дело не в синтаксисе"
+description: "ИИ постоянно пишет Workers как Node.js и путает Bindings с переменными окружения."
+date: 2026-06-22
+likes: 23
+bookmarks: 42
+reposts: 4
+views: 1462
+url: https://x.com/realchendahuang/status/2068853978004365739
+content: |
+  Многие пишут Cloudflare-проекты с помощью ИИ, и когда всё взрывается, дело не в синтаксисе.
+  Настоящие проблемы:
+  ИИ пишет Workers, будто это Node.js
+  использует Bindings как process.env
+  забывает про await
+  хранит состояние запроса в глобальных переменных
+  не знает, что запросы к статическим ассетам бесплатны
+  и вызывает собственное R2 изнутри Worker через REST API
+  Все эти грабли я собрал в Cloudflare Playbook.
+  Кстати, я ещё писал про

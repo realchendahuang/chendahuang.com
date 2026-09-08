@@ -1,0 +1,15 @@
+category: cloudflare
+title: "Грабли с Cloudflare Container: забыл остановить при отладке, списали $4"
+description: "Появилась ещё одна жертва Cloudflare Container."
+date: 2026-06-27
+likes: 0
+bookmarks: 0
+reposts: 0
+views: 353
+url: https://x.com/realchendahuang/status/2070820905224441922
+content: |
+  Появилась ещё одна жертва Cloudflare Container.
+
+  Потому что код, который я писал, был ещё на стадии отладки, команда stop не сработала.
+
+  В итоге один Container работал без остановки 7 дней и обошёлся мне в $4.

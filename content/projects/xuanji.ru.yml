@@ -1,0 +1,9 @@
+title: "XuanJi"
+description: "Приватное пространство для ИИ-гаданий с одним владельцем на полноценном стеке Cloudflare: бацзы, западная астрология и транзиты, цзывэй доушу, таро, ицзин, совместимость и ежедневные рекомендации. Детерминированный расчёт отвечает за факты, ИИ — за толкование."
+type: "ИИ-приложение для гаданий"
+url: "https://github.com/realchendahuang/xuanji"
+icon: "i-lucide-moon-star"
+color: "#7c3aed"
+tags: ["Cloudflare", "TanStack", "Hono", "AI", "BaZi", "Zi Wei"]
+date: 2026-07-11
+status: "ongoing"

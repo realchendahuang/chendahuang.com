@@ -11,6 +11,7 @@ export const SITE_LOCALES = [
   { code: 'pt', language: 'pt-BR', ogLocale: 'pt_BR', name: 'Português', dir: 'ltr' },
   { code: 'fr', language: 'fr', ogLocale: 'fr_FR', name: 'Français', dir: 'ltr' },
   { code: 'de', language: 'de', ogLocale: 'de_DE', name: 'Deutsch', dir: 'ltr' },
+  { code: 'ru', language: 'ru', ogLocale: 'ru_RU', name: 'Русский', dir: 'ltr' },
   { code: 'ar', language: 'ar', ogLocale: 'ar_AR', name: 'العربية', dir: 'rtl' }
 ] as const
 

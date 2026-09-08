@@ -1,0 +1,10 @@
+title: "Практическое руководство по Cloudflare"
+description: "От функциональных модулей, ИИ-рабочих процессов в кодинге и биллинга до типовых архитектур и подводных камней, о которые люди реально спотыкаются, — руководство, объясняющее Cloudflare простым языком."
+url: https://github.com/realchendahuang/cloudflare-playbook
+onlineUrl: https://chendahuang.com/playbook/cloudflare/
+icon: i-simple-icons-cloudflare
+color: "#F38020"
+tags: ["Cloudflare", "ИИ-программирование", "Workers", "Деплой", "Архитектура"]
+date: 2025-01-01
+status: ongoing
+stars: 69
