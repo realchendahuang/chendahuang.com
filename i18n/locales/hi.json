@@ -35,7 +35,8 @@
   "footer": {
     "rss": "RSS फ़ीड",
     "onX": "X पर Chen Dahuang",
-    "onGithub": "GitHub पर Chen Dahuang"
+    "onGithub": "GitHub पर Chen Dahuang",
+    "totalVisits": "{count} विज़िट"
   },
   "a11y": {
     "skipToContent": "मुख्य सामग्री पर जाएँ"
@@ -116,7 +117,8 @@
     "original": "मूल लेख",
     "originalTitle": "इस साइट का मूल लेख",
     "noMatch": "कोई मेल खाता लेख नहीं मिला, दूसरा कीवर्ड या टैग आज़माएँ।",
-    "minutes": "मिनट"
+    "minutes": "मिनट",
+    "views": "दृश्य"
   },
   "archive": {
     "title": "पुरालेख",

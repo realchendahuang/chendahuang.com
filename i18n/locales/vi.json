@@ -35,7 +35,8 @@
   "footer": {
     "rss": "Kênh RSS",
     "onX": "Chen Dahuang trên X",
-    "onGithub": "Chen Dahuang trên GitHub"
+    "onGithub": "Chen Dahuang trên GitHub",
+    "totalVisits": "{count} lượt truy cập"
   },
   "a11y": {
     "skipToContent": "Bỏ qua, đến nội dung chính"
@@ -116,7 +117,8 @@
     "original": "Bản gốc",
     "originalTitle": "Bài viết gốc đăng trên trang này",
     "noMatch": "Không có bài viết phù hợp, thử từ khóa hoặc thẻ khác nhé.",
-    "minutes": "phút"
+    "minutes": "phút",
+    "views": "lượt xem"
   },
   "archive": {
     "title": "Lưu trữ",

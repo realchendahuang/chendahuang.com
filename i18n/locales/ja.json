@@ -35,7 +35,8 @@
   "footer": {
     "rss": "RSS フィード",
     "onX": "Xで陳大黄をフォロー",
-    "onGithub": "GitHubで陳大黄をフォロー"
+    "onGithub": "GitHubで陳大黄をフォロー",
+    "totalVisits": "総アクセス {count}"
   },
   "a11y": {
     "skipToContent": "メインコンテンツへ移動"
@@ -116,7 +117,8 @@
     "original": "オリジナル",
     "originalTitle": "当サイトのオリジナル記事",
     "noMatch": "一致する記事がありません。別のキーワードやタグを試してください。",
-    "minutes": "分"
+    "minutes": "分",
+    "views": "閲覧数"
   },
   "archive": {
     "title": "アーカイブ",

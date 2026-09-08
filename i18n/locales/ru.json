@@ -35,7 +35,8 @@
   "footer": {
     "rss": "RSS-лента",
     "onX": "Chen Dahuang в X",
-    "onGithub": "Chen Dahuang на GitHub"
+    "onGithub": "Chen Dahuang на GitHub",
+    "totalVisits": "Визитов: {count}"
   },
   "a11y": {
     "skipToContent": "Перейти к содержимому"
@@ -116,7 +117,8 @@
     "original": "Оригинал",
     "originalTitle": "Оригинальная статья на этом сайте",
     "noMatch": "Нет подходящих статей, попробуйте другой запрос или тег.",
-    "minutes": "мин"
+    "minutes": "мин",
+    "views": "просмотры"
   },
   "archive": {
     "title": "Архив",

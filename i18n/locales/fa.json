@@ -35,7 +35,8 @@
   "footer": {
     "rss": "خوراک RSS",
     "onX": "Chen Dahuang در X",
-    "onGithub": "Chen Dahuang در GitHub"
+    "onGithub": "Chen Dahuang در GitHub",
+    "totalVisits": "{count} بازدید"
   },
   "a11y": {
     "skipToContent": "پرش به محتوای اصلی"
@@ -116,7 +117,8 @@
     "original": "اصلی",
     "originalTitle": "مقالهٔ اختصاصی این سایت",
     "noMatch": "مقالهٔ منطبقی پیدا نشد؛ کلیدواژه یا برچسب دیگری امتحان کنید.",
-    "minutes": "دقیقه"
+    "minutes": "دقیقه",
+    "views": "بازدید"
   },
   "archive": {
     "title": "آرشیو",

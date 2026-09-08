@@ -35,7 +35,8 @@
   "footer": {
     "rss": "خلاصة RSS",
     "onX": "تشن داهوانغ على X",
-    "onGithub": "تشن داهوانغ على GitHub"
+    "onGithub": "تشن داهوانغ على GitHub",
+    "totalVisits": "{count} زيارة"
   },
   "a11y": {
     "skipToContent": "الانتقال إلى المحتوى الرئيسي"
@@ -116,7 +117,8 @@
     "original": "أصلي",
     "originalTitle": "مقال أصلي من هذا الموقع",
     "noMatch": "لا توجد مقالات مطابقة، جرّب كلمة أو وسمًا آخر.",
-    "minutes": "دقيقة"
+    "minutes": "دقيقة",
+    "views": "مشاهدات"
   },
   "archive": {
     "title": "الأرشيف",

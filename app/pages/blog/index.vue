@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { BlogCollectionItem, PagesCollectionItem } from '@nuxt/content'
+import { formatCount } from '~/utils/content/highlights'
 
 const { t, locale } = useI18n()
 const localePath = useLocalePath()
@@ -92,6 +93,8 @@ const filteredPosts = computed(() => {
 })
 
 const isFiltering = computed(() => activeTag.value !== 'all' || searchQuery.value.trim().length > 0)
+
+const { counts: viewCounts, ready: viewsReady } = useReadCounts(computed(() => filteredPosts.value.map(post => post.path)))
 </script>
 
 <template>
@@ -185,8 +188,19 @@ const isFiltering = computed(() => activeTag.value !== 'all' || searchQuery.valu
             :to="localePath(post.path)"
             class="group grid grid-cols-[minmax(0,1fr)_1.5rem] gap-4 border-b border-default py-7 transition-colors hover:bg-elevated sm:grid-cols-[9rem_minmax(0,1fr)_1.5rem] sm:gap-6 sm:px-2 sm:py-8"
           >
-            <p class="col-span-2 text-xs font-medium text-dimmed sm:col-span-1">
-              {{ formatShortDate(post.date, locale) }} · {{ post.minRead }} {{ t('blog.minutes') }}
+            <p class="col-span-2 flex flex-wrap items-center gap-x-1.5 text-xs font-medium text-dimmed sm:col-span-1">
+              <span>{{ formatShortDate(post.date, locale) }} · {{ post.minRead }} {{ t('blog.minutes') }}</span>
+              <span
+                v-if="viewsReady && viewCounts[post.path]"
+                class="inline-flex items-center gap-1"
+                :title="t('blog.views')"
+              >
+                <UIcon
+                  name="i-lucide-eye"
+                  class="size-3"
+                />
+                {{ formatCount(viewCounts[post.path]) }}
+              </span>
             </p>
 
             <div>

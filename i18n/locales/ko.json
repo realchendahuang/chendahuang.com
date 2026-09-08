@@ -35,7 +35,8 @@
   "footer": {
     "rss": "RSS 피드",
     "onX": "Chen Dahuang on X",
-    "onGithub": "Chen Dahuang on GitHub"
+    "onGithub": "Chen Dahuang on GitHub",
+    "totalVisits": "총 방문 {count}"
   },
   "a11y": {
     "skipToContent": "본문으로 건너뛰기"
@@ -116,7 +117,8 @@
     "original": "오리지널",
     "originalTitle": "이 사이트에서 처음 게시한 오리지널 글",
     "noMatch": "일치하는 글이 없습니다. 다른 키워드나 태그로 검색해 보세요.",
-    "minutes": "분"
+    "minutes": "분",
+    "views": "조회수"
   },
   "archive": {
     "title": "아카이브",

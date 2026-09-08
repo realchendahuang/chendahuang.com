@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { formatCount } from '~/utils/content/highlights'
+
 const route = useRoute()
 const { t, locale } = useI18n()
 const localePath = useLocalePath()
@@ -6,6 +8,8 @@ const localePath = useLocalePath()
 // 内容 path 不含 /en 前缀,用 slug 参数拼出 /blog/... 路径
 const slug = computed(() => (route.params.slug as string[]).join('/'))
 const contentPath = computed(() => `/blog/${slug.value}`)
+
+const { counts: viewCounts, ready: viewsReady } = useReadCounts(computed(() => [contentPath.value]))
 
 const { data: page } = await useAsyncData(`${contentPath.value}:${locale.value}`, () =>
   queryCollection('blog').where('locale', '=', locale.value).path(contentPath.value).first()
@@ -277,6 +281,19 @@ const relatedPosts = computed(() => {
             </template>
             <span aria-hidden="true">·</span>
             <span>{{ t('post.minRead', { count: page.minRead }) }}</span>
+            <template v-if="viewsReady && viewCounts[contentPath]">
+              <span aria-hidden="true">·</span>
+              <span
+                class="inline-flex items-center gap-1"
+                :title="t('blog.views')"
+              >
+                <UIcon
+                  name="i-lucide-eye"
+                  class="size-3"
+                />
+                {{ formatCount(viewCounts[contentPath]) }}
+              </span>
+            </template>
             <template v-if="page.original">
               <span aria-hidden="true">·</span>
               <span class="inline-flex items-center gap-1 rounded-full bg-primary/10 px-2 py-0.5 font-medium text-primary">

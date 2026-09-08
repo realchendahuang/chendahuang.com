@@ -1,10 +1,14 @@
 <script setup lang="ts">
+import { formatCount } from '~/utils/content/highlights'
+
 const { t, locale } = useI18n()
 const localePath = useLocalePath()
 
 const { data: posts } = await useAsyncData(`archive-posts:${locale.value}`, () =>
   queryCollection('blog').where('locale', '=', locale.value).select('path', 'title', 'date', 'minRead', 'tags').order('date', 'DESC').all()
 )
+
+const { counts: viewCounts, ready: viewsReady } = useReadCounts(computed(() => (posts.value ?? []).map(post => post.path)))
 
 const years = computed(() => {
   const groups = new Map<number, typeof posts.value>()
@@ -88,6 +92,17 @@ defineOgImage('Portfolio', { title: () => t('archive.title'), description: () =>
                   </span>
                   <span class="text-xs text-dimmed">
                     {{ post.minRead }} {{ t('blog.minutes') }}
+                  </span>
+                  <span
+                    v-if="viewsReady && viewCounts[post.path]"
+                    class="inline-flex items-center gap-1 text-xs text-dimmed"
+                    :title="t('blog.views')"
+                  >
+                    <UIcon
+                      name="i-lucide-eye"
+                      class="size-3"
+                    />
+                    {{ formatCount(viewCounts[post.path]) }}
                   </span>
                 </div>
               </NuxtLink>

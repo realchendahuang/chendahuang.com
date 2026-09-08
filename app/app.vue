@@ -3,6 +3,8 @@ const colorMode = useColorMode()
 const route = useRoute()
 const { locale, t } = useI18n()
 
+usePageTracking()
+
 const color = computed(() => colorMode.value === 'dark' ? '#111318' : '#ffffff')
 const canonicalUrl = computed(() => toCanonicalUrl(route.path))
 const siteName = computed(() => t('site.name'))

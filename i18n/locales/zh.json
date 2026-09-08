@@ -35,7 +35,8 @@
   "footer": {
     "rss": "RSS 订阅",
     "onX": "陈大黄 on X",
-    "onGithub": "陈大黄 on GitHub"
+    "onGithub": "陈大黄 on GitHub",
+    "totalVisits": "总访问 {count}"
   },
   "a11y": {
     "skipToContent": "跳到主要内容"
@@ -116,7 +117,8 @@
     "original": "原创",
     "originalTitle": "本站原创文章",
     "noMatch": "没有找到匹配的文章，换个关键词或标签试试。",
-    "minutes": "分钟"
+    "minutes": "分钟",
+    "views": "阅读量"
   },
   "archive": {
     "title": "归档",

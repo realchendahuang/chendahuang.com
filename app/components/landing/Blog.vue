@@ -2,6 +2,7 @@
 import type { IndexCollectionItem } from '@nuxt/content'
 import type { BlogSummary } from '~/types/content'
 import { sortBlogsByDatePinnedFirst, useContentSection } from '~/composables/useContentSection'
+import { formatCount } from '~/utils/content/highlights'
 
 defineProps<{
   page: IndexCollectionItem
@@ -15,6 +16,8 @@ const { data: posts } = await useContentSection<BlogSummary>('home-blog', {
   sort: sortBlogsByDatePinnedFirst,
   limit: 3
 })
+
+const { counts: viewCounts, ready: viewsReady } = useReadCounts(computed(() => (posts.value ?? []).map(post => post.path)))
 </script>
 
 <template>
@@ -44,19 +47,32 @@ const { data: posts } = await useContentSection<BlogSummary>('home-blog', {
           }"
         >
           <template #footer>
-            <UButton
-              size="xs"
-              variant="link"
-              class="px-0 gap-0"
-              :label="t('landing.readMore')"
-            >
-              <template #trailing>
+            <div class="flex items-center gap-3">
+              <span
+                v-if="viewsReady && viewCounts[post.path]"
+                class="inline-flex items-center gap-1 text-xs text-dimmed"
+                :title="t('blog.views')"
+              >
                 <UIcon
-                  name="i-lucide-arrow-right"
-                  class="size-4 text-primary transition-all opacity-0 group-hover:translate-x-1 group-hover:opacity-100"
+                  name="i-lucide-eye"
+                  class="size-3"
                 />
-              </template>
-            </UButton>
+                {{ formatCount(viewCounts[post.path]) }}
+              </span>
+              <UButton
+                size="xs"
+                variant="link"
+                class="px-0 gap-0"
+                :label="t('landing.readMore')"
+              >
+                <template #trailing>
+                  <UIcon
+                    name="i-lucide-arrow-right"
+                    class="size-4 text-primary transition-all opacity-0 group-hover:translate-x-1 group-hover:opacity-100"
+                  />
+                </template>
+              </UButton>
+            </div>
           </template>
         </UBlogPost>
       </UBlogPosts>

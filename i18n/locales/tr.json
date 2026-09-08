@@ -35,7 +35,8 @@
   "footer": {
     "rss": "RSS beslemesi",
     "onX": "X'te Chen Dahuang",
-    "onGithub": "GitHub'da Chen Dahuang"
+    "onGithub": "GitHub'da Chen Dahuang",
+    "totalVisits": "{count} ziyaret"
   },
   "a11y": {
     "skipToContent": "Ana içeriğe geç"
@@ -116,7 +117,8 @@
     "original": "Orijinal",
     "originalTitle": "Bu sitede yayınlanan orijinal yazı",
     "noMatch": "Eşleşen yazı bulunamadı, başka bir anahtar kelime veya etiket dene.",
-    "minutes": "dk"
+    "minutes": "dk",
+    "views": "görüntülenme"
   },
   "archive": {
     "title": "Arşiv",

@@ -35,7 +35,8 @@
   "footer": {
     "rss": "RSS-Feed",
     "onX": "Chen Dahuang auf X",
-    "onGithub": "Chen Dahuang auf GitHub"
+    "onGithub": "Chen Dahuang auf GitHub",
+    "totalVisits": "{count} Besuche"
   },
   "a11y": {
     "skipToContent": "Zum Hauptinhalt springen"
@@ -116,7 +117,8 @@
     "original": "Original",
     "originalTitle": "Originalartikel dieser Seite",
     "noMatch": "Keine passenden Artikel, versuche ein anderes Stichwort oder einen anderen Tag.",
-    "minutes": "Min"
+    "minutes": "Min",
+    "views": "Aufrufe"
   },
   "archive": {
     "title": "Archiv",

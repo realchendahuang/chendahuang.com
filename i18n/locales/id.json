@@ -35,7 +35,8 @@
   "footer": {
     "rss": "Umpan RSS",
     "onX": "Chen Dahuang di X",
-    "onGithub": "Chen Dahuang di GitHub"
+    "onGithub": "Chen Dahuang di GitHub",
+    "totalVisits": "{count} kunjungan"
   },
   "a11y": {
     "skipToContent": "Langsung ke konten utama"
@@ -116,7 +117,8 @@
     "original": "Asli",
     "originalTitle": "Artikel asli di situs ini",
     "noMatch": "Tidak ada artikel yang cocok, coba kata kunci atau tag lain.",
-    "minutes": "mnt"
+    "minutes": "mnt",
+    "views": "tayangan"
   },
   "archive": {
     "title": "Arsip",

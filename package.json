@@ -7,6 +7,8 @@
     "dev": "nuxt dev",
     "preview": "nuxt preview",
     "deploy": "pnpm build && wrangler pages deploy dist --project-name chendahuang-portfolio --branch main",
+    "db:create": "wrangler d1 create chendahuang-analytics",
+    "db:migrate": "wrangler d1 execute chendahuang-analytics --remote --file=server/db/schema.sql",
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
@@ -31,6 +33,7 @@
     "tailwindcss": "^4.3.1"
   },
   "devDependencies": {
+    "@cloudflare/workers-types": "^5.20260907.1",
     "@nuxt/eslint": "^1.16.0",
     "@vitest/ui": "^4.1.11",
     "eslint": "^10.5.0",

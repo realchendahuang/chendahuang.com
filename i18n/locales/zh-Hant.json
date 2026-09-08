@@ -35,7 +35,8 @@
   "footer": {
     "rss": "RSS 訂閱",
     "onX": "陳大黃 on X",
-    "onGithub": "陳大黃 on GitHub"
+    "onGithub": "陳大黃 on GitHub",
+    "totalVisits": "總訪問 {count}"
   },
   "a11y": {
     "skipToContent": "跳至主要內容"
@@ -116,7 +117,8 @@
     "original": "原創",
     "originalTitle": "本站原創文章",
     "noMatch": "找不到符合的文章，試試其他關鍵字或標籤。",
-    "minutes": "分鐘"
+    "minutes": "分鐘",
+    "views": "閱讀數"
   },
   "archive": {
     "title": "封存",
