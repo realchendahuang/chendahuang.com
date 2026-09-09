@@ -95,11 +95,11 @@ def write_mirror(repos, fetched_at):
     xt = OUT / "x-timeline.json"
     if xt.exists():
         posts = json.loads(xt.read_text())["tweets"]
+    # 只保留最近 500 帖:防多年累积逼近单文件 25MiB 上限(完整历史在 D1/dump)
+    recent_posts = sorted(posts, key=lambda t: t.get("date") or "", reverse=True)[:500]
     payload = {
         "fetched_at": fetched_at,
-        "posts": sorted(
-            posts, key=lambda t: t.get("date") or "", reverse=True
-        ),
+        "posts": recent_posts,
         "repos": sorted(
             [
                 {
@@ -121,7 +121,7 @@ def write_mirror(repos, fetched_at):
     }
     out = ROOT / "public" / "mirror.json"
     out.write_text(json.dumps(payload, ensure_ascii=False, separators=(",", ":")))
-    print(f"[ok] mirror.json: {len(posts)} 帖 / {len(payload['repos'])} 仓库 → {out.relative_to(ROOT)}")
+    print(f"[ok] mirror.json: {len(recent_posts)}/{len(posts)} 帖 / {len(payload['repos'])} 仓库 → {out.relative_to(ROOT)}")
 
 
 def main():

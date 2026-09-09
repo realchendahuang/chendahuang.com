@@ -45,9 +45,31 @@ export default defineEventHandler(async (event) => {
 
   const country = (getRequestHeader(event, 'cf-ipcountry') ?? '').slice(0, 8)
 
-  await db.prepare(
-    'INSERT INTO pageviews (ts, path, locale, ref_host, country, sid) VALUES (?, ?, ?, ?, ?, ?)'
-  ).bind(Date.now(), path, locale, refHost, country, sid).run().catch(() => {})
+  // 单批写入:浏览行 + 会话去重(首次访问才落行) + pv 增量;uv 增量仅在新会话时补。
+  const writes = db.batch([
+    db.prepare(
+      'INSERT INTO pageviews (ts, path, locale, ref_host, country, sid) VALUES (?, ?, ?, ?, ?, ?)'
+    ).bind(Date.now(), path, locale, refHost, country, sid),
+    db.prepare('INSERT OR IGNORE INTO sessions (sid, ts) VALUES (?, ?)').bind(sid, Date.now()),
+    db.prepare('INSERT INTO counters (key, value) VALUES (\'pv\', 1) ON CONFLICT(key) DO UPDATE SET value = value + 1')
+  ]).catch(() => null)
+
+  const settle = async () => {
+    const results = await writes
+    if (results?.[1]?.meta?.changes) {
+      await db.prepare(
+        'INSERT INTO counters (key, value) VALUES (\'uv\', 1) ON CONFLICT(key) DO UPDATE SET value = value + 1'
+      ).run().catch(() => {})
+    }
+  }
+
+  // 响应先回 204,落库走 waitUntil 异步;无 cloudflare ctx(本地 dev)则退化为 await。
+  const ctx = (event.context.cloudflare as { ctx?: { waitUntil(p: Promise<unknown>): void } } | undefined)?.ctx
+  if (ctx?.waitUntil) {
+    ctx.waitUntil(settle())
+  } else {
+    await settle()
+  }
 
   setResponseStatus(event, 204)
   return null

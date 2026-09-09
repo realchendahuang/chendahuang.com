@@ -113,14 +113,10 @@ export default defineNuxtConfig({
 
   nitro: {
     // Workers(静态资产)部署:静态页走 CDN 不进 worker,未命中路径才进 worker(nitro SSR/接口)。
-    // 部署配置在仓库根 wrangler.jsonc(assets 目录 + 双 D1 绑定 + 自定义域),`wrangler deploy` 直发。
+    // 部署配置在仓库根 wrangler.jsonc(assets 目录 + 双 D1 绑定 + nodejs_compat + 自定义域),
+    // nitro 构建时会读它(node compat 检测),`wrangler deploy` 直发。
     preset: 'cloudflare_module',
     compatibilityDate: '2026-08-08',
-    cloudflare: {
-      wranglerConfig: {
-        compatibility_flags: ['nodejs_compat']
-      }
-    },
     prerender: {
       routes: prerenderRoutes,
       crawlLinks: false,
