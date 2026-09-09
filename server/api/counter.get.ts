@@ -8,24 +8,33 @@ export default defineEventHandler(async (event) => {
     return { ok: false, error: 'not_configured' }
   }
 
-  const { results } = await db.prepare(
-    'SELECT (SELECT value FROM counters WHERE key = \'pv\') AS pv, (SELECT value FROM counters WHERE key = \'uv\') AS uv'
-  ).all<{ pv: number | null, uv: number | null }>()
-
-  let pv = Number(results[0]?.pv)
-  let uv = Number(results[0]?.uv)
+  let pv = 0
+  let uv = 0
+  try {
+    const { results } = await db.prepare(
+      'SELECT (SELECT value FROM counters WHERE key = \'pv\') AS pv, (SELECT value FROM counters WHERE key = \'uv\') AS uv'
+    ).all<{ pv: number | null, uv: number | null }>()
+    pv = Number(results[0]?.pv)
+    uv = Number(results[0]?.uv)
+  } catch {
+    // 表未建(本地首次/新库):走 legacy 兜底
+  }
 
   if (!pv || !uv) {
     // counters 未回填(老库/手工清过):全表扫描兜底,并写回种子
-    const legacy = await db.prepare(
-      'SELECT COUNT(*) AS pv, COUNT(DISTINCT sid) AS uv FROM pageviews'
-    ).all<{ pv: number, uv: number }>()
-    pv = Number(legacy.results[0]?.pv ?? 0)
-    uv = Number(legacy.results[0]?.uv ?? 0)
-    await db.batch([
-      db.prepare('INSERT INTO counters (key, value) VALUES (\'pv\', ?) ON CONFLICT(key) DO UPDATE SET value = excluded.value').bind(pv),
-      db.prepare('INSERT INTO counters (key, value) VALUES (\'uv\', ?) ON CONFLICT(key) DO UPDATE SET value = excluded.value').bind(uv)
-    ]).catch(() => {})
+    try {
+      const legacy = await db.prepare(
+        'SELECT COUNT(*) AS pv, COUNT(DISTINCT sid) AS uv FROM pageviews'
+      ).all<{ pv: number, uv: number }>()
+      pv = Number(legacy.results[0]?.pv ?? 0)
+      uv = Number(legacy.results[0]?.uv ?? 0)
+      await db.batch([
+        db.prepare('INSERT INTO counters (key, value) VALUES (\'pv\', ?) ON CONFLICT(key) DO UPDATE SET value = excluded.value').bind(pv),
+        db.prepare('INSERT INTO counters (key, value) VALUES (\'uv\', ?) ON CONFLICT(key) DO UPDATE SET value = excluded.value').bind(uv)
+      ]).catch(() => {})
+    } catch {
+      // pageviews 也不存在(全新本地库):返回 0
+    }
   }
 
   setResponseHeader(event, 'cache-control', 'public, max-age=10')

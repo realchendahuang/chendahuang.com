@@ -19,6 +19,10 @@
     { "binding": "DB", "database_name": "chendahuang-analytics", "database_id": "b100978c-9c87-43eb-8c20-2fe71cc7cd56" },
     { "binding": "CONTENT_DB", "database_name": "chendahuang-content", "database_id": "4ea90738-59f6-4c4c-9aba-c6c709c4c768" }
   ],
+  // 每小时自检(与 nuxt.config scheduledTasks 对齐):结果落 D1,看板展示
+  "triggers": {
+    "crons": ["0 * * * *"]
+  },
   "observability": {
     "enabled": true
   }

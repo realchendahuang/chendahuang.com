@@ -117,6 +117,10 @@ export default defineNuxtConfig({
     // nitro 构建时会读它(node compat 检测),`wrangler deploy` 直发。
     preset: 'cloudflare_module',
     compatibilityDate: '2026-08-08',
+    // 每小时自检(与 wrangler.jsonc triggers.crons 对齐):结果落 D1,看板展示
+    scheduledTasks: {
+      '0 * * * *': ['health:check']
+    },
     prerender: {
       routes: prerenderRoutes,
       crawlLinks: false,

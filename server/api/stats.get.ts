@@ -78,6 +78,13 @@ export default defineEventHandler(async (event) => {
     ).bind(windowStart).all<{ locale: string, pv: number, uv: number }>()
   ])
 
+  const healthLast = await db.prepare(
+    'SELECT ts, ok FROM health_checks ORDER BY ts DESC LIMIT 1'
+  ).all<{ ts: number, ok: number }>().catch(() => ({ results: [] as Array<{ ts: number, ok: number }> }))
+  const healthFailures = await db.prepare(
+    'SELECT COUNT(*) AS n FROM health_checks WHERE ts >= ? AND ok = 0'
+  ).bind(now - 30 * DAY).all<{ n: number }>().catch(() => ({ results: [] as Array<{ n: number }> }))
+
   setResponseHeader(event, 'cache-control', 'no-store')
   return {
     days,
@@ -89,6 +96,12 @@ export default defineEventHandler(async (event) => {
     directPv: Number(direct.results[0]?.pv ?? 0),
     topCountries: topCountries.results.map(row => ({ country: String(row.country), pv: Number(row.pv) })),
     unknownCountryPv: Number(unknownCountry.results[0]?.pv ?? 0),
-    languages: languages.results.map(row => ({ locale: String(row.locale), pv: Number(row.pv), uv: Number(row.uv) }))
+    languages: languages.results.map(row => ({ locale: String(row.locale), pv: Number(row.pv), uv: Number(row.uv) })),
+    health: {
+      last: healthLast.results[0]
+        ? { ts: Number(healthLast.results[0].ts), ok: Boolean(healthLast.results[0].ok) }
+        : null,
+      failures30d: Number(healthFailures.results[0]?.n ?? 0)
+    }
   }
 })

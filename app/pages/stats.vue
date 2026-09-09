@@ -14,6 +14,7 @@ type StatsPayload = {
   topCountries: Array<{ country: string, pv: number }>
   unknownCountryPv: number
   languages: Array<{ locale: string, pv: number, uv: number }>
+  health: { last: { ts: number, ok: boolean } | null, failures30d: number }
 }
 
 useHead({
@@ -145,6 +146,12 @@ const maxCountry = computed(() => Math.max(1, ...(data.value?.topCountries.map(i
           </p>
         </div>
       </div>
+
+      <p v-if="data.health?.last" class="mt-3 text-xs text-muted" :class="data.health.last.ok ? '' : 'text-orange-500'">
+        站点自检:上次 {{ new Date(data.health.last.ts).toLocaleString('zh-CN') }}
+        {{ data.health.last.ok ? '✅ 正常' : '❌ 异常' }}
+        <span v-if="data.health.failures30d">· 近 30 天失败 {{ data.health.failures30d }} 次</span>
+      </p>
 
       <section class="mt-10">
         <h2 class="text-lg font-medium text-highlighted">

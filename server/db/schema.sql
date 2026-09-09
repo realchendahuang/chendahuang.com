@@ -32,3 +32,11 @@ INSERT INTO counters (key, value) VALUES ('uv', 0) ON CONFLICT(key) DO NOTHING;
 UPDATE counters SET value = (SELECT COUNT(*) FROM pageviews) WHERE key = 'pv' AND value = 0;
 UPDATE counters SET value = (SELECT COUNT(DISTINCT sid) FROM pageviews) WHERE key = 'uv' AND value = 0;
 INSERT OR IGNORE INTO sessions (sid, ts) SELECT sid, MIN(ts) FROM pageviews GROUP BY sid;
+
+-- 自检(uptime):worker cron 每小时自测关键路径,保留 90 天
+CREATE TABLE IF NOT EXISTS health_checks (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  ts INTEGER NOT NULL,
+  ok INTEGER NOT NULL,
+  details TEXT NOT NULL DEFAULT '[]'
+);
