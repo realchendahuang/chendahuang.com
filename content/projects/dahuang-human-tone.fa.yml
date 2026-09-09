@@ -1,0 +1,10 @@
+title: "dahuang-human-tone"
+description: "یک Agent Skill که متن‌های با لحن ماشینی را به نثری طبیعی و انسانی بازنویسی می‌کند؛ تا کلمات ماشین‌نوشته مثل نوشته انسان خوانده شوند."
+type: "بسته مهارت Agent"
+url: https://github.com/realchendahuang/dahuang-human-tone
+icon: i-lucide-feather
+color: "#f59e0b"
+tags: ["Agent Skill", "文风", "OSS", "Humanizer"]
+date: 2026-06-22
+status: ongoing
+stars: 11

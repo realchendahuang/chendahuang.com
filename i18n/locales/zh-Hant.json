@@ -12,7 +12,8 @@
     "highlights": "貼文",
     "menu": "選單",
     "openMenu": "開啟導覽選單",
-    "switchLanguage": "切換語言"
+    "switchLanguage": "切換語言",
+    "mirror": "鏡像"
   },
   "sections": {
     "blog": "部落格",
@@ -215,5 +216,13 @@
     "hi": "印地文",
     "pl": "波蘭文",
     "fa": "波斯文"
+  },
+  "mirror": {
+    "title": "鏡像動態",
+    "description": "來自 X 和 GitHub 的全量原始鏡像流——所有帖子和倉庫未經篩選直接同步，內容保持原文。",
+    "fetchedAt": "資料同步於 {date}",
+    "reply": "回覆",
+    "fork": "Fork",
+    "noDescription": "暫無描述"
   }
 }

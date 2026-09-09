@@ -12,7 +12,8 @@
     "highlights": "Posts",
     "menu": "Menú",
     "openMenu": "Abrir menú de navegación",
-    "switchLanguage": "Cambiar idioma"
+    "switchLanguage": "Cambiar idioma",
+    "mirror": "Espejo"
   },
   "sections": {
     "blog": "Blog",
@@ -215,5 +216,13 @@
     "hi": "Hindi",
     "pl": "Polaco",
     "fa": "Persa"
+  },
+  "mirror": {
+    "title": "Feed espejo",
+    "description": "El espejo en bruto de todo lo publicado en X y GitHub: cada tuit y repositorio sincronizados tal cual, sin traducir.",
+    "fetchedAt": "Sincronizado el {date}",
+    "reply": "Respuesta",
+    "fork": "Fork",
+    "noDescription": "Sin descripción"
   }
 }

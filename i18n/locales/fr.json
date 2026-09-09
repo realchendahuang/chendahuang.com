@@ -12,7 +12,8 @@
     "highlights": "Posts",
     "menu": "Menu",
     "openMenu": "Ouvrir le menu de navigation",
-    "switchLanguage": "Changer de langue"
+    "switchLanguage": "Changer de langue",
+    "mirror": "Miroir"
   },
   "sections": {
     "blog": "Blog",
@@ -215,5 +216,13 @@
     "hi": "Hindi",
     "pl": "Polonais",
     "fa": "Persan"
+  },
+  "mirror": {
+    "title": "Flux miroir",
+    "description": "Le miroir brut de tout ce qui vient de X et GitHub — chaque publication et dépôt synchronisés tels quels, sans traduction.",
+    "fetchedAt": "Synchronisé le {date}",
+    "reply": "Réponse",
+    "fork": "Fork",
+    "noDescription": "Aucune description"
   }
 }

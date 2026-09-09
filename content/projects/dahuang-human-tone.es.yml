@@ -1,0 +1,10 @@
+title: "dahuang-human-tone"
+description: "Un Agent Skill que reescribe el texto con sabor a IA en prosa natural y humana — palabras escritas por una máquina que se leen como escritas por una persona."
+type: "Paquete de skills para agentes"
+url: https://github.com/realchendahuang/dahuang-human-tone
+icon: i-lucide-feather
+color: "#f59e0b"
+tags: ["Agent Skill", "文风", "OSS", "Humanizer"]
+date: 2026-06-22
+status: ongoing
+stars: 11

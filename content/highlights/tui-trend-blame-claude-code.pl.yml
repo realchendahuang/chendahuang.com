@@ -1,0 +1,23 @@
+category: ai
+title: "Moda na TUI — Claude Code ponosi za nią niemałą winę"
+description: "Gdy raz zadomowiło się „TUI to jedyna słuszna droga”, każdy naśladowca zaczyna tylko budować użytkownikom sztuczne bariery."
+date: 2026-08-14
+likes: 53
+bookmarks: 6
+reposts: 1
+views: 11863
+url: https://x.com/realchendahuang/status/2087948723171299605
+content: |
+  Teraz cała masa AI Coding Agent co rusz wypuszcza TUI, i za tę modę Claude Code ponosi niemałą część winy.
+  Doprowadził do perfekcji rozmawianie z AI w terminalu przy pisaniu kodu.
+  Problem w tym, że jakoby naprawdę zaawansowany Coding Agent ma się teraz domyślnie składać z terminala, wersja webowa robi się dodatkiem, a bywa wyśmiewana jako „nie dość programistyczna”.
+  I co z tego wyszło?
+  Najpierw buduje się skomplikowane TUI:
+  same kolory, paski statusu, skróty klawiszowe, przełączanie trybów,
+  a potem nadaje się temu piękne miano „immersyjności”, „wydajności” i „szacunku dla programistów”.
+  Naprawdę?
+  Dla małej grupy ludzi żyjących w terminalu — owszem, jest niezłe. Ale dla wielu innych to sztucznie postawiony mur: funkcje schowane za klawiszami i trybami, nowi użytkownicy zupełnie zagubieni, a stali bywalcy muszą od nowa przyzwajać się do map klawiszy każdego narzędzia.
+  Web UI może być równie szybki i czysty — po zainstalowaniu jako PWA prawie nie odróżnia się od klienta desktopowego, a aktualizuje się jeszcze wygodniej. Wpychanie interakcji na siłę z powrotem w terminalową paradygmę lat 80., a do tego jeszcze pogardliwe strzelanie okiem na web — to już czyste samouwielbienie.
+  Claude Code sam w sobie jest świetny, tego nie podważam. Ale to on spopularyzował estetykę i ścieżkę zależności „TUI to ortodoksja”, a stada naśladowców po nim nabierają już pełnej absurdu prędkości.
+  Narzędzia są po to, by służyć ludziom, a nie po to, by udowadniać, kto jest większym „geekiem”.
+  Pakowanie antyludzkiej interakcji w opakowanie „wyższej klasy” — to naprawdę komiczna sprawa.

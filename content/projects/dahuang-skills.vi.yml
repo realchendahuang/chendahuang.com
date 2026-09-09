@@ -1,0 +1,10 @@
+title: "dahuang-skills"
+description: "Repo tương thích được giữ lại dưới tên cũ dahuang-human-writing; người dùng mới nên cài các repo Skill được bảo trì độc lập."
+type: "Gói skill cho Agent"
+url: https://github.com/realchendahuang/dahuang-skills
+icon: i-lucide-archive
+color: "#94a3b8"
+tags: ["Agent Skill", "兼容", "OSS", "Legacy"]
+date: 2026-06-22
+status: ongoing
+stars: 0

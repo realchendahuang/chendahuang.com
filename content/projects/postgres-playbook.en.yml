@@ -1,0 +1,10 @@
+title: "postgres-playbook"
+description: "Placeholder repo in the Playbook series — the Postgres Playbook is in the works."
+type: "Open-source playbook"
+url: https://github.com/realchendahuang/postgres-playbook
+icon: i-lucide-database
+color: "#336791"
+tags: ["Postgres", "Playbook", "OSS", "Planned"]
+date: 2026-06-21
+status: ongoing
+stars: 0

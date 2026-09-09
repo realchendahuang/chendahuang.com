@@ -1,0 +1,10 @@
+title: playbook-theme
+description: "Playbook ファミリーが共用する VitePress テーマ。"
+type: "VitePress テーマ"
+url: https://github.com/realchendahuang/playbook-theme
+icon: i-lucide-palette
+color: "#a855f7"
+tags: ["VitePress", "Theme", "OSS", "テーマ"]
+date: 2026-07-12
+status: ongoing
+stars: 0

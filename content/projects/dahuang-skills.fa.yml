@@ -1,0 +1,10 @@
+title: "dahuang-skills"
+description: "مخزن سازگاری که با نام قدیمی dahuang-human-writing نگه داشته شده؛ کاربران تازه باید مخزن‌های Skill با نگهداری مستقل را نصب کنند."
+type: "بسته مهارت Agent"
+url: https://github.com/realchendahuang/dahuang-skills
+icon: i-lucide-archive
+color: "#94a3b8"
+tags: ["Agent Skill", "兼容", "OSS", "Legacy"]
+date: 2026-06-22
+status: ongoing
+stars: 0

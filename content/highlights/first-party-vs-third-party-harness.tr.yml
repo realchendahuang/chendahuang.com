@@ -1,0 +1,25 @@
+category: ai
+title: "Model ve Harness artık tamamen ayrı ayrı seçilebiliyor"
+description: "Birinci taraf kendi modelini en iyi bilir; ama açık model çağında workflow'u üçüncü taraf bir Harness'e sabitleyip yalnızca modeli değiştirebilirsin."
+date: 2026-08-30
+likes: 34
+bookmarks: 17
+reposts: 2
+views: 13292
+url: https://x.com/realchendahuang/status/2093890559874388141
+content: |
+  Çoğu insanın Coding Agent seçerkenki ilk refleksi gayet doğaldır:
+  Claude ise Claude Code; GPT ise Codex; GLM ise ZCode; DeepSeek ise elbette önce DeepSeek'in kendi Harness'i düşünülür.
+  Bu mantık aslında sonuna kadar sağlam. Birinci tarafın en büyük avantajı, kendi modelini herkesten iyi tanıması.
+  Model hangi Prompt'u seviyor, Tool Schema nasıl tasarlanırsa en stabil olur, uzun Context nasıl organize edilir, yeni sürüm hangi yetenekleri getirdi, model en çok nerede takılır — bunları birinci taraf genelde üçüncü taraflardan önce bilir.
+  Bu yüzden Claude Code ve Codex gibi modelle Harness'i uzun süre birlikte gelişen ürünlerde birinci taraf kombosu genelde en güçlü «sürüm cevabı» olur.
+  Ama DeepSeek, GLM gibi açık modellere gelince işler ilginçleşmeye başlar — çünkü iyi bir model eğitmekle iyi bir Harness yapmak tamamen farklı iki mühendislik işi.
+  Coding Agent gerçekten çalışmaya başlayınca modelin ötesinde koca bir sorun yığını ortaya çıkar: dosyalar nasıl okunacak, kod nasıl değiştirilecek, Agent Loop nasıl kontrol edilecek, Context nasıl sıkıştırılacak, Cache nasıl kullanılacak, Tool Call hatasından sonra nasıl toparlanacak, Subagent'ler nasıl zamanlanacak, izinler nasıl yönetilecek.
+  Bunların ne kadar iyi yapıldığı, aynı modelin sonunda ne kadar iyi kullanıldığını doğrudan belirler.
+  Bir sorun daha var: modeller çok hızlı güncelleniyor.
+  Bugün GLM güçlü, gelecek ay DeepSeek daha da vurucu bir Flash çıkarabilir, bir süre sonra da yeni bir model yetişir. Bütün coding workflow tek bir birinci taraf ürününe bağlıysa, model değişince genelde araçlar ve alışkanlıklar da değişmek zorunda kalır.
+  Üçüncü taraf Harness'in değeri tam da burada.
+  Bildiğin araçları, Skills'i, MCP'yi, izinleri ve workflow'u sabitleyip alttaki modeli tek başına değiştirebilirsin. Bugün DeepSeek, yarın GLM, obür gün başka bir şey — çalışma ortamını her seferinde baştan kurmak gerekmez.
+  Bu yüzden beni daha çok ilgilendiren şu: bu model hangi Harness içinde en iyi işi çıkarır?
+  Birinci tarafın model uyarlama avantajı var; üçüncü taraf da araçlar, Context, Cache, Agent Loop ve genişletilebilirlikte daha güçlü olabilir.
+  Açık model çağında model ve Harness artık tamamen ayrı ayrı seçilebiliyor.

@@ -1,0 +1,10 @@
+title: "dahuang-human-tone"
+description: "Agent-скилл: переписывает типичный ИИ-стиль в естественную человеческую манеру письма — машинный текст читается как написанный человеком."
+type: "Пакет Agent-скиллов"
+url: https://github.com/realchendahuang/dahuang-human-tone
+icon: i-lucide-feather
+color: "#f59e0b"
+tags: ["Agent Skill", "文风", "OSS", "Humanizer"]
+date: 2026-06-22
+status: ongoing
+stars: 11

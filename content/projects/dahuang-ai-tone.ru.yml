@@ -1,0 +1,10 @@
+title: "dahuang-ai-tone"
+description: "Agent-скилл: переписывает текст под ИИ-стиль GPT, Claude, Gemini или Doubao — или определяет, какой моделью, скорее всего, написан фрагмент текста."
+type: "Пакет Agent-скиллов"
+url: https://github.com/realchendahuang/dahuang-ai-tone
+icon: i-lucide-bot
+color: "#8b5cf6"
+tags: ["Agent Skill", "风格迁移", "OSS", "Детекция"]
+date: 2026-06-22
+status: ongoing
+stars: 0

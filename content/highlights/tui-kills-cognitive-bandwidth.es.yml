@@ -1,0 +1,21 @@
+category: ai
+title: "El TUI ya empieza a oler mal: reduce sistemáticamente tu ancho de banda cognitivo"
+description: "Te obliga a meterlo todo en la memoria a corto plazo y mueve el coste de pensar a operar la interfaz."
+date: 2026-08-14
+likes: 51
+bookmarks: 3
+reposts: 2
+views: 15434
+url: https://x.com/realchendahuang/status/2087949416808518106
+content: |
+  El TUI, dicho sin rodeos, ya empieza a oler mal.
+  Lo más asqueroso no es que sea difícil de usar — es que reduce sistemáticamente el ancho de banda cognitivo de las personas.
+  Crees que estás dialogando eficientemente con la herramienta, pero en realidad estás haciendo tres cosas una y otra vez:
+  recordar atajos y modos,
+  localizar información en un flujo de caracteres que se desplaza,
+  y rezar por no haber entrado por error en algún estado raro.
+  Eso ya no es interacción, es pelearse con la interfaz.
+  Una interfaz de verdad eficiente debería extender el estado ante tus ojos y dejar que tus ojos y tu sentido espacial lo entiendan, en vez de obligarte a meterlo todo en la memoria a corto plazo. El TUI hace justo lo contrario — lleva la densidad de información al extremo mientras pisa al mínimo la legibilidad y la capacidad de recuperación.
+  Peor aún, cultiva un pésimo hábito: tratar el dominio de los atajos de una herramienta como una habilidad en sí misma. El resultado: la gente gasta una energía enorme en adaptarse a la interfaz en lugar de pensar en el problema.
+  Una buena herramienta debería reducir el coste de pensar, no mover ese coste a cómo operar la interfaz.
+  La popularidad actual del TUI es, en gran medida, un filtro geek que maquilla la pereza y la arrogancia de su diseño de interacción.

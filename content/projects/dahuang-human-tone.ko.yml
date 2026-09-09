@@ -1,0 +1,10 @@
+title: dahuang-human-tone
+description: "Agent Skill: AI 티 나는 글을 자연스럽고 사람다운 문체로 바꿔, 기계가 쓴 글이 사람이 쓴 것처럼 읽히도록 만듭니다."
+type: "Agent 스킬 팩"
+url: https://github.com/realchendahuang/dahuang-human-tone
+icon: i-lucide-feather
+color: "#f59e0b"
+tags: ["Agent Skill", "文风", "OSS", "Humanizer"]
+date: 2026-06-22
+status: ongoing
+stars: 11

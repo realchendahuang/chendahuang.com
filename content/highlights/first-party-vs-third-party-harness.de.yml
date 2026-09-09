@@ -1,0 +1,25 @@
+category: ai
+title: "Modelle und Harness lassen sich inzwischen komplett getrennt wählen"
+description: "Der Erstanbieter kennt sein Modell am besten — aber im Zeitalter offener Modelle kannst du deinen Workflow in einem Drittanbieter-Harness fixieren und nur das Modell wechseln."
+date: 2026-08-30
+likes: 34
+bookmarks: 17
+reposts: 2
+views: 13292
+url: https://x.com/realchendahuang/status/2093890559874388141
+content: |
+  Die erste Instinktreaktion vieler Leute bei der Wahl eines Coding Agents ist völlig natürlich:
+  Claude → Claude Code; GPT → Codex; GLM → ZCode; DeepSeek → natürlich zuerst DeepSeeks eigenen Harness in Betracht ziehen.
+  Der Gedanke ist völlig vernünftig. Der größte Vorteil des Erstanbieters ist, dass er sein eigenes Modell am besten kennt.
+  Welche Prompts das Modell mag, welches Tool-Schema-Design am stabilsten ist, wie man langen Context organisiert, welche Fähigkeiten ein neues Release bringt, wo es am ehesten stolpert — der Erstanbieter weiß das meistens eher als Drittanbieter.
+  Deshalb ist bei Produkten wie Claude Code und Codex, wo Modell und Harness langfristig gemeinsam iterieren, die Erstanbieter-Kombination oft die stärkste Version der Antwort.
+  Aber bei offenen Modellen wie DeepSeek und GLM wird es interessant — denn ein gutes Modell zu trainieren und ein gutes Harness zu bauen sind zwei völlig verschiedene Ingenieursdisziplinen.
+  Sobald ein Coding Agent wirklich läuft, taucht ein Berg von Problemen jenseits des Modells auf: Wie werden Dateien gelesen, wie wird Code geändert, wie wird der Agent Loop gesteuert, wie wird Context komprimiert, wie wird der Cache genutzt, wie erholt man sich nach fehlgeschlagenen Tool Calls, wie werden Subagents geplant, wie werden Berechtigungen verwaltet.
+  Wie gut das alles gelingt, entscheidet direkt darüber, ob dasselbe Modell am Ende wirklich gut zu benutzen ist.
+  Es gibt noch ein Problem: Modelle aktualisieren sich zu schnell.
+  Heute ist GLM stark, nächsten Monat bringt DeepSeek vielleicht einen noch schlagkräftigeren Flash, und eine Weile später holt wieder ein neues Modell auf. Wenn dein gesamter Coding-Workflow an das Produkt eines einzigen Erstanbieters gebunden ist, bedeutet ein Modellwechsel oft auch Werkzeuge und Gewohnheiten mitzuwechseln.
+  Genau da liegt der Wert eines Drittanbieter-Harness.
+  Du kannst die vertrauten Tools, Skills, MCP, Berechtigungen und Workflows fixieren und nur das Modell darunter austauschen. Heute DeepSeek, morgen GLM, übermorgen etwas anderes — die Arbeitsumgebung muss nicht jedes Mal plattgemacht werden.
+  Deshalb interessiert mich vor allem: In welchem Harness arbeitet dieses Modell am besten?
+  Erstanbieter haben ihren Vorteil bei der Modell-Anpassung, aber Drittanbieter können bei Tools, Context, Cache, Agent Loop und Erweiterbarkeit stärker sein.
+  Im Zeitalter offener Modelle sind Modell und Harness inzwischen völlig unabhängig voneinander wählbar.

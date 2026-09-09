@@ -1,0 +1,10 @@
+title: "deepseek-harness"
+description: "DeepSeek Harness का फ़ोर्क — हर चीज़ एक प्लगइन है: Agent Loop, टूल, अनुमतियाँ, Preset और UI, सबको अलग करके दोबारा जोड़ा जा सकता है।"
+type: "फ़ोर्क"
+url: https://github.com/realchendahuang/deepseek-harness
+icon: i-lucide-git-fork
+color: "#4d6bfe"
+tags: ["DeepSeek", "Harness", "Fork", "Agent"]
+date: 2026-08-18
+status: ongoing
+stars: 0

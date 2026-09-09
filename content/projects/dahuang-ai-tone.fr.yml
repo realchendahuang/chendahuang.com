@@ -1,0 +1,10 @@
+title: "dahuang-ai-tone"
+description: "Un Agent Skill qui réécrit un texte dans le style IA de GPT, Claude, Gemini ou Doubao — ou détecte de quel modèle un texte a le plus de chances de venir."
+type: "Pack de skills pour agents"
+url: https://github.com/realchendahuang/dahuang-ai-tone
+icon: i-lucide-bot
+color: "#8b5cf6"
+tags: ["Agent Skill", "风格迁移", "OSS", "Détection"]
+date: 2026-06-22
+status: ongoing
+stars: 0

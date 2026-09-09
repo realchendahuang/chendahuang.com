@@ -1,0 +1,10 @@
+title: "dahuang-ai-tone"
+description: "एक Agent Skill जो टेक्स्ट को GPT, Claude, Gemini या Doubao की AI शैली में फिर से लिखता है, या पहचानता है कि कोई टेक्स्ट सबसे ज़्यादा किस मॉडल से लिखा लगता है।"
+type: "Agent स्किल पैक"
+url: https://github.com/realchendahuang/dahuang-ai-tone
+icon: i-lucide-bot
+color: "#8b5cf6"
+tags: ["Agent Skill", "风格迁移", "OSS", "पहचान"]
+date: 2026-06-22
+status: ongoing
+stars: 0

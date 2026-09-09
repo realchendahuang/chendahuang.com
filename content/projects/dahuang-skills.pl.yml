@@ -1,0 +1,10 @@
+title: "dahuang-skills"
+description: "Repozytorium kompatybilności zachowane pod dawną nazwą dahuang-human-writing; nowi użytkownicy powinni zainstalować niezależnie utrzymywane repozytoria skilli."
+type: "Pakiet skilli dla agentów"
+url: https://github.com/realchendahuang/dahuang-skills
+icon: i-lucide-archive
+color: "#94a3b8"
+tags: ["Agent Skill", "兼容", "OSS", "Legacy"]
+date: 2026-06-22
+status: ongoing
+stars: 0

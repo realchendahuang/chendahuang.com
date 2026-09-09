@@ -1,0 +1,10 @@
+title: deepseek-harness
+description: "DeepSeek Harness 포크——'Everything is a Plugin'. Agent Loop, 도구, 권한, Preset, UI를 모두 분해하고 재조립할 수 있습니다."
+type: "포크"
+url: https://github.com/realchendahuang/deepseek-harness
+icon: i-lucide-git-fork
+color: "#4d6bfe"
+tags: ["DeepSeek", "Harness", "Fork", "에이전트"]
+date: 2026-08-18
+status: ongoing
+stars: 0

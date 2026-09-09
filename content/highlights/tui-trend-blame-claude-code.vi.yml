@@ -1,0 +1,23 @@
+category: ai
+title: "Cơn mốt TUI này, Claude Code phải chịu trách nhiệm rất lớn"
+description: "Một khi lệ phụ thuộc con đường «TUI mới là chính thống» lan ra, bọn bắt chước đều tự tạo rào cản cho người dùng."
+date: 2026-08-14
+likes: 53
+bookmarks: 6
+reposts: 1
+views: 11863
+url: https://x.com/realchendahuang/status/2087948723171299605
+content: |
+  Dạo này một đống AI Coding Agent cứ động đến là phán TUI, phong trào này thì Claude Code phải chịu trách nhiệm rất lớn.
+  Nó đã đưa chuyện trò chuyện với AI trong terminal để viết code lên tận đỉnh.
+  Nhưng vấn đề là, hình như Coding Agent thực sự cao cấp thì mặc định phải là giao diện terminal, bản Web ngược lại chỉ là phụ kiện, thậm chí còn bị chế là không đủ chất programmer.
+  Kết quả thì sao?
+  Tiên phong làm một cái TUI phức tạp
+  đủ loại màu sắc, thanh trạng thái, phím tắt, chuyển chế độ
+  rồi khoác lên cái danh «đắm chìm», «hiệu quả», «tôn trọng programmer»
+  Thật không?
+  Với một nhóm nhỏ ngày ngày ngâm mình trong terminal thì đúng là đã. Nhưng với đông đảo người hơn, đây chính là rào cản tạo ra một cách cố ý. Chức năng giấu trong phím và chế độ, người mới nhìn là lơ ngơ, người cũ cũng phải làm quen lại thói quen phím của từng công cụ.
+  Web UI hoàn toàn có thể làm nhanh và sạch, cài thành PWA thì gần như chẳng khác gì ứng dụng desktop, cập nhật còn tiện hơn. Cố tình nhét tương tác ngược về paradigm terminal thập niên 80, rồi quay sang coi thường Web, hơi bị tự sướng một cách lộ liễu đấy.
+  Claude Code bản thân nó rất mạnh, điểm này không bàn. Nhưng chính nó đã khởi xướng gu và lệ phụ thuộc con đường «TUI mới là chính thống», sau đó một đống kẻ bắt chước còn lố hơn.
+  Công cụ là để cho người dùng, không phải để chứng minh ai «geek» hơn.
+  Gói một tương tác phản con người thành thứ cao cấp — quả thật là chuyện lố bịch.

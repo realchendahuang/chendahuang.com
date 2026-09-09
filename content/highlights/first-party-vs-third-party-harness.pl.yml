@@ -1,0 +1,25 @@
+category: ai
+title: "Model i Harness można już wybierać całkiem osobno"
+description: "Pierwsza strona najlepiej zna swoje modele, ale w erze otwartych modeli workflow możesz utrwalić w zewnętrznym Harnessie i podmieniać tylko model."
+date: 2026-08-30
+likes: 34
+bookmarks: 17
+reposts: 2
+views: 13292
+url: https://x.com/realchendahuang/status/2093890559874388141
+content: |
+  U większości ludzi pierwszy odruch przy wyborze Coding Agent jest całkiem naturalny:
+  Claude → Claude Code; GPT → Codex; GLM → ZCode; DeepSeek → oczywiście w pierwszej kolejności własny Harness od DeepSeek.
+  Ten tok myślenia jest w gruncie rzeczy całkowicie sensowny. Największa przewaga pierwszej strony: zna swoje modele najlepiej.
+  Jakie Prompt lubi model, który design Tool Schema jest najstabilniejszy, jak zorganizować długi Context, jakie możliwości dodała nowa wersja, gdzie model najłatwiej się przewraca — pierwsza strona zwykle dowiaduje się o tym wcześniej niż strony trzecie.
+  Dlatego przy produktach takich jak Claude Code i Codex, gdzie model i Harness iterują się razem przez długi czas, zestaw od pierwszej strony często okazuje się najsilniejszą odpowiedzią w danym wydaniu.
+  Ale przy otwartych modelach jak DeepSeek i GLM robi się ciekawie — bo wytrenowanie dobrego modelu i zbudowanie dobrego Harnessu to dwie zupełnie różne dziedziny inżynierii.
+  Gdy Coding Agent naprawdę rusza, pojawia się masa problemów poza samym modelem: jak czytać pliki, jak zmieniać kod, jak kontrolować Agent Loop, jak kompresować Context, jak wykorzystać Cache, jak dochodzić do siebie po błędach Tool Call, jak szeregować Subagenty, jak zarządzać uprawnieniami.
+  Od tego, jak dobrze to zrobiono, zależy bezpośrednio, czy ten sam model w efekcie będzie się dobrze używało.
+  Jest jeszcze jeden problem: modele aktualizują się za szybko.
+  Dziś najmocniejszy jest GLM, w przyszłym miesiącu DeepSeek może wypuścić jeszcze mocniejszy Flash, a po chwili dogoni je kolejny model. Jeśli cały coding workflow jest przypięty do produktu jednej pierwszej strony, to zmiana modelu oznacza często zmianę narzędzi i przyzwyczajeń.
+  Właśnie tu leży wartość zewnętrznego Harnessu.
+  Możesz utrwalić znane ci narzędzia, Skills, MCP, uprawnienia i workflow, a podmieniać tylko model pod spodem. Dziś odpalam DeepSeek, jutro zmieniam na GLM, pojutrze na coś innego — środowiska pracy nie trzeba za każdym razem burzyć od zera.
+  Dlatego bardziej interesuje mnie: w którym Harnessie ten model zrobi robotę najlepiej.
+  Pierwsza strona ma swoją przewagę dopasowania do modelu, ale trzecia strona może być mocniejsza w narzędziach, Context, Cache, Agent Loop i rozszerzalności.
+  W erze otwartych modeli model i Harness można już wybierać całkiem osobno.

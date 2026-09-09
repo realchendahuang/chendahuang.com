@@ -1,0 +1,10 @@
+title: claude-code
+description: "Fork von claude-code – der vollständige Quellcode von Claude Code, rekonstruiert aus Source Maps."
+type: "Fork"
+url: https://github.com/realchendahuang/claude-code
+icon: i-lucide-file-code
+color: "#d97757"
+tags: ["Claude Code", "Fork", "源码", "Reverse-Engineering"]
+date: 2025-03-05
+status: ongoing
+stars: 0

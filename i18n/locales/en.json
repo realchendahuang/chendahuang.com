@@ -12,7 +12,8 @@
     "highlights": "Posts",
     "menu": "Menu",
     "openMenu": "Open navigation menu",
-    "switchLanguage": "Switch language"
+    "switchLanguage": "Switch language",
+    "mirror": "Mirror"
   },
   "sections": {
     "blog": "Blog",
@@ -215,5 +216,13 @@
     "hi": "Hindi",
     "pl": "Polish",
     "fa": "Persian"
+  },
+  "mirror": {
+    "title": "Mirror Feed",
+    "description": "The raw mirror of everything from X and GitHub — every post and repo synced as-is, untranslated.",
+    "fetchedAt": "Synced at {date}",
+    "reply": "Reply",
+    "fork": "Fork",
+    "noDescription": "No description"
   }
 }

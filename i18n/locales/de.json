@@ -12,7 +12,8 @@
     "highlights": "Posts",
     "menu": "Menü",
     "openMenu": "Navigationsmenü öffnen",
-    "switchLanguage": "Sprache wechseln"
+    "switchLanguage": "Sprache wechseln",
+    "mirror": "Spiegel"
   },
   "sections": {
     "blog": "Blog",
@@ -215,5 +216,13 @@
     "hi": "Hindi",
     "pl": "Polnisch",
     "fa": "Persisch"
+  },
+  "mirror": {
+    "title": "Mirror-Feed",
+    "description": "Das rohe Abbild von allem auf X und GitHub — jeder Post und jedes Repo ungefiltert im Original.",
+    "fetchedAt": "Synchronisiert am {date}",
+    "reply": "Antwort",
+    "fork": "Fork",
+    "noDescription": "Keine Beschreibung"
   }
 }

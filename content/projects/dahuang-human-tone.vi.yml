@@ -1,0 +1,10 @@
+title: "dahuang-human-tone"
+description: "Agent Skill: viết lại văn phong đậm chất AI thành văn phong con người tự nhiên, để chữ do máy viết đọc lên như do người viết."
+type: "Gói skill cho Agent"
+url: https://github.com/realchendahuang/dahuang-human-tone
+icon: i-lucide-feather
+color: "#f59e0b"
+tags: ["Agent Skill", "文风", "OSS", "Humanizer"]
+date: 2026-06-22
+status: ongoing
+stars: 11

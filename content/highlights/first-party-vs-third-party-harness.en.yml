@@ -1,0 +1,25 @@
+category: ai
+title: "Models and harnesses are now fully separable choices"
+description: "First parties know their models best — but in the open-model era you can fix your workflow in a third-party harness and swap only the model."
+date: 2026-08-30
+likes: 34
+bookmarks: 17
+reposts: 2
+views: 13292
+url: https://x.com/realchendahuang/status/2093890559874388141
+content: |
+  Most people's first instinct when picking a coding agent is perfectly natural:
+  Claude → Claude Code; GPT → Codex; GLM → ZCode; DeepSeek → DeepSeek's own harness, obviously.
+  And the instinct is entirely sound. A first party's biggest advantage is knowing its own model best.
+  What prompts the model likes, which tool-schema design is most stable, how to organize long context, what new capabilities a release adds, where it most easily trips — the first party usually knows all of this before third parties do.
+  So for products like Claude Code and Codex, where model and harness iterate together over the long term, the first-party combo is often the strongest version of the answer.
+  But once you get to open models like DeepSeek and GLM, things get interesting — because training a good model and building a good harness are two completely different kinds of engineering.
+  Once a coding agent actually runs, a mass of non-model problems appears: how files get read, how code gets edited, how the agent loop is controlled, how context is compressed, how cache is exploited, how tool-call failures recover, how subagents are scheduled, how permissions are managed.
+  How well those are done directly determines whether the same model ends up feeling good to use.
+  There's another problem: models update too fast.
+  Today GLM is on top; next month DeepSeek may ship an even stronger Flash; a while later another model catches up. If your whole coding workflow is bound to one first-party product, switching models often means switching tools and habits too.
+  That's exactly where third-party harnesses earn their keep.
+  You can lock in the tools, skills, MCP servers, permissions, and workflows you know, and swap only the model underneath. Run DeepSeek today, GLM tomorrow, something else the day after — your working environment doesn't get bulldozed each time.
+  So what I care about is: in which harness does this model do its best work?
+  First parties have their model-fitting advantage; third parties may be stronger in tooling, context, cache, agent loop, and extensibility.
+  In the open-model era, the model and the harness are now fully separable choices.

@@ -1,0 +1,10 @@
+title: nodewordfreq
+description: "nodewordfreq 포크: 여러 자연어의 단어 빈도 데이터베이스에 접근합니다."
+type: "포크"
+url: https://github.com/realchendahuang/nodewordfreq
+icon: i-lucide-globe
+color: "#22d3ee"
+tags: ["NLP", "Fork", "词频", "데이터"]
+date: 2025-11-24
+status: ongoing
+stars: 0

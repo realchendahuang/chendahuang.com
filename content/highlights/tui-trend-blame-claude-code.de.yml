@@ -1,0 +1,23 @@
+category: ai
+title: "Beim TUI-Trend trägt Claude Code eine große Schuld"
+description: "Seit sich die Pfadabhängigkeit 'TUI ist der einzig wahre Weg' verbreitet hat, bauen alle Nachahmer nur noch absichtlich Hürden auf."
+date: 2026-08-14
+likes: 53
+bookmarks: 6
+reposts: 1
+views: 11863
+url: https://x.com/realchendahuang/status/2087948723171299605
+content: |
+  Heutzutage packen ganze viele AI Coding Agents reflexartig ein TUI drauf — für diesen Trend trägt Claude Code eine große Schuld.
+  Es hat das Schreiben von Code im Gespräch mit einer AI im Terminal zur Perfektion getrieben.
+  Das Problem ist: Irgendwie muss ein "wirklich fortschrittlicher" Coding Agent offenbar defaultmäßig ein Terminal-Interface haben — die Web-Version wird zum Beiwerk und sogar als "nicht programmiererisch genug" verspottet.
+  Und was kommt dabei raus?
+  Erst mal ein kompliziertes TUI bauen:
+  lauter Farben, Statusleisten, Shortcuts und Modus-Umschalter,
+  und es dann "immersiv", "effizient" und "programmiererfreundlich" nennen.
+  Wirklich?
+  Für die kleine Gruppe, die täglich im Terminal lebt, ist das sicher toll. Aber für viele mehr ist das eine absichtlich gebaute Hürde: Features verstecken sich hinter Tasten und Modi, neue Nutzer stehen komplett verloren da, und selbst Veteranen müssen sich in die individuellen Keymaps jedes Tools neu einarbeiten.
+  Ein Web UI lässt sich genauso schnell und sauber bauen — als PWA installiert ist es kaum von einer Desktop-App zu unterscheiden, und Updates sind sogar einfacher. Die Interaktion zurück ins Terminal-Paradigma der 80er zu zwingen und dann noch auf das Web herabzuschauen, ist reine Selbstbeweihräucherung.
+  Claude Code selbst ist stark, das ist unstrittig. Aber es hat den Geschmack und die Pfadabhängigkeit von "TUI ist der einzig wahre Weg" populär gemacht, und die Nachahmer danach sind noch schlimmer.
+  Tools sind für Menschen da, nicht um zu beweisen, wer der größere "Geek" ist.
+  Menschenfeindliche Interaktion als High-End zu verpacken — das ist wirklich lächerlich.

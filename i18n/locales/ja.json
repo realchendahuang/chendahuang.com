@@ -12,7 +12,8 @@
     "highlights": "ポスト",
     "menu": "メニュー",
     "openMenu": "ナビゲーションメニューを開く",
-    "switchLanguage": "言語を切り替え"
+    "switchLanguage": "言語を切り替え",
+    "mirror": "ミラー"
   },
   "sections": {
     "blog": "ブログ",
@@ -215,5 +216,13 @@
     "hi": "ヒンディー語",
     "pl": "ポーランド語",
     "fa": "ペルシャ語"
+  },
+  "mirror": {
+    "title": "ミラーフィード",
+    "description": "X と GitHub の全量をそのまま同期する生ミラー。投稿もリポジトリも未翻訳のまま。",
+    "fetchedAt": "{date} に同期",
+    "reply": "返信",
+    "fork": "フォーク",
+    "noDescription": "説明なし"
   }
 }

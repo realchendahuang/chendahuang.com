@@ -1,0 +1,21 @@
+category: ai
+title: "TUI has started to rot: it systematically lowers your cognitive bandwidth"
+description: "It forces everything into short-term memory and moves your thinking cost onto operating the interface."
+date: 2026-08-14
+likes: 51
+bookmarks: 3
+reposts: 2
+views: 15434
+url: https://x.com/realchendahuang/status/2087949416808518106
+content: |
+  TUI, to put it bluntly, has started to rot.
+  Its most disgusting quality isn't that it's hard to use — it's that it systematically lowers human cognitive bandwidth.
+  You think you're talking to the tool efficiently, but you're really doing three things over and over:
+  recalling shortcuts and modes,
+  locating information inside a scrolling stream of characters,
+  and praying you haven't stumbled into some weird state.
+  That's not interaction anymore — that's wrestling with an interface.
+  A truly efficient interface spreads the state out in front of you, letting your eyes and spatial sense do the understanding, instead of forcing everything into short-term memory. TUI does the opposite — it pushes information density to the extreme while trampling readability and recoverability to the minimum.
+  Worse, it cultivates a terrible habit: treating mastery of a tool's keymap as an ability in itself. So people spend enormous energy adapting to the interface instead of thinking about the problem.
+  A good tool should lower the cost of thinking, not move the cost of thinking into figuring out how to operate it.
+  The current popularity of TUI is largely geek-filter makeup over laziness and arrogance in interaction design.

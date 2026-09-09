@@ -1,0 +1,10 @@
+title: dahuang-skills
+description: "옛 저장소 이름 dahuang-human-writing을 유지하는 호환용 저장소입니다. 새 사용자는 독립적으로 관리되는 Skill 저장소를 설치하세요."
+type: "Agent 스킬 팩"
+url: https://github.com/realchendahuang/dahuang-skills
+icon: i-lucide-archive
+color: "#94a3b8"
+tags: ["Agent Skill", "兼容", "OSS", "레거시"]
+date: 2026-06-22
+status: ongoing
+stars: 0

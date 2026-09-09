@@ -12,7 +12,8 @@
     "highlights": "Kiriman",
     "menu": "Menu",
     "openMenu": "Buka menu navigasi",
-    "switchLanguage": "Ganti bahasa"
+    "switchLanguage": "Ganti bahasa",
+    "mirror": "Cermin"
   },
   "sections": {
     "blog": "Blog",
@@ -215,5 +216,13 @@
     "hi": "Hindi",
     "pl": "Polandia",
     "fa": "Persia"
+  },
+  "mirror": {
+    "title": "Umpan Cermin",
+    "description": "Cermin mentah dari semua yang ada di X dan GitHub — setiap kiriman dan repositori disinkronkan apa adanya, tanpa terjemahan.",
+    "fetchedAt": "Disinkronkan {date}",
+    "reply": "Balasan",
+    "fork": "Fork",
+    "noDescription": "Tanpa deskripsi"
   }
 }

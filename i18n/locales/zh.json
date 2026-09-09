@@ -12,7 +12,8 @@
     "highlights": "帖子",
     "menu": "菜单",
     "openMenu": "打开导航菜单",
-    "switchLanguage": "切换语言"
+    "switchLanguage": "切换语言",
+    "mirror": "镜像"
   },
   "sections": {
     "blog": "博客",
@@ -215,5 +216,13 @@
     "hi": "印地语",
     "pl": "波兰语",
     "fa": "波斯语"
+  },
+  "mirror": {
+    "title": "镜像动态",
+    "description": "来自 X 和 GitHub 的全量原始镜像流——所有帖子和仓库未经筛选直接同步，内容保持原文。",
+    "fetchedAt": "数据同步于 {date}",
+    "reply": "回复",
+    "fork": "Fork",
+    "noDescription": "暂无描述"
   }
 }

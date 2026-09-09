@@ -1,0 +1,23 @@
+category: ai
+title: "Bu TUI modasının sorumluluğunda büyük pay Claude Code'un"
+description: "«TUI tek doğru yoldur» refleksi bir kez yerleşince, takip edenlerin işi sadece şu oldu: kullanıcıya bilerek duvar örmek."
+date: 2026-08-14
+likes: 53
+bookmarks: 6
+reposts: 1
+views: 11863
+url: https://x.com/realchendahuang/status/2087948723171299605
+content: |
+  Şimdilerde bir sürü AI Coding Agent her fırsatta TUI çıkarıyor; bu modanın sorumluluğunda büyük pay Claude Code'un.
+  Terminalde AI ile konuşup kod yazma işini o, sanat düzeyine çıkardı.
+  Ama sorun şu: artık «gerçekten ileri seviye» bir Coding Agent varsayılan olarak terminal arayüzlü olmak zorunda gibi; web sürümü ikinci planda bir ek haline geldi, hatta «yeterince programcı değil» diye alay konusu oluyor.
+  Sonuç ne peki?
+  Önce karmaşık bir TUI yapıyorsun:
+  renk renk görünümler, durum çubukları, kısayollar, mod geçişleri,
+  sonra buna güzel isimler takıyorsun: «sürükleyici», «verimli», «programcıya saygılı».
+  Gerçekten mi?
+  Tüm gününü terminalde geçiren küçük bir grup için evet, gerçekten keyifli. Ama çok daha fazla kişi için bu bilerek örülmüş bir duvar: özellikler tuşların ve modların ardına saklanmış, yeni kullanıcılar neye uğradığını şaşırmış, eski kullanıcılar bile her aracın kendi tuş düzenine yeniden alışmak zorunda.
+  Web UI son derece hızlı ve temiz yapılabilir; PWA olarak kurunca masaüstü istemcisinden neredeyse ayırt edilemez, güncellemesi de daha kolay. Buna rağmen etkileşimi zorla 80'lerin terminal paradigmasına geri sokup sonra da web'e burun kıvırmak, büyük ölçüde kendi kendini kandırma.
+  Claude Code kendi başına güçlü, bunun tartışması yok. Ama «TUI tek doğru yoldur» zevkini ve alışkanlığını o yaydı; arkasından gelen taklitçi kalabalık daha da saçmalıyor.
+  Araçlar insanlara hizmet etmek için vardır; kimin daha «geek» olduğunu kanıtlamak için değil.
+  İnsanlığa aykırı etkileşimi «üstün seviye» diye paketlemek gerçekten komik bir olay.

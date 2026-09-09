@@ -1,0 +1,25 @@
+category: ai
+title: "Model và Harness giờ đây hoàn toàn có thể chọn riêng"
+description: "Hãng gốc hiểu model của mình nhất — nhưng thời đại model mở, workflow có thể cố định trong Harness bên thứ ba và chỉ thay model."
+date: 2026-08-30
+likes: 34
+bookmarks: 17
+reposts: 2
+views: 13292
+url: https://x.com/realchendahuang/status/2093890559874388141
+content: |
+  Phản ứng đầu tiên của nhiều người khi chọn Coding Agent đều rất tự nhiên:
+  Dùng Claude thì lên Claude Code; dùng GPT thì lên Codex; dùng GLM thì lên ZCode; dùng DeepSeek thì đương nhiên ưu tiên Harness do chính DeepSeek làm ra.
+  Cách nghĩ này thực ra hoàn toàn hợp lý. Ưu điểm lớn nhất của hãng gốc là hiểu model của chính mình nhất.
+  Model thích kiểu Prompt nào, Tool Schema thiết kế thế nào thì ổn định nhất, Context dài tổ chức ra sao, bản mới bổ sung năng lực gì, chỗ nào dễ vấp nhất — hãng gốc thường biết trước hơn bên thứ ba.
+  Nên với những sản phẩm như Claude Code và Codex, nơi model và Harness cùng tiến hóa lâu dài, combo hãng gốc thường chính là đáp án mạnh nhất.
+  Nhưng đến những model mở như DeepSeek, GLM thì chuyện bắt đầu thú vị hơn. Vì huấn luyện một model tốt và làm một Harness tốt thực chất là hai môn kỹ thuật hoàn toàn khác nhau.
+  Khi Coding Agent thực sự chạy lên, còn rất nhiều vấn đề ngoài model: đọc file thế nào, sửa code thế nào, điều khiển Agent Loop thế nào, nén Context thế nào, tận dụng cache thế nào, khôi phục sau khi Tool Call lỗi thế nào, điều phối Subagent thế nào, quản lý quyền hạn thế nào.
+  Làm tốt hay không những chỗ này sẽ ảnh hưởng trực tiếp đến việc cùng một model cuối cùng có dễ dùng hay không.
+  Còn một vấn đề nữa: model cập nhật quá nhanh.
+  Hôm nay GLM mạnh, tháng sau DeepSeek có thể lại ra một con Flash đánh mạnh hơn, một thời gian nữa lại có model mới đuổi kịp. Nếu cả workflow Coding bị buộc vào sản phẩm của một hãng gốc nào đó, đổi model thì công cụ và thói quen cũng phải đổi theo.
+  Giá trị của Harness bên thứ ba nằm ở đây.
+  Bạn có thể cố định những công cụ, Skills, MCP, quyền hạn và workflow quen thuộc của mình, chỉ thay model bên dưới. Hôm nay chạy DeepSeek, mai đổi GLM, mốt đổi cái khác, môi trường làm việc không phải dỡ xây lại từ đầu.
+  Nên điều tôi quan tâm hơn là: model này đặt vào Harness nào thì làm việc tốt nhất.
+  Hãng gốc có ưu thế tối ưu model của hãng, bên thứ ba cũng có thể làm mạnh hơn ở công cụ, Context, Cache, Agent Loop và khả năng mở rộng.
+  Đến kỷ nguyên model mở, model và Harness đã hoàn toàn có thể chọn tách biệt.

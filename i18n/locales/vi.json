@@ -12,7 +12,8 @@
     "highlights": "Bài đăng",
     "menu": "Menu",
     "openMenu": "Mở menu điều hướng",
-    "switchLanguage": "Đổi ngôn ngữ"
+    "switchLanguage": "Đổi ngôn ngữ",
+    "mirror": "Phản chiếu"
   },
   "sections": {
     "blog": "Blog",
@@ -215,5 +216,13 @@
     "hi": "Tiếng Hindi",
     "pl": "Tiếng Ba Lan",
     "fa": "Tiếng Ba Tư"
+  },
+  "mirror": {
+    "title": "Bảng phản chiếu",
+    "description": "Bản phản chiếu thô của mọi thứ trên X và GitHub — mọi bài đăng và kho lưu trữ được đồng bộ nguyên bản, không dịch.",
+    "fetchedAt": "Đồng bộ lúc {date}",
+    "reply": "Trả lời",
+    "fork": "Fork",
+    "noDescription": "Chưa có mô tả"
   }
 }

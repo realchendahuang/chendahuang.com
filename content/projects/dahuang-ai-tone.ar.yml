@@ -1,0 +1,10 @@
+title: "dahuang-ai-tone"
+description: "Agent Skill: يعيد صياغة النص بأسلوب الذكاء الاصطناعي الخاص بكل من GPT وClaude وGemini وDoubao، أو يكتشف أي نموذج يشبه نصًا معينًا أكثر في كتابته."
+type: "حزمة مهارات للوكلاء"
+url: https://github.com/realchendahuang/dahuang-ai-tone
+icon: i-lucide-bot
+color: "#8b5cf6"
+tags: ["Agent Skill", "风格迁移", "OSS", "كشف"]
+date: 2026-06-22
+status: ongoing
+stars: 0

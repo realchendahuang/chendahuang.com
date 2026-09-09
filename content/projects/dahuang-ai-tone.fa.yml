@@ -1,0 +1,10 @@
+title: "dahuang-ai-tone"
+description: "یک Agent Skill که متن را به سبک هوش مصنوعی GPT، Claude، Gemini یا Doubao بازنویسی می‌کند، یا تشخیص می‌دهد یک متن به احتمال زیاد با کدام مدل نوشته شده است."
+type: "بسته مهارت Agent"
+url: https://github.com/realchendahuang/dahuang-ai-tone
+icon: i-lucide-bot
+color: "#8b5cf6"
+tags: ["Agent Skill", "风格迁移", "OSS", "تشخیص"]
+date: 2026-06-22
+status: ongoing
+stars: 0

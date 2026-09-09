@@ -1,0 +1,25 @@
+category: ai
+title: "Modelo e Harness já podem ser escolhidos separadamente"
+description: "O fabricante original conhece seus modelos melhor que ninguém — mas na era dos modelos abertos dá para fixar seu workflow num Harness de terceiros e trocar só o modelo."
+date: 2026-08-30
+likes: 34
+bookmarks: 17
+reposts: 2
+views: 13292
+url: https://x.com/realchendahuang/status/2093890559874388141
+content: |
+  O primeiro instinto da maioria das pessoas ao escolher um Coding Agent é bem natural:
+  usa Claude, vai de Claude Code; usa GPT, vai de Codex; usa GLM, vai de ZCode; usa DeepSeek, claro que pensa primeiro no Harness do próprio DeepSeek.
+  E esse raciocínio faz todo sentido. A maior vantagem do fabricante original é conhecer os próprios modelos melhor que ninguém.
+  Que tipo de Prompt o modelo gosta, qual design de Tool Schema é mais estável, como organizar Contexts longos, que capacidades cada versão nova traz, onde é mais fácil falhar — o fabricante original costuma saber tudo isso antes dos terceiros.
+  Então, em produtos como Claude Code e Codex, onde modelo e Harness iteram juntos no longo prazo, a combinação original costuma ser a resposta de versão mais forte.
+  Mas ao chegar nos modelos abertos como DeepSeek e GLM, a coisa fica interessante — porque treinar um bom modelo e construir um bom Harness são duas engenharias completamente diferentes.
+  Quando um Coding Agent realmente entra em operação, sobra uma porção de problemas fora do modelo: como ler arquivos, como editar código, como controlar o Agent Loop, como comprimir o Context, como aproveitar o cache, como se recuperar de um erro de Tool Call, como escalar os Subagents, como gerenciar permissões.
+  Se essas partes são bem feitas determina diretamente se o mesmo modelo vai ser bom de usar no final.
+  Tem outro problema: os modelos atualizam rápido demais.
+  Hoje o GLM está em cima, mês que vem o DeepSeek pode lançar um Flash ainda mais forte, e pouco depois outro modelo alcança todo mundo. Se o seu workflow de coding inteiro está amarrado ao produto de um só fabricante original, trocar de modelo costuma significar trocar também de ferramentas e de hábitos.
+  É exatamente aí que vale um Harness de terceiros.
+  Você pode fixar as ferramentas, os Skills, o MCP, as permissões e o workflow que já domina, e trocar só o modelo lá embaixo. Hoje DeepSeek, amanhã GLM, depois outro — o ambiente de trabalho não precisa ser demolido e reconstruído a cada vez.
+  Por isso, o que mais me importa é: em qual Harness esse modelo trabalha melhor.
+  O fabricante original tem sua vantagem de adaptação ao modelo, mas terceiros podem ser mais fortes em ferramentas, Context, Cache, Agent Loop e extensibilidade.
+  Na era dos modelos abertos, modelo e Harness já podem ser escolhidos separadamente.

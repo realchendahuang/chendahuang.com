@@ -1,0 +1,10 @@
+title: "dahuang-human-tone"
+description: "Agent skill’i: yapay zekâ üslubunu doğal, insani bir yazım biçimine dönüştürür — makinenin yazdığı metin insan yazmış gibi okunur."
+type: "Agent skill paketi"
+url: https://github.com/realchendahuang/dahuang-human-tone
+icon: i-lucide-feather
+color: "#f59e0b"
+tags: ["Agent Skill", "文风", "OSS", "Humanizer"]
+date: 2026-06-22
+status: ongoing
+stars: 11

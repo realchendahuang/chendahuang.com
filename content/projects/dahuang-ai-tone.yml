@@ -1,0 +1,10 @@
+title: "dahuang-ai-tone"
+description: "Agent Skill：把文本改写成 GPT/Claude/Gemini/豆包各家的 AI 风格，或检测一段文本最像哪个模型写的。"
+type: "Agent 技能包"
+url: https://github.com/realchendahuang/dahuang-ai-tone
+icon: i-lucide-bot
+color: "#8b5cf6"
+tags: ["Agent Skill", "风格迁移", "OSS", "检测"]
+date: 2026-06-22
+status: ongoing
+stars: 0

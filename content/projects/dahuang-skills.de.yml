@@ -1,0 +1,10 @@
+title: dahuang-skills
+description: "Kompatibilitäts-Repo unter dem alten Namen dahuang-human-writing; neue Nutzer installieren bitte die unabhängig gepflegten Skill-Repos."
+type: "Agent-Skill-Paket"
+url: https://github.com/realchendahuang/dahuang-skills
+icon: i-lucide-archive
+color: "#94a3b8"
+tags: ["Agent Skill", "兼容", "OSS", "Legacy"]
+date: 2026-06-22
+status: ongoing
+stars: 0

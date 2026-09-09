@@ -1,0 +1,23 @@
+category: ai
+title: "El TUI está de moda, y Claude Code tiene gran parte de la culpa"
+description: "Desde que se extendió la dependencia de camino del «TUI es lo ortodoxo», todos los imitadores levantan barreras artificiales."
+date: 2026-08-14
+likes: 53
+bookmarks: 6
+reposts: 1
+views: 11863
+url: https://x.com/realchendahuang/status/2087948723171299605
+content: |
+  Últimamente montones de AI Coding Agents sacan un TUI a la menor excusa, y Claude Code tiene gran parte de la culpa de esa moda.
+  Llevó al extremo eso de conversar con una IA en la terminal para escribir código.
+  El problema es que ahora parece que un Coding Agent «de verdad avanzado» tiene que ser por defecto de terminal — la versión web queda como complemento, e incluso se mofan de ella por no ser lo bastante programador.
+  ¿Y el resultado?
+  Primero montas un TUI complicado:
+  colores por todas partes, barras de estado, atajos, cambios de modo,
+  y luego lo vendes como «inmersivo», «eficiente» y «respetuoso con los programadores».
+  ¿En serio?
+  Para el pequeño grupo que vive en la terminal todos los días, claro que mola. Pero para mucha más gente es un umbral levantado a propósito: las funciones escondidas tras teclas y modos, los usuarios nuevos hechos un lío, y hasta los veteranos teniendo que readaptarse a los atajos de cada herramienta.
+  Una Web UI puede ser igual de rápida y limpia — convertida en PWA casi no se distingue de un cliente de escritorio, y las actualizaciones son hasta más cómodas. Empeñarse en devolver la interacción al paradigma de terminal de los años 80 y encima despreciar la web roza la autocomplacencia.
+  Claude Code en sí es muy bueno, eso no se discute. Pero popularizó esa estética y esa dependencia de camino del «el TUI es lo ortodoxo», y la pila de imitadores que vino después fue aún peor.
+  Las herramientas existen para servir a la gente, no para demostrar quién es más «geek».
+  Disfrazar una interacción antihumana de sofisticación es de verdad un chiste.

@@ -1,0 +1,10 @@
+title: "codex-playbook"
+description: "Un manuel pratique en chinois pour utiliser Codex comme un système de collaboration au long cours, publié en série sur le site."
+type: "Guide pratique open source"
+url: https://github.com/realchendahuang/codex-playbook
+icon: i-lucide-terminal
+color: "#10a37f"
+tags: ["Codex", "Playbook", "OSS", "Programmation IA"]
+date: 2026-06-21
+status: ongoing
+stars: 1

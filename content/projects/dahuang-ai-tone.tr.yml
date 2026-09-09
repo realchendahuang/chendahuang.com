@@ -1,0 +1,10 @@
+title: "dahuang-ai-tone"
+description: "Agent skill’i: metni GPT, Claude, Gemini veya Doubao’nun yapay zekâ üslubuna göre yeniden yazar ya da bir metnin en çok hangi modele benzediğini tespit eder."
+type: "Agent skill paketi"
+url: https://github.com/realchendahuang/dahuang-ai-tone
+icon: i-lucide-bot
+color: "#8b5cf6"
+tags: ["Agent Skill", "风格迁移", "OSS", "Algılama"]
+date: 2026-06-22
+status: ongoing
+stars: 0

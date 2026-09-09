@@ -1,0 +1,10 @@
+title: "dahuang-human-tone"
+description: "Agent Skill：把 AI 腔改写成自然的人味文风，让机器写的字读起来像人。"
+type: "Agent 技能包"
+url: https://github.com/realchendahuang/dahuang-human-tone
+icon: i-lucide-feather
+color: "#f59e0b"
+tags: ["Agent Skill", "文风", "OSS", "Humanizer"]
+date: 2026-06-22
+status: ongoing
+stars: 11

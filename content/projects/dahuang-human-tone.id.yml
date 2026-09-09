@@ -1,0 +1,10 @@
+title: "dahuang-human-tone"
+description: "Agent Skill: menulis ulang teks bernuansa AI menjadi gaya bahasa manusia yang natural, membuat tulisan mesin terasa seperti ditulis manusia."
+type: "Paket skill Agent"
+url: https://github.com/realchendahuang/dahuang-human-tone
+icon: i-lucide-feather
+color: "#f59e0b"
+tags: ["Agent Skill", "文风", "OSS", "Humanizer"]
+date: 2026-06-22
+status: ongoing
+stars: 11

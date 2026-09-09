@@ -12,7 +12,8 @@
     "highlights": "Posts",
     "menu": "Menu",
     "openMenu": "Abrir menu de navegação",
-    "switchLanguage": "Mudar idioma"
+    "switchLanguage": "Mudar idioma",
+    "mirror": "Espelho"
   },
   "sections": {
     "blog": "Blog",
@@ -215,5 +216,13 @@
     "hi": "Hindi",
     "pl": "Polonês",
     "fa": "Persa"
+  },
+  "mirror": {
+    "title": "Feed espelho",
+    "description": "O espelho bruto de tudo do X e do GitHub — cada post e repositório sincronizados como são, sem tradução.",
+    "fetchedAt": "Sincronizado em {date}",
+    "reply": "Resposta",
+    "fork": "Fork",
+    "noDescription": "Sem descrição"
   }
 }

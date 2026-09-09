@@ -1,0 +1,23 @@
+category: ai
+title: "La mode du TUI : Claude Code en porte une grande part de responsabilité"
+description: "Depuis que la dépendance au chemin du « TUI est la voie orthodoxe » s'est répandue, chaque imitateur dresse des barrières artificielles."
+date: 2026-08-14
+likes: 53
+bookmarks: 6
+reposts: 1
+views: 11863
+url: https://x.com/realchendahuang/status/2087948723171299605
+content: |
+  Ces derniers temps, une tonne d'AI Coding Agents sortent un TUI à la moindre occasion, et Claude Code porte une grande part de responsabilité dans cette mode.
+  Il a poussé au maximum l'idée de discuter avec une IA dans le terminal pour écrire du code.
+  Le problème, c'est qu'un Coding Agent « vraiment haut de gamme » devrait maintenant être par défaut en interface terminal — la version web devient un accessoire, voire se fait moquer pour ne pas être assez programmeur.
+  Et le résultat ?
+  D'abord on se fabrique un TUI compliqué :
+  toutes les couleurs, les barres de statut, les raccourcis, les changements de mode,
+  puis on étiquette ça « immersif », « efficace », « respectueux des développeurs ».
+  Vraiment ?
+  Pour la petite minorité qui passe ses journées dans le terminal, oui, c'est du bonheur. Mais pour beaucoup plus de monde, c'est une barrière dressée artificiellement : les fonctions cachées derrière des touches et des modes, les nouveaux utilisateurs complètement paumés, et même les habitués forcés de se réadapter aux habitudes de touches propres à chaque outil.
+  Une Web UI peut tout à fait être à la fois rapide et propre — une fois installée en PWA, elle est presque indiscernable d'un client desktop, et les mises à jour sont même plus pratiques. S'obstiner à renvoyer l'interaction au paradigme du terminal des années 80, puis mépriser le web par-dessus le marché, c'est un peu de l'auto-satisfaction.
+  Claude Code lui-même est très fort, ce point ne fait aucun doute. Mais il a lancé cette esthétique et cette dépendance au chemin du « TUI est la voie orthodoxe », et la horde d'imitateurs qui a suivi est encore plus grotesque.
+  Les outils sont faits pour les gens, pas pour prouver qui est le plus « geek ».
+  Emballer une interaction anti-humaine en produit haut de gamme, c'est vraiment risible.

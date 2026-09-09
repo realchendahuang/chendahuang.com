@@ -89,6 +89,41 @@ def fmt_tweet(t):
     )
 
 
+def write_mirror(repos, fetched_at):
+    """写 public/mirror.json:/mirror 页面的全量原始数据(免翻译镜像流)。"""
+    posts = []
+    xt = OUT / "x-timeline.json"
+    if xt.exists():
+        posts = json.loads(xt.read_text())["tweets"]
+    payload = {
+        "fetched_at": fetched_at,
+        "posts": sorted(
+            posts, key=lambda t: t.get("date") or "", reverse=True
+        ),
+        "repos": sorted(
+            [
+                {
+                    "name": r["name"],
+                    "url": r["html_url"],
+                    "description": (r.get("description") or "").strip(),
+                    "stars": r["stargazers_count"],
+                    "fork": bool(r["fork"]),
+                    "language": r.get("language"),
+                    "pushed_at": (r.get("pushed_at") or "")[:10],
+                    "homepage": r.get("homepage") or "",
+                    "topics": r.get("topics") or [],
+                }
+                for r in repos
+            ],
+            key=lambda r: r["pushed_at"],
+            reverse=True,
+        ),
+    }
+    out = ROOT / "public" / "mirror.json"
+    out.write_text(json.dumps(payload, ensure_ascii=False, separators=(",", ":")))
+    print(f"[ok] mirror.json: {len(posts)} 帖 / {len(payload['repos'])} 仓库 → {out.relative_to(ROOT)}")
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--no-x", action="store_true", help="跳过 X 统计更新,只刷 GitHub")
@@ -212,6 +247,7 @@ def main():
             report_lines.append("")
 
     report_file = OUT / f"report-{now_bj.date().isoformat()}.md"
+    write_mirror(repos, now_bj.isoformat(timespec="seconds"))
     report_file.write_text("\n".join(report_lines), encoding="utf-8")
     print(f"[done] 报告 → {report_file.relative_to(ROOT)}")
     print("\n".join(report_lines[:40]))

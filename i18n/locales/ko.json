@@ -12,7 +12,8 @@
     "highlights": "포스트",
     "menu": "메뉴",
     "openMenu": "탐색 메뉴 열기",
-    "switchLanguage": "언어 변경"
+    "switchLanguage": "언어 변경",
+    "mirror": "미러"
   },
   "sections": {
     "blog": "블로그",
@@ -215,5 +216,13 @@
     "hi": "힌디어",
     "pl": "폴란드어",
     "fa": "페르시아어"
+  },
+  "mirror": {
+    "title": "미러 피드",
+    "description": "X와 GitHub의 모든 것을 그대로 동기화하는 원본 미러 — 게시물과 저장소를 번역 없이 그대로.",
+    "fetchedAt": "{date} 동기화",
+    "reply": "답글",
+    "fork": "포크",
+    "noDescription": "설명 없음"
   }
 }

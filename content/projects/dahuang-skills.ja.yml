@@ -1,0 +1,10 @@
+title: dahuang-skills
+description: "旧リポジトリ名 dahuang-human-writing を残す互換用リポジトリ。新しく使う方は、独立してメンテナンスされている各 Skill リポジトリをインストールしてください。"
+type: "Agent スキルパック"
+url: https://github.com/realchendahuang/dahuang-skills
+icon: i-lucide-archive
+color: "#94a3b8"
+tags: ["Agent Skill", "兼容", "OSS", "レガシー"]
+date: 2026-06-22
+status: ongoing
+stars: 0

@@ -1,0 +1,10 @@
+title: "deepseek-harness"
+description: "fork 自 DeepSeek Harness——'Everything is a Plugin'，Agent Loop、工具、权限、Preset、UI 全部可拆开重组。"
+type: "Fork"
+url: https://github.com/realchendahuang/deepseek-harness
+icon: i-lucide-git-fork
+color: "#4d6bfe"
+tags: ["DeepSeek", "Harness", "Fork", "Agent"]
+date: 2026-08-18
+status: ongoing
+stars: 0

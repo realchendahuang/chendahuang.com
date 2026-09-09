@@ -1,0 +1,10 @@
+title: "dahuang-human-tone"
+description: "Skill dla agentów: zamienia sztampowy styl AI w naturalną, ludzką prozę — tekst pisany przez maszynę czyta się jak napisany przez człowieka."
+type: "Pakiet skilli dla agentów"
+url: https://github.com/realchendahuang/dahuang-human-tone
+icon: i-lucide-feather
+color: "#f59e0b"
+tags: ["Agent Skill", "文风", "OSS", "Humanizer"]
+date: 2026-06-22
+status: ongoing
+stars: 11

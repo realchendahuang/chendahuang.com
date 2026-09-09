@@ -1,0 +1,25 @@
+category: ai
+title: "模型和 Harness 已經完全可以分開選了"
+description: "原廠最懂自己的模型，但開放模型時代，工作流可以固定在第三方 Harness 裡只換模型。"
+date: 2026-08-30
+likes: 34
+bookmarks: 17
+reposts: 2
+views: 13292
+url: https://x.com/realchendahuang/status/2093890559874388141
+content: |
+  很多人選 Coding Agent 的第一反應都很自然：
+  用 Claude，就上 Claude Code；用 GPT，就上 Codex；用 GLM，就上 ZCode；用 DeepSeek，當然優先考慮 DeepSeek 自己的 Harness。
+  這個思路其實完全合理。原廠最大的優勢，就是最了解自己的模型。
+  模型喜歡什麼樣的 Prompt，Tool Schema 怎麼設計最穩定，長上下文怎麼組織，新版本增加了什麼能力，哪些地方最容易翻車，原廠通常都比第三方更早知道。
+  所以 Claude Code 和 Codex 這種模型與 Harness 一起長期迭代的產品，原廠組合往往就是很強的版本答案。
+  但到了 DeepSeek、GLM 這些開放模型，事情就開始變得有意思了。因為訓練一個好模型，和做一個好 Harness，其實是兩門完全不同的工程。
+  Coding Agent 真正跑起來以後，還有大量模型之外的問題：文件怎麼讀、代碼怎麼改、Agent Loop 怎麼控制、Context 怎麼壓縮、緩存怎麼利用、Tool Call 出錯以後怎麼恢復、Subagent 怎麼調度、權限怎麼管理。
+  這些地方做得好不好，會直接影響同一個模型最後到底好不好用。
+  還有一個問題：模型更新速度太快了。
+  今天 GLM 強，下個月 DeepSeek 可能又出一個更能打的 Flash，再過一陣子又有新的模型追上來。如果整個 Coding 工作流都綁定在某一家原廠產品上，換模型往往連工具和習慣也要跟著換。
+  第三方 Harness 的價值就在這裡。
+  你可以把自己熟悉的工具、Skills、MCP、權限和工作流固定下來，只替換底下的模型。今天跑 DeepSeek，明天換 GLM，後天再換別的，工作環境不用跟著推倒重來。
+  所以我更關心的是：這個模型放在哪個 Harness 裡，能把活幹得最好。
+  原廠有原廠的模型適配優勢，第三方也可能在工具、Context、Cache、Agent Loop 和擴展性上做得更強。
+  到了開放模型時代，模型和 Harness 已經完全可以分開選了。

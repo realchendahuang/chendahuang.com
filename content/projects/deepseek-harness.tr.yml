@@ -1,0 +1,10 @@
+title: "deepseek-harness"
+description: "DeepSeek Harness fork’u — Everything is a Plugin: agent döngüsü, araçlar, izinler, presetler ve arayüzün tamamı sökülüp yeniden birleştirilebilir."
+type: "Fork"
+url: https://github.com/realchendahuang/deepseek-harness
+icon: i-lucide-git-fork
+color: "#4d6bfe"
+tags: ["DeepSeek", "Harness", "Fork", "Agent"]
+date: 2026-08-18
+status: ongoing
+stars: 0

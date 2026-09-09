@@ -1,0 +1,10 @@
+title: "dahuang-human-tone"
+description: "एक Agent Skill जो AI-अंदाज़ वाले टेक्स्ट को स्वाभाविक, इंसानी अंदाज़ में फिर से लिखता है — ताकि मशीन से लिखे शब्द इंसान के लिखे हुए लगें।"
+type: "Agent स्किल पैक"
+url: https://github.com/realchendahuang/dahuang-human-tone
+icon: i-lucide-feather
+color: "#f59e0b"
+tags: ["Agent Skill", "文风", "OSS", "Humanizer"]
+date: 2026-06-22
+status: ongoing
+stars: 11

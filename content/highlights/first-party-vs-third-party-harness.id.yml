@@ -1,0 +1,25 @@
+category: ai
+title: "Model dan Harness sekarang benar-benar bisa dipilih terpisah"
+description: "First party paling paham modelnya sendiri — tapi di era model terbuka, workflow bisa dikunci di Harness third party dan hanya modelnya yang diganti."
+date: 2026-08-30
+likes: 34
+bookmarks: 17
+reposts: 2
+views: 13292
+url: https://x.com/realchendahuang/status/2093890559874388141
+content: |
+  Reaksi pertama banyak orang saat memilih Coding Agent memang sangat wajar:
+  Pakai Claude, langsung Claude Code; pakai GPT, langsung Codex; pakai GLM, langsung ZCode; pakai DeepSeek, tentu yang dipertimbangkan duluan adalah Harness buatan DeepSeek sendiri.
+  Gaya pikir ini sebenarnya sepenuhnya masuk akal. Keunggulan terbesar first party adalah paling memahami modelnya sendiri.
+  Prompt seperti apa yang disukai model, bagaimana mendesain Tool Schema agar paling stabil, bagaimana mengorganisasi Context panjang, kemampuan apa yang ditambahkan versi baru, di titik mana paling gampang gagal — first party biasanya tahu lebih dulu daripada third party.
+  Jadi untuk produk seperti Claude Code dan Codex, yang model dan Harness-nya beriterasi bersama dalam jangka panjang, kombinasi first party sering kali adalah jawaban versi terkuat.
+  Tapi begitu sampai ke model-model terbuka seperti DeepSeek dan GLM, keadaannya mulai menarik. Karena melatih model yang bagus dan membuat Harness yang bagus sebenarnya adalah dua disiplin teknik yang sama sekali berbeda.
+  Begitu Coding Agent benar-benar berjalan, masih ada banyak persoalan di luar model: bagaimana membaca file, bagaimana mengubah kode, bagaimana mengontrol Agent Loop, bagaimana mengompres Context, bagaimana memanfaatkan cache, bagaimana memulihkan Tool Call yang error, bagaimana menjadwalkan Subagent, bagaimana mengelola izin.
+  Bagus atau tidaknya bagian-bagian ini akan langsung memengaruhi apakah model yang sama pada akhirnya enak dipakai.
+  Ada satu masalah lagi: kecepatan pembaruan model terlalu cepat.
+  Hari ini GLM kuat, bulan depan DeepSeek mungkin merilis Flash yang lebih galak lagi, beberapa saat kemudian ada model baru yang menyusul lagi. Kalau seluruh workflow Coding terikat pada produk first party tertentu, ganti model sering kali berarti alat dan kebiasaan pun ikut harus diganti.
+  Di sinilah nilai Harness third party.
+  Kau bisa mengunci alat, Skills, MCP, izin, dan workflow yang sudah kau kuasai, dan hanya mengganti model di bawahnya. Hari ini pakai DeepSeek, besok ganti GLM, lusa ganti yang lain, lingkungan kerja tidak perlu dibongkar ulang.
+  Jadi yang lebih saya pedulikan adalah: di Harness mana model ini bisa bekerja paling bagus.
+  First party punya keunggulan adaptasi modelnya sendiri, third party juga bisa lebih kuat dalam alat, Context, Cache, Agent Loop, dan ekstensibilitas.
+  Di era model terbuka, model dan Harness kini sepenuhnya bisa dipilih terpisah.

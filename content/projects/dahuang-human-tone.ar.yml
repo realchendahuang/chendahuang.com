@@ -1,0 +1,10 @@
+title: "dahuang-human-tone"
+description: "Agent Skill: يعيد كتابة النصوص ذات النبرة الآلية إلى أسلوب إنساني طبيعي، لتبدو الكلمات التي كتبتها الآلة وكأن إنسانًا كتبها."
+type: "حزمة مهارات للوكلاء"
+url: https://github.com/realchendahuang/dahuang-human-tone
+icon: i-lucide-feather
+color: "#f59e0b"
+tags: ["Agent Skill", "文风", "OSS", "Humanizer"]
+date: 2026-06-22
+status: ongoing
+stars: 11

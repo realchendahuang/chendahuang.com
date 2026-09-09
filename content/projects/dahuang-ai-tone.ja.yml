@@ -1,0 +1,10 @@
+title: dahuang-ai-tone
+description: "Agent Skill：テキストを GPT/Claude/Gemini/Doubao それぞれの AI スタイルに書き換えたり、ひとつの文章がどのモデルにいちばん近いかを検出したりできる。"
+type: "Agent スキルパック"
+url: https://github.com/realchendahuang/dahuang-ai-tone
+icon: i-lucide-bot
+color: "#8b5cf6"
+tags: ["Agent Skill", "风格迁移", "OSS", "検出"]
+date: 2026-06-22
+status: ongoing
+stars: 0

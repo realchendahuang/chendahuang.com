@@ -1,0 +1,23 @@
+category: ai
+title: "The TUI trend — Claude Code owes a big share of the blame"
+description: "Once the 'TUI is the one true way' path dependence spread, every imitator just builds walls for users."
+date: 2026-08-14
+likes: 53
+bookmarks: 6
+reposts: 1
+views: 11863
+url: https://x.com/realchendahuang/status/2087948723171299605
+content: |
+  A pile of AI coding agents are rushing to ship TUIs these days, and Claude Code owes a big share of the blame for that trend.
+  It made conversing with an AI in the terminal to write code an art form.
+  The problem is, somehow a "truly advanced" coding agent now has to default to a terminal interface — the web version becomes an afterthought, even mocked as not programmer enough.
+  And the result?
+  Build a complicated TUI first:
+  all the colors, status bars, shortcuts, and mode switching,
+  then call it "immersive," "efficient," and "respectful of programmers."
+  Really?
+  For the small group who live in the terminal all day, sure, it's great. But for many more people it's a wall built on purpose: features hidden behind keys and modes, new users completely lost, and even veterans relearning every tool's personal keymap.
+  A web UI can be just as fast and clean — install it as a PWA and it's nearly indistinguishable from a desktop client, with easier updates too. Forcing interaction back into the 1980s terminal paradigm and then sneering at the web is mostly self-indulgence.
+  Claude Code itself is excellent, no dispute there. But it popularized the taste and the path dependence of "TUI is the orthodox way," and the imitators that followed are even worse.
+  Tools exist to serve people, not to prove who is more "hardcore."
+  Dressing up anti-human interaction as sophistication — it's genuinely hilarious.

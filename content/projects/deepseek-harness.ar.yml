@@ -1,0 +1,10 @@
+title: "deepseek-harness"
+description: "مشتق من DeepSeek Harness حيث كل شيء إضافة: حلقة الوكيل والأدوات والصلاحيات والإعدادات المسبقة وواجهة المستخدم، كلها قابلة للتفكيك وإعادة التركيب."
+type: "نسخة مشتقة"
+url: https://github.com/realchendahuang/deepseek-harness
+icon: i-lucide-git-fork
+color: "#4d6bfe"
+tags: ["DeepSeek", "Harness", "Fork", "Agent"]
+date: 2026-08-18
+status: ongoing
+stars: 0

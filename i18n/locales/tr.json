@@ -12,7 +12,8 @@
     "highlights": "Gönderiler",
     "menu": "Menü",
     "openMenu": "Gezinme menüsünü aç",
-    "switchLanguage": "Dili değiştir"
+    "switchLanguage": "Dili değiştir",
+    "mirror": "Ayna"
   },
   "sections": {
     "blog": "Blog",
@@ -215,5 +216,13 @@
     "hi": "Hintçe",
     "pl": "Lehçe",
     "fa": "Farsça"
+  },
+  "mirror": {
+    "title": "Ayna akışı",
+    "description": "X ve GitHub'daki her şeyin ham aynası — her gönderi ve depo olduğu gibi senkronize edilir, çevirisiz.",
+    "fetchedAt": "{date} tarihinde senkronize edildi",
+    "reply": "Yanıt",
+    "fork": "Fork",
+    "noDescription": "Açıklama yok"
   }
 }

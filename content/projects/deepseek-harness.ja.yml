@@ -1,0 +1,10 @@
+title: deepseek-harness
+description: "DeepSeek Harness のフォーク——「Everything is a Plugin」。Agent Loop、ツール、権限、Preset、UI のすべてを分解して組み替えられる。"
+type: "Fork"
+url: https://github.com/realchendahuang/deepseek-harness
+icon: i-lucide-git-fork
+color: "#4d6bfe"
+tags: ["DeepSeek", "Harness", "Fork", "Agent"]
+date: 2026-08-18
+status: ongoing
+stars: 0

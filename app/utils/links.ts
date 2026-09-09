@@ -34,5 +34,9 @@ export function useNavLinks(): ComputedRef<NavigationMenuItem[]> {
     label: t('nav.highlights'),
     icon: 'i-lucide-bookmark',
     to: '/highlights'
+  }, {
+    label: t('nav.mirror'),
+    icon: 'i-lucide-refresh-cw',
+    to: '/mirror'
   }])
 }

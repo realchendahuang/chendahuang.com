@@ -1,0 +1,10 @@
+title: "postgres-playbook"
+description: "Playbook 系列占位仓库——《Postgres 实战手册》规划中。"
+type: "开源实战手册"
+url: https://github.com/realchendahuang/postgres-playbook
+icon: i-lucide-database
+color: "#336791"
+tags: ["Postgres", "Playbook", "OSS", "规划中"]
+date: 2026-06-21
+status: ongoing
+stars: 0

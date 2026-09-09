@@ -1,0 +1,10 @@
+title: "chendahuang.com"
+description: "Le code source de ce site : Nuxt 4 + Nuxt Content + Cloudflare Pages, 17 langues, avec un compteur de visites D1 auto-hébergé."
+type: "Site web personnel"
+url: https://github.com/realchendahuang/chendahuang.com
+icon: i-lucide-globe
+color: "#00dc82"
+tags: ["Nuxt", "Cloudflare", "OSS", "Code source"]
+date: 2026-06-23
+status: ongoing
+stars: 0

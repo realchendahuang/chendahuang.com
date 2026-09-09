@@ -12,7 +12,8 @@
     "highlights": "Posty",
     "menu": "Menu",
     "openMenu": "Otwórz menu nawigacji",
-    "switchLanguage": "Zmień język"
+    "switchLanguage": "Zmień język",
+    "mirror": "Lustro"
   },
   "sections": {
     "blog": "Blog",
@@ -215,5 +216,13 @@
     "hi": "Hindi",
     "pl": "Polski",
     "fa": "Perski"
+  },
+  "mirror": {
+    "title": "Strumień lustra",
+    "description": "Surowe lustro wszystkiego z X i GitHub — każdy post i repozytorium synchronizowane bez zmian, bez tłumaczenia.",
+    "fetchedAt": "Zsynchronizowano {date}",
+    "reply": "Odpowiedź",
+    "fork": "Fork",
+    "noDescription": "Brak opisu"
   }
 }

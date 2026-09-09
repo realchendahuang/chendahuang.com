@@ -1,0 +1,25 @@
+category: ai
+title: "Modèles et Harness sont désormais totalement séparables"
+description: "L'éditeur original connaît le mieux ses modèles — mais à l'ère des modèles ouverts, on peut figer son workflow dans un Harness tiers et ne changer que le modèle."
+date: 2026-08-30
+likes: 34
+bookmarks: 17
+reposts: 2
+views: 13292
+url: https://x.com/realchendahuang/status/2093890559874388141
+content: |
+  La première réaction de beaucoup de gens quand ils choisissent un Coding Agent est tout à fait naturelle :
+  Avec Claude, on prend Claude Code ; avec GPT, Codex ; avec GLM, ZCode ; avec DeepSeek, on pense bien sûr d'abord au Harness de DeepSeek lui-même.
+  Cette logique est en réalité parfaitement saine. Le plus grand avantage de l'éditeur original, c'est de connaître le mieux ses propres modèles.
+  Quel genre de Prompt le modèle aime, comment concevoir le Tool Schema pour qu'il soit le plus stable, comment organiser les longs Context, quelles capacités apportent les nouvelles versions, où ça casse le plus facilement — l'éditeur original le sait généralement avant les tiers.
+  Donc pour des produits comme Claude Code et Codex, où modèle et Harness itèrent ensemble sur le long terme, la combinaison de l'éditeur original est souvent la réponse de version la plus solide.
+  Mais dès qu'on arrive aux modèles ouverts comme DeepSeek et GLM, les choses deviennent intéressantes — parce qu'entraîner un bon modèle et construire un bon Harness sont deux ingénieries complètement différentes.
+  Quand un Coding Agent tourne réellement, il reste une foule de problèmes hors modèle : comment lire les fichiers, comment modifier le code, comment contrôler l'Agent Loop, comment compresser le Context, comment exploiter le cache, comment récupérer après une erreur de Tool Call, comment orchestrer les Subagents, comment gérer les permissions.
+  La qualité de ces points détermine directement si le même modèle sera au final agréable à utiliser.
+  Il y a un autre problème : les modèles évoluent beaucoup trop vite.
+  Aujourd'hui GLM est fort, le mois prochain DeepSeek sortira peut-être un Flash encore plus coriace, et peu après un nouveau modèle rattrapera tout le monde. Si tout votre workflow de coding est lié au produit d'un seul éditeur original, changer de modèle signifie souvent devoir changer d'outils et d'habitudes.
+  C'est exactement là que réside la valeur d'un Harness tiers.
+  Vous pouvez figer les outils, les Skills, le MCP, les permissions et le workflow que vous maîtrisez, et ne remplacer que le modèle en dessous. Aujourd'hui DeepSeek, demain GLM, après-demain autre chose — votre environnement de travail n'est pas à reconstruire à chaque fois.
+  Donc ce qui m'importe le plus : dans quel Harness ce modèle fait-il le mieux le boulot.
+  L'éditeur original a son avantage d'adaptation au modèle, mais les tiers peuvent faire plus fort sur les outils, le Context, le Cache, l'Agent Loop et l'extensibilité.
+  À l'ère des modèles ouverts, modèle et Harness sont désormais totalement séparables.

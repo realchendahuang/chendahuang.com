@@ -1,0 +1,23 @@
+category: ai
+title: "Tren TUI ini, Claude Code harus menanggung tanggung jawab besar"
+description: "Setelah ketergantungan jalur «TUI-lah yang sah» menular, semua penirunya justru membangun tembok bagi pengguna."
+date: 2026-08-14
+likes: 53
+bookmarks: 6
+reposts: 1
+views: 11863
+url: https://x.com/realchendahuang/status/2087948723171299605
+content: |
+  Saat ini banyak AI Coding Agent yang begitu saja memakai TUI, dan untuk tren ini Claude Code harus menanggung tanggung jawab besar.
+  Ia membawa urusan ngobrol dengan AI di terminal untuk menulis kode ke tingkat yang ekstrem.
+  Tapi masalahnya, seolah-olah Coding Agent yang benar-benar keren harus default memakai antarmuka terminal, versi Web malah jadi pelengkap, bahkan diejek kurang programmer.
+  Hasilnya?
+  Bikin dulu TUI yang rumit
+  Aneka warna, status bar, shortcut, ganti mode
+  Lalu diberi nama bagus «imersif», «efisien», «menghormati programmer»
+  Benarkah?
+  Buat sebagian kecil orang yang tiap hari berend di terminal, memang enak. Tapi buat lebih banyak orang lain, ini murni menciptakan hambatan buatan. Fitur tersembunyi di balik tombol dan mode, pengguna baru bingung total, pengguna lama pun harus membiasakan ulang tata tombol khas tiap alat.
+  Web UI sebenarnya bisa dibuat cepat sekaligus bersih; setelah dipasang sebagai PWA hampir tak beda dengan aplikasi desktop, dan pembaruannya pun lebih gampang. Bersikeras memaksakan interaksi kembali ke paradigma terminal tahun 80-an, lalu balik mengejek Web, itu agak terlalu gaya-gayaan menyenangkan diri sendiri.
+  Claude Code sendiri memang kuat, itu tidak masalah. Tapi ia-lah yang memopulerkan selera dan ketergantungan jalur bahwa «TUI-lah yang sah», dan begitu banyak peniru setelahnya malah makin lebay.
+  Alat itu untuk dipakai manusia, bukan untuk membuktikan siapa yang lebih «geek».
+  Membungkus interaksi anti-manusia jadi sesuatu yang canggih — itu benar-benar lucu sekali.

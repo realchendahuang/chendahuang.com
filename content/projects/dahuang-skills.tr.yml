@@ -1,0 +1,10 @@
+title: "dahuang-skills"
+description: "Eski dahuang-human-writing adıyla korunan uyumluluk deposu; yeni kullanıcılar bağımsız olarak sürdürülen skill depolarını kurmalı."
+type: "Agent skill paketi"
+url: https://github.com/realchendahuang/dahuang-skills
+icon: i-lucide-archive
+color: "#94a3b8"
+tags: ["Agent Skill", "兼容", "OSS", "Legacy"]
+date: 2026-06-22
+status: ongoing
+stars: 0
