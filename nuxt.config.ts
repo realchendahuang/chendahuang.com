@@ -127,6 +127,12 @@ export default defineNuxtConfig({
   content: {
     experimental: {
       sqliteConnector: 'native'
+    },
+    /* 生产运行时内容库:独立 D1(chendahuang-content,绑定 CONTENT_DB),与访客统计的 DB 分离。
+       部署后可用 `pnpm run db:seed-content` 预灌库;不灌则首个内容查询自动从 dump 自建(integrityCheck 默认开)。 */
+    database: {
+      type: 'd1',
+      bindingName: 'CONTENT_DB'
     }
   },
 
