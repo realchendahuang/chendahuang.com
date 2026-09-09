@@ -1,0 +1,25 @@
+// Cloudflare Workers 部署配置(Nuxt nitro preset: cloudflare_module)。
+// 静态资产: .output/public(预渲染页/payload/dump/图片),命中即走 CDN 不进 worker;
+// 未命中路径进 worker(.output/server/index.mjs)做 SSR 兜底与 API。
+// D1 绑定代码化——不再依赖控制台手绑:DB=访客统计,CONTENT_DB=内容库。
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "chendahuang",
+  "main": ".output/server/index.mjs",
+  "compatibility_date": "2026-08-08",
+  "compatibility_flags": ["nodejs_compat"],
+  "routes": [
+    { "pattern": "chendahuang.com", "custom_domain": true }
+  ],
+  "assets": {
+    "directory": "./.output/public",
+    "binding": "ASSETS"
+  },
+  "d1_databases": [
+    { "binding": "DB", "database_name": "chendahuang-analytics", "database_id": "b100978c-9c87-43eb-8c20-2fe71cc7cd56" },
+    { "binding": "CONTENT_DB", "database_name": "chendahuang-content", "database_id": "4ea90738-59f6-4c4c-9aba-c6c709c4c768" }
+  ],
+  "observability": {
+    "enabled": true
+  }
+}

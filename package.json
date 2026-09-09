@@ -5,8 +5,8 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
-    "preview": "nuxt preview",
-    "deploy": "pnpm build && wrangler pages deploy dist --project-name chendahuang-portfolio --branch main",
+    "preview": "nuxt build && wrangler dev",
+    "deploy": "nuxt build && wrangler deploy",
     "db:create": "wrangler d1 create chendahuang-analytics",
     "db:create-content": "wrangler d1 create chendahuang-content",
     "db:migrate": "wrangler d1 execute chendahuang-analytics --remote --file=server/db/schema.sql",
