@@ -1,5 +1,5 @@
 ---
-title: TUI Is Killing Your Cognitive Bandwidth: Time to Shatter the "Geek Filter" in AI Coding
+title: "TUI Is Killing Your Cognitive Bandwidth: Time to Shatter the \"Geek Filter\" in AI Coding"
 description: "A pile of AI coding agents are rushing to ship TUIs, stuffing interaction back into the 1980s terminal paradigm and calling it \"immersive\" and \"respectful of programmers.\" This piece breaks down the three mechanisms by which TUI systematically lowers your cognitive bandwidth — and why Web UI is the right answer."
 date: 2026-09-09
 minRead: 7

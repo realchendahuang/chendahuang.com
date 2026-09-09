@@ -1,5 +1,5 @@
 ---
-title: The First-Party Harness Isn't Always the Best Answer: In the Open-Model Era, Pick Your Model and Harness Separately
+title: "The First-Party Harness Isn't Always the Best Answer: In the Open-Model Era, Pick Your Model and Harness Separately"
 description: "Using Claude? Go Claude Code. In the open-model era that instinct deserves an upgrade. The first-party advantage is real, but training a good model and building a good harness are two different kinds of engineering — here's why models and harnesses are now separable choices, plus a positioning map of five harnesses."
 date: 2026-09-09
 minRead: 8

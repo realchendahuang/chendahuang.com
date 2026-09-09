@@ -1,5 +1,5 @@
 ---
-title: Stable, Fast, Productive, Cheap: My AI Coding Stack, Documented
+title: "Stable, Fast, Productive, Cheap: My AI Coding Stack, Documented"
 description: "OpenCode + OpenChamber + two DeepSeek V4 Flash subscriptions: 15 projects running code simultaneously and the quota barely moved. The full configuration laid out — context pruning, layered memory, desktop automation, and the \"stick with the original pairing\" lesson."
 date: 2026-09-09
 minRead: 8
