@@ -37,3 +37,6 @@ logs
 
 # Content sync scratch data
 scripts/out/
+
+# Python
+__pycache__/
