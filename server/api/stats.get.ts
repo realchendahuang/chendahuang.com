@@ -1,6 +1,8 @@
 import { getDB, getEnv } from '../utils/db'
 
 const DAY = 86_400_000
+// 看板按北京时间(UTC+8)分天,与站点主要受众一致;趋势 SQL 里同步用 '+8 hours' 偏移
+const TZ_OFFSET = 8 * 3_600_000
 
 /** 常量时间比较,避免 token 长度/内容侧信道。 */
 function safeEqual(a: string, b: string) {
@@ -34,7 +36,7 @@ export default defineEventHandler(async (event) => {
   const days = [7, 30, 90].includes(rawDays) ? rawDays : 30
 
   const now = Date.now()
-  const todayStart = now - (now % DAY)
+  const todayStart = now - ((now + TZ_OFFSET) % DAY)
   const windowStart = now - days * DAY
 
   const sum = async (start: number) => {
@@ -54,7 +56,7 @@ export default defineEventHandler(async (event) => {
     sum(now - 30 * DAY),
     sum(now - 90 * DAY),
     db.prepare(
-      'SELECT date(ts / 1000, \'unixepoch\') AS day, COUNT(*) AS pv, COUNT(DISTINCT sid) AS uv FROM pageviews WHERE ts >= ? GROUP BY day ORDER BY day ASC'
+      'SELECT date(ts / 1000, \'unixepoch\', \'+8 hours\') AS day, COUNT(*) AS pv, COUNT(DISTINCT sid) AS uv FROM pageviews WHERE ts >= ? GROUP BY day ORDER BY day ASC'
     ).bind(windowStart).all<{ day: string, pv: number, uv: number }>(),
     db.prepare(
       'SELECT path, COUNT(*) AS pv FROM pageviews WHERE ts >= ? GROUP BY path ORDER BY pv DESC LIMIT 30'

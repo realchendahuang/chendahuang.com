@@ -141,7 +141,7 @@ const maxCountry = computed(() => Math.max(1, ...(data.value?.topCountries.map(i
             <span class="text-sm font-normal text-muted">浏览</span>
           </p>
           <p class="mt-1 text-sm text-muted">
-            {{ fmt(card.value.uv) }} 访客
+            {{ fmt(card.value.uv) }} 会话
           </p>
         </div>
       </div>
@@ -229,7 +229,7 @@ const maxCountry = computed(() => Math.max(1, ...(data.value?.topCountries.map(i
                   {{ localeName(item.locale) }}
                 </span>
                 <span class="shrink-0 text-dimmed">
-                  {{ fmt(item.pv) }} 浏览 · {{ fmt(item.uv) }} 访客
+                  {{ fmt(item.pv) }} 浏览 · {{ fmt(item.uv) }} 会话
                 </span>
               </div>
               <div class="mt-1 h-1.5 overflow-hidden rounded-full bg-elevated">
@@ -331,7 +331,7 @@ const maxCountry = computed(() => Math.max(1, ...(data.value?.topCountries.map(i
       </div>
 
       <p class="mt-12 text-center text-xs text-dimmed">
-        {{ rangeLabel }} · 数据口径:浏览 = 页面加载 + SPA 路由切换,访客 = 会话数
+        {{ rangeLabel }} · 数据口径:浏览 = 页面加载 + SPA 路由切换,会话 = 标签页会话(近似访客)
       </p>
     </template>
   </UContainer>

@@ -2,7 +2,7 @@ import { getDB } from '../utils/db'
 import { toCanonicalPath, isTrackablePath } from '../../app/utils/analytics'
 import { SITE_LOCALES } from '../../app/utils/locale'
 
-const BOT_RE = /bot|crawl|spider|slurp|mediapartners|curl|wget|python-requests|scrapy|headless|preview|pagespeed|lighthouse|pingdom|uptime|monitor|GPTBot|ClaudeBot|anthropic|bytespider|ccbot|facebookexternalhit|Google-Extended|PerplexityBot|Applebot/i
+const BOT_RE = /bot|crawl|spider|slurp|mediapartners|curl|wget|python-requests|scrapy|headless|preview|pagespeed|lighthouse|pingdom|uptime|monitor|GPTBot|ClaudeBot|Claude-Web|anthropic|bytespider|ccbot|facebookexternalhit|Google-Extended|GoogleOther|PerplexityBot|Applebot|ChatGPT-User|cohere-ai|meta-external|ia_archiver|YandexImage|BaiduImage/i
 
 const SID_RE = /^[A-Za-z0-9_-]{8,64}$/
 
@@ -15,7 +15,9 @@ export default defineEventHandler(async (event) => {
   }
 
   const ua = getRequestHeader(event, 'user-agent') ?? ''
-  if (BOT_RE.test(ua)) {
+  // Cloudflare 已验证机器人会带 cf-verified-bot: true(免费版即提供),比 UA 黑名单更可靠
+  const isVerifiedBot = getRequestHeader(event, 'cf-verified-bot') === 'true'
+  if (isVerifiedBot || BOT_RE.test(ua)) {
     setResponseStatus(event, 204)
     return null
   }
