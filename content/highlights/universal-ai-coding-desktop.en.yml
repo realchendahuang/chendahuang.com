@@ -1,0 +1,21 @@
+category: ai
+title: "There is no universal AI coding desktop — keep each model with its maker"
+description: "GPT goes to Codex, Gemini to AntiGravity, open models to ZCode — third-party shells always mean degraded models."
+date: 2026-09-08
+likes: 39
+bookmarks: 51
+reposts: 6
+views: 48770
+url: https://x.com/realchendahuang/status/2097134915783671870
+content: |
+  Someone in a group chat asked today: is there a universal AI coding desktop? One that connects to every subscription and never dumbs down any model?
+  After talking with a few friends who tinker at high intensity every day, our conclusion was unanimous:
+  Stick with the original pairing.
+  Put a model inside a third-party shell and you basically can't escape degraded intelligence, slower responses, and broken subscriptions. Our setups all look almost the same now:
+  GPT → Codex: direct official subscription, the most stable native scheduling.
+  Gemini → AntiGravity: the speed ceiling, long windows without choking.
+  DeepSeek, GLM and other open models → all of them go to ZCode.
+  On why ZCode is a must-have:
+  ZCode makes it easy to configure third-party provider models.
+  ZCode's phone remote-control mode is really, really good — you get work done from the couch while scrolling your phone.
+  ZCode's cache utilization is extremely high.

@@ -1,0 +1,10 @@
+title: "macOS Playbook"
+description: "ゼロから使いこなせるまで——普通の人のための macOS 実践ガイド。オープンソースのリポジトリとサイト内 Playbook で同期連載中。"
+type: オープンソース実践マニュアル
+url: https://github.com/realchendahuang/macos-playbook
+icon: i-lucide-laptop
+color: "#a78bfa"
+tags: ["macOS", "Playbook", "OSS", "入門ガイド"]
+date: 2026-06-19
+status: ongoing
+stars: 5

@@ -3,9 +3,9 @@ title: "AI で Cloudflare プロジェクトが失敗するのは、構文のせ
 description: "AI はよく Workers を Node.js みたいに書き、Binding を環境変数だと思っている。"
 date: 2026-06-22
 likes: 23
-bookmarks: 42
+bookmarks: 41
 reposts: 4
-views: 1462
+views: 1466
 url: https://x.com/realchendahuang/status/2068853978004365739
 content: |
   AI で Cloudflare プロジェクトを書いて失敗するのは、構文のせいじゃない。

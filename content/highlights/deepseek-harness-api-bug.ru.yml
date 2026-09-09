@@ -2,10 +2,10 @@ category: ai
 title: "DeepSeek Harness при вызове сторонних API выдаёт unknown tool: проблема формата данных на шлюзе"
 description: "Имя инструмента на самом деле не теряется — шлюз испортил формат данных."
 date: 2026-08-18
-likes: 2
-bookmarks: 0
-reposts: 2
-views: 2313
+likes: 9
+bookmarks: 8
+reposts: 1
+views: 2454
 url: https://x.com/realchendahuang/status/2089636108271550484
 content: |
   Проблема совместимости DeepSeek Harness + сторонние API:

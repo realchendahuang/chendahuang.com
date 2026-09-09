@@ -1,0 +1,10 @@
+title: Cloudflare Playbook
+description: "AI 程式設計時代的 Cloudflare 實戰手冊——用 AI 寫程式碼，用 Cloudflare 部署到全球，開源倉庫與站內 Playbook 同步連載。"
+type: 開源實戰手冊
+url: https://github.com/realchendahuang/cloudflare-playbook
+icon: i-lucide-book-open
+color: "#f6821f"
+tags: ["Cloudflare", "Playbook", "OSS", "AI 程式設計"]
+date: 2026-06-16
+status: ongoing
+stars: 178

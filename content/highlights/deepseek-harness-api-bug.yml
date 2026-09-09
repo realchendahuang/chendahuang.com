@@ -2,10 +2,10 @@ category: ai
 title: "DeepSeek Harness 调第三方 API 报 unknown tool：网关数据格式问题"
 description: "工具名不是真的丢，是网关把数据格式弄丢了。"
 date: 2026-08-18
-likes: 2
-bookmarks: 0
-reposts: 2
-views: 2313
+likes: 9
+bookmarks: 8
+reposts: 1
+views: 2454
 url: https://x.com/realchendahuang/status/2089636108271550484
 content: |
   DeepSeek Harness + 第三方 API 兼容问题：

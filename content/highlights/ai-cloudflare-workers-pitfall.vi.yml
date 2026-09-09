@@ -3,9 +3,9 @@ title: "Khi AI viết project Cloudflare thì sập — mà không phải vì c�
 description: "AI cứ viết Workers như đang viết Node.js và xem Bindings như biến môi trường."
 date: 2026-06-22
 likes: 23
-bookmarks: 42
+bookmarks: 41
 reposts: 4
-views: 1462
+views: 1466
 url: https://x.com/realchendahuang/status/2068853978004365739
 content: |
   Rất nhiều người dùng AI để viết project Cloudflare, và khi nó sập thì không phải vì cú pháp.

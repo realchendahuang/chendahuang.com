@@ -3,9 +3,9 @@ title: "Kiedy AI pisze projekty Cloudflare, to wybucha — i nie chodzi o skład
 description: "AI wciąż pisze Workery jak Node.js i traktuje Bindingi jak zmienne środowiskowe."
 date: 2026-06-22
 likes: 23
-bookmarks: 42
+bookmarks: 41
 reposts: 4
-views: 1462
+views: 1466
 url: https://x.com/realchendahuang/status/2068853978004365739
 content: |
   Wiele osób pisze projekty Cloudflare za pomocą AI, a kiedy coś wybucha, to nie chodzi o składnię.

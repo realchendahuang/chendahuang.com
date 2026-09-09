@@ -1,0 +1,27 @@
+category: opc
+title: "Konfigurasi OpenCode saya saat ini: context, memori, kemampuan eksternal"
+description: "Pemangkasan context opencode-dcp, memori berlapis Hermes Memory, context7/grep MCP, otomasi desktop open-computer-use."
+date: 2026-08-10
+likes: 56
+bookmarks: 81
+reposts: 3
+views: 11046
+url: https://x.com/realchendahuang/status/2086617745295392852
+content: |
+  Mau berbagi konfigurasi OpenCode yang sedang saya pakai. Konfigurasi ini dibangun mengelilingi tiga kebutuhan inti:
+  Manajemen context — sesi panjang tanpa context meledak, hemat uang dan token
+  Sistem memori — mengingat preferensi pengguna, keputusan proyek, dan pelajaran dari masa lalu lintas sesi
+  Kemampuan eksternal — pencarian dokumentasi, pencarian kode, otomasi desktop
+  Plugin utama yang saya pakai ada ini:
+  1. opencode-dcp (open source) — plugin pemangkasan context dinamis.
+  Saat context menyentuh ambang batas, konten lama otomatis dipadatkan menjadi ringkasan teknis: informasi kunci dipertahankan, noise dibuang, konten duplikat dibersihkan otomatis, dan konten bernilai rendah seperti error tool dikeluarkan dari context
+  2. opencode-goal-plugin
+  Plugin mode Goal, menambahkan manajemen target untuk tugas panjang
+  3. Hermes Memory (nanti saya open source kalau memang dibutuhkan)
+  Ini plugin terberat saya — memport mekanisme memori berlapis milik Hermes agent ke OpenCode.
+  4. context7-MCP
+  Mencari dokumentasi resmi terbaru untuk library/framework.
+  5. grep-MCP
+  Pencarian kode GitHub — mencari pola pemakaian nyata di seluruh kode GitHub.
+  6. open-computer-use (otomasi desktop)
+  Membuat AI mengoperasikan aplikasi macOS langsung — klik, ketik, scroll, drag, screenshot, sampai membaca accessibility tree.

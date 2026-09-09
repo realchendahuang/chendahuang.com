@@ -1,0 +1,24 @@
+category: ai
+title: "5가지 Harness 비교: Command Code는 일꾼 모델을 제일 잘 이해한다"
+description: "Pi는 미니멀, OMP는 헤비급, DeepSeek Harness는 완전 플러그인화, OpenCode는 밸런스형. Command Code는 모델의 빈자리를 대신 채워 준다."
+date: 2026-08-30
+likes: 111
+bookmarks: 111
+reposts: 5
+views: 19364
+url: https://x.com/realchendahuang/status/2093883062505599424
+content: |
+  Command Code라는 Harness를 다시 한번 꼼꼼히 공부해 봤고, 덤으로 Pi, OMP, DeepSeek Harness, OpenCode와도 나란히 비교해 봤다.
+  지금 Command Code가 가장 가치 있는 부분은 오픈 모델을 향한 Harness Engineering이다.
+  Pi의 철학은 미니멀리즘이다. Harness가 모델에 최대한 개입하지 않으니 가볍고 빠르고 Token 비용도 낮고, 뜯어고칠 여지도 아주 넓다. 반면 OMP는 Pi 위에 LSP, Debugger, Browser, AST 같은 헤비급 Coding 능력을 계속 얹는 쪽이라, Agent에게 IDE 한 벌을 입혀 주는 것에 가깝다.
+  DeepSeek Harness는 더 나아간다. Everything is Plugin. Agent Loop, 도구, 권한, Preset, UI를 전부 분해해서 재조립할 수 있으니, 차세대 Agent Runtime을 연구하는 재료로 딱이다.
+  OpenCode는 지금 가장 밸런스가 좋은 부류다. 오픈소스이고, Provider가 많고, 생태계가 크고, Client/Server, 데스크톱, Subagent도 상당히 성숙해서, 어떤 모델이든 물리고 어떤 일이든 해 내는 만능형 선수다.
+  Command Code의 길은 조금 다르다. 모델 뒤치다꺼리를 하기를 좋아한다. Tool Call 파라미터가 틀리면 Harness가 로컬에서 고치고, 방금 읽은 파일을 또 읽으려 하면 중복을 걸러 주고, 긴 Session에서는 Stable Prefix를 최대한 유지해 Cache Hit를 올리고, Context가 터질 위기에는 Compaction을 돌린다. 여기에 Session Affinity, Taste, Subagent 격리 같은 것들까지 갖춰져 있다.
+  이 사고방식을 DeepSeek V4 Flash, GLM-5.3 Flash 같은 일꾼 모델에 얹으면 가치가 더 커질 수 있다. 모델이 좀 못나도 Harness가 보태 주기 때문이다.
+  그래서 지금 시점의 나는 이 Harness들을 이렇게 정리한다:
+  Pi — 자기 전용 장기 Agent 기반으로 가장 적합. 단순하고 깔끔하고 마음대로 개조할 수 있다.
+  OMP — 진짜 헤비한 Coding, LSP와 Debugger, 복잡한 Repo 탐색이 필요한 장면에 적합.
+  DeepSeek Harness — Agent 아키텍처, Preset, 멀티 Agent, 차세대 Runtime을 가지고 놀기에 가장 적합.
+  OpenCode — 성숙한 범용 멀티모델 Coding Agent를 원하는 사람에게 가장 적합.
+  Command Code — DeepSeek / GLM 같은 오픈 모델 헤비 유저, 특히 Flash 일꾼 모델을 대량으로 굴리는 사람에게 딱이다.
+  장기적인 가변성만 보면 여전히 Pi가 좋다. 하지만 오늘 당장 DeepSeek V4 Flash / GLM-5.3에게 빡세게 일을 시켜야 한다면, 지금의 나는 진짜 Command Code의 맛을 한번 보고 싶다.

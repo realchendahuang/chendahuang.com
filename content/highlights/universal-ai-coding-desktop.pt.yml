@@ -1,0 +1,21 @@
+category: ai
+title: "O desktop universal de AI Coding não existe — cada modelo fica com o par de origem"
+description: "GPT vai para o Codex, Gemini para o AntiGravity, modelos abertos vão para o ZCode — numa casca de terceiros, a degradação do modelo é inevitável."
+date: 2026-09-08
+likes: 39
+bookmarks: 51
+reposts: 6
+views: 48770
+url: https://x.com/realchendahuang/status/2097134915783671870
+content: |
+  Hoje alguém perguntou num grupo: existe um desktop universal de AI Coding? Um que aceite as assinaturas de todo mundo e que não degrade a inteligência de nenhum modelo?
+  Depois de conversar com alguns amigos que mexem nisso em alta intensidade todos os dias, a conclusão foi unânime:
+  Ficamos com o par original.
+  Colocar um modelo numa casca de terceiros e praticamente não tem escapatória: perde inteligência, fica mais lento e as assinaturas não conectam. Nossas configurações de agora são quase idênticas:
+  GPT ➔ Codex: assinatura oficial em conexão direta, o scheduling nativo é o mais estável.
+  Gemini ➔ AntiGravity: teto de velocidade, janelas longas sem engasgos.
+  DeepSeek, GLM e demais modelos abertos ➔ todos para o ZCode.
+  E um ponto à parte sobre por que o ZCode é indispensável:
+  ZCode permite configurar com muita facilidade modelos de Provider de terceiros.
+  ZCode tem um modo de controle remoto pelo celular muito, muito bom: deitado no sofá, mexendo no celular, e o trabalho vai sendo feito.
+  ZCode tem uma utilização de cache altíssima.

@@ -1,0 +1,27 @@
+category: opc
+title: "Minha configuração de OpenCode atual: contexto, memória, capacidades externas"
+description: "opencode-dcp para a poda, Hermes Memory como memória em camadas, context7/grep MCP, open-computer-use para o desktop."
+date: 2026-08-10
+likes: 56
+bookmarks: 81
+reposts: 3
+views: 11046
+url: https://x.com/realchendahuang/status/2086617745295392852
+content: |
+  Compartilhando a configuração de OpenCode que estou usando agora. Meu setup gira em torno de três necessidades centrais:
+  Gestão de contexto — sessões longas sem estourar o contexto, economizando dinheiro e token
+  Memória — lembrar das preferências do usuário, das decisões do projeto e das lições do passado entre sessões
+  Capacidades externas — consulta de documentação, busca de código, automação de desktop
+  Os principais plugins que uso:
+  1. opencode-dcp (open source), plugin de poda dinâmica de contexto.
+  Quando o contexto atinge um limite, ele comprime automaticamente o conteúdo antigo em resumos técnicos, mantém a informação-chave, descarta o ruído, limpa sozinho as duplicatas e remove do contexto o conteúdo de baixo valor, como erros de ferramentas
+  2. opencode-goal-plugin
+  Plugin de modo Goal que adiciona gestão de objetivos a tarefas longas
+  3. Hermes Memory (posso abrir o código mais tarde se houver demanda)
+  É o meu plugin mais pesado — portei o mecanismo de memória em camadas do agente Hermes para o OpenCode.
+  4. context7-MCP
+  Para consultar a documentação oficial mais recente de libs e frameworks.
+  5. grep-MCP
+  Busca de código no GitHub, para achar usos reais dentro de todo o código do GitHub.
+  6. open-computer-use (automação de desktop)
+  Deixa a IA operar apps do macOS diretamente — cliques, digitação, scroll, arrastar, capturas de tela, leitura da árvore de acessibilidade.

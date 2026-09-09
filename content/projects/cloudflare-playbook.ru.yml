@@ -1,0 +1,10 @@
+title: "Cloudflare Playbook"
+description: "Практический справочник по Cloudflare эпохи AI-кодинга — пишете код с помощью ИИ и деплоите по всему миру с помощью Cloudflare; серия выходит синхронно в опенсорсном репозитории и в Playbook на сайте."
+type: Опенсорсный практический справочник
+url: https://github.com/realchendahuang/cloudflare-playbook
+icon: i-lucide-book-open
+color: "#f6821f"
+tags: ["Cloudflare", "Playbook", "OSS", "AI-кодинг"]
+date: 2026-06-16
+status: ongoing
+stars: 178

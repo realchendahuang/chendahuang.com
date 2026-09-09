@@ -1,0 +1,27 @@
+category: opc
+title: "내 현재 OpenCode 설정: 컨텍스트, 기억, 외부 능력"
+description: "opencode-dcp 프루닝, Hermes Memory 계층형 메모리, context7/grep MCP, open-computer-use 데스크톱 자동화."
+date: 2026-08-10
+likes: 56
+bookmarks: 81
+reposts: 3
+views: 11046
+url: https://x.com/realchendahuang/status/2086617745295392852
+content: |
+  지금 쓰고 있는 OpenCode 설정을 공유한다. 내 설정은 세 가지 핵심 니즈를 축으로 삼는다:
+  컨텍스트 관리 — 긴 세션에서도 컨텍스트가 터지지 않게, 돈과 토큰 절약
+  기억 시스템 — 세션을 넘나들며 사용자 취향, 프로젝트 의사결정, 과거의 교훈을 기억
+  외부 능력 — 문서 조회, 코드 검색, 데스크톱 자동화
+  주로 쓰는 플러그인은 다음과 같다:
+  1. opencode-dcp(오픈소스) 동적 컨텍스트 프루닝 플러그인.
+  컨텍스트가 임계값에 도달하면 오래된 내용을 자동으로 기술 요약으로 압축한다. 핵심 정보는 남기고 노이즈는 버리고, 중복 내용은 자동으로 청소하고, 도구 에러 같은 저가치 내용은 컨텍스트에서 걷어낸다.
+  2. opencode-goal-plugin
+  Goal 모드 플러그인. 긴 작업에 목표 관리를 더해 준다
+  3. Hermes Memory(필요하면 나중에 오픈소스로 풀 예정)
+  내가 가장 공들인 플러그인 — Hermes agent의 계층형 메모리 메커니즘을 OpenCode에 이식한 것이다.
+  4. context7-MCP
+  라이브러리/프레임워크의 최신 공식 문서를 조회한다.
+  5. grep-MCP
+  GitHub 코드 검색. GitHub 사이트 전체의 코드에서 실제 사용 사례를 찾아 준다.
+  6. open-computer-use(데스크톱 자동화)
+  AI가 macOS 앱을 직접 조작하게 한다 — 클릭, 입력, 스크롤, 드래그, 스크린샷, 접근성 트리 읽기.

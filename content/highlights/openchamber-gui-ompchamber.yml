@@ -1,0 +1,20 @@
+category: opc
+title: "OpenChamber 是最顺手的 Harness GUI，我把内核换成了 OMP"
+description: "OpenChamber 前端骨架 + Oh My Pi 内核 = OMPChamber，密集开发测试中。"
+date: 2026-08-11
+likes: 72
+bookmarks: 70
+reposts: 3
+views: 12790
+url: https://x.com/realchendahuang/status/2087156607750914080
+content: |
+  我体验过市面上几乎所有的开源的Harness GUI客户端，大多数从设计体验上，都是一言难尽。
+  Openchamber是我用过的开源项目里面打磨得比较好的Harness GUI客户端了，精致，稳定，偶尔有些bug也不影响长期的使用。
+  但是它只能结合OpenCode用，不能切换到其他的Harness。有网友反馈说，OpenCode的整体的性能不够好，容易拖模型的后腿。
+  所以我在构思一个项目。把OpenChamper的前端作为骨架，把其中的内核换为oh my pi，这样子可能更加符合我自己的需求。
+  为什么不用原生的Pi Agent，而用Oh My Pi？
+  因为原生的Pi Agent太过于灵活。没有办法做成一个通用的GUI出来。
+  相对折中一下，Oh My Pi算是Pi Agent的发行版。整体的插件交互体验算是比较稳定的。
+  所以我觉得把OpenChamper+Oh My Pi做成一个开箱即用的产品，是一个潜在的需求。
+  我把这个项目取名为：OMPChamber，目前还在密集开发测试中，有需要的朋友欢迎star。
+  https://github.com/realchendahuang/OMPChamber

@@ -1,0 +1,27 @@
+category: ai
+title: "What people really think of the Gemini 'US Soybean' plan: a Swiss Army knife, not an engineering machine"
+description: "Recap of the comment section: YouTube parsing, front-end prototypes, family-plan value — complex terminal agents are its weak spot."
+date: 2026-09-07
+likes: 44
+bookmarks: 29
+reposts: 4
+views: 9800
+url: https://x.com/realchendahuang/status/2096645820246630867
+content: |
+  People's takes on the Gemini "US Soybean" plan are packed with substance, so I put together a quick recap of the comment section:
+  Many people find Gemini disappointing because they mistake its identity — they treat it as their primary engineering machine tool.
+  In fact it's positioned more like a fully loaded Swiss Army knife: light, versatile, with rock-bottom marginal cost, but with clear limits on complex engineering and autonomous execution.
+  On the information-input side, native YouTube parsing is one of its most hassle-free abilities. No local download scripts or transcription tools — submit a link and it extracts the full timestamped transcript, keyframe grabs, and structured summaries in the cloud.
+  A lot of people's workflows have settled into a clear division of labor: Grok tracks real-time discussions on X, while Gemini handles tech podcasts and in-depth videos over half an hour long.
+  In visual and front-end scenarios, its multimodal foundation is solid. Full pages of handwritten notes, complex tables, or low-resolution scans all get recognized with high accuracy and few hallucinations.
+  And when prototyping front ends it's extremely fast, with natural code structure and none of that stiff, redundant generated feel.
+  Plenty of indie developers use fixed prompts to have it generate slide structures on a single page, or quickly produce usable pages from design screenshots.
+  On cost and tooling, its ecosystem math works out well: the $20/month subscription supports family sharing for up to 6 people, comes with terabytes of Google Drive storage, and integrates deeply with Docs and Sheets.
+  Route research, multimodal parsing, and light page building to it, then hand the core complex code to dedicated coding models, and your overall tooling costs drop noticeably.
+  A few advanced uses that have been proven to work:
+  First, leverage its relatively straightforward logical preferences and have it review the over-engineering and redundant code other models tend to produce.
+  Second, pair it with NotebookLM to build a private knowledge base around a specific set of materials.
+  Third, allocate the premium quota to derived needs like speech synthesis and image processing.
+  But you must be clear about its limits.
+  One, it's not suited for complex terminal-agent tasks; ask it to modify system rules or deploy environments and it often refuses or fails to follow multi-step instructions.
+  Two, deep business code must be cross-reviewed by your primary coding models to avoid hidden defects. Three, it's sensitive to your network environment — unstable nodes easily trigger service restrictions or a degraded experience.

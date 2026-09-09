@@ -2,10 +2,10 @@ category: ai
 title: "DeepSeek Harness の Preset 概念：Agent の配布単位"
 description: "同じモデルでも、違う Preset を読み込めば、まったく別の Agent になる。"
 date: 2026-08-17
-likes: 161
-bookmarks: 0
-reposts: 23
-views: 38000
+likes: 86
+bookmarks: 77
+reposts: 12
+views: 39415
 url: https://x.com/realchendahuang/status/2089206966015176725
 content: |
   最近 DeepSeek Harness を調べてる。Preset という概念が注目に値する。

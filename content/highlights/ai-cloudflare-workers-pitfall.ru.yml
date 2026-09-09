@@ -3,9 +3,9 @@ title: "Когда ИИ пишет Cloudflare-проекты, всё падае�
 description: "ИИ постоянно пишет Workers как Node.js и путает Bindings с переменными окружения."
 date: 2026-06-22
 likes: 23
-bookmarks: 42
+bookmarks: 41
 reposts: 4
-views: 1462
+views: 1466
 url: https://x.com/realchendahuang/status/2068853978004365739
 content: |
   Многие пишут Cloudflare-проекты с помощью ИИ, и когда всё взрывается, дело не в синтаксисе.

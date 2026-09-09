@@ -1,0 +1,21 @@
+category: ai
+title: "Uniwersalny desktop AI Coding nie istnieje — trzymaj się oryginalnych par"
+description: "GPT zostaje przy Codex, Gemini przy AntiGravity, otwarte modele trafiają do ZCode — w cudzej powłoce ogłupienie modelu jest nieuniknione."
+date: 2026-09-08
+likes: 39
+bookmarks: 51
+reposts: 6
+views: 48770
+url: https://x.com/realchendahuang/status/2097134915783671870
+content: |
+  Dziś ktoś na grupie zapytał: czy istnieje uniwersalny desktop AI Coding? Który podepnie subskrypcje każdej firmy i przy tym żadnego modelu nie ogłupi?
+  Porozmawiałem z kilkoma kumplami, którzy codziennie na wysokich obrotach grzebią w tych narzędziach — wnioski były zbieżne:
+  Trzymaj się oryginalnych par.
+  Włożysz model w cudzą powłokę i praktycznie nie unikniesz ogłupienia, spowolnienia i niedziałającej subskrypcji. Nasze obecne konfiguracje są niemal identyczne:
+  GPT ➔ Codex: prosto na oficjalnej subskrypcji, natywny scheduler najstabilniejszy.
+  Gemini ➔ AntiGravity: sufit prędkości, długie okna bez zadławienia.
+  DeepSeek, GLM i inne otwarte modele ➔ wszystkie lecą do ZCode.
+  Teraz najważniejsze: dlaczego ZCode jest obowiązkowy:
+  ZCode pozwala bardzo wygodnie konfigurować modele zewnętrznych dostawców.
+  Tryb zdalnego sterowania z telefonu w ZCode jest naprawdę świetny — leżysz na kanapie z telefonem w ręku, a robota się robi.
+  Wykorzystanie cache'a w ZCode jest ekstremalnie wysokie.

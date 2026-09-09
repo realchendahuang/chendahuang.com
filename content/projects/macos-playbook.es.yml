@@ -1,0 +1,10 @@
+title: "macOS Playbook"
+description: "De cero a sacarle todo el partido — la guía práctica de macOS escrita para gente corriente; la serie avanza en paralelo en el repositorio open source y en el Playbook de la web."
+type: Manual práctico open source
+url: https://github.com/realchendahuang/macos-playbook
+icon: i-lucide-laptop
+color: "#a78bfa"
+tags: ["macOS", "Playbook", "OSS", "Guía de inicio"]
+date: 2026-06-19
+status: ongoing
+stars: 5

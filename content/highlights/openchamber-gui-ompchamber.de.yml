@@ -1,0 +1,20 @@
+category: opc
+title: "OpenChamber ist das angenehmste Harness GUI — ich habe den Kern gegen OMP getauscht"
+description: "OpenChamber-Frontend als Skelett + Oh My Pi als Kern = OMPChamber, in dichter Entwicklung und im Test."
+date: 2026-08-11
+likes: 72
+bookmarks: 70
+reposts: 3
+views: 12790
+url: https://x.com/realchendahuang/status/2087156607750914080
+content: |
+  Ich habe praktisch jeden Open-Source-Harness-GUI-Client auf dem Markt ausprobiert, und die meisten sind beim Design und Handling schwer in Worte zu fassen.
+  OpenChamber ist der am besten polierte Open-Source-Harness-GUI-Client, den ich benutzt habe: edel, stabil, und gelegentliche Bugs stören den Langzeitbetrieb kaum.
+  Aber es funktioniert nur mit OpenCode und lässt sich nicht auf andere Harnesses umschalten. Nutzer berichten, OpenCode sei insgesamt nicht performant genug und bremse das Modell eher aus.
+  Deshalb skizziere ich ein Projekt: OpenChambers Frontend als Skelett behalten und den Kern durch Oh My Pi ersetzen — das passt vermutlich besser zu meinen eigenen Bedürfnissen.
+  Warum nicht den nativen Pi Agent, sondern Oh My Pi?
+  Weil der native Pi Agent zu flexibel ist — ein universelles GUI lässt sich darum nicht bauen.
+  Als Kompromiss: Oh My Pi ist quasi eine Distribution des Pi Agent, und das Plugin-Erlebnis ist insgesamt recht stabil.
+  Deshalb glaube ich, dass OpenChamber + Oh My Pi als Out-of-the-box-Produkt einen echten, unerfüllten Bedarf trifft.
+  Ich habe das Projekt OMPChamber getauft. Es steckt noch in intensiver Entwicklung und im Test — wer es braucht, darf gern einen star dalassen.
+  https://github.com/realchendahuang/OMPChamber

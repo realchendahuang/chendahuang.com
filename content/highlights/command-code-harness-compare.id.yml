@@ -1,0 +1,24 @@
+category: ai
+title: "Uji banding lima Harness: Command Code paling paham model kerja rodi"
+description: "Pi minimalis, OMP berat, DeepSeek Harness serba-plugin, OpenCode seimbang — Command Code khusus menutupi kekurangan model."
+date: 2026-08-30
+likes: 111
+bookmarks: 111
+reposts: 5
+views: 19364
+url: https://x.com/realchendahuang/status/2093883062505599424
+content: |
+  Saya membedah Harness Command Code sekali lagi dengan saksama, sekalian membandingkannya dengan Pi, OMP, DeepSeek Harness, dan OpenCode.
+  Nilai terbesar Command Code saat ini ada pada Harness Engineering yang dia lakukan untuk model terbuka.
+  Filosofi Pi sangat minimalis: Harness seminimal mungkin mencampuri model — ringan, cepat, overhead Token rendah, dan sangat mudah dibentuk. OMP justru terus menumpuk kemampuan Coding berat di atas Pi seperti LSP, Debugger, Browser, dan AST — mirip memasangkan IDE lengkap ke Agent.
+  DeepSeek Harness melangkah lebih jauh lagi: Everything is Plugin. Agent Loop, tools, permission, Preset, sampai UI semuanya bisa dibongkar dan disusun ulang — pas sekali buat meneliti Agent Runtime generasi berikutnya.
+  OpenCode adalah yang paling seimbang: open source, pilihan Provider banyak, ekosistem besar, Client/Server, aplikasi desktop, dan Subagent semuanya cukup matang — pemain serbaguna yang bisa menyambung ke model apa pun dan mengerjakan pekerjaan apa pun.
+  Jalan Command Code beda. Dia paling senang membereskan urusan si model. Parameter Tool Call salah tulis? Harness memperbaikinya secara lokal; file baru dibaca sudah mau dibaca ulang? Harness mende-duplikasinya; Session panjang dijaga tetap Stable Prefix semaksimal mungkin demi menaikkan Cache Hit; Context hampir meledak langsung di-Compaction; ditambah lagi Session Affinity, Taste, isolasi Subagent, dan semacamnya.
+  Kalau pendekatan ini dilempar ke model kerja rodi seperti DeepSeek V4 Flash atau GLM-5.3 Flash, nilainya justru bisa makin besar: modelnya sedikit lemah, Harness yang menambal.
+  Jadi beginilah cara saya memosisikan para Harness ini sekarang:
+  Pi, paling cocok jadi fondasi Agent jangka panjang milikmu sendiri: sederhana, bersih, bebas dimodifikasi sesukamu.
+  OMP, cocok untuk Coding berat yang sesungguhnya: skenario yang butuh LSP, Debugger, dan navigasi Repo yang rumit.
+  DeepSeek Harness, paling pas untuk mengutak-atik arsitektur Agent, Preset, multi-Agent, dan Runtime generasi berikutnya.
+  OpenCode, paling cocok untuk yang menginginkan satu paket Coding Agent multi-model serbaguna yang sudah matang.
+  Command Code, paling tepat untuk pengguna berat model terbuka seperti DeepSeek / GLM, terutama yang menjalankan model Flash kerja rodi dalam jumlah besar.
+  Jadi kalau hanya menilai dari fleksibilitas jangka panjang, saya tetap lebih suka Pi. Tapi kalau hari ini saya disuruh memaksa DeepSeek V4 Flash / GLM-5.3 bekerja keras sungguhan, saya sekarang benar-benar akan mencicipi Command Code.

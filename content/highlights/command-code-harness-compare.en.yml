@@ -1,0 +1,24 @@
+category: ai
+title: "Five harnesses compared: Command Code understands workhorse models best"
+description: "Pi is minimal, OMP is heavy-duty, DeepSeek Harness is fully pluggable, OpenCode is balanced — and Command Code covers for the model."
+date: 2026-08-30
+likes: 111
+bookmarks: 111
+reposts: 5
+views: 19364
+url: https://x.com/realchendahuang/status/2093883062505599424
+content: |
+  I took another careful look at Command Code, this time comparing it side by side with Pi, OMP, DeepSeek Harness, and OpenCode.
+  What makes Command Code valuable right now is the Harness Engineering it does for open models.
+  Pi's philosophy is minimalism: the harness interferes with the model as little as possible — light, fast, low token overhead, and extremely malleable. OMP keeps stacking heavy coding capabilities on top of Pi — LSP, Debugger, Browser, AST — closer to fitting the agent with a full IDE.
+  DeepSeek Harness goes even further: Everything is Plugin. Agent loop, tools, permissions, presets, UI — all can be taken apart and recombined, which makes it perfect for studying the next generation of agent runtimes.
+  OpenCode is the most balanced of the bunch: open source, many providers, a big ecosystem, mature Client/Server, desktop app, and subagents — a generalist that plugs into any model and handles any job.
+  Command Code takes a different route: it loves cleaning up after the model. Bad tool-call arguments get fixed locally by the harness; files read once and read again get deduplicated; long sessions keep a stable prefix to raise cache hits; when context is about to blow up it runs compaction; plus session affinity, taste, subagent isolation, and so on.
+  Applied to workhorse models like DeepSeek V4 Flash or GLM-5.3 Flash, this approach gets extra value: the weaker the model, the more the harness picks up the slack.
+  So here's how I'd position all of them now:
+  Pi — best as the foundation for your own long-term agent: simple, clean, endlessly hackable.
+  OMP — best for genuinely heavy coding: LSP, debugger, complex repo navigation.
+  DeepSeek Harness — best for tinkering with agent architecture, presets, multi-agent setups, and next-gen runtimes.
+  OpenCode — best for anyone who wants a mature, general-purpose, multi-model coding agent.
+  Command Code — best for heavy users of open models like DeepSeek / GLM, especially anyone running Flash workhorse models at scale.
+  If I only care about long-term malleability, I still prefer Pi. But if today you asked me to put DeepSeek V4 Flash / GLM-5.3 to serious work, I'd genuinely give Command Code a taste.

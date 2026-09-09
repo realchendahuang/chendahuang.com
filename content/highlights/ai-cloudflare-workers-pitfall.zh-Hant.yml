@@ -3,9 +3,9 @@ title: "AI 寫 Cloudflare 專案翻車，不是因為語法"
 description: "AI 經常把 Workers 當 Node.js 寫，把 Binding 當環境變數。"
 date: 2026-06-22
 likes: 23
-bookmarks: 42
+bookmarks: 41
 reposts: 4
-views: 1462
+views: 1466
 url: https://x.com/realchendahuang/status/2068853978004365739
 content: |
   很多人用 AI 寫 Cloudflare 專案，翻車不是因為語法。

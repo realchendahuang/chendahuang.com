@@ -1,0 +1,20 @@
+category: opc
+title: "OpenChamber はいちばん手に馴染む Harness GUI。中身は OMP に差し替えた"
+description: "OpenChamber のフロントエンド骨格 + Oh My Pi コア = OMPChamber、集中開発・テスト中。"
+date: 2026-08-11
+likes: 72
+bookmarks: 70
+reposts: 3
+views: 12790
+url: https://x.com/realchendahuang/status/2087156607750914080
+content: |
+  市販のオープンソース Harness GUI クライアントはほぼ全部試しましたが、大多数のデザイン体験は、まあ一言では言い表せない出来栄えです。
+  OpenChamber は私が使ったオープンソースの中ではかなり磨きのかかった Harness GUI クライアントです。精緻で安定していて、たまにバグが出ても長期利用には支障しません。
+  ただ OpenCode と組み合わせることしかできず、他の Harness に切り替えられません。ネットでは、OpenCode は全体性能がいまいちでモデルの足を引っ張りやすい、という声もあります。
+  そこで私はあるプロジェクトを構想中です。OpenChamber のフロントエンドを骨格に使い、中のコアを Oh My Pi に差し替えれば、自分のニーズにもっと合うはずだ、と。
+  なぜネイティブの Pi Agent ではなく Oh My Pi なのか？
+  ネイティブの Pi Agent は柔軟すぎて、汎用の GUI に仕立て上げる方法がないからです。
+  折衷案的に言うと、Oh My Pi は Pi Agent のディストリビューションみたいなもので、全体のプラグイン操作体験は比較的安定しています。
+  だから OpenChamber + Oh My Pi をそのまま使える製品にするのは、潜在的なニーズがあると思うのです。
+  このプロジェクトは OMPChamber と名づけました。今は集中開発・テスト中なので、必要な人はぜひ star をお願いします。
+  https://github.com/realchendahuang/OMPChamber

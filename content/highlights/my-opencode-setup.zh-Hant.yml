@@ -1,0 +1,27 @@
+category: opc
+title: "我目前的 OpenCode 配置：上下文、記憶、外部能力"
+description: "opencode-dcp 剪枝、Hermes Memory 分層記憶、context7/grep MCP、open-computer-use 桌面自動化。"
+date: 2026-08-10
+likes: 56
+bookmarks: 81
+reposts: 3
+views: 11046
+url: https://x.com/realchendahuang/status/2086617745295392852
+content: |
+  分享一下我當前用的OpenCode配置。我的配置圍繞三個核心訴求：
+  上下文管理——長會話不爆上下文、省錢省 token
+  記憶系統——跨會話記住用戶偏好、項目決策和歷史教訓
+  外部能力——文檔查詢、代碼搜索、桌面自動化
+  主要用了以下幾個插件:
+  1. opencode-dcp（開源）動態上下文剪枝插件。
+  上下文達到閾值時自動把舊內容壓縮成技術摘要，保留關鍵信息、丟棄噪聲，自動清理重複內容，把工具報錯等低價值內容從上下文裡剔除
+  2. opencode-goal-plugin
+  Goal 模式插件，給長任務加目標管理
+  3. Hermes Memory（有需要我後續開源）
+  這是我最重的一個插件——把 Hermes agent 的分層記憶機制移植到 OpenCode 上。
+  4. context7-MCP
+  查庫/框架的最新官方文檔。
+  5. grep-MCP
+  GitHub 代碼搜索,在 GitHub 全站代碼裡搜真實用法。
+  6. open-computer-use（桌面自動化）
+  讓 AI 直接操作 macOS 應用——點擊、輸入、滾動、拖拽、截圖、讀無障礙樹。

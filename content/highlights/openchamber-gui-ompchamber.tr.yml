@@ -1,0 +1,20 @@
+category: opc
+title: "OpenChamber en kullanışlı Harness GUI; çekirdeğini OMP ile değiştirdim"
+description: "OpenChamber ön uç iskeleti + Oh My Pi çekirdeği = OMPChamber; yoğun geliştirme ve test sürüyor."
+date: 2026-08-11
+likes: 72
+bookmarks: 70
+reposts: 3
+views: 12790
+url: https://x.com/realchendahuang/status/2087156607750914080
+content: |
+  Piyasadaki neredeyse tüm açık kaynak Harness GUI istemcilerini denedim; çoğunun tasarım ve kullanım deneyimi, kibar söylemek gerekirse, sınıfta kaldı.
+  OpenChamber, kullandığım açık kaynak projeler arasında en iyi cilalanmış Harness GUI istemcisi: zarif, stabil ve ara sıra çıkan buglar uzun vadeli kullanımı engellemiyor.
+  Yalnız yalnızca OpenCode ile çalışıyor, başka Harness'lara geçemiyor. Bazı kullanıcılar, OpenCode'un genel performansının yeterince iyi olmadığını ve modeli kolayca frenlediğini söylüyor.
+  Ben de bir proje tasarlıyorum: OpenChamber'ın ön yüzünü iskelet olarak tutup çekirdeğini oh my pi ile değiştirmek — böylece kendi ihtiyaçlarıma daha iyi uyabilir.
+  Neden yerel Pi Agent değil de Oh My Pi?
+  Çünkü yerel Pi Agent fazla esnek; ondan genel amaçlı bir GUI yapmak mümkün değil.
+  Orta yol olarak Oh My Pi, Pi Agent'ın bir dağıtımı sayılabilir. Eklenti etkileşim deneyimi genel olarak oldukça stabil.
+  Bu yüzden OpenChamber + Oh My Pi'yi kutudan çıktığı gibi bir ürüne dönüştürmenin gerçek bir ihtiyaç olduğunu düşünüyorum.
+  Projeye OMPChamber adını verdim. Şu an yoğun geliştirme ve test aşamasında — ihtiyacı olanlar star bırakabilir.
+  https://github.com/realchendahuang/OMPChamber

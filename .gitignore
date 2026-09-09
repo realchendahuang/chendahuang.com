@@ -34,3 +34,6 @@ logs
 
 # ZCode agent artifacts
 .zcode
+
+# Content sync scratch data
+scripts/out/

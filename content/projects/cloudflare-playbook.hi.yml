@@ -1,0 +1,10 @@
+title: "Cloudflare Playbook"
+description: "AI कोडिंग के दौर की Cloudflare प्रैक्टिकल गाइड — AI से कोड लिखो, Cloudflare से दुनियाभर में डिप्लॉय करो; ओपन-सोर्स रिपो और साइट के Playbook में साथ-साथ जारी।"
+type: ओपन-सोर्स प्रैक्टिकल गाइड
+url: https://github.com/realchendahuang/cloudflare-playbook
+icon: i-lucide-book-open
+color: "#f6821f"
+tags: ["Cloudflare", "Playbook", "OSS", "AI कोडिंग"]
+date: 2026-06-16
+status: ongoing
+stars: 178

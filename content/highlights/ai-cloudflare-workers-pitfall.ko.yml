@@ -3,9 +3,9 @@ title: "AI가 Cloudflare 프로젝트를 작성하면 폭발한다 — 문법 �
 description: "AI가 Workers를 Node.js처럼 작성하고 Binding을 환경 변수처럼 다루고 있다."
 date: 2026-06-22
 likes: 23
-bookmarks: 42
+bookmarks: 41
 reposts: 4
-views: 1462
+views: 1466
 url: https://x.com/realchendahuang/status/2068853978004365739
 content: |
   많은 사람이 AI로 Cloudflare 프로젝트를 작성하는데, 문제가 생겨도 문법 때문이 아니다.

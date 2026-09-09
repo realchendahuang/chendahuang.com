@@ -1,0 +1,27 @@
+category: opc
+title: "Mein aktuelles OpenCode-Setup: Context, Memory, externe Fähigkeiten"
+description: "opencode-dcp fürs Context Pruning, Hermes Memory als mehrschichtiges Gedächtnis, context7/grep MCP, open-computer-use für Desktop-Automatisierung."
+date: 2026-08-10
+likes: 56
+bookmarks: 81
+reposts: 3
+views: 11046
+url: https://x.com/realchendahuang/status/2086617745295392852
+content: |
+  Ich teile mal das OpenCode-Setup, das ich gerade fahre. Es baut auf drei Kernbedürfnissen auf:
+  Kontextmanagement — lange Sessions ohne Kontext-Überlauf, spart Geld und Tokens
+  Memory — Nutzerpräferenzen, Projektentcheidungen und Lehren aus der Vergangenheit über Sessions hinweg behalten
+  Externe Fähigkeiten — Doku-Lookup, Codesuche, Desktop-Automatisierung
+  Die wichtigsten Plugins, die ich nutze:
+  1. opencode-dcp (Open Source) — Plugin für dynamisches Context Pruning.
+  Erreicht der Kontext einen Schwellwert, wird alter Inhalt automatisch zu technischen Zusammenfassungen komprimiert: Wichtiges bleibt, Rauschen fliegt, Duplikate werden automatisch aufgeräumt, und niedrigwertige Inhalte wie Tool-Fehler werden aus dem Kontext entfernt.
+  2. opencode-goal-plugin
+  Ein Goal-Mode-Plugin, das langen Aufgaben Zielmanagement gibt.
+  3. Hermes Memory (bei Bedarf öffne ich es später)
+  Mein schwerstes Plugin — ich habe den mehrschichtigen Gedächtnismechanismus des Hermes Agent auf OpenCode portiert.
+  4. context7-MCP
+  Schlägt die neuesten offiziellen Docs von Libraries und Frameworks nach.
+  5. grep-MCP
+  GitHub-Codesuche — reale Nutzungsmuster im Code von ganz GitHub finden.
+  6. open-computer-use (Desktop-Automatisierung)
+  Lässt die AI macOS-Apps direkt bedienen — Klicken, Tippen, Scrollen, Ziehen, Screenshots, den Accessibility-Tree lesen.

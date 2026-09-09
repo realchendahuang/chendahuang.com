@@ -2,10 +2,10 @@ category: ai
 title: "DeepSeek Harness 調第三方 API 報 unknown tool：閘道資料格式問題"
 description: "工具名不是真的丟了，是閘道把資料格式弄丟了。"
 date: 2026-08-18
-likes: 2
-bookmarks: 0
-reposts: 2
-views: 2313
+likes: 9
+bookmarks: 8
+reposts: 1
+views: 2454
 url: https://x.com/realchendahuang/status/2089636108271550484
 content: |
   DeepSeek Harness + 第三方 API 相容問題：

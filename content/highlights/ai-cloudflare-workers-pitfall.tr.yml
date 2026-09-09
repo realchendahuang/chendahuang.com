@@ -3,9 +3,9 @@ title: "AI, Cloudflare projeleri yazarken işler patlıyor — ve suç sözdizim
 description: "AI, Worker'ları sürekli Node.js gibi yazıyor ve Binding'lere ortam değişkeni muamelesi yapıyor."
 date: 2026-06-22
 likes: 23
-bookmarks: 42
+bookmarks: 41
 reposts: 4
-views: 1462
+views: 1466
 url: https://x.com/realchendahuang/status/2068853978004365739
 content: |
   Pek çok kişi AI ile Cloudflare projeleri yazdırıyor; işler patladığında sorun sözdiziminde değil.

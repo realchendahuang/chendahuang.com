@@ -3,9 +3,9 @@ title: "जब AI Cloudflare प्रोजेक्ट लिखता है,
 description: "AI Workers को Node.js की तरह लिखता रहता है और Bindings को पर्यावरण चर (environment variables) मान लेता है।"
 date: 2026-06-22
 likes: 23
-bookmarks: 42
+bookmarks: 41
 reposts: 4
-views: 1462
+views: 1466
 url: https://x.com/realchendahuang/status/2068853978004365739
 content: |
   बहुत से लोग Cloudflare प्रोजेक्ट लिखने के लिए AI का इस्तेमाल करते हैं, और जब वह बिगड़ जाता है, तो इसका कारण सिंटैक्स नहीं होता।

@@ -1,0 +1,27 @@
+category: opc
+title: "Cấu hình OpenCode hiện tại của tôi: context, bộ nhớ, năng lực bên ngoài"
+description: "Cắt tỉa context bằng opencode-dcp, bộ nhớ phân tầng Hermes Memory, context7/grep MCP, tự động hóa desktop open-computer-use."
+date: 2026-08-10
+likes: 56
+bookmarks: 81
+reposts: 3
+views: 11046
+url: https://x.com/realchendahuang/status/2086617745295392852
+content: |
+  Chia sẻ cấu hình OpenCode tôi đang dùng. Cấu hình này được xây xoay quanh ba nhu cầu cốt lõi:
+  Quản lý context — phiên dài không làm nổ context, tiết kiệm tiền và token
+  Hệ thống bộ nhớ — ghi nhớ sở thích người dùng, quyết định dự án và bài học cũ xuyên suốt các phiên
+  Năng lực bên ngoài — tra tài liệu, tìm kiếm code, tự động hóa desktop
+  Các plugin chính tôi đang dùng:
+  1. opencode-dcp (open source) — plugin cắt tỉa context động.
+  Khi context chạm ngưỡng, nội dung cũ được tự động nén thành bản tóm tắt kỹ thuật: giữ lại thông tin then chốt, vứt bỏ nhiễu, tự dọn nội dung trùng lặp, và loại những thứ giá trị thấp như lỗi tool ra khỏi context
+  2. opencode-goal-plugin
+  Plugin chế độ Goal, thêm quản lý mục tiêu cho tác vụ dài
+  3. Hermes Memory (có nhu cầu thì tôi sẽ open source sau)
+  Đây là plugin nặng ký nhất của tôi — port cơ chế bộ nhớ phân tầng của Hermes agent sang OpenCode.
+  4. context7-MCP
+  Tra tài liệu chính thức mới nhất của library/framework.
+  5. grep-MCP
+  Tìm kiếm code trên GitHub — tìm cách dùng thực tế trong toàn bộ mã nguồn GitHub.
+  6. open-computer-use (tự động hóa desktop)
+  Cho AI trực tiếp thao tác ứng dụng macOS — click, gõ, cuộn, kéo thả, chụp màn hình, đọc accessibility tree.

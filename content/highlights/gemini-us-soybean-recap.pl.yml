@@ -1,0 +1,27 @@
+category: ai
+title: "Gemini i «plan Amerykańska Soja»: zebrane opinie — scyzoryk szwajcarski, a nie maszyna inżynierska"
+description: "Podsumowanie głosów z komentarzy: parsowanie YouTube, prototypy frontendu, rodzinny plan za grosze — a złożone zadania terminalowego Agenta to pięta achillesowa."
+date: 2026-09-07
+likes: 44
+bookmarks: 29
+reposts: 4
+views: 9800
+url: https://x.com/realchendahuang/status/2096645820246630867
+content: |
+  Tak oceniają «plan Amerykańska Soja» dla Gemini — opinie były bardzo treściwe, więc krótko podsumowałem głosy z sekcji komentarzy:
+  Wielu uważa Gemini za niewygodne w użyciu, a kluczowa przyczyna to pomylenie jego pozycji z podstawową maszyną inżynierską.
+  W rzeczywistości jego pozycjonowanie to bardziej w pełni wyposażony scyzoryk szwajcarski: lekki, wielofunkcyjny, o skrajnie niskim koszcie krańcowym, ale z wyraźnymi granicami w złożonej inżynierii i samodzielnej egzekucji.
+  Po stronie przyjmowania informacji natywne parsowanie YouTube to dziś jedna z najmniej problematycznych umiejętności. Bez lokalnych skryptów do pobierania czy narzędzi do transkrypcji — wysyłasz link, a w chmurze wyciągana jest pełna transkrypcja z timestampami, wycinki klatek kluczowych i ustrukturyzowane podsumowanie.
+  U wielu osób realny workflow ma już jasny podział pracy: Grok śledzi dyskusje i aktywność na X w czasie rzeczywistym, a Gemini ogarnia techniczne podcasty i pogłębione filmy dłuższe niż pół godziny.
+  W scenariuszach wizualnych i frontendowych jego multimodalny fundament jest solidny. Całe strony odręcznych notatek, złożone tabele czy skany niskiej rozdzielczości są rozpoznawane z bardzo wysoką trafnością i stosunkowo rzadko zmyśla.
+  A przy prototypowaniu frontendu jest ekstremalnie szybki, struktura kodu naturalna, bez tego sztywnego, redundantnego śladu generowania.
+  Wielu niezależnych deweloperów stałymi promptami każe mu generować strukturę slajdów na jednej stronie albo szybko wyrabiać użyteczne strony na podstawie zrzutów projektu.
+  Patrząc na koszty i zestaw narzędzi, jego rachunek ekosystemowy wychodzi bardzo korzystnie. Subskrypcja za 20 dolarów miesięcznie obsługuje rodzinne udostępnianie do 6 osób, w pakiecie są terabajty miejsca w Google Drive i głęboka integracja z Docs i Sheets.
+  Przenieś na niego wyszukiwanie materiałów, analizę multimodalną i lekkie budowanie stron, a złożony kluczowy kod zostaw dedykowanym modelom do kodu — ogólne koszty narzędzi deweloperskich wyraźnie spadną.
+  Jest też kilka sprawdzonych, zaawansowanych zastosowań:
+  Po pierwsze, wykorzystaj jego relatywnie bezpośrednie preferencje logiczne, żeby kazać mu recenzować przeinżynierienie i redundantny kod, w które wpadają inne duże modele;
+  Po drugie, z NotebookLM zbuduj prywatną bazę wiedzy skupioną na konkretnych materiałach;
+  Po trzecie, przeznacz limit premium na wtórne potrzeby typu synteza mowy i przetwarzanie obrazów.
+  Ale korzystając z niego, trzeba jasno widzieć granice jego możliwości.
+  Pierwsze: nie nadaje się do złożonych zadań terminalowego Agenta — gdy każesz mu zmieniać reguły systemowe czy wdrażać środowiska, często odmawia wykonania albo nie trzyma się wieloetapowych instrukcji;
+  Drugie: głęboki kod biznesowy musi być sprawdzany krzyżowo przez inne główne modele, żeby nie pogrzebać ukrytych wad. Trzecie: jest dość wrażliwy na środowisko sieciowe — przy niestabilnych nodach łatwo trafić na ograniczenia usługi albo pogorszenie doświadczenia.

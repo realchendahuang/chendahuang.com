@@ -2,10 +2,10 @@ category: ai
 title: "Концепция Preset в DeepSeek Harness: единица дистрибуции агентов"
 description: "Загрузи на одной и той же модели разные Preset — и получишь совершенно разных агентов."
 date: 2026-08-17
-likes: 161
-bookmarks: 0
-reposts: 23
-views: 38000
+likes: 86
+bookmarks: 77
+reposts: 12
+views: 39415
 url: https://x.com/realchendahuang/status/2089206966015176725
 content: |
   В последнее время я изучаю DeepSeek Harness. Есть концепция под названием Preset, на которую стоит обратить внимание.

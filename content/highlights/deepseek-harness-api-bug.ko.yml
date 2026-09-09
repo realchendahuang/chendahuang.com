@@ -2,10 +2,10 @@ category: ai
 title: "DeepSeek Harness가 서드파티 API에서 'unknown tool' 오류: 게이트웨이 데이터 형식 문제"
 description: "도구 이름이 정말 사라진 게 아니라, 게이트웨이가 데이터 형식을 망가뜨린 것이다."
 date: 2026-08-18
-likes: 2
-bookmarks: 0
-reposts: 2
-views: 2313
+likes: 9
+bookmarks: 8
+reposts: 1
+views: 2454
 url: https://x.com/realchendahuang/status/2089636108271550484
 content: |
   DeepSeek Harness + 서드파티 API 호환성 문제:

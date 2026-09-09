@@ -3,9 +3,9 @@ title: "Los proyectos de Cloudflare escritos con IA fallan, y no por la sintaxis
 description: "La IA escribe los Workers como si fueran Node.js y trata los Bindings como variables de entorno."
 date: 2026-06-22
 likes: 23
-bookmarks: 42
+bookmarks: 41
 reposts: 4
-views: 1462
+views: 1466
 url: https://x.com/realchendahuang/status/2068853978004365739
 content: |
   Mucha gente usa IA para escribir proyectos de Cloudflare, y los fallos no son por la sintaxis.

@@ -3,9 +3,9 @@ title: "وقتی هوش مصنوعی پروژههای Cloudflare را مینوی
 description: "هوش مصنوعی مدام Workers را مثل Node.js مینویسد و Bindingها را مثل متغیر محیطی در نظر میگیرد."
 date: 2026-06-22
 likes: 23
-bookmarks: 42
+bookmarks: 41
 reposts: 4
-views: 1462
+views: 1466
 url: https://x.com/realchendahuang/status/2068853978004365739
 content: |
   خیلیها پروژههای Cloudflare را با هوش مصنوعی مینویسند، و وقتی پروژه میترکد، مشکل سینتکس نیست.

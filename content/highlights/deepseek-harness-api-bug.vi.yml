@@ -2,10 +2,10 @@ category: ai
 title: "DeepSeek Harness báo 'unknown tool' với API bên thứ ba: lỗi định dạng dữ liệu ở gateway"
 description: "Tên tool thực ra không hề bị mất — gateway làm hỏng định dạng dữ liệu."
 date: 2026-08-18
-likes: 2
-bookmarks: 0
-reposts: 2
-views: 2313
+likes: 9
+bookmarks: 8
+reposts: 1
+views: 2454
 url: https://x.com/realchendahuang/status/2089636108271550484
 content: |
   Vấn đề tương thích DeepSeek Harness + API bên thứ ba:

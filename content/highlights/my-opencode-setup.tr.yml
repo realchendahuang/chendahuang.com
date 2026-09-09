@@ -1,0 +1,27 @@
+category: opc
+title: "Güncel OpenCode kurulumum: bağlam, hafıza, dış yetenekler"
+description: "opencode-dcp budama, Hermes Memory katmanlı hafıza, context7/grep MCP, open-computer-use masaüstü otomasyonu."
+date: 2026-08-10
+likes: 56
+bookmarks: 81
+reposts: 3
+views: 11046
+url: https://x.com/realchendahuang/status/2086617745295392852
+content: |
+  Şu an kullandığım OpenCode kurulumunu paylaşıyorum. Kurulumumu üç temel ihtiyaç etrafında kurdum:
+  Bağlam yönetimi — uzun oturumlarda bağlam patlamıyor, para ve token tasarrufu
+  Hafıza sistemi — oturumlar arası kullanıcı tercihlerini, proje kararlarını ve geçmiş dersleri hatırlamak
+  Dış yetenekler — doküman sorgulama, kod arama, masaüstü otomasyonu
+  Başlıca kullandığım eklentiler şunlar:
+  1. opencode-dcp (açık kaynak) — dinamik bağlam budama eklentisi.
+  Bağlam eşiğe ulaştığında eski içeriği otomatik olarak teknik özetlere sıkıştırıyor; kritik bilgiyi koruyor, gürültüyü atıyor, mükerrer içerikleri temizliyor ve araç hataları gibi düşük değerli içerikleri bağlamdan çıkarıyor
+  2. opencode-goal-plugin
+  Goal modu eklentisi; uzun görevlere hedef yönetimi ekliyor
+  3. Hermes Memory (ihtiyaç olursa ileride açık kaynak yaparım)
+  En ağır eklentim — Hermes agent'ın katmanlı hafıza mekanizmasını OpenCode'a taşıdım.
+  4. context7-MCP
+  Kütüphane/framework'lerin en güncel resmi dokümanlarını sorgulama.
+  5. grep-MCP
+  GitHub kod arama; GitHub'ın tüm kodunda gerçek kullanımları arıyor.
+  6. open-computer-use (masaüstü otomasyonu)
+  AI'ın macOS uygulamalarını doğrudan kullanmasını sağlıyor — tıklama, yazma, kaydırma, sürükleme, ekran görüntüsü, erişilebilirlik ağacını okuma.

@@ -3,9 +3,9 @@ title: "Un projet Cloudflare écrit par l'IA qui a flop — pas à cause de la s
 description: "L'IA écrit trop souvent du Workers comme si c'était du Node.js, et traite les Bindings comme des variables d'environnement."
 date: 2026-06-22
 likes: 23
-bookmarks: 42
+bookmarks: 41
 reposts: 4
-views: 1462
+views: 1466
 url: https://x.com/realchendahuang/status/2068853978004365739
 content: |
   Beaucoup utilisent l'IA pour écrire des projets Cloudflare, et ça flop pas à cause de la syntaxe.

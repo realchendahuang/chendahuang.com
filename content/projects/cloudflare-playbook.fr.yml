@@ -1,0 +1,10 @@
+title: "Cloudflare Playbook"
+description: "Le manuel pratique de Cloudflare pour l'ère du AI Coding — écris ton code avec l'AI, déploie partout dans le monde avec Cloudflare ; une série publiée en parallèle dans le repo open source et dans le Playbook du site."
+type: Guide pratique open source
+url: https://github.com/realchendahuang/cloudflare-playbook
+icon: i-lucide-book-open
+color: "#f6821f"
+tags: ["Cloudflare", "Playbook", "OSS", "AI Coding"]
+date: 2026-06-16
+status: ongoing
+stars: 178

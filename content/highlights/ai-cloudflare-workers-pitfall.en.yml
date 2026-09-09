@@ -3,9 +3,9 @@ title: "When AI writes Cloudflare projects, it crashes — and not because of sy
 description: "AI keeps writing Workers like Node.js and treating Bindings like environment variables."
 date: 2026-06-22
 likes: 23
-bookmarks: 42
+bookmarks: 41
 reposts: 4
-views: 1462
+views: 1466
 url: https://x.com/realchendahuang/status/2068853978004365739
 content: |
   Lots of people use AI to write Cloudflare projects, and when it blows up, it's not about syntax.

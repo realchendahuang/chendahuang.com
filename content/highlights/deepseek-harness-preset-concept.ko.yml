@@ -2,10 +2,10 @@ category: ai
 title: "DeepSeek Harness의 Preset 개념: 에이전트의 배포 단위"
 description: "같은 모델에 다른 Preset을 로드하면 완전히 다른 에이전트가 된다."
 date: 2026-08-17
-likes: 161
-bookmarks: 0
-reposts: 23
-views: 38000
+likes: 86
+bookmarks: 77
+reposts: 12
+views: 39415
 url: https://x.com/realchendahuang/status/2089206966015176725
 content: |
   요즘 DeepSeek Harness를 연구하고 있다. Preset이라는 개념이 주목할 만하다.

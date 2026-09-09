@@ -1,0 +1,10 @@
+title: "Cloudflare Playbook"
+description: "AI Coding 時代の Cloudflare 実践マニュアル——AI でコードを書き、Cloudflare で世界中にデプロイ。オープンソースのリポジトリとサイト内 Playbook で同期連載中。"
+type: オープンソース実践マニュアル
+url: https://github.com/realchendahuang/cloudflare-playbook
+icon: i-lucide-book-open
+color: "#f6821f"
+tags: ["Cloudflare", "Playbook", "OSS", "AI Coding"]
+date: 2026-06-16
+status: ongoing
+stars: 178

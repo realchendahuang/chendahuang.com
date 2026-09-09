@@ -1,0 +1,10 @@
+title: "Cloudflare Playbook"
+description: "AI 코딩 시대를 위한 Cloudflare 실전 매뉴얼 — AI로 코드를 쓰고, Cloudflare로 전 세계에 배포합니다. 오픈소스 저장소와 사이트 내 Playbook에서 동시 연재 중입니다."
+type: 오픈소스 실전 매뉴얼
+url: https://github.com/realchendahuang/cloudflare-playbook
+icon: i-lucide-book-open
+color: "#f6821f"
+tags: ["Cloudflare", "Playbook", "OSS", "AI 코딩"]
+date: 2026-06-16
+status: ongoing
+stars: 178

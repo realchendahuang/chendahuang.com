@@ -1,0 +1,21 @@
+category: ai
+title: "万能 AI 编程桌面端不存在，原汤化原食"
+description: "GPT 走 Codex、Gemini 走 AntiGravity、开源模型给 ZCode，模型套第三方壳子逃不掉降智。"
+date: 2026-09-08
+likes: 39
+bookmarks: 51
+reposts: 6
+views: 48770
+url: https://x.com/realchendahuang/status/2097134915783671870
+content: |
+  今天群里有朋友问：有没有一个万能的 AI 编程桌面端？能接各家订阅，所有模型还不降智？
+  我和几个天天高强度折腾的朋友聊完，结论一致：
+  原汤化原食。
+  模型套进第三方壳子，基本逃不掉降智、变慢和订阅不通。我们几个现在的配置几乎一样：
+  GPT ➔ Codex：官方订阅直连，原生调度最稳。
+  Gemini ➔ AntiGravity：速度天花板，长窗口不卡壳。
+  DeepSeek GLM等开源模型➔ 统统给 ZCode。
+  重点说下为什么必须有 ZCode：
+  ZCode它可以很方便地配置第三方的供应商模型。
+  ZCode它的手机远程控制模式非常非常好用，直接躺在沙发上玩着手机就把活干了。
+  Zcode它的缓存利用率极高。
