@@ -2,10 +2,10 @@ category: opc
 title: "我目前的 OpenCode 配置：上下文、記憶、外部能力"
 description: "opencode-dcp 剪枝、Hermes Memory 分層記憶、context7/grep MCP、open-computer-use 桌面自動化。"
 date: 2026-08-10
-likes: 56
+likes: 57
 bookmarks: 81
 reposts: 3
-views: 11046
+views: 11055
 url: https://x.com/realchendahuang/status/2086617745295392852
 content: |
   分享一下我當前用的OpenCode配置。我的配置圍繞三個核心訴求：
