@@ -3,9 +3,9 @@ title: "5가지 Harness 비교: Command Code는 일꾼 모델을 제일 잘 이�
 description: "Pi는 미니멀, OMP는 헤비급, DeepSeek Harness는 완전 플러그인화, OpenCode는 밸런스형. Command Code는 모델의 빈자리를 대신 채워 준다."
 date: 2026-08-30
 likes: 111
-bookmarks: 111
+bookmarks: 110
 reposts: 5
-views: 19408
+views: 19453
 url: https://x.com/realchendahuang/status/2093883062505599424
 content: |
   Command Code라는 Harness를 다시 한번 꼼꼼히 공부해 봤고, 덤으로 Pi, OMP, DeepSeek Harness, OpenCode와도 나란히 비교해 봤다.

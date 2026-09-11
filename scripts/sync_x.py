@@ -321,6 +321,25 @@ def main():
 
     known = known_highlight_ids()
     print(f"[ok] 站内已有 {len(known)} 条 highlight")
+
+    # 断点保存:时间线数据先落盘,补抓阶段崩溃不丢已抓数据
+    for t in tweets:
+        t["date_bj"] = x_date_to_bj(t["date"])
+    OUT.mkdir(parents=True, exist_ok=True)
+    (OUT / "x-timeline.json").write_text(
+        json.dumps(
+            {
+                "fetched_at": datetime.now().isoformat(timespec="seconds"),
+                "handle": HANDLE,
+                "count": len(tweets),
+                "tweets": tweets,
+            },
+            ensure_ascii=False,
+            indent=1,
+        )
+    )
+    print(f"[ok] 时间线 checkpoint:{len(tweets)} 条已落盘")
+
     missing = sorted(known - seen)
     if missing:
         print(f"[..] {len(missing)} 条旧帖不在时间线内,用 TweetDetail 分批补抓")
