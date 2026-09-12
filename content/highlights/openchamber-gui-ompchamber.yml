@@ -2,10 +2,10 @@ category: opc
 title: "OpenChamber 是最顺手的 Harness GUI，我把内核换成了 OMP"
 description: "OpenChamber 前端骨架 + Oh My Pi 内核 = OMPChamber，密集开发测试中。"
 date: 2026-08-11
-likes: 72
+likes: 73
 bookmarks: 70
 reposts: 3
-views: 12813
+views: 12824
 url: https://x.com/realchendahuang/status/2087156607750914080
 content: |
   我体验过市面上几乎所有的开源的Harness GUI客户端，大多数从设计体验上，都是一言难尽。

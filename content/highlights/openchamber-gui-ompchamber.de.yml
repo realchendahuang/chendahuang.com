@@ -2,10 +2,10 @@ category: opc
 title: "OpenChamber ist das angenehmste Harness GUI — ich habe den Kern gegen OMP getauscht"
 description: "OpenChamber-Frontend als Skelett + Oh My Pi als Kern = OMPChamber, in dichter Entwicklung und im Test."
 date: 2026-08-11
-likes: 72
+likes: 73
 bookmarks: 70
 reposts: 3
-views: 12813
+views: 12824
 url: https://x.com/realchendahuang/status/2087156607750914080
 content: |
   Ich habe praktisch jeden Open-Source-Harness-GUI-Client auf dem Markt ausprobiert, und die meisten sind beim Design und Handling schwer in Worte zu fassen.

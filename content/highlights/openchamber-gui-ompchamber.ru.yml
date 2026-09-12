@@ -2,10 +2,10 @@ category: opc
 title: "OpenChamber — самый удобный Harness GUI, я же заменил в нём ядро на OMP"
 description: "Скелет фронтенда OpenChamber + ядро Oh My Pi = OMPChamber, идёт плотная разработка и тестирование."
 date: 2026-08-11
-likes: 72
+likes: 73
 bookmarks: 70
 reposts: 3
-views: 12813
+views: 12824
 url: https://x.com/realchendahuang/status/2087156607750914080
 content: |
   Я перепробовал практически все open-source Harness GUI-клиенты на рынке, и у большинства с дизайном и удобством дела обстоят так себе.

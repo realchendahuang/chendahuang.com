@@ -2,10 +2,10 @@ category: opc
 title: "OpenChamber는 가장 손에 맞는 Harness GUI — 커널은 OMP로 갈아끼웠다"
 description: "OpenChamber 프런트엔드 뼈대 + Oh My Pi 커널 = OMPChamber, 집중 개발·테스트 중."
 date: 2026-08-11
-likes: 72
+likes: 73
 bookmarks: 70
 reposts: 3
-views: 12813
+views: 12824
 url: https://x.com/realchendahuang/status/2087156607750914080
 content: |
   시중의 오픈소스 Harness GUI 클라이언트는 거의 다 써 봤는데, 대부분은 디자인과 사용 경험이 뭐라 말해야 할지 모를 수준이다.

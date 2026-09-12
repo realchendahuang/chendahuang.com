@@ -2,10 +2,10 @@ category: opc
 title: "OpenChamber はいちばん手に馴染む Harness GUI。中身は OMP に差し替えた"
 description: "OpenChamber のフロントエンド骨格 + Oh My Pi コア = OMPChamber、集中開発・テスト中。"
 date: 2026-08-11
-likes: 72
+likes: 73
 bookmarks: 70
 reposts: 3
-views: 12813
+views: 12824
 url: https://x.com/realchendahuang/status/2087156607750914080
 content: |
   市販のオープンソース Harness GUI クライアントはほぼ全部試しましたが、大多数のデザイン体験は、まあ一言では言い表せない出来栄えです。

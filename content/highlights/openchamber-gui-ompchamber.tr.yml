@@ -2,10 +2,10 @@ category: opc
 title: "OpenChamber en kullanışlı Harness GUI; çekirdeğini OMP ile değiştirdim"
 description: "OpenChamber ön uç iskeleti + Oh My Pi çekirdeği = OMPChamber; yoğun geliştirme ve test sürüyor."
 date: 2026-08-11
-likes: 72
+likes: 73
 bookmarks: 70
 reposts: 3
-views: 12813
+views: 12824
 url: https://x.com/realchendahuang/status/2087156607750914080
 content: |
   Piyasadaki neredeyse tüm açık kaynak Harness GUI istemcilerini denedim; çoğunun tasarım ve kullanım deneyimi, kibar söylemek gerekirse, sınıfta kaldı.
